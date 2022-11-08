@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supported Features &mdash; HiRep  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Analysis" href="analysis.html" />
+    <link rel="prev" title="Input File Configuration" href="input_file.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> HiRep
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../how_to_cite.html">How to cite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="input_file.html">Input File Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Supported Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#conventions">Conventions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gamma-matrices"><img class="math" src="../_images/math/34d137cf01c787ecda732761c3f95b0f65a6c3e9.png" alt="\gamma"/> matrices</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#the-dirac-operator">The Dirac operator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#force-for-the-hmc-molecular-dynamics">Force for the HMC molecular dynamics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#checks-of-the-md-force">Checks of the MD force</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hmc-algorithm">HMC Algorithm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rhmc-formulation">RHMC formulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#even-odd-preconditioning">Even-Odd preconditioning</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#two-point-functions">Two-point functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hasenbusch-acceleration">Hasenbusch acceleration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wilson-mass-shift">Wilson Mass Shift</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Even-Odd Preconditioning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#twisted-mass-shift">Twisted Mass Shift</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Even-Odd Preconditioning</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#clover-term">Clover Term</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pseudofermion-forces">Pseudofermion Forces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#forces">Forces</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logarithmic-forces">Logarithmic Forces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Even-odd Preconditioning</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#method-1">Method 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#method-2">Method 2</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#ldl-factorization">LDL factorization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ldl-decomposition">LDL Decomposition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#forward-substitution">Forward substitution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#backward-substitution-with-diagonal">Backward substitution with diagonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#full-inversion">Full inversion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#exponential-clover-term">Exponential Clover Term</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#evaluation-of-the-operator">Evaluation of the operator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Pseudofermion Forces</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Forces</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">Even-odd preconditioning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implementation-of-x-mu-nu-using-taylor-series">Implementation of <img class="math" src="../_images/math/1632abfb8255e621c8adeb2de805babd64ee50a3.png" alt="X_{\mu\nu}"/> using Taylor series</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#stout-smearing">Stout smearing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="analysis.html">Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing_programs.html">Writing A Program in HiRep</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/coding_conventions.html">Coding Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/testing_setup.html">Testing Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/auto_generation.html">Auto-Generation of Macros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/field_geometry.html">Geometry of Field Data in Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/global_objects.html">Global Objects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="doxygen/build/html/index.html#http://">Full Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HiRep</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Supported Features</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/user_guide/supported_features.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="supported-features">
+<h1>Supported Features<a class="headerlink" href="#supported-features" title="Permalink to this headline"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<section id="conventions">
+<h3>Conventions<a class="headerlink" href="#conventions" title="Permalink to this headline"></a></h3>
+<p>This section summarizes the main formulae that are used for implementing
+the HMC for dynamical Wilson fermions in higher representations. The
+Dirac operator is constructed following Ref. [&#64;Luscher:1996sc], but
+using Hermitian generators</p>
+<div class="math">
+<p><img src="../_images/math/ec913a52865f8fc5a86431cf5e81f86254723a0a.png" alt="T^{a\dagger}=T^a."/></p>
+</div><p>For the fundamental
+representation, the normalization of the generators is such that:</p>
+<div class="math">
+<p><img src="../_images/math/80b1f1991d89892cc6f6b5a1a375561547bac97f.png" alt="\mathrm{tr}\, \left(T^a T^b \right) = \frac12 \delta^{ab}."/></p>
+</div><p>For a generic representation <img class="math" src="../_images/math/1ebe654cc7b8f2a0d8100aa5825cf2b9021adbbc.png" alt="R"/>, we define:</p>
+<div class="math">
+<p><img src="../_images/math/4e080ce0aa01f12da94dfab1f460d66c44df783c.png" alt="\mathrm{tr }_R \left(T^a T^b \right) = T_R \delta^{ab},"/></p>
+</div><div class="math">
+<p><img src="../_images/math/61dfd9916bfdebd5dec5ff606ef82ad3ad91a8fd.png" alt="\sum_a \left(T^a T^a \right)_{AB} = C_2(R) \delta_{AB},"/></p>
+</div><p>which implies:</p>
+<div class="math">
+<p><img src="../_images/math/2753b96a8d0a6520cabb006e09b941d9eb8babcf.png" alt="T_R = \frac{1}{N^2-1} C_2(R) d_R"/></p>
+</div><p>where <img class="math" src="../_images/math/6ea25a25e7eab997e9145c8a111d58dc6cf7c66d.png" alt="d_R"/> is the dimension of the representation <img class="math" src="../_images/math/1ebe654cc7b8f2a0d8100aa5825cf2b9021adbbc.png" alt="R"/>. The relevant group factors may be computed from the Young tableaux of the representation of <img class="math" src="../_images/math/50ab718ff9f514e055e31ec2a8d8db1931d0b7fa.png" alt="SU(N)"/> by using the formula:</p>
+<div class="math">
+<p><img src="../_images/math/3b3fa40bd3efd358ea0623af4112246ad268756f.png" alt="C_2(R) =\frac{1}{2}\left(nN+ \sum_{i=1}^{m} n_i \left( n_i+1-2i
+\right) - \frac{n^2}{N}\right)"/></p>
+</div><p>where <img class="math" src="../_images/math/5a939c5280da7202ca4531f175a7780ad5e1f80a.png" alt="n"/> is the number of boxes in the
+diagram, <img class="math" src="../_images/math/5aa339d4daf45a810dda332e3c80a0698e526e04.png" alt="i"/> ranges over the rows of the Young tableau, <img class="math" src="../_images/math/e9bc7da808d33a16a8347f27a519bd067186aa66.png" alt="m"/> is the
+number of rows, and <img class="math" src="../_images/math/29920eacb87ef0eb96e99aca37a523798ce98563.png" alt="n_i"/> is the number of boxes in the <img class="math" src="../_images/math/5aa339d4daf45a810dda332e3c80a0698e526e04.png" alt="i"/>-th row.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>R</p></th>
+<th class="head"><p><img class="math" src="../_images/math/6ea25a25e7eab997e9145c8a111d58dc6cf7c66d.png" alt="d_R"/></p></th>
+<th class="head"><p><img class="math" src="../_images/math/5083d202401af5cc2543728ce938e230b2792c89.png" alt="T_R"/></p></th>
+<th class="head"><p><img class="math" src="../_images/math/464ef66f488505e458a85ea934228523d0712349.png" alt="C_2(R)"/></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>fund</p></td>
+<td><p><img class="math" src="../_images/math/3bfb3a64189a14b2704f4610827762d5e3145114.png" alt="N"/></p></td>
+<td><p><img class="math" src="../_images/math/714daf2687d7c4150ad666b71cbe2157abad35f6.png" alt="\frac12"/></p></td>
+<td><p><img class="math" src="../_images/math/492dad9762789b81103ef1a86aca6cce61fe988a.png" alt="\frac{N^2-1}{2 N}"/></p></td>
+</tr>
+<tr class="row-odd"><td><p>Adj</p></td>
+<td><p><img class="math" src="../_images/math/68e18414ed6425c2fcf01ee998b16031a290dd8a.png" alt="N^2-1"/></p></td>
+<td><p><img class="math" src="../_images/math/3bfb3a64189a14b2704f4610827762d5e3145114.png" alt="N"/></p></td>
+<td><p><img class="math" src="../_images/math/3bfb3a64189a14b2704f4610827762d5e3145114.png" alt="N"/></p></td>
+</tr>
+<tr class="row-even"><td><p>2S</p></td>
+<td><p><img class="math" src="../_images/math/c8328ed2d0903edb9a2ab81641aae3d1a6e7ac0b.png" alt="\frac{1}{2}N(N+1)"/></p></td>
+<td><p><img class="math" src="../_images/math/7b86fabb8f6caa3f88ac73d930a4947c80e4041a.png" alt="\frac{N+2}{2}"/></p></td>
+<td><p><img class="math" src="../_images/math/0ad8cd62c969cb0046ba815db23795ffb84ff939.png" alt="C_2(f)\frac{2(N+2)}{N+1}"/></p></td>
+</tr>
+<tr class="row-odd"><td><p>2AS</p></td>
+<td><p><img class="math" src="../_images/math/651b017c0c7de2989f2feb84ecf6557310b16910.png" alt="\frac{1}{2}N(N-1)"/></p></td>
+<td><p><img class="math" src="../_images/math/c60c2d2bec18fe679a95aa87ab9c43ec364f7bcb.png" alt="\frac{N-2}{2}"/></p></td>
+<td><p><img class="math" src="../_images/math/7831b8256d9787dc92aedb86e4edbfd43f7c643a.png" alt="C_2(f)\frac{2(N-2)}{N-1}"/></p></td>
+</tr>
+</tbody>
+</table>
+<p>A generic element of the algebra is written as: <img class="math" src="../_images/math/1693b23b5020225171215e3e233c32770c48de98.png" alt="X=i X^a T^a"/>, and the
+scalar product of two elements of the algebra is defined as:</p>
+<div class="math">
+<p><img src="../_images/math/fea3af3216166d7db1be0fe6495aacb38878e224.png" alt="(X,Y)= \mathrm{tr\ } \left(X^\dagger Y\right) = T_f X^a Y^a,"/></p>
+</div><div class="math">
+<p><img src="../_images/math/f2f7c1a865132722c21f6c45bbaf49463ef79eb5.png" alt="\Vert X \Vert^2 = \mathrm{tr } \left(X^\dagger X\right)
+ = \sum_{ij} \left| X_{ij} \right|^2"/></p>
+</div><section id="gamma-matrices">
+<h4><img class="math" src="../_images/math/34d137cf01c787ecda732761c3f95b0f65a6c3e9.png" alt="\gamma"/> matrices<a class="headerlink" href="#gamma-matrices" title="Permalink to this headline"></a></h4>
+<p>We use the chiral representation for the Dirac <img class="math" src="../_images/math/34d137cf01c787ecda732761c3f95b0f65a6c3e9.png" alt="\gamma"/> matrices:</p>
+<div class="math">
+<p><img src="../_images/math/d1306499d673592ef9cd96b250d95b400f9b661c.png" alt="\gamma_\mu=\begin{pmatrix}0&amp;e_\mu\\e_\mu^\dagger&amp;0\\\end{pmatrix}\, ,"/></p>
+</div><p>where <img class="math" src="../_images/math/8ec8f4b6ef25623e302ad8e09c620d3188806d8e.png" alt="e_\mu"/> are <img class="math" src="../_images/math/19ec51d06436246555f810a1335aa658642b2ac2.png" alt="2\times 2"/> matrices given by <img class="math" src="../_images/math/3be08ffe61999ac4b996694fd3f73e54e697fcbf.png" alt="e_0=-1"/>, <img class="math" src="../_images/math/06df5284a3df994b9798b1c7123eb0ad51438fdc.png" alt="e_k=-i\sigma_k"/>,</p>
+<div class="math">
+<p><img src="../_images/math/16b02c732823b60de8eef785a4262a26152a0b05.png" alt="\sigma_1=
+\begin{pmatrix}
+0&amp;1\\
+1&amp;0\\
+\end{pmatrix},\,\,
+\sigma_2=
+\begin{pmatrix}
+0&amp;-i\\
+i&amp;0\\
+\end{pmatrix},\,\,
+\sigma_3=
+\begin{pmatrix}
+1&amp;0\\
+0&amp;-1\\
+\end{pmatrix}\, ."/></p>
+</div><p>We have:</p>
+<div class="math">
+<p><img src="../_images/math/f499dc53d4d9d48b51f4cdddd2ecca6cb0d652a1.png" alt="\gamma_5=\gamma_0\gamma_1\gamma_2\gamma_3=
+\begin{pmatrix}
+1&amp;0\\
+0&amp;-1\\
+\end{pmatrix}\, ."/></p>
+</div></section>
+</section>
+<section id="the-dirac-operator">
+<h3>The Dirac operator<a class="headerlink" href="#the-dirac-operator" title="Permalink to this headline"></a></h3>
+<p>The massless Dirac operator is written as in Ref. [&#64;Luscher:1996sc]:</p>
+<div class="math">
+<p><img src="../_images/math/2cab2d880682fdadeeb3323503f3842d517fa202.png" alt="D = \frac12 \left\{\gamma_\mu \left(\nabla_\mu + \nabla^*_\mu \right) 
+- \nabla^*_\mu \nabla_\mu \right\}"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/c6688a27beab438eb3266f32bcf84a97702b4075.png" alt="\nabla_\mu\phi(x) = U^R (x,\mu)\phi(x+\mu) - \phi(x)"/></p>
+</div><div class="math">
+<p><img src="../_images/math/7a3304f1a6c0f21c66fef47a25f138d79cb01504.png" alt="\nabla_\mu^*\phi(x) = \phi(x) - U^R (x-\mu,\mu)^\dagger\phi(x-\mu)"/></p>
+</div><p>and therefore the action of the massive Dirac operator yields:</p>
+<div class="math" id="equation-eq-dm">
+<p><span class="eqno">(1)<a class="headerlink" href="#equation-eq-dm" title="Permalink to this equation"></a></span><img src="../_images/math/a05b8e78be532fe065131a2e7e3235a5fc087edc.png" alt="\begin{aligned}
+ D_m \phi(x) =&amp; (D+m) \phi(x)\\ 
+=&amp; - \frac12 \left\{ \left(1-\gamma_\mu\right) U^R(x,\mu) \phi(x+\mu) \right.\\
+&amp;+
+\left.\left(1+\gamma_\mu\right) U^R(x-\mu,\mu)^\dagger \phi(x-\mu)-(8+2m) \phi(x) \right\}, \end{aligned}"/></p>
+</div><p>where <img class="math" src="../_images/math/4c18c3de25e760f1b7b467e3018de7a5936e45d7.png" alt="U^R"/> are the link variables in the representation <img class="math" src="../_images/math/1ebe654cc7b8f2a0d8100aa5825cf2b9021adbbc.png" alt="R"/>.</p>
+<p>Rescaling the fermion fields by <img class="math" src="../_images/math/bba62ff9855c1c922d29b481100125fab20b2cf9.png" alt="\sqrt{\kappa}=\left(\frac{2}{8+2m}\right)^{1/2}"/>, we can write the fermionic action as:</p>
+<div class="math">
+<p><img src="../_images/math/dd3c5ee8d2bdf876fd6b293256454ad986788788.png" alt="S_f = \sum_{x,y} \phi^\dagger(x) D_m(x,y) \phi(y),"/></p>
+</div><p>where</p>
+<div class="math">
+<p><img src="../_images/math/08b9391b6faf0c273ac33df29de7fa1c74652697.png" alt="D_m(x,y) = \delta_{x,y} - \frac{\kappa}{2}
+\left[(1-\gamma_\mu) U^R(x,\mu) \delta_{y,x+\mu} + 
+(1+\gamma_\mu) U^R(x-\mu,\mu)^\dagger \delta_{y,x-\mu} \right],"/></p>
+</div><p>and the Hermitian Dirac operator is obtained as:</p>
+<div class="math" id="equation-eq-qm">
+<p><span class="eqno">(2)<a class="headerlink" href="#equation-eq-qm" title="Permalink to this equation"></a></span><img src="../_images/math/e3ae560b3c499c1dfb6165f38537471afba98c4e.png" alt="Q_m = \gamma_5 D_m."/></p>
+</div><p>The fermionic determinant in the path integral can be represented by introducing complex pseudofermionic fields:</p>
+<div class="math">
+<p><img src="../_images/math/0d1a7b8193bbe52aa0712e967706fc9125408588.png" alt="\left(\det D_m\right)^{N_f} = \int \mathcal D \phi \mathcal D \phi^\dagger e^{-\phi^\dagger Q_m^{-N_f} \phi} \equiv \int \mathcal D \phi \mathcal D \phi^\dagger e^{-S_\mathrm{pf}}."/></p>
+</div></section>
+<section id="force-for-the-hmc-molecular-dynamics">
+<h3>Force for the HMC molecular dynamics<a class="headerlink" href="#force-for-the-hmc-molecular-dynamics" title="Permalink to this headline"></a></h3>
+<p>The HMC Hamiltonian is given by:</p>
+<div class="math">
+<p><img src="../_images/math/e3c964fb766986b9798aefac552b2bbc5bdc9e76.png" alt="\mathcal{H}=\mathcal{H}_\pi+\mathcal{H}_G+\mathcal{H}_F \, ,"/></p>
+</div><p>where</p>
+<div class="math">
+<p><img src="../_images/math/e29a90b15bcdf343d9980b5784b52f9e43727f34.png" alt="\mathcal{H}_\pi = \frac{1}{2} \sum_{x,\mu} ( \pi(x,\mu) , \pi(x,\mu) ) = \frac{1}{2} T_f \sum_{a,x,\mu} \pi^a(x,\mu)^2 \, ,"/></p>
+</div><div class="math">
+<p><img src="../_images/math/274828f5156bd0f190eb89d0c1b3f0f31ae105c1.png" alt="\mathcal{H}_G = \beta \sum_{\mu&lt;\nu} \left( 1- \frac{1}{N} \mathrm{Re\ tr\ } \mathcal{P}_{\mu\nu}\right) \, ,"/></p>
+</div><div class="math" id="equation-eq-hf">
+<p><span class="eqno">(3)<a class="headerlink" href="#equation-eq-hf" title="Permalink to this equation"></a></span><img src="../_images/math/44cd9a2d68f3a8eacf91bbaf0f8ef2d271dfa695.png" alt="\mathcal{H}_F = \phi^\dagger ( Q_m^2 - \beta )^{-l} \phi \, , \,\,\,\, l=\frac{N_f}{2}&gt;0 \, ,"/></p>
+</div><p>and we have introduced for each link variable a conjugate momentum in
+the algebra of the gauge group: <img class="math" src="../_images/math/d9bd16e9454361c201b3399d7345bbb028100a4c.png" alt="\pi(x,\mu)=i \pi^a(x,\mu) T_f^a"/>. In
+the expression of <img class="math" src="../_images/math/5f25fe13e95b5eacfd3fcc2fbac969a3a70c17f9.png" alt="\mathcal{H}_F"/> we omitted the sum over position, spin
+and color indices and we have also introduced an arbitrary shift <img class="math" src="../_images/math/7138dad9ac96835665b17f5817eacfcaa9b834c9.png" alt="\beta"/>
+for the matrix <img class="math" src="../_images/math/491f1591e848ab3d13b8ac142985b4411cfbca42.png" alt="Q_m^2"/>, as this will be useful in the discussion for the
+RHMC algorithm.</p>
+<p>The equation of motion for the link variables are given by (the
+<img class="math" src="../_images/math/ade400eecb299f6c0b8e3a360625001cb3094971.png" alt="\dot{\square}"/> indicates the derivative with respect to the molecular
+dynamics time):</p>
+<div class="math">
+<p><img src="../_images/math/8bce8bca0cece0419d71ebb29a15c81bde968444.png" alt="\dot U(x\mu) = \pi(x,\mu) U(x,\mu)\, ,"/></p>
+</div><p>while the equation of motion for the momenta can be obtain as follows from the
+requirement that the hamiltonian <img class="math" src="../_images/math/f6debfa5617fe793770015b967c5d5ab70ad9182.png" alt="\mathcal{H}"/> is a conserved quantity:</p>
+<div class="math" id="equation-eq-hcons">
+<p><span class="eqno">(4)<a class="headerlink" href="#equation-eq-hcons" title="Permalink to this equation"></a></span><img src="../_images/math/218688ba65bb8cf2d21bf30035dbec226ed9bf25.png" alt="0 = \dot{\mathcal{H}} = \dot{\mathcal{H}}_\pi + \dot{\mathcal{H}}_G + \dot{\mathcal{H}_F} \, ."/></p>
+</div><p>For the first two derivatives we have:</p>
+<div class="math" id="equation-eq-hdotpi">
+<p><span class="eqno">(5)<a class="headerlink" href="#equation-eq-hdotpi" title="Permalink to this equation"></a></span><img src="../_images/math/7b499ec83a097e27737fe52bcb073172e3fbd62e.png" alt="\dot{\mathcal{H}}_\pi = \sum_{x,\mu} ( \pi(x,\mu) , \dot\pi(x,\mu) ) = T_f \sum_{x,\mu} \sum_a \pi^a(x,\mu) \dot\pi^a(x,\mu) \,"/></p>
+</div><div class="math" id="equation-eq-hdotg">
+<p><span class="eqno">(6)<a class="headerlink" href="#equation-eq-hdotg" title="Permalink to this equation"></a></span><img src="../_images/math/d01634f9501a60ee56a23803248d0374ea8248a1.png" alt="\begin{aligned}
+\dot{\mathcal{H}}_{G} 
+&amp;= \sum_{x,\mu} -\frac{\beta}{N} \mathrm{Re\, tr} \left(\dot U(x,\mu) V^\dagger(x,\mu) \right) \\
+&amp;= \sum_{x,\mu} -\frac{\beta}{N} \mathrm{Re\, tr} \left(\pi(x,\mu) U(x,\mu) V^\dagger(x,\mu) \right) \\ 
+&amp;= \sum_{x,\mu} \sum_a -\frac{\beta}{N} \pi^a(x,\mu) \mathrm{Re\, tr} \left(i T^a_f U(x,\mu) V^\dagger(x,\mu) \right) \, , 
+\end{aligned}"/></p>
+</div><p>where <img class="math" src="../_images/math/bee787f8f2db2cae71ae0bcba21e5f4083da16f5.png" alt="V(x,\mu)"/> is the sum of the staples around the link <img class="math" src="../_images/math/6604202d3242c5fe5fc52c4a27878ec76eaad0b2.png" alt="U(x,\mu)"/>.</p>
+<p>The computation of the fermionic force goes as follows. We only consider
+the case <img class="math" src="../_images/math/f5830f91bf2e18fc689810ec111f63b347bc8395.png" alt="l=1"/> since this is the only case relevant both for the HMC
+algorithm and the RHMC algorithm (see below). We have:</p>
+<div class="math" id="equation-eq-ff1">
+<p><span class="eqno">(7)<a class="headerlink" href="#equation-eq-ff1" title="Permalink to this equation"></a></span><img src="../_images/math/d084a37aae763a180f6ff4943d18fe79df72c597.png" alt="\begin{aligned} \dot{\mathcal{H}}_F = -\ \phi^\dagger (Q_m^2 - \beta)^{-1} \dot{(Q_m^2)} (Q_m^2 - \beta)^{-1} \phi \, . \end{aligned}"/></p>
+</div><p>Defining:</p>
+<div class="math" id="equation-eq-hmceta">
+<p><span class="eqno">(8)<a class="headerlink" href="#equation-eq-hmceta" title="Permalink to this equation"></a></span><img src="../_images/math/80e3912f300ffded3414c0fc5535f38d371b1a3e.png" alt="\eta = (Q_m^2 - \beta)^{-1} \phi \, ,"/></p>
+</div><div class="math">
+<p><img src="../_images/math/510ecf2594de314fb8c071a2f194fa6f03453536.png" alt="\xi = Q_m \eta \, ,"/></p>
+</div><p>and using the fact that the matrix <img class="math" src="../_images/math/6a66d4e3995d43b5d05e8a49810484bf68051536.png" alt="(Q_m^2-\beta)"/> is hermitian, we can rewrite <a class="reference internal" href="#equation-eq-ff1">(7)</a> as</p>
+<div class="math" id="equation-eq-ff2">
+<p><span class="eqno">(9)<a class="headerlink" href="#equation-eq-ff2" title="Permalink to this equation"></a></span><img src="../_images/math/e91d0a9b2ef3a0aae258a0881e35afb6a269fd76.png" alt="\begin{aligned} \dot{\mathcal{H}}_F = - 2 \ \xi^\dagger \dot{(Q_m)} \eta \, .\end{aligned}"/></p>
+</div><p>Inserting the explicit form of <img class="math" src="../_images/math/a5adcb0bd6915f96cf18b6ad7f1feb3ee62e7e40.png" alt="Q_m"/>, eqs. <a class="reference internal" href="#equation-eq-qm">(2)</a> and <a class="reference internal" href="#equation-eq-dm">(1)</a> into eq. <a class="reference internal" href="#equation-eq-ff2">(9)</a> we obtain</p>
+<div class="math">
+<p><img src="../_images/math/f514efdeeb925326e27dc16e55d4eb75e5b3657c.png" alt="\begin{aligned}\dot{\mathcal{H}}_F &amp;= \mathrm{Re\ }\sum_{x,\mu} \xi(x)^\dagger \dot U^R(x,\mu) \gamma_5 (1-\gamma_\mu) \eta(x+\mu) + \xi(x+\mu)^\dagger \dot U^R(x,\mu)^\dagger \gamma_5 (1+\gamma_\mu) \eta(x) \\&amp;= \mathrm{Re\ }\sum_{x,\mu} \xi(x)^\dagger \dot U^R(x,\mu) \gamma_5 (1-\gamma_\mu) \eta(x+\mu) + \eta(x)^\dagger \dot U^R(x,\mu) \gamma_5 (1-\gamma_\mu) \xi(x+\mu)\end{aligned}"/></p>
+</div><p>where the sum over spin and color indices is intended and we made
+explicit the fact the the whole expression is real. We now use the fact that</p>
+<div class="math" id="equation-eq-urdot">
+<p><span class="eqno">(10)<a class="headerlink" href="#equation-eq-urdot" title="Permalink to this equation"></a></span><img src="../_images/math/7fb639fb03c4310c4a2f78f5eda59ff7ea3f3f0e.png" alt="\dot U^R (x,\mu) = \pi^R(x,\mu) U^R(x,\mu) = i \pi^a(x,\mu) T^a_R U^R(x,\mu)"/></p>
+</div><p>Notice that, since we define <img class="math" src="../_images/math/da28b0ba979dd374bebf59fd2aae4ef740611e8c.png" alt="T^a_R(x,\mu) = R_* T^a(x,\mu)"/>, the
+<img class="math" src="../_images/math/76b3f2b1cfd9d73645e2faac17c5d388bd116101.png" alt="\pi^a(x,\mu)"/> in the above equation are the same as those appearing in
+the expressions for <img class="math" src="../_images/math/19b318247f5dd1e86b6d9c07ad183d82374c9226.png" alt="\dot{\mathcal{H}}_{\pi,G}"/>. Using eq. <a class="reference internal" href="#equation-eq-urdot">(10)</a> in the
+expression for <img class="math" src="../_images/math/1a6fbb4583caa1c1d8666cffe3b38f6ee5830c32.png" alt="\dot{\mathcal{H}}_{F}"/> we find:</p>
+<div class="math" id="equation-eq-hdotf">
+<p><span class="eqno">(11)<a class="headerlink" href="#equation-eq-hdotf" title="Permalink to this equation"></a></span><img src="../_images/math/b9b853c364c22990330cde4bda967603f33d7142.png" alt="\begin{aligned}
+\dot{\mathcal{H}}_F = \sum_{x,\mu} \sum_a  \pi^a(x,\mu) &amp; \mathrm{Re\ Tr\ } \left[ iT^a_R U^R(x,\mu) \gamma_5 (1-\gamma_\mu) \right. \\
+&amp;\left. \left\{ \eta(x+\mu)\otimes\xi(x)^\dagger + \xi(x+\mu)\otimes\eta(x)^\dagger \right\} \right] \, .\end{aligned}"/></p>
+</div><p>Note that capitalized <img class="math" src="../_images/math/e087fed4c8ff3fd6055fe125cd02be611b838738.png" alt="\mathrm{Tr}"/> indicates the trace over both color and spin indices as opposed to the lower case <img class="math" src="../_images/math/d0ea51c2fecf46562e4099f563445720c024e354.png" alt="\mathrm{tr}"/>, which is the trace over color only.</p>
+<p>Inserting eq.s <a class="reference internal" href="#equation-eq-hdotpi">(5)</a>, <a class="reference internal" href="#equation-eq-hdotg">(6)</a> into eq. <a class="reference internal" href="#equation-eq-hcons">(4)</a> we obtain the equations of motion for the momenta <img class="math" src="../_images/math/76b3f2b1cfd9d73645e2faac17c5d388bd116101.png" alt="\pi^a(x,\mu)"/></p>
+<div class="math" id="equation-eq-pidot3">
+<p><span class="eqno">(12)<a class="headerlink" href="#equation-eq-pidot3" title="Permalink to this equation"></a></span><img src="../_images/math/3bee64b1c0d384746dcd747ce54d9103d64f14a8.png" alt="\begin{aligned}
+\dot\pi^a(x,\mu) &amp;= \dot\pi^a_G(x,\mu) + \dot\pi^a_F(x,\mu) \, , \\
+\dot\pi^a_G(x,\mu) &amp;= \frac{\beta}{N} \frac{1}{T_f} \mathrm{Re\ tr\ } \left[ i T^a_f U(x,\mu) V^\dagger(x,\mu) \right] \, ,\\
+\dot\pi^a_F(x,\mu) &amp;=-\frac{1}{T_f} \mathrm{Re\ Tr\ } \left[ iT^a_R U^R(x,\mu) \gamma_5 (1-\gamma_\mu) \right. \nonumber\\
+                                        &amp;\quad\quad\quad    \left. \left\{ \eta(x+\mu)\otimes\xi(x)^\dagger + \xi(x+\mu)\otimes\eta(x)^\dagger \right\} \right]\, . \end{aligned}"/></p>
+</div><p>For sake of convenience we introduce the following projectors <img class="math" src="../_images/math/34fcf2e6de85e64d2a8efaa77f3c34f28da3fbe1.png" alt="P^a_R"/> over the algebra in the representation <img class="math" src="../_images/math/1ebe654cc7b8f2a0d8100aa5825cf2b9021adbbc.png" alt="R"/></p>
+<div class="math">
+<p><img src="../_images/math/d6bdca9091535fc01971a46369f2fec464f6b89a.png" alt="P^a_R ( F ) = - \frac{1}{T_R} \mathrm{Re\ tr\ } \left[ i T^a_R F \right] \, ,"/></p>
+</div><p>which can be used to rewrite eq.s <code class="xref eq docutils literal notranslate"><span class="pre">eq:PIDOT2</span></code> and <a class="reference internal" href="#equation-eq-pidot3">(12)</a> in a more compact form:</p>
+<div class="math" id="equation-eq-hfforce">
+<p><span class="eqno">(13)<a class="headerlink" href="#equation-eq-hfforce" title="Permalink to this equation"></a></span><img src="../_images/math/d96a845209e20200e2d19cf52a7324b7659b5b1f.png" alt="\begin{aligned}
+\dot\pi^a_G(x,\mu) &amp;= - \frac{\beta}{N} P^a_f \left( U(x,\mu) V^\dagger(x,\mu) \right) \, ,\\
+\dot\pi^a_F(x,\mu) &amp;= \frac{T_R}{T_f} P^a_R \left( U^R(x,\mu) \mathrm{tr_{spin}} \left[ \gamma_5 (1-\gamma_\mu) \right. \right. \nonumber\\
+&amp;\quad\quad\quad    \left. \left. \left\{ \eta(x+\mu)\otimes\xi(x)^\dagger + \xi(x+\mu)\otimes\eta(x)^\dagger \right\} \right] \right)\, . \end{aligned}"/></p>
+</div></section>
+<section id="checks-of-the-md-force">
+<h3>Checks of the MD force<a class="headerlink" href="#checks-of-the-md-force" title="Permalink to this headline"></a></h3>
+<p>The formulae derived in the previous Section can be checked against two
+known examples. The first, and almost trivial, check is obtained by
+assuming that the representation <img class="math" src="../_images/math/1ebe654cc7b8f2a0d8100aa5825cf2b9021adbbc.png" alt="R"/> is again the fundamental
+representation. The well-known expression for the MD force for the usual
+HMC is then recovered.</p>
+<p>The second case that has already been studied in the literature is the
+case of fermions in the adjoint representationof the gauge group
+SU(<img class="math" src="../_images/math/d94997a2318fec7e8e5bc4d8d79bb633675f9411.png" alt="2"/>) [&#64;Donini:1996nr]. We agree with eq. (16) in
+Ref.  [&#64;Donini:1996nr], provided that we exchange the indices <img class="math" src="../_images/math/b3e65e3b6408fcfa00452530b73f55d1755f9965.png" alt="a"/> and
+<img class="math" src="../_images/math/68c7c8c65602677ab56cf7fd88002023f0edc575.png" alt="b"/> in that formula.</p>
+</section>
+<section id="hmc-algorithm">
+<h3>HMC Algorithm<a class="headerlink" href="#hmc-algorithm" title="Permalink to this headline"></a></h3>
+<p>We briefly review the construction of the HMC algorithm [&#64;{??}].</p>
+<p>Given the action <img class="math" src="../_images/math/be3c5510631650fa8bd939a14f82daba13cd33a1.png" alt="S(\phi)"/> of a system of bosonic fields <img class="math" src="../_images/math/fffd2357ee88a9c50ba9e831ed64c39c73d54a07.png" alt="\phi"/>, our
+goal is to generate a Markov process with fixed probability distribution
+<img class="math" src="../_images/math/70f0ef9d6051121f926b869a3f87cae59d2927da.png" alt="P_S(\phi) = 1/Z \exp[-S(\phi) ]"/>. A sufficient condition to have such a
+Markov process is that it is ergodic and it satifies detailed balance:</p>
+<div class="math">
+<p><img src="../_images/math/d32ef106672be047c133fbb197eef4092197a1b0.png" alt="P_S(\phi)P_M(\phi\rightarrow \phi') = P_S(\phi')P_M(\phi' \rightarrow \phi) \, ."/></p>
+</div><p>We define <img class="math" src="../_images/math/7170999d07d157f5c3e84a1eb661fe03fda8d1e8.png" alt="P_M(\phi \rightarrow \phi')"/> with the following three-step
+process:</p>
+<ol class="arabic">
+<li><p>We expand the configuration space with additional fields, the
+“momenta” <img class="math" src="../_images/math/9cc8517129c87252edd7fe2e4532af9dcf7a54d9.png" alt="\pi"/> randomly chosen with probability <img class="math" src="../_images/math/857baa38fb6a07fdc43b0760fdf822f1018f48a7.png" alt="P_k(\pi)"/> such
+that <img class="math" src="../_images/math/725efc6de2be5ade9c3f2bb719863052418501fc.png" alt="P_k(\pi)=P_k(-\pi)"/> – usually one takes
+<img class="math" src="../_images/math/e8c808298c3c8974e84d360281921d7c15245dce.png" alt="P_k(\pi)\propto \exp[-\pi^2/2]"/>;</p></li>
+<li><p>In the extended configuration space <img class="math" src="../_images/math/4e357225bbd46553117fd944e3176ae4930e5b0a.png" alt="(\phi, \pi)"/>, we generate a new
+configuration <img class="math" src="../_images/math/83619b6ca08929f69d9eae6900980b847cc32bba.png" alt="(\phi',\pi')"/> with probability
+<img class="math" src="../_images/math/a10518fdc302c1b036dacd49a7222bf000402207.png" alt="P_h((\phi,\pi)\rightarrow(\phi',\pi'))"/> such that</p>
+<div class="math">
+<p><img src="../_images/math/cad0e3a312205beddbd523d086b69f7c341b55b9.png" alt="P_h((\phi,\pi)\rightarrow(\phi',\pi')) = P_h((\phi',-\pi')\rightarrow(\phi,-\pi))"/></p>
+</div><p>(reversibility condition)</p>
+</li>
+<li><p>We accept the new configuration <img class="math" src="../_images/math/d5523cd43d2e28b3cd0f532bdf607afc66777d55.png" alt="\phi'"/> with probability</p>
+<div class="math">
+<p><img src="../_images/math/8657587e2a1911bc6a6dd94b38f1974f1a481d37.png" alt="P_A((\phi,\pi)\rightarrow(\phi',\pi')) = min \left\{ 1, \frac{P_S(\phi')P_k(\pi')}{P_S(\phi)P_k(\pi)} \right\} \, ."/></p>
+</div><p>It is easy to see that the resulting probability</p>
+<div class="math">
+<p><img src="../_images/math/03a0e46a0373dc067a5492485e2991f9abf664f1.png" alt="P_M(\phi\rightarrow\phi') = \int d\pi d\pi' P_k(\pi) P_h((\phi,\pi)\rightarrow(\phi',\pi')) P_A((\phi,\pi)\rightarrow(\phi',\pi')) \, ,"/></p>
+</div><p>satisfies detailed balance. Care must be taken to ensure ergodicity.</p>
+</li>
+</ol>
+<p>As already stated, the distribution <img class="math" src="../_images/math/857baa38fb6a07fdc43b0760fdf822f1018f48a7.png" alt="P_k(\pi)"/> is generally taken to be
+gaussian (this should also guarantee ergodicity). The process <img class="math" src="../_images/math/ce65c20a6f0e2d03db1abb2542c8b2054979eddc.png" alt="P_h"/> is
+instead identified with the Hamiltonian flow of a yet unspecified
+Hamiltonian <img class="math" src="../_images/math/cb5de54f699cf4b3c7c1a3e87313d11d536c0d88.png" alt="H"/> in the phase space <img class="math" src="../_images/math/c4b9e7edda4f294017b8472066e8948959d1220c.png" alt="(\phi,\pi)"/> (giving to <img class="math" src="../_images/math/9cc8517129c87252edd7fe2e4532af9dcf7a54d9.png" alt="\pi"/> the
+meaning of “momenta”). The time reversal symmetry of classical dynamics
+equation of motion guarantees the reversibility condition. The resulting
+probability <img class="math" src="../_images/math/ce65c20a6f0e2d03db1abb2542c8b2054979eddc.png" alt="P_h"/> is then a delta function (the process is completely
+deterministic). Numerical integration to a given accuracy will result in
+a broader distribution and care must be taken to guarantee the
+reversibility condition in this case. Since we want a high acceptance
+rate (low correlation among the configurations), we must carefully
+choose the Hamiltonian <img class="math" src="../_images/math/cb5de54f699cf4b3c7c1a3e87313d11d536c0d88.png" alt="H"/>. One simple way is to take <img class="math" src="../_images/math/44c51de7d52b34b036407ed51ad35a150d171274.png" alt="P_k"/> to be
+gaussian and define <img class="math" src="../_images/math/609ddad74378c8462480cf7f874f227bafa3e0a1.png" alt="H(\pi,\phi)=-\ln [P_k(\pi) P_S(\phi)] = \pi^2/2 + S(\phi)"/> (omitting irrelevant constants). If <img class="math" src="../_images/math/cb5de54f699cf4b3c7c1a3e87313d11d536c0d88.png" alt="H"/> is exactly conserved by the process <img class="math" src="../_images/math/ce65c20a6f0e2d03db1abb2542c8b2054979eddc.png" alt="P_h"/>
+then the acceptance probability is 1.</p>
+<p>When fermionic degrees of freedom are present in the action <img class="math" src="../_images/math/b988975be41fd13b4d091c10202ba19374643586.png" alt="S"/>, we can
+first integrate them out, resulting in a non local bosonic action and
+then apply the above scheme. In practice, to deal with a non-local
+action is not convienent from a numerical point a view and stochastic
+estimates are used.</p>
+<p>Consider a quadratic fermionic term in the action:
+<img class="math" src="../_images/math/095de175ace10a52e69a669cf39605ed3c59aeed.png" alt="S(\bar\psi,\psi) = \bar\psi M \psi"/> with a generic interaction matrix
+<img class="math" src="../_images/math/8308d102feea3e87074462aed21975b01437dc82.png" alt="M(\phi)"/> function of the bosonic fields <img class="math" src="../_images/math/fffd2357ee88a9c50ba9e831ed64c39c73d54a07.png" alt="\phi"/>. The contribution of
+this term to the partition function is
+<img class="math" src="../_images/math/9c9f5282431a9904c250b9e89ba0bfa92e3c4fdc.png" alt="\int d\bar\psi d\psi \exp [ -S(\bar\psi,\psi)] = \mathrm{det}[M(\phi)]"/>.</p>
+<p>Assuming that the matrix <img class="math" src="../_images/math/8308d102feea3e87074462aed21975b01437dc82.png" alt="M(\phi)"/> is positive definite, we can rewrite
+<img class="math" src="../_images/math/3998b499b5a3860ff61cd677d6fc678ffaa27a08.png" alt="\mathrm{det}[M]=\int d\bar\eta d\eta \exp[ \bar\eta (M)^{-1} \eta ]"/>, where
+<img class="math" src="../_images/math/a23a3cfa02eca968cee61fc6d807d89660c7ae3a.png" alt="\bar\eta"/>,<img class="math" src="../_images/math/97db043c7cba573ac389b71add78b048077e8a13.png" alt="\eta"/> are two new complex bosonic fields, called
+pseudofermions. This term can be taken into account generating random
+pseudofermions <img class="math" src="../_images/math/a23a3cfa02eca968cee61fc6d807d89660c7ae3a.png" alt="\bar\eta"/>, <img class="math" src="../_images/math/97db043c7cba573ac389b71add78b048077e8a13.png" alt="\eta"/> with the desidered probability
+distribution and keeping then fixed during the above HMC configuration
+generation for the remaining bosonic fields <img class="math" src="../_images/math/fffd2357ee88a9c50ba9e831ed64c39c73d54a07.png" alt="\phi"/>.</p>
+</section>
+<section id="rhmc-formulation">
+<h3>RHMC formulation<a class="headerlink" href="#rhmc-formulation" title="Permalink to this headline"></a></h3>
+<p>The fermionic part of the HMC hamiltonian, for <img class="math" src="../_images/math/64520f5ef1b00b17ed2213502090369d3ecc1ace.png" alt="N_f"/> degenerate quarks
+and <img class="math" src="../_images/math/4ea339a713f758c336e9ef936e97c7a278bd7c60.png" alt="N_{pf}"/> pseudofermions, can be written as:</p>
+<div class="math" id="equation-eq-hfn">
+<p><span class="eqno">(14)<a class="headerlink" href="#equation-eq-hfn" title="Permalink to this equation"></a></span><img src="../_images/math/9bcc125a54c6732b64d4d3eee268253d89c75ec7.png" alt="\mathcal{H}_F = \sum_{k=1}^{N_{pf}} \phi_k^\dagger ( Q_m^2 )^{-l_k} \phi_k \,\, ;\,\, \sum_k l_k = \frac{N_f}{2}\, ,"/></p>
+</div><p>and <img class="math" src="../_images/math/34267fcf32b5dab0a31bda72dabfdda4f2d13310.png" alt="l_k&gt;0"/>. For the sake of simplicity we will set all the <img class="math" src="../_images/math/c9cab0d37d6f63a00e88e79ff57ade2d7bf2c8bc.png" alt="l_k"/> to be
+equal:</p>
+<div class="math">
+<p><img src="../_images/math/9eac125bbe7df189709be5e1e32ab2e66927d057.png" alt="\forall k,\,\, l_k = \frac{N_f}{2N_{pf}}\, ."/></p>
+</div><p>In the RHMC algorithm [&#64;Clark:2005sq] rational approximations are used
+whenever we need to take some fractional power of the positive definite
+fermion matrix <img class="math" src="../_images/math/491f1591e848ab3d13b8ac142985b4411cfbca42.png" alt="Q_m^2"/>.</p>
+<p>In this implementation we use three different rational approximations.</p>
+<p>The first one is used to approximate eq. <a class="reference internal" href="#equation-eq-hfn">(14)</a> (we need
+only one approximation because all <img class="math" src="../_images/math/c9cab0d37d6f63a00e88e79ff57ade2d7bf2c8bc.png" alt="l_k"/> are equal):</p>
+<div class="math" id="equation-eq-hfrhmc">
+<p><span class="eqno">(15)<a class="headerlink" href="#equation-eq-hfrhmc" title="Permalink to this equation"></a></span><img src="../_images/math/8a9b79c83ea170ce42019a1bb86805a9bd12ba8b.png" alt="\mathcal{H}_F = \sum_{k=1}^{N_{pf}} \phi_k^\dagger r_{a}( Q_m^2 )\phi_k \, ,"/></p>
+</div><div class="math">
+<p><img src="../_images/math/0454fedb1a9f1a351dc065747f26e3335f70a7a2.png" alt="( Q_m^2 )^{-\frac{N_f}{2N_{pf}}} \simeq r_{a}(Q_m^2) = \alpha_0^a + \sum_{n=1}^{d_{1}} \alpha_n^a ( Q^2_m - \beta_n^a )^{-1} \, ."/></p>
+</div><p>Using the formulas derived in the previous sections, it is easy to write the force corresponding to eq. <a class="reference internal" href="#equation-eq-hfrhmc">(15)</a>. In fact, eq. <a class="reference internal" href="#equation-eq-hfrhmc">(15)</a> is nothing but a sum of terms of the form eq. <a class="reference internal" href="#equation-eq-hfrhmc">(15)</a> once we put <img class="math" src="../_images/math/f5830f91bf2e18fc689810ec111f63b347bc8395.png" alt="l=1"/>, <img class="math" src="../_images/math/eda16e8478c139d779eedcc50e7caf449a92feeb.png" alt="\beta=\beta_n^a"/>. The RHMC force will be then given by a sum over <img class="math" src="../_images/math/d5681087ea2ad37d4ca1a449bb45b3461d232502.png" alt="n=1,\dots,d_1"/> of terms given by
+eq. <a class="reference internal" href="#equation-eq-hfforce">(13)</a> multiplied by a factor <img class="math" src="../_images/math/c7cf111f7bee04a223dd8d4c5cf0024ad112d650.png" alt="\alpha_n^a"/>. Notice that since <img class="math" src="../_images/math/f5830f91bf2e18fc689810ec111f63b347bc8395.png" alt="l=1"/>, to compute <img class="math" src="../_images/math/97db043c7cba573ac389b71add78b048077e8a13.png" alt="\eta"/> as in eq. <a class="reference internal" href="#equation-eq-hmceta">(8)</a> a simple shifted inversion is required.</p>
+<p>The second rational approximation is required in the heat bath update of
+pseudofermions. In order to generate pseudofermions distributed as in
+eq. <a class="reference internal" href="#equation-eq-hfn">(14)</a>, a simple two-step process is used. For each pseudofermion we first generate a gaussian distributed field <img class="math" src="../_images/math/f0c21a77113a46811fcacfc9e374494683aa28bf.png" alt="\tilde\phi_k"/>:</p>
+<div class="math">
+<p><img src="../_images/math/bd524912bec5657d1368529f5e73b5c5d713ff16.png" alt="P(\tilde\phi_k)\propto \exp [ -\tilde\phi_k^\dagger \tilde\phi_k ] \, ,"/></p>
+</div><p>and then we set:</p>
+<div class="math">
+<p><img src="../_images/math/8402a90c7c226ffb303b86ab31b9b8c27ce51de1.png" alt="\phi_k = (Q_m^2)^{\frac{l_k}{2}} \tilde\phi_k \, ,"/></p>
+</div><p>making use of the fact that <img class="math" src="../_images/math/1767e0a3d95a9913180e67b1a806f1718b9ed96d.png" alt="(Q_m^2)"/> is hermitean (notice the plus sign
+in the exponent.) The RHMC algorithm uses a rational approximation to
+compute the above quantities (again we need only one approximation since
+all <img class="math" src="../_images/math/c9cab0d37d6f63a00e88e79ff57ade2d7bf2c8bc.png" alt="l_k"/> are equal):</p>
+<div class="math">
+<p><img src="../_images/math/25b2ceea0314323b4eb892d58a10b1ded44a35d1.png" alt="\begin{aligned}
+( Q_m^2 )^{\frac{l_k}{2}} \simeq r_{b}(Q_m^2) &amp;=&amp; \alpha_0^b + \sum_{n=1}^{d_{2}} \alpha_n^b ( Q^2_m - \beta_n^b )^{-1} \, .\end{aligned}"/></p>
+</div><p>The third rational approximation is used in the code for the Metropolis
+test. Starting from eq. <a class="reference internal" href="#equation-eq-hfn">(14)</a> for each pseudofermion we can rewrite:</p>
+<div class="math">
+<p><img src="../_images/math/b19c62f9c2620903c16f57d654bde0cccd23b5b7.png" alt="\phi_k^\dagger ( Q_m^2 )^{-l_k}\phi_k = \left\| (Q_m^2)^{-\frac{l_k}{2}} \phi_k \right\|^2\, ,"/></p>
+</div><p>where we used the property that <img class="math" src="../_images/math/491f1591e848ab3d13b8ac142985b4411cfbca42.png" alt="Q_m^2"/> is hermitean. The rational
+approximation needed in this case is:</p>
+<div class="math">
+<p><img src="../_images/math/800381f709f473b6ccbd3cf874b4a8f7f6c5da66.png" alt="\begin{aligned}
+( Q_m^2 )^{-\frac{l_k}{2}} \simeq r_{c}(Q_m^2) &amp;=&amp; \alpha_0^c + \sum_{n=1}^{d_{3}} \alpha_n^c ( Q^2_m - \beta_n^c )^{-1} \, .\end{aligned}"/></p>
+</div><p>Notice that if <img class="math" src="../_images/math/08d809be26ddd67673019f7bebf7df2ef8a6a7ff.png" alt="d_2=d_3"/> the coefficients for the two approximations
+<img class="math" src="../_images/math/f8713ae27a0fc69ad9a52dddf76a94459853c4bf.png" alt="r_b"/> and <img class="math" src="../_images/math/937d2dd6ed453e894690c0f7eced573dffce57ff.png" alt="r_c"/> can each be obtained from the other.</p>
+<p>In order to compute the coefficients <img class="math" src="../_images/math/6e4a5b95a7423ebf2f6cf13475adcc659c45bee4.png" alt="\alpha_n"/>, <img class="math" src="../_images/math/9f733b09b761a69c61abd0a3ccaa868f8b8969f5.png" alt="\beta_n"/> appearing in
+the rational approximations the Remez algorithm is needed. In this
+implementation we do not compute those coefficients “on the fly”, but
+rather we use a precomputation step to generate a table of coefficients
+form which we pick up the right values when needed. The generation of
+this table goes as follows.</p>
+<p>First note that we need to compute rational approximations for a
+function <img class="math" src="../_images/math/95aabe3d9002fe03d54b9b9d9fbfc27c0eaeb56f.png" alt="f(x)"/> of the form <img class="math" src="../_images/math/ea4dbb20b3b390026e42fc96fb5fe8b7413dba81.png" alt="f(x)=x^l"/> and the approximation must be
+accurate over the spectral range of the operator <img class="math" src="../_images/math/491f1591e848ab3d13b8ac142985b4411cfbca42.png" alt="Q_m^2"/>. To simplify
+the computation of the table we note that the following proposition
+holds: if <img class="math" src="../_images/math/95aabe3d9002fe03d54b9b9d9fbfc27c0eaeb56f.png" alt="f(x)"/> is a homogeneous function of degree <img class="math" src="../_images/math/470aa65888a2971c9346e573f12b37ea406b8ec9.png" alt="l"/> and <img class="math" src="../_images/math/31412ea2ec10d3bfafeb5e39dc8df56d8d8b1389.png" alt="r(x)"/> is
+an optimal (in the sense of relative error) rational approximation to
+<img class="math" src="../_images/math/95aabe3d9002fe03d54b9b9d9fbfc27c0eaeb56f.png" alt="f(x)"/> over the interval <img class="math" src="../_images/math/9c8277859b5df3a542710c0419de55d76c8cdcf7.png" alt="[\epsilon,\mathrm{h}]"/> to a given accuracy
+then <img class="math" src="../_images/math/52dc119a85af2650bfd166f6f4b4dade17e6e23f.png" alt="r(kx)/k^l"/> is an optimal rational approximation for the same
+function and the same accuracy over the interval
+<img class="math" src="../_images/math/3496a88f27f5bc873b218f80d3e6ad8afa1b3ce5.png" alt="[\epsilon/k,\mathrm{h}/k]"/>. Notice that the coefficients of the
+“rescaled” rational approximation are easily obtained from that of the
+original approximation. A simple corollary is that, given a homogeneuos
+function <img class="math" src="../_images/math/95aabe3d9002fe03d54b9b9d9fbfc27c0eaeb56f.png" alt="f(x)"/>, we can divide the rational approximations with the same
+accuracy in classes distinguished by the ratio <img class="math" src="../_images/math/a1adb012c366d7744941401cc8bb711ea1cfea63.png" alt="\epsilon/\mathrm{h}"/>;
+within each class the coefficients of the rational approximations are
+easily related to each other, so that we only need to compute one
+rational approximation in each class. This is what is done in our
+implementation.</p>
+<p>In detail: we generate a table containing the coefficients for the
+rational approximations belonging in different classes distinguished by
+the function <img class="math" src="../_images/math/95aabe3d9002fe03d54b9b9d9fbfc27c0eaeb56f.png" alt="f(x)"/> which we want to approximate and the accuracy which
+is required. We arbitrary set <img class="math" src="../_images/math/9e0555b0ddba0edc1d33e4533fcb74c9f52f2949.png" alt="\mathrm{h}"/> to a fixed value equal to the
+absolute upper bound on the spectrum of the matrix <img class="math" src="../_images/math/491f1591e848ab3d13b8ac142985b4411cfbca42.png" alt="Q_m^2"/>. This choice
+fixes the representative of each class, because the lower bound of the
+approximation is now a function of <img class="math" src="../_images/math/9e0555b0ddba0edc1d33e4533fcb74c9f52f2949.png" alt="\mathrm{h}"/>.</p>
+<p>At run-time this table is used to generate optimal rational
+approximations rescaling the precomputed coefficients to the desired
+interval containing the spectrum of the matrix <img class="math" src="../_images/math/491f1591e848ab3d13b8ac142985b4411cfbca42.png" alt="Q_m^2"/>. This interval is
+obtained by computing the maximum and minimum eigenvalue of <img class="math" src="../_images/math/491f1591e848ab3d13b8ac142985b4411cfbca42.png" alt="Q_m^2"/> on
+each configuration when needed. In our code we update this interval only
+before the metropolis test, while we keep it fixed during the molecular dynamics.</p>
+</section>
+<section id="even-odd-preconditioning">
+<h3>Even-Odd preconditioning<a class="headerlink" href="#even-odd-preconditioning" title="Permalink to this headline"></a></h3>
+<p>It is a very well know fact that the time spend for a simulation with
+dynamical fermions is dominated by the time required for the inversions
+of the Dirac operator. The convergence of such inversions can be
+improved using an appropriate precondining. The idea is to rewrite the
+fermionic determinant as a determinant (or product of determinants) of
+better conditioned matrix (matrices) than the original Dirac operator.
+For the non-improved Wilson action this can be easily done using the
+<em>even-odd</em> preconditioning. We start rewriting the Dirac operator <img class="math" src="../_images/math/c2388d67fda5a5a77a3693dba6fa6b4d2eb80153.png" alt="D_m"/>
+as a block matrix:</p>
+<div class="math">
+<p><img src="../_images/math/5316e2a5fa862153d4536ab7992925e8d5801d85.png" alt="D_m = \begin{pmatrix}
+4+m&amp; D_{eo}\\
+D_{oe} &amp;4+m\\
+\end{pmatrix}\,\,\, ,"/></p>
+</div><p>where each block has a dimension half that of the original Dirac matrix. The diagonal blocks connecting sites with the same parity are proportional to the identity matrix, while off-diagonal blocks connect sites with opposite parity. We have (since <img class="math" src="../_images/math/c2388d67fda5a5a77a3693dba6fa6b4d2eb80153.png" alt="D_m"/> is <img class="math" src="../_images/math/f97c8f196c4205086cdcb7fbb81aab3b68ac7db6.png" alt="\gamma_5"/>-hermitean):</p>
+<div class="math">
+<p><img src="../_images/math/ca8570652fb055030d6adbdeff2be47fb75b91b0.png" alt="\gamma_5 D_{eo} \gamma_5 = D_{oe}^\dagger\,\, ."/></p>
+</div><p>The determinant of the Dirac matrix <img class="math" src="../_images/math/c2388d67fda5a5a77a3693dba6fa6b4d2eb80153.png" alt="D_m"/> can be rewritten as:</p>
+<div class="math">
+<p><img src="../_images/math/ad4317bbf4d0032a48aecb49e5b2579f84258a67.png" alt="{\rm det\ } D_m = {\rm det\ } ( (4+m)^2 - D_{oe} D_{eo} ) = {\rm det\ } ( (4+m)^2 - D_{eo} D_{oe} ) \equiv {\rm det\ } D^{eo}_m\,\, ,"/></p>
+</div><p>using the well known formula for the determinant of a block matrix.
+Since the determinant of <img class="math" src="../_images/math/c2388d67fda5a5a77a3693dba6fa6b4d2eb80153.png" alt="D_m"/> and of <img class="math" src="../_images/math/d461414663d5cc06a8a74bf61d59dc15db34bd6e.png" alt="D_m^{eo}"/> are the same the latter
+can be used in numercal simulations. Note that the even-odd
+preconditioned matrix only connects sites with the same parity thus it
+have only half of the size of the original Dirac matrix and as <img class="math" src="../_images/math/c2388d67fda5a5a77a3693dba6fa6b4d2eb80153.png" alt="D_m"/> it
+is <img class="math" src="../_images/math/f97c8f196c4205086cdcb7fbb81aab3b68ac7db6.png" alt="\gamma_5"/>-hermitean. We define as before the hermitean matrix
+<img class="math" src="../_images/math/5df507a71e6079b84ca41e3189e2956520fbd9b0.png" alt="Q_m^{eo}\equiv \gamma_5 D_m^{eo}"/>, which will be used in practice.</p>
+<p>The formulation of the HMC algorithm does not change and the only
+difference is that pseudofermions fields are now only defined on half of
+the lattice sites, conventionally the even sites in what follows. We now
+give the explicit expression for the fermionic force for the
+preconditioned system described by the hamiltonian:</p>
+<div class="math">
+<p><img src="../_images/math/7c96ebc3543fdb42245024aef7d860b51fde5394.png" alt="\mathcal{H}_F = \phi_e^\dagger ( (Q^{eo}_m)^2 - \beta )^{-1} \phi_e \,\, ,"/></p>
+</div><p>where as before we are assuming <img class="math" src="../_images/math/c307655f64dc0735a6880541fe74a0320fda187f.png" alt="N_f=2"/> or a rational approximation of
+the actual fractional power function, and where we made explicit that
+<img class="math" src="../_images/math/6f2456e748c586e6abe49456bb96059ed8d31bcc.png" alt="\phi_e"/> is only defined on even sites. Eq. <a class="reference internal" href="#equation-eq-ff2">(9)</a> is unchanged:</p>
+<div class="math" id="equation-eq-ffpre">
+<p><span class="eqno">(16)<a class="headerlink" href="#equation-eq-ffpre" title="Permalink to this equation"></a></span><img src="../_images/math/49d8cfd5c2fa650fb64e9d5c6b234833e635de6a.png" alt="\dot{\mathcal{H}}_F = - 2 \ \xi_e^\dagger \dot{(Q^{eo}_m)} \eta_e \, ,"/></p>
+</div><p>where as before we have defined:</p>
+<div class="math">
+<p><img src="../_images/math/62656762c2ea85075fcf5f319199b98435d68d95.png" alt="\eta_e = ((Q^{eo}_m)^2 - \beta)^{-1} \phi_e \, ,"/></p>
+</div><div class="math">
+<p><img src="../_images/math/f4b2b29e0bfba5db8e31642ce86daec1026c0303.png" alt="\xi_e = Q^{eo}_m \eta_e \, ."/></p>
+</div><p>The explicit form of <img class="math" src="../_images/math/c1c3298f4c0f1eb18453df7ae55a82f0030a6ae3.png" alt="Q_m^{eo}"/> must be used at this point. We have:</p>
+<div class="math" id="equation-eq-qpredot">
+<p><span class="eqno">(17)<a class="headerlink" href="#equation-eq-qpredot" title="Permalink to this equation"></a></span><img src="../_images/math/f717d4e1ad1d89b117f508d577525e2e2eb03fca.png" alt="\dot{(Q^{eo}_m)} = -\gamma_5 (\dot{D_{eo}} D_{oe} + D_{eo}\dot{D_{oe}} )\,\, ."/></p>
+</div><p>Defining</p>
+<div class="math">
+<p><img src="../_images/math/3851b4b8508bea621bdc00191c60968de249a386.png" alt="\sigma_o = D_{oe} \eta_e \, ,"/></p>
+</div><div class="math">
+<p><img src="../_images/math/770b6903ae000f62d342ca1bf67e1c2d6ad60078.png" alt="\rho_o = D_{oe} \xi_e \, ,"/></p>
+</div><p>and inserting eq. <a class="reference internal" href="#equation-eq-qpredot">(17)</a> into eq. <a class="reference internal" href="#equation-eq-ffpre">(16)</a> we find:</p>
+<div class="math" id="equation-eq-forpre">
+<p><span class="eqno">(18)<a class="headerlink" href="#equation-eq-forpre" title="Permalink to this equation"></a></span><img src="../_images/math/af26a43801adc33008d486aabab2e4b46bc62219.png" alt="\begin{aligned}
+\dot{\mathcal{H}}_F = - \sum_{\mu,x\in even} {\rm Tr}_{x,\mu}  \left[ \sigma_o(x+\mu)\otimes\xi_e(x)^\dagger + \rho_o(x+\mu)\otimes\eta_e(x)^\dagger \right] \\
+- \sum_{\mu,x\in odd} {\rm Tr}_{x,\mu}  \left[ \xi_e(x+\mu)\otimes\sigma_o(x)^\dagger + \eta_e(x+\mu)\otimes\rho_o(x)^\dagger \right] \end{aligned}"/></p>
+</div><p>and for convenience we use the shorthand notation:</p>
+<div class="math">
+<p><img src="../_images/math/66133dc69d71f45e8500741e42894646129a8f8f.png" alt="{\rm Tr}_{x,\mu} \left[ \Phi \right] \equiv \mathrm{Re\ Tr\ } \left[ \dot U^R(x,\mu) \gamma_5 (1-\gamma_\mu) \Phi \right]\,\, ."/></p>
+</div><p>From eq. <a class="reference internal" href="#equation-eq-forpre">(18)</a> it is clear that the fermionic force has a different expression on sites of different parities. Proceeding as before we arrive at the final
+expressions. For <img class="math" src="../_images/math/aed57f5fe5ccff62baec7b7bbe57cd108e4ae078.png" alt="x\in even"/>:</p>
+<div class="math">
+<p><img src="../_images/math/dd47f3b15428799f67ba383dde2999609ab4c85d.png" alt="\begin{aligned} \dot\pi^a_F(x,\mu) &amp;= - \frac{T_R}{T_f} P^a_R \left( U^R(x,\mu) \mathrm{tr_{spin}} \left[ \gamma_5 (1-\gamma_\mu) \right. \right. \\
+&amp;\quad\quad\quad    \left. \left. \left\{  \sigma_o(x+\mu)\otimes\xi_e(x)^\dagger + \rho_o(x+\mu)\otimes\eta_e(x)^\dagger \right\} \right] \right)\, ,\end{aligned}"/></p>
+</div><p>while for <img class="math" src="../_images/math/9f7c9b4f82a87bfe5aa0b790d12763c3a455cfe2.png" alt="x\in odd"/>:</p>
+<div class="math">
+<p><img src="../_images/math/546e9f9bd26f65ca25a14211cee7d7d39102b035.png" alt="\begin{aligned}
+\dot\pi^a_F(x,\mu) &amp;= - \frac{T_R}{T_f} P^a_R \left( U^R(x,\mu) \mathrm{tr_{spin}} \left[ \gamma_5 (1-\gamma_\mu) \right. \right. \nonumber\\
+&amp;\quad\quad\quad    \left. \left. \left\{\xi_e(x+\mu)\otimes\sigma_o(x)^\dagger + \eta_e(x+\mu)\otimes\rho_o(x)^\dagger   \right\} \right] \right)\, .\end{aligned}"/></p>
+</div></section>
+</section>
+<section id="two-point-functions">
+<h2>Two-point functions<a class="headerlink" href="#two-point-functions" title="Permalink to this headline"></a></h2>
+<p>This is a summary of the formulae used for the mesonic two-pt
+functions.</p>
+<p>Let <img class="math" src="../_images/math/e7003fd3463f843ee1e53385878369f078d362ad.png" alt="\Gamma"/> and <img class="math" src="../_images/math/625eb80d14fa0e4fd32016cc04506767c92a1853.png" alt="\Gamma^\prime"/> be two generic matrices in the Clifford
+algebra, we define the two-pt function:</p>
+<div class="math">
+<p><img src="../_images/math/60c0be28bcd69d2b0260599e269d253df179e130.png" alt="f_{\Gamma\Gamma^\prime}(t) = \sum_{\bf x}\langle \bar\psi({\bf x},t) \Gamma
+\psi({\bf x},t) \bar\psi(0) \Gamma^\prime \psi(0) \rangle"/></p>
+</div><p>Performing the Wick contractions yields:</p>
+<div class="math">
+<p><img src="../_images/math/86990093663713979fa15a60ab247555ee8ac015.png" alt="\begin{aligned}\langle \bar\psi({\bf x},t) \Gamma\psi({\bf x},t) \bar\psi(0) \Gamma^\prime \psi(0) \rangle =&amp;- \mathrm{tr} \left[ \Gamma S(x-y) \Gamma^\prime S(y-x) \right]  \\
+=&amp; - \mathrm{tr} \left[ \Gamma S(x-y) \Gamma^\prime \gamma_5 S^\dagger(x-y) \gamma_5 \right] \end{aligned}"/></p>
+</div><p>In practice we invert the Hermitean Dirac operator <img class="math" src="../_images/math/95fb8c7348bf3572d75920d72c35cb01274ee3c9.png" alt="\gamma_5 D"/> by solving the equation:</p>
+<div class="math">
+<p><img src="../_images/math/984a238822c8e4aa2f065bd33101ca2a6b399cdf.png" alt="Q_{AB}(x-y) \eta^{\bar A,x_0}_B(y) = \delta_{A,\bar A} \delta_{x,x_0}"/></p>
+</div><p>where <img class="math" src="../_images/math/cebb52d1ccb60c07f59d755ee77aa3a45d8c8352.png" alt="A=\{a,\alpha\}"/> is a collective index for colour and spin, and
+<img class="math" src="../_images/math/f116675d4be6568f917491fbcb235dc162eb1807.png" alt="\bar A"/>, <img class="math" src="../_images/math/ed7fb0260e58d3ca5851e823ff991dae4cde5671.png" alt="x_0"/> are the position of the source for the inverter.</p>
+<p>Using the field <img class="math" src="../_images/math/97db043c7cba573ac389b71add78b048077e8a13.png" alt="\eta"/> that we obtain from the inverter, the correlator
+above becomes:</p>
+<div class="math">
+<p><img src="../_images/math/3296a731e5a9fe93405ffc9f20accfff6c81b66d.png" alt="\langle \ldots \rangle = - \tilde \Gamma_{AB} \eta^{C,y}_B(x)
+\tilde \Gamma^\prime_{CD} \eta^{D,y}_A(x)^*"/></p>
+</div><p>where</p>
+<p><img class="math" src="../_images/math/f8dadbe56abcfed6ac79a5e49406cccb792e306e.png" alt="\tilde \Gamma= \gamma_5 \Gamma"/>, and <img class="math" src="../_images/math/ac8a3d7e2425f8be40a0eccba0f980d5fb2d728b.png" alt="\tilde \Gamma^\prime =
+\gamma_5 \Gamma^\prime"/>.</p>
+</section>
+<section id="hasenbusch-acceleration">
+<h2>Hasenbusch acceleration<a class="headerlink" href="#hasenbusch-acceleration" title="Permalink to this headline"></a></h2>
+<p>Let us summarize the Hasenbusch trick (for two flavours)</p>
+<div class="math">
+<p><img src="../_images/math/c5a5c2acf0d29f0dbb51b2a1727601265314ba3b.png" alt="\mathcal{H}_F = \phi^\dagger ( Q_m^2 )^{-1} \phi \,"/></p>
+</div><p>where <img class="math" src="../_images/math/3698b9973b38eca028b529ef1d48f83f2f4884bb.png" alt="Q_m =\gamma_5 D_m"/> is the hermitian Dirac operator. After integration over the pseudofermions it gives the determinant:</p>
+<div class="math">
+<p><img src="../_images/math/48df5907fee31eeada7d0c026ab0b843aab65c45.png" alt="\det{ Q_m ^2 } = \det{D_m^{\dagger} D_m}"/></p>
+</div><p>The Hasenbusch trick can be rewritten in the following form :</p>
+<div class="math">
+<p><img src="../_images/math/693556ff424e86fae48fb8b510a2e9022ab337f2.png" alt="\det{ Q_m ^2 }  = \det{W_- W_+} \det{\frac{ Q_m^2}{W_- W_+}}"/></p>
+</div><p>Where <img class="math" src="../_images/math/d68b7c3a4b180f0b520a9ce3a6a77010b4b45b73.png" alt="W_{\pm}"/> can be chosen arbitrarily as long as the determinant is
+well defined. We discuss in the next subsections various choices of
+<img class="math" src="../_images/math/d68b7c3a4b180f0b520a9ce3a6a77010b4b45b73.png" alt="W_{\pm}"/>.</p>
+<p>In any case the two term can be evaluated independently, and we have:</p>
+<div class="math">
+<p><img src="../_images/math/8b82280f3e36a51901a2014fd1f1a8c601b49f2a.png" alt="\mathcal{H}_{F_1} =   \phi_1^\dagger ( W_- W_+ )^{-1} \phi_1,\quad,
+\mathcal{H}_{F_2} = \phi_2^\dagger Q_m^{-1} W_- W_+ Q_m^{-1} \phi_2"/></p>
+</div><p>This can be combined with even-odd preconditioning.</p>
+<section id="wilson-mass-shift">
+<h3>Wilson Mass Shift<a class="headerlink" href="#wilson-mass-shift" title="Permalink to this headline"></a></h3>
+<p>Assume</p>
+<div class="math">
+<p><img src="../_images/math/83ba13195b7442e88a5e2e510391c62ca3d5418e.png" alt="W_{+} = \left( D_m + \delta_m\right) ,\quad W_{-} =
+W_{+}^\dagger=  \left( D^{\dagger}_m + \delta_m\right)"/></p>
+</div><p>Note that, as written in a comment in the code, <img class="math" src="../_images/math/44311edf56aeb21e402d077e88e59164443f6c2f.png" alt="W_+ Q_m^{-1} = (a D +
+b ) D^{-1} \gamma_5"/>.</p>
+<p>Then</p>
+<div class="math">
+<p><img src="../_images/math/a07956f0e83fb3e2917e15ab71f666baeace5bdb.png" alt="Q_m^{-1} \left( D^\dagger_m + \delta_m\right)  \left( D_m +
+   \delta_m  \right) Q_m^{-1}   =  \left( \gamma_5 + \delta_m Q^{-1}
+   \right)  \left( \gamma_5 +    \delta_m Q^{-1}\right)"/></p>
+</div><p>The force can then be computed :</p>
+<div class="math">
+<p><img src="../_images/math/82414b7d95ecc3046b05b4f37247fe0eec20af89.png" alt="\begin{aligned}
+ \dot{\mathcal{H}_{F_2}} =&amp;  - \delta_m \phi_2^\dagger \left[  \left( \gamma_5 + \delta_m Q^{-1}
+   \right) \dot{Q^{-1}} + \dot{Q^{-1}} \left( \gamma_5 + \delta_m Q^{-1}
+   \right)   \right] \phi_2 \\
+=&amp;  - \delta_m \phi_2^\dagger \left[  \left( \gamma_5 + \delta_m
+    Q^{-1}\right) Q_m^{-1} \dot{Q} Q_m^{-1}  \right]\phi_2 + \rm{h.c}
+  \end{aligned}"/></p>
+</div><p>Note that the equation as now the standard form of the forces for the
+HMC algorithm provided that:</p>
+<div class="math">
+<p><img src="../_images/math/facd841f2a0121518bfdec38b800010a626e119f.png" alt="X\equiv Q^{-1}\phi_2,\quad\textrm{and}\quad Y^{\dagger}=\phi_2^\dagger
+(\gamma_5 + \delta_m Q^{-1}) Q_m^{-1}"/></p>
+</div><p>From which we deduce</p>
+<div class="math">
+<p><img src="../_images/math/48170c660becd3986953dba2dec0aa165403b096.png" alt="Y =   Q_m^{-1}(\gamma_5 + \delta_m Q^{-1})  \phi_2 =  D^{-1} ( \phi_2  +
+\delta_m \gamma_5 X)"/></p>
+</div><p>Which matches one comment in the the force_hmc.c file.</p>
+<section id="id1">
+<h4>Even-Odd Preconditioning<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h4>
+<p>Writing</p>
+<div class="math">
+<p><img src="../_images/math/c545434da381997fe37941fccda43913c3573451.png" alt="D_m = \begin{pmatrix}
+4 + m &amp; D_{eo} \\
+ D_{oe} &amp; 4+m \\
+\end{pmatrix}"/></p>
+</div><p>The determinant in the 2 flavour case can be written as follows:</p>
+<div class="math">
+<p><img src="../_images/math/d55e8f448070dea12fadb09a25b297b647dbdcc1.png" alt="\det D_m^2 = \det Q^2 \propto  \det D^\dagger_{eo} D_{oe}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/eba25b029db50b0829a9aa9732e1372e053da6ff.png" alt="Q = \gamma_5 \begin{pmatrix} 
+1 + 4m &amp; M_{\rm{eo}} \\
+M_{\rm{oe}} &amp; 1 +4m\\
+\end{pmatrix} \equiv \gamma_5 \begin{pmatrix} 
+M_{\rm{ee}}  &amp; M_{\rm{eo}} \\
+M_{\rm{oe}} &amp; M_{\rm{oo}}\\
+\end{pmatrix}"/></p>
+</div><p>Note that <img class="math" src="../_images/math/2c275d9e098c8038dc824162b5fea87393a24970.png" alt="M_{\rm{ee}}^{-1}"/> can be computed:</p>
+<div class="math">
+<p><img src="../_images/math/0679fe3fd2e48b642abdc5811965e31a165dfb18.png" alt="M_{\rm{ee}}^{-1} = \frac{1}{1+4m}"/></p>
+</div><p>Now we can conveniently rewrite</p>
+<div class="math">
+<p><img src="../_images/math/f24cd92ec2d9d3be31c966ef21bcb3e088dcc413.png" alt="Q_{\pm} = \begin{pmatrix} 
+\gamma_5 M_{\rm{ee}}  &amp; 0 \\ \gamma_5 M_{\rm{oe}} &amp; 1\\
+\end{pmatrix} \begin{pmatrix} 
+1  &amp;  \left(M_{\rm{ee}}\right)^{-1} M_{\rm{eo}} \\0 &amp; \gamma_5
+  \left(M^{\rm{oo}} - \frac{1}{4+m}M_{\rm{oe}} M_{\rm{eo}} \right)\\
+\end{pmatrix}"/></p>
+</div><p>From the last equation we deduce that:</p>
+<div class="math">
+<p><img src="../_images/math/3ee4b5e66b798da477f78f144941d408fe92c1f8.png" alt="\det{Q} = \det{\gamma_5 M^{\rm{ee}}} \det{\gamma_5  \left(M_{\rm{oo}}
+    -\frac{1}{4+m} M_{\rm{oe}}     M_{\rm{eo}} \right)} \propto
+\det{\gamma_5  \left((4+m) M_{\rm{oo}}
+    - M_{\rm{oe}}     M_{\rm{eo}} \right)}"/></p>
+</div><p>Note that the first determinant is a constant that could be computed.</p>
+<p>In the following we will denote</p>
+<div class="math">
+<p><img src="../_images/math/0f6fc562077b86142460ff0c7813ab16551f9052.png" alt="\hat{Q}_{m,eo} \equiv \gamma_5
+  \left((4+m)^2 - M_{\rm{oe}}  M_{\rm{eo}} \right)"/></p>
+</div><p>where <img class="math" src="../_images/math/344a3a2f3ba045646fa0afa66f6bec7cbc34eb9d.png" alt="\hat{Q}_{m,eo}"/> is defined on the odd sites of the lattice.</p>
+<p>Now defining</p>
+<div class="math">
+<p><img src="../_images/math/cbc58005d79b28d6c4232c88efd446a972438283.png" alt="W_{+} = D_{m+\delta m} ,\quad W_{-} =
+W_{+}^\dagger=   D^{\dagger}_{m+\delta m}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/ba7b9be9253bb25b59ddccbd055e654d66144f6e.png" alt="\begin{aligned}
+\det{ Q_m (W_-  W_+)^{-1}  Q_m} \propto \det{ Q_{m,eo} (\hat{D}_{m+\delta_m}
+  \hat{D}_{m+\delta_m,eo}  )^{-1}  Q_{m,eo}}\end{aligned}"/></p>
+</div><p>We thus have</p>
+<div class="math">
+<p><img src="../_images/math/34c1d58828bd1acc4e928dff9aa26cfd25591f94.png" alt="\begin{aligned}
+\mathcal{H}_{F_1} = \phi_1^\dagger \left( \hat{D}_{m+\delta m,eo} \hat{D}_{m+\delta_m,eo} \right)^{-1}\phi_1\end{aligned}"/></p>
+</div><p>and</p>
+<div class="math">
+<p><img src="../_images/math/a00b7825ee345996514bee9859b270cf1e75a953.png" alt="\begin{aligned}
+\mathcal{H}_{F_2} = \phi_2^\dagger Q_{m,eo}^{-1} \hat{D}_{m+\delta_m,eo} \hat{D}_{m+\delta_m,eo} Q_{m,eo}^{-1}\phi_2 \end{aligned}"/></p>
+</div><p>Note that as in the non-even-odd case this can be rewritten as:</p>
+<div class="math">
+<p><img src="../_images/math/cfa86017a8a06f0dd44a89073501f645389ded12.png" alt="\begin{aligned}
+\mathcal{H}_{F_2} =\phi_2^{\dagger} (\gamma_5 + \delta_m (1 +
+\delta_m (4+m) )Q_{m,eo}^{-1}   (\gamma_5 + \delta_m (1 +
+\delta_m (4+m) )Q_{m,eo}^{-1}\phi_2 \end{aligned}"/></p>
+</div></section>
+</section>
+<section id="twisted-mass-shift">
+<h3>Twisted Mass Shift<a class="headerlink" href="#twisted-mass-shift" title="Permalink to this headline"></a></h3>
+<p>Assume</p>
+<div class="math">
+<p><img src="../_images/math/efe9bdbebe21985d31b0169110b44c6ac6010d12.png" alt="W_{+} = \left( Q_m + i \mu_2  \right) ,\quad W_{-} = W_+^{\dagger}=\left( Q_m - i \mu_2 \right)"/></p>
+</div><p>Note that <img class="math" src="../_images/math/87d858fe30017852cc1a416500179f712476cfb8.png" alt="W_- W_+ = Q_m ^2 + \mu_2^2"/> and that <img class="math" src="../_images/math/ef0cc0b5131e320994263a7c4908a02434e9b48c.png" alt="W_\pm^{\dagger}=
+W_{\mp}"/>.</p>
+<p>Instead of dealing with <img class="math" src="../_images/math/32a396d7d5eafaa970a0e023f4a7a588cda80da9.png" alt="\det{ Q_m (W_- 
+ W_+)^{-1} Q_m }"/>, we consider the slightly more general case where the
+determinant to evaluate is</p>
+<div class="math">
+<p><img src="../_images/math/4035bc4250250a5c336f3aedabc385fa0d3ba2b7.png" alt="\begin{aligned}
+\det{ (Q_m + i \mu_1) (W_- 
+ W_+)^{-1}  (Q_m - i \mu_1)}\propto&amp;\int D\phi_2 D\phi_2^\dagger e^{-\phi^\dagger_2 \Big(Q_+ (W_- 
+ W_+)^{-1}  Q_- \Big)^{-1}\phi_2 }\big] \\
+=&amp; \int D\phi_2 D\phi_2^\dagger e^{-\phi_2Q_-^{-1} W_- W_+
+  Q_+^{-1}  \phi_2 }\end{aligned}"/></p>
+</div><p>The following formulae can then be used for the case of several hasenbusch masses. The case of the determinant <img class="math" src="../_images/math/af57c82ca7ae35e93e4bfc638ae595a8fb59c6e9.png" alt="\det{ Q_m (W_- W_+)^{-1} Q_m }"/> can be recovered by setting <img class="math" src="../_images/math/5c45c064a7589a02b4c509a10f953cc8eb0c65aa.png" alt="\mu_1=0"/> in the following equations.</p>
+<p>We have:</p>
+<div class="math">
+<p><img src="../_images/math/93698fe73723e8ea8b46b63e8bf534b0ceb1443b.png" alt="\begin{aligned}
+(Q_m&amp;-i\mu_1)^{-1} W_- W_+ (Q_m+i\mu_1)^{-1} \\
+ =&amp; ( 1 - i(\mu_2 - \mu_1)
+(Q_m - i \mu_1)^{-1}) (1+ i(\mu_2 - \mu_1)(Q_m - i \mu_1)^{-1}) \\
+=&amp; 1+ i(\mu_2 - \mu_1) (Q_m+i\mu_1)^{-1}  - i(\mu_2 - \mu_1)
+(Q_m - i \mu_1)^{-1} + (\mu_2- \mu_1)^2\big((Q_m + i \mu_1)(Q_m - i
+\mu_1)\big)^{-1} \\
+=&amp; 1+ (\mu_2- \mu_1)^2\big(Q_m^2 + \mu_1^2\big)^{-1}+ i(\mu_2 -
+\mu_1) (Q_m^2 +\mu_1^2)^{-1}  (Q_m-i\mu_1) \\
+\end{aligned}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/d493f11c68b7101f25eeb284635ab72523090a70.png" alt="\begin{aligned}
+\qquad -i(\mu_2 &amp;- \mu_1) (Q_m^2 +  \mu_1^2)^{-1} (Q_m+i\mu_1) \\
+=&amp; 1 +(\mu_2- \mu_1) \big(Q_m^2 + \mu_1^2\big)^{-1} \big( (\mu_2- \mu_1)
++ 2 \mu_1 \big) \\
+=&amp; 1 +(\mu_2^2- \mu_1^2) \big(Q_m^2 + \mu_1^2\big)^{-1} \end{aligned}"/></p>
+</div><p>The force can then be computed: (global sign and factor <img class="math" src="../_images/math/5aa339d4daf45a810dda332e3c80a0698e526e04.png" alt="i"/> have to be
+checked)</p>
+<div class="math">
+<p><img src="../_images/math/0e8eba36417968806dca81e9dece73965dc24605.png" alt="\begin{aligned}
+\dot{\mathcal{H}_{F_2}} =&amp; i(\mu_2-\mu_1) \phi_2^{\dagger} \Big[ ( 1 - i(\mu_2 - \mu_1) 
+  (Q_m - i \mu_1)^{-1}) \dot{(Q_m+i\mu_1)^{-1}} 
+ - \dot{(Q_m - i    \mu_1)^{-1}} (1+ i (\mu_2 - \mu_1) (Q_m+i \mu_1)^{-1})\Big] \phi_2 \\
+=&amp;  i(\mu_2-\mu_1) \phi_2^{\dagger} \left[  ( 1 - i(\mu_2 - \mu_1) 
+  (Q_m - i\mu_1)^{-1}) ( Q_m+i\mu_1)^{-1} \dot{Q_m} (Q_m+i\mu_1)^{-1}
+\right] \phi_2 +\rm{h.c}\end{aligned}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/24dad50a3866beb4cf5a724c05f61b7c2ab2b95c.png" alt="X\equiv (Q_m+i\mu_1)^{-1}\phi_2,\quad\textrm{and}\quad Y^{\dagger}=i\phi_2^\dagger
+(1 -i (\mu_2-\mu_1) (Q-i\mu_1)^{-1}) (Q_m+i\mu_1)^{-1}"/></p>
+</div><p>From which we deduce</p>
+<div class="math">
+<p><img src="../_images/math/7f1e1b9d2574d042b1ce7fb4e7125004d64ac365.png" alt="\begin{aligned}
+Y =&amp;   -i (Q_m - i \mu_1)^{-1}(1 +  i(\mu_2-\mu_1)(Q+i\mu_1)^{-1})
+\phi_2 \\ =&amp;-i (Q_m - i \mu_1)^{-1}  ( \phi_2  + i(\mu_2-\mu_1)  X)  \end{aligned}"/></p>
+</div><p>Note that in the particular case where <img class="math" src="../_images/math/5c45c064a7589a02b4c509a10f953cc8eb0c65aa.png" alt="\mu_1=0"/>,</p>
+<div class="math">
+<p><img src="../_images/math/a08d86c7eec752643fc815143318fc2d52d6045a.png" alt="Q_m^{-1} W_- W_+ Q_m^{-1} = ( 1 - i\mu_2Q_m^{-1}) (1+ i\mu_2Q_m^{-1}))
+= 1 + \mu_2^2 Q_m^{-2}"/></p>
+</div><p>Which leads to</p>
+<div class="math">
+<p><img src="../_images/math/fd1e8ae73735dd38e7a8611db490345749f419c6.png" alt="\begin{aligned}
+\dot{\mathcal{H}_{F_2}}  &amp;=&amp; \mu_2^2 \phi_2^{\dagger} \dot{Q_m^{-2}} \phi_2\end{aligned}"/></p>
+</div><p>Note also that the forces are explicitly proportional to <img class="math" src="../_images/math/6b3576da93bb27ec9741dda8bfc03f5a981e7376.png" alt="\mu_2^2"/>.</p>
+<section id="id2">
+<h4>Even-Odd Preconditioning<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h4>
+<p>Note that we have : <img class="math" src="../_images/math/1ecbda6541b0ee51ef1610aee26f5b44ea03029b.png" alt="\widetilde{\mu} \equiv 2 \kappa \mu"/>.</p>
+<div class="math">
+<p><img src="../_images/math/b77e8818a3413180ea8505cabd8446c5505ad002.png" alt="Q_{\pm}= \gamma_5 \begin{pmatrix} 
+1 \pm i \widetilde{\mu} \gamma_5 &amp; M_{\rm{eo}} \\
+M_{\rm{oe}} &amp; 1 \pm i \widetilde{\mu} \gamma_5\\
+\end{pmatrix} \equiv \gamma_5 \begin{pmatrix} 
+M^{\pm}_{\rm{ee}}  &amp; M_{\rm{eo}} \\
+M_{\rm{oe}} &amp; M^{\pm}_{\rm{oo}}\\
+\end{pmatrix}"/></p>
+</div><p>Note that <img class="math" src="../_images/math/2c275d9e098c8038dc824162b5fea87393a24970.png" alt="M_{\rm{ee}}^{-1}"/> can be computed:</p>
+<div class="math">
+<p><img src="../_images/math/0322324a2ef496e711aa7413b253139ad3c0fc0e.png" alt="M_{\rm{ee}}^{-1} = ( 1 \pm i\widetilde{\mu} \gamma_5)^{-1} = \frac{1\mp
+i \widetilde{\mu}\gamma_5 }{ 1 + \widetilde{\mu}^2}"/></p>
+</div><p>Now we can conveniently rewrite</p>
+<div class="math">
+<p><img src="../_images/math/b21c6c1be07ef9238efad11d5cb23981eaac7c05.png" alt="Q_{\pm} =  \begin{pmatrix} \gamma_5 M^{\pm}_{\rm{ee}}  &amp; 0 \\ \gamma_5 M_{\rm{oe}} &amp; 1\\
+\end{pmatrix} \begin{pmatrix} 
+1  &amp;  \left(M^{\pm}_{\rm{ee}}\right)^{-1} M_{\rm{eo}} \\0 &amp; \gamma_5
+  \left(M^{\pm}_{\rm{oo}} - M_{\rm{oe}}
+    \left(M^{\pm}_{\rm{ee}}\right)^{-1} M_{\rm{eo}} \right)\\
+\end{pmatrix}"/></p>
+</div><p>From the last equation we deduce that:</p>
+<div class="math">
+<p><img src="../_images/math/cb46ff26469d00438a0991beb43abe6dda23478d.png" alt="\det{Q_{\pm}} = \det{\gamma_5 M^{\pm}_{\rm{ee}} } \det{\gamma_5
+  \left(M^{\pm}_{\rm{oo}} - M_{\rm{oe}}
+    \left(M^{\pm}_{\rm{ee}}\right)^{-1} M_{\rm{eo}} \right)}"/></p>
+</div><p>Note that the first determinant is a constant that could be computed.</p>
+<p>In the following we will denote</p>
+<div class="math">
+<p><img src="../_images/math/40d1cd74ceae0a11eef17778a35652591aee4233.png" alt="\hat{Q}_{\pm} \equiv \gamma_5
+  \left(M^{\pm}_{\rm{oo}} - M_{\rm{oe}}
+    \left(M^{\pm}_{\rm{ee}}\right)^{-1} M_{\rm{eo}} \right)"/></p>
+</div><p>where <img class="math" src="../_images/math/b40ae0ab744b64b6cf1884253765abd8aed5f6ff.png" alt="\hat{Q}_{\pm}"/> is defined on the odd sites of the lattice.</p>
+<p>We thus have</p>
+<div class="math">
+<p><img src="../_images/math/2617b0911de903282dc15508f2290d9932ca1839.png" alt="\det{Q_+ Q_-} = \det{Q_+}\det{Q_{-}}\propto\det{\hat{Q}_+ \hat{Q}_-}"/></p>
+</div><p>and we thus get the following Hamiltonian:</p>
+<div class="math">
+<p><img src="../_images/math/3bea5218e806e575a55f3d901a26a593742a80da.png" alt="\mathcal{H}_{F_1} = \phi_1^{\dagger} \left(\hat{Q}_+
+    \hat{Q}_-\right)^{-1} \phi_1"/></p>
+</div><p>The corresponding force then reads :</p>
+<div class="math">
+<p><img src="../_images/math/1bd30a3c5f09e12ea610685566cb480ea602ea57.png" alt="\dot{\mathcal{H}_{F_1}} = - \phi_{0}^\dagger\left(    \hat{Q}_-^{-1}
+  \hat{Q}_+^{-1}  \dot{\hat{Q}}_+  \hat{Q}_+^{-1}  + \hat{Q}_{-}^{-1}
+  \dot{\hat{Q}}_{-}  \hat{Q}_-^{-1}   \hat{Q}_+^{-1}    \right)    \phi_0"/></p>
+</div><p>Now using that <img class="math" src="../_images/math/d3ce8e6e85770b2639d61b08bf25e426044eee50.png" alt="Q_{\pm} ^{\dagger} = Q_{\mp}"/>, the previous equation can
+be written:</p>
+<div class="math">
+<p><img src="../_images/math/df870bca7d76c37e8ab1f5e345ccdbcb595d2ef4.png" alt="\dot{\mathcal{H}_{F_1}} = - \left(Y_{\rm{o}}^{\dagger} \dot{\hat{Q}}_{+} X_{\rm{o}}  + \rm{h.c}\right)"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/0a22790c3c0bfb40cef078aa403ea4b8a8dde14b.png" alt="X_{\rm{o}}=\hat{Q}_+^{-1}\phi_0,\quad. Y_{\rm{o}}= \left(\hat{Q}_+\hat{Q}_-\right)^{-1} \phi_0,"/></p>
+</div><p>where we have used that</p>
+<div class="math">
+<p><img src="../_images/math/830d8b3314a8e6bb5b47abd2a276af94577c8cbb.png" alt="\hat{Q}_\pm^{\dagger} = \hat{Q}_\mp."/></p>
+</div><p>Furthermore we have</p>
+<div class="math">
+<p><img src="../_images/math/8c34b546b52815faa8383956c1b29aa7b8feae6d.png" alt="\dot{\hat{Q}}_{\pm} =  \gamma_5 \left( -  \dot{M}_{\rm{oe}}
+  \left(M^{\pm}_{\rm{ee}}\right)^{-1} M_{\rm{eo}} -  M_{\rm{oe}}
+    \left(M^{\pm}_{\rm{ee}}\right)^{-1} \dot{M}_{\rm{eo}}\right)"/></p>
+</div><p>Now noting that</p>
+<div class="math">
+<p><img src="../_images/math/2b44642075344c0b917f66ef1cd439954c5a206f.png" alt="\dot{Q}_{\pm} =  \gamma_5 \begin{pmatrix} 
+ 0  &amp; \dot{M}_{\rm{eo}} \\
+\dot{M}_{\rm{oe}} &amp; 0\\
+\end{pmatrix}"/></p>
+</div><p>We have</p>
+<div class="math">
+<p><img src="../_images/math/e74a0fef8c9281e046cb08beb0d2d6a53be8ed87.png" alt="\begin{aligned}
+  Y ^{\dagger} \dot{Q} X  =&amp; \begin{pmatrix} A^\dagger &amp;
+    B^\dagger \end{pmatrix} \gamma_5 \begin{pmatrix} 
+ 0  &amp; \dot{M}_{\rm{eo}} \\
+\dot{M}_{\rm{oe}} &amp; 0\\
+\end{pmatrix}  \begin{pmatrix} C \\  D \\\end{pmatrix} \\
+=&amp;  A^\dagger \gamma_5 \dot{M}_{\rm{oe}}  C + B^\dagger \gamma_5 \dot{M}_{\rm{eo}} D\end{aligned}"/></p>
+</div><p>Now chosing <img class="math" src="../_images/math/d99f6a856bc1cf4db8485112b8f23b5064b390e9.png" alt="A^\dagger= Y^\dagger_0"/>,
+<img class="math" src="../_images/math/4e7061fafe0366beadca0f23c354d0362271943a.png" alt="C=\left(M^{+}_{\rm{ee}}\right)^{-1} M_{\rm{eo}} X_0"/>, <img class="math" src="../_images/math/4130ae2bc6cd8d13ca0c4e595deab050fc89556e.png" alt="B^\dagger=Y_0^\dagger \gamma_5 M_{\rm{oe}}\left(M^{+}_{\rm{ee}}\right)^{-1} \gamma_5"/>, and <img class="math" src="../_images/math/147578cd7173007c2f0c64c76dc1c2681831aed8.png" alt="D= X_0"/> allows to
+write:</p>
+<div class="math">
+<p><img src="../_images/math/f3174a687d0dbe269ec93baa2e90a59902531845.png" alt="\dot{\mathcal{H}_{F_1}} =   Y^\dagger \dot{Q} X + \rm{h.c}"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/4dd35e2dd5c48d005ae7336458db7c6ccea451c8.png" alt="X=\begin{pmatrix}\left(M^{+}_{\rm{ee}}\right)^{-1} M_{\rm{eo}} X_0
+  \\ X_0 \end{pmatrix},\quad \rm{and} \quad Y=\begin{pmatrix}
+   \left(M^{-}_{\rm{ee}}\right)^{-1} M_{\rm{eo}} Y_0
+  \\ Y_0 \end{pmatrix}"/></p>
+</div><p>We have used that <img class="math" src="../_images/math/6516c45fcad3f2ddeab50015b05650d6d46d4e98.png" alt="\dot{Q}_+= \dot{Q}_{-}"/> and</p>
+<div class="math">
+<p><img src="../_images/math/10d135e3a0a5bb571ca8bee736c2816a1b5b6093.png" alt="M_{\rm{eo}}^{\dagger}=\gamma_5 M_{\rm{oe}} \gamma_5"/></p>
+</div><section id="determinant-ratio">
+<h5>Determinant Ratio<a class="headerlink" href="#determinant-ratio" title="Permalink to this headline"></a></h5>
+<p>We use that <img class="math" src="../_images/math/41a6a57609c9fa06b679a0ad3e09e7b64aa72b6a.png" alt="\det{ Q_+ (W_- 
+ W_+)^{-1} Q_-} = \det{W_+^{-1} Q_+ Q_- W_-^{-1}} \propto\det{\hat{W}_+^{-1} \hat{Q}_+ \hat{Q}_- \hat{W}_-^{-1}}"/></p>
+<p>We thus have to compute</p>
+<div class="math">
+<p><img src="../_images/math/e7bad565e7384f7329cd4bb46825cbc6c57e8be6.png" alt="\begin{aligned}
+\dot{\mathcal{H}_{F_2}}  =&amp; \phi_2^\dagger\big[ \delta \hat{W}_-
+(\hat{Q}_+ \hat{Q}_-)^{-1} \hat{W}_+  +  \hat{W}_-
+(\hat{Q}_+ \hat{Q}_-)^{-1} \delta \hat{W}_+ \\
++&amp;  \hat{W}_- \delta \hat{Q}_-^{-1} \hat{Q}_+^{-1} \hat{W}_+ +
+\hat{W}_- \hat{Q}_-^{-1} \delta \hat{Q}_+^{-1} \hat{W}_+   \big] \phi_2 \\
+=&amp; \phi_2^\dagger\big[ \dot{\hat{W}}_-
+(\hat{Q}_+ \hat{Q}_-)^{-1} \hat{W}_+  +  \hat{W}_-
+(\hat{Q}_+ \hat{Q}_-)^{-1} \delta \hat{W}_+ \\
+-&amp;  \hat{W}_- \hat{Q}_-^{-1} \dot{\hat{Q}}_- \hat{Q}_-^{-1} \hat{Q}_+^{-1} \hat{W}_+ -
+\hat{W}_- \hat{Q}_-^{-1} \hat{Q}_+^{-1} \dot{\hat{Q}}_+ \hat{Q}_+^{-1} \hat{W}_+   \big] \phi_2 \\\end{aligned}"/></p>
+</div><p>Now we introduce</p>
+<div class="math">
+<p><img src="../_images/math/0c30e424804f78050524f37af215fa6ef8d7ecf9.png" alt="X_W =  (\hat{Q}_+ \hat{Q}_-)^{-1} \hat{W}_+ \phi_2,  Y_W =
+\hat{Q}_+^{-1} \hat{W}_+\phi_2 = \hat{Q}_- X_W"/></p>
+</div><p>such that</p>
+<div class="math">
+<p><img src="../_images/math/e2eccfafcadd2dc56203d497ceadb98918b3ed2f.png" alt="\begin{aligned}
+\dot{\mathcal{H}_{F_2}} &amp;=&amp; \phi_2^\dagger  \dot{\hat{W}}_- X_W +
+X_W^\dagger  \delta \hat{W}_+ \phi_2 \\
+&amp;-&amp; Y_W^\dagger \dot{\hat{Q}}_- X_W - X_W^\dagger   \dot{\hat{Q}}_+  Y_W\end{aligned}"/></p>
+</div><p>Now recalling that</p>
+<div class="math">
+<p><img src="../_images/math/61847e53c85663eb13477217030a61c0ac3a8e1c.png" alt="\begin{aligned}
+\dot{\hat{Q}}_{\pm} =&amp;  -\gamma_5 \left(   \dot{M}_{\rm{oe}}
+  \left(1\pm i\mu_1 \gamma_5\right)^{-1} M_{\rm{eo}}   + M_{\rm{oe}}
+    \left( 1\pm i\mu_1 \gamma_5\right)^{-1} \dot{M}_{\rm{eo}}\right)  \\
+\dot{\hat{W}}_{\pm} =&amp;  -\gamma_5 \left(   \dot{M}_{\rm{oe}}
+  \left(1\pm i\mu_2 \gamma_5\right)^{-1} M_{\rm{eo}} +  M_{\rm{oe}}
+    \left( 1\pm i\mu_2 \gamma_5\right)^{-1} \dot{M}_{\rm{eo}}\right)\end{aligned}"/></p>
+</div><p>Now can write the last expression in terms of <img class="math" src="../_images/math/66a6f102c5ddbea75fee20ad618a181cc58dc15e.png" alt="\dot{Q} \equiv
+\dot{Q}_{\pm}"/>.</p>
+<div class="math">
+<p><img src="../_images/math/e841acda29c07c0e2f2a209aa83a0d3e87d4872c.png" alt="\begin{aligned}
+\dot{\mathcal{H}_{F_2}} =&amp; Y_1^\dagger \dot{Q} X_1 + X_1^\dagger
+\dot{Q} Y_1 - X_2^\dagger \dot{Q} Y_2  - Y_2^\dagger \dot{Q} X_2 \\
+=&amp; 2~ \rm{Re}\Big[ Y_1^\dagger \dot{Q} X_1 - Y_2^\dagger \dot{Q}
+X_2 \Big],\end{aligned}"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/eb949532d1f4911fd1af375f32cb09a1b9af839f.png" alt="\begin{aligned}
+Y_1 =&amp; \begin{pmatrix}  (1+i\mu_1\gamma_5)^{-1} M_{\rm{eo}} Y_W \\
+  Y_W \end{pmatrix},\quad Y_2  =  \begin{pmatrix}  (1+i\mu_2\gamma_5)^{-1} M_{\rm{eo}} \phi_2 \\
+  \phi_2 \end{pmatrix},\\
+X_{1,2} =&amp;  \begin{pmatrix}  (1-i\mu_{1,2}\gamma_5)^{-1} M_{\rm{eo}} X_W \\
+  X_W \end{pmatrix}, \dot{Q} \equiv  \dot{Q}_{\pm} =  \gamma_5 \begin{pmatrix} 
+ 0  &amp; \dot{M}_{\rm{eo}} \\
+\dot{M}_{\rm{oe}} &amp; 0\\
+\end{pmatrix}\end{aligned}"/></p>
+</div></section>
+<section id="twisted-wilson-dirac-operator">
+<h5>Twisted Wilson-Dirac Operator<a class="headerlink" href="#twisted-wilson-dirac-operator" title="Permalink to this headline"></a></h5>
+<p>Instead of applying the eo preconditionning to the twisted mass operator
+we can use the wilson dirac eo operator and do a different splitting.</p>
+<p>We define:</p>
+<div class="math">
+<p><img src="../_images/math/fb6c00838e292e0a3e887a28ea7e50d62401d2ed.png" alt="Q_{\rm{eo}} \equiv \gamma_5 \big( (4+m)^2 - D_{eo} D_{oe}\big)"/></p>
+</div><p>Now we split the determinant as follows:</p>
+<div class="math">
+<p><img src="../_images/math/e3bb41622b5302f45bbb15fc63e69f04cf497509.png" alt="\det{ Q_{\rm{eo}} ^2 }  = \det{W_- W_+} \det{\frac{  Q_{\rm{eo}} ^2
+  }{W_- W_+}}"/></p>
+</div><p>And we choose</p>
+<div class="math">
+<p><img src="../_images/math/eb4decb6374ad095d27207f982750a20f5302174.png" alt="W_{\pm} = Q_{\rm{eo}} \pm i \mu"/></p>
+</div><p>The corresponding Hamiltonian read:</p>
+<div class="math">
+<p><img src="../_images/math/bd26965ccadd4485a379a1d99c60e1497eab354f.png" alt="\mathcal{H}_{F_1} = \phi_1^\dagger ( W_- W_+ )^{-1} \phi_1,\quad,
+\mathcal{H}_{F_2} = \phi_2^\dagger Q_{\rm{eo}}^{-1} W_- W_+ Q_{\rm{eo}}^{-1} \phi_2"/></p>
+</div><p>Since the operator are now very similar to the non even-odd case, we can reuse
+some formulae. In particular, we can rewrite the Hamiltonian as follows:</p>
+<div class="math">
+<p><img src="../_images/math/8f23d21802a0991a9babd50b6a5dfd879cc46116.png" alt="\mathcal{H}_{F_1} =  \phi_1^\dagger (Q_{\rm{eo}}  + \mu^2  )^{-1} \phi_1,\quad,
+\mathcal{H}_{F_2} = \phi_2^\dagger \big( 1  + \mu^2 Q_{\rm{eo}}^{-1}\big)  \phi_2"/></p>
+</div><p>From which we have the following forces:</p>
+<div class="math">
+<p><img src="../_images/math/e54b2e9400ddcef66251eca448c448ad1d6fa831.png" alt="\begin{aligned}
+\dot{\mathcal{H}}_{F_1} =&amp;   \phi_1^\dagger  W_+^{-1} \delta
+W_-^{-1}\phi_1 + \rm{h.c} \\
+=&amp;  \phi_1^\dagger  W_+^{-1}  W_-^{-1} \dot{Q}_{\rm{eo}} W_-^{-1} \phi_1+ \rm{h.c}\end{aligned}"/></p>
+</div><p>Now we want to rewrite the last equation as a function of</p>
+<div class="math">
+<p><img src="../_images/math/311cf182ba192a72b9e1b9afc18e9b8d1d6b7b71.png" alt="\dot{Q} = \gamma_5  \begin{pmatrix}  0 &amp; \dot{D}_{\rm{eo}} \\
+  \dot{D}_{\rm{oe}} &amp; 0  \end{pmatrix}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/1a41b250a67ab32bddcde90fcc1332c69c423bdc.png" alt="X_{\rm{o}}=W_+^{-1}\phi_1,\quad. Y_{\rm{o}}= \left(W_+
+    W_-\right)^{-1} \phi_1,"/></p>
+</div><p>where we have used that</p>
+<div class="math">
+<p><img src="../_images/math/b91f6f05a794937d666d648f19c3cc5669f2056e.png" alt="W_\pm^{\dagger} = W_\mp."/></p>
+</div><p>Furthermore we have</p>
+<div class="math">
+<p><img src="../_images/math/78b4120313985538c515f2f6cea52823f28ed332.png" alt="\dot{Q}_{\rm{eo}} =  -\gamma_5 \left(  \dot{M}_{\rm{oe}}
+   M_{\rm{eo}} +  M_{\rm{oe}} \dot{M}_{\rm{eo}}\right)"/></p>
+</div><p>noting that</p>
+<div class="math">
+<p><img src="../_images/math/04508115f6950628a804f5652539c755645affcc.png" alt="\begin{aligned}
+  Y ^{\dagger} \dot{Q} X  &amp;=&amp; \begin{pmatrix} A^\dagger &amp;
+    B^\dagger \end{pmatrix} \gamma_5 \begin{pmatrix} 
+ 0  &amp; \dot{M}_{\rm{eo}} \\
+\dot{M}_{\rm{oe}} &amp; 0\\
+\end{pmatrix}  \begin{pmatrix} C \\  D \end{pmatrix} \\
+&amp;=&amp;  A^\dagger \gamma_5 \dot{M}_{\rm{oe}}  C + B^\dagger \gamma_5 \dot{M}_{\rm{eo}} D\end{aligned}"/></p>
+</div><p>and chosing <img class="math" src="../_images/math/d99f6a856bc1cf4db8485112b8f23b5064b390e9.png" alt="A^\dagger= Y^\dagger_0"/>, <img class="math" src="../_images/math/4281196e2c19ecfca9a9177fbc4ba969527ced3a.png" alt="C =  M_{\rm{eo}} X_0"/>,
+<img class="math" src="../_images/math/a8cceca16b74383930ebd1cbb83f74f764f5d749.png" alt="B^\dagger=
+ Y_0^\dagger \gamma_5 M_{\rm{oe}}"/>, and <img class="math" src="../_images/math/147578cd7173007c2f0c64c76dc1c2681831aed8.png" alt="D= X_0"/> allows us to write:</p>
+<div class="math">
+<p><img src="../_images/math/9956f8f06df22f11d4fc5ba86bf6476f5c385a8a.png" alt="\dot{\mathcal{H}_{F_1}} = -Y^\dagger \dot{Q} X + \rm{h.c}"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/2170c434b8b2d8f91d9717e8233b015e0e2955e8.png" alt="X=\begin{pmatrix} M_{\rm{eo}} X_0 \\ X_0 \end{pmatrix},\quad \rm{and} \quad Y=\begin{pmatrix} M_{\rm{eo}} Y_0 \\ Y_0 \end{pmatrix}"/></p>
+</div><p>We have used that <img class="math" src="../_images/math/d3ee2103c192881d4c9ebbf51f82e3fe1b92eb60.png" alt="M_{\rm{eo}}^{\dagger}=\gamma_5 M_{\rm{oe}} \gamma_5"/>.</p>
+<p>Similarly for the second Hamiltonian we get:</p>
+<div class="math">
+<p><img src="../_images/math/ffe833a03525308e493004f967142669ee899a0b.png" alt="\begin{aligned} \dot{\mathcal{H}}_{F_2} = \mu_2\phi_2^\dagger  \dot{Q_{\rm{eo}}^{-1}}  \phi_2\end{aligned}"/></p>
+</div><p>which is exactly the force that appears in case of a pure Wilson-Dirac even-ddd preconditioned operator up to a multiplicative factor.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="clover-term">
+<h2>Clover Term<a class="headerlink" href="#clover-term" title="Permalink to this headline"></a></h2>
+<p>The clover term can be written as</p>
+<div class="math" id="equation-eq-clover">
+<p><span class="eqno">(19)<a class="headerlink" href="#equation-eq-clover" title="Permalink to this equation"></a></span><img src="../_images/math/0e62790b53860d60b45d83446454858f96b19b3f.png" alt="D_{sw} = -\frac{c_{sw}}{4}\sum_x\sum_{\mu,\nu}\sigma_{\mu\nu}F_{\mu\nu}(x),"/></p>
+</div><p>with the (unconventional) definition of <img class="math" src="../_images/math/b9de2ed5abfb92302717d8775c70f577a48eab48.png" alt="\sigma_{\mu\nu}"/> given by</p>
+<div class="math">
+<p><img src="../_images/math/996f7ffff53e4d8cf73ca4027491755f9e3cb3aa.png" alt="\sigma_{\mu\nu} = \frac{1}{2}[\gamma_\mu,\gamma_\nu]."/></p>
+</div><p>With the Euclidean definition of the gamma matrices <img class="math" src="../_images/math/b9de2ed5abfb92302717d8775c70f577a48eab48.png" alt="\sigma_{\mu\nu}"/> satisfies</p>
+<div class="math">
+<p><img src="../_images/math/570680685c43f23c95aa3108ba7ca2a3d6a4a163.png" alt="\sigma_{\mu\nu}^\dagger = \sigma_{\nu\mu} = -\sigma_{\mu\nu} = \sigma_{\mu\nu}^{-1}."/></p>
+</div><p>For the Hermitian Dirac operator <img class="math" src="../_images/math/6684823965ff97be431146ba1f27fd0499ce4e90.png" alt="\gamma^5D"/> we can make the following replacement without affecting any of the calculations presented here.</p>
+<div class="math">
+<p><img src="../_images/math/244652bf6387168388642ef9b9368872ed2b5646.png" alt="\sigma_{\mu\nu} \to \bar{\sigma}_{\mu\nu} = \gamma_5\sigma_{\mu\nu}."/></p>
+</div><p>The field strength tensor is defined as</p>
+<div class="math">
+<p><img src="../_images/math/ba9dc996d3e674991682d880c1f92154b305e338.png" alt="F_{\mu\nu}(x) = \frac{1}{8}\left\{Q_{\mu\nu}(x) - Q_{\mu\nu}^\dagger(x)\right\}"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/0d0d4248c756ab6da5dc9948b9ece559bb52a02d.png" alt="\begin{aligned}
+ Q_{\mu\nu}(x)
+ &amp;= U_\mu(x)U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x) \\
+ &amp;+ U_\nu(x)U_\mu^\dagger(x-\hat{\mu}+\hat{\nu})U_\nu^\dagger(x-\hat{\mu})U_\mu(x-\hat{\mu}) \\
+ &amp;+ U_\mu^\dagger(x-\hat{\mu})U_\nu^\dagger(x-\hat{\mu}-\hat{\nu})U_\mu(x-\hat{\mu}-\hat{\nu})U_\nu(x-\hat{\nu}) \\
+ &amp;+ U_\nu^\dagger(x-\hat{\nu})U_\mu(x-\hat{\nu})U_\nu(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x)
+\end{aligned}"/></p>
+</div><p>Because <img class="math" src="../_images/math/1cf32498fd4f2d276ce7bd65792b6f1349ccacb2.png" alt="Q_{\mu\nu}^\dagger=Q_{\nu\mu}"/> we have <img class="math" src="../_images/math/6f28ce5284fdae39a2fc3bf95984e4b3c9f9e5c4.png" alt="F_{\mu\nu}=-F_{\nu\mu}"/>.
+For this reason we can change the sum over <img class="math" src="../_images/math/74defe00d20e359abe04fa10537b0eb7929ef2c5.png" alt="\mu,\nu"/> in Eq. <a class="reference internal" href="#equation-eq-clover">(19)</a> to a sum over <img class="math" src="../_images/math/a86d372e1edbc2811c1362ad696902fd6bd3b45d.png" alt="\mu&lt;\nu"/> and a factor of two.</p>
+<div class="math">
+<p><img src="../_images/math/591c60d83aa8f917c3b54ef0da69c476b84c25b0.png" alt="D_{sw} = -\frac{c_{sw}}{2}\sum_x\sum_{\mu&lt;\nu}\sigma_{\mu\nu}F_{\mu\nu}(x)"/></p>
+</div><p>The quantity <img class="math" src="../_images/math/ca8ed5b71420dbccb951dfdaa110b2da6d7a3c95.png" alt="\sigma_{\mu\nu}F_{\mu\nu}"/> is Hermitian and block diagonal.
+It can be written as</p>
+<div class="math">
+<p><img src="../_images/math/85463ebc2b85717dfb467499720448559bcea2b0.png" alt="\begin{aligned}
+ \sum_{\mu&lt;\nu}\sigma_{\mu\nu}F_{\mu\nu} =
+ \begin{pmatrix}
+ A &amp; B &amp; 0 &amp; 0 \\
+ B^\dagger &amp; -A &amp; 0 &amp; 0 \\
+ 0  &amp; 0 &amp; C &amp; D \\
+ 0 &amp; 0 &amp; D^\dagger &amp; -C
+ \end{pmatrix}
+\end{aligned}"/></p>
+</div><p>with the definitions</p>
+<div class="math">
+<p><img src="../_images/math/378f28e1b4eb7cebdde4be5b0383c51b1cebe468.png" alt="\begin{aligned}
+ A &amp;= -iF_{03}+iF_{12} \\
+ B &amp;= -iF_{01}-F_{02}-F_{13}+iF_{23} \\
+ C &amp;= iF_{03}+iF_{12} \\
+ D &amp;= iF_{01}+F_{02}-F_{13}+iF_{23}
+\end{aligned}"/></p>
+</div><section id="pseudofermion-forces">
+<h3>Pseudofermion Forces<a class="headerlink" href="#pseudofermion-forces" title="Permalink to this headline"></a></h3>
+<p>For the forces we use the following short-hand notation for the derivative with respect to the link variables.</p>
+<div class="math">
+<p><img src="../_images/math/b304944cb1a8a0ef9c7e87440efe7bba9c139003.png" alt="\dot{S} = \partial_{x,\mu}^a S"/></p>
+</div><p>To calculate the pseudofermion forces let us write down the action as</p>
+<div class="math">
+<p><img src="../_images/math/a242e19ec3addeaf08499b632de24f1f10f6d70b.png" alt="S = \phi^\dagger(H^{-2})\phi,"/></p>
+</div><p>where <img class="math" src="../_images/math/c09e8f1b9a961e66e8a9b0f24155a7721f3857dc.png" alt="H=\gamma^5D"/> is the Hermitian Dirac operator.
+When differentiating the action we obtain</p>
+<div class="math" id="equation-eq-dots">
+<p><span class="eqno">(20)<a class="headerlink" href="#equation-eq-dots" title="Permalink to this equation"></a></span><img src="../_images/math/1c9d7348c2e601f7fecbf40852561f6705fd5639.png" alt="\dot{S} = -2\mathrm{Re}~\xi^\dagger\dot{H}\eta,"/></p>
+</div><p>with the definitions</p>
+<div class="math">
+<p><img src="../_images/math/13ea4b1d512becf72b16a57aaf735052d6978300.png" alt="\begin{aligned}
+ \eta &amp;= H^{-2}\phi, \\
+ \xi &amp;= H\eta.
+\end{aligned}"/></p>
+</div><section id="forces">
+<h4>Forces<a class="headerlink" href="#forces" title="Permalink to this headline"></a></h4>
+<p>Here we will only consider the forces from the clover term and not the hopping term.
+The clover part of the Dirac operator is given by</p>
+<div class="math" id="equation-eq-hsw">
+<p><span class="eqno">(21)<a class="headerlink" href="#equation-eq-hsw" title="Permalink to this equation"></a></span><img src="../_images/math/1366c2212db949973bf2acd125afb6bb1b9f02ea.png" alt="H_{sw} = -\frac{c_{sw}}{2}\sum_{\mu&lt;\nu}\bar{\sigma}_{\mu\nu}F_{\mu\nu}(x)"/></p>
+</div><p>When inserting Eq. <a class="reference internal" href="#equation-eq-dots">(28)</a> we obtain</p>
+<div class="math">
+<p><img src="../_images/math/ee478c31f1ebba78c4a281ddd1da2bd1dfb790c1.png" alt="\dot{S} = c_{sw}\sum_{\mu&lt;\nu}\mathrm{Re}(\xi^\dagger\bar{\sigma}_{\mu\nu}\dot{F}_{\mu\nu}\eta)."/></p>
+</div><p>From the definition of <img class="math" src="../_images/math/4dddc19e5bd0a297d1e0ee4e24303cf6f7ce4b1a.png" alt="F_{\mu\nu}"/> it follows that</p>
+<div class="math">
+<p><img src="../_images/math/b606018d4b626d3d484f50fc7bb7b19fe9ff9440.png" alt="\begin{aligned}
+ \dot{S} &amp;= \frac{1}{8}c_{sw}\sum_{\mu&lt;\nu}\mathrm{Re}(\xi^\dagger\bar{\sigma}_{\mu\nu}\dot{Q}_{\mu\nu}\eta + \xi^\dagger\bar{\sigma}_{\mu\nu}^\dagger\dot{Q}_{\mu\nu}^\dagger\eta), \\
+         &amp;= \frac{1}{8}c_{sw}\sum_{\mu&lt;\nu}\mathrm{Re}(\xi^\dagger\bar{\sigma}_{\mu\nu}\dot{Q}_{\mu\nu}\eta + \eta^\dagger\bar{\sigma}_{\mu\nu}\dot{Q}_{\mu\nu}\xi).
+\end{aligned}"/></p>
+</div><p>This can in be written as</p>
+<div class="math">
+<p><img src="../_images/math/7a418a0e9ed161ee803a7a90d73fc7bee3862b45.png" alt="\dot{S} = \frac{1}{8}c_{sw}\sum_{\mu&lt;\nu} \mathrm{Re}~\mathrm{tr}\left[\dot{Q}_{\mu\nu}\left\{\bar{\sigma}_{\mu\nu}\eta(x)\otimes\xi^\dagger(x) + \bar{\sigma}_{\mu\nu}\xi(x)\otimes\eta^\dagger(x)\right\}\right]"/></p>
+</div><p>In a short hand notation we need to calculate</p>
+<div class="math" id="equation-eq-force">
+<p><span class="eqno">(22)<a class="headerlink" href="#equation-eq-force" title="Permalink to this equation"></a></span><img src="../_images/math/84af680e1fd4629b3e615079d4b97920010a1969.png" alt="\dot{S} = \frac{1}{8}c_{sw}\mathrm{Re}~\mathrm{tr}[\dot{Q}_{\mu\nu}(x)X_{\mu\nu}(x)]"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/814ccfb50fb75cd3f606474524643d34f2fedb81.png" alt="X_{\mu\nu}(x) = \bar{\sigma}_{\mu\nu}\eta(x)\otimes\xi^\dagger(x) + \bar{\sigma}_{\mu\nu}\xi(x)\otimes\eta^\dagger(x)"/></p>
+</div><p>This matrix has the properties <img class="math" src="../_images/math/ebd80c27b9fb112dc73ea0b34ab279730243d355.png" alt="X_{\mu\nu}^\dagger=X_{\nu\mu}=-X_{\mu\nu}"/>.
+The expression for <img class="math" src="../_images/math/4219a43532a5fb0d9a3efca8302a0290dfef6a1c.png" alt="\dot{Q}_{\mu\nu}(x)"/> contains eight different terms (two from each of the four leafs).
+The eight contributions to the force can be written as</p>
+<div class="math">
+<p><img src="../_images/math/1ef01dbcfd9c04f71b7142a9be4c9c1ce7a0df39.png" alt="\begin{aligned}
+ F_1(x) &amp;=
+ \mathrm{Re}~\mathrm{tr}[\dot{U}_\mu(x)U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x)X_{\mu\nu}(x)] \\
+ F_2(x) &amp;=
+ \mathrm{Re}~\mathrm{tr}[\dot{U}_\mu(x)U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})X_{\mu\nu}^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu})] \\
+ F_3(x) &amp;=
+ \mathrm{Re}~\mathrm{tr}[\dot{U}_\mu(x)U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})X_{\mu\nu}^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu})] \\
+ F_4(x) &amp;=
+ \mathrm{Re}~\mathrm{tr}[\dot{U}_\mu(x)X_{\mu\nu}(x+\hat{\mu})U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x)] \\
+ F_5(x) &amp;=
+ \mathrm{Re}~\mathrm{tr}[\dot{U}_\mu(x)X_{\mu\nu}^\dagger(x+\hat{\mu})U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu})] \\
+ F_6(x) &amp;=
+ \mathrm{Re}~\mathrm{tr}[\dot{U}_\mu(x)U_\nu(x+\hat{\mu})X_{\mu\nu}(x+\hat{\mu}+\hat{\nu})U_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x)] \\
+ F_7(x) &amp;=
+ \mathrm{Re}~\mathrm{tr}[\dot{U}_\mu(x)U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})X_{\mu\nu}(x+\hat{\nu})U_\nu^\dagger(x)] \\
+ F_8(x) &amp;=
+ \mathrm{Re}~\mathrm{tr}[\dot{U}_\mu(x)U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu})X_{\mu\nu}^\dagger(x)]
+\end{aligned}"/></p>
+</div><p>where each term should be multiplied by <img class="math" src="../_images/math/1618e0f75f091b666511140f04c6722b96cbc825.png" alt="c_{sw}/8"/>.
+The calculation can be done efficiently by noticing that several products and terms appear in multiple places.
+Introduce the intermediate variables</p>
+<div class="math">
+<p><img src="../_images/math/2bb074dd3c870b75ec5b086ab6a92393c2ac56b4.png" alt="\begin{aligned}
+ Z_0 &amp;= X_{\mu\nu}(x) \\
+ Z_1 &amp;= X_{\mu\nu}(x+\hat{\mu}) \\
+ Z_2 &amp;= X_{\mu\nu}(x-\hat{\nu}) \\
+ Z_3 &amp;= X_{\mu\nu}(x+\hat{\mu}-\hat{\nu}) \\
+ Z_4 &amp;= X_{\mu\nu}(x+\hat{\mu}+\hat{\nu}) \\
+ Z_5 &amp;= X_{\mu\nu}(x+\hat{\nu}) \\
+ W_0 &amp;= U_\mu^\dagger(x-\hat{\nu}) \\
+ W_1 &amp;= U_\nu(x-\hat{\nu}) \\
+ W_2 &amp;= U_\nu(x+\hat{\mu}) \\
+ W_3 &amp;= U_\mu^\dagger(x+\hat{\nu}) \\
+ W_4 &amp;= U_\nu^\dagger(x) \\
+ W_5 &amp;= U_\nu^\dagger(x+\hat{\mu}-\hat{\nu}) \\
+ W_6 &amp;= W_0W_1 \\
+ W_7 &amp;= W_2W_3 \\
+ W_8 &amp;= W_7W_4-W_5W_6
+\end{aligned}"/></p>
+</div><p>The total force can now be written as</p>
+<div class="math">
+<p><img src="../_images/math/637690304a659f71fea7c04aa03eed0a29521c21.png" alt="F(x) = \frac{c_{sw}}{8}\dot{U}_\mu(x)\left\{W_8Z_0 + Z_1W_8 - W_5(W_0Z_2W_1+Z_3W_6) + (W_2Z_4W_3+W_7Z_5)W_4\right\}"/></p>
+</div><p>This brings us down to a total of 15 matrix multiplications and 6 additions.</p>
+</section>
+<section id="logarithmic-forces">
+<h4>Logarithmic Forces<a class="headerlink" href="#logarithmic-forces" title="Permalink to this headline"></a></h4>
+<p>In the case of even-odd preconditioning (see the next section) the action of the small determinant <img class="math" src="../_images/math/614f7f106c4beef53b50f706cf7ad4383fd8125e.png" alt="D_{oo}"/> can be written as</p>
+<div class="math">
+<p><img src="../_images/math/04aedd7de7e73ee017de8bde5db6c9c144dc3965.png" alt="S_{sw} = -N_f\log\det D_{oo} = -N_f~\mathrm{tr}\log D_{oo} = -N_f\sum_{x~\mathrm{odd}}\mathrm{tr}\log D_{oo}(x)"/></p>
+</div><p>The derivative is given by</p>
+<div class="math">
+<p><img src="../_images/math/fbd9da9ded6df2d2bf3c80d5e126a279c3952ee5.png" alt="\dot{S} = -N_f\sum_{x~\mathrm{odd}}\mathrm{tr}\left[D_{oo}^{-1}(x)\dot{D}_{oo}(x)\right]"/></p>
+</div><p>with <img class="math" src="../_images/math/f560c68de10a99435cab510a4dc14ce22a570f05.png" alt="D_{oo}(x)"/> given by</p>
+<div class="math">
+<p><img src="../_images/math/f1ddbe195085cd217e65d874136e118f633e214f.png" alt="D_{oo}(x) = 4+m_0-\frac{c_{sw}}{2}\sum_{\mu&lt;\nu}\sigma_{\mu\nu}F_{\mu\nu}(x)"/></p>
+</div><p>Both the determinant and the inverse of <img class="math" src="../_images/math/f560c68de10a99435cab510a4dc14ce22a570f05.png" alt="D_{oo}(x)"/> can be calculated from an LDL decomposition.
+If we insert the above definition we obtain</p>
+<div class="math">
+<p><img src="../_images/math/3f34b6d1324714143c8d47f7733a95585586bd7a.png" alt="\dot{S} = \frac{N_fc_{sw}}{2}\sum_{x~\mathrm{odd}}\sum_{\mu&lt;\nu}\mathrm{tr}(D_{oo}^{-1}(x)\sigma_{\mu\nu}\dot{F}_{\mu\nu}(x))"/></p>
+</div><div class="math">
+<p><img src="../_images/math/623369bb1bfee54bea114b886d5aff0d4703458a.png" alt="\dot{S} = \frac{N_fc_{sw}}{2\cdot8}\sum_{x~\mathrm{odd}}\sum_{\mu&lt;\nu} \mathrm{tr}(D_{oo}^{-1}(x)\sigma_{\mu\nu}\dot{Q}_{\mu\nu}(x) + D_{oo}^{-1}(x)\sigma_{\mu\nu}^\dagger\dot{Q}_{\mu\nu}^\dagger(x))"/></p>
+</div><p>Since <img class="math" src="../_images/math/23f27235c85f72a0ebff87267a6223aef9a364b0.png" alt="D_{oo}^{-1}"/> is Hermitian we can write the result as two times the real part.
+To simplify the result we define <img class="math" src="../_images/math/c64fc559e952e0e2e7bf0c4704d076303f554c1b.png" alt="X_{\mu\nu}(x)=D_{oo}^{-1}(x)\sigma_{\mu\nu}"/> such that</p>
+<div class="math">
+<p><img src="../_images/math/50fa23cf872a89e2f90ecc1b833e8ac3c3ff1260.png" alt="\dot{S} = \frac{N_fc_{sw}}{8}\sum_{x~\mathrm{odd}}\sum_{\mu&lt;\nu}\mathrm{Re}~\mathrm{tr}[X_{\mu\nu}(x)\dot{Q}_{\mu\nu}(x)]"/></p>
+</div><p>This is equivalent to Eq. <a class="reference internal" href="#equation-eq-force">(31)</a> except from the factor <img class="math" src="../_images/math/64520f5ef1b00b17ed2213502090369d3ecc1ace.png" alt="N_f"/> and the definition of <img class="math" src="../_images/math/1e4712ab6e214ca15ef3db372c979db3d6574051.png" alt="X_{\mu\nu}(x)"/>.
+Notice that we still have the identity <img class="math" src="../_images/math/8ea8675bad818380e80c98b396c3d0b85f23af04.png" alt="X_{\mu\nu}^\dagger=-X_{\mu\nu}"/>.
+The sum over <img class="math" src="../_images/math/888f7c323ac0341871e867220ae2d76467d74d6e.png" alt="x"/> can be extended to all sites by setting <img class="math" src="../_images/math/1632abfb8255e621c8adeb2de805babd64ee50a3.png" alt="X_{\mu\nu}"/> to zero on the even sites.
+To calculate the inverse <img class="math" src="../_images/math/23f27235c85f72a0ebff87267a6223aef9a364b0.png" alt="D_{oo}^{-1}"/> we introduce the definitions:</p>
+<div class="math">
+<p><img src="../_images/math/aee3f3750e5f6f8ffcbf6d0fd868e9afd24a25ce.png" alt="D_{oo} = D_{oo}^\dagger = \begin{pmatrix}
+ D_+ &amp; 0 \\
+ 0 &amp; D_-
+ \end{pmatrix}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/25872eabe461e19ffc783518f4dc247956eb6237.png" alt="D_{oo}^{-1} = \begin{pmatrix}
+ D_{+}^{-1} &amp; 0 \\
+ 0 &amp; D_{-}^{-1}
+ \end{pmatrix}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/7444f7dbb0a4ee40f5edf6d3e4f730b0a99c7aeb.png" alt="D_{+}^{-1} =
+ \begin{pmatrix}
+  D_{11} &amp; D_{12} \\
+  D_{21} &amp; D_{22} \\
+ \end{pmatrix}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/f83a094ec5d2f5274d9cb7379f9199cf8c73f1f5.png" alt="D_{-}^{-1} =
+ \begin{pmatrix}
+  D_{33} &amp; D_{34} \\
+  D_{43} &amp; D_{44} \\
+ \end{pmatrix}"/></p>
+</div><p>Because of hermiticity we know that <img class="math" src="../_images/math/24ac95757b4a0ed40f8a4d6301eff0a6f85b9689.png" alt="D_{12} = D_{21}^\dagger"/> and <img class="math" src="../_images/math/af83b3999e2c5be14ea6f502d75924e6f0e4e984.png" alt="D_{34} = D_{43}^\dagger"/>.
+The six independent elements of <img class="math" src="../_images/math/1632abfb8255e621c8adeb2de805babd64ee50a3.png" alt="X_{\mu\nu}"/> can now be written as</p>
+<div class="math">
+<p><img src="../_images/math/fdc655817d0292704d62cd94080d74c7a81f2279.png" alt="\begin{aligned}
+ X_{01} &amp;= i(D_{34}+D_{43}) - i(D_{12}+D_{21}) \\
+ X_{02} &amp;= ~(D_{12}-D_{21}) + ~(D_{43}-D_{34}) \\
+ X_{03} &amp;= i(D_{22}-D_{11}) + i(D_{33}-D_{44}) \\
+ X_{12} &amp;= i(D_{11}-D_{22}) + i(D_{33}-D_{44}) \\
+ X_{13} &amp;= ~(D_{12}-D_{21}) + ~(D_{34}-D_{43}) \\
+ X_{23} &amp;= i(D_{12}+D_{21}) + i(D_{34}+D_{43})
+\end{aligned}"/></p>
+</div></section>
+</section>
+<section id="id3">
+<h3>Even-odd Preconditioning<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
+<section id="method-1">
+<h4>Method 1<a class="headerlink" href="#method-1" title="Permalink to this headline"></a></h4>
+<p>We can write the determinant as</p>
+<div class="math">
+<p><img src="../_images/math/3c2a0326547522034e8a8e49e46833094a765b67.png" alt="\det D = \det(D_{oo})\det(D_{ee}-D_{eo}D_{oo}^{-1}D_{oe})"/></p>
+</div><p>Use the notation</p>
+<div class="math">
+<p><img src="../_images/math/808b89c253af9b2b25be5dcf68809d5fe9662bdb.png" alt="\begin{aligned}
+ Q_{oo} &amp;= \gamma_5D_{oo} \\
+ Q &amp;= \gamma_5(D_{ee}-D_{eo}D_{oo}^{-1}D_{oe})
+\end{aligned}"/></p>
+</div><p>The action is</p>
+<div class="math">
+<p><img src="../_images/math/89b25cbfac9025ab38f1beaffea4ebe02408b8cb.png" alt="S = S_1 + S_2 = \phi_1^\dagger Q_{oo}^{-2}\phi_1 + \phi_2^\dagger Q^{-2}\phi_2"/></p>
+</div><section id="forces-for-phi-1-term">
+<h5>Forces for <img class="math" src="../_images/math/581d1d8f19adfceb330e0147985f9ee8eb1a3b41.png" alt="\phi_1"/>-term<a class="headerlink" href="#forces-for-phi-1-term" title="Permalink to this headline"></a></h5>
+<p>The derivative is</p>
+<div class="math">
+<p><img src="../_images/math/23b7850b33c44ee9c36ae729a9163325e739767c.png" alt="\dot{S}_1 = -2\mathrm{Re}\left[\phi_1^\dagger(Q_{oo}^{-2}Q_{oo}\dot{Q}_{oo}Q_{oo}^{-2})\phi_1\right]"/></p>
+</div><p>and we can write it as</p>
+<div class="math">
+<p><img src="../_images/math/973ec419f00a9c90769b1480fc8227a6e437af15.png" alt="\dot{S}_1 = -2\mathrm{Re}\left[\xi^\dagger\dot{Q}_{oo}\eta\right]"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/8e6b856b9bc282af0130188e11a6e57d34214b1b.png" alt="\begin{aligned}
+ \eta &amp;= Q_{oo}^{-2}\phi_1, \\
+ \xi &amp;= Q_{oo}\eta.
+\end{aligned}"/></p>
+</div></section>
+<section id="forces-for-phi-2-term">
+<h5>Forces for <img class="math" src="../_images/math/c519a6c20d6fc3b0b3a36a39f1071edf3633fa03.png" alt="\phi_2"/>-term<a class="headerlink" href="#forces-for-phi-2-term" title="Permalink to this headline"></a></h5>
+<p>The derivative is</p>
+<div class="math">
+<p><img src="../_images/math/b99a38bc8fe77c9a384ad6728575d848dcaed696.png" alt="\dot{S}_2 = -2\mathrm{Re}\left[\phi_2^\dagger(Q^{-2}Q\dot{Q}Q^{-2})\phi_2\right]"/></p>
+</div><p>and we can write it as</p>
+<div class="math">
+<p><img src="../_images/math/08c828374c72ed1796aaca7c91d2cdbe66da0e9b.png" alt="\dot{S}_2 = -2\mathrm{Re}\left[\xi^\dagger\dot{Q}\eta\right]"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/ad9c918a9701584457c8dfc0692c446ce18d8a32.png" alt="\begin{aligned}
+ \eta &amp;= Q^{-2}\phi_2, \\
+ \xi &amp;= Q\eta.
+\end{aligned}"/></p>
+</div><p>The explicit expression for <img class="math" src="../_images/math/4cdf613040601e18134e4bd8d2e33ef2d9e21f1e.png" alt="\xi^\dagger\dot{Q}\eta"/> is given by</p>
+<div class="math">
+<p><img src="../_images/math/ab15d1ba768ba4b515d8f136c5c16eb6a1f01996.png" alt="\xi^\dagger \dot{Q}\eta
+ = \xi^\dagger\gamma_5\dot{D}_{ee}\eta
+ - \xi^\dagger\gamma_5\dot{D}_{eo}D_{oo}^{-1}D_{oe}\eta
+ + \xi^\dagger\gamma_5D_{eo}D_{oo}^{-1}\dot{D}_{oo}D_{oo}^{-1}D_{oe}\eta
+ - \xi^\dagger\gamma_5D_{eo}D_{oo}^{-1}\dot{D}_{oe}\eta"/></p>
+</div><p>and it can be written as</p>
+<div class="math">
+<p><img src="../_images/math/aa8dd6be7e8a399bd70c06c13a7789b8074349d0.png" alt="\xi^\dagger \dot{Q}\eta
+ = \xi^\dagger\gamma_5\dot{D}_{ee}\eta
+ - \xi^\dagger\gamma_5\dot{D}_{eo}\eta_1
+ + \xi_1^\dagger\gamma_5\dot{D}_{oo}\eta_1
+ - \xi_1^\dagger\gamma_5\dot{D}_{oe}\eta"/></p>
+</div><p>with</p>
+<div class="math">
+<p><img src="../_images/math/9098f6c2ba62a6e29dc95b47d9429504dc9b037d.png" alt="\begin{aligned}
+ \eta_1 &amp;= D_{oo}^{-1}D_{oe}\eta \\
+  \xi_1 &amp;= D_{oo}^{-1}D_{oe}\xi
+\end{aligned}"/></p>
+</div></section>
+</section>
+<section id="method-2">
+<h4>Method 2<a class="headerlink" href="#method-2" title="Permalink to this headline"></a></h4>
+<p>The action of <img class="math" src="../_images/math/614f7f106c4beef53b50f706cf7ad4383fd8125e.png" alt="D_{oo}"/> can also be expressed directly as the logarithm of the determinant.</p>
+<div class="math">
+<p><img src="../_images/math/85f445db48272f74cf218b2e19fc9454132f0cb8.png" alt="S = -2\log\det D_{oo} + \phi^\dagger Q^{-2}\phi"/></p>
+</div><p>This is the approach implemented in the code.</p>
+</section>
+</section>
+<section id="ldl-factorization">
+<h3>LDL factorization<a class="headerlink" href="#ldl-factorization" title="Permalink to this headline"></a></h3>
+<p>With even-odd preconditioning we need to calculate the inverse <img class="math" src="../_images/math/23f27235c85f72a0ebff87267a6223aef9a364b0.png" alt="D_{oo}^{-1}"/> when applying the dirac operator and when calculating the forces.
+Because this matrix is Hermitian and block diagonal it can be inverted locally with an exact solver.
+The most practical solver is via an LDL decomposition.</p>
+<div class="math">
+<p><img src="../_images/math/320842021c714c3acabdb7aa11c7946aa9863aa7.png" alt="A = LDL^\dagger"/></p>
+</div><p>Sum over <img class="math" src="../_images/math/e3fc28292267f066fee7718c64f4bbfece521f24.png" alt="j"/></p>
+<div class="math">
+<p><img src="../_images/math/95205b06389ede951daabe9098ed7dd201356209.png" alt="D_j = A_{jj} - \sum_{k=1}^{j-1}L_{jk}L_{jk}^*D_k"/></p>
+</div><p>Sum over <img class="math" src="../_images/math/0d1fbc9a7acc1f1c9237235610b196d0b7fe7144.png" alt="i&gt;j"/>.</p>
+<div class="math">
+<p><img src="../_images/math/6aa31f11da3fd733ce4c1a8fc408bcfa52eaa184.png" alt="L_{ij} = \frac{1}{D_j}\left(A_{ij}-\sum_{k=1}^{j-1}L_{ik}L_{jk}^*D_k\right)"/></p>
+</div><p>The determinant is given by</p>
+<div class="math">
+<p><img src="../_images/math/2d75f141bd6207795c6a9b8a80ab7fb8be4fbe6b.png" alt="\det(A) = \prod_k D_k"/></p>
+</div><section id="ldl-decomposition">
+<h4>LDL Decomposition<a class="headerlink" href="#ldl-decomposition" title="Permalink to this headline"></a></h4>
+<p>Calculates the LDL decomposition <img class="math" src="../_images/math/3c484d89aa272fc7950354b3225b6ddcb569c0b6.png" alt="A=LDL^\dagger"/> in-place.
+After the decomposition, the lower triangular part of <img class="math" src="../_images/math/211284f68205c3e66773eaf026f32a0acdd3dfb3.png" alt="A"/> is <img class="math" src="../_images/math/19eef1966f7c545af3ac8c0fa486974d873e3c65.png" alt="L"/> and the diagonal is <img class="math" src="../_images/math/0fcab9067b50b87e868c4fd70f213a086addb964.png" alt="D"/>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">do</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span>
+    <span class="n">do</span> <span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span>
+        <span class="n">A_ii</span> <span class="o">=</span> <span class="n">A_ii</span> <span class="o">-</span> <span class="n">L_ik</span> <span class="o">*</span> <span class="n">conj</span><span class="p">(</span><span class="n">L_ik</span><span class="p">)</span> <span class="o">*</span> <span class="n">A_kk</span>
+    <span class="n">enddo</span>
+    <span class="n">do</span> <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span>
+        <span class="n">do</span> <span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span>
+	    <span class="n">A_ji</span> <span class="o">=</span> <span class="n">A_ji</span> <span class="o">-</span> <span class="n">A_jk</span> <span class="o">*</span> <span class="n">conj</span><span class="p">(</span><span class="n">L_ik</span><span class="p">)</span> <span class="o">*</span> <span class="n">A_kk</span>
+	<span class="n">enddo</span>
+	<span class="n">A_ji</span> <span class="o">=</span> <span class="n">A_ji</span><span class="o">/</span><span class="n">A_ii</span>
+    <span class="n">enddo</span>
+<span class="n">enddo</span>
+</pre></div>
+</div>
+</section>
+<section id="forward-substitution">
+<h4>Forward substitution<a class="headerlink" href="#forward-substitution" title="Permalink to this headline"></a></h4>
+<p>Calculates <img class="math" src="../_images/math/804935d8dc6f29696bda3b8bf8e4ee768ff2de5d.png" alt="x=L^{-1}b"/>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">do</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span>
+    <span class="n">x_i</span> <span class="o">=</span> <span class="n">b_i</span>
+    <span class="n">do</span> <span class="n">k</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="o">-</span><span class="mi">1</span>
+        <span class="n">x_i</span> <span class="o">=</span> <span class="n">x_i</span> <span class="o">-</span> <span class="n">A_ik</span> <span class="o">*</span> <span class="n">x_k</span>
+    <span class="n">enddo</span>
+<span class="n">enddo</span>
+</pre></div>
+</div>
+</section>
+<section id="backward-substitution-with-diagonal">
+<h4>Backward substitution with diagonal<a class="headerlink" href="#backward-substitution-with-diagonal" title="Permalink to this headline"></a></h4>
+<p>Calculates <img class="math" src="../_images/math/d90043b1ebf18daca431298e338c2c1748e82249.png" alt="x=(L^\dagger)^{-1}D^{-1}x"/>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">do</span> <span class="n">i</span><span class="o">=</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+    <span class="n">x_i</span> <span class="o">=</span> <span class="n">x_i</span><span class="o">/</span><span class="n">A_ii</span>
+    <span class="n">do</span> <span class="n">k</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span>
+        <span class="n">x_i</span> <span class="o">=</span> <span class="n">x_i</span> <span class="o">-</span> <span class="n">conj</span><span class="p">(</span><span class="n">A_ki</span><span class="p">)</span> <span class="o">*</span> <span class="n">x_k</span>
+    <span class="n">enddo</span>
+<span class="n">enddo</span>
+</pre></div>
+</div>
+</section>
+<section id="full-inversion">
+<h4>Full inversion<a class="headerlink" href="#full-inversion" title="Permalink to this headline"></a></h4>
+<p>This algorithm calculates the inverse <img class="math" src="../_images/math/70d68bb0e6e90c74cdcddd085aa6a7f610c5b260.png" alt="B=A^{-1}"/> from the LDL decomposition.
+Because the inverse is Hermitian we only calculate the lower triangular part.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">do</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span>
+    <span class="n">B_ii</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">do</span> <span class="n">j</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span>
+        <span class="n">do</span> <span class="n">k</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="o">-</span><span class="mi">1</span>
+	    <span class="n">B_ji</span> <span class="o">=</span> <span class="n">L_jk</span> <span class="o">*</span> <span class="n">B_ki</span>
+	<span class="n">enddo</span>
+    <span class="n">enddo</span>
+    <span class="n">do</span> <span class="n">j</span><span class="o">=</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span>
+        <span class="n">B_ji</span> <span class="o">=</span> <span class="n">B_ji</span><span class="o">/</span><span class="n">L_ii</span>
+	<span class="n">do</span> <span class="n">k</span><span class="o">=</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span>
+	    <span class="n">B_ji</span> <span class="o">=</span> <span class="n">conj</span><span class="p">(</span><span class="n">L_kj</span><span class="p">)</span> <span class="o">*</span> <span class="n">B_ki</span>
+	<span class="n">enddo</span>
+    <span class="n">enddo</span>
+<span class="n">enddo</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="exponential-clover-term">
+<h2>Exponential Clover Term<a class="headerlink" href="#exponential-clover-term" title="Permalink to this headline"></a></h2>
+<p>The exponential version of the clover term (including mass term) can be
+written as</p>
+<div class="math" id="equation-eq-clover-exp">
+<p><span class="eqno">(23)<a class="headerlink" href="#equation-eq-clover-exp" title="Permalink to this equation"></a></span><img src="../_images/math/72aa89e25d4544975c83d4d2a3f69d089952dadd.png" alt="D_{sw} = \sum_x  (4+m_0) \exp ( A(x) ), \text{ with } A(x) =  -\frac{c_{sw}}{4(4+m_0)}\sum_{\mu,\nu}\sigma_{\mu\nu}F_{\mu\nu}(x)"/></p>
+</div><p>where <img class="math" src="../_images/math/b9de2ed5abfb92302717d8775c70f577a48eab48.png" alt="\sigma_{\mu\nu}"/> is again defined by</p>
+<div class="math">
+<p><img src="../_images/math/386dcdc65a5de5c41ffd4929a7c3a296bc8e86d1.png" alt="\sigma_{\mu\nu} = \frac{1}{2}[\gamma_\mu,\gamma_\nu]."/></p>
+</div><p>As for the clover term above, we can simplify the sum over <img class="math" src="../_images/math/6ef110194905225d57e598ba8a73c20b967d5471.png" alt="\mu\nu"/> to a sum over <img class="math" src="../_images/math/36aaf95942a3aaf51637857b50dc9883d502e39c.png" alt="\mu &lt; \nu"/> and introduce a factor of two. We define</p>
+<div class="math" id="equation-eq-clover2">
+<p><span class="eqno">(24)<a class="headerlink" href="#equation-eq-clover2" title="Permalink to this equation"></a></span><img src="../_images/math/26b90a3a59ade6a168492fcf1bc4c516452f0867.png" alt="A(x) = -\frac{c_{sw}}{2(4+m_0)}\sum_{\mu&lt;\nu}\sigma_{\mu\nu}F_{\mu\nu}(x)"/></p>
+</div><p>The quantity <img class="math" src="../_images/math/ca8ed5b71420dbccb951dfdaa110b2da6d7a3c95.png" alt="\sigma_{\mu\nu}F_{\mu\nu}"/> is Hermitian and block
+diagonal. It can be written as</p>
+<div class="math" id="equation-eq-blocks">
+<p><span class="eqno">(25)<a class="headerlink" href="#equation-eq-blocks" title="Permalink to this equation"></a></span><img src="../_images/math/944cf23579fcf01e72355492eaf534e2778828f4.png" alt="\begin{aligned} A(x)=-\frac{c_{sw}}{2(4+m_0)} \sum_{\mu&lt;\nu}\sigma_{\mu\nu}F_{\mu\nu} = 
+ \begin{pmatrix}
+ a &amp; b &amp; 0 &amp; 0 \\
+ b^\dagger &amp; -a &amp; 0 &amp; 0 \\
+ 0  &amp; 0 &amp; c &amp; d \\
+ 0 &amp; 0 &amp; d^\dagger &amp; -c
+ \end{pmatrix} \equiv \begin{pmatrix}
+ A^+ &amp; 0 \\ 
+ 0 &amp; A^- 
+ \end{pmatrix}, \end{aligned}"/></p>
+</div><p>where <img class="math" src="../_images/math/6613ceb3ddcf50c04e4afe458150aa98f370ab3d.png" alt="A^\pm"/> are <img class="math" src="../_images/math/9d913afacb8b209cedb6e41cd2e24d4ffd516c24.png" alt="2 \times 2"/> matrices in spin space and <img class="math" src="../_images/math/4007cbcbbef8db0d23b6ba69fc7ef639e9a41f0c.png" alt="a,b,c,d"/> are <img class="math" src="../_images/math/ee563abfef6f184ee115e6fa8f93376472e7c297.png" alt="N_F \times N_F"/>.</p>
+<p>This formulation of <img class="math" src="../_images/math/bd87adc26d88f5015408c4d55e3a69f5dfb8cecf.png" alt="A(x)"/> as a block matrix will be useful for the
+exponentiation.</p>
+<section id="evaluation-of-the-operator">
+<h3>Evaluation of the operator<a class="headerlink" href="#evaluation-of-the-operator" title="Permalink to this headline"></a></h3>
+<p>The evaluation of the exponential of <img class="math" src="../_images/math/bd87adc26d88f5015408c4d55e3a69f5dfb8cecf.png" alt="A(x)"/> can be split as:</p>
+<div class="math">
+<p><img src="../_images/math/f8a6784edd18cfb85dd698488eca5a168ba4840d.png" alt="\exp A(x)  = \begin{pmatrix}
+\exp A^+ &amp; 0 \\
+0&amp; \exp A^-
+\end{pmatrix}"/></p>
+</div><p>and so, the problem is reduced to the exponential of two
+<img class="math" src="../_images/math/a74947cdaae2ae4be692e6f5d8722056d12c9e97.png" alt="(2 N_F) \times  (2 N_F)"/> matrices. The evaluation can be performed in
+two ways.</p>
+<ol class="arabic">
+<li><p>Using the Taylor expansion:</p>
+<div class="math">
+<p><img src="../_images/math/89fbdeea7e3dd8f49befbfc588dc09891494d780.png" alt="\exp(A^\pm) = \sum_{k=0}^N  \frac{1}{k!} (A^\pm)^k."/></p>
+</div></li>
+<li><p>Using the Horner scheme:</p></li>
+</ol>
+<div class="math" id="equation-eq-exphorner">
+<p><span class="eqno">(26)<a class="headerlink" href="#equation-eq-exphorner" title="Permalink to this equation"></a></span><img src="../_images/math/5f4cbb609b7962c90efa3f7c931da28e93ba00d6.png" alt="\exp(A^\pm) = \sum_{k=0}^{\dim A^\pm -1} b_k(A^\pm)  (A^\pm)^k,"/></p>
+</div><p>where <img class="math" src="../_images/math/a83804f0832f64289f1399e2617515baa1850ac8.png" alt="b_k"/> are computed recursively as follows. We start with</p>
+<div class="math">
+<p><img src="../_images/math/17b4d19559b73ec0ff6501993441ed76a4cc09ef.png" alt="\begin{aligned} q_{N,0} = 1/N!, q_{N,1 \cdots (\dim A^\pm)-1} = 0.\end{aligned}"/></p>
+</div><p>Then, the recursion proceeds:</p>
+<div class="math">
+<p><img src="../_images/math/6d4eafe6a9178477f1a35801d410d690a764da7c.png" alt="q_{n,0} = - p_0 q_{n+1, \dim A^\pm-1}  + 1/n!,"/></p>
+</div><div class="math">
+<p><img src="../_images/math/2ff4f67cab5d34a5ea3217ff61835cab8bfb6ab8.png" alt="q_{n,i} = - p_i q_{n+1, \dim A^\pm-1}  + q_{n+1,i-1},"/></p>
+</div><div class="math" id="equation-eq-horner">
+<p><span class="eqno">(27)<a class="headerlink" href="#equation-eq-horner" title="Permalink to this equation"></a></span><img src="../_images/math/7a07b181329f882feddac9d3cd65b65771688680.png" alt="\text{ with } i=1 \cdots (\dim A^\pm) -1,"/></p>
+</div><p>where <img class="math" src="../_images/math/5247131b3b1b9cc457d29a9b08a19c2062ed3d16.png" alt="p_i"/> represent the coefficients of the characteristic polynomial of the matrix <img class="math" src="../_images/math/6613ceb3ddcf50c04e4afe458150aa98f370ab3d.png" alt="A^\pm"/>:</p>
+<div class="math">
+<p><img src="../_images/math/b35c319f6071cfdd884b79f6c8f1c72074a786fb.png" alt="P(A^\pm) = \sum_{n=0}^{\dim A\pm} p_n (A^\pm)^n."/></p>
+</div><p>For instance, the characteristic polynomial of a <img class="math" src="../_images/math/2b284743745704e25289f32b6d7b2d55fd570e72.png" alt="4 \times 4"/> traceless matrix has the following coefficients:</p>
+<div class="math">
+<p><img src="../_images/math/376bdd53f4111156a0bc5906aa3ca885dc400f83.png" alt="p_0=\frac{1}{8 } \left(\mathrm{tr}A^2\right)^2 - \frac{1}{4} \mathrm{tr}A^4 ,\ p_1 = -\frac{1}{3}\mathrm{tr}A^3, \ p_2= -\frac{1}{2}\mathrm{tr}A^2, \ p_3=0, \ p_3=1."/></p>
+</div><p>Finally, the coefficients of eq. <a class="reference internal" href="#equation-eq-exphorner">(26)</a> are <img class="math" src="../_images/math/104672992782f41da711e1375246ba6406dd4d33.png" alt="b_k  =q_{0,k}"/>.</p>
+<p>The Horner scheme method is currently implemented only for <img class="math" src="../_images/math/a0a3fbbabc2179752d78fe45db00ac9b45d6e033.png" alt="SU(2)"/> and
+<img class="math" src="../_images/math/aaf4c2f2126564de76375417af83f336ecd6d059.png" alt="SU(3)"/> with fundamental fermions.</p>
+</section>
+<section id="id4">
+<h3>Pseudofermion Forces<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
+<p>For the forces we use the following short-hand notation for the
+derivative with respect to the link variables.</p>
+<div class="math">
+<p><img src="../_images/math/8f43ae1de5202612f18429bcbd13fdaa841679cb.png" alt="\dot{S} = \partial_{x,\mu}^a S."/></p>
+</div><p>To calculate the pseudofermion
+forces let us write down the action as</p>
+<div class="math">
+<p><img src="../_images/math/efb653cf113c2313e6c4cd73a7de8164c9091e3d.png" alt="S = \phi^\dagger(H^{-2})\phi,"/></p>
+</div><p>where <img class="math" src="../_images/math/c09e8f1b9a961e66e8a9b0f24155a7721f3857dc.png" alt="H=\gamma^5D"/> is the Hermitian Dirac operator. When differentiating the action we obtain</p>
+<div class="math" id="equation-eq-dots">
+<p><span class="eqno">(28)<a class="headerlink" href="#equation-eq-dots" title="Permalink to this equation"></a></span><img src="../_images/math/afb5fb27002948e2fca8d3bc3dddac785890e063.png" alt="\dot{S} = -2\mathrm{Re}~\xi^\dagger\dot{H}\eta,"/></p>
+</div><p>with the definitions</p>
+<div class="math">
+<p><img src="../_images/math/55e2019ebea15f55f9d8f08d2311cd87971fd803.png" alt="\begin{aligned}
+ \eta &amp;= H^{-2}\phi, \\
+ \xi &amp;= H\eta.\end{aligned}"/></p>
+</div><section id="id5">
+<h4>Forces<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h4>
+<p>Here we will only consider the forces from the clover term. For the
+exponential version of the clover term, the implementation is very
+similar to the traditional clover term.</p>
+<p>The clover part of the Dirac operator is given by</p>
+<div class="math" id="equation-eq-hsw">
+<p><span class="eqno">(29)<a class="headerlink" href="#equation-eq-hsw" title="Permalink to this equation"></a></span><img src="../_images/math/a827545ccc61c06430a21819ac2d5cf34ec9522b.png" alt="H_{sw} = (4+m_0) \gamma_5 \exp \left(- \frac{c_{sw}}{2(4+m_0)}  \sum_{\mu&lt;\nu}{\sigma}_{\mu\nu}F_{\mu\nu}(x)  \right) = (4+m) \gamma_5 \exp A(x)."/></p>
+</div><p>An optimized way of calculating the derivative is provided by the double
+Horner scheme. The basic idea is that the derivative of a matrix can be
+expressed as:</p>
+<div class="math" id="equation-eq-dexphorner">
+<p><span class="eqno">(30)<a class="headerlink" href="#equation-eq-dexphorner" title="Permalink to this equation"></a></span><img src="../_images/math/7e32b173b610eae37458756c8b0ea8ce1de7e9e8.png" alt="d e^A = \sum_{k=0}^{\dim A -1} \sum_{l=0}^{\dim A-1} C_{kl}(A) A^l dA A^k,"/></p>
+</div><p>where the <img class="math" src="../_images/math/2b44859d8860e2540231701f518f7d8ca50bde0b.png" alt="C_{kl}"/> coefficients depend on the matrix <img class="math" src="../_images/math/211284f68205c3e66773eaf026f32a0acdd3dfb3.png" alt="A"/>, similarly to
+the ones eq. <a class="reference internal" href="#equation-eq-exphorner">(26)</a>. They are calculated performing first the
+iteration in eq. <code class="xref eq docutils literal notranslate"><span class="pre">horner</span></code>, and then repeating the iteration process on the result of the first iteration. For compactness, we shall omit the limits of the sum henceforth. When inserting eq. <a class="reference internal" href="#equation-eq-hsw">(29)</a> in eq. <a class="reference internal" href="#equation-eq-dots">(28)</a>, and using eq. <a class="reference internal" href="#equation-eq-dexphorner">(30)</a> we obtain</p>
+<div class="math">
+<p><img src="../_images/math/bbb5208d916873472aa7b0e2028ae4143e73ba8b.png" alt="\dot{S} = c_{sw} \sum_{k}  \sum_{\mu&lt;\nu}\mathrm{Re}(  \xi_k^\dagger\bar{\sigma}_{\mu\nu}\dot{F}_{\mu\nu}\eta_k),"/></p>
+</div><p>with $<img class="math" src="../_images/math/2041af307628fc5e63ff71bcfc6309edde7e8cd5.png" alt="\xi_k = \sum_l \begin{pmatrix}
+C^+_{kl} (A^+)^l \xi^+ \\
+C^-_{kl} (A^-)^l \xi^-
+\end{pmatrix}, \text{ and } 
+\eta_k =  \begin{pmatrix}
+ (A^+)^k \eta^+ \\
+(A^-)^k \eta^-
+\end{pmatrix}."/>$</p>
+<p>From the definition of <img class="math" src="../_images/math/4dddc19e5bd0a297d1e0ee4e24303cf6f7ce4b1a.png" alt="F_{\mu\nu}"/> it follows that</p>
+<div class="math">
+<p><img src="../_images/math/1f11caf2b91d35fb37f1d7d93f432737cb44f097.png" alt="\begin{aligned}
+ \dot{S} &amp;=  \frac{1}{8}c_{sw}\sum_k \sum_{\mu&lt;\nu}\mathrm{Re}(\xi_k^\dagger\bar{\sigma}_{\mu\nu}\dot{Q}_{\mu\nu}\eta_k + \xi_k^\dagger\bar{\sigma}_{\mu\nu}^\dagger\dot{Q}_{\mu\nu}^\dagger\eta_k), \\
+ &amp;=
+ \frac{1}{8}c_{sw}\sum_k \sum_{\mu&lt;\nu}\mathrm{Re}(\xi_k^\dagger\bar{\sigma}_{\mu\nu}\dot{Q}_{\mu\nu}\eta_k + \eta_k^\dagger\bar{\sigma}_{\mu\nu}\dot{Q}_{\mu\nu}\xi_k).\end{aligned}"/></p>
+</div><p>This can in be written as</p>
+<div class="math">
+<p><img src="../_images/math/bc4c24150084d6a54936bd0cb9bcc1ef7c0cfd72.png" alt="\dot{S} = \frac{1}{8}c_{sw}\sum_{\mu&lt;\nu} \mathrm{Re}~\mathrm{tr}\left[\dot{Q}_{\mu\nu} \sum_k\left\{\bar{\sigma}_{\mu\nu}\eta_k(x)\otimes\xi_k^\dagger(x) + \bar{\sigma}_{\mu\nu}\xi_k(x)\otimes\eta_k^\dagger(x)\right\}\right]"/></p>
+</div><p>As for the clover term above we need to calculate now</p>
+<div class="math" id="equation-eq-force">
+<p><span class="eqno">(31)<a class="headerlink" href="#equation-eq-force" title="Permalink to this equation"></a></span><img src="../_images/math/ab5a9125b19f40c1fd205fbce526ad73a7c9dc35.png" alt="\dot{S} = \frac{1}{8}c_{sw}\mathrm{Re}~\mathrm{tr}[\dot{Q}_{\mu\nu}(x)X_{\mu\nu}(x)]"/></p>
+</div><p>now with</p>
+<div class="math">
+<p><img src="../_images/math/90532c39b59a63403735e0bca6aee139a7322040.png" alt="X_{\mu\nu}(x) = \sum_k \bar{\sigma}_{\mu\nu}\eta_k(x)\otimes\xi_k^\dagger(x) + \bar{\sigma}_{\mu\nu}\xi_k(x)\otimes\eta_k^\dagger(x)."/></p>
+</div><p>The total force can now be expressed as in the clover term above.</p>
+</section>
+</section>
+<section id="id6">
+<h3>Even-odd preconditioning<a class="headerlink" href="#id6" title="Permalink to this headline"></a></h3>
+<p>Even-odd preconditioning is particularly simple for the exponential
+case, since the force coming from the little determinant vanished. This
+can be seen because of the fact that:</p>
+<div class="math">
+<p><img src="../_images/math/a0cef80bcacb8b1edae121fa7e54625704a1c554.png" alt="\det D_{oo}  = \exp(\log \det D_{oo} ) =\exp( \mathrm{tr}\log D_{oo}) =  1,"/></p>
+</div><p>and so it is a constant term in the action that does not contribute to
+the force.</p>
+</section>
+<section id="implementation-of-x-mu-nu-using-taylor-series">
+<h3>Implementation of <img class="math" src="../_images/math/1632abfb8255e621c8adeb2de805babd64ee50a3.png" alt="X_{\mu\nu}"/> using Taylor series<a class="headerlink" href="#implementation-of-x-mu-nu-using-taylor-series" title="Permalink to this headline"></a></h3>
+<p>In the current version of the code, the horner scheme is only implemeted
+for <img class="math" src="../_images/math/a0a3fbbabc2179752d78fe45db00ac9b45d6e033.png" alt="SU(2)"/> and <img class="math" src="../_images/math/aaf4c2f2126564de76375417af83f336ecd6d059.png" alt="SU(3)"/> with fundamental fermions. For other theories, a
+less efficient, but more flexible, alternative is used. For this,
+we use the Taylor series:</p>
+<div class="math">
+<p><img src="../_images/math/fc16f9383372961989943f2863a703d24f11c29a.png" alt="dA = \sum_{k=0}^N \sum_{l=0}^{N-k} \frac{1}{(k+l+1)!} A^{k} dA A^{l},"/></p>
+</div><p>with <img class="math" src="../_images/math/3bfb3a64189a14b2704f4610827762d5e3145114.png" alt="N"/> sufficiently large. The implementation changes only in the definition of <img class="math" src="../_images/math/1632abfb8255e621c8adeb2de805babd64ee50a3.png" alt="X_{\mu\nu}"/>:</p>
+<div class="math">
+<p><img src="../_images/math/9f1f701df0a3683203a3ec699350ca7ccf83b6ac.png" alt="X_{\mu\nu}(x) = \sum_{k=0}^N \bar{\sigma}_{\mu\nu}\eta_k(x)\otimes\xi_k^\dagger(x) + \bar{\sigma}_{\mu\nu}\xi_k(x)\otimes\eta_k^\dagger(x),"/></p>
+</div><p>where now:</p>
+<div class="math">
+<p><img src="../_images/math/7e5f53656892a9ec1460ed8ee61826cb2d80a32f.png" alt="\xi_k = \sum_l \frac{1}{(k+l+1)!} \begin{pmatrix}
+(A^+)^l \xi^+ \\
+ (A^-)^l \xi^-
+\end{pmatrix}, \text{ and } 
+\eta_k =  \begin{pmatrix}
+ (A^+)^k \eta^+ \\
+(A^-)^k \eta^-
+\end{pmatrix}."/></p>
+</div></section>
+</section>
+<section id="stout-smearing">
+<h2>Stout smearing<a class="headerlink" href="#stout-smearing" title="Permalink to this headline"></a></h2>
+<p>The implementation follows [hep-lat/0311018] closely. We define the
+smeared links as</p>
+<div class="math">
+<p><img src="../_images/math/b0e94bf9594ffd2e9cb47dc49cb01103a1f1d549.png" alt="U'_\mu(x) = e^{Q_\mu(x)}U_\mu(x)"/></p>
+</div><p>where <img class="math" src="../_images/math/f9911beee5b6da8d4f50455e9be3c138f7a45a24.png" alt="\Sigma_\mu(x)"/> is an element of the Lie algebra, defined via the
+projection</p>
+<div class="math">
+<p><img src="../_images/math/d7b3b589b523fb819e8c473f86a6a8afac5a67b6.png" alt="Q_\mu(x) = \mathcal{P}\{\Omega_\mu(x)\}."/></p>
+</div><p>The projection operator is not unique, but the most common choice is</p>
+<div class="math">
+<p><img src="../_images/math/53c9a35f3214a9cfca20cde14b8b78eb15eb234c.png" alt="\mathcal{P}(\Omega) = \frac{1}{2}(\Omega-\Omega^\dagger) - \frac{1}{2N}\mathrm{tr}(\Omega-\Omega^\dagger)."/></p>
+</div><p>However, in a setup with mixed representations, it is convenient to use
+the following two-step procedure for the projection. This allows us to
+project matrices from different representations onto the generators of
+the fundamental representation.</p>
+<div class="math">
+<p><img src="../_images/math/354ba794092f78543c71791fefcabd4e0b249516.png" alt="\begin{aligned} A_\mu^a(x) &amp;= -\frac{1}{T_f}\mathrm{tr}[iT^a_R\Omega_\mu(x)] \\ Q_\mu(x) &amp;= iT^a_F A_\mu^a(x)\end{aligned}"/></p>
+</div><p>The matrix <img class="math" src="../_images/math/e8128e2199973b134faef7cbd4f51eecddb88bf2.png" alt="\Omega_\mu(x)"/> is defined as</p>
+<div class="math">
+<p><img src="../_images/math/0598338bc1cc309e4607a57e27ed6f6d1335576c.png" alt="\Omega_\mu(x) = U_\mu(x)V_\mu(x)"/></p>
+</div><div class="math">
+<p><img src="../_images/math/29d743269e5999879393b378be598481d76af740.png" alt="V_\mu(x) = \sum_{\nu\neq\mu}
+ \rho_{\mu\nu}\left(
+ U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x) +
+ U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu})
+ \right)"/></p>
+</div><p>For the force calculation we use the chain rule.</p>
+<div class="math">
+<p><img src="../_images/math/f9f832277b16ff58435b72cac31d597929eb0c1e.png" alt="\frac{dS}{dU} = \frac{dS}{dU'}\frac{dU'}{dU}"/></p>
+</div><p>The first derivative on the right-hand side is the usual force
+<img class="math" src="../_images/math/11f95159f4224dce81e356cad7d954fb10df3be3.png" alt="\Sigma_\mu'(x)"/> evaluated using the smeared links. The second term is
+the derivative of the smeared links with respect to the fundamental
+links. This can be written in the following way, because the derivative
+of the action is surrounded by a trace.</p>
+<div class="math">
+<p><img src="../_images/math/d8d588a8239c6a275e23a09ce63125e75effdb4a.png" alt="\frac{dS}{dU} = e^Q\Sigma' + \frac{d\Omega}{dU}\mathcal{P}(X)"/></p>
+</div><p>When using a Taylor expansion to define the exponential function, we can
+use the following definition of <img class="math" src="../_images/math/ed38fa24f1c94891bd312012aab3f6673be3eb83.png" alt="X"/>.</p>
+<div class="math">
+<p><img src="../_images/math/1bdf739cd560549a04d18bfec59eb7874763a280.png" alt="X = \sum_{n=0}^\infty\sum_{k=0}^n Q^kU\Sigma' Q^{n-k}"/></p>
+</div><p>The derivative of the <img class="math" src="../_images/math/8b79605e88e6ebb950c74a1319cdc046dae2069c.png" alt="\Omega"/> matrix is the last missing piece. Define
+<img class="math" src="../_images/math/65c799460c3b32e2714d2f0500da42bf02cd96d2.png" alt="\Lambda=\mathcal{P}(X)"/> and consider</p>
+<div class="math">
+<p><img src="../_images/math/eee0adc7a9812750118d49f9c9e28b734fe5fa22.png" alt="\frac{d}{d U_\mu(x)} U_\mu(x)V_\mu(x)\Lambda_\mu(x)"/></p>
+</div><p>Here we have a sum over <img class="math" src="../_images/math/d5dd538e1fe78efc6b22200b35b399bd33eda851.png" alt="\nu\neq\mu"/>. There are eight contributions to
+the above derivative.</p>
+<div class="math">
+<p><img src="../_images/math/ffc89376d0e11918d06346d73e73caf8c47dc62b.png" alt="\rho_{\mu\nu}U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x)\Lambda_\mu(x)"/></p>
+</div><div class="math">
+<p><img src="../_images/math/4fe146eae287f87de5f4e0f42f61caf8d13b64db.png" alt="\rho_{\nu\mu}U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})\Lambda_\nu(x-\hat{\nu})U_\nu(x-\hat{\nu})"/></p>
+</div><div class="math">
+<p><img src="../_images/math/5d96cee6f7d8138adbed7c1fa578298fcc1894de.png" alt="\rho_{\mu\nu}U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})\Lambda_\mu^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu})"/></p>
+</div><div class="math">
+<p><img src="../_images/math/7cd91e9fb2a073a211847e90da740b38f68942b5.png" alt="\rho_{\nu\mu}U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x)\Lambda_\nu^\dagger(x)"/></p>
+</div><div class="math">
+<p><img src="../_images/math/ad82fe79e03810c303e438eb17edfdd3b65c0164.png" alt="\rho_{\mu\nu}U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu})\Lambda_\mu(x)"/></p>
+</div><div class="math">
+<p><img src="../_images/math/c405be04fe383c6533f257cc58a67ca37ea822f8.png" alt="\rho_{\nu\mu}U_\nu^\dagger(x-\hat{\nu}+\hat{\mu})\Lambda_\nu^\dagger(x-\hat{\nu}+\hat{\mu})U_\mu^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu})"/></p>
+</div><div class="math">
+<p><img src="../_images/math/a71547d16c363b5d540b781f6b879abbb03d2727.png" alt="\rho_{\mu\nu}U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})\Lambda_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x)"/></p>
+</div><div class="math">
+<p><img src="../_images/math/037da229109ef215e4a4362cfd52ebcfb07e08b4.png" alt="\rho_{\nu\mu}\Lambda_\nu(x+\hat{\mu})U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})U_\nu^\dagger(x)"/></p>
+</div><p>This can be simplified because several products appear more than once
+and we can use <img class="math" src="../_images/math/934d985dea896ff5c5db3fcb747552bffde4447d.png" alt="\Lambda^\dagger=-\Lambda"/> to remove some of the
+Hermitian conjugates. In the following we also assume that
+<img class="math" src="../_images/math/991d293639fd974bb1787ed596889fe29211e448.png" alt="\rho_{\mu\nu}=\rho_{\nu\mu}"/>.</p>
+<div class="math">
+<p><img src="../_images/math/ab2b96433780fa6456d9552625d89e68c8d94a40.png" alt="\rho_{\mu\nu}W_2U_\nu^\dagger(x)\{\Lambda_\mu(x)-\Lambda_\nu(x)\}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/94a295a74b5f24befbed4f15ade0036743576155.png" alt="\rho_{\mu\nu}U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})U_\mu^\dagger(x-\hat{\nu})\{\Lambda_\nu(x-\hat{\nu})-\Lambda_\mu(x-\hat{\nu})\}U_\nu(x-\hat{\nu})"/></p>
+</div><div class="math">
+<p><img src="../_images/math/c281cf6f67c6aa325aacb6734d7f49de9a008185.png" alt="\rho_{\mu\nu}U_\nu^\dagger(x+\hat{\mu}-\hat{\nu})\{W_1\Lambda_\mu(x)-\Lambda_\nu(x+\hat{\mu}-\hat{\nu})W_1\}"/></p>
+</div><div class="math">
+<p><img src="../_images/math/e5c3461b2928428b6497bea89a0f409ec70079bd.png" alt="\rho_{\mu\nu}\{\Lambda_\nu(x+\hat{\mu})W_2-W_2\Lambda_\mu(x+\hat{\nu})\}U_\nu^\dagger(x)"/></p>
+</div><p>Here</p>
+<div class="math">
+<p><img src="../_images/math/967f2611f878da47526a57fb7b11133df6dd38f4.png" alt="\begin{aligned}
+ W_1 &amp;= U_\mu^\dagger(x-\hat{\nu})U_\nu(x-\hat{\nu}) \\
+ W_2 &amp;= U_\nu(x+\hat{\mu})U_\mu^\dagger(x+\hat{\nu})\end{aligned}"/></p>
+</div><p>This brings us down to 13 multiplications.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="input_file.html" class="btn btn-neutral float-left" title="Input File Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="analysis.html" class="btn btn-neutral float-right" title="Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

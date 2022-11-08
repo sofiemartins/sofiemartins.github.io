@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/db1/structmon__ff__par" kind="struct" language="C++" prot="public">
+    <compoundname>mon_ff_par</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/db1/structmon__ff__par_1a287053300b734406e6e4708afaeffdce" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mon_ff_par::gamma</definition>
+        <argsstring></argsstring>
+        <name>gamma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="46" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/db1/structmon__ff__par_1a7ada788a7a6a8d0ca19624a8c2610934" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* mon_ff_par::start_config</definition>
+        <argsstring></argsstring>
+        <name>start_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="47" column="6" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/db1/structmon__ff__par_1aedd1137a35ecb0e58510f4e43fb4694f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mon_ff_par::start_value</definition>
+        <argsstring></argsstring>
+        <name>start_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="48" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/db1/structmon__ff__par_1a00e1f893da2410210607e9718326f6c7" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d99/structforce__auxfield__par" kindref="compound">force_auxfield_par</ref></type>
+        <definition>force_auxfield_par mon_ff_par::fpar</definition>
+        <argsstring></argsstring>
+        <name>fpar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="49" column="20" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mon_ff_par</label>
+        <link refid="dd/db1/structmon__ff__par"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>fpar</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>force_auxfield_par</label>
+        <link refid="d3/d99/structforce__auxfield__par"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="45" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="45" bodyend="50"/>
+    <listofallmembers>
+      <member refid="dd/db1/structmon__ff__par_1a00e1f893da2410210607e9718326f6c7" prot="public" virt="non-virtual"><scope>mon_ff_par</scope><name>fpar</name></member>
+      <member refid="dd/db1/structmon__ff__par_1a287053300b734406e6e4708afaeffdce" prot="public" virt="non-virtual"><scope>mon_ff_par</scope><name>gamma</name></member>
+      <member refid="dd/db1/structmon__ff__par_1a7ada788a7a6a8d0ca19624a8c2610934" prot="public" virt="non-virtual"><scope>mon_ff_par</scope><name>start_config</name></member>
+      <member refid="dd/db1/structmon__ff__par_1aedd1137a35ecb0e58510f4e43fb4694f" prot="public" virt="non-virtual"><scope>mon_ff_par</scope><name>start_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

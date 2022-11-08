@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d2b/representation_8h" kind="file" language="C++">
+    <compoundname>representation.h</compoundname>
+    <includes refid="d5/d40/suN__repr__func_8h" local="yes">suN_repr_func.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>representation.h</label>
+        <link refid="d0/d2b/representation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>suN_repr_func.h</label>
+        <link refid="d5/d40/suN__repr__func_8h_source"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d0/d2b/representation_8h_1afdd7df9003f59aed23a9b34b1fb77979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _group_represent2</definition>
+        <argsstring>(suNf *v, suNg *u)</argsstring>
+        <name>_group_represent2</name>
+        <param>
+          <type><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h" line="19" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2b/representation_8h_1a5947fbe3b7a8158b42b613cb519b7fc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _group_represent2_flt</definition>
+        <argsstring>(suNf_flt *v, suNg_flt *u)</argsstring>
+        <name>_group_represent2_flt</name>
+        <param>
+          <type><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h" line="20" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2b/representation_8h_1a0d839aee7f177f05a6ac69111a3efb92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void represent_gauge_field</definition>
+        <argsstring>()</argsstring>
+        <name>represent_gauge_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h" line="21" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d2b/representation_8h_1a25373d1d0fcc3f1b6ca4ec7b54ded512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void represent_gauge_field_measure</definition>
+        <argsstring>()</argsstring>
+        <name>represent_gauge_field_measure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h" line="22" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2008,<sp/>Claudio<sp/>Pica<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>REPRESENTATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REPRESENTATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">#ifdef<sp/>ADJOINT_FERMIONS</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">#elif<sp/>defined<sp/>SYMMETRIC_FERMIONS</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">#elif<sp/>defined<sp/>ANTISYMMETRIC_FERMIONS</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">#else</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">#endif</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_repr_func.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_group_represent2(<ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref>*<sp/>v,<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_group_represent2_flt(<ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref>*<sp/>v,<sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>represent_gauge_field();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>represent_gauge_field_measure();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/representation.h"/>
+  </compounddef>
+</doxygen>

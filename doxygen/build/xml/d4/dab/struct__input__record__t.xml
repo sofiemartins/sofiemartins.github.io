@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/dab/struct__input__record__t" kind="struct" language="C++" prot="public">
+    <compoundname>_input_record_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d4/dab/struct__input__record__t_1a329bffdbe2bb0806675aef2c953d5383" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _input_record_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="18" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dab/struct__input__record__t_1ad1131323c008a71a921a5dc6b377f5a0" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* _input_record_t::descr</definition>
+        <argsstring></argsstring>
+        <name>descr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="19" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dab/struct__input__record__t_1ace29b34a9548d7873b8808842a4e9074" prot="public" static="no" mutable="no">
+        <type>datatype_t</type>
+        <definition>datatype_t _input_record_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="20" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d4/dab/struct__input__record__t_1a6c945b7b10b88f95d3352616ff322afd" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _input_record_t::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="21" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="17" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="17" bodyend="22"/>
+    <listofallmembers>
+      <member refid="d4/dab/struct__input__record__t_1ad1131323c008a71a921a5dc6b377f5a0" prot="public" virt="non-virtual"><scope>_input_record_t</scope><name>descr</name></member>
+      <member refid="d4/dab/struct__input__record__t_1a329bffdbe2bb0806675aef2c953d5383" prot="public" virt="non-virtual"><scope>_input_record_t</scope><name>name</name></member>
+      <member refid="d4/dab/struct__input__record__t_1a6c945b7b10b88f95d3352616ff322afd" prot="public" virt="non-virtual"><scope>_input_record_t</scope><name>ptr</name></member>
+      <member refid="d4/dab/struct__input__record__t_1ace29b34a9548d7873b8808842a4e9074" prot="public" virt="non-virtual"><scope>_input_record_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

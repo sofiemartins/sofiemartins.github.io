@@ -1,0 +1,1596 @@
+\hypertarget{gpu__geometry_8h}{}\doxysection{gpu\+\_\+geometry.\+h File Reference}
+\label{gpu__geometry_8h}\index{gpu\_geometry.h@{gpu\_geometry.h}}
+
+
+Memory access patterns are crucial to achieve best performance. ~\newline
+ Due to this, we store lattice field data differently in device memory than in host memory. Documentation on this can be found in the Hi\+Rep Development Guide, section GPU Geometry.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a02579bd7c86a122caf5a30bc26f7c210}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+spinor}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNg__spinor}{su\+Ng\+\_\+spinor}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a9a24502a528acf26f163b0c455977d19}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+spinor}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNg__spinor}{su\+Ng\+\_\+spinor}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ae81860ddaf0e022d3f78be57a84b22cf}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+vector}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ac4c93281942b640eb0117d67b5c90fd4}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+vector}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a5035cb09f0ff6285f6f72d51b7999b3f}{read\+\_\+gpu\+\_\+double}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read double according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_aba4091d8a8eec96b345dab2afe3ef536}{write\+\_\+gpu\+\_\+double}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write double according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ab9f8d220706901661d7f58035b6c5b68}{read\+\_\+gpu\+\_\+su\+Ng}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNg}{su\+Ng}} matrix according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a8c3dbd686441fdb737d96ba2f83e51e4}{write\+\_\+gpu\+\_\+su\+Ng}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNg}{su\+Ng}} matrix according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a5abaeda37787a3022a23bf371a45b246}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+algebra\+\_\+vector}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ab092298fab9e7de75d5d1962a263c0c8}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+algebra\+\_\+vector}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ac38098f70b01e9d0eb7589fb204fb2c5}{read\+\_\+gpu\+\_\+su\+Ngc}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)~   \mbox{\hyperlink{gpu__geometry_8h_ab9f8d220706901661d7f58035b6c5b68}{read\+\_\+gpu\+\_\+su\+Ng}}((\+\_\+stride), (\+\_\+v), (\+\_\+in), (\+\_\+ix), (\+\_\+comp))
+\begin{DoxyCompactList}\small\item\em Read su\+Ngc according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ab41ce70779aa0e6073569cd36f39b9a9}{write\+\_\+gpu\+\_\+su\+Ngc}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)~   \mbox{\hyperlink{gpu__geometry_8h_a8c3dbd686441fdb737d96ba2f83e51e4}{write\+\_\+gpu\+\_\+su\+Ng}}((\+\_\+stride), (\+\_\+v), (\+\_\+out), (\+\_\+ix), (\+\_\+comp))
+\begin{DoxyCompactList}\small\item\em Write su\+Ngc according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_acef4ea10bd4368e4c7df893767a90f5e}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+spinor}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNf__spinor}{su\+Nf\+\_\+spinor}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ab910ea3cb234f78cf93d98f86df8e888}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+spinor}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNf__spinor}{su\+Nf\+\_\+spinor}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ab50bccf78fcc9610ba9d2d949921716d}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+vector}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a1c7af53abb7c70748e07a3d134ed2526}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+vector}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a5035cb09f0ff6285f6f72d51b7999b3f}{read\+\_\+gpu\+\_\+double}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read double according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_aba4091d8a8eec96b345dab2afe3ef536}{write\+\_\+gpu\+\_\+double}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write double according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ab9694e75e918125d59338b5242e0caeb}{read\+\_\+gpu\+\_\+su\+Nf}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNf}{su\+Nf}} matrix according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a0e8aae92f1bd34dd56aa5a4cce7a4fa5}{write\+\_\+gpu\+\_\+su\+Nf}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNf}{su\+Nf}} matrix according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a31b915d89a64bdf2eafda73568ba945c}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+algebra\+\_\+vector}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read su\+Nf\+\_\+algebra\+\_\+vector according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a9a1e8f13faa14a6179cbc03168c43a83}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+algebra\+\_\+vector}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write su\+Nf\+\_\+algebra\+\_\+vector according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ae0f791df9cc91a9a48ab64dceac7a7f5}{read\+\_\+gpu\+\_\+su\+Nfc}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)~   \mbox{\hyperlink{gpu__geometry_8h_ab9694e75e918125d59338b5242e0caeb}{read\+\_\+gpu\+\_\+su\+Nf}}((\+\_\+stride), (\+\_\+v), (\+\_\+in), (\+\_\+ix), (\+\_\+comp))
+\begin{DoxyCompactList}\small\item\em Read su\+Nfc according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a76b69808908793f5fe90621109d3282a}{write\+\_\+gpu\+\_\+su\+Nfc}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)~   \mbox{\hyperlink{gpu__geometry_8h_a0e8aae92f1bd34dd56aa5a4cce7a4fa5}{write\+\_\+gpu\+\_\+su\+Nf}}((\+\_\+stride), (\+\_\+v), (\+\_\+out), (\+\_\+ix), (\+\_\+comp))
+\begin{DoxyCompactList}\small\item\em Write su\+Nfc according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_abf12a853349f9f9c6e371657a48a3dbe}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+spinor\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNg__spinor__flt}{su\+Ng\+\_\+spinor\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_aa0dda60e6136d36452cb058bc502fff3}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+spinor\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNg__spinor__flt}{su\+Ng\+\_\+spinor\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a230c0445f9efdfafb3ee92a8c5ee0d32}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+vector\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a1d8e9eda13cdbe1418903a1f3e4648de}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+vector\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ac4f5d7fd05d6883b301adc774b856a7f}{read\+\_\+gpu\+\_\+float}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read float according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a1be277f6d079272c89f444eee09b895f}{write\+\_\+gpu\+\_\+float}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write float according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_adde978b3c8db563dba4dd1c2f857c817}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNg__flt}{su\+Ng\+\_\+flt}} matrix according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a2b50c9b16cd0aa5e7e39e8fccadcff03}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNg__flt}{su\+Ng\+\_\+flt}} matrix according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ac561e28a360584daff0718bead7d3388}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_aeeeabef6c893be3931124bf5f81d39fd}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a22032e6fbb80cbf0d5965f24f9d0e0b2}{read\+\_\+gpu\+\_\+su\+Ngc\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)~   \mbox{\hyperlink{gpu__geometry_8h_adde978b3c8db563dba4dd1c2f857c817}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+flt}}((\+\_\+stride), (\+\_\+v), (\+\_\+in), (\+\_\+ix), (\+\_\+comp))
+\begin{DoxyCompactList}\small\item\em Read su\+Ngc\+\_\+flt according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a710f5cb74002c2214a1e81c0d6969075}{write\+\_\+gpu\+\_\+su\+Ngc\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)~   \mbox{\hyperlink{gpu__geometry_8h_a2b50c9b16cd0aa5e7e39e8fccadcff03}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+flt}}((\+\_\+stride), (\+\_\+v), (\+\_\+out), (\+\_\+ix), (\+\_\+comp))
+\begin{DoxyCompactList}\small\item\em Write su\+Ngc\+\_\+flt according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_af21a870014958fce203f208b3dfe315c}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+spinor\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNf__spinor__flt}{su\+Nf\+\_\+spinor\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a30ba068b518e40d91e8ce4602ee901f4}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+spinor\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNf__spinor__flt}{su\+Nf\+\_\+spinor\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a265cc45c03abb9230bff771adf53590d}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+vector\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a3d8fa27c183af6d6cd49c0f1551df123}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+vector\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ac4f5d7fd05d6883b301adc774b856a7f}{read\+\_\+gpu\+\_\+float}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read float according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a1be277f6d079272c89f444eee09b895f}{write\+\_\+gpu\+\_\+float}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write float according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_ac172f58f0f4143ecf335b5c357c7b09c}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read \mbox{\hyperlink{structsuNf__flt}{su\+Nf\+\_\+flt}} matrix according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a219fae6b073178910eae52eb466e00e7}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write \mbox{\hyperlink{structsuNf__flt}{su\+Nf\+\_\+flt}} matrix according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_aaf9543a4fd2789abac43f9b604e4ced4}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Read su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a3f7abf8438a03d88e624413271e50898}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)
+\begin{DoxyCompactList}\small\item\em Write su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a63b9a21143d5cc286f6d29a68f8f0be3}{read\+\_\+gpu\+\_\+su\+Nfc\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+in,  \+\_\+ix,  \+\_\+comp)~   \mbox{\hyperlink{gpu__geometry_8h_ac172f58f0f4143ecf335b5c357c7b09c}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+flt}}((\+\_\+stride), (\+\_\+v), (\+\_\+in), (\+\_\+ix), (\+\_\+comp))
+\begin{DoxyCompactList}\small\item\em Read su\+Nfc\+\_\+flt according to device geometry structure. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{gpu__geometry_8h_a10a4ea5f51db00a1fd4833260b4ee85b}{write\+\_\+gpu\+\_\+su\+Nfc\+\_\+flt}}(\+\_\+stride,  \+\_\+v,  \+\_\+out,  \+\_\+ix,  \+\_\+comp)~   \mbox{\hyperlink{gpu__geometry_8h_a219fae6b073178910eae52eb466e00e7}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+flt}}((\+\_\+stride), (\+\_\+v), (\+\_\+out), (\+\_\+ix), (\+\_\+comp))
+\begin{DoxyCompactList}\small\item\em Write su\+Nfc\+\_\+flt according to device geometry structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Memory access patterns are crucial to achieve best performance. ~\newline
+ Due to this, we store lattice field data differently in device memory than in host memory. Documentation on this can be found in the Hi\+Rep Development Guide, section GPU Geometry. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{gpu__geometry_8h_a5035cb09f0ff6285f6f72d51b7999b3f}\label{gpu__geometry_8h_a5035cb09f0ff6285f6f72d51b7999b3f}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_double@{read\_gpu\_double}}
+\index{read\_gpu\_double@{read\_gpu\_double}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_double}{read\_gpu\_double}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+double(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        (\_v)=*((\_in)+(\_ix));\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read double according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & double target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the double to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a5035cb09f0ff6285f6f72d51b7999b3f}\label{gpu__geometry_8h_a5035cb09f0ff6285f6f72d51b7999b3f}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_double@{read\_gpu\_double}}
+\index{read\_gpu\_double@{read\_gpu\_double}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_double}{read\_gpu\_double}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+double(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        (\_v)=*((\_in)+(\_ix));\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read double according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & double target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the double to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ac4f5d7fd05d6883b301adc774b856a7f}\label{gpu__geometry_8h_ac4f5d7fd05d6883b301adc774b856a7f}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_float@{read\_gpu\_float}}
+\index{read\_gpu\_float@{read\_gpu\_float}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_float}{read\_gpu\_float}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+float(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        (\_v)=*((\_in)+(\_ix));\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read float according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & float target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the float to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ac4f5d7fd05d6883b301adc774b856a7f}\label{gpu__geometry_8h_ac4f5d7fd05d6883b301adc774b856a7f}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_float@{read\_gpu\_float}}
+\index{read\_gpu\_float@{read\_gpu\_float}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_float}{read\_gpu\_float}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+float(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        (\_v)=*((\_in)+(\_ix));\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read float according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & float target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the float to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ab9694e75e918125d59338b5242e0caeb}\label{gpu__geometry_8h_ab9694e75e918125d59338b5242e0caeb}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNf@{read\_gpu\_suNf}}
+\index{read\_gpu\_suNf@{read\_gpu\_suNf}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNf}{read\_gpu\_suNf}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nf(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[3]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNf}{su\+Nf}} matrix according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf}{su\+Nf}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Link direction to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a31b915d89a64bdf2eafda73568ba945c}\label{gpu__geometry_8h_a31b915d89a64bdf2eafda73568ba945c}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNf\_algebra\_vector@{read\_gpu\_suNf\_algebra\_vector}}
+\index{read\_gpu\_suNf\_algebra\_vector@{read\_gpu\_suNf\_algebra\_vector}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNf\_algebra\_vector}{read\_gpu\_suNf\_algebra\_vector}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nf\+\_\+algebra\+\_\+vector(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*3)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\textcolor{keywordtype}{double}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\textcolor{keywordtype}{double}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((\textcolor{keywordtype}{double}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read su\+Nf\+\_\+algebra\+\_\+vector according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Nf\+\_\+algebra\+\_\+vector target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the su\+Nf\+\_\+algebra\+\_\+vector to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_aaf9543a4fd2789abac43f9b604e4ced4}\label{gpu__geometry_8h_aaf9543a4fd2789abac43f9b604e4ced4}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNf\_algebra\_vector\_flt@{read\_gpu\_suNf\_algebra\_vector\_flt}}
+\index{read\_gpu\_suNf\_algebra\_vector\_flt@{read\_gpu\_suNf\_algebra\_vector\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNf\_algebra\_vector\_flt}{read\_gpu\_suNf\_algebra\_vector\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*3)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\textcolor{keywordtype}{float}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\textcolor{keywordtype}{float}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((\textcolor{keywordtype}{float}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ac172f58f0f4143ecf335b5c357c7b09c}\label{gpu__geometry_8h_ac172f58f0f4143ecf335b5c357c7b09c}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNf\_flt@{read\_gpu\_suNf\_flt}}
+\index{read\_gpu\_suNf\_flt@{read\_gpu\_suNf\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNf\_flt}{read\_gpu\_suNf\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nf\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[3]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNf__flt}{su\+Nf\+\_\+flt}} matrix according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__flt}{su\+Nf\+\_\+flt}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Link direction to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_acef4ea10bd4368e4c7df893767a90f5e}\label{gpu__geometry_8h_acef4ea10bd4368e4c7df893767a90f5e}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNf\_spinor@{read\_gpu\_suNf\_spinor}}
+\index{read\_gpu\_suNf\_spinor@{read\_gpu\_suNf\_spinor}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNf\_spinor}{read\_gpu\_suNf\_spinor}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nf\+\_\+spinor(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNf\_vector((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 0);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNf\_vector((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 1);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNf\_vector((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 2);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNf\_vector((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 3);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNf__spinor}{su\+Nf\+\_\+spinor}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__spinor}{su\+Nf\+\_\+spinor}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component to read, choose 0 for spinor fields. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_af21a870014958fce203f208b3dfe315c}\label{gpu__geometry_8h_af21a870014958fce203f208b3dfe315c}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNf\_spinor\_flt@{read\_gpu\_suNf\_spinor\_flt}}
+\index{read\_gpu\_suNf\_spinor\_flt@{read\_gpu\_suNf\_spinor\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNf\_spinor\_flt}{read\_gpu\_suNf\_spinor\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nf\+\_\+spinor\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNf\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 0);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNf\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 1);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNf\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 2);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNf\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 3);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNf__spinor__flt}{su\+Nf\+\_\+spinor\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__spinor__flt}{su\+Nf\+\_\+spinor\+\_\+flt}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component to read, choose 0 for spinor fields. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ab50bccf78fcc9610ba9d2d949921716d}\label{gpu__geometry_8h_ab50bccf78fcc9610ba9d2d949921716d}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNf\_vector@{read\_gpu\_suNf\_vector}}
+\index{read\_gpu\_suNf\_vector@{read\_gpu\_suNf\_vector}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNf\_vector}{read\_gpu\_suNf\_vector}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nf\+\_\+vector(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a265cc45c03abb9230bff771adf53590d}\label{gpu__geometry_8h_a265cc45c03abb9230bff771adf53590d}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNf\_vector\_flt@{read\_gpu\_suNf\_vector\_flt}}
+\index{read\_gpu\_suNf\_vector\_flt@{read\_gpu\_suNf\_vector\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNf\_vector\_flt}{read\_gpu\_suNf\_vector\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nf\+\_\+vector\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ae0f791df9cc91a9a48ab64dceac7a7f5}\label{gpu__geometry_8h_ae0f791df9cc91a9a48ab64dceac7a7f5}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNfc@{read\_gpu\_suNfc}}
+\index{read\_gpu\_suNfc@{read\_gpu\_suNfc}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNfc}{read\_gpu\_suNfc}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nfc(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})~   \mbox{\hyperlink{gpu__geometry_8h_ab9694e75e918125d59338b5242e0caeb}{read\+\_\+gpu\+\_\+su\+Nf}}((\+\_\+stride), (\+\_\+v), (\+\_\+in), (\+\_\+ix), (\+\_\+comp))}
+
+
+
+Read su\+Nfc according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Nfc target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component to read for argument consistency between different GPU read/write functions.\textbackslash{} Use this macro here always with \+\_\+comp=0, because this is for a scalar field! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a63b9a21143d5cc286f6d29a68f8f0be3}\label{gpu__geometry_8h_a63b9a21143d5cc286f6d29a68f8f0be3}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNfc\_flt@{read\_gpu\_suNfc\_flt}}
+\index{read\_gpu\_suNfc\_flt@{read\_gpu\_suNfc\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNfc\_flt}{read\_gpu\_suNfc\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Nfc\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})~   \mbox{\hyperlink{gpu__geometry_8h_ac172f58f0f4143ecf335b5c357c7b09c}{read\+\_\+gpu\+\_\+su\+Nf\+\_\+flt}}((\+\_\+stride), (\+\_\+v), (\+\_\+in), (\+\_\+ix), (\+\_\+comp))}
+
+
+
+Read su\+Nfc\+\_\+flt according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Nfc\+\_\+flt target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component to read for argument consistency between different GPU read/write functions.\textbackslash{} Use this macro here always with \+\_\+comp=0, because this is for a scalar field! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ab9f8d220706901661d7f58035b6c5b68}\label{gpu__geometry_8h_ab9f8d220706901661d7f58035b6c5b68}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNg@{read\_gpu\_suNg}}
+\index{read\_gpu\_suNg@{read\_gpu\_suNg}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNg}{read\_gpu\_suNg}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ng(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[3]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNg}{su\+Ng}} matrix according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg}{su\+Ng}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Link direction to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a5abaeda37787a3022a23bf371a45b246}\label{gpu__geometry_8h_a5abaeda37787a3022a23bf371a45b246}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNg\_algebra\_vector@{read\_gpu\_suNg\_algebra\_vector}}
+\index{read\_gpu\_suNg\_algebra\_vector@{read\_gpu\_suNg\_algebra\_vector}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNg\_algebra\_vector}{read\_gpu\_suNg\_algebra\_vector}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ng\+\_\+algebra\+\_\+vector(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*3)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\textcolor{keywordtype}{double}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\textcolor{keywordtype}{double}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((\textcolor{keywordtype}{double}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}} to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ac561e28a360584daff0718bead7d3388}\label{gpu__geometry_8h_ac561e28a360584daff0718bead7d3388}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNg\_algebra\_vector\_flt@{read\_gpu\_suNg\_algebra\_vector\_flt}}
+\index{read\_gpu\_suNg\_algebra\_vector\_flt@{read\_gpu\_suNg\_algebra\_vector\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNg\_algebra\_vector\_flt}{read\_gpu\_suNg\_algebra\_vector\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*3)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\textcolor{keywordtype}{float}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\textcolor{keywordtype}{float}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((\textcolor{keywordtype}{float}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}} to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_adde978b3c8db563dba4dd1c2f857c817}\label{gpu__geometry_8h_adde978b3c8db563dba4dd1c2f857c817}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNg\_flt@{read\_gpu\_suNg\_flt}}
+\index{read\_gpu\_suNg\_flt@{read\_gpu\_suNg\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNg\_flt}{read\_gpu\_suNg\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ng\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[3]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNg__flt}{su\+Ng\+\_\+flt}} matrix according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__flt}{su\+Ng\+\_\+flt}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Link direction to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a02579bd7c86a122caf5a30bc26f7c210}\label{gpu__geometry_8h_a02579bd7c86a122caf5a30bc26f7c210}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNg\_spinor@{read\_gpu\_suNg\_spinor}}
+\index{read\_gpu\_suNg\_spinor@{read\_gpu\_suNg\_spinor}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNg\_spinor}{read\_gpu\_suNg\_spinor}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ng\+\_\+spinor(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNg\_vector((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 0);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNg\_vector((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 1);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNg\_vector((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 2);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNg\_vector((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 3);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNg__spinor}{su\+Ng\+\_\+spinor}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__spinor}{su\+Ng\+\_\+spinor}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component to read, choose 0 for spinor fields. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_abf12a853349f9f9c6e371657a48a3dbe}\label{gpu__geometry_8h_abf12a853349f9f9c6e371657a48a3dbe}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNg\_spinor\_flt@{read\_gpu\_suNg\_spinor\_flt}}
+\index{read\_gpu\_suNg\_spinor\_flt@{read\_gpu\_suNg\_spinor\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNg\_spinor\_flt}{read\_gpu\_suNg\_spinor\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ng\+\_\+spinor\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNg\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 0);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNg\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 1);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNg\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 2);\(\backslash\)}
+\DoxyCodeLine{        read\_gpu\_suNg\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_in), (\_ix), 3);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNg__spinor__flt}{su\+Ng\+\_\+spinor\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__spinor__flt}{su\+Ng\+\_\+spinor\+\_\+flt}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component to read, choose 0 for spinor fields. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ae81860ddaf0e022d3f78be57a84b22cf}\label{gpu__geometry_8h_ae81860ddaf0e022d3f78be57a84b22cf}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNg\_vector@{read\_gpu\_suNg\_vector}}
+\index{read\_gpu\_suNg\_vector@{read\_gpu\_suNg\_vector}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNg\_vector}{read\_gpu\_suNg\_vector}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ng\+\_\+vector(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a230c0445f9efdfafb3ee92a8c5ee0d32}\label{gpu__geometry_8h_a230c0445f9efdfafb3ee92a8c5ee0d32}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNg\_vector\_flt@{read\_gpu\_suNg\_vector\_flt}}
+\index{read\_gpu\_suNg\_vector\_flt@{read\_gpu\_suNg\_vector\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNg\_vector\_flt}{read\_gpu\_suNg\_vector\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ng\+\_\+vector\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Read \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} to read. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ac38098f70b01e9d0eb7589fb204fb2c5}\label{gpu__geometry_8h_ac38098f70b01e9d0eb7589fb204fb2c5}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNgc@{read\_gpu\_suNgc}}
+\index{read\_gpu\_suNgc@{read\_gpu\_suNgc}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNgc}{read\_gpu\_suNgc}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ngc(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})~   \mbox{\hyperlink{gpu__geometry_8h_ab9f8d220706901661d7f58035b6c5b68}{read\+\_\+gpu\+\_\+su\+Ng}}((\+\_\+stride), (\+\_\+v), (\+\_\+in), (\+\_\+ix), (\+\_\+comp))}
+
+
+
+Read su\+Ngc according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Ngc target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component to read for argument consistency between different GPU read/write functions.\textbackslash{} Use this macro here always with \+\_\+comp=0, because this is for a scalar field! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a22032e6fbb80cbf0d5965f24f9d0e0b2}\label{gpu__geometry_8h_a22032e6fbb80cbf0d5965f24f9d0e0b2}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!read\_gpu\_suNgc\_flt@{read\_gpu\_suNgc\_flt}}
+\index{read\_gpu\_suNgc\_flt@{read\_gpu\_suNgc\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{read\_gpu\_suNgc\_flt}{read\_gpu\_suNgc\_flt}}
+{\footnotesize\ttfamily \#define read\+\_\+gpu\+\_\+su\+Ngc\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+in,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})~   \mbox{\hyperlink{gpu__geometry_8h_adde978b3c8db563dba4dd1c2f857c817}{read\+\_\+gpu\+\_\+su\+Ng\+\_\+flt}}((\+\_\+stride), (\+\_\+v), (\+\_\+in), (\+\_\+ix), (\+\_\+comp))}
+
+
+
+Read su\+Ngc\+\_\+flt according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Ngc\+\_\+flt target to read to from the field \+\_\+in \\
+\hline
+{\em \+\_\+in} & Input field to read from \\
+\hline
+{\em \+\_\+ix} & Index at which to read \\
+\hline
+{\em \+\_\+comp} & Component to read for argument consistency between different GPU read/write functions.\textbackslash{} Use this macro here always with \+\_\+comp=0, because this is for a scalar field! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_aba4091d8a8eec96b345dab2afe3ef536}\label{gpu__geometry_8h_aba4091d8a8eec96b345dab2afe3ef536}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_double@{write\_gpu\_double}}
+\index{write\_gpu\_double@{write\_gpu\_double}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_double}{write\_gpu\_double}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+double(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        (*((\_out)+(\_ix)))=(\_v);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write double according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & double target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the double to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_aba4091d8a8eec96b345dab2afe3ef536}\label{gpu__geometry_8h_aba4091d8a8eec96b345dab2afe3ef536}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_double@{write\_gpu\_double}}
+\index{write\_gpu\_double@{write\_gpu\_double}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_double}{write\_gpu\_double}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+double(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        (*((\_out)+(\_ix)))=(\_v);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write double according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & double target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the double to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a1be277f6d079272c89f444eee09b895f}\label{gpu__geometry_8h_a1be277f6d079272c89f444eee09b895f}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_float@{write\_gpu\_float}}
+\index{write\_gpu\_float@{write\_gpu\_float}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_float}{write\_gpu\_float}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+float(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        (*((\_out)+(\_ix)))=(\_v);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write float according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & float target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the float to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a1be277f6d079272c89f444eee09b895f}\label{gpu__geometry_8h_a1be277f6d079272c89f444eee09b895f}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_float@{write\_gpu\_float}}
+\index{write\_gpu\_float@{write\_gpu\_float}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_float}{write\_gpu\_float}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+float(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        (*((\_out)+(\_ix)))=(\_v);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write float according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & float target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the float to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a0e8aae92f1bd34dd56aa5a4cce7a4fa5}\label{gpu__geometry_8h_a0e8aae92f1bd34dd56aa5a4cce7a4fa5}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNf@{write\_gpu\_suNf}}
+\index{write\_gpu\_suNf@{write\_gpu\_suNf}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNf}{write\_gpu\_suNf}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nf(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNf}{su\+Nf}} matrix according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf}{su\+Nf}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Link direction to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a9a1e8f13faa14a6179cbc03168c43a83}\label{gpu__geometry_8h_a9a1e8f13faa14a6179cbc03168c43a83}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNf\_algebra\_vector@{write\_gpu\_suNf\_algebra\_vector}}
+\index{write\_gpu\_suNf\_algebra\_vector@{write\_gpu\_suNf\_algebra\_vector}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNf\_algebra\_vector}{write\_gpu\_suNf\_algebra\_vector}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nf\+\_\+algebra\+\_\+vector(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*3)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{double}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{double}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{double}*)(\_out))[\_\_iz]=(\_v).c[2]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write su\+Nf\+\_\+algebra\+\_\+vector according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Nf\+\_\+algebra\+\_\+vector target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the su\+Nf\+\_\+algebra\+\_\+vector to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a3f7abf8438a03d88e624413271e50898}\label{gpu__geometry_8h_a3f7abf8438a03d88e624413271e50898}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNf\_algebra\_vector\_flt@{write\_gpu\_suNf\_algebra\_vector\_flt}}
+\index{write\_gpu\_suNf\_algebra\_vector\_flt@{write\_gpu\_suNf\_algebra\_vector\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNf\_algebra\_vector\_flt}{write\_gpu\_suNf\_algebra\_vector\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*3)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{float}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{float}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{float}*)(\_out))[\_\_iz]=(\_v).c[2]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a219fae6b073178910eae52eb466e00e7}\label{gpu__geometry_8h_a219fae6b073178910eae52eb466e00e7}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNf\_flt@{write\_gpu\_suNf\_flt}}
+\index{write\_gpu\_suNf\_flt@{write\_gpu\_suNf\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNf\_flt}{write\_gpu\_suNf\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nf\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNf__flt}{su\+Nf\+\_\+flt}} matrix according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__flt}{su\+Nf\+\_\+flt}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Link direction to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ab910ea3cb234f78cf93d98f86df8e888}\label{gpu__geometry_8h_ab910ea3cb234f78cf93d98f86df8e888}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNf\_spinor@{write\_gpu\_suNf\_spinor}}
+\index{write\_gpu\_suNf\_spinor@{write\_gpu\_suNf\_spinor}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNf\_spinor}{write\_gpu\_suNf\_spinor}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nf\+\_\+spinor(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNf\_vector((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 0);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNf\_vector((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 1);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNf\_vector((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 2);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNf\_vector((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 3);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNf__spinor}{su\+Nf\+\_\+spinor}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component to write, choose 0 for spinor fields. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a30ba068b518e40d91e8ce4602ee901f4}\label{gpu__geometry_8h_a30ba068b518e40d91e8ce4602ee901f4}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNf\_spinor\_flt@{write\_gpu\_suNf\_spinor\_flt}}
+\index{write\_gpu\_suNf\_spinor\_flt@{write\_gpu\_suNf\_spinor\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNf\_spinor\_flt}{write\_gpu\_suNf\_spinor\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nf\+\_\+spinor\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNf\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 0);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNf\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 1);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNf\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 2);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNf\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 3);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNf__spinor__flt}{su\+Nf\+\_\+spinor\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component to write, choose 0 for spinor fields. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a1c7af53abb7c70748e07a3d134ed2526}\label{gpu__geometry_8h_a1c7af53abb7c70748e07a3d134ed2526}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNf\_vector@{write\_gpu\_suNf\_vector}}
+\index{write\_gpu\_suNf\_vector@{write\_gpu\_suNf\_vector}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNf\_vector}{write\_gpu\_suNf\_vector}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nf\+\_\+vector(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a3d8fa27c183af6d6cd49c0f1551df123}\label{gpu__geometry_8h_a3d8fa27c183af6d6cd49c0f1551df123}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNf\_vector\_flt@{write\_gpu\_suNf\_vector\_flt}}
+\index{write\_gpu\_suNf\_vector\_flt@{write\_gpu\_suNf\_vector\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNf\_vector\_flt}{write\_gpu\_suNf\_vector\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nf\+\_\+vector\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNf__vector__flt}{su\+Nf\+\_\+vector\+\_\+flt}} to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a76b69808908793f5fe90621109d3282a}\label{gpu__geometry_8h_a76b69808908793f5fe90621109d3282a}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNfc@{write\_gpu\_suNfc}}
+\index{write\_gpu\_suNfc@{write\_gpu\_suNfc}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNfc}{write\_gpu\_suNfc}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nfc(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})~   \mbox{\hyperlink{gpu__geometry_8h_a0e8aae92f1bd34dd56aa5a4cce7a4fa5}{write\+\_\+gpu\+\_\+su\+Nf}}((\+\_\+stride), (\+\_\+v), (\+\_\+out), (\+\_\+ix), (\+\_\+comp))}
+
+
+
+Write su\+Nfc according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Nfc target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component to write for argument consistency between different GPU read/write functions.\textbackslash{} Use this macro here always with \+\_\+comp=0, because this is for a scalar field! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a10a4ea5f51db00a1fd4833260b4ee85b}\label{gpu__geometry_8h_a10a4ea5f51db00a1fd4833260b4ee85b}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNfc\_flt@{write\_gpu\_suNfc\_flt}}
+\index{write\_gpu\_suNfc\_flt@{write\_gpu\_suNfc\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNfc\_flt}{write\_gpu\_suNfc\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Nfc\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})~   \mbox{\hyperlink{gpu__geometry_8h_a219fae6b073178910eae52eb466e00e7}{write\+\_\+gpu\+\_\+su\+Nf\+\_\+flt}}((\+\_\+stride), (\+\_\+v), (\+\_\+out), (\+\_\+ix), (\+\_\+comp))}
+
+
+
+Write su\+Nfc\+\_\+flt according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Nfc\+\_\+flt target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component to write for argument consistency between different GPU read/write functions.\textbackslash{} Use this macro here always with \+\_\+comp=0, because this is for a scalar field! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a8c3dbd686441fdb737d96ba2f83e51e4}\label{gpu__geometry_8h_a8c3dbd686441fdb737d96ba2f83e51e4}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNg@{write\_gpu\_suNg}}
+\index{write\_gpu\_suNg@{write\_gpu\_suNg}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNg}{write\_gpu\_suNg}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ng(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNg}{su\+Ng}} matrix according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg}{su\+Ng}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Link direction to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ab092298fab9e7de75d5d1962a263c0c8}\label{gpu__geometry_8h_ab092298fab9e7de75d5d1962a263c0c8}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNg\_algebra\_vector@{write\_gpu\_suNg\_algebra\_vector}}
+\index{write\_gpu\_suNg\_algebra\_vector@{write\_gpu\_suNg\_algebra\_vector}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNg\_algebra\_vector}{write\_gpu\_suNg\_algebra\_vector}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ng\+\_\+algebra\+\_\+vector(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*3)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{double}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{double}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{double}*)(\_out))[\_\_iz]=(\_v).c[2]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}} to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_aeeeabef6c893be3931124bf5f81d39fd}\label{gpu__geometry_8h_aeeeabef6c893be3931124bf5f81d39fd}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNg\_algebra\_vector\_flt@{write\_gpu\_suNg\_algebra\_vector\_flt}}
+\index{write\_gpu\_suNg\_algebra\_vector\_flt@{write\_gpu\_suNg\_algebra\_vector\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNg\_algebra\_vector\_flt}{write\_gpu\_suNg\_algebra\_vector\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*3)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{float}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{float}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\textcolor{keywordtype}{float}*)(\_out))[\_\_iz]=(\_v).c[2]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\+vector\+\_\+flt}} to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a2b50c9b16cd0aa5e7e39e8fccadcff03}\label{gpu__geometry_8h_a2b50c9b16cd0aa5e7e39e8fccadcff03}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNg\_flt@{write\_gpu\_suNg\_flt}}
+\index{write\_gpu\_suNg\_flt@{write\_gpu\_suNg\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNg\_flt}{write\_gpu\_suNg\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ng\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNg__flt}{su\+Ng\+\_\+flt}} matrix according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__flt}{su\+Ng\+\_\+flt}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Link direction to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a9a24502a528acf26f163b0c455977d19}\label{gpu__geometry_8h_a9a24502a528acf26f163b0c455977d19}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNg\_spinor@{write\_gpu\_suNg\_spinor}}
+\index{write\_gpu\_suNg\_spinor@{write\_gpu\_suNg\_spinor}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNg\_spinor}{write\_gpu\_suNg\_spinor}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ng\+\_\+spinor(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNg\_vector((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 0);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNg\_vector((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 1);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNg\_vector((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 2);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNg\_vector((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 3);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNg__spinor}{su\+Ng\+\_\+spinor}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component to write, choose 0 for spinor fields. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_aa0dda60e6136d36452cb058bc502fff3}\label{gpu__geometry_8h_aa0dda60e6136d36452cb058bc502fff3}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNg\_spinor\_flt@{write\_gpu\_suNg\_spinor\_flt}}
+\index{write\_gpu\_suNg\_spinor\_flt@{write\_gpu\_suNg\_spinor\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNg\_spinor\_flt}{write\_gpu\_suNg\_spinor\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ng\+\_\+spinor\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNg\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 0);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNg\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 1);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNg\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 2);\(\backslash\)}
+\DoxyCodeLine{        write\_gpu\_suNg\_vector\_flt((\_stride), (\_v).c[(\_comp)], (\_out), (\_ix), 3);\(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNg__spinor__flt}{su\+Ng\+\_\+spinor\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component to write, choose 0 for spinor fields. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ac4c93281942b640eb0117d67b5c90fd4}\label{gpu__geometry_8h_ac4c93281942b640eb0117d67b5c90fd4}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNg\_vector@{write\_gpu\_suNg\_vector}}
+\index{write\_gpu\_suNg\_vector@{write\_gpu\_suNg\_vector}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNg\_vector}{write\_gpu\_suNg\_vector}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ng\+\_\+vector(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a1d8e9eda13cdbe1418903a1f3e4648de}\label{gpu__geometry_8h_a1d8e9eda13cdbe1418903a1f3e4648de}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNg\_vector\_flt@{write\_gpu\_suNg\_vector\_flt}}
+\index{write\_gpu\_suNg\_vector\_flt@{write\_gpu\_suNg\_vector\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNg\_vector\_flt}{write\_gpu\_suNg\_vector\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ng\+\_\+vector\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
+\DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
+
+\end{DoxyCode}
+
+
+Write \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component of the \mbox{\hyperlink{structsuNg__vector__flt}{su\+Ng\+\_\+vector\+\_\+flt}} to write. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_ab41ce70779aa0e6073569cd36f39b9a9}\label{gpu__geometry_8h_ab41ce70779aa0e6073569cd36f39b9a9}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNgc@{write\_gpu\_suNgc}}
+\index{write\_gpu\_suNgc@{write\_gpu\_suNgc}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNgc}{write\_gpu\_suNgc}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ngc(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})~   \mbox{\hyperlink{gpu__geometry_8h_a8c3dbd686441fdb737d96ba2f83e51e4}{write\+\_\+gpu\+\_\+su\+Ng}}((\+\_\+stride), (\+\_\+v), (\+\_\+out), (\+\_\+ix), (\+\_\+comp))}
+
+
+
+Write su\+Ngc according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Ngc target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component to write for argument consistency between different GPU read/write functions.\textbackslash{} Use this macro here always with \+\_\+comp=0, because this is for a scalar field! \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gpu__geometry_8h_a710f5cb74002c2214a1e81c0d6969075}\label{gpu__geometry_8h_a710f5cb74002c2214a1e81c0d6969075}} 
+\index{gpu\_geometry.h@{gpu\_geometry.h}!write\_gpu\_suNgc\_flt@{write\_gpu\_suNgc\_flt}}
+\index{write\_gpu\_suNgc\_flt@{write\_gpu\_suNgc\_flt}!gpu\_geometry.h@{gpu\_geometry.h}}
+\doxysubsubsection{\texorpdfstring{write\_gpu\_suNgc\_flt}{write\_gpu\_suNgc\_flt}}
+{\footnotesize\ttfamily \#define write\+\_\+gpu\+\_\+su\+Ngc\+\_\+flt(\begin{DoxyParamCaption}\item[{}]{\+\_\+stride,  }\item[{}]{\+\_\+v,  }\item[{}]{\+\_\+out,  }\item[{}]{\+\_\+ix,  }\item[{}]{\+\_\+comp }\end{DoxyParamCaption})~   \mbox{\hyperlink{gpu__geometry_8h_a2b50c9b16cd0aa5e7e39e8fccadcff03}{write\+\_\+gpu\+\_\+su\+Ng\+\_\+flt}}((\+\_\+stride), (\+\_\+v), (\+\_\+out), (\+\_\+ix), (\+\_\+comp))}
+
+
+
+Write su\+Ngc\+\_\+flt according to device geometry structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+stride} & Integer valued stride with which the components are stored \\
+\hline
+{\em \+\_\+v} & su\+Ngc\+\_\+flt target to write to the field \+\_\+out \\
+\hline
+{\em \+\_\+out} & Input field to write to \\
+\hline
+{\em \+\_\+ix} & Index at which to write \\
+\hline
+{\em \+\_\+comp} & Component to write for argument consistency between different GPU read/write functions.\textbackslash{} Use this macro here always with \+\_\+comp=0, because this is for a scalar field! \\
+\hline
+\end{DoxyParams}

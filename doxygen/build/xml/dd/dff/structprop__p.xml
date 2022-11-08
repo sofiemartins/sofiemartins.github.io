@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dd/dff/structprop__p" kind="struct" language="C++" prot="public">
+    <compoundname>prop_p</compoundname>
+    <includes refid="df/dc5/scattering_8h" local="no">scattering.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dd/dff/structprop__p_1ab1a1b67786c50ad9861e71432fa556ca" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* prop_p::Q_p</definition>
+        <argsstring></argsstring>
+        <name>Q_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="58" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dff/structprop__p_1abb155d95965c91e453d6e3129c524dd9" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* prop_p::Q_mp</definition>
+        <argsstring></argsstring>
+        <name>Q_mp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="59" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dff/structprop__p_1adb505872b3ba65304521c15701d0ea17" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* prop_p::W_0_p</definition>
+        <argsstring></argsstring>
+        <name>W_0_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="60" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dff/structprop__p_1a0f059cb088ba5446a7fdbd784e383bb9" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* prop_p::W_0_mp</definition>
+        <argsstring></argsstring>
+        <name>W_0_mp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="61" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dff/structprop__p_1ae798ee65e2c6ce53ab3ba5420e790359" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* prop_p::W_p_0</definition>
+        <argsstring></argsstring>
+        <name>W_p_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="62" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dd/dff/structprop__p_1a30262c24200147b13c7e7e2aa039c980" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* prop_p::W_mp_0</definition>
+        <argsstring></argsstring>
+        <name>W_mp_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="63" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bundle of propagators with momentum p. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>prop_p</label>
+        <link refid="dd/dff/structprop__p"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Q_mp</edgelabel>
+          <edgelabel>Q_p</edgelabel>
+          <edgelabel>W_0_mp</edgelabel>
+          <edgelabel>W_0_p</edgelabel>
+          <edgelabel>W_mp_0</edgelabel>
+          <edgelabel>W_p_0</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+      <node id="2">
+        <label>_spinor_field</label>
+        <link refid="d3/d33/struct__spinor__field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>suNf_vector</label>
+        <link refid="de/d49/structsuNf__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="57" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="57" bodyend="64"/>
+    <listofallmembers>
+      <member refid="dd/dff/structprop__p_1abb155d95965c91e453d6e3129c524dd9" prot="public" virt="non-virtual"><scope>prop_p</scope><name>Q_mp</name></member>
+      <member refid="dd/dff/structprop__p_1ab1a1b67786c50ad9861e71432fa556ca" prot="public" virt="non-virtual"><scope>prop_p</scope><name>Q_p</name></member>
+      <member refid="dd/dff/structprop__p_1a0f059cb088ba5446a7fdbd784e383bb9" prot="public" virt="non-virtual"><scope>prop_p</scope><name>W_0_mp</name></member>
+      <member refid="dd/dff/structprop__p_1adb505872b3ba65304521c15701d0ea17" prot="public" virt="non-virtual"><scope>prop_p</scope><name>W_0_p</name></member>
+      <member refid="dd/dff/structprop__p_1a30262c24200147b13c7e7e2aa039c980" prot="public" virt="non-virtual"><scope>prop_p</scope><name>W_mp_0</name></member>
+      <member refid="dd/dff/structprop__p_1ae798ee65e2c6ce53ab3ba5420e790359" prot="public" virt="non-virtual"><scope>prop_p</scope><name>W_p_0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

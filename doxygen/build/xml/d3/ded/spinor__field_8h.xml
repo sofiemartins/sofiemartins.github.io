@@ -1,0 +1,720 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/ded/spinor__field_8h" kind="file" language="C++">
+    <compoundname>spinor_field.h</compoundname>
+    <includes refid="d4/d67/geometry_8h" local="yes">geometry.h</includes>
+    <includes refid="d9/d21/suN__types_8h" local="yes">suN_types.h</includes>
+    <includes refid="da/d41/error_8h" local="yes">error.h</includes>
+    <includes refid="d1/d74/hr__complex_8h" local="yes">hr_complex.h</includes>
+    <includes refid="da/dac/field__ordering_8h" local="yes">field_ordering.h</includes>
+    <includedby refid="d3/dde/clover__exp_8h" local="yes">clover_exp.h</includedby>
+    <includedby refid="da/d6a/clover__tools_8h" local="yes">clover_tools.h</includedby>
+    <includedby refid="d2/d6f/communications_8h" local="yes">communications.h</includedby>
+    <includedby refid="d8/d7d/gaugefix_8h" local="yes">gaugefix.h</includedby>
+    <includedby refid="d2/d49/global_8h" local="yes">global.h</includedby>
+    <includedby refid="d3/d5d/inverters_8h" local="yes">inverters.h</includedby>
+    <includedby refid="dc/dac/io_8h" local="yes">io.h</includedby>
+    <includedby refid="dc/d9c/linear__algebra_8h" local="yes">linear_algebra.h</includedby>
+    <includedby refid="dc/d18/memory_8h" local="yes">memory.h</includedby>
+    <includedby refid="d0/d5a/moreio_8h" local="yes">moreio.h</includedby>
+    <includedby refid="d1/d79/random_8h" local="yes">random.h</includedby>
+    <includedby refid="d5/d60/utils_8h" local="yes">utils.h</includedby>
+    <includedby refid="d3/df8/wilsonflow_8h" local="yes">wilsonflow.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h_source"/>
+      </node>
+      <node id="1">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cpu_complex.h</label>
+        <link refid="d2/dfb/cpu__complex_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>error.h</label>
+        <link refid="da/d41/error_8h_source"/>
+      </node>
+      <node id="9">
+        <label>field_ordering.h</label>
+        <link refid="da/dac/field__ordering_8h_source"/>
+      </node>
+      <node id="5">
+        <label>hr_complex.h</label>
+        <link refid="d1/d74/hr__complex_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>tgmath.h</label>
+      </node>
+      <node id="2">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>gaugefix.h</label>
+        <link refid="d8/d7d/gaugefix_8h_source"/>
+      </node>
+      <node id="14">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h_source"/>
+      </node>
+      <node id="6">
+        <label>global.h</label>
+        <link refid="d2/d49/global_8h_source"/>
+      </node>
+      <node id="13">
+        <label>utils.h</label>
+        <link refid="d5/d60/utils_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>rational_functions.h</label>
+        <link refid="d5/dbc/rational__functions_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>clover_tools.h</label>
+        <link refid="da/d6a/clover__tools_8h_source"/>
+      </node>
+      <node id="1">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>io.h</label>
+        <link refid="dc/dac/io_8h_source"/>
+      </node>
+      <node id="19">
+        <label>wilsonflow.h</label>
+        <link refid="d3/df8/wilsonflow_8h_source"/>
+      </node>
+      <node id="8">
+        <label>observables.h</label>
+        <link refid="d0/d30/observables_8h_source"/>
+      </node>
+      <node id="12">
+        <label>spectrum.h</label>
+        <link refid="d6/d16/spectrum_8h_source"/>
+      </node>
+      <node id="15">
+        <label>linear_algebra.h</label>
+        <link refid="dc/d9c/linear__algebra_8h_source"/>
+      </node>
+      <node id="10">
+        <label>update.h</label>
+        <link refid="d8/d72/update_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>communications.h</label>
+        <link refid="d2/d6f/communications_8h_source"/>
+      </node>
+      <node id="16">
+        <label>memory.h</label>
+        <link refid="dc/d18/memory_8h_source"/>
+      </node>
+      <node id="17">
+        <label>moreio.h</label>
+        <link refid="d0/d5a/moreio_8h_source"/>
+      </node>
+      <node id="18">
+        <label>random.h</label>
+        <link refid="d1/d79/random_8h_source"/>
+      </node>
+      <node id="7">
+        <label>inverters.h</label>
+        <link refid="d3/d5d/inverters_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>clover_exp.h</label>
+        <link refid="d3/dde/clover__exp_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d7/d66/structldl__t" prot="public">ldl_t</innerclass>
+    <innerclass refid="d9/d96/struct__suNg__field" prot="public">_suNg_field</innerclass>
+    <innerclass refid="d8/dc4/struct__suNg__scalar__field" prot="public">_suNg_scalar_field</innerclass>
+    <innerclass refid="d2/d8d/struct__suNg__field__flt" prot="public">_suNg_field_flt</innerclass>
+    <innerclass refid="da/d8f/struct__suNf__field" prot="public">_suNf_field</innerclass>
+    <innerclass refid="d0/dcf/struct__suNf__field__flt" prot="public">_suNf_field_flt</innerclass>
+    <innerclass refid="d3/d33/struct__spinor__field" prot="public">_spinor_field</innerclass>
+    <innerclass refid="d0/d00/struct__spinor__field__flt" prot="public">_spinor_field_flt</innerclass>
+    <innerclass refid="d4/d75/struct__suNg__av__field" prot="public">_suNg_av_field</innerclass>
+    <innerclass refid="de/d54/struct__scalar__field" prot="public">_scalar_field</innerclass>
+    <innerclass refid="d9/d93/struct__ldl__field" prot="public">_ldl_field</innerclass>
+    <innerclass refid="d2/db6/struct__suNfc__field" prot="public">_suNfc_field</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a77c87297e9b23d96e6e721dc67b772fa" prot="public" static="no">
+        <name>_GPU_FIELD_DATA</name>
+        <param><defname>_type</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="18" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a74cf13943eb9d877931ba2dbded7f0b7" prot="public" static="no">
+        <name>_MPI_FIELD_DATA</name>
+        <param><defname>_type</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="25" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a0f245822721fba06b03cd9cfc5f787dd" prot="public" static="no">
+        <name>_DECLARE_FIELD_STRUCT</name>
+        <param><defname>_name</defname></param>
+        <param><defname>_type</defname></param>
+        <initializer>typedef struct _##_name { \
+_type *ptr; \
+<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *type;\
+_MPI_FIELD_DATA(_type) \
+_GPU_FIELD_DATA(_type) \
+} _name</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="36" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a57b38767f72997cbe0e530aec2ca5e61" prot="public" static="no">
+        <name>_TWO_SPINORS_MATCHING</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="71" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a29c2636539dced95a1b7f8c336add339" prot="public" static="no">
+        <name>_ARRAY_SPINOR_MATCHING</name>
+        <param><defname>s</defname></param>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="73" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1af3d244a74e93ebd8d972b31211483d8f" prot="public" static="no">
+        <name>_ONE_SPINOR_FOR_RED</name>
+        <param><defname>s</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer>_MASTER_FOR_RED((s)-&gt;type,_spinor_for_is,redop1,redop2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="78" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a29b455b128483748638bcd6342fd8d7c" prot="public" static="no">
+        <name>_ONE_SPINOR_FOR</name>
+        <param><defname>s</defname></param>
+        <initializer>_ONE_SPINOR_FOR_RED(s,,)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="79" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1afed9013e4caf088c2c66d8416617af77" prot="public" static="no">
+        <name>_ONE_SPINOR_FOR_SUM</name>
+        <param><defname>s</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>_ONE_SPINOR_FOR_RED(s,_omp_sum(__VA_ARGS__),)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="80" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a6ad91790f7a74c0b37cac897870a3160" prot="public" static="no">
+        <name>_TWO_SPINORS_FOR_RED</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer>  _TWO_SPINORS_MATCHING(s1,s2); \
+  _ONE_SPINOR_FOR_RED(s1,redop1,redop2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="82" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1aaf1c85365079ce137da26f5b39ad218a" prot="public" static="no">
+        <name>_TWO_SPINORS_FOR</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <initializer>_TWO_SPINORS_FOR_RED(s1,s2,,)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="85" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a94cc8b47e5677be5f85311df6b605cb8" prot="public" static="no">
+        <name>_TWO_SPINORS_FOR_SUM</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>_TWO_SPINORS_FOR_RED(s1,s2,_omp_sum(__VA_ARGS__),)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="86" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1a9231877584eff0fa16dbea12f0c22a18" prot="public" static="no">
+        <name>_THREE_SPINORS_FOR_RED</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <param><defname>s3</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer>  _TWO_SPINORS_MATCHING(s1,s2); \
+  _TWO_SPINORS_MATCHING(s1,s3); \
+  _ONE_SPINOR_FOR_RED(s1,redop1,redop2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="88" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1aeddee20430cac03313f50b1f5ae1ec06" prot="public" static="no">
+        <name>_THREE_SPINORS_FOR</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <param><defname>s3</defname></param>
+        <initializer>_THREE_SPINORS_FOR_RED(s1,s2,s3,,)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="92" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1ad7960dd90c7ef52dcf8fe0c381ad9be4" prot="public" static="no">
+        <name>_FIELD_AT</name>
+        <param><defname>s</defname></param>
+        <param><defname>i</defname></param>
+        <initializer>(((s)-&gt;ptr)+i-(s)-&gt;type-&gt;master_shift)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="96" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1ac7842bf889ef64e8344cb5c1f2c8e08d" prot="public" static="no">
+        <name>_4FIELD_AT</name>
+        <param><defname>s</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>mu</defname></param>
+        <initializer>(((s)-&gt;ptr)+coord_to_index(i-(s)-&gt;type-&gt;master_shift,mu))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="97" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1ac833819afc638970420fa945e9bdc15c" prot="public" static="no">
+        <name>_6FIELD_AT</name>
+        <param><defname>s</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>mu</defname></param>
+        <initializer>(((s)-&gt;ptr)+((i-(s)-&gt;type-&gt;master_shift)*6+mu))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="98" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1aa9a6a25a8b9f948673e5c67aa35dc2e2" prot="public" static="no">
+        <name>_DFIELD_AT</name>
+        <param><defname>s</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>mu</defname></param>
+        <param><defname>size</defname></param>
+        <initializer>(size == 1) ? _FIELD_AT(s,i) : ((size == 4) ? _4FIELD_AT(s,i,mu) : _6FIELD_AT(s,i,mu))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="99" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/ded/spinor__field_8h_1ae27a9385750ceb1fc11fa5665ef6f5ba" prot="public" static="no">
+        <name>_SPINOR_PTR</name>
+        <param><defname>s</defname></param>
+        <initializer>_FIELD_AT(s,_spinor_for_is)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="101" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1ade6780ef5728b9ef83c1330357d2b4dd" prot="public" static="no">
+        <type>struct <ref refid="d9/d96/struct__suNg__field" kindref="compound">_suNg_field</ref></type>
+        <definition>typedef struct _suNg_field suNg_field</definition>
+        <argsstring></argsstring>
+        <name>suNg_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="45" column="39"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1a73f2cade9215cf85b4e22a8f365f792c" prot="public" static="no">
+        <type>struct <ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">_suNg_scalar_field</ref></type>
+        <definition>typedef struct _suNg_scalar_field suNg_scalar_field</definition>
+        <argsstring></argsstring>
+        <name>suNg_scalar_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="46" column="53"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1ac27c489c62ca9cf78f5791bb1e0a32fa" prot="public" static="no">
+        <type>struct <ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">_suNg_field_flt</ref></type>
+        <definition>typedef struct _suNg_field_flt suNg_field_flt</definition>
+        <argsstring></argsstring>
+        <name>suNg_field_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="47" column="47"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1adb8fd6119e8fae5f8270d3f1c0479f72" prot="public" static="no">
+        <type>struct <ref refid="da/d8f/struct__suNf__field" kindref="compound">_suNf_field</ref></type>
+        <definition>typedef struct _suNf_field suNf_field</definition>
+        <argsstring></argsstring>
+        <name>suNf_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="48" column="39"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1a67b2f99e82366ced2ce2db1b23435ddc" prot="public" static="no">
+        <type>struct <ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">_suNf_field_flt</ref></type>
+        <definition>typedef struct _suNf_field_flt suNf_field_flt</definition>
+        <argsstring></argsstring>
+        <name>suNf_field_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="49" column="47"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1ae4bff8beeed96a90b9bbc6a3f5c41d9c" prot="public" static="no">
+        <type>struct <ref refid="d3/d33/struct__spinor__field" kindref="compound">_spinor_field</ref></type>
+        <definition>typedef struct _spinor_field spinor_field</definition>
+        <argsstring></argsstring>
+        <name>spinor_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="50" column="43"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1af489d06f791bc8a9e18d25551633c1c1" prot="public" static="no">
+        <type>struct <ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">_spinor_field_flt</ref></type>
+        <definition>typedef struct _spinor_field_flt spinor_field_flt</definition>
+        <argsstring></argsstring>
+        <name>spinor_field_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="51" column="51"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1a0d4296bc5cfc3f6f3b31b32b4aa86ae8" prot="public" static="no">
+        <type>struct <ref refid="d4/d75/struct__suNg__av__field" kindref="compound">_suNg_av_field</ref></type>
+        <definition>typedef struct _suNg_av_field suNg_av_field</definition>
+        <argsstring></argsstring>
+        <name>suNg_av_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="52" column="45"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1ade8437d0f6fc8d901039764f4e7b2ad0" prot="public" static="no">
+        <type>struct <ref refid="de/d54/struct__scalar__field" kindref="compound">_scalar_field</ref></type>
+        <definition>typedef struct _scalar_field scalar_field</definition>
+        <argsstring></argsstring>
+        <name>scalar_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="53" column="43"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1aeeb0075b6b16469c0ba65f80c8ab1f93" prot="public" static="no">
+        <type>struct <ref refid="d9/d93/struct__ldl__field" kindref="compound">_ldl_field</ref></type>
+        <definition>typedef struct _ldl_field ldl_field</definition>
+        <argsstring></argsstring>
+        <name>ldl_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="54" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/ded/spinor__field_8h_1a9b12aa670d2ee9b66e6f83806c641c8b" prot="public" static="no">
+        <type>struct <ref refid="d2/db6/struct__suNfc__field" kindref="compound">_suNfc_field</ref></type>
+        <definition>typedef struct _suNfc_field suNfc_field</definition>
+        <argsstring></argsstring>
+        <name>suNfc_field</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="55" column="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2008,<sp/>Claudio<sp/>Pica<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SPINOR_FIELD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPINOR_FIELD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;geometry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hr_complex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_MPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mpi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>GPU<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_GPU_FIELD_DATA(_type)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>_GPU_FIELD_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_GPU_FIELD_DATA(_type)<sp/>_type<sp/>*gpu_ptr;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MPI<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MPI_FIELD_DATA(_type)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_MPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>_MPI_FIELD_DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MPI_FIELD_DATA(_type)<sp/>MPI_Request<sp/>*comm_req;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//WITH_MPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d7/d66/structldl__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight><highlight class="comment">//<sp/>TODO:<sp/>this<sp/>is<sp/>probably<sp/>not<sp/>the<sp/>right<sp/>complex<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_Complex<sp/>up[NF*(2*NF+1)];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_Complex<sp/>dn[NF*(2*NF+1)];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="d7/d66/structldl__t" kindref="compound">ldl_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DECLARE_FIELD_STRUCT(_name,_type)<sp/>\</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">typedef<sp/>struct<sp/>_##_name<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor">_type<sp/>*ptr;<sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor">geometry_descriptor<sp/>*type;\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor">_MPI_FIELD_DATA(_type)<sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">_GPU_FIELD_DATA(_type)<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor">}<sp/>_name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="d9/d96/struct__suNg__field" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>,<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref>);</highlight></codeline>
+<codeline lineno="46" refid="d8/dc4/struct__suNg__scalar__field" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>,<sp/><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref>);</highlight></codeline>
+<codeline lineno="47" refid="d2/d8d/struct__suNg__field__flt" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>,<sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref>);</highlight></codeline>
+<codeline lineno="48" refid="da/d8f/struct__suNf__field" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>,<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref>);</highlight></codeline>
+<codeline lineno="49" refid="d0/dcf/struct__suNf__field__flt" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>,<sp/><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref>);</highlight></codeline>
+<codeline lineno="50" refid="d3/d33/struct__spinor__field" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref>);</highlight></codeline>
+<codeline lineno="51" refid="d0/d00/struct__spinor__field__flt" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref>,<sp/><ref refid="de/def/structsuNf__spinor__flt" kindref="compound">suNf_spinor_flt</ref>);</highlight></codeline>
+<codeline lineno="52" refid="d4/d75/struct__suNg__av__field" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>,<sp/><ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref>);</highlight></codeline>
+<codeline lineno="53" refid="de/d54/struct__scalar__field" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54" refid="d9/d93/struct__ldl__field" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref>,<sp/><ref refid="d7/d66/structldl__t" kindref="compound">ldl_t</ref>);</highlight></codeline>
+<codeline lineno="55" refid="d2/db6/struct__suNfc__field" refkind="compound"><highlight class="normal">_DECLARE_FIELD_STRUCT(<ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>,<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNfc</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LOOPING<sp/>MACRO<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CHECK_SPINOR_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_MATCHING(s1,s2)<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>error((s1)-&gt;type!=(s2)-&gt;type,1,__FILE__<sp/>&quot;:<sp/>&quot;</highlight><highlight class="normal">,<sp/>&quot;Spinors<sp/>don&apos;t<sp/>match!&quot;);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ARRAY_SPINOR_MATCHING(s,n)<sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>for(int<sp/>_i=0;<sp/>_i&lt;n;<sp/>_i++)<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error((s)-&gt;type!=((s)+_i)-&gt;type,1,__FILE__<sp/>&quot;:<sp/>&quot;</highlight><highlight class="normal">,<sp/>&quot;Spinors<sp/>don&apos;t<sp/>match!&quot;);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>CHECK_SPINOR_MATCHING<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_MATCHING(s1,s2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ARRAY_SPINOR_MATCHING(s,n)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CHECK_SPINOR_MATCHING<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ONE_SPINOR_FOR_RED(s,redop1,redop2)<sp/>_MASTER_FOR_RED((s)-&gt;type,_spinor_for_is,redop1,redop2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ONE_SPINOR_FOR(s)<sp/>_ONE_SPINOR_FOR_RED(s,,)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ONE_SPINOR_FOR_SUM(s,...)<sp/>_ONE_SPINOR_FOR_RED(s,_omp_sum(__VA_ARGS__),)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_FOR_RED(s1,s2,redop1,redop2)<sp/>\</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"><sp/><sp/>_TWO_SPINORS_MATCHING(s1,s2);<sp/>\</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"><sp/><sp/>_ONE_SPINOR_FOR_RED(s1,redop1,redop2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_FOR(s1,s2)<sp/>_TWO_SPINORS_FOR_RED(s1,s2,,)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_FOR_SUM(s1,s2,...)<sp/>_TWO_SPINORS_FOR_RED(s1,s2,_omp_sum(__VA_ARGS__),)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_THREE_SPINORS_FOR_RED(s1,s2,s3,redop1,redop2)<sp/>\</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"><sp/><sp/>_TWO_SPINORS_MATCHING(s1,s2);<sp/>\</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"><sp/><sp/>_TWO_SPINORS_MATCHING(s1,s3);<sp/>\</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"><sp/><sp/>_ONE_SPINOR_FOR_RED(s1,redop1,redop2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_THREE_SPINORS_FOR(s1,s2,s3)<sp/>_THREE_SPINORS_FOR_RED(s1,s2,s3,,)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;field_ordering.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FIELD_AT(s,i)<sp/>(((s)-&gt;ptr)+i-(s)-&gt;type-&gt;master_shift)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_4FIELD_AT(s,i,mu)<sp/>(((s)-&gt;ptr)+coord_to_index(i-(s)-&gt;type-&gt;master_shift,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_6FIELD_AT(s,i,mu)<sp/>(((s)-&gt;ptr)+((i-(s)-&gt;type-&gt;master_shift)*6+mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DFIELD_AT(s,i,mu,size)<sp/>(size<sp/>==<sp/>1)<sp/>?<sp/>_FIELD_AT(s,i)<sp/>:<sp/>((size<sp/>==<sp/>4)<sp/>?<sp/>_4FIELD_AT(s,i,mu)<sp/>:<sp/>_6FIELD_AT(s,i,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_SPINOR_PTR(s)<sp/>_FIELD_AT(s,_spinor_for_is)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>_GPU_FIELD_AT(s,i)<sp/>(((s)-&gt;gpu_ptr)+i-(s)-&gt;type-&gt;master_shift)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>_GPU_4FIELD_AT(s,i,mu)<sp/>(((s)-&gt;gpu_ptr)+coord_to_index(i-(s)-&gt;type-&gt;master_shift,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>_GPU_6FIELD_AT(s,i,mu)<sp/>(((s)-&gt;gpu_ptr)+((i-(s)-&gt;type-&gt;master_shift)*6+mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h"/>
+  </compounddef>
+</doxygen>

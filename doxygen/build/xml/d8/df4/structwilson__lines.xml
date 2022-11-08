@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/df4/structwilson__lines" kind="struct" language="C++" prot="public">
+    <compoundname>wilson_lines</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/df4/structwilson__lines_1a86c9af15ec52fb58c229267b1d2870da" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> *</type>
+        <definition>suNg* wilson_lines::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="34" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/df4/structwilson__lines_1a0d55d46da4d2abeb0e65739e76fbb6e7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int wilson_lines::ix</definition>
+        <argsstring></argsstring>
+        <name>ix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="35" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/df4/structwilson__lines_1a924546aa0e009eb56f2a9bc13382dfd9" prot="public" static="no" mutable="no">
+        <type>double complex</type>
+        <definition>double complex wilson_lines::tr</definition>
+        <argsstring></argsstring>
+        <name>tr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="36" column="20" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>suNg</label>
+        <link refid="d8/d0f/structsuNg"/>
+      </node>
+      <node id="1">
+        <label>wilson_lines</label>
+        <link refid="d8/df4/structwilson__lines"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="32" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="33" bodyend="37"/>
+    <listofallmembers>
+      <member refid="d8/df4/structwilson__lines_1a0d55d46da4d2abeb0e65739e76fbb6e7" prot="public" virt="non-virtual"><scope>wilson_lines</scope><name>ix</name></member>
+      <member refid="d8/df4/structwilson__lines_1a86c9af15ec52fb58c229267b1d2870da" prot="public" virt="non-virtual"><scope>wilson_lines</scope><name>p</name></member>
+      <member refid="d8/df4/structwilson__lines_1a924546aa0e009eb56f2a9bc13382dfd9" prot="public" virt="non-virtual"><scope>wilson_lines</scope><name>tr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

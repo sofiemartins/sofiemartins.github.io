@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d2b/data__storage_8h" kind="file" language="C++">
+    <compoundname>data_storage.h</compoundname>
+    <includedby refid="dc/d1e/disconnected_8h" local="yes">disconnected.h</includedby>
+    <includedby refid="d0/d30/observables_8h" local="yes">observables.h</includedby>
+    <includedby refid="d6/d16/spectrum_8h" local="yes">spectrum.h</includedby>
+    <includedby refid="d3/df8/wilsonflow_8h" local="yes">wilsonflow.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>disconnected.h</label>
+        <link refid="dc/d1e/disconnected_8h_source"/>
+      </node>
+      <node id="5">
+        <label>wilsonflow.h</label>
+        <link refid="d3/df8/wilsonflow_8h_source"/>
+      </node>
+      <node id="3">
+        <label>observables.h</label>
+        <link refid="d0/d30/observables_8h_source"/>
+      </node>
+      <node id="4">
+        <label>spectrum.h</label>
+        <link refid="d6/d16/spectrum_8h_source"/>
+      </node>
+      <node id="1">
+        <label>data_storage.h</label>
+        <link refid="d5/d2b/data__storage_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d3/d97/struct__data__storage" prot="public">_data_storage</innerclass>
+    <innerclass refid="d0/d6e/struct__data__storage__array" prot="public">_data_storage_array</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d5/d2b/data__storage_8h_1a9534cf5c3a8eeca99ad0c371daa1e799" prot="public" static="no" strong="no">
+        <type></type>
+        <name>storage_switch</name>
+        <enumvalue id="d5/d2b/data__storage_8h_1a9534cf5c3a8eeca99ad0c371daa1e799afeb01cb4572ba190cd7932e49446c480" prot="public">
+          <name>STORE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d2b/data__storage_8h_1a9534cf5c3a8eeca99ad0c371daa1e799aae8e6ee75583dff16dbc08fc7b174e7a" prot="public">
+          <name>DONTSTORE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="4" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" bodystart="5" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d5/d2b/data__storage_8h_1a7866668140490ef6c23ebfea6220b473" prot="public" static="no">
+        <type>struct <ref refid="d3/d97/struct__data__storage" kindref="compound">_data_storage</ref></type>
+        <definition>typedef struct _data_storage data_storage</definition>
+        <argsstring></argsstring>
+        <name>data_storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="15" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d5/d2b/data__storage_8h_1a5e985b962e25424669266dd9de801aa2" prot="public" static="no">
+        <type>struct <ref refid="d0/d6e/struct__data__storage__array" kindref="compound">_data_storage_array</ref></type>
+        <definition>typedef struct _data_storage_array data_storage_array</definition>
+        <argsstring></argsstring>
+        <name>data_storage_array</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="22" column="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/d2b/data__storage_8h_1ae099cf8fdaa290163c7cbeec8ff0f004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref> *</type>
+        <definition>data_storage_array* allocate_data_storage_array</definition>
+        <argsstring>(int n)</argsstring>
+        <name>allocate_data_storage_array</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="24" column="20" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" declline="24" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d2b/data__storage_8h_1adf96f33cdc93a0f29cb70b53185e89dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void allocate_data_storage_element</definition>
+        <argsstring>(data_storage_array *cont, int id, int n, int *ni)</argsstring>
+        <name>allocate_data_storage_element</name>
+        <param>
+          <type><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref> *</type>
+          <declname>cont</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ni</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="26" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d2b/data__storage_8h_1a1ac368dd30998f416a94a5457f6e5086" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_data_storage</definition>
+        <argsstring>(data_storage_array *dat)</argsstring>
+        <name>free_data_storage</name>
+        <param>
+          <type><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref> *</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="28" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d2b/data__storage_8h_1a9697cff86dd058c64a7b30090880e6aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double *</type>
+        <definition>double* data_storage_element</definition>
+        <argsstring>(data_storage_array *dat, int iel, int *ni)</argsstring>
+        <name>data_storage_element</name>
+        <param>
+          <type><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref> *</type>
+          <declname>dat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iel</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>ni</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="30" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" declline="30" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d2b/data__storage_8h_1a789e48ffd0a62a522b6241937b792048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_data_storage</definition>
+        <argsstring>(data_storage_array *dat)</argsstring>
+        <name>print_data_storage</name>
+        <param>
+          <type><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref> *</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="32" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" declline="32" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DATA_STORAGE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_STORAGE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>STORE,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>DONTSTORE</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}<sp/>storage_switch;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="d3/d97/struct__data__storage" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/d97/struct__data__storage" kindref="compound">_data_storage</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ni;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*data;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}<sp/><ref refid="d3/d97/struct__data__storage" kindref="compound">data_storage</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d0/d6e/struct__data__storage__array" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">_data_storage_array</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d97/struct__data__storage" kindref="compound">data_storage</ref><sp/>*element;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*allocate_data_storage_array(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>allocate_data_storage_element(<ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*cont,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ni);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_data_storage(<ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*dat);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*data_storage_element(<ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*dat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iel,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*ni);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_data_storage(<ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*dat);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h"/>
+  </compounddef>
+</doxygen>

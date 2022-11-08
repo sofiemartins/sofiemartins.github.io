@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/dd1/structsuNf__spinor" kind="struct" language="C++" prot="public">
+    <compoundname>suNf_spinor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/dd1/structsuNf__spinor_1a8737d6ec1fa3aa29f6eb25a45a80997a" prot="public" static="no" mutable="no">
+        <type><ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref></type>
+        <definition>suNf_vector suNf_spinor::c[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="106" column="16" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>suNf_vector</label>
+        <link refid="de/d49/structsuNf__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="104" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="105" bodyend="107"/>
+    <listofallmembers>
+      <member refid="d8/dd1/structsuNf__spinor_1a8737d6ec1fa3aa29f6eb25a45a80997a" prot="public" virt="non-virtual"><scope>suNf_spinor</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

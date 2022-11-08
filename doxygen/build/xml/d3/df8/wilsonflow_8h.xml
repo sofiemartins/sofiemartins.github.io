@@ -1,0 +1,452 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/df8/wilsonflow_8h" kind="file" language="C++">
+    <compoundname>wilsonflow.h</compoundname>
+    <includes refid="d9/d21/suN__types_8h" local="yes">suN_types.h</includes>
+    <includes refid="d1/d74/hr__complex_8h" local="yes">hr_complex.h</includes>
+    <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
+    <includes refid="d1/d36/suN_8h" local="yes">suN.h</includes>
+    <includes refid="d5/d2b/data__storage_8h" local="yes">data_storage.h</includes>
+    <incdepgraph>
+      <node id="8">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h_source"/>
+      </node>
+      <node id="6">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cpu_complex.h</label>
+        <link refid="d2/dfb/cpu__complex_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>wilsonflow.h</label>
+        <link refid="d3/df8/wilsonflow_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>error.h</label>
+        <link refid="da/d41/error_8h_source"/>
+      </node>
+      <node id="10">
+        <label>field_ordering.h</label>
+        <link refid="da/dac/field__ordering_8h_source"/>
+      </node>
+      <node id="3">
+        <label>hr_complex.h</label>
+        <link refid="d1/d74/hr__complex_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>tgmath.h</label>
+      </node>
+      <node id="11">
+        <label>suN.h</label>
+        <link refid="d1/d36/suN_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>data_storage.h</label>
+        <link refid="d5/d2b/data__storage_8h_source"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d3/df8/wilsonflow_8h_1aaa5c93769811f504862e4814ff48a58b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>WF_integrator_type</name>
+        <enumvalue id="d3/df8/wilsonflow_8h_1aaa5c93769811f504862e4814ff48a58ba325c1cfb8bee00d0ad35a6d6e3809cd1" prot="public">
+          <name>EUL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d3/df8/wilsonflow_8h_1aaa5c93769811f504862e4814ff48a58ba9775c41ec65add712b9d4ada46e38672" prot="public">
+          <name>RK3</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d3/df8/wilsonflow_8h_1aaa5c93769811f504862e4814ff48a58ba764a0e9026aeacbcc7db64cb8fd63190" prot="public">
+          <name>RK3_ADAPTIVE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="21" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" bodystart="22" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1ad8e80211d752d31a84682ebe9eaa307f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WF_initialize</definition>
+        <argsstring>()</argsstring>
+        <name>WF_initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="28" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1a2133b92e44a78f663900e7c95c4f82b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WF_free</definition>
+        <argsstring>()</argsstring>
+        <name>WF_free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="29" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1a2aa0773138185ff05b3f5ee4c66a1472" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WF_set_bare_anisotropy</definition>
+        <argsstring>(double *chi)</argsstring>
+        <name>WF_set_bare_anisotropy</name>
+        <param>
+          <type>double *</type>
+          <declname>chi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="31" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1af789439bd3083a9f3719a1b254500aaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double max_distance</definition>
+        <argsstring>(suNg_field *V, suNg_field *Vprime)</argsstring>
+        <name>max_distance</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>Vprime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="33" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="33" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1a5e31984c8d1a63c6ec93e377fd4b8165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WilsonFlow1</definition>
+        <argsstring>(suNg_field *V, const double epsilon)</argsstring>
+        <name>WilsonFlow1</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="35" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1a4640744a0f83fa2c2f5ad2d7268d2a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WilsonFlow3</definition>
+        <argsstring>(suNg_field *V, const double epsilon)</argsstring>
+        <name>WilsonFlow3</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>epsilon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="36" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1a0bb3b323667946a144146f040434d5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WilsonFlow3_adaptative</definition>
+        <argsstring>(suNg_field *V, double *epsilon, double *epsilon_new, double *delta)</argsstring>
+        <name>WilsonFlow3_adaptative</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>epsilon_new</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>delta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="37" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="37" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1ab072f9b3e435ca1df80ecf8eceb11fa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double WF_E</definition>
+        <argsstring>(suNg_field *V)</argsstring>
+        <name>WF_E</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="39" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="39" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1aeda4a6c011f1cc5220cab99df89fe023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double WF_Esym</definition>
+        <argsstring>(suNg_field *V)</argsstring>
+        <name>WF_Esym</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="40" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="40" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1a108c4c4c19a536da5a450c5065cac6c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double WF_topo</definition>
+        <argsstring>(suNg_field *V)</argsstring>
+        <name>WF_topo</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="41" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="41" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1aa7ffb8b3663e4ec2e5d424fbcd48949e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WF_E_T</definition>
+        <argsstring>(double *E, suNg_field *V)</argsstring>
+        <name>WF_E_T</name>
+        <param>
+          <type>double *</type>
+          <declname>E</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="43" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1a449725ac04c48b6487788aec7ea41fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WF_Esym_T</definition>
+        <argsstring>(double *Esym, suNg_field *V)</argsstring>
+        <name>WF_Esym_T</name>
+        <param>
+          <type>double *</type>
+          <declname>Esym</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="44" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/df8/wilsonflow_8h_1a3ec52423443891eaf923f0d0c56d07a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref> *</type>
+        <definition>data_storage_array* WF_update_and_measure</definition>
+        <argsstring>(WF_integrator_type wft, suNg_field *V, double *tmax, double *eps, double *delta, int nmeas, storage_switch swc)</argsstring>
+        <name>WF_update_and_measure</name>
+        <param>
+          <type>WF_integrator_type</type>
+          <declname>wft</declname>
+        </param>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>tmax</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>eps</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nmeas</declname>
+        </param>
+        <param>
+          <type>storage_switch</type>
+          <declname>swc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" line="45" column="20" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h" declline="45" declcolumn="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2011,<sp/>Agostino<sp/>Patella<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>File<sp/>wilsonflow.h</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WILSONFLOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WILSONFLOW_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hr_complex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data_storage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>EUL<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>RK3<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>RK3_ADAPTIVE<sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}<sp/>WF_integrator_type;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_initialize();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_free();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_set_bare_anisotropy(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*chi);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_distance(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*Vprime);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WilsonFlow1(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>epsilon);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WilsonFlow3(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>epsilon);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>WilsonFlow3_adaptative(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*epsilon,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*epsilon_new,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*delta);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_E(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_Esym(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_topo(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_E_T(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*E,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_Esym_T(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*Esym,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*WF_update_and_measure(WF_integrator_type<sp/>wft,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*tmax,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*eps,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nmeas,<sp/>storage_switch<sp/>swc);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WILSONFLOW_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/wilsonflow.h"/>
+  </compounddef>
+</doxygen>

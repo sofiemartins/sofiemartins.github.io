@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d1/deb/struct__input__glb" kind="struct" language="C++" prot="public">
+    <compoundname>_input_glb</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d1/deb/struct__input__glb_1a2402f55eb2a5169f5eb793e0ce28a942" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/dab/struct__input__record__t" kindref="compound">input_record_t</ref></type>
+        <definition>input_record_t _input_glb::read[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="33" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_input_record_t</label>
+        <link refid="d4/dab/struct__input__record__t"/>
+      </node>
+      <node id="1">
+        <label>_input_glb</label>
+        <link refid="d1/deb/struct__input__glb"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>read</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="25" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="25" bodyend="35"/>
+    <listofallmembers>
+      <member refid="d1/deb/struct__input__glb_1a2402f55eb2a5169f5eb793e0ce28a942" prot="public" virt="non-virtual"><scope>_input_glb</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

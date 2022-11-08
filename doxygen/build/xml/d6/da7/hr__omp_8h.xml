@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/da7/hr__omp_8h" kind="file" language="C++">
+    <compoundname>hr_omp.h</compoundname>
+    <includedby refid="d4/d67/geometry_8h" local="yes">geometry.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gaugefix.h</label>
+        <link refid="d8/d7d/gaugefix_8h_source"/>
+      </node>
+      <node id="17">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h_source"/>
+      </node>
+      <node id="4">
+        <label>global.h</label>
+        <link refid="d2/d49/global_8h_source"/>
+      </node>
+      <node id="16">
+        <label>utils.h</label>
+        <link refid="d5/d60/utils_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>rational_functions.h</label>
+        <link refid="d5/dbc/rational__functions_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>clover_tools.h</label>
+        <link refid="da/d6a/clover__tools_8h_source"/>
+      </node>
+      <node id="5">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>io.h</label>
+        <link refid="dc/dac/io_8h_source"/>
+      </node>
+      <node id="22">
+        <label>wilsonflow.h</label>
+        <link refid="d3/df8/wilsonflow_8h_source"/>
+      </node>
+      <node id="11">
+        <label>observables.h</label>
+        <link refid="d0/d30/observables_8h_source"/>
+      </node>
+      <node id="15">
+        <label>spectrum.h</label>
+        <link refid="d6/d16/spectrum_8h_source"/>
+      </node>
+      <node id="3">
+        <label>geometry_check.h</label>
+        <link refid="d4/d3d/geometry__check_8h_source"/>
+      </node>
+      <node id="18">
+        <label>linear_algebra.h</label>
+        <link refid="dc/d9c/linear__algebra_8h_source"/>
+      </node>
+      <node id="13">
+        <label>update.h</label>
+        <link refid="d8/d72/update_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>communications.h</label>
+        <link refid="d2/d6f/communications_8h_source"/>
+      </node>
+      <node id="2">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>memory.h</label>
+        <link refid="dc/d18/memory_8h_source"/>
+      </node>
+      <node id="20">
+        <label>moreio.h</label>
+        <link refid="d0/d5a/moreio_8h_source"/>
+      </node>
+      <node id="21">
+        <label>random.h</label>
+        <link refid="d1/d79/random_8h_source"/>
+      </node>
+      <node id="10">
+        <label>inverters.h</label>
+        <link refid="d3/d5d/inverters_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>clover_exp.h</label>
+        <link refid="d3/dde/clover__exp_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d6/da7/hr__omp_8h_1a879ff03b651e52da8e53e5608590e234" prot="public" static="no">
+        <name>_DO_PRAGMA</name>
+        <param><defname>s</defname></param>
+        <initializer>_Pragma ( #s )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/hr_omp.h" line="9" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/hr_omp.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/da7/hr__omp_8h_1a5ae70cac31f08c4e3c7d9dbaadedc808" prot="public" static="no">
+        <name>_OMP_PRAGMA</name>
+        <param><defname>s</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/hr_omp.h" line="26" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/hr_omp.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/da7/hr__omp_8h_1aa7d27686ede29d385e4ab8f25bf7a9a7" prot="public" static="no">
+        <name>_OMP_BARRIER</name>
+        <initializer>_OMP_PRAGMA( barrier )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/hr_omp.h" line="28" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/hr_omp.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2014,<sp/>Claudio<sp/>Pica<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HR_OMP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HR_OMP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DO_PRAGMA(s)<sp/>_Pragma<sp/>(<sp/>#s<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_OPENMP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_OMP_PRAGMA(s)<sp/>_DO_PRAGMA(<sp/>omp<sp/>s<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;omp.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//define<sp/>OpenMP<sp/>behavior</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_omp_parallel<sp/>parallel<sp/>default(shared)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_omp_for<sp/>for<sp/>schedule(static)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_omp_sum(...)<sp/>reduction(+:__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_omp_max(...)<sp/>reduction(max:__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_omp_min(...)<sp/>reduction(min:__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">//to<sp/>avoid<sp/>compilation<sp/>warnings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_OMP_PRAGMA(s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_OMP_BARRIER<sp/>_OMP_PRAGMA(<sp/>barrier<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/hr_omp.h"/>
+  </compounddef>
+</doxygen>

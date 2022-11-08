@@ -1,0 +1,3352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/de8/gpu__geometry_8h" kind="file" language="C++">
+    <compoundname>gpu_geometry.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a02579bd7c86a122caf5a30bc26f7c210" prot="public" static="no">
+        <name>read_gpu_suNg_spinor</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		<ref refid="d9/de8/gpu__geometry_8h_1ae81860ddaf0e022d3f78be57a84b22cf" kindref="member">read_gpu_suNg_vector</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 0);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ae81860ddaf0e022d3f78be57a84b22cf" kindref="member">read_gpu_suNg_vector</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 1);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ae81860ddaf0e022d3f78be57a84b22cf" kindref="member">read_gpu_suNg_vector</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 2);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ae81860ddaf0e022d3f78be57a84b22cf" kindref="member">read_gpu_suNg_vector</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 3);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d9/d78/structsuNg__spinor" kindref="compound">suNg_spinor</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d9/d78/structsuNg__spinor" kindref="compound">suNg_spinor</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to read, choose 0 for spinor fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="28" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a9a24502a528acf26f163b0c455977d19" prot="public" static="no">
+        <name>write_gpu_suNg_spinor</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		<ref refid="d9/de8/gpu__geometry_8h_1ac4c93281942b640eb0117d67b5c90fd4" kindref="member">write_gpu_suNg_vector</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 0);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ac4c93281942b640eb0117d67b5c90fd4" kindref="member">write_gpu_suNg_vector</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 1);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ac4c93281942b640eb0117d67b5c90fd4" kindref="member">write_gpu_suNg_vector</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 2);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ac4c93281942b640eb0117d67b5c90fd4" kindref="member">write_gpu_suNg_vector</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 3);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d9/d78/structsuNg__spinor" kindref="compound">suNg_spinor</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to write, choose 0 for spinor fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="44" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ae81860ddaf0e022d3f78be57a84b22cf" prot="public" static="no">
+        <name>read_gpu_suNg_vector</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*2)*(_stride); \
+		(_v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="60" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ac4c93281942b640eb0117d67b5c90fd4" prot="public" static="no">
+        <name>write_gpu_suNg_vector</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*2)*(_stride); \
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[1]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="75" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a5035cb09f0ff6285f6f72d51b7999b3f" prot="public" static="no">
+        <name>read_gpu_double</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		(_v)=*((_in)+(_ix));\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read double according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>double target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the double to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="90" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1aba4091d8a8eec96b345dab2afe3ef536" prot="public" static="no">
+        <name>write_gpu_double</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		(*((_out)+(_ix)))=(_v);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write double according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>double target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the double to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="103" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ab9f8d220706901661d7f58035b6c5b68" prot="public" static="no">
+        <name>read_gpu_suNg</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*4)*(_stride); \
+		(_v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[3]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> matrix according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Link direction to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="116" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a8c3dbd686441fdb737d96ba2f83e51e4" prot="public" static="no">
+        <name>write_gpu_suNg</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*4)*(_stride); \
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[3]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> matrix according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Link direction to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="133" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a5abaeda37787a3022a23bf371a45b246" prot="public" static="no">
+        <name>read_gpu_suNg_algebra_vector</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*3)*(_stride); \
+		(_v).c[0]=((double*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((double*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((double*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref> to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="150" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ab092298fab9e7de75d5d1962a263c0c8" prot="public" static="no">
+        <name>write_gpu_suNg_algebra_vector</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*3)*(_stride); \
+		((double*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((double*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((double*)(_out))[__iz]=(_v).c[2]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref> to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="166" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ac38098f70b01e9d0eb7589fb204fb2c5" prot="public" static="no">
+        <name>read_gpu_suNgc</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>			<ref refid="d9/de8/gpu__geometry_8h_1ab9f8d220706901661d7f58035b6c5b68" kindref="member">read_gpu_suNg</ref>((_stride), (_v), (_in), (_ix), (_comp))</initializer>
+        <briefdescription>
+<para>Read suNgc according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNgc target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to read for argument consistency between different GPU read/write functions.\ Use this macro here always with _comp=0, because this is for a scalar field! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="183" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ab41ce70779aa0e6073569cd36f39b9a9" prot="public" static="no">
+        <name>write_gpu_suNgc</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>			<ref refid="d9/de8/gpu__geometry_8h_1a8c3dbd686441fdb737d96ba2f83e51e4" kindref="member">write_gpu_suNg</ref>((_stride), (_v), (_out), (_ix), (_comp))</initializer>
+        <briefdescription>
+<para>Write suNgc according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNgc target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to write for argument consistency between different GPU read/write functions.\ Use this macro here always with _comp=0, because this is for a scalar field! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="194" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1acef4ea10bd4368e4c7df893767a90f5e" prot="public" static="no">
+        <name>read_gpu_suNf_spinor</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		<ref refid="d9/de8/gpu__geometry_8h_1ab50bccf78fcc9610ba9d2d949921716d" kindref="member">read_gpu_suNf_vector</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 0);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ab50bccf78fcc9610ba9d2d949921716d" kindref="member">read_gpu_suNf_vector</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 1);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ab50bccf78fcc9610ba9d2d949921716d" kindref="member">read_gpu_suNf_vector</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 2);\
+		<ref refid="d9/de8/gpu__geometry_8h_1ab50bccf78fcc9610ba9d2d949921716d" kindref="member">read_gpu_suNf_vector</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 3);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to read, choose 0 for spinor fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="204" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ab910ea3cb234f78cf93d98f86df8e888" prot="public" static="no">
+        <name>write_gpu_suNf_spinor</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		<ref refid="d9/de8/gpu__geometry_8h_1a1c7af53abb7c70748e07a3d134ed2526" kindref="member">write_gpu_suNf_vector</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 0);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a1c7af53abb7c70748e07a3d134ed2526" kindref="member">write_gpu_suNf_vector</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 1);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a1c7af53abb7c70748e07a3d134ed2526" kindref="member">write_gpu_suNf_vector</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 2);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a1c7af53abb7c70748e07a3d134ed2526" kindref="member">write_gpu_suNf_vector</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 3);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to write, choose 0 for spinor fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="220" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ab50bccf78fcc9610ba9d2d949921716d" prot="public" static="no">
+        <name>read_gpu_suNf_vector</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*2)*(_stride); \
+		(_v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="236" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a1c7af53abb7c70748e07a3d134ed2526" prot="public" static="no">
+        <name>write_gpu_suNf_vector</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*2)*(_stride); \
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[1]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="251" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a5035cb09f0ff6285f6f72d51b7999b3f" prot="public" static="no">
+        <name>read_gpu_double</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		(_v)=*((_in)+(_ix));\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read double according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>double target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the double to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="266" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1aba4091d8a8eec96b345dab2afe3ef536" prot="public" static="no">
+        <name>write_gpu_double</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		(*((_out)+(_ix)))=(_v);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write double according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>double target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the double to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="279" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ab9694e75e918125d59338b5242e0caeb" prot="public" static="no">
+        <name>read_gpu_suNf</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*4)*(_stride); \
+		(_v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[3]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref> matrix according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Link direction to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="292" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a0e8aae92f1bd34dd56aa5a4cce7a4fa5" prot="public" static="no">
+        <name>write_gpu_suNf</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*4)*(_stride); \
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
+		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[3]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref> matrix according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Link direction to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="309" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a31b915d89a64bdf2eafda73568ba945c" prot="public" static="no">
+        <name>read_gpu_suNf_algebra_vector</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*3)*(_stride); \
+		(_v).c[0]=((double*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((double*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((double*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read suNf_algebra_vector according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNf_algebra_vector target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the suNf_algebra_vector to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="326" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a9a1e8f13faa14a6179cbc03168c43a83" prot="public" static="no">
+        <name>write_gpu_suNf_algebra_vector</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*3)*(_stride); \
+		((double*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((double*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((double*)(_out))[__iz]=(_v).c[2]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write suNf_algebra_vector according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNf_algebra_vector target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the suNf_algebra_vector to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="342" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ae0f791df9cc91a9a48ab64dceac7a7f5" prot="public" static="no">
+        <name>read_gpu_suNfc</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>			<ref refid="d9/de8/gpu__geometry_8h_1ab9694e75e918125d59338b5242e0caeb" kindref="member">read_gpu_suNf</ref>((_stride), (_v), (_in), (_ix), (_comp))</initializer>
+        <briefdescription>
+<para>Read suNfc according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNfc target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to read for argument consistency between different GPU read/write functions.\ Use this macro here always with _comp=0, because this is for a scalar field! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="359" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a76b69808908793f5fe90621109d3282a" prot="public" static="no">
+        <name>write_gpu_suNfc</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>			<ref refid="d9/de8/gpu__geometry_8h_1a0e8aae92f1bd34dd56aa5a4cce7a4fa5" kindref="member">write_gpu_suNf</ref>((_stride), (_v), (_out), (_ix), (_comp))</initializer>
+        <briefdescription>
+<para>Write suNfc according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNfc target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to write for argument consistency between different GPU read/write functions.\ Use this macro here always with _comp=0, because this is for a scalar field! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="370" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1abf12a853349f9f9c6e371657a48a3dbe" prot="public" static="no">
+        <name>read_gpu_suNg_spinor_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		<ref refid="d9/de8/gpu__geometry_8h_1a230c0445f9efdfafb3ee92a8c5ee0d32" kindref="member">read_gpu_suNg_vector_flt</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 0);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a230c0445f9efdfafb3ee92a8c5ee0d32" kindref="member">read_gpu_suNg_vector_flt</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 1);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a230c0445f9efdfafb3ee92a8c5ee0d32" kindref="member">read_gpu_suNg_vector_flt</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 2);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a230c0445f9efdfafb3ee92a8c5ee0d32" kindref="member">read_gpu_suNg_vector_flt</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 3);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d8/d26/structsuNg__spinor__flt" kindref="compound">suNg_spinor_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d8/d26/structsuNg__spinor__flt" kindref="compound">suNg_spinor_flt</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to read, choose 0 for spinor fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="380" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1aa0dda60e6136d36452cb058bc502fff3" prot="public" static="no">
+        <name>write_gpu_suNg_spinor_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		<ref refid="d9/de8/gpu__geometry_8h_1a1d8e9eda13cdbe1418903a1f3e4648de" kindref="member">write_gpu_suNg_vector_flt</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 0);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a1d8e9eda13cdbe1418903a1f3e4648de" kindref="member">write_gpu_suNg_vector_flt</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 1);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a1d8e9eda13cdbe1418903a1f3e4648de" kindref="member">write_gpu_suNg_vector_flt</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 2);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a1d8e9eda13cdbe1418903a1f3e4648de" kindref="member">write_gpu_suNg_vector_flt</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 3);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d8/d26/structsuNg__spinor__flt" kindref="compound">suNg_spinor_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to write, choose 0 for spinor fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="396" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a230c0445f9efdfafb3ee92a8c5ee0d32" prot="public" static="no">
+        <name>read_gpu_suNg_vector_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*2)*(_stride); \
+		(_v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="412" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a1d8e9eda13cdbe1418903a1f3e4648de" prot="public" static="no">
+        <name>write_gpu_suNg_vector_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*2)*(_stride); \
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[1]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="427" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ac4f5d7fd05d6883b301adc774b856a7f" prot="public" static="no">
+        <name>read_gpu_float</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		(_v)=*((_in)+(_ix));\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read float according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the float to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="442" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a1be277f6d079272c89f444eee09b895f" prot="public" static="no">
+        <name>write_gpu_float</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		(*((_out)+(_ix)))=(_v);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write float according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the float to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="455" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1adde978b3c8db563dba4dd1c2f857c817" prot="public" static="no">
+        <name>read_gpu_suNg_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*4)*(_stride); \
+		(_v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[3]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref> matrix according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Link direction to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="468" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a2b50c9b16cd0aa5e7e39e8fccadcff03" prot="public" static="no">
+        <name>write_gpu_suNg_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*4)*(_stride); \
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[3]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref> matrix according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Link direction to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="485" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ac561e28a360584daff0718bead7d3388" prot="public" static="no">
+        <name>read_gpu_suNg_algebra_vector_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*3)*(_stride); \
+		(_v).c[0]=((float*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((float*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((float*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="de/d23/structsuNg__algebra__vector__flt" kindref="compound">suNg_algebra_vector_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="de/d23/structsuNg__algebra__vector__flt" kindref="compound">suNg_algebra_vector_flt</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="de/d23/structsuNg__algebra__vector__flt" kindref="compound">suNg_algebra_vector_flt</ref> to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="502" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1aeeeabef6c893be3931124bf5f81d39fd" prot="public" static="no">
+        <name>write_gpu_suNg_algebra_vector_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*3)*(_stride); \
+		((float*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((float*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((float*)(_out))[__iz]=(_v).c[2]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="de/d23/structsuNg__algebra__vector__flt" kindref="compound">suNg_algebra_vector_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="de/d23/structsuNg__algebra__vector__flt" kindref="compound">suNg_algebra_vector_flt</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="de/d23/structsuNg__algebra__vector__flt" kindref="compound">suNg_algebra_vector_flt</ref> to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="518" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a22032e6fbb80cbf0d5965f24f9d0e0b2" prot="public" static="no">
+        <name>read_gpu_suNgc_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>			<ref refid="d9/de8/gpu__geometry_8h_1adde978b3c8db563dba4dd1c2f857c817" kindref="member">read_gpu_suNg_flt</ref>((_stride), (_v), (_in), (_ix), (_comp))</initializer>
+        <briefdescription>
+<para>Read suNgc_flt according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNgc_flt target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to read for argument consistency between different GPU read/write functions.\ Use this macro here always with _comp=0, because this is for a scalar field! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="535" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a710f5cb74002c2214a1e81c0d6969075" prot="public" static="no">
+        <name>write_gpu_suNgc_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>			<ref refid="d9/de8/gpu__geometry_8h_1a2b50c9b16cd0aa5e7e39e8fccadcff03" kindref="member">write_gpu_suNg_flt</ref>((_stride), (_v), (_out), (_ix), (_comp))</initializer>
+        <briefdescription>
+<para>Write suNgc_flt according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNgc_flt target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to write for argument consistency between different GPU read/write functions.\ Use this macro here always with _comp=0, because this is for a scalar field! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="546" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="546" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1af21a870014958fce203f208b3dfe315c" prot="public" static="no">
+        <name>read_gpu_suNf_spinor_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		<ref refid="d9/de8/gpu__geometry_8h_1a265cc45c03abb9230bff771adf53590d" kindref="member">read_gpu_suNf_vector_flt</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 0);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a265cc45c03abb9230bff771adf53590d" kindref="member">read_gpu_suNf_vector_flt</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 1);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a265cc45c03abb9230bff771adf53590d" kindref="member">read_gpu_suNf_vector_flt</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 2);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a265cc45c03abb9230bff771adf53590d" kindref="member">read_gpu_suNf_vector_flt</ref>((_stride), (_v).c[(_comp)], (_in), (_ix), 3);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="de/def/structsuNf__spinor__flt" kindref="compound">suNf_spinor_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="de/def/structsuNf__spinor__flt" kindref="compound">suNf_spinor_flt</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to read, choose 0 for spinor fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="556" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a30ba068b518e40d91e8ce4602ee901f4" prot="public" static="no">
+        <name>write_gpu_suNf_spinor_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		<ref refid="d9/de8/gpu__geometry_8h_1a3d8fa27c183af6d6cd49c0f1551df123" kindref="member">write_gpu_suNf_vector_flt</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 0);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a3d8fa27c183af6d6cd49c0f1551df123" kindref="member">write_gpu_suNf_vector_flt</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 1);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a3d8fa27c183af6d6cd49c0f1551df123" kindref="member">write_gpu_suNf_vector_flt</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 2);\
+		<ref refid="d9/de8/gpu__geometry_8h_1a3d8fa27c183af6d6cd49c0f1551df123" kindref="member">write_gpu_suNf_vector_flt</ref>((_stride), (_v).c[(_comp)], (_out), (_ix), 3);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="de/def/structsuNf__spinor__flt" kindref="compound">suNf_spinor_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to write, choose 0 for spinor fields. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="572" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a265cc45c03abb9230bff771adf53590d" prot="public" static="no">
+        <name>read_gpu_suNf_vector_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*2)*(_stride); \
+		(_v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="588" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a3d8fa27c183af6d6cd49c0f1551df123" prot="public" static="no">
+        <name>write_gpu_suNf_vector_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*2)*(_stride); \
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[1]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the <ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="603" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ac4f5d7fd05d6883b301adc774b856a7f" prot="public" static="no">
+        <name>read_gpu_float</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		(_v)=*((_in)+(_ix));\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read float according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the float to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="618" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a1be277f6d079272c89f444eee09b895f" prot="public" static="no">
+        <name>write_gpu_float</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		(*((_out)+(_ix)))=(_v);\
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write float according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the float to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="631" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1ac172f58f0f4143ecf335b5c357c7b09c" prot="public" static="no">
+        <name>read_gpu_suNf_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*4)*(_stride); \
+		(_v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[3]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read <ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> matrix according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Link direction to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="644" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a219fae6b073178910eae52eb466e00e7" prot="public" static="no">
+        <name>write_gpu_suNf_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*4)*(_stride); \
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
+		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[3]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write <ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> matrix according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Link direction to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="661" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1aaf9543a4fd2789abac43f9b604e4ced4" prot="public" static="no">
+        <name>read_gpu_suNf_algebra_vector_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*3)*(_stride); \
+		(_v).c[0]=((float*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((float*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((float*)(_in))[__iz]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Read suNf_algebra_vector_flt according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNf_algebra_vector_flt target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the suNf_algebra_vector_flt to read. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="678" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a3f7abf8438a03d88e624413271e50898" prot="public" static="no">
+        <name>write_gpu_suNf_algebra_vector_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>	do { \
+		int __iz = (_ix) + ((_comp)*3)*(_stride); \
+		((float*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((float*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((float*)(_out))[__iz]=(_v).c[2]; \
+	} while (0)</initializer>
+        <briefdescription>
+<para>Write suNf_algebra_vector_flt according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNf_algebra_vector_flt target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component of the suNf_algebra_vector_flt to write. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="694" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a63b9a21143d5cc286f6d29a68f8f0be3" prot="public" static="no">
+        <name>read_gpu_suNfc_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_in</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>			<ref refid="d9/de8/gpu__geometry_8h_1ac172f58f0f4143ecf335b5c357c7b09c" kindref="member">read_gpu_suNf_flt</ref>((_stride), (_v), (_in), (_ix), (_comp))</initializer>
+        <briefdescription>
+<para>Read suNfc_flt according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNfc_flt target to read to from the field _in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to read from </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to read </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to read for argument consistency between different GPU read/write functions.\ Use this macro here always with _comp=0, because this is for a scalar field! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="711" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="711" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/de8/gpu__geometry_8h_1a10a4ea5f51db00a1fd4833260b4ee85b" prot="public" static="no">
+        <name>write_gpu_suNfc_flt</name>
+        <param><defname>_stride</defname></param>
+        <param><defname>_v</defname></param>
+        <param><defname>_out</defname></param>
+        <param><defname>_ix</defname></param>
+        <param><defname>_comp</defname></param>
+        <initializer>			<ref refid="d9/de8/gpu__geometry_8h_1a219fae6b073178910eae52eb466e00e7" kindref="member">write_gpu_suNf_flt</ref>((_stride), (_v), (_out), (_ix), (_comp))</initializer>
+        <briefdescription>
+<para>Write suNfc_flt according to device geometry structure. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer valued stride with which the components are stored </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>suNfc_flt target to write to the field _out </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input field to write to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_ix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index at which to write </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_comp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Component to write for argument consistency between different GPU read/write functions.\ Use this macro here always with _comp=0, because this is for a scalar field! </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" line="722" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Memory access patterns are crucial to achieve best performance. <linebreak/>
+ Due to this, we store lattice field data differently in device memory than in host memory. Documentation on this can be found in the HiRep Development Guide, section GPU Geometry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>File<sp/>gpu_geometry.h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/>Reading<sp/>and<sp/>writing<sp/>according<sp/>to<sp/>the<sp/>GPU<sp/>geometry<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GPU_GEOMETRY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPU_GEOMETRY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d9/de8/gpu__geometry_8h_1a02579bd7c86a122caf5a30bc26f7c210" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNg_spinor(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>0);\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>1);\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>2);\</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>3);\</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d9/de8/gpu__geometry_8h_1a9a24502a528acf26f163b0c455977d19" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNg_spinor(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>0);\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>1);\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>2);\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>3);\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d9/de8/gpu__geometry_8h_1ae81860ddaf0e022d3f78be57a84b22cf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNg_vector(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*2)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((hr_complex*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((hr_complex*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="d9/de8/gpu__geometry_8h_1ac4c93281942b640eb0117d67b5c90fd4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNg_vector(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*2)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[1];<sp/>\</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_double(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v)=*((_in)+(_ix));\</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_double(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*((_out)+(_ix)))=(_v);\</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="d9/de8/gpu__geometry_8h_1ab9f8d220706901661d7f58035b6c5b68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNg(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*4)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((hr_complex*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((hr_complex*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[2]=((hr_complex*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[3]=((hr_complex*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="d9/de8/gpu__geometry_8h_1a8c3dbd686441fdb737d96ba2f83e51e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNg(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*4)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[1];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="138"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[2];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[3];<sp/>\</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="d9/de8/gpu__geometry_8h_1a5abaeda37787a3022a23bf371a45b246" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNg_algebra_vector(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*3)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((double*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((double*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[2]=((double*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="d9/de8/gpu__geometry_8h_1ab092298fab9e7de75d5d1962a263c0c8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNg_algebra_vector(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="167"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*3)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="169"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((double*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((double*)(_out))[__iz]=(_v).c[1];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((double*)(_out))[__iz]=(_v).c[2];<sp/>\</highlight></codeline>
+<codeline lineno="172"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="d9/de8/gpu__geometry_8h_1ac38098f70b01e9d0eb7589fb204fb2c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNgc(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="184"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg((_stride),<sp/>(_v),<sp/>(_in),<sp/>(_ix),<sp/>(_comp))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="d9/de8/gpu__geometry_8h_1ab41ce70779aa0e6073569cd36f39b9a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNgc(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="195"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg((_stride),<sp/>(_v),<sp/>(_out),<sp/>(_ix),<sp/>(_comp))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="d9/de8/gpu__geometry_8h_1acef4ea10bd4368e4c7df893767a90f5e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNf_spinor(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>0);\</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>1);\</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>2);\</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>3);\</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="d9/de8/gpu__geometry_8h_1ab910ea3cb234f78cf93d98f86df8e888" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNf_spinor(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>0);\</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>1);\</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>2);\</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_vector((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>3);\</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="d9/de8/gpu__geometry_8h_1ab50bccf78fcc9610ba9d2d949921716d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNf_vector(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="238"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*2)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="239"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((hr_complex*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((hr_complex*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251" refid="d9/de8/gpu__geometry_8h_1a1c7af53abb7c70748e07a3d134ed2526" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNf_vector(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="252"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="253"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*2)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="254"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="255"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[1];<sp/>\</highlight></codeline>
+<codeline lineno="256"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266" refid="d9/de8/gpu__geometry_8h_1a5035cb09f0ff6285f6f72d51b7999b3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_double(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="267"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v)=*((_in)+(_ix));\</highlight></codeline>
+<codeline lineno="269"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="d9/de8/gpu__geometry_8h_1aba4091d8a8eec96b345dab2afe3ef536" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_double(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="280"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="281"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*((_out)+(_ix)))=(_v);\</highlight></codeline>
+<codeline lineno="282"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="d9/de8/gpu__geometry_8h_1ab9694e75e918125d59338b5242e0caeb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNf(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="293"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="294"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*4)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="295"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((hr_complex*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((hr_complex*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="297"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[2]=((hr_complex*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="298"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[3]=((hr_complex*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="299"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="d9/de8/gpu__geometry_8h_1a0e8aae92f1bd34dd56aa5a4cce7a4fa5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNf(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="310"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="311"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*4)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="312"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="313"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[1];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="314"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[2];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="315"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex*)(_out))[__iz]=(_v).c[3];<sp/>\</highlight></codeline>
+<codeline lineno="316"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="d9/de8/gpu__geometry_8h_1a31b915d89a64bdf2eafda73568ba945c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNf_algebra_vector(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="327"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*3)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="329"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((double*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="330"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((double*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="331"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[2]=((double*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="332"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342" refid="d9/de8/gpu__geometry_8h_1a9a1e8f13faa14a6179cbc03168c43a83" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNf_algebra_vector(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="343"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="344"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*3)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="345"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((double*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="346"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((double*)(_out))[__iz]=(_v).c[1];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="347"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((double*)(_out))[__iz]=(_v).c[2];<sp/>\</highlight></codeline>
+<codeline lineno="348"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="d9/de8/gpu__geometry_8h_1ae0f791df9cc91a9a48ab64dceac7a7f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNfc(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="360"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf((_stride),<sp/>(_v),<sp/>(_in),<sp/>(_ix),<sp/>(_comp))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370" refid="d9/de8/gpu__geometry_8h_1a76b69808908793f5fe90621109d3282a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNfc(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="371"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf((_stride),<sp/>(_v),<sp/>(_out),<sp/>(_ix),<sp/>(_comp))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="d9/de8/gpu__geometry_8h_1abf12a853349f9f9c6e371657a48a3dbe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNg_spinor_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="381"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="382"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>0);\</highlight></codeline>
+<codeline lineno="383"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>1);\</highlight></codeline>
+<codeline lineno="384"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>2);\</highlight></codeline>
+<codeline lineno="385"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>3);\</highlight></codeline>
+<codeline lineno="386"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396" refid="d9/de8/gpu__geometry_8h_1aa0dda60e6136d36452cb058bc502fff3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNg_spinor_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="397"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="398"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>0);\</highlight></codeline>
+<codeline lineno="399"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>1);\</highlight></codeline>
+<codeline lineno="400"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>2);\</highlight></codeline>
+<codeline lineno="401"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>3);\</highlight></codeline>
+<codeline lineno="402"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412" refid="d9/de8/gpu__geometry_8h_1a230c0445f9efdfafb3ee92a8c5ee0d32" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNg_vector_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="413"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="414"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*2)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="415"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((hr_complex_flt*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="416"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((hr_complex_flt*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="417"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427" refid="d9/de8/gpu__geometry_8h_1a1d8e9eda13cdbe1418903a1f3e4648de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNg_vector_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="428"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="429"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*2)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="430"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="431"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[1];<sp/>\</highlight></codeline>
+<codeline lineno="432"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_float(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="443"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="444"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v)=*((_in)+(_ix));\</highlight></codeline>
+<codeline lineno="445"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_float(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="456"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="457"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*((_out)+(_ix)))=(_v);\</highlight></codeline>
+<codeline lineno="458"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468" refid="d9/de8/gpu__geometry_8h_1adde978b3c8db563dba4dd1c2f857c817" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNg_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="469"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="470"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*4)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="471"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((hr_complex_flt*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="472"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((hr_complex_flt*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="473"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[2]=((hr_complex_flt*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="474"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[3]=((hr_complex_flt*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="475"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485" refid="d9/de8/gpu__geometry_8h_1a2b50c9b16cd0aa5e7e39e8fccadcff03" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNg_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="486"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="487"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*4)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="488"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="489"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[1];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="490"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[2];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="491"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[3];<sp/>\</highlight></codeline>
+<codeline lineno="492"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="502" refid="d9/de8/gpu__geometry_8h_1ac561e28a360584daff0718bead7d3388" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNg_algebra_vector_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="503"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="504"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*3)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="505"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((float*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="506"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((float*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="507"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[2]=((float*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="508"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518" refid="d9/de8/gpu__geometry_8h_1aeeeabef6c893be3931124bf5f81d39fd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNg_algebra_vector_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="519"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="520"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*3)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="521"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((float*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="522"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((float*)(_out))[__iz]=(_v).c[1];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="523"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((float*)(_out))[__iz]=(_v).c[2];<sp/>\</highlight></codeline>
+<codeline lineno="524"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535" refid="d9/de8/gpu__geometry_8h_1a22032e6fbb80cbf0d5965f24f9d0e0b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNgc_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="536"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNg_flt((_stride),<sp/>(_v),<sp/>(_in),<sp/>(_ix),<sp/>(_comp))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="546" refid="d9/de8/gpu__geometry_8h_1a710f5cb74002c2214a1e81c0d6969075" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNgc_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="547"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNg_flt((_stride),<sp/>(_v),<sp/>(_out),<sp/>(_ix),<sp/>(_comp))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="556" refid="d9/de8/gpu__geometry_8h_1af21a870014958fce203f208b3dfe315c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNf_spinor_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="557"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="558"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>0);\</highlight></codeline>
+<codeline lineno="559"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>1);\</highlight></codeline>
+<codeline lineno="560"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>2);\</highlight></codeline>
+<codeline lineno="561"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_in),<sp/>(_ix),<sp/>3);\</highlight></codeline>
+<codeline lineno="562"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="572" refid="d9/de8/gpu__geometry_8h_1a30ba068b518e40d91e8ce4602ee901f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNf_spinor_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="573"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="574"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>0);\</highlight></codeline>
+<codeline lineno="575"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>1);\</highlight></codeline>
+<codeline lineno="576"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>2);\</highlight></codeline>
+<codeline lineno="577"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_vector_flt((_stride),<sp/>(_v).c[(_comp)],<sp/>(_out),<sp/>(_ix),<sp/>3);\</highlight></codeline>
+<codeline lineno="578"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588" refid="d9/de8/gpu__geometry_8h_1a265cc45c03abb9230bff771adf53590d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNf_vector_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="589"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="590"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*2)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="591"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((hr_complex_flt*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="592"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((hr_complex_flt*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="593"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight></codeline>
+<codeline lineno="603" refid="d9/de8/gpu__geometry_8h_1a3d8fa27c183af6d6cd49c0f1551df123" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNf_vector_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="604"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="605"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*2)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="606"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="607"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[1];<sp/>\</highlight></codeline>
+<codeline lineno="608"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="618" refid="d9/de8/gpu__geometry_8h_1ac4f5d7fd05d6883b301adc774b856a7f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_float(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="619"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="620"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v)=*((_in)+(_ix));\</highlight></codeline>
+<codeline lineno="621"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight></codeline>
+<codeline lineno="631" refid="d9/de8/gpu__geometry_8h_1a1be277f6d079272c89f444eee09b895f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_float(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="632"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="633"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*((_out)+(_ix)))=(_v);\</highlight></codeline>
+<codeline lineno="634"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight></codeline>
+<codeline lineno="644" refid="d9/de8/gpu__geometry_8h_1ac172f58f0f4143ecf335b5c357c7b09c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNf_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="645"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="646"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*4)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="647"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((hr_complex_flt*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="648"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((hr_complex_flt*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="649"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[2]=((hr_complex_flt*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="650"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[3]=((hr_complex_flt*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="651"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="652"><highlight class="normal"></highlight></codeline>
+<codeline lineno="661" refid="d9/de8/gpu__geometry_8h_1a219fae6b073178910eae52eb466e00e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNf_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="662"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="663"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*4)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="664"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="665"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[1];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="666"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[2];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="667"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((hr_complex_flt*)(_out))[__iz]=(_v).c[3];<sp/>\</highlight></codeline>
+<codeline lineno="668"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678" refid="d9/de8/gpu__geometry_8h_1aaf9543a4fd2789abac43f9b604e4ced4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNf_algebra_vector_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="679"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="680"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*3)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="681"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[0]=((float*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="682"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[1]=((float*)(_in))[__iz];<sp/>__iz+=(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="683"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_v).c[2]=((float*)(_in))[__iz];<sp/>\</highlight></codeline>
+<codeline lineno="684"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"></highlight></codeline>
+<codeline lineno="694" refid="d9/de8/gpu__geometry_8h_1a3f7abf8438a03d88e624413271e50898" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNf_algebra_vector_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="695"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="696"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>__iz<sp/>=<sp/>(_ix)<sp/>+<sp/>((_comp)*3)*(_stride);<sp/>\</highlight></codeline>
+<codeline lineno="697"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((float*)(_out))[__iz]=(_v).c[0];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="698"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((float*)(_out))[__iz]=(_v).c[1];<sp/>__iz+=(_stride);\</highlight></codeline>
+<codeline lineno="699"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((float*)(_out))[__iz]=(_v).c[2];<sp/>\</highlight></codeline>
+<codeline lineno="700"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711" refid="d9/de8/gpu__geometry_8h_1a63b9a21143d5cc286f6d29a68f8f0be3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>read_gpu_suNfc_flt(_stride,<sp/>_v,<sp/>_in,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="712"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>read_gpu_suNf_flt((_stride),<sp/>(_v),<sp/>(_in),<sp/>(_ix),<sp/>(_comp))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="722" refid="d9/de8/gpu__geometry_8h_1a10a4ea5f51db00a1fd4833260b4ee85b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>write_gpu_suNfc_flt(_stride,<sp/>_v,<sp/>_out,<sp/>_ix,<sp/>_comp)<sp/>\</highlight></codeline>
+<codeline lineno="723"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>write_gpu_suNf_flt((_stride),<sp/>(_v),<sp/>(_out),<sp/>(_ix),<sp/>(_comp))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="724"><highlight class="normal"></highlight></codeline>
+<codeline lineno="725"><highlight class="normal"></highlight></codeline>
+<codeline lineno="726"><highlight class="normal"></highlight></codeline>
+<codeline lineno="727"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_geometry.h"/>
+  </compounddef>
+</doxygen>

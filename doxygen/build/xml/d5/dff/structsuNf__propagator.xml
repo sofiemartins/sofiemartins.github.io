@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/dff/structsuNf__propagator" kind="struct" language="C++" prot="public">
+    <compoundname>suNf_propagator</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d5/dff/structsuNf__propagator_1ad8fd07b2b831201c0d5c5ea250446826" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d93/structsuNf__spin__matrix" kindref="compound">suNf_spin_matrix</ref></type>
+        <definition>suNf_spin_matrix suNf_propagator::c[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/propagator.h" line="20" column="20" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/propagator.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>suNf_propagator</label>
+        <link refid="d5/dff/structsuNf__propagator"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>suNf_vector</label>
+        <link refid="de/d49/structsuNf__vector"/>
+      </node>
+      <node id="2">
+        <label>suNf_spin_matrix</label>
+        <link refid="d7/d93/structsuNf__spin__matrix"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/propagator.h" line="18" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/propagator.h" bodystart="19" bodyend="21"/>
+    <listofallmembers>
+      <member refid="d5/dff/structsuNf__propagator_1ad8fd07b2b831201c0d5c5ea250446826" prot="public" virt="non-virtual"><scope>suNf_propagator</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

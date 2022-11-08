@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/dd2/structmon__hmc__par" kind="struct" language="C++" prot="public">
+    <compoundname>mon_hmc_par</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/dd2/structmon__hmc__par_1a2990acccd69e596215590a6403e17258" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mon_hmc_par::mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="53" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/dd2/structmon__hmc__par_1a7ec313e950a3062621f9520e45471440" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mon_hmc_par::mre_past</definition>
+        <argsstring></argsstring>
+        <name>mre_past</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="54" column="5" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/dd2/structmon__hmc__par_1acdb22b8b8953a8986fa37cf1b3f91732" prot="public" static="no" mutable="no">
+        <type><ref refid="df/d6a/structforce__hmc__par" kindref="compound">force_hmc_par</ref></type>
+        <definition>force_hmc_par mon_hmc_par::fpar</definition>
+        <argsstring></argsstring>
+        <name>fpar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="55" column="15" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/dd2/structmon__hmc__par_1aad948e337fc6bff2654e0238d214cdeb" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* mon_hmc_par::pf</definition>
+        <argsstring></argsstring>
+        <name>pf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="56" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="8">
+        <label>suNg_algebra_vector</label>
+        <link refid="d3/dcb/structsuNg__algebra__vector"/>
+      </node>
+      <node id="4">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mon_hmc_par</label>
+        <link refid="df/dd2/structmon__hmc__par"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pf</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>fpar</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+      <node id="9">
+        <label>mre_par</label>
+        <link refid="df/d69/structmre__par"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>s</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_spinor_field</label>
+        <link refid="d3/d33/struct__spinor__field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_suNg_av_field</label>
+        <link refid="d4/d75/struct__suNg__av__field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>force_hmc_par</label>
+        <link refid="df/d6a/structforce__hmc__par"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pf</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>momenta</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mpar</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>suNf_vector</label>
+        <link refid="de/d49/structsuNf__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="52" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="52" bodyend="57"/>
+    <listofallmembers>
+      <member refid="df/dd2/structmon__hmc__par_1acdb22b8b8953a8986fa37cf1b3f91732" prot="public" virt="non-virtual"><scope>mon_hmc_par</scope><name>fpar</name></member>
+      <member refid="df/dd2/structmon__hmc__par_1a2990acccd69e596215590a6403e17258" prot="public" virt="non-virtual"><scope>mon_hmc_par</scope><name>mass</name></member>
+      <member refid="df/dd2/structmon__hmc__par_1a7ec313e950a3062621f9520e45471440" prot="public" virt="non-virtual"><scope>mon_hmc_par</scope><name>mre_past</name></member>
+      <member refid="df/dd2/structmon__hmc__par_1aad948e337fc6bff2654e0238d214cdeb" prot="public" virt="non-virtual"><scope>mon_hmc_par</scope><name>pf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

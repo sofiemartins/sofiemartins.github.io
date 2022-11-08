@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d17/structcor__points" kind="struct" language="C++" prot="public">
+    <compoundname>cor_points</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d17/structcor__points_1aa4af02bb3e1148de3ac0120146bc4bc2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cor_points::t1</definition>
+        <argsstring></argsstring>
+        <name>t1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="19" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d17/structcor__points_1a406b268975cc88210fab97fcb7184ac7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cor_points::t2</definition>
+        <argsstring></argsstring>
+        <name>t2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="20" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d17/structcor__points_1aabf8980ad9d0f281d2430cece2259bd1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cor_points::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="21" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d17/structcor__points_1a40e545094f7587cc4b84e2ab85b0e0d2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cor_points::n_pairs</definition>
+        <argsstring></argsstring>
+        <name>n_pairs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="22" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" line="17" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/glueballs.h" bodystart="18" bodyend="23"/>
+    <listofallmembers>
+      <member refid="d3/d17/structcor__points_1aabf8980ad9d0f281d2430cece2259bd1" prot="public" virt="non-virtual"><scope>cor_points</scope><name>id</name></member>
+      <member refid="d3/d17/structcor__points_1a40e545094f7587cc4b84e2ab85b0e0d2" prot="public" virt="non-virtual"><scope>cor_points</scope><name>n_pairs</name></member>
+      <member refid="d3/d17/structcor__points_1aa4af02bb3e1148de3ac0120146bc4bc2" prot="public" virt="non-virtual"><scope>cor_points</scope><name>t1</name></member>
+      <member refid="d3/d17/structcor__points_1a406b268975cc88210fab97fcb7184ac7" prot="public" virt="non-virtual"><scope>cor_points</scope><name>t2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiRep &mdash; HiRep  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> HiRep
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="how_to_cite.html">How to cite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/getting_started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/input_file.html">Input File Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/supported_features.html">Supported Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/analysis.html">Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/writing_programs.html">Writing A Program in HiRep</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development_manual/coding_conventions.html">Coding Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development_manual/testing_setup.html">Testing Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development_manual/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development_manual/auto_generation.html">Auto-Generation of Macros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development_manual/field_geometry.html">Geometry of Field Data in Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development_manual/global_objects.html">Global Objects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="doxygen/build/html/index.html#http://">Full Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">HiRep</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>HiRep</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/user_guide.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="hirep">
+<h1>HiRep<a class="headerlink" href="#hirep" title="Permalink to this headline"></a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="how_to_cite.html">How to cite</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/getting_started.html">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/getting_started.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/getting_started.html#compilation">Compilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/getting_started.html#run">Run</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/input_file.html">Input File Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#integrator">Integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#plaquette-gauge">Plaquette gauge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#luscher-weisz-gauge">Lüscher-Weisz gauge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#hmc-parameters">HMC Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#twisted-mass">Twisted Mass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#twisted-mass-alternative">Twisted Mass Alternative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#hasenbusch">Hasenbusch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#tm-hasenbusch">TM Hasenbusch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#tm-hasenbusch-alternative">TM Hasenbusch Alternative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/input_file.html#rhmc">RHMC</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/supported_features.html">Supported Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/supported_features.html#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/supported_features.html#two-point-functions">Two-point functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/supported_features.html#hasenbusch-acceleration">Hasenbusch acceleration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/supported_features.html#clover-term">Clover Term</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/supported_features.html#exponential-clover-term">Exponential Clover Term</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/supported_features.html#stout-smearing">Stout smearing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/analysis.html">Analysis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/analysis.html#contractions">Contractions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/analysis.html#estimation-of-disconnected-contributions">Estimation of Disconnected Contributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/analysis.html#mesonic-correlators-of-the-isotriplet">Mesonic Correlators of the Isotriplet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/analysis.html#mesonic-correlators-of-the-isosinglet">Mesonic Correlators of the Isosinglet</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/writing_programs.html">Writing A Program in HiRep</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/writing_programs.html#global-objects">Global Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/writing_programs.html#blablabla">Blablabla</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="docutils container" id="id1">
+<dl class="citation">
+<dt class="label" id="id2"><span class="brackets">DDPP10</span></dt>
+<dd><p>Luigi Del Debbio, Agostino Patella, and Claudio Pica. Higher representations on the lattice: numerical simulations, su(2) with adjoint fermions. <em>Phys. Rev. D</em>, 81:094503, May 2010. URL: <a class="reference external" href="https://link.aps.org/doi/10.1103/PhysRevD.81.094503">https://link.aps.org/doi/10.1103/PhysRevD.81.094503</a>, <a class="reference external" href="https://doi.org/10.1103/PhysRevD.81.094503">doi:10.1103/PhysRevD.81.094503</a>.</p>
+</dd>
+<dt class="label" id="id3"><span class="brackets">FJC+05</span></dt>
+<dd><p>Justin Foley, K. Jimmy Juge, Alan Ó Cais, Mike Peardon, Siné ad M. Ryan, and Jon-Ivar Skullerud. Practical all-to-all propagators for lattice qcd. <em>Computer Physics Communications</em>, 172(3):145–162, nov 2005. URL: <a class="reference external" href="https://doi.org/10.1016%2Fj.cpc.2005.06.008">https://doi.org/10.1016%2Fj.cpc.2005.06.008</a>, <a class="reference external" href="https://doi.org/10.1016/j.cpc.2005.06.008">doi:10.1016/j.cpc.2005.06.008</a>.</p>
+</dd>
+<dt class="label" id="id5"><span class="brackets">FM99</span></dt>
+<dd><p>M. Foster and C. Michael. Quark mass dependence of hadron masses from lattice qcd. <em>Physical Review D</em>, feb 1999. URL: <a class="reference external" href="https://doi.org/10.1103%2Fphysrevd.59.074503">https://doi.org/10.1103%2Fphysrevd.59.074503</a>, <a class="reference external" href="https://doi.org/10.1103/physrevd.59.074503">doi:10.1103/physrevd.59.074503</a>.</p>
+</dd>
+<dt class="label" id="id6"><span class="brackets">HMMP06</span></dt>
+<dd><p>A. Hart, C. McNeile, C. Michael, and J. Pickavance. Lattice study of the masses of singlet 0++ mesons. <em>Physical Review D</em>, dec 2006. URL: <a class="reference external" href="https://doi.org/10.1103%2Fphysrevd.74.114504">https://doi.org/10.1103%2Fphysrevd.74.114504</a>, <a class="reference external" href="https://doi.org/10.1103/physrevd.74.114504">doi:10.1103/physrevd.74.114504</a>.</p>
+</dd>
+<dt class="label" id="id4"><span class="brackets">MM01</span></dt>
+<dd><p>C. McNeile and C. Michael. Mixing of scalar glueballs and flavor-singlet scalar mesons. <em>Physical Review D</em>, may 2001. URL: <a class="reference external" href="https://doi.org/10.1103%2Fphysrevd.63.114503">https://doi.org/10.1103%2Fphysrevd.63.114503</a>, <a class="reference external" href="https://doi.org/10.1103/physrevd.63.114503">doi:10.1103/physrevd.63.114503</a>.</p>
+</dd>
+</dl>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

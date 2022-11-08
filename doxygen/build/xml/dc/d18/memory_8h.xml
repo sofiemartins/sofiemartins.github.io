@@ -1,0 +1,1516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d18/memory_8h" kind="file" language="C++">
+    <compoundname>memory.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="d1/d36/suN_8h" local="yes">suN.h</includes>
+    <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
+    <incdepgraph>
+      <node id="10">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h_source"/>
+      </node>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="8">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cpu_complex.h</label>
+        <link refid="d2/dfb/cpu__complex_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>error.h</label>
+        <link refid="da/d41/error_8h_source"/>
+      </node>
+      <node id="12">
+        <label>field_ordering.h</label>
+        <link refid="da/dac/field__ordering_8h_source"/>
+      </node>
+      <node id="5">
+        <label>hr_complex.h</label>
+        <link refid="d1/d74/hr__complex_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>tgmath.h</label>
+      </node>
+      <node id="3">
+        <label>suN.h</label>
+        <link refid="d1/d36/suN_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>memory.h</label>
+        <link refid="dc/d18/memory_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="dc/d18/memory_8h_1ae4ff5a07c6ff43ed11a3887ef7d524f2" prot="public" static="no">
+        <name>ALIGN</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="25" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dc/d18/memory_8h_1aa6139312fb8a1c4917e7509deaae8a2b" prot="public" static="no">
+        <name>_DECLARE_MEMORY_FUNC_GAUGE</name>
+        <param><defname>_name</defname></param>
+        <param><defname>_field_type</defname></param>
+        <param><defname>_site_type</defname></param>
+        <param><defname>_size</defname></param>
+        <initializer>        void copy_to_gpu_##_name(_field_type*);                                                                   \
+        void copy_from_gpu_##_name(_field_type*);                                                                 \
+        void to_gpu_format_##_name(_field_type*, _field_type*);                                                   \
+        void to_cpu_format_##_name(_field_type*, _field_type*);                                                   \
+    void free_##_name(_field_type*);                                                                              \
+    _field_type *alloc_##_name(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>*);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="38" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="dc/d18/memory_8h_1a05756bdcfe00a23109f4ee9acc16a7ff" prot="public" static="no">
+        <name>_DECLARE_MEMORY_FUNC_MATTER</name>
+        <param><defname>_name</defname></param>
+        <param><defname>_field_type</defname></param>
+        <param><defname>_site_type</defname></param>
+        <param><defname>_size</defname></param>
+        <initializer>        void copy_to_gpu_##_name(_field_type*);                                                                   \
+        void copy_from_gpu_##_name(_field_type*);                                                                 \
+        void to_gpu_format_##_name(_field_type*, _field_type*);                                                   \
+        void to_cpu_format_##_name(_field_type*, _field_type*);                                                   \
+    void free_##_name(_field_type*);                                                                              \
+    _field_type *alloc_##_name(unsigned int, <ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>*);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="46" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dc/d18/memory_8h_1a9da3e5d5b59b5f690eedff1152bae4ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* amalloc</definition>
+        <argsstring>(size_t size, int p)</argsstring>
+        <name>amalloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="32" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a235f6efccf605b4dce85f272fc3a8a25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afree</definition>
+        <argsstring>(void *addr)</argsstring>
+        <name>afree</name>
+        <param>
+          <type>void *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="33" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aadc1fc16e87ed334450537db3b0c4ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void spinor_field_togpuformat</definition>
+        <argsstring>(spinor_field *, spinor_field *)</argsstring>
+        <name>spinor_field_togpuformat</name>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="35" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ad9f354f26e196a64a55ef7e42fe484af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_gfield</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>copy_to_gpu_gfield</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="55" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="55" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a14d59cc6112446cd050be783ddaf599a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_gfield</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>copy_from_gpu_gfield</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="55" column="35" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="55" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aa3f830d5d4c241ac3fd99b4632642b20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_gfield</definition>
+        <argsstring>(suNg_field *, suNg_field *)</argsstring>
+        <name>to_gpu_format_gfield</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="55" column="66" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="55" declcolumn="66"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a1124a4c18c6339e6aad66dbb0026498c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_gfield</definition>
+        <argsstring>(suNg_field *, suNg_field *)</argsstring>
+        <name>to_cpu_format_gfield</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="55" column="100" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="55" declcolumn="100"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a9dc9bee7cce80f01ef5c27f59cbfca40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_gfield</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>free_gfield</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="55" column="134" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="55" declcolumn="134"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a17efc3cb19dbf1d660ff78b59e9f5453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        <definition>suNg_field* alloc_gfield</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_gfield</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="55" column="164" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="55" declcolumn="164"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ad8dc8c2fec4d1f6cbbe53477f1babf4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_gfield_flt</definition>
+        <argsstring>(suNg_field_flt *)</argsstring>
+        <name>copy_to_gpu_gfield_flt</name>
+        <param>
+          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="56" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="56" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a92795f92a57da23f862d0ba6d32f9c64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_gfield_flt</definition>
+        <argsstring>(suNg_field_flt *)</argsstring>
+        <name>copy_from_gpu_gfield_flt</name>
+        <param>
+          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="56" column="39" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="56" declcolumn="39"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aa8f48d36989c53398542cb26fdfd8b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_gfield_flt</definition>
+        <argsstring>(suNg_field_flt *, suNg_field_flt *)</argsstring>
+        <name>to_gpu_format_gfield_flt</name>
+        <param>
+          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="56" column="74" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="56" declcolumn="74"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a4b33445374b1b677de482f6bfde020eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_gfield_flt</definition>
+        <argsstring>(suNg_field_flt *, suNg_field_flt *)</argsstring>
+        <name>to_cpu_format_gfield_flt</name>
+        <param>
+          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="56" column="112" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="56" declcolumn="112"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a72d653d347b4c80ce56e91f9cdc1f0f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_gfield_flt</definition>
+        <argsstring>(suNg_field_flt *)</argsstring>
+        <name>free_gfield_flt</name>
+        <param>
+          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="56" column="150" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="56" declcolumn="150"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1af4c326038986a8b42e22e2ad950280f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        <definition>suNg_field_flt* alloc_gfield_flt</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_gfield_flt</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="56" column="188" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="56" declcolumn="188"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a3fbe885fe203716f553ddbbda3c42c56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_gfield_f</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>copy_to_gpu_gfield_f</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="57" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a51c62d44de7a69a57c42aff3730372ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_gfield_f</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>copy_from_gpu_gfield_f</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="57" column="37" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="57" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1af2292fbf5e7d2368ed83304f085afa1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_gfield_f</definition>
+        <argsstring>(suNf_field *, suNf_field *)</argsstring>
+        <name>to_gpu_format_gfield_f</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="57" column="70" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="57" declcolumn="70"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a38df9b0aa07200435a5d95679b482705" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_gfield_f</definition>
+        <argsstring>(suNf_field *, suNf_field *)</argsstring>
+        <name>to_cpu_format_gfield_f</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="57" column="106" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="57" declcolumn="106"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ab04cd1e5b70fb5b6579f463ad2c4bd94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_gfield_f</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>free_gfield_f</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="57" column="142" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="57" declcolumn="142"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ae1932e462841af54553f7e14c17f6dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        <definition>suNf_field* alloc_gfield_f</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_gfield_f</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="57" column="174" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="57" declcolumn="174"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a4d8276182528205f4961ba7381af3fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_gfield_f_flt</definition>
+        <argsstring>(suNf_field_flt *)</argsstring>
+        <name>copy_to_gpu_gfield_f_flt</name>
+        <param>
+          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="58" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="58" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a6c45a14f9d1a03d9692c20ff81b6e552" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_gfield_f_flt</definition>
+        <argsstring>(suNf_field_flt *)</argsstring>
+        <name>copy_from_gpu_gfield_f_flt</name>
+        <param>
+          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="58" column="41" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="58" declcolumn="41"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aef611fc8ed9ef78cd29dacdfefd8d1cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_gfield_f_flt</definition>
+        <argsstring>(suNf_field_flt *, suNf_field_flt *)</argsstring>
+        <name>to_gpu_format_gfield_f_flt</name>
+        <param>
+          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="58" column="78" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="58" declcolumn="78"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ad6e51cafae80f2bd51ab632038dd7c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_gfield_f_flt</definition>
+        <argsstring>(suNf_field_flt *, suNf_field_flt *)</argsstring>
+        <name>to_cpu_format_gfield_f_flt</name>
+        <param>
+          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="58" column="118" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="58" declcolumn="118"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1abc0fa6256c3a4f79bffdb8b0ee336c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_gfield_f_flt</definition>
+        <argsstring>(suNf_field_flt *)</argsstring>
+        <name>free_gfield_f_flt</name>
+        <param>
+          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="58" column="158" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="58" declcolumn="158"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a00d38fa0ebc1c3ae7368fe60d910f8d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        <definition>suNf_field_flt* alloc_gfield_f_flt</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_gfield_f_flt</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="58" column="198" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="58" declcolumn="198"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a0618257c63d788af986394a741e7f9b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_scalar_field</definition>
+        <argsstring>(suNg_scalar_field *)</argsstring>
+        <name>copy_to_gpu_scalar_field</name>
+        <param>
+          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="59" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="59" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a2f00de13f7b9c6d7bd79576700b6824d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_scalar_field</definition>
+        <argsstring>(suNg_scalar_field *)</argsstring>
+        <name>copy_from_gpu_scalar_field</name>
+        <param>
+          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="59" column="41" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="59" declcolumn="41"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a27ac8ccc9fc45466299c642328c30f83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_scalar_field</definition>
+        <argsstring>(suNg_scalar_field *, suNg_scalar_field *)</argsstring>
+        <name>to_gpu_format_scalar_field</name>
+        <param>
+          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="59" column="78" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="59" declcolumn="78"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a57e0ab401882a69682f18edb3af77ca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_scalar_field</definition>
+        <argsstring>(suNg_scalar_field *, suNg_scalar_field *)</argsstring>
+        <name>to_cpu_format_scalar_field</name>
+        <param>
+          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="59" column="118" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="59" declcolumn="118"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aacec41da7ab57e63449ad384b9903561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_scalar_field</definition>
+        <argsstring>(suNg_scalar_field *)</argsstring>
+        <name>free_scalar_field</name>
+        <param>
+          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="59" column="158" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="59" declcolumn="158"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a901bf46521fc2aa9e37e94e1d2e2802c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        <definition>suNg_scalar_field* alloc_scalar_field</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_scalar_field</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="59" column="201" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="59" declcolumn="201"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ad7cdb25ce5327cf15c05cc78b19a1ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_avfield</definition>
+        <argsstring>(suNg_av_field *)</argsstring>
+        <name>copy_to_gpu_avfield</name>
+        <param>
+          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="60" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="60" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aa4be72eae80175904a8f68f64129b876" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_avfield</definition>
+        <argsstring>(suNg_av_field *)</argsstring>
+        <name>copy_from_gpu_avfield</name>
+        <param>
+          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="60" column="36" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="60" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a66d7c3fa37bde4f5a86aff5959fbf09e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_avfield</definition>
+        <argsstring>(suNg_av_field *, suNg_av_field *)</argsstring>
+        <name>to_gpu_format_avfield</name>
+        <param>
+          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="60" column="68" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="60" declcolumn="68"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aca538d9c2d1019cc9dd2e92113f6bce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_avfield</definition>
+        <argsstring>(suNg_av_field *, suNg_av_field *)</argsstring>
+        <name>to_cpu_format_avfield</name>
+        <param>
+          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="60" column="103" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="60" declcolumn="103"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a509837420c810282230f43c7412ae484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_avfield</definition>
+        <argsstring>(suNg_av_field *)</argsstring>
+        <name>free_avfield</name>
+        <param>
+          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="60" column="138" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="60" declcolumn="138"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a966b99ff1f833efdb115895b6ba155c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        <definition>suNg_av_field* alloc_avfield</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_avfield</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="60" column="172" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="60" declcolumn="172"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a2397e29c6fdcb273ea9faa7473a4290c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_gtransf</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>copy_to_gpu_gtransf</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="61" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="61" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ad527442b2d4cd6b91e0fec2570635dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_gtransf</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>copy_from_gpu_gtransf</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="61" column="36" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="61" declcolumn="36"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a91ef33f3233d3af255328222b8f22c49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_gtransf</definition>
+        <argsstring>(suNg_field *, suNg_field *)</argsstring>
+        <name>to_gpu_format_gtransf</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="61" column="68" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="61" declcolumn="68"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a07e7ef5d2e532d2f61c3f281e82eefe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_gtransf</definition>
+        <argsstring>(suNg_field *, suNg_field *)</argsstring>
+        <name>to_cpu_format_gtransf</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="61" column="103" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="61" declcolumn="103"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1af12e883317d64d50f3818c9482ab8ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_gtransf</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>free_gtransf</name>
+        <param>
+          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="61" column="138" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="61" declcolumn="138"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a054adce190e0b37062246345330d5dfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        <definition>suNg_field* alloc_gtransf</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_gtransf</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="61" column="169" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="61" declcolumn="169"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a388b899b3778654f4b520c46f4b50d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_clover_term</definition>
+        <argsstring>(suNfc_field *)</argsstring>
+        <name>copy_to_gpu_clover_term</name>
+        <param>
+          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="63" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a78946d1378f8eb37f7a6c5f9fc9641e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_clover_term</definition>
+        <argsstring>(suNfc_field *)</argsstring>
+        <name>copy_from_gpu_clover_term</name>
+        <param>
+          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="63" column="40" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="63" declcolumn="40"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1af72d65dcf0a296ec73fa6e3552f20780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_clover_term</definition>
+        <argsstring>(suNfc_field *, suNfc_field *)</argsstring>
+        <name>to_gpu_format_clover_term</name>
+        <param>
+          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="63" column="76" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="63" declcolumn="76"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ac6868fcef729615a3f92e8097d774a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_clover_term</definition>
+        <argsstring>(suNfc_field *, suNfc_field *)</argsstring>
+        <name>to_cpu_format_clover_term</name>
+        <param>
+          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="63" column="115" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="63" declcolumn="115"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a702f3bc4520c5d21295545b43e4b042c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_clover_term</definition>
+        <argsstring>(suNfc_field *)</argsstring>
+        <name>free_clover_term</name>
+        <param>
+          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="63" column="154" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="63" declcolumn="154"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a584837f66a74367e8fd0d4ca790bd584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        <definition>suNfc_field* alloc_clover_term</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_clover_term</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="63" column="190" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="63" declcolumn="190"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ae3234165a5c7655de7963b3b8a6297c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_clover_force</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>copy_to_gpu_clover_force</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="64" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a2a0a972ab9ed241a86e13fbc454a20fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_clover_force</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>copy_from_gpu_clover_force</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="64" column="41" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="64" declcolumn="41"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aca0f17145fa8ec68ad81a4a38dd1cce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_clover_force</definition>
+        <argsstring>(suNf_field *, suNf_field *)</argsstring>
+        <name>to_gpu_format_clover_force</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="64" column="78" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="64" declcolumn="78"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ac698d248e5fe1ed3d69b83a182bc39c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_clover_force</definition>
+        <argsstring>(suNf_field *, suNf_field *)</argsstring>
+        <name>to_cpu_format_clover_force</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="64" column="118" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="64" declcolumn="118"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a6c9d4f5658289383512486a6a34292f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_clover_force</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>free_clover_force</name>
+        <param>
+          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="64" column="158" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="64" declcolumn="158"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ad0501aaeb8cfb11878851d61c9368f58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        <definition>suNf_field* alloc_clover_force</definition>
+        <argsstring>(geometry_descriptor *)</argsstring>
+        <name>alloc_clover_force</name>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="64" column="194" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="64" declcolumn="194"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a6ccf05ea8346b588c7057ac8af55005f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_spinor_field_f</definition>
+        <argsstring>(spinor_field *)</argsstring>
+        <name>copy_to_gpu_spinor_field_f</name>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="67" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ae70a6e7403fd9c85906a696a95498bb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_spinor_field_f</definition>
+        <argsstring>(spinor_field *)</argsstring>
+        <name>copy_from_gpu_spinor_field_f</name>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="67" column="43" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="67" declcolumn="43"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a0c7a7106d137de780f4724f750229f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_spinor_field_f</definition>
+        <argsstring>(spinor_field *, spinor_field *)</argsstring>
+        <name>to_gpu_format_spinor_field_f</name>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="67" column="82" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="67" declcolumn="82"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a21366551cdb68276abf7181dd41f44da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_spinor_field_f</definition>
+        <argsstring>(spinor_field *, spinor_field *)</argsstring>
+        <name>to_cpu_format_spinor_field_f</name>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="67" column="124" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="67" declcolumn="124"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a1c1390ec1e0d07663def8feac0f14de0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_spinor_field_f</definition>
+        <argsstring>(spinor_field *)</argsstring>
+        <name>free_spinor_field_f</name>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="67" column="166" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="67" declcolumn="166"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a32566af93641ab745c32e274c020366c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* alloc_spinor_field_f</definition>
+        <argsstring>(unsigned int, geometry_descriptor *)</argsstring>
+        <name>alloc_spinor_field_f</name>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="67" column="206" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="67" declcolumn="206"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a99a1754aa3b3385918721f74950445b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_spinor_field_f_flt</definition>
+        <argsstring>(spinor_field_flt *)</argsstring>
+        <name>copy_to_gpu_spinor_field_f_flt</name>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="68" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a0f2efe35f4974558f5efdf50e3946e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_spinor_field_f_flt</definition>
+        <argsstring>(spinor_field_flt *)</argsstring>
+        <name>copy_from_gpu_spinor_field_f_flt</name>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="68" column="47" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="68" declcolumn="47"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a3117186b0150ba15334d914563339799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_spinor_field_f_flt</definition>
+        <argsstring>(spinor_field_flt *, spinor_field_flt *)</argsstring>
+        <name>to_gpu_format_spinor_field_f_flt</name>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="68" column="90" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="68" declcolumn="90"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1ae9447cf44dd33b2e2b1f9844c55399f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_spinor_field_f_flt</definition>
+        <argsstring>(spinor_field_flt *, spinor_field_flt *)</argsstring>
+        <name>to_cpu_format_spinor_field_f_flt</name>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="68" column="136" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="68" declcolumn="136"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a114a24ecc56e1ed19c31871704062c2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_spinor_field_f_flt</definition>
+        <argsstring>(spinor_field_flt *)</argsstring>
+        <name>free_spinor_field_f_flt</name>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="68" column="182" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="68" declcolumn="182"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a37026fbb9cb0f2ec879f1efca6ce09cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+        <definition>spinor_field_flt* alloc_spinor_field_f_flt</definition>
+        <argsstring>(unsigned int, geometry_descriptor *)</argsstring>
+        <name>alloc_spinor_field_f_flt</name>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="68" column="230" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="68" declcolumn="230"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aab72509542f470e2c1165faa1b7a3543" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_to_gpu_sfield</definition>
+        <argsstring>(scalar_field *)</argsstring>
+        <name>copy_to_gpu_sfield</name>
+        <param>
+          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="69" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a07f3b3636afbb530d504ec9e70becd0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void copy_from_gpu_sfield</definition>
+        <argsstring>(scalar_field *)</argsstring>
+        <name>copy_from_gpu_sfield</name>
+        <param>
+          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="69" column="35" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="69" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a772c33d4d0d70b948c941b4cced77c38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_gpu_format_sfield</definition>
+        <argsstring>(scalar_field *, scalar_field *)</argsstring>
+        <name>to_gpu_format_sfield</name>
+        <param>
+          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="69" column="66" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="69" declcolumn="66"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1aba6ec3306dc28378b93b80f293f65bf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void to_cpu_format_sfield</definition>
+        <argsstring>(scalar_field *, scalar_field *)</argsstring>
+        <name>to_cpu_format_sfield</name>
+        <param>
+          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="69" column="100" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="69" declcolumn="100"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a33324a5cc111ba1e2acf28ffe2aff3ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_sfield</definition>
+        <argsstring>(scalar_field *)</argsstring>
+        <name>free_sfield</name>
+        <param>
+          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="69" column="134" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="69" declcolumn="134"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/d18/memory_8h_1a9b1f397a28ca49d1ac9767e90ca8765b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        <definition>scalar_field * alloc_sfield</definition>
+        <argsstring>(unsigned int, geometry_descriptor *)</argsstring>
+        <name>alloc_sfield</name>
+        <param>
+          <type>unsigned int</type>
+        </param>
+        <param>
+          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" line="69" column="166" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h" declline="69" declcolumn="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2008,<sp/>Claudio<sp/>Pica<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*<sp/>File<sp/>memory.h</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">*<sp/>Memory<sp/>handling<sp/>functions</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MEMORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEMORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>P4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>ALIGN<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALIGN<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*amalloc(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afree(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*addr);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>spinor_field_togpuformat(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DECLARE_MEMORY_FUNC_GAUGE(_name,<sp/>_field_type,<sp/>_site_type,<sp/>_size)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>copy_to_gpu_##_name(_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>copy_from_gpu_##_name(_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>to_gpu_format_##_name(_field_type*,<sp/>_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>to_cpu_format_##_name(_field_type*,<sp/>_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>free_##_name(_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>_field_type<sp/>*alloc_##_name(geometry_descriptor*);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DECLARE_MEMORY_FUNC_MATTER(_name,<sp/>_field_type,<sp/>_site_type,<sp/>_size)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>copy_to_gpu_##_name(_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>copy_from_gpu_##_name(_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>to_gpu_format_##_name(_field_type*,<sp/>_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>to_cpu_format_##_name(_field_type*,<sp/>_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>free_##_name(_field_type*);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>_field_type<sp/>*alloc_##_name(unsigned<sp/>int,<sp/>geometry_descriptor*);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Gauge<sp/>Fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(gfield,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>,<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref>,<sp/>4);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(gfield_flt,<sp/><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>,<sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref>,<sp/>4);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(gfield_f,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>,<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref>,<sp/>4);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(gfield_f_flt,<sp/><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>,<sp/><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref>,<sp/>4);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>,<sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>,<sp/><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(avfield,<sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>,<sp/><ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref>,<sp/>4);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(gtransf,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>,<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//_DECLARE_MEMORY_FUNC_GAUGE(clover_ldl,<sp/>ldl_field,<sp/>ldl_t,<sp/>1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(clover_term,<sp/><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>,<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNfc</ref>,<sp/>4);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">_DECLARE_MEMORY_FUNC_GAUGE(clover_force,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>,<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref>,<sp/>6);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Matter<sp/>Fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">_DECLARE_MEMORY_FUNC_MATTER(spinor_field_f,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">_DECLARE_MEMORY_FUNC_MATTER(spinor_field_f_flt,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref>,<sp/><ref refid="de/def/structsuNf__spinor__flt" kindref="compound">suNf_spinor_flt</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">_DECLARE_MEMORY_FUNC_MATTER(sfield,<sp/><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*<sp/>alloc_sfield(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>*);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_sfield(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>spinor_field_togpuformat(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>_DECLARE_MEMORY_FUNC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/memory.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d0d/structg5QMR__fltacc__par" kind="struct" language="C++" prot="public">
+    <compoundname>g5QMR_fltacc_par</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d2/d0d/structg5QMR__fltacc__par_1a814c1a7fb36996449442b84823b06bbe" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double g5QMR_fltacc_par::err2</definition>
+        <argsstring></argsstring>
+        <name>err2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="44" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d0d/structg5QMR__fltacc__par_1a34cd51469ca4a5751741111ba004c270" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int g5QMR_fltacc_par::max_iter</definition>
+        <argsstring></argsstring>
+        <name>max_iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="45" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d0d/structg5QMR__fltacc__par_1ad683f80ba05e6960163f25144669746d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double g5QMR_fltacc_par::err2_flt</definition>
+        <argsstring></argsstring>
+        <name>err2_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="46" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d0d/structg5QMR__fltacc__par_1a36eb6eb296ac79b1b04c57e5760e3c8c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int g5QMR_fltacc_par::max_iter_flt</definition>
+        <argsstring></argsstring>
+        <name>max_iter_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="47" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="43" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="43" bodyend="48"/>
+    <listofallmembers>
+      <member refid="d2/d0d/structg5QMR__fltacc__par_1a814c1a7fb36996449442b84823b06bbe" prot="public" virt="non-virtual"><scope>g5QMR_fltacc_par</scope><name>err2</name></member>
+      <member refid="d2/d0d/structg5QMR__fltacc__par_1ad683f80ba05e6960163f25144669746d" prot="public" virt="non-virtual"><scope>g5QMR_fltacc_par</scope><name>err2_flt</name></member>
+      <member refid="d2/d0d/structg5QMR__fltacc__par_1a34cd51469ca4a5751741111ba004c270" prot="public" virt="non-virtual"><scope>g5QMR_fltacc_par</scope><name>max_iter</name></member>
+      <member refid="d2/d0d/structg5QMR__fltacc__par_1a36eb6eb296ac79b1b04c57e5760e3c8c" prot="public" virt="non-virtual"><scope>g5QMR_fltacc_par</scope><name>max_iter_flt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,938 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d5d/inverters_8h" kind="file" language="C++">
+    <compoundname>inverters.h</compoundname>
+    <includes refid="d9/d21/suN__types_8h" local="yes">suN_types.h</includes>
+    <includes refid="d1/d74/hr__complex_8h" local="yes">hr_complex.h</includes>
+    <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
+    <includedby refid="d0/d30/observables_8h" local="yes">observables.h</includedby>
+    <includedby refid="d5/dbc/rational__functions_8h" local="yes">rational_functions.h</includedby>
+    <includedby refid="d6/d16/spectrum_8h" local="yes">spectrum.h</includedby>
+    <includedby refid="d8/d72/update_8h" local="yes">update.h</includedby>
+    <includedby refid="d5/d60/utils_8h" local="yes">utils.h</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h_source"/>
+      </node>
+      <node id="6">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cpu_complex.h</label>
+        <link refid="d2/dfb/cpu__complex_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>error.h</label>
+        <link refid="da/d41/error_8h_source"/>
+      </node>
+      <node id="10">
+        <label>field_ordering.h</label>
+        <link refid="da/dac/field__ordering_8h_source"/>
+      </node>
+      <node id="3">
+        <label>hr_complex.h</label>
+        <link refid="d1/d74/hr__complex_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>tgmath.h</label>
+      </node>
+      <node id="7">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>inverters.h</label>
+        <link refid="d3/d5d/inverters_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h_source"/>
+      </node>
+      <node id="7">
+        <label>utils.h</label>
+        <link refid="d5/d60/utils_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>rational_functions.h</label>
+        <link refid="d5/dbc/rational__functions_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>io.h</label>
+        <link refid="dc/dac/io_8h_source"/>
+      </node>
+      <node id="2">
+        <label>observables.h</label>
+        <link refid="d0/d30/observables_8h_source"/>
+      </node>
+      <node id="6">
+        <label>spectrum.h</label>
+        <link refid="d6/d16/spectrum_8h_source"/>
+      </node>
+      <node id="4">
+        <label>update.h</label>
+        <link refid="d8/d72/update_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>inverters.h</label>
+        <link refid="d3/d5d/inverters_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="da/df7/struct__mshift__par" prot="public">_mshift_par</innerclass>
+    <innerclass refid="d2/d0d/structg5QMR__fltacc__par" prot="public">g5QMR_fltacc_par</innerclass>
+    <innerclass refid="dc/d96/struct__MINRES__par" prot="public">_MINRES_par</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d3/d5d/inverters_8h_1aae0b78463c7000cb32ac38d90c6c057d" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* spinor_operator) (spinor_field *out, spinor_field *in)</definition>
+        <argsstring>)(spinor_field *out, spinor_field *in)</argsstring>
+        <name>spinor_operator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="14" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d5d/inverters_8h_1a24c33acde317663e21d771a41b44df69" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* spinor_operator_flt) (spinor_field_flt *out, spinor_field_flt *in)</definition>
+        <argsstring>)(spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>spinor_operator_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="15" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d5d/inverters_8h_1a451533a45527d9dd25e96db922978bc8" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* spinor_operator_m) (spinor_field *out, spinor_field *in, double m)</definition>
+        <argsstring>)(spinor_field *out, spinor_field *in, double m)</argsstring>
+        <name>spinor_operator_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="16" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d5d/inverters_8h_1a0db3acd412de36cb9abc3a18b58f6980" prot="public" static="no">
+        <type>struct <ref refid="da/df7/struct__mshift__par" kindref="compound">_mshift_par</ref></type>
+        <definition>typedef struct _mshift_par mshift_par</definition>
+        <argsstring></argsstring>
+        <name>mshift_par</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="24" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d5d/inverters_8h_1a46388d2bbf28d1d597b67a9945c18b1f" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* inverter_ptr) (mshift_par *par, spinor_operator M, spinor_field *in, spinor_field *out)</definition>
+        <argsstring>)(mshift_par *par, spinor_operator M, spinor_field *in, spinor_field *out)</argsstring>
+        <name>inverter_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="29" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d3/d5d/inverters_8h_1a85819c725dc2a1912bd5f95ce0c3bbcb" prot="public" static="no">
+        <type>struct <ref refid="dc/d96/struct__MINRES__par" kindref="compound">_MINRES_par</ref></type>
+        <definition>typedef struct _MINRES_par MINRES_par</definition>
+        <argsstring></argsstring>
+        <name>MINRES_par</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="58" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a9bd61f0d3ad00c62eefb50445a459ddb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SAP_prec</definition>
+        <argsstring>(int nu, inverter_ptr inv, mshift_par *par, spinor_operator M, spinor_field *in, spinor_field *out)</argsstring>
+        <name>SAP_prec</name>
+        <param>
+          <type>int</type>
+          <declname>nu</declname>
+        </param>
+        <param>
+          <type>inverter_ptr</type>
+          <declname>inv</declname>
+        </param>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="30" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a9c69589e22f7f9cc6e2aef97863ce919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cg_mshift</definition>
+        <argsstring>(mshift_par *par, spinor_operator M, spinor_field *in, spinor_field *out)</argsstring>
+        <name>cg_mshift</name>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="38" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="38" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a0f38ea5d6e1dfa894acc3b84608e3847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cg_mshift_def</definition>
+        <argsstring>(mshift_par *par, spinor_operator M, spinor_operator P, spinor_operator_m Pinv, spinor_field *in, spinor_field *out)</argsstring>
+        <name>cg_mshift_def</name>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>P</declname>
+        </param>
+        <param>
+          <type>spinor_operator_m</type>
+          <declname>Pinv</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="39" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="39" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a06f62063e39bf183a36d37a2dd0be338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cg_mshift_flt</definition>
+        <argsstring>(mshift_par *par, spinor_operator M, spinor_operator_flt F, spinor_field *in, spinor_field *out)</argsstring>
+        <name>cg_mshift_flt</name>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>spinor_operator_flt</type>
+          <declname>F</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="40" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="40" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a206d17f72f4cc9a3e9754351e349feb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int g5QMR_mshift</definition>
+        <argsstring>(mshift_par *par, spinor_operator M, spinor_field *in, spinor_field *out)</argsstring>
+        <name>g5QMR_mshift</name>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="50" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="50" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a1d6e5a9b00467d244ec23ce567e6fb94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int g5QMR_mshift_trunc</definition>
+        <argsstring>(mshift_par *par, int trunc_iter, spinor_operator M, spinor_field *in, spinor_field *out_trunc, spinor_field *out)</argsstring>
+        <name>g5QMR_mshift_trunc</name>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>trunc_iter</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out_trunc</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="51" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="51" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a32e584116125533f7dce2f9b6bbede77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int g5QMR_fltacc</definition>
+        <argsstring>(g5QMR_fltacc_par *par, spinor_operator M, spinor_operator_flt M_flt, spinor_field *in, spinor_field *out)</argsstring>
+        <name>g5QMR_fltacc</name>
+        <param>
+          <type><ref refid="d2/d0d/structg5QMR__fltacc__par" kindref="compound">g5QMR_fltacc_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>spinor_operator_flt</type>
+          <declname>M_flt</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="52" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="52" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a91346d2091dde5e38493b8abd50e71bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BiCGstab</definition>
+        <argsstring>(mshift_par *par, spinor_operator M, spinor_field *in, spinor_field *out)</argsstring>
+        <name>BiCGstab</name>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="60" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="60" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1ad123cd0de676fbee85428de9f7f5577b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int HBiCGstab</definition>
+        <argsstring>(MINRES_par *par, spinor_operator M, spinor_field *in, spinor_field *out)</argsstring>
+        <name>HBiCGstab</name>
+        <param>
+          <type><ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="61" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="61" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a2c69eebb3759bbf0537614c2f3e3f726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int HBiCGstab_flt</definition>
+        <argsstring>(MINRES_par *par, spinor_operator_flt M, spinor_field_flt *in, spinor_field_flt *out)</argsstring>
+        <name>HBiCGstab_flt</name>
+        <param>
+          <type><ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator_flt</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="62" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="62" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a978703f9b6904e1521c2d3d7c4cc37b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MINRES_mshift</definition>
+        <argsstring>(mshift_par *par, spinor_operator M, spinor_field *in, spinor_field *out)</argsstring>
+        <name>MINRES_mshift</name>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="70" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="70" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a1aa10824339d20a4353cfc3cd45bca3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MINRES</definition>
+        <argsstring>(MINRES_par *par, spinor_operator M, spinor_field *in, spinor_field *out, spinor_field *trial)</argsstring>
+        <name>MINRES</name>
+        <param>
+          <type><ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>trial</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="72" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="72" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1aefb0f9702218b5dee9e26b4442c062f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MINRES_flt</definition>
+        <argsstring>(MINRES_par *par, spinor_operator_flt M, spinor_field_flt *in, spinor_field_flt *out, spinor_field_flt *trial)</argsstring>
+        <name>MINRES_flt</name>
+        <param>
+          <type><ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref> *</type>
+          <declname>par</declname>
+        </param>
+        <param>
+          <type>spinor_operator_flt</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>trial</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="73" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="73" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1acbd5b4bf4bdb92e8bc5d93685a73b9a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int eva</definition>
+        <argsstring>(int nev, int nevt, int init, int kmax, int imax, double ubnd, double omega1, double omega2, spinor_operator Op, spinor_field *ev, double d[], int *status)</argsstring>
+        <name>eva</name>
+        <param>
+          <type>int</type>
+          <declname>nev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nevt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kmax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>imax</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ubnd</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>omega1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>omega2</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>Op</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="75" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="75" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a569e283f1dd3384833335aa93e31aad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int eva_tuned</definition>
+        <argsstring>(int nev, int nevt, int init, int kmax, int imax, double lbnd, double ubnd, double omega1, double omega2, spinor_operator Op, spinor_field *ev, double d[], int *status)</argsstring>
+        <name>eva_tuned</name>
+        <param>
+          <type>int</type>
+          <declname>nev</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nevt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>init</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>kmax</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>imax</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lbnd</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>ubnd</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>omega1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>omega2</declname>
+        </param>
+        <param>
+          <type>spinor_operator</type>
+          <declname>Op</declname>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="79" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="79" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a560e438b4082ba6c5f9e2fec5bf9a0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jacobi1</definition>
+        <argsstring>(int n, double a[], double d[], double v[])</argsstring>
+        <name>jacobi1</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>v</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="84" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="84" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1ad5553197193d3c97d8329a4b284155d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void jacobi2</definition>
+        <argsstring>(int n, hr_complex a[], double d[], hr_complex v[])</argsstring>
+        <name>jacobi2</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+          <declname>a</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+          <declname>v</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="85" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="85" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d5d/inverters_8h_1a8b0dc1058d23c53ac342897de6c400c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void empty_buffers</definition>
+        <argsstring>(spinor_field *s)</argsstring>
+        <name>empty_buffers</name>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="89" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2008,<sp/>Claudio<sp/>Pica<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INVERTERS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INVERTERS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hr_complex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator)(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator_flt)(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator_m)(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="da/df7/struct__mshift__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="da/df7/struct__mshift__par" kindref="compound">_mshift_par</ref><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n;<sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>shifts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*shift;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>err2;<sp/></highlight><highlight class="comment">/*<sp/>relative<sp/>error<sp/>of<sp/>the<sp/>solutions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>number<sp/>of<sp/>iterations:<sp/>0<sp/>=&gt;<sp/>infinity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*add_par;<sp/></highlight><highlight class="comment">/*<sp/>additional<sp/>parameters<sp/>for<sp/>specific<sp/>inverters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>We<sp/>might<sp/>want<sp/>to<sp/>add<sp/>a<sp/>&quot;trial&quot;<sp/>spinor<sp/>to<sp/>the<sp/>argument<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*inverter_ptr)(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref>*<sp/>par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SAP_prec(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nu,<sp/>inverter_ptr<sp/>inv,<sp/><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>performs<sp/>the<sp/>multi-shifted<sp/>CG<sp/>inversion:</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>out[i]<sp/>=<sp/>(M-(par-&gt;shift[i]))^-1<sp/>in</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/>returns<sp/>the<sp/>number<sp/>of<sp/>cg<sp/>iterations<sp/>done.</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift_def(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator<sp/>P,<sp/>spinor_operator_m<sp/>Pinv,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift_flt(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator_flt<sp/>F,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d2/d0d/structg5QMR__fltacc__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>err2;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>error<sp/>on<sp/>the<sp/>solutions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>number<sp/>of<sp/>iterations:<sp/>0<sp/>=&gt;<sp/>infinity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>err2_flt;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>error<sp/>on<sp/>the<sp/>solutions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter_flt;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>number<sp/>of<sp/>iterations:<sp/>0<sp/>=&gt;<sp/>infinity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><ref refid="d2/d0d/structg5QMR__fltacc__par" kindref="compound">g5QMR_fltacc_par</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_mshift_trunc(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trunc_iter,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out_trunc,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_fltacc(<ref refid="d2/d0d/structg5QMR__fltacc__par" kindref="compound">g5QMR_fltacc_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator_flt<sp/>M_flt,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="dc/d96/struct__MINRES__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/d96/struct__MINRES__par" kindref="compound">_MINRES_par</ref><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>err2;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>error<sp/>on<sp/>the<sp/>solutions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>number<sp/>of<sp/>iterations:<sp/>0<sp/>=&gt;<sp/>infinity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BiCGstab(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HBiCGstab(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HBiCGstab_flt(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator_flt<sp/>M,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="65"><highlight class="comment">int<sp/>BiCGstab_mshift(mshift_par<sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_field<sp/>*in,<sp/>spinor_field<sp/>*out);</highlight></codeline>
+<codeline lineno="66"><highlight class="comment">int<sp/>HBiCGstab_mshift(mshift_par<sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_field<sp/>*in,<sp/>spinor_field<sp/>*out);</highlight></codeline>
+<codeline lineno="67"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*trial);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES_flt(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator_flt<sp/>M,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*trial);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eva(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nev,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nevt,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kmax,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imax,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ubnd,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega1,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega2,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spinor_operator<sp/>Op,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*ev,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*status);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eva_tuned(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nev,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nevt,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kmax,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imax,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lbnd<sp/>,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ubnd,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega1,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega2,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spinor_operator<sp/>Op,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*ev,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*status);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>jacobi1(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a[],</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v[]);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>jacobi2(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>a[],</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],<sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>v[]);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_buffers(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h"/>
+  </compounddef>
+</doxygen>
