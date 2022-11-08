@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d00/struct__spinor__field__flt" kind="struct" language="C++" prot="public">
+    <compoundname>_spinor_field_flt</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d00/struct__spinor__field__flt_1ae7a6d52f86e469f115f7cee04f47f668" prot="public" static="no" mutable="no">
+        <type><ref refid="de/def/structsuNf__spinor__flt" kindref="compound">suNf_spinor_flt</ref> *</type>
+        <definition>suNf_spinor_flt* _spinor_field_flt::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="51" column="49" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d00/struct__spinor__field__flt_1a50c952fe42f702d57e785d697c6fe8d4" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        <definition>geometry_descriptor* _spinor_field_flt::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="51" column="74" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>suNf_vector_flt</label>
+        <link refid="d8/d5b/structsuNf__vector__flt"/>
+      </node>
+      <node id="1">
+        <label>_spinor_field_flt</label>
+        <link refid="d0/d00/struct__spinor__field__flt"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>suNf_spinor_flt</label>
+        <link refid="de/def/structsuNf__spinor__flt"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="51" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="51" bodyend="51"/>
+    <listofallmembers>
+      <member refid="d0/d00/struct__spinor__field__flt_1ae7a6d52f86e469f115f7cee04f47f668" prot="public" virt="non-virtual"><scope>_spinor_field_flt</scope><name>ptr</name></member>
+      <member refid="d0/d00/struct__spinor__field__flt_1a50c952fe42f702d57e785d697c6fe8d4" prot="public" virt="non-virtual"><scope>_spinor_field_flt</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

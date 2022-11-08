@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/dd2/structsrc__p" kind="struct" language="C++" prot="public">
+    <compoundname>src_p</compoundname>
+    <includes refid="df/dc5/scattering_8h" local="no">scattering.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/dd2/structsrc__p_1a64101dfe336114e8284a7b610f55cba0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int src_p::p[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Momentum </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="35" column="5" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd2/structsrc__p_1aa677df41c337056a2c790924f0a2f831" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_p::src_p</definition>
+        <argsstring></argsstring>
+        <name>src_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="36" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd2/structsrc__p_1a495eab4b4c7a91b867c8de143defb4da" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_p::src_mp</definition>
+        <argsstring></argsstring>
+        <name>src_mp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="37" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd2/structsrc__p_1a2b33177d09cec220135adb3bd7468f9d" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_p::src_0_p</definition>
+        <argsstring></argsstring>
+        <name>src_0_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="38" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd2/structsrc__p_1a29b61199087f7ba1480224d927c4f126" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_p::src_0_mp</definition>
+        <argsstring></argsstring>
+        <name>src_0_mp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="39" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd2/structsrc__p_1a7169271b0529395168281ede48cfd028" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_p::src_p_0</definition>
+        <argsstring></argsstring>
+        <name>src_p_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="40" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/dd2/structsrc__p_1abb48780706ebd4f0b5f002622f7d1a27" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_p::src_mp_0</definition>
+        <argsstring></argsstring>
+        <name>src_mp_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="41" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Propagator sources with momentum p. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+      <node id="2">
+        <label>_spinor_field</label>
+        <link refid="d3/d33/struct__spinor__field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>suNf_vector</label>
+        <link refid="de/d49/structsuNf__vector"/>
+      </node>
+      <node id="1">
+        <label>src_p</label>
+        <link refid="d3/dd2/structsrc__p"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>src_0_mp</edgelabel>
+          <edgelabel>src_0_p</edgelabel>
+          <edgelabel>src_mp</edgelabel>
+          <edgelabel>src_mp_0</edgelabel>
+          <edgelabel>src_p</edgelabel>
+          <edgelabel>src_p_0</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="34" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="34" bodyend="42"/>
+    <listofallmembers>
+      <member refid="d3/dd2/structsrc__p_1a64101dfe336114e8284a7b610f55cba0" prot="public" virt="non-virtual"><scope>src_p</scope><name>p</name></member>
+      <member refid="d3/dd2/structsrc__p_1a29b61199087f7ba1480224d927c4f126" prot="public" virt="non-virtual"><scope>src_p</scope><name>src_0_mp</name></member>
+      <member refid="d3/dd2/structsrc__p_1a2b33177d09cec220135adb3bd7468f9d" prot="public" virt="non-virtual"><scope>src_p</scope><name>src_0_p</name></member>
+      <member refid="d3/dd2/structsrc__p_1a495eab4b4c7a91b867c8de143defb4da" prot="public" virt="non-virtual"><scope>src_p</scope><name>src_mp</name></member>
+      <member refid="d3/dd2/structsrc__p_1abb48780706ebd4f0b5f002622f7d1a27" prot="public" virt="non-virtual"><scope>src_p</scope><name>src_mp_0</name></member>
+      <member refid="d3/dd2/structsrc__p_1aa677df41c337056a2c790924f0a2f831" prot="public" virt="non-virtual"><scope>src_p</scope><name>src_p</name></member>
+      <member refid="d3/dd2/structsrc__p_1a7169271b0529395168281ede48cfd028" prot="public" virt="non-virtual"><scope>src_p</scope><name>src_p_0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

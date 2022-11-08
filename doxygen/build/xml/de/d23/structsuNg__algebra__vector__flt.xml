@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d23/structsuNg__algebra__vector__flt" kind="struct" language="C++" prot="public">
+    <compoundname>suNg_algebra_vector_flt</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="de/d23/structsuNg__algebra__vector__flt_1aca7cfb9a36c4bf1ea12c4b0e524280d6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float suNg_algebra_vector_flt::c[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="66" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="64" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="65" bodyend="67"/>
+    <listofallmembers>
+      <member refid="de/d23/structsuNg__algebra__vector__flt_1aca7cfb9a36c4bf1ea12c4b0e524280d6" prot="public" virt="non-virtual"><scope>suNg_algebra_vector_flt</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting started &mdash; HiRep  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Input File Configuration" href="input_file.html" />
+    <link rel="prev" title="How to cite" href="../how_to_cite.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> HiRep
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../how_to_cite.html">How to cite</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compilation">Compilation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clone-the-directory">Clone the directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adjust-make-flags">Adjust Make Flags</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#run">Run</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#adjust-input-file">Adjust input file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#execute-binary">Execute Binary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="input_file.html">Input File Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="supported_features.html">Supported Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analysis.html">Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing_programs.html">Writing A Program in HiRep</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Development Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/coding_conventions.html">Coding Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/testing_setup.html">Testing Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/auto_generation.html">Auto-Generation of Macros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/field_geometry.html">Geometry of Field Data in Memory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_manual/global_objects.html">Global Objects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">References</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api.html">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="../../doxygen/build/html/index.html#http://">Full Reference</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HiRep</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Getting started</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/user_guide/getting_started.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline"></a></h1>
+<section id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>GCC or different C-compiler</p></li>
+<li><p>MPI implementation, i.e. OpenMPI or MPICH for MPI support</p></li>
+<li><p>In order to make use of CUDA GPU acceleration compile with CUDA 11.x, for multi-GPU using a CUDA-aware MPI implementation</p></li>
+</ul>
+</section>
+<section id="compilation">
+<h2>Compilation<a class="headerlink" href="#compilation" title="Permalink to this headline"></a></h2>
+<section id="clone-the-directory">
+<h3>Clone the directory<a class="headerlink" href="#clone-the-directory" title="Permalink to this headline"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">claudiopica</span><span class="o">/</span><span class="n">HiRep</span>
+</pre></div>
+</div>
+</section>
+<section id="adjust-make-flags">
+<h3>Adjust Make Flags<a class="headerlink" href="#adjust-make-flags" title="Permalink to this headline"></a></h3>
+<p>Adjust the file <code class="docutils literal notranslate"><span class="pre">Make/MkFlags</span></code> for the right compilation</p>
+<ul class="simple">
+<li><p>Gauge group SU(NG) or SO(NG)</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NG</span><span class="o">=</span><span class="mi">3</span>
+
+<span class="c1">#CHOICES ARE GAUGE_SUN AND GAUGE_SON</span>
+<span class="n">GAUGE_GROUP</span> <span class="o">=</span> <span class="n">GAUGE_SUN</span>
+<span class="c1">#GAUGE_GROUP = GAUGE_SON</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Representation</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">REPR</span> <span class="o">=</span> <span class="n">REPR_FUNDAMENTAL</span>
+<span class="c1">#REPR = REPR_SYMMETRIC</span>
+<span class="c1">#REPR = REPR_ANTISYMMETRIC</span>
+<span class="c1">#REPR = REPR_ADJOINT</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Boundary Conditions</p></li>
+</ul>
+<p>Uncomment the line here, when you want to establish certain boundary conditions into the respective direction.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#T =&gt; PERIODIC, ANTIPERIODIC, OPEN, THETA</span>
+<span class="c1">#X =&gt; PERIODIC, ANTIPERIODIC, THETA</span>
+<span class="c1">#Y =&gt; PERIODIC, ANTIPERIODIC, THETA</span>
+<span class="c1">#Z =&gt; PERIODIC, ANTIPERIODIC, THETA</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Macro parameters</p></li>
+</ul>
+<p>Then a number of macro parameters follow. Here you have to specify if you want to compile for certain boundary conditions by adding the identifier to the <code class="docutils literal notranslate"><span class="pre">MACRO</span></code> variable.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#MACRO += -DBC_T_THETA</span>
+<span class="c1">#MACRO += -DBC_T_PERIODIC</span>
+<span class="n">MACRO</span> <span class="o">+=</span> <span class="o">-</span><span class="n">DBC_T_ANTIPERIODIC</span>
+<span class="c1">#MACRO += -DBC_T_OPEN</span>
+<span class="n">MACRO</span> <span class="o">+=</span> <span class="o">-</span><span class="n">DBC_X_PERIODIC</span>
+<span class="n">MACRO</span> <span class="o">+=</span> <span class="o">-</span><span class="n">DBC_Y_PERIODIC</span>
+<span class="n">MACRO</span> <span class="o">+=</span> <span class="o">-</span><span class="n">DBC_Z_PERIODIC</span>
+
+<span class="c1">#MACRO += -DBC_XYZ_TWISTED</span>
+
+<span class="c1">#MACRO += -DHALFBG_SF</span>
+<span class="c1">#MACRO += -DBASIC_SF</span>
+<span class="c1">#MACRO += -DROTATED_SF</span>
+</pre></div>
+</div>
+<p>Specify, whether you want to compile with MPI either with or without GPU acceleration by using</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#MACRO += -DWITH_MPI</span>
+</pre></div>
+</div>
+<p>For compilation with GPU acceleration for CUDA GPUs, add the identifier <code class="docutils literal notranslate"><span class="pre">-DWITH_GPU</span></code> to <code class="docutils literal notranslate"><span class="pre">MACRO</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MACRO</span> <span class="o">+=</span> <span class="o">-</span><span class="n">DWITH_GPU</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Compilers, wrappers, preprocessors</p></li>
+</ul>
+<p>A number of example combinations are already given in <code class="docutils literal notranslate"><span class="pre">MkFlags</span></code>.</p>
+<p>For compiling with <code class="docutils literal notranslate"><span class="pre">GCC</span></code> and <code class="docutils literal notranslate"><span class="pre">OpenMPI</span></code> one would compile with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CC</span> <span class="o">=</span> <span class="n">gcc</span>
+<span class="n">MPICC</span> <span class="o">=</span> <span class="n">mpicc</span>
+<span class="n">LDFLAGS</span> <span class="o">=</span>
+<span class="n">INCLUDE</span> <span class="o">=</span>
+</pre></div>
+</div>
+<p>Using Intel compilers and Intel’s MPI implementation, one can use for example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CC</span> <span class="o">=</span> <span class="n">icc</span>
+<span class="n">MPICC</span> <span class="o">=</span> <span class="n">mpiicc</span>
+<span class="n">LDFLAGS</span> <span class="o">=</span> <span class="o">-</span><span class="n">L</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">mpich</span><span class="o">-</span><span class="n">devel</span><span class="o">-</span><span class="n">gcc7</span><span class="o">/</span> <span class="o">-</span><span class="n">L</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span>
+<span class="n">INCLUDE</span> <span class="o">=</span> <span class="o">-</span><span class="n">I</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">mpich</span><span class="o">-</span><span class="n">devel</span><span class="o">-</span><span class="n">gcc7</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>For CUDA acceleration, use <code class="docutils literal notranslate"><span class="pre">nvcc</span></code> and adjust the flag <code class="docutils literal notranslate"><span class="pre">-arch</span></code> according to the compute capability of the CUDA capable device.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CC</span> <span class="o">=</span> <span class="n">nvcc</span>
+<span class="n">CFLAGS</span> <span class="o">=</span> <span class="o">-</span><span class="n">O2</span> <span class="o">-</span><span class="n">Xcompiler</span> <span class="s1">&#39;-std=c99 -fgcse-sm -fgcse-las -fgcse-after-reload&#39;</span>
+<span class="n">GPUFLAGS</span> <span class="o">=</span> <span class="o">--</span><span class="n">x</span> <span class="n">cu</span> <span class="o">-</span><span class="n">arch</span><span class="o">=</span><span class="n">sm_70</span> <span class="o">-</span><span class="n">Xptxas</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">Xptxas</span> <span class="o">-</span><span class="n">dlcm</span><span class="o">=</span><span class="n">ca</span> <span class="o">-</span><span class="n">dc</span>
+<span class="n">LDFLAGS</span> <span class="o">=</span> <span class="o">-</span><span class="n">lcuda</span>
+</pre></div>
+</div>
+<p>For compilation with CUDA-aware MPI one needs to pass the MPI wrapper of the MPI implementation to the CUDA preprocessor using the flag <code class="docutils literal notranslate"><span class="pre">-ccbin</span></code>. For OpenMPI this is <code class="docutils literal notranslate"><span class="pre">mpicc</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">CC</span> <span class="o">=</span> <span class="n">nvcc</span>
+<span class="n">CFLAGS</span> <span class="o">=</span> <span class="o">-</span><span class="n">ccbin</span> <span class="n">mpicc</span> <span class="o">-</span><span class="n">Xcompiler</span> <span class="s1">&#39;-std=c99 -fgcse-sm -fgcse-las -fgcse-after-reload&#39;</span>
+<span class="n">GPUFLAGS</span> <span class="o">=</span> <span class="o">--</span><span class="n">x</span> <span class="n">cu</span> <span class="o">-</span><span class="n">arch</span><span class="o">=</span><span class="n">sm_70</span> <span class="o">-</span><span class="n">Xptxas</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">Xptxas</span> <span class="o">-</span><span class="n">dlcm</span><span class="o">=</span><span class="n">ca</span> <span class="o">-</span><span class="n">dc</span>
+<span class="n">LDFLAGS</span> <span class="o">=</span> <span class="o">-</span><span class="n">lcuda</span> <span class="o">-</span><span class="n">lmpi</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="run">
+<h2>Run<a class="headerlink" href="#run" title="Permalink to this headline"></a></h2>
+<section id="adjust-input-file">
+<h3>Adjust input file<a class="headerlink" href="#adjust-input-file" title="Permalink to this headline"></a></h3>
+<p>Compile the HiRep library for example in <code class="docutils literal notranslate"><span class="pre">LibHR</span></code> by typing <code class="docutils literal notranslate"><span class="pre">make</span></code>. An example of a C-file that generates a binary to run the HMC can be found in <code class="docutils literal notranslate"><span class="pre">HMC</span></code>, you can navigate into this directory and type <code class="docutils literal notranslate"><span class="pre">make</span></code> to create a binary. It is necessary to specify a number of parameters using an input file, see <code class="docutils literal notranslate"><span class="pre">HMC/input_file</span></code> for an example. For basic run variables, one can have a look at the section <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">control</span> <span class="pre">variables</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run</span> <span class="n">name</span> <span class="o">=</span> <span class="n">run1</span>
+<span class="n">save</span> <span class="n">freq</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">meas</span> <span class="n">freq</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">conf</span> <span class="nb">dir</span> <span class="o">=</span> <span class="n">cnfg</span>
+<span class="n">gauge</span> <span class="n">start</span> <span class="o">=</span> <span class="n">random</span>
+<span class="n">last</span> <span class="n">conf</span> <span class="o">=</span> <span class="o">+</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>The “+” in front of <code class="docutils literal notranslate"><span class="pre">last</span> <span class="pre">conf</span></code> specifies the number of trajectories to be generated after the chosen startup configuration. I.e. if the startup configuration is trajectory number 5 and <code class="docutils literal notranslate"><span class="pre">last</span> <span class="pre">conf</span> <span class="pre">=</span> <span class="pre">6</span></code> then one additional trajectory will be generated. If <code class="docutils literal notranslate"><span class="pre">last</span> <span class="pre">conf</span> <span class="pre">=</span> <span class="pre">+6</span></code> then six additional trajectories will be generated.</p>
+</section>
+<section id="execute-binary">
+<h3>Execute Binary<a class="headerlink" href="#execute-binary" title="Permalink to this headline"></a></h3>
+<p>Run the HMC using</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ./hmc -i input_file
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">hmc</span></code> is the binary generated from <code class="docutils literal notranslate"><span class="pre">hmc.c</span></code>.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../how_to_cite.html" class="btn btn-neutral float-left" title="How to cite" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="input_file.html" class="btn btn-neutral float-right" title="Input File Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

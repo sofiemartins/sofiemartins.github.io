@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/d5a/input__par_8h" kind="file" language="C++">
+    <compoundname>input_par.h</compoundname>
+    <includedby refid="d2/d49/global_8h" local="yes">global.h</includedby>
+    <includedby refid="dc/dac/io_8h" local="yes">io.h</includedby>
+    <includedby refid="d1/d8c/logger_8h" local="yes">logger.h</includedby>
+    <includedby refid="d0/d5a/moreio_8h" local="yes">moreio.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>global.h</label>
+        <link refid="d2/d49/global_8h_source"/>
+      </node>
+      <node id="3">
+        <label>io.h</label>
+        <link refid="dc/dac/io_8h_source"/>
+      </node>
+      <node id="1">
+        <label>input_par.h</label>
+        <link refid="d8/d5a/input__par_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>update.h</label>
+        <link refid="d8/d72/update_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>logger.h</label>
+        <link refid="d1/d8c/logger_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>moreio.h</label>
+        <link refid="d0/d5a/moreio_8h_source"/>
+      </node>
+      <node id="5">
+        <label>glueballs.h</label>
+        <link refid="db/d97/glueballs_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d4/dab/struct__input__record__t" prot="public">_input_record_t</innerclass>
+    <innerclass refid="d1/deb/struct__input__glb" prot="public">_input_glb</innerclass>
+    <innerclass refid="da/dc7/struct__input__rlx" prot="public">_input_rlx</innerclass>
+    <innerclass refid="dc/d37/struct__input__logger" prot="public">_input_logger</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d8/d5a/input__par_8h_1a24b8ddeccb6dcef84ae0621080402410" prot="public" static="no">
+        <name>init_input_glb</name>
+        <param><defname>varname</defname></param>
+        <initializer>{ \
+  .read={\
+    {&quot;GLB_T&quot;, &quot;GLB_T = %d&quot;, INT_T, &amp;GLB_T},\
+    {&quot;GLB_X&quot;, &quot;GLB_X = %d&quot;, INT_T, &amp;GLB_X},\
+    {&quot;GLB_Y&quot;, &quot;GLB_Y = %d&quot;, INT_T, &amp;GLB_Y},\
+    {&quot;GLB_Z&quot;, &quot;GLB_Z = %d&quot;, INT_T, &amp;GLB_Z},\
+    {&quot;NP_T&quot;, &quot;NP_T = %d&quot;, INT_T, &amp;NP_T},\
+    {&quot;NP_X&quot;, &quot;NP_X = %d&quot;, INT_T, &amp;NP_X},\
+    {&quot;NP_Y&quot;, &quot;NP_Y = %d&quot;, INT_T, &amp;NP_Y},\
+    {&quot;NP_Z&quot;, &quot;NP_Z = %d&quot;, INT_T, &amp;NP_Z},\
+    {&quot;N_REP&quot;, &quot;N_REP = %d&quot;, INT_T, &amp;N_REP},\
+    {NULL, NULL, INT_T, NULL}				    \
+  }\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="37" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d5a/input__par_8h_1aaf89f5afd5286318a2d3a0c9b4a9c71b" prot="public" static="no">
+        <name>init_input_rlx</name>
+        <param><defname>varname</defname></param>
+        <initializer>{ \
+.read={\
+{&quot;ranlux level&quot;, &quot;rlx_level = %d&quot;, INT_T, &amp;(varname).rlxd_level},\
+{&quot;ranlux seed&quot;, &quot;rlx_seed = %d&quot;, INT_T, &amp;(varname).rlxd_seed},\
+{&quot;ranlux state&quot;, &quot;rlx_state = %s&quot;, STRING_T, &amp;(varname).rlxd_state},\
+{&quot;ranlux start&quot;, &quot;rlx_start = %s&quot;, STRING_T, &amp;(varname).rlxd_start},\
+{NULL, NULL, INT_T, NULL}				    \
+},\
+.rlxd_state=&quot;&quot;,\
+.rlxd_level=0\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="66" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d8/d5a/input__par_8h_1a7123c1c61bcdc4b4059089c0217a41c2" prot="public" static="no">
+        <name>init_input_logger</name>
+        <param><defname>varname</defname></param>
+        <initializer>{ \
+  .read={\
+    {&quot;Default logger level&quot;, &quot;log:default = %d&quot;, INT_T, &amp;(varname).def_log_lvl},\
+    {&quot;Inverter logger level&quot;, &quot;log:inverter = %d&quot;, INT_T, &amp;(varname).inverter_log_lvl},\
+    {&quot;Forcestat logger level&quot;, &quot;log:forcestat = %d&quot;, INT_T, &amp;(varname).forcestat_log_lvl},\
+    {NULL, NULL, INT_T, NULL}\
+  }, \
+  .def_log_lvl=-1,\
+  .inverter_log_lvl=-1,\
+  .forcestat_log_lvl=-1\
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="93" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d8/d5a/input__par_8h_1a67aa5d14a32972fb743cec34594dc14f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_datatype_t</name>
+        <enumvalue id="d8/d5a/input__par_8h_1a67aa5d14a32972fb743cec34594dc14fafbfecc694686a21ddb95391c92c4ba2f" prot="public">
+          <name>INT_T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d5a/input__par_8h_1a67aa5d14a32972fb743cec34594dc14fa0d626667321668b0463f8ee15f289086" prot="public">
+          <name>UNSIGNED_T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d5a/input__par_8h_1a67aa5d14a32972fb743cec34594dc14faf64124a470ca5d3e869ba4e181fa9493" prot="public">
+          <name>DOUBLE_T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d8/d5a/input__par_8h_1a67aa5d14a32972fb743cec34594dc14fa7bf33d380c84d72f4cbd76a1e6cca8c5" prot="public">
+          <name>STRING_T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="10" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="10" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d8/d5a/input__par_8h_1a6b1233306b8539854ce98023ad2a4544" prot="public" static="no">
+        <type>enum _datatype_t</type>
+        <definition>typedef enum _datatype_t datatype_t</definition>
+        <argsstring></argsstring>
+        <name>datatype_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="15" column="12"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d5a/input__par_8h_1a87e707c8bd43b1ba9525f546fdae2a9b" prot="public" static="no">
+        <type>struct <ref refid="d4/dab/struct__input__record__t" kindref="compound">_input_record_t</ref></type>
+        <definition>typedef struct _input_record_t input_record_t</definition>
+        <argsstring></argsstring>
+        <name>input_record_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="22" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d5a/input__par_8h_1aa10da15c0d366dd84368a30967f0a8d3" prot="public" static="no">
+        <type>struct <ref refid="d1/deb/struct__input__glb" kindref="compound">_input_glb</ref></type>
+        <definition>typedef struct _input_glb input_glb</definition>
+        <argsstring></argsstring>
+        <name>input_glb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="35" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d5a/input__par_8h_1a95fff24330d704992d043aadea61e9b8" prot="public" static="no">
+        <type>struct <ref refid="da/dc7/struct__input__rlx" kindref="compound">_input_rlx</ref></type>
+        <definition>typedef struct _input_rlx input_rlx</definition>
+        <argsstring></argsstring>
+        <name>input_rlx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="64" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d8/d5a/input__par_8h_1a076c323e90af276580ab7ac9dfdbdc8d" prot="public" static="no">
+        <type>struct <ref refid="dc/d37/struct__input__logger" kindref="compound">_input_logger</ref></type>
+        <definition>typedef struct _input_logger input_logger</definition>
+        <argsstring></argsstring>
+        <name>input_logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="91" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2008,<sp/>Claudio<sp/>Pica<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>INPUT_PAR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INPUT_PAR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_datatype_t<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/>INT_T,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/>UNSIGNED_T,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/>DOUBLE_T,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>STRING_T</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}<sp/>datatype_t;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="d4/dab/struct__input__record__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d4/dab/struct__input__record__t" kindref="compound">_input_record_t</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*descr;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>datatype_t<sp/>type;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/><ref refid="d4/dab/struct__input__record__t" kindref="compound">input_record_t</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>or<sp/>common<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="d1/deb/struct__input__glb" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d1/deb/struct__input__glb" kindref="compound">_input_glb</ref><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>global<sp/>size<sp/>of<sp/>lattice<sp/>and<sp/>processing<sp/>grid<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>THIS<sp/>ARE<sp/>DEFINED<sp/>GLOBALLY<sp/>!!!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>int<sp/>GLB_T,<sp/>GLB_X,<sp/>GLB_Y,<sp/>GLB_Z;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>int<sp/>NP_T,<sp/>NP_X,<sp/>NP_Y,<sp/>NP_Z;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>int<sp/>N_REP;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>for<sp/>the<sp/>reading<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><ref refid="d4/dab/struct__input__record__t" kindref="compound">input_record_t</ref><sp/>read[10];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/><ref refid="d1/deb/struct__input__glb" kindref="compound">input_glb</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>init_input_glb(varname)<sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"><sp/><sp/>.read={\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;GLB_T&quot;</highlight><highlight class="normal">,<sp/>&quot;GLB_T<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;GLB_T},\</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;GLB_X&quot;,<sp/>&quot;GLB_X<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;GLB_X},\</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;GLB_Y&quot;,<sp/>&quot;GLB_Y<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;GLB_Y},\</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;GLB_Z&quot;,<sp/>&quot;GLB_Z<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;GLB_Z},\</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;NP_T&quot;,<sp/>&quot;NP_T<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;NP_T},\</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;NP_X&quot;,<sp/>&quot;NP_X<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;NP_X},\</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;NP_Y&quot;,<sp/>&quot;NP_Y<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;NP_Y},\</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;NP_Z&quot;,<sp/>&quot;NP_Z<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;NP_Z},\</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;N_REP&quot;,<sp/>&quot;N_REP<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;N_REP},\</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{NULL,<sp/>NULL,<sp/>INT_T,<sp/>NULL}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>}\</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Global<sp/>or<sp/>common<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="da/dc7/struct__input__rlx" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="da/dc7/struct__input__rlx" kindref="compound">_input_rlx</ref><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>random<sp/>numbers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rlxd_level,<sp/>rlxd_seed;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rlxd_state[256];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rlxd_start[256];</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>for<sp/>the<sp/>reading<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/dab/struct__input__record__t" kindref="compound">input_record_t</ref><sp/>read[5];</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/><ref refid="da/dc7/struct__input__rlx" kindref="compound">input_rlx</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>init_input_rlx(varname)<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor">.read={\</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor">{&quot;ranlux<sp/>level&quot;</highlight><highlight class="normal">,<sp/>&quot;rlx_level<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;(varname).rlxd_level},\</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{&quot;ranlux<sp/>seed&quot;,<sp/>&quot;rlx_seed<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;(varname).rlxd_seed},\</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{&quot;ranlux<sp/>state&quot;,<sp/>&quot;rlx_state<sp/>=<sp/>%s&quot;,<sp/>STRING_T,<sp/>&amp;(varname).rlxd_state},\</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{&quot;ranlux<sp/>start&quot;,<sp/>&quot;rlx_start<sp/>=<sp/>%s&quot;,<sp/>STRING_T,<sp/>&amp;(varname).rlxd_start},\</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{NULL,<sp/>NULL,<sp/>INT_T,<sp/>NULL}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">},\</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">.rlxd_state=&quot;&quot;,\</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">.rlxd_level=0\</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Logger<sp/>global<sp/>variables<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="dc/d37/struct__input__logger" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/d37/struct__input__logger" kindref="compound">_input_logger</ref><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Logger<sp/>level<sp/>defined<sp/>globally<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>They<sp/>are<sp/>defined<sp/>at<sp/>input<sp/>level<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>If<sp/>you<sp/>need<sp/>to<sp/>separate<sp/>the<sp/>log<sp/>level<sp/>for<sp/>a<sp/>channel<sp/>insert<sp/>it<sp/>here<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>def_log_lvl;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inverter_log_lvl;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>forcestat_log_lvl;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>for<sp/>the<sp/>reading<sp/>function<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="d4/dab/struct__input__record__t" kindref="compound">input_record_t</ref><sp/>read[4];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/><ref refid="dc/d37/struct__input__logger" kindref="compound">input_logger</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>init_input_logger(varname)<sp/>\</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"><sp/><sp/>.read={\</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;Default<sp/>logger<sp/>level&quot;</highlight><highlight class="normal">,<sp/>&quot;log:default<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;(varname).def_log_lvl},\</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;Inverter<sp/>logger<sp/>level&quot;,<sp/>&quot;log:inverter<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;(varname).inverter_log_lvl},\</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{&quot;Forcestat<sp/>logger<sp/>level&quot;,<sp/>&quot;log:forcestat<sp/>=<sp/>%d&quot;,<sp/>INT_T,<sp/>&amp;(varname).forcestat_log_lvl},\</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{NULL,<sp/>NULL,<sp/>INT_T,<sp/>NULL}\</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>},<sp/>\</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>.def_log_lvl=-1,\</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>.inverter_log_lvl=-1,\</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>.forcestat_log_lvl=-1\</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INPUT_PAR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h"/>
+  </compounddef>
+</doxygen>

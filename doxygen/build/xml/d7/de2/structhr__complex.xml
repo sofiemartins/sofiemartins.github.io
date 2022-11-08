@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/de2/structhr__complex" kind="struct" language="C++" prot="public">
+    <compoundname>hr_complex</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d7/de2/structhr__complex_1aa903a40ef453731e05814245df6a3296" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double hr_complex::re</definition>
+        <argsstring></argsstring>
+        <name>re</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="607" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/de2/structhr__complex_1a23bebe805f4dc453a061793e8d4bd849" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double hr_complex::im</definition>
+        <argsstring></argsstring>
+        <name>im</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="607" column="13" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/de2/structhr__complex_1a6412da705a4d1617c4efd5d084a53bf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(void)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="608" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="608" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1a87da30248427a9a36c105e13c834bc41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const int x)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="609" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="609" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1af2ba9d7af4e8d88d58be2fd669d4850e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const float x)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const float</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="614" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="614" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1ac0a8c65ea809ab56038ddbcd01246d9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const double x)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="619" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="619" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1af273d0e4c5a9d70aa50b44970409fc15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const int a, const int b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="624" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="624" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1a8ec851dd3710e5f98a14b4170c3415c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const int a, const float b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="629" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="629" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1ab78320d850a057ed126e6247fa4193a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const int a, const double b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="634" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="634" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1ac3d765c938f0872f4d2d0a5c9142261a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const float a, const int b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="639" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="639" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1ab058cdbdbd4b3222db4c41baa4662200" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const float a, const float b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="644" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="644" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1ad2fc1f7d6de76128ebdad2e1dd579a8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const float a, const double b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const float</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="649" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="649" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1a5205e9b0711cd164ace3499081b2e51f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const double a, const int b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="654" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="654" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1a466702b30893e52991592cae0bc40c4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const double a, const float b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const float</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="659" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="659" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1a3a146572de4c2ac8272756326263527b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const double a, const double b)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="664" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="664" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1ae0d9602871dc7c630f4fad6b62af2df1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const hr_complex_int &amp;x)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const <ref refid="dd/db7/structhr__complex__int" kindref="compound">hr_complex_int</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="669" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="669" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/de2/structhr__complex_1a78c91ca6061ac5c0843de6c5d462e7b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>__host__ __device__</type>
+        <definition>__host__ __device__ hr_complex::hr_complex</definition>
+        <argsstring>(const hr_complex_flt &amp;x)</argsstring>
+        <name>hr_complex</name>
+        <param>
+          <type>const <ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="674" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="674" bodyend="678"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" line="606" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/gpu_complex.h" bodystart="606" bodyend="971"/>
+    <listofallmembers>
+      <member refid="d7/de2/structhr__complex_1a6412da705a4d1617c4efd5d084a53bf3" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1a87da30248427a9a36c105e13c834bc41" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1af2ba9d7af4e8d88d58be2fd669d4850e" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1ac0a8c65ea809ab56038ddbcd01246d9e" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1af273d0e4c5a9d70aa50b44970409fc15" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1a8ec851dd3710e5f98a14b4170c3415c6" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1ab78320d850a057ed126e6247fa4193a6" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1ac3d765c938f0872f4d2d0a5c9142261a" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1ab058cdbdbd4b3222db4c41baa4662200" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1ad2fc1f7d6de76128ebdad2e1dd579a8f" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1a5205e9b0711cd164ace3499081b2e51f" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1a466702b30893e52991592cae0bc40c4c" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1a3a146572de4c2ac8272756326263527b" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1ae0d9602871dc7c630f4fad6b62af2df1" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1a78c91ca6061ac5c0843de6c5d462e7b6" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>hr_complex</name></member>
+      <member refid="d7/de2/structhr__complex_1a23bebe805f4dc453a061793e8d4bd849" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>im</name></member>
+      <member refid="d7/de2/structhr__complex_1aa903a40ef453731e05814245df6a3296" prot="public" virt="non-virtual"><scope>hr_complex</scope><name>re</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

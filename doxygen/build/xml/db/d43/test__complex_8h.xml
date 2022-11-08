@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d43/test__complex_8h" kind="file" language="C++">
+    <compoundname>test_complex.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="db/d43/test__complex_8h_1ab8d88953c5edcec50ab62cd4f6801adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_gpu_complex</definition>
+        <argsstring>()</argsstring>
+        <name>test_gpu_complex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="7" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="7" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1ab736fb32add2052974ba9c18569b7cdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_plus_rhs_double</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_plus_rhs_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="8" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="8" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a0d72c0e8b2094a18b2a1fd061e9146bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_plus_rhs_double_gpu</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_plus_rhs_double_gpu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="9" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="9" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1aa8dcf9819b36632ff01e78f32e66a8d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_plus_lhs_double</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_plus_lhs_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="10" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="10" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a10d9e713986a0301682e1bda0c216c84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_prod_rhs_double</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_prod_rhs_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="11" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="11" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1abcbd122fc95dd7335d935fc5d39dafa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_prod_lhs_double</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_prod_lhs_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="12" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="12" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a6d55360bf726cf1cbbc30ed6499155a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_div_rhs_double</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_div_rhs_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="13" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="13" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a82351b1ec7dd5ccc3987b555d1c3bb0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_div_lhs_double</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_div_lhs_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="14" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="14" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a6b35f7f628f012552f2302ed4bc7c5e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_plus_hr_complex</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_plus_hr_complex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="15" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="15" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a4ffadc4a8615486f62861ad446fff71b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_minus_hr_complex</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_minus_hr_complex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="16" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="16" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a55b49c0b466cdf9b76fbe0136421f76d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_prod_hr_complex</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_prod_hr_complex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="17" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="17" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1afb00d3ec8d89e1bda015273dd969eb5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_prod_hr_complex_gpu</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_prod_hr_complex_gpu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="18" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="18" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a0ee85df0878baa0aabaf85f50b8724d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_div_hr_complex</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_div_hr_complex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="19" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="19" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a2f03c330c04b2547bf82c3c99e8fbdda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_negate</definition>
+        <argsstring>()</argsstring>
+        <name>test_negate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="20" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="20" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1aee6abbacf1d005a2f1d240c347c362b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_cast_double</definition>
+        <argsstring>()</argsstring>
+        <name>test_cast_double</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="21" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="21" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1af0863a1ea3fe1f40307582971230c327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_plus_rhs_integer</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_plus_rhs_integer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="22" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="22" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1abbfac963fb2d4b2a26b87753e82316c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_plus_lhs_integer</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_plus_lhs_integer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="23" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="23" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a9b032ea398de186c1b750ecc0ecbe2b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_div_rhs_integer</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_div_rhs_integer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="24" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="24" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a5f0b4c4b97fc7e2590948d994ce91c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_overload_div_lhs_integer</definition>
+        <argsstring>()</argsstring>
+        <name>test_overload_div_lhs_integer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="25" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="25" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a96d6bb5f041e89de016fe2f905f8453f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_I_add</definition>
+        <argsstring>()</argsstring>
+        <name>test_I_add</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="26" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="26" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d43/test__complex_8h_1a331e81060b703f4b82fe596282922eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int test_I_prod</definition>
+        <argsstring>()</argsstring>
+        <name>test_I_prod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" line="27" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h" declline="27" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TEST_COMPLEX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_COMPLEX_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_gpu_complex();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_plus_rhs_double();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_plus_rhs_double_gpu();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_plus_lhs_double();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_prod_rhs_double();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_prod_lhs_double();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_div_rhs_double();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_div_lhs_double();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_plus_hr_complex();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_minus_hr_complex();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_prod_hr_complex();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_prod_hr_complex_gpu();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_div_hr_complex();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_negate();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_cast_double();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_plus_rhs_integer();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_plus_lhs_integer();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_div_rhs_integer();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_overload_div_lhs_integer();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_I_add();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>test_I_prod();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/test_complex.h"/>
+  </compounddef>
+</doxygen>

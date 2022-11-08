@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d5c/structforce__gauge__par" kind="struct" language="C++" prot="public">
+    <compoundname>force_gauge_par</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d5c/structforce__gauge__par_1a084448725a4a331d1cb1ecb0244dded3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double force_gauge_par::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="67" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d5c/structforce__gauge__par_1af4fead56b55ba3618093d48fe9227b3b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double force_gauge_par::c0</definition>
+        <argsstring></argsstring>
+        <name>c0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="68" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d5c/structforce__gauge__par_1abd62c265690395f1a5eaa0bf4f1a30ec" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double force_gauge_par::c1</definition>
+        <argsstring></argsstring>
+        <name>c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="69" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d5c/structforce__gauge__par_1a3832cb5915d1280ab30cec098a0740ba" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> **</type>
+        <definition>suNg_av_field** force_gauge_par::momenta</definition>
+        <argsstring></argsstring>
+        <name>momenta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="70" column="17" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>suNg_algebra_vector</label>
+        <link refid="d3/dcb/structsuNg__algebra__vector"/>
+      </node>
+      <node id="1">
+        <label>force_gauge_par</label>
+        <link refid="db/d5c/structforce__gauge__par"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>momenta</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+      <node id="2">
+        <label>_suNg_av_field</label>
+        <link refid="d4/d75/struct__suNg__av__field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="65" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="66" bodyend="71"/>
+    <listofallmembers>
+      <member refid="db/d5c/structforce__gauge__par_1a084448725a4a331d1cb1ecb0244dded3" prot="public" virt="non-virtual"><scope>force_gauge_par</scope><name>beta</name></member>
+      <member refid="db/d5c/structforce__gauge__par_1af4fead56b55ba3618093d48fe9227b3b" prot="public" virt="non-virtual"><scope>force_gauge_par</scope><name>c0</name></member>
+      <member refid="db/d5c/structforce__gauge__par_1abd62c265690395f1a5eaa0bf4f1a30ec" prot="public" virt="non-virtual"><scope>force_gauge_par</scope><name>c1</name></member>
+      <member refid="db/d5c/structforce__gauge__par_1a3832cb5915d1280ab30cec098a0740ba" prot="public" virt="non-virtual"><scope>force_gauge_par</scope><name>momenta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

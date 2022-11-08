@@ -1,0 +1,472 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d5a/moreio_8h" kind="file" language="C++">
+    <compoundname>moreio.h</compoundname>
+    <includes refid="d8/d5a/input__par_8h" local="yes">input_par.h</includes>
+    <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h_source"/>
+      </node>
+      <node id="3">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>cpu_complex.h</label>
+        <link refid="d2/dfb/cpu__complex_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>error.h</label>
+        <link refid="da/d41/error_8h_source"/>
+      </node>
+      <node id="2">
+        <label>input_par.h</label>
+        <link refid="d8/d5a/input__par_8h_source"/>
+      </node>
+      <node id="11">
+        <label>field_ordering.h</label>
+        <link refid="da/dac/field__ordering_8h_source"/>
+      </node>
+      <node id="7">
+        <label>hr_complex.h</label>
+        <link refid="d1/d74/hr__complex_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>tgmath.h</label>
+      </node>
+      <node id="4">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>moreio.h</label>
+        <link refid="d0/d5a/moreio_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a64032cdc2701df803a06189c72463509" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_mpieo_BE</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_mpieo_BE</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="10" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a340d34bd9ad0e92104e82f1c755b3bda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_gauge_field_mpieo_BE</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>write_gauge_field_mpieo_BE</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="11" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a80855587614857e27561f2a9b2d9bbf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_mpieo_LE</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_mpieo_LE</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="13" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="13" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a33e2b8825873d3432274c4cb1bd2df84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_gauge_field_mpieo_LE</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>write_gauge_field_mpieo_LE</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="14" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="14" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1ac49ad5c2e81ca9c15d839fe2f30f98fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_eolexi_BE</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_eolexi_BE</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="16" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a11a0a7c7f5a66f447cd718644dfb4cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_gauge_field_eolexi_BE</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>write_gauge_field_eolexi_BE</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="17" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a193679ba14fa488c80cdf3213cef872c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_eolexi_LE</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_eolexi_LE</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="19" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1ad9d834f13f4793c6252e8f91a11c74d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_gauge_field_eolexi_LE</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>write_gauge_field_eolexi_LE</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="20" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1ad4474a671d12c1d5ad511c9edda93816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_milc</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_milc</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="22" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a3dce199996e5885335721209d56f5796" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_milc_no3row</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_milc_no3row</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="23" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a239d6fc1b0b41a0be9dfb203897dfd16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_ascii</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_ascii</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="24" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a07c656e00be6a47b2640b7bf5b4800f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_fortran</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_fortran</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="25" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a41767cbc9e232bd5ca415ebe25cd2127" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_openQCD</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_openQCD</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="27" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="27" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a872b62af718f8267a06853d0aaeb370a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_gauge_field_openQCD_SF</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>read_gauge_field_openQCD_SF</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="28" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a3d4c518e7ae537b3ae13c5f7a3a1c1e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_gauge_field_openQCD</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>write_gauge_field_openQCD</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="29" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a5672eebf14fc0678e836503a0252623d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_gauge_field_hirep_pbc_to_obc</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>write_gauge_field_hirep_pbc_to_obc</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="30" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a6061d2d235df67e03a30f1fee1c6fa5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_gauge_field_hirep_pbc_to_sf</definition>
+        <argsstring>(char filename[])</argsstring>
+        <name>write_gauge_field_hirep_pbc_to_sf</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="31" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a9648cf2fa25db1660a5022325dca002b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void write_spinor_field</definition>
+        <argsstring>(char filename[], spinor_field *sp)</argsstring>
+        <name>write_spinor_field</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>sp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="35" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d5a/moreio_8h_1a0cbf8be271c06a9cb80ebf00b47d9935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void read_spinor_field</definition>
+        <argsstring>(char filename[], spinor_field *sp)</argsstring>
+        <name>read_spinor_field</name>
+        <param>
+          <type>char</type>
+          <declname>filename</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>sp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" line="36" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2008,<sp/>Agostino<sp/>Patella,<sp/>Claudio<sp/>Pica<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MOREIO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOREIO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input_par.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_mpieo_BE(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_gauge_field_mpieo_BE(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_mpieo_LE(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_gauge_field_mpieo_LE(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_eolexi_BE(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_gauge_field_eolexi_BE(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_eolexi_LE(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_gauge_field_eolexi_LE(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_milc(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_milc_no3row(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_ascii(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_fortran(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_openQCD(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_gauge_field_openQCD_SF(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_gauge_field_openQCD(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_gauge_field_hirep_pbc_to_obc(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_gauge_field_hirep_pbc_to_sf(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[]);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>void<sp/>write_spinor_field_eo_lexi(char<sp/>filename[],spinor_field<sp/>*sp);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>write_spinor_field(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[],<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*sp);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_spinor_field(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[],<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*sp);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/moreio.h"/>
+  </compounddef>
+</doxygen>

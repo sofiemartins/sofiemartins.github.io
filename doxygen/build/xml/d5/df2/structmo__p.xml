@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/df2/structmo__p" kind="struct" language="C++" prot="public">
+    <compoundname>mo_p</compoundname>
+    <includes refid="df/dc5/scattering_8h" local="no">scattering.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d5/df2/structmo__p_1a43f5708bb53a792592ceb7756df691c7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mo_p::p[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="79" column="5" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1a957eca2b112279bf209d1aba42d86c72" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable* mo_p::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="80" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1a9af6ca87732dc4d917bcda4e570493c0" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable * mo_p::r1</definition>
+        <argsstring></argsstring>
+        <name>r1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="80" column="20" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1ae5fdb3f102d3a6bec6ff5a92ad31ee3f" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable * mo_p::r2</definition>
+        <argsstring></argsstring>
+        <name>r2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="80" column="23" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1ae6b0189a7dadf1a4726ab2ba113debc9" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable * mo_p::r3</definition>
+        <argsstring></argsstring>
+        <name>r3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="80" column="26" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1a16863eff5080ed83bbd736da7c3c17e4" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable * mo_p::r4</definition>
+        <argsstring></argsstring>
+        <name>r4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="80" column="29" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1a068224981d56ef32043112a7af8bd4fe" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable * mo_p::pi</definition>
+        <argsstring></argsstring>
+        <name>pi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="80" column="32" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1ab6ed37e63f874996ab38b74639763e23" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable* mo_p::t1[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>t1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="81" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1adbe0de7016e955810cb2aa1b4b620906" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable * mo_p::t2[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>t2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="81" column="21" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/df2/structmo__p_1a5794b6b4fccd5e295c687aa862760014" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable * mo_p::rho[3][3]</definition>
+        <argsstring>[3][3]</argsstring>
+        <name>rho</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="81" column="24" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Bundle of meson_observables with momentum p. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mo_p</label>
+        <link refid="d5/df2/structmo__p"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>d</edgelabel>
+          <edgelabel>pi</edgelabel>
+          <edgelabel>r1</edgelabel>
+          <edgelabel>r2</edgelabel>
+          <edgelabel>r3</edgelabel>
+          <edgelabel>r4</edgelabel>
+          <edgelabel>rho</edgelabel>
+          <edgelabel>t1</edgelabel>
+          <edgelabel>t2</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>meson_observable_s</label>
+        <link refid="d6/d0c/structmeson__observable__s"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="78" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="78" bodyend="82"/>
+    <listofallmembers>
+      <member refid="d5/df2/structmo__p_1a957eca2b112279bf209d1aba42d86c72" prot="public" virt="non-virtual"><scope>mo_p</scope><name>d</name></member>
+      <member refid="d5/df2/structmo__p_1a43f5708bb53a792592ceb7756df691c7" prot="public" virt="non-virtual"><scope>mo_p</scope><name>p</name></member>
+      <member refid="d5/df2/structmo__p_1a068224981d56ef32043112a7af8bd4fe" prot="public" virt="non-virtual"><scope>mo_p</scope><name>pi</name></member>
+      <member refid="d5/df2/structmo__p_1a9af6ca87732dc4d917bcda4e570493c0" prot="public" virt="non-virtual"><scope>mo_p</scope><name>r1</name></member>
+      <member refid="d5/df2/structmo__p_1ae5fdb3f102d3a6bec6ff5a92ad31ee3f" prot="public" virt="non-virtual"><scope>mo_p</scope><name>r2</name></member>
+      <member refid="d5/df2/structmo__p_1ae6b0189a7dadf1a4726ab2ba113debc9" prot="public" virt="non-virtual"><scope>mo_p</scope><name>r3</name></member>
+      <member refid="d5/df2/structmo__p_1a16863eff5080ed83bbd736da7c3c17e4" prot="public" virt="non-virtual"><scope>mo_p</scope><name>r4</name></member>
+      <member refid="d5/df2/structmo__p_1a5794b6b4fccd5e295c687aa862760014" prot="public" virt="non-virtual"><scope>mo_p</scope><name>rho</name></member>
+      <member refid="d5/df2/structmo__p_1ab6ed37e63f874996ab38b74639763e23" prot="public" virt="non-virtual"><scope>mo_p</scope><name>t1</name></member>
+      <member refid="d5/df2/structmo__p_1adbe0de7016e955810cb2aa1b4b620906" prot="public" virt="non-virtual"><scope>mo_p</scope><name>t2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

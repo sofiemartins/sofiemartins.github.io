@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d21/suN__types_8h" kind="file" language="C++">
+    <compoundname>suN_types.h</compoundname>
+    <includes refid="d1/d74/hr__complex_8h" local="yes">hr_complex.h</includes>
+    <includedby refid="d8/d4c/check__options_8h" local="yes">check_options.h</includedby>
+    <includedby refid="d3/dde/clover__exp_8h" local="yes">clover_exp.h</includedby>
+    <includedby refid="d0/d40/dirac_8h" local="yes">dirac.h</includedby>
+    <includedby refid="d8/d00/gamma__spinor_8h" local="yes">gamma_spinor.h</includedby>
+    <includedby refid="d8/d7d/gaugefix_8h" local="yes">gaugefix.h</includedby>
+    <includedby refid="d2/d49/global_8h" local="yes">global.h</includedby>
+    <includedby refid="d3/d5d/inverters_8h" local="yes">inverters.h</includedby>
+    <includedby refid="d6/d71/propagator_8h" local="yes">propagator.h</includedby>
+    <includedby refid="d8/d1e/spin__matrix_8h" local="yes">spin_matrix.h</includedby>
+    <includedby refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includedby>
+    <includedby refid="d1/d36/suN_8h" local="yes">suN.h</includedby>
+    <includedby refid="d5/d60/utils_8h" local="yes">utils.h</includedby>
+    <includedby refid="d3/df8/wilsonflow_8h" local="yes">wilsonflow.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>cpu_complex.h</label>
+        <link refid="d2/dfb/cpu__complex_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hr_complex.h</label>
+        <link refid="d1/d74/hr__complex_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>tgmath.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>gaugefix.h</label>
+        <link refid="d8/d7d/gaugefix_8h_source"/>
+      </node>
+      <node id="5">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h_source"/>
+      </node>
+      <node id="3">
+        <label>global.h</label>
+        <link refid="d2/d49/global_8h_source"/>
+      </node>
+      <node id="16">
+        <label>utils.h</label>
+        <link refid="d5/d60/utils_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>rational_functions.h</label>
+        <link refid="d5/dbc/rational__functions_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>disconnected.h</label>
+        <link refid="dc/d1e/disconnected_8h_source"/>
+      </node>
+      <node id="18">
+        <label>clover_tools.h</label>
+        <link refid="da/d6a/clover__tools_8h_source"/>
+      </node>
+      <node id="17">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gamma_spinor.h</label>
+        <link refid="d8/d00/gamma__spinor_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>io.h</label>
+        <link refid="dc/dac/io_8h_source"/>
+      </node>
+      <node id="24">
+        <label>wilsonflow.h</label>
+        <link refid="d3/df8/wilsonflow_8h_source"/>
+      </node>
+      <node id="11">
+        <label>observables.h</label>
+        <link refid="d0/d30/observables_8h_source"/>
+      </node>
+      <node id="1">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>spectrum.h</label>
+        <link refid="d6/d16/spectrum_8h_source"/>
+      </node>
+      <node id="20">
+        <label>linear_algebra.h</label>
+        <link refid="dc/d9c/linear__algebra_8h_source"/>
+      </node>
+      <node id="8">
+        <label>spin_matrix.h</label>
+        <link refid="d8/d1e/spin__matrix_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>update.h</label>
+        <link refid="d8/d72/update_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>propagator.h</label>
+        <link refid="d6/d71/propagator_8h_source"/>
+      </node>
+      <node id="28">
+        <label>scattering.h</label>
+        <link refid="df/dc5/scattering_8h_source"/>
+      </node>
+      <node id="19">
+        <label>communications.h</label>
+        <link refid="d2/d6f/communications_8h_source"/>
+      </node>
+      <node id="25">
+        <label>suN.h</label>
+        <link refid="d1/d36/suN_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>memory.h</label>
+        <link refid="dc/d18/memory_8h_source"/>
+      </node>
+      <node id="22">
+        <label>moreio.h</label>
+        <link refid="d0/d5a/moreio_8h_source"/>
+      </node>
+      <node id="23">
+        <label>random.h</label>
+        <link refid="d1/d79/random_8h_source"/>
+      </node>
+      <node id="27">
+        <label>glueballs.h</label>
+        <link refid="db/d97/glueballs_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>inverters.h</label>
+        <link refid="d3/d5d/inverters_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>clover_exp.h</label>
+        <link refid="d3/dde/clover__exp_8h_source"/>
+      </node>
+      <node id="2">
+        <label>check_options.h</label>
+        <link refid="d8/d4c/check__options_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d3/d0c/structsuNg__vector" prot="public">suNg_vector</innerclass>
+    <innerclass refid="d1/d07/structsuNg__vector__flt" prot="public">suNg_vector_flt</innerclass>
+    <innerclass refid="d8/d0f/structsuNg" prot="public">suNg</innerclass>
+    <innerclass refid="d1/d3e/structsuNg__flt" prot="public">suNg_flt</innerclass>
+    <innerclass refid="d9/d78/structsuNg__spinor" prot="public">suNg_spinor</innerclass>
+    <innerclass refid="d8/d26/structsuNg__spinor__flt" prot="public">suNg_spinor_flt</innerclass>
+    <innerclass refid="d3/dcb/structsuNg__algebra__vector" prot="public">suNg_algebra_vector</innerclass>
+    <innerclass refid="de/d23/structsuNg__algebra__vector__flt" prot="public">suNg_algebra_vector_flt</innerclass>
+    <innerclass refid="de/d49/structsuNf__vector" prot="public">suNf_vector</innerclass>
+    <innerclass refid="d8/d5b/structsuNf__vector__flt" prot="public">suNf_vector_flt</innerclass>
+    <innerclass refid="d0/d04/structsuNf" prot="public">suNf</innerclass>
+    <innerclass refid="db/d3f/structsuNf__flt" prot="public">suNf_flt</innerclass>
+    <innerclass refid="d8/dd1/structsuNf__spinor" prot="public">suNf_spinor</innerclass>
+    <innerclass refid="de/def/structsuNf__spinor__flt" prot="public">suNf_spinor_flt</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d9/d21/suN__types_8h_1ac29517e805c6a27f76e87e634eaf2929" prot="public" static="no">
+        <name>NG</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="14" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d9/d21/suN__types_8h_1a67a76e80830266d0c77e06b82a55fd0b" prot="public" static="no">
+        <name>NF</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="69" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d9/d21/suN__types_8h_1a778d7e276173ccb24c959ebc2b9bb6de" prot="public" static="no">
+        <type><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref></type>
+        <definition>typedef suNg suNgc</definition>
+        <argsstring></argsstring>
+        <name>suNgc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="41" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d21/suN__types_8h_1a038ce2f907031d49c4aff82bb3dded04" prot="public" static="no">
+        <type><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref></type>
+        <definition>typedef suNg_flt suNgc_flt</definition>
+        <argsstring></argsstring>
+        <name>suNgc_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="43" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d21/suN__types_8h_1a251ff1ac234f66b00c8eaeaa34f63846" prot="public" static="no">
+        <type><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref></type>
+        <definition>typedef suNg suNg_FMAT</definition>
+        <argsstring></argsstring>
+        <name>suNg_FMAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="45" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d21/suN__types_8h_1a00bce914d34a6a3e8a529d6c1ce37ec6" prot="public" static="no">
+        <type><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref></type>
+        <definition>typedef suNg_flt suNg_FMAT_flt</definition>
+        <argsstring></argsstring>
+        <name>suNg_FMAT_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="47" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d21/suN__types_8h_1a708d4e6f0076a1b6e5fafb55e5d08081" prot="public" static="no">
+        <type><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref></type>
+        <definition>typedef suNf suNfc</definition>
+        <argsstring></argsstring>
+        <name>suNfc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="96" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d21/suN__types_8h_1a6ea116e3305f6bb3d8a04626ca7a7b53" prot="public" static="no">
+        <type><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref></type>
+        <definition>typedef suNf_flt suNfc_flt</definition>
+        <argsstring></argsstring>
+        <name>suNfc_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="98" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d21/suN__types_8h_1a0eb439b8681c2f413a7ca2189081c354" prot="public" static="no">
+        <type><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref></type>
+        <definition>typedef suNf suNf_FMAT</definition>
+        <argsstring></argsstring>
+        <name>suNf_FMAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="100" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="d9/d21/suN__types_8h_1a402da90187605610074680c3d8229b6b" prot="public" static="no">
+        <type><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref></type>
+        <definition>typedef suNf_flt suNf_FMAT_flt</definition>
+        <argsstring></argsstring>
+        <name>suNf_FMAT_flt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="102" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>File<sp/>suN_types.h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*<sp/>Type<sp/>definitions<sp/>for<sp/>SU(N)<sp/>matrices<sp/>and<sp/>spinors</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SUN_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUN_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hr_complex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NG<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*<sp/>Definitions<sp/>of<sp/>Data<sp/>Structures</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d3/d0c/structsuNg__vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>c[2];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d1/d07/structsuNg__vector__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>c[2];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d8/d0f/structsuNg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="d1/d3e/structsuNg__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}<sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNgc</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref><sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNgc_flt</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg_FMAT</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref><sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_FMAT_flt</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d9/d78/structsuNg__spinor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><ref refid="d9/d78/structsuNg__spinor" kindref="compound">suNg_spinor</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="d8/d26/structsuNg__spinor__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/><ref refid="d8/d26/structsuNg__spinor__flt" kindref="compound">suNg_spinor_flt</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="d3/dcb/structsuNg__algebra__vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c[3];</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="d3/dcb/structsuNg__algebra__vector" kindref="compound">suNg_algebra_vector</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="de/d23/structsuNg__algebra__vector__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>c[3];</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="de/d23/structsuNg__algebra__vector__flt" kindref="compound">suNg_algebra_vector_flt</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NF<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="71"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="72"><highlight class="comment">*<sp/>Definitions<sp/>of<sp/>Data<sp/>Structures</highlight></codeline>
+<codeline lineno="73"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="74"><highlight class="comment">*******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="de/d49/structsuNf__vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>c[2];</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}<sp/><ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="d8/d5b/structsuNf__vector__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>c[2];</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<sp/><ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="d0/d04/structsuNf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="db/d3f/structsuNf__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref><sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNfc</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref><sp/><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNfc_flt</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref><sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf_FMAT</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref><sp/><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_FMAT_flt</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="d8/dd1/structsuNf__spinor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="de/def/structsuNf__spinor__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}<sp/><ref refid="de/def/structsuNf__spinor__flt" kindref="compound">suNf_spinor_flt</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h"/>
+  </compounddef>
+</doxygen>

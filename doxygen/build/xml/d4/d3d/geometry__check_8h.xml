@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d4/d3d/geometry__check_8h" kind="file" language="C++">
+    <compoundname>geometry_check.h</compoundname>
+    <includes refid="d4/d67/geometry_8h" local="yes">geometry.h</includes>
+    <includes refid="da/d41/error_8h" local="yes">error.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h_source"/>
+      </node>
+      <node id="4">
+        <label>error.h</label>
+        <link refid="da/d41/error_8h_source"/>
+      </node>
+      <node id="1">
+        <label>geometry_check.h</label>
+        <link refid="d4/d3d/geometry__check_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d4/d3d/geometry__check_8h_1a77b7fbc43ec0a6f936757875499f40db" prot="public" static="no">
+        <name>_CHECK_GEOMETRY_MATCHING</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <initializer>    error((s1)-&gt;type!=(s2)-&gt;type, 1, __FILE__ &quot;: &quot;, &quot;Geometries don&apos;t match!\n&quot;);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" line="7" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d3d/geometry__check_8h_1ab109b9cd5b8db1e3acc028595dbb955b" prot="public" static="no">
+        <name>_CHECK_GEOMETRY_EO</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <initializer>    do {\
+        int pass1 = (s1)-&gt;type-&gt;glattice &amp;&amp; (s2)-&gt;type-&gt;glattice;\
+        int pass2 = (s1)-&gt;type-&gt;glat_odd &amp;&amp; (s2)-&gt;type-&gt;glat_even;\
+        int pass3 = (s1)-&gt;type-&gt;glat_eve &amp;&amp; (s2)-&gt;type-&gt;glat_odd;\
+        error(!(pass1 || pass2 || pass3), 1, __FILE__ &quot;: &quot;, &quot;Incorrect combination of geometries!\n&quot;);\
+    } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" line="10" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GEOMETRY_CHECK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GEOMETRY_CHECK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;geometry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CHECK_GEOMETRY_MATCHING(s1,<sp/>s2)<sp/>\</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>error((s1)-&gt;type!=(s2)-&gt;type,<sp/>1,<sp/>__FILE__<sp/>&quot;:<sp/>&quot;</highlight><highlight class="normal">,<sp/>&quot;Geometries<sp/>don&apos;t<sp/>match!\n&quot;);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CHECK_GEOMETRY_EO(s1,<sp/>s2)<sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>pass1<sp/>=<sp/>(s1)-&gt;type-&gt;glattice<sp/>&amp;&amp;<sp/>(s2)-&gt;type-&gt;glattice;\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>pass2<sp/>=<sp/>(s1)-&gt;type-&gt;glat_odd<sp/>&amp;&amp;<sp/>(s2)-&gt;type-&gt;glat_even;\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>pass3<sp/>=<sp/>(s1)-&gt;type-&gt;glat_eve<sp/>&amp;&amp;<sp/>(s2)-&gt;type-&gt;glat_odd;\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error(!(pass1<sp/>||<sp/>pass2<sp/>||<sp/>pass3),<sp/>1,<sp/>__FILE__<sp/>&quot;:<sp/>&quot;</highlight><highlight class="normal">,<sp/>&quot;Incorrect<sp/>combination<sp/>of<sp/>geometries!\n&quot;);\</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d0c/structsuNg__vector" kind="struct" language="C++" prot="public">
+    <compoundname>suNg_vector</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d0c/structsuNg__vector_1ac1c27ba54fd9c7e2d0ac3aa299af1f95" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+        <definition>hr_complex suNg_vector::c[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="23" column="15" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="21" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="22" bodyend="24"/>
+    <listofallmembers>
+      <member refid="d3/d0c/structsuNg__vector_1ac1c27ba54fd9c7e2d0ac3aa299af1f95" prot="public" virt="non-virtual"><scope>suNg_vector</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

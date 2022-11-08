@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d99/meson__observables_8h" kind="file" language="C++">
+    <compoundname>meson_observables.h</compoundname>
+    <includedby refid="d0/d30/observables_8h" local="yes">observables.h</includedby>
+    <includedby refid="df/dc5/scattering_8h" local="yes">scattering.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>meson_observables.h</label>
+        <link refid="d2/d99/meson__observables_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>observables.h</label>
+        <link refid="d0/d30/observables_8h_source"/>
+      </node>
+      <node id="3">
+        <label>scattering.h</label>
+        <link refid="df/dc5/scattering_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d6/d0c/structmeson__observable__s" prot="public">meson_observable_s</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>gamma_ind</name>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a32f0a8f415152b5be364a2fbb53d28cf" prot="public">
+          <name>_g5</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a0f06906319dcdb1356e12d273a090d8e" prot="public">
+          <name>_id</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a9983b88807c3ddffd99bd04d7fdfb8c6" prot="public">
+          <name>_g0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3afa2a9058fe676becae5595c2980dcfde" prot="public">
+          <name>_g1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a2bc7c036e65fdd243d40592805602753" prot="public">
+          <name>_g2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a7a11fb54b06a0f84a40b92f5b915bae6" prot="public">
+          <name>_g3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a620223f9b1eb7f298002978d48e4eb37" prot="public">
+          <name>_g0g1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a45ce8f345b7323406e7e3823859aee41" prot="public">
+          <name>_g0g2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a543390c9d6ff20efebfaa9818a712e14" prot="public">
+          <name>_g0g3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a6f5d46e9446b8a7bb02b458fdafb689b" prot="public">
+          <name>_g0g5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a03e5023e50981151593669c5d8fdc179" prot="public">
+          <name>_g5g1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3ad6202dc4b52b276447b3b4d5d31a5723" prot="public">
+          <name>_g5g2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a5f59f656af9bc6e24b73d79640af7701" prot="public">
+          <name>_g5g3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a308829f14eb7c9d3413ffd4a7787c6a2" prot="public">
+          <name>_g0g5g1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a398c39393f026f5f7cb62985e1f65b1f" prot="public">
+          <name>_g0g5g2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a5bd6a4d0532bdcb87c6ffa2572c3a12f" prot="public">
+          <name>_g0g5g3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3ae0127ad1a9bac9c21823b200656df902" prot="public">
+          <name>NGAMMA_IND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3a8f324b51f92f5c33b29069f2fbdf9c43" prot="public">
+          <name>_DISC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" line="10" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d2/d99/meson__observables_8h_1a1f0b35d9744f8173228da15198a2b6e1" prot="public" static="no">
+        <type>struct <ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable_s</ref></type>
+        <definition>typedef struct meson_observable_s meson_observable</definition>
+        <argsstring></argsstring>
+        <name>meson_observable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" line="11" column="13" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d2/d99/meson__observables_8h_1ae368eb2db0f97044ab9688ccb6cb65a6" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* meson_channel_names[NGAMMA_IND]</definition>
+        <argsstring>[NGAMMA_IND]</argsstring>
+        <name>meson_channel_names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" line="11" column="13" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" declline="11" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d99/meson__observables_8h_1a6fa062689191349ad65c385eff571647" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable* meson_correlators</definition>
+        <argsstring></argsstring>
+        <name>meson_correlators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" line="27" column="25" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" declline="27" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d99/meson__observables_8h_1abbf44e36198287038fdcab7bd372083e" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable* discon_correlators</definition>
+        <argsstring></argsstring>
+        <name>discon_correlators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" line="28" column="25" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" declline="28" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d99/meson__observables_8h_1a39008b051c1b05c5641000d498a73915" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable* cvc_correlators</definition>
+        <argsstring></argsstring>
+        <name>cvc_correlators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" line="29" column="25" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" declline="29" declcolumn="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d99/meson__observables_8h_1aa185a1404b091f36bbcc9c7f35486b54" prot="public" static="no" mutable="no">
+        <type><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref> *</type>
+        <definition>meson_observable* triplet_discon_correlators</definition>
+        <argsstring></argsstring>
+        <name>triplet_discon_correlators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" line="33" column="25" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h" declline="33" declcolumn="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2013<sp/>Rudy<sp/>Arthur,<sp/>Ari<sp/>Hietanen<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MESON_OBSERVABLES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MESON_OBSERVABLES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<sp/>_g5=<sp/>0,_id,<sp/>_g0,<sp/>_g1,<sp/>_g2,<sp/>_g3,<sp/><sp/>_g0g1,<sp/>_g0g2,<sp/>_g0g3,<sp/>_g0g5,<sp/>_g5g1,<sp/>_g5g2,<sp/>_g5g3,<sp/>_g0g5g1,<sp/>_g0g5g2,<sp/>_g0g5g3,NGAMMA_IND,_DISC}<sp/>gamma_ind;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>meson_channel_names[NGAMMA_IND];</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="d6/d0c/structmeson__observable__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/>gamma_ind<sp/>ind1;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>gamma_ind<sp/>ind2;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>channel_name[100];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>channel_type[100];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sign;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>corr_size;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>corr_re;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>corr_im;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable_s</ref>*<sp/>next;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable_s</ref><sp/><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*meson_correlators;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*discon_correlators;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*cvc_correlators;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Disconnected<sp/>part<sp/>of<sp/>Triplet<sp/>correlators,</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>appears<sp/>with<sp/>four<sp/>fermion<sp/>interactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*triplet_discon_correlators;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/meson_observables.h"/>
+  </compounddef>
+</doxygen>

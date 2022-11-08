@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d96/struct__MINRES__par" kind="struct" language="C++" prot="public">
+    <compoundname>_MINRES_par</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d96/struct__MINRES__par_1af8dec655143a811298df99e0853d3e4d" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double _MINRES_par::err2</definition>
+        <argsstring></argsstring>
+        <name>err2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="56" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d96/struct__MINRES__par_1aa0698997a5233643e927e7084b1ff440" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _MINRES_par::max_iter</definition>
+        <argsstring></argsstring>
+        <name>max_iter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="57" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" line="55" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/inverters.h" bodystart="55" bodyend="58"/>
+    <listofallmembers>
+      <member refid="dc/d96/struct__MINRES__par_1af8dec655143a811298df99e0853d3e4d" prot="public" virt="non-virtual"><scope>_MINRES_par</scope><name>err2</name></member>
+      <member refid="dc/d96/struct__MINRES__par_1aa0698997a5233643e927e7084b1ff440" prot="public" virt="non-virtual"><scope>_MINRES_par</scope><name>max_iter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,556 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d5/d80/monomials_8h" kind="file" language="C++">
+    <compoundname>monomials.h</compoundname>
+    <includedby refid="d8/d72/update_8h" local="yes">update.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>monomials.h</label>
+        <link refid="d5/d80/monomials_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>io.h</label>
+        <link refid="dc/dac/io_8h_source"/>
+      </node>
+      <node id="2">
+        <label>update.h</label>
+        <link refid="d8/d72/update_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="d1/d1d/structmon__pg__par" prot="public">mon_pg_par</innerclass>
+    <innerclass refid="d9/df6/structmon__lw__par" prot="public">mon_lw_par</innerclass>
+    <innerclass refid="dd/db1/structmon__ff__par" prot="public">mon_ff_par</innerclass>
+    <innerclass refid="df/dd2/structmon__hmc__par" prot="public">mon_hmc_par</innerclass>
+    <innerclass refid="d7/d8d/structmon__rhmc__par" prot="public">mon_rhmc_par</innerclass>
+    <innerclass refid="d2/d03/structmon__tm__par" prot="public">mon_tm_par</innerclass>
+    <innerclass refid="d1/d61/structmon__hasenbusch__par" prot="public">mon_hasenbusch_par</innerclass>
+    <innerclass refid="d6/d84/structmon__hasenbusch__tm__par" prot="public">mon_hasenbusch_tm_par</innerclass>
+    <innerclass refid="da/d0f/structmon__scalar__par" prot="public">mon_scalar_par</innerclass>
+    <innerclass refid="d0/d2c/structmonomial__data" prot="public">monomial_data</innerclass>
+    <innerclass refid="dc/df2/struct__monomial" prot="public">_monomial</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43" prot="public" static="no" strong="no">
+        <type></type>
+        <name>mon_type</name>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43ae3aef8c1fbbed21f743712069f187018" prot="public">
+          <name>PureGauge</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43a4acb788cb6ebe8beef680727be950a91" prot="public">
+          <name>LuscherWeisz</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43a2d8cfdd0ca5620efcdcae6408da8381b" prot="public">
+          <name>FourFermion</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43a46c86d9dbb89323e1e72d9b946599f8a" prot="public">
+          <name>HMC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43a4a593dc472544af34269753bd826a3a8" prot="public">
+          <name>RHMC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43ac0f142a65b7d596e898b5ede310ac154" prot="public">
+          <name>TM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43abdec4935429edc72c6e40518dedde210" prot="public">
+          <name>TM_alt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43ad94d760ece017ffc4cb647aa41acd563" prot="public">
+          <name>Hasenbusch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43a724a60ec196d623543a4edea03f3a809" prot="public">
+          <name>Hasenbusch_tm</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43af92a779385ffaa526c4dad67969250d7" prot="public">
+          <name>Hasenbusch_tm_alt</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43a586e1d7dfdcebbc55147e2cb4e49b107" prot="public">
+          <name>HMC_ff</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43a7ba0e8986241a3ff9649597c03622719" prot="public">
+          <name>Hasenbusch_ff</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d5/d80/monomials_8h_1a1610d71d6cf657a0a19a7514d36f9f43ad589986008e8fea1b1726f564d17dd13" prot="public">
+          <name>Scalar</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="15" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="15" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="d5/d80/monomials_8h_1a217aee8beb0f71c1c7a5b6e37c0523c5" prot="public" static="no">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref></type>
+        <definition>typedef struct _monomial monomial</definition>
+        <argsstring></argsstring>
+        <name>monomial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="119" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d5/d80/monomials_8h_1afcd7d9a9f2deee171d55615704283d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* pg_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>pg_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="121" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="121" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1ac29486a5e3b351615b144c29e48c9dd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* lw_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>lw_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="122" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="122" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1adcb415856ee8a58cc137a4b8626bf18f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* hmc_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>hmc_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="123" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="123" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1af1c2f54fc946a164632779365aaf2a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* rhmc_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>rhmc_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="124" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="124" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a96380393d10ea71ec188a1088d4a83f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* tm_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>tm_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="125" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="125" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1af732fedce658202a709c18f941f2c26d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* tm_alt_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>tm_alt_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="126" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="126" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a4bb7144f9a6210b6f9d58c63954d7236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* hasen_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>hasen_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="127" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="127" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1ab23a0e470000d0b69f04b941d07c70d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* hasen_tm_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>hasen_tm_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="128" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="128" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a4f2e74d0a87824b8831179ee357cdd9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* hasen_tm_alt_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>hasen_tm_alt_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="129" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="129" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a8ccc9f73555ff1c9a729d00457bfde2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* ff_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>ff_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="130" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="130" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a7e68e693e378d7ceec73075653418ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* hmc_ff_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>hmc_ff_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="131" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="131" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a54b43e421633b23c35f70659e6b54d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* hasen_ff_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>hasen_ff_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="132" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="132" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a29e2584cb9a562a65058c8ebffc5ae6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct <ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref> *</type>
+        <definition>struct _monomial* scalar_create</definition>
+        <argsstring>(const monomial_data *)</argsstring>
+        <name>scalar_create</name>
+        <param>
+          <type>const <ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="133" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="133" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1aca9918cb03dc5eb2c22d29d7ed63b646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="dc/df2/struct__monomial" kindref="compound">monomial</ref> *</type>
+        <definition>const monomial* add_mon</definition>
+        <argsstring>(monomial_data *)</argsstring>
+        <name>add_mon</name>
+        <param>
+          <type><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="135" column="16" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="135" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a0c8f78be84a556cb4b1aab96e3a9c1c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="dc/df2/struct__monomial" kindref="compound">monomial</ref> *</type>
+        <definition>const monomial* mon_n</definition>
+        <argsstring>(int)</argsstring>
+        <name>mon_n</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="136" column="16" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="136" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d80/monomials_8h_1a2839a44d2949c4869b1b68c3b9ccfb1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int num_mon</definition>
+        <argsstring>()</argsstring>
+        <name>num_mon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="137" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" declline="137" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************\</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">*<sp/>Copyright<sp/>(c)<sp/>2017,<sp/>Martin<sp/>Hansen,<sp/>Claudio<sp/>Pica<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MONOMIALS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MONOMIALS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>header<sp/>file<sp/>is<sp/>included<sp/>in<sp/>update.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>It<sp/>should<sp/>not<sp/>be<sp/>included<sp/>directly!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>List<sp/>of<sp/>monomials</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>PureGauge,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>LuscherWeisz,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>FourFermion,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>HMC,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>RHMC,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>TM,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>TM_alt,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>Hasenbusch,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>Hasenbusch_tm,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>Hasenbusch_tm_alt,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>HMC_ff,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>Hasenbusch_ff,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Scalar</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/>mon_type;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="d1/d1d/structmon__pg__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>beta;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d5c/structforce__gauge__par" kindref="compound">force_gauge_par</ref><sp/>force_par;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d5c/structfield__gauge__par" kindref="compound">field_gauge_par</ref><sp/>field_par;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/><ref refid="d1/d1d/structmon__pg__par" kindref="compound">mon_pg_par</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d9/df6/structmon__lw__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>beta;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c1;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="db/d5c/structforce__gauge__par" kindref="compound">force_gauge_par</ref><sp/>force_par;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d4/d5c/structfield__gauge__par" kindref="compound">field_gauge_par</ref><sp/>field_par;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/><ref refid="d9/df6/structmon__lw__par" kindref="compound">mon_lw_par</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="dd/db1/structmon__ff__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gamma;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*start_config;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>start_value;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d99/structforce__auxfield__par" kindref="compound">force_auxfield_par</ref><sp/>fpar;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/><ref refid="dd/db1/structmon__ff__par" kindref="compound">mon_ff_par</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="df/dd2/structmon__hmc__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mre_past;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6a/structforce__hmc__par" kindref="compound">force_hmc_par</ref><sp/>fpar;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/><ref refid="df/dd2/structmon__hmc__par" kindref="compound">mon_hmc_par</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="d7/d8d/structmon__rhmc__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d9f/struct__rational__app" kindref="compound">rational_app</ref><sp/>ratio;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d17/structforce__rhmc__par" kindref="compound">force_rhmc_par</ref><sp/>fpar;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/><ref refid="d7/d8d/structmon__rhmc__par" kindref="compound">mon_rhmc_par</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="d2/d03/structmon__tm__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mre_past;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6a/structforce__hmc__par" kindref="compound">force_hmc_par</ref><sp/>fpar;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/><ref refid="d2/d03/structmon__tm__par" kindref="compound">mon_tm_par</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="d1/d61/structmon__hasenbusch__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dm;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mre_past;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6a/structforce__hmc__par" kindref="compound">force_hmc_par</ref><sp/>fpar;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}<sp/><ref refid="d1/d61/structmon__hasenbusch__par" kindref="compound">mon_hasenbusch_par</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="d6/d84/structmon__hasenbusch__tm__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dmu;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mre_past;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6a/structforce__hmc__par" kindref="compound">force_hmc_par</ref><sp/>fpar;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}<sp/><ref refid="d6/d84/structmon__hasenbusch__tm__par" kindref="compound">mon_hasenbusch_tm_par</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="da/d0f/structmon__scalar__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lambda;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/df8/structforce__scalar__par" kindref="compound">force_scalar_par</ref><sp/>force_par;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/da7/structfield__scalar__par" kindref="compound">field_scalar_par</ref><sp/>field_par;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}<sp/><ref refid="da/d0f/structmon__scalar__par" kindref="compound">mon_scalar_par</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="d0/d2c/structmonomial__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>mon_type<sp/>type;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*par;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>MT_prec;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>MD_prec;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>force_prec;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="dc/df2/struct__monomial" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref><sp/>data;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*force_par;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*field_par;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*update_force)(double,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*update_field)(double,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*free)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*gaussian_pf)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*correct_pf)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*correct_la_pf)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*(*pseudofermion)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*add_local_action)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*,<sp/><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}<sp/><ref refid="dc/df2/struct__monomial" kindref="compound">monomial</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>pg_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>lw_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>hmc_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>rhmc_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>tm_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>tm_alt_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>hasen_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>hasen_tm_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>hasen_tm_alt_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>ff_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>hmc_ff_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>hasen_ff_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/df2/struct__monomial" kindref="compound">_monomial</ref>*<sp/>scalar_create(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/df2/struct__monomial" kindref="compound">monomial</ref><sp/>*add_mon(<ref refid="d0/d2c/structmonomial__data" kindref="compound">monomial_data</ref>*);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="dc/df2/struct__monomial" kindref="compound">monomial</ref><sp/>*mon_n(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_mon();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/df6/structmon__lw__par" kind="struct" language="C++" prot="public">
+    <compoundname>mon_lw_par</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/df6/structmon__lw__par_1a88b5081b0e5a5fc5fc786c13926a1a12" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mon_lw_par::beta</definition>
+        <argsstring></argsstring>
+        <name>beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="38" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df6/structmon__lw__par_1a64383b0ba126d8b74f9fcf0b5b831ae4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mon_lw_par::c0</definition>
+        <argsstring></argsstring>
+        <name>c0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="39" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df6/structmon__lw__par_1a1f1183f33419378dac55ce0db383c68c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mon_lw_par::c1</definition>
+        <argsstring></argsstring>
+        <name>c1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="40" column="8" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df6/structmon__lw__par_1ad9796b050cff082bec0541294a1fab5a" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d5c/structforce__gauge__par" kindref="compound">force_gauge_par</ref></type>
+        <definition>force_gauge_par mon_lw_par::force_par</definition>
+        <argsstring></argsstring>
+        <name>force_par</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="41" column="17" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df6/structmon__lw__par_1a2a1abca942b173630a820b360592037f" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/d5c/structfield__gauge__par" kindref="compound">field_gauge_par</ref></type>
+        <definition>field_gauge_par mon_lw_par::field_par</definition>
+        <argsstring></argsstring>
+        <name>field_par</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="42" column="17" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>suNg_algebra_vector</label>
+        <link refid="d3/dcb/structsuNg__algebra__vector"/>
+      </node>
+      <node id="2">
+        <label>force_gauge_par</label>
+        <link refid="db/d5c/structforce__gauge__par"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>momenta</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_suNg_field</label>
+        <link refid="d9/d96/struct__suNg__field"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>field_gauge_par</label>
+        <link refid="d4/d5c/structfield__gauge__par"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>momenta</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>field</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+      <node id="3">
+        <label>_suNg_av_field</label>
+        <link refid="d4/d75/struct__suNg__av__field"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mon_lw_par</label>
+        <link refid="d9/df6/structmon__lw__par"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>force_par</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>field_par</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>suNg</label>
+        <link refid="d8/d0f/structsuNg"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="37" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="37" bodyend="43"/>
+    <listofallmembers>
+      <member refid="d9/df6/structmon__lw__par_1a88b5081b0e5a5fc5fc786c13926a1a12" prot="public" virt="non-virtual"><scope>mon_lw_par</scope><name>beta</name></member>
+      <member refid="d9/df6/structmon__lw__par_1a64383b0ba126d8b74f9fcf0b5b831ae4" prot="public" virt="non-virtual"><scope>mon_lw_par</scope><name>c0</name></member>
+      <member refid="d9/df6/structmon__lw__par_1a1f1183f33419378dac55ce0db383c68c" prot="public" virt="non-virtual"><scope>mon_lw_par</scope><name>c1</name></member>
+      <member refid="d9/df6/structmon__lw__par_1a2a1abca942b173630a820b360592037f" prot="public" virt="non-virtual"><scope>mon_lw_par</scope><name>field_par</name></member>
+      <member refid="d9/df6/structmon__lw__par_1ad9796b050cff082bec0541294a1fab5a" prot="public" virt="non-virtual"><scope>mon_lw_par</scope><name>force_par</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

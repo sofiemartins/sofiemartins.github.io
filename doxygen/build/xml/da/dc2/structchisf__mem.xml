@@ -1,0 +1,435 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/dc2/structchisf__mem" kind="struct" language="C++" prot="public">
+    <compoundname>chisf_mem</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1adda9f08d4a251fd415e95531d85b8ced" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex*** chisf_mem::g1_ij</definition>
+        <argsstring></argsstring>
+        <name>g1_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a1e137fe71e0e3cb3826c35fde56ea1d8" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::g2_ij</definition>
+        <argsstring></argsstring>
+        <name>g2_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="24" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a4c2db628966fcb3c7de8482a52856a2e" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::g3_ij</definition>
+        <argsstring></argsstring>
+        <name>g3_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="30" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a2024e49eda4c6952487b93e2938f2339" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::g4_ij</definition>
+        <argsstring></argsstring>
+        <name>g4_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="36" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a06df24a4db3ed6499fb350f3768c32f7" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::g1</definition>
+        <argsstring></argsstring>
+        <name>g1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="42" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a1633691859b5a4ad7b896b5230e4346a" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::g2</definition>
+        <argsstring></argsstring>
+        <name>g2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="45" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1ae7e6843f629cfc76795786ba9827430d" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::g3</definition>
+        <argsstring></argsstring>
+        <name>g3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="48" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a39665a7b1f4e701aaa505c94d75ca170" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::g4</definition>
+        <argsstring></argsstring>
+        <name>g4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="51" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1addebbabd64bd4980ec0790db989f8955" prot="public" static="no" mutable="no">
+        <type>double complex **</type>
+        <definition>double complex ** chisf_mem::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="239" column="54" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a22b090837f1ba3c74e79a76d2ec915aa" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex* chisf_mem::l11</definition>
+        <argsstring></argsstring>
+        <name>l11</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="241" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1ace5fb6816d296d8f1a853c2e13242811" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::l12</definition>
+        <argsstring></argsstring>
+        <name>l12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="241" column="22" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1afbc7167c5f0fb15a87b01911c534a1d5" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::l13</definition>
+        <argsstring></argsstring>
+        <name>l13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="241" column="26" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a0dd523d11b42d29adab1dd73e82ca8e9" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex* chisf_mem::l21</definition>
+        <argsstring></argsstring>
+        <name>l21</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="242" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1ad82633586bf679f0086d53da989a5c07" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::l22</definition>
+        <argsstring></argsstring>
+        <name>l22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="242" column="22" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1abe4d62e85f10d4eb210ab4ddd2b21cad" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::l23</definition>
+        <argsstring></argsstring>
+        <name>l23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="242" column="26" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1aca3cffbbd073791fc8154d99fa978f7a" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex* chisf_mem::l31</definition>
+        <argsstring></argsstring>
+        <name>l31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="243" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1abba5b13ce29f2e377fef29f65bf8152a" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::l32</definition>
+        <argsstring></argsstring>
+        <name>l32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="243" column="22" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1aaa4b447ea4b4694b5743520acf699155" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::l33</definition>
+        <argsstring></argsstring>
+        <name>l33</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="243" column="26" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1aebe3a75b83835e6fd9c29819e6f5f5c2" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex* chisf_mem::l41</definition>
+        <argsstring></argsstring>
+        <name>l41</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="244" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a8aaffeeccaa6ddab973865d6b9d6825e" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::l42</definition>
+        <argsstring></argsstring>
+        <name>l42</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="244" column="22" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a9c50a3495ff6e393d31e129561ad5db0" prot="public" static="no" mutable="no">
+        <type>double complex *</type>
+        <definition>double complex * chisf_mem::l43</definition>
+        <argsstring></argsstring>
+        <name>l43</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="244" column="26" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1abcf05ab105d8a3e7c6acfe307f3717a9" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex*** chisf_mem::l11_ij</definition>
+        <argsstring></argsstring>
+        <name>l11_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="246" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1ae37231a39cb63f42ae25c5c2c8139041" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::l12_ij</definition>
+        <argsstring></argsstring>
+        <name>l12_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="246" column="25" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1ad15c97e7cfea3d5522e548b6184b5e1d" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::l13_ij</definition>
+        <argsstring></argsstring>
+        <name>l13_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="246" column="32" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a916ea55c86921651955fc59411f5002a" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex*** chisf_mem::l21_ij</definition>
+        <argsstring></argsstring>
+        <name>l21_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="247" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a1183a0588d152a45cac35f46a4d35ef0" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::l22_ij</definition>
+        <argsstring></argsstring>
+        <name>l22_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="247" column="25" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a3eda01810b6923b0638437c06d2bbbc3" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::l23_ij</definition>
+        <argsstring></argsstring>
+        <name>l23_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="247" column="32" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1aad6386ed20dd57625af05495e5c458d5" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex*** chisf_mem::l31_ij</definition>
+        <argsstring></argsstring>
+        <name>l31_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="248" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1ac4b4ad1270e93c892b0a7c140d1fdf72" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::l32_ij</definition>
+        <argsstring></argsstring>
+        <name>l32_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="248" column="25" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/dc2/structchisf__mem_1a4070726f6dd918ba60834740bd41f36f" prot="public" static="no" mutable="no">
+        <type>double complex ***</type>
+        <definition>double complex *** chisf_mem::l33_ij</definition>
+        <argsstring></argsstring>
+        <name>l33_ij</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="248" column="32" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" line="237" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/observables.h" bodystart="238" bodyend="249"/>
+    <listofallmembers>
+      <member refid="da/dc2/structchisf__mem_1a06df24a4db3ed6499fb350f3768c32f7" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>g1</name></member>
+      <member refid="da/dc2/structchisf__mem_1adda9f08d4a251fd415e95531d85b8ced" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>g1_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1a1633691859b5a4ad7b896b5230e4346a" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>g2</name></member>
+      <member refid="da/dc2/structchisf__mem_1a1e137fe71e0e3cb3826c35fde56ea1d8" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>g2_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1ae7e6843f629cfc76795786ba9827430d" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>g3</name></member>
+      <member refid="da/dc2/structchisf__mem_1a4c2db628966fcb3c7de8482a52856a2e" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>g3_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1a39665a7b1f4e701aaa505c94d75ca170" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>g4</name></member>
+      <member refid="da/dc2/structchisf__mem_1a2024e49eda4c6952487b93e2938f2339" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>g4_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1a22b090837f1ba3c74e79a76d2ec915aa" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l11</name></member>
+      <member refid="da/dc2/structchisf__mem_1abcf05ab105d8a3e7c6acfe307f3717a9" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l11_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1ace5fb6816d296d8f1a853c2e13242811" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l12</name></member>
+      <member refid="da/dc2/structchisf__mem_1ae37231a39cb63f42ae25c5c2c8139041" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l12_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1afbc7167c5f0fb15a87b01911c534a1d5" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l13</name></member>
+      <member refid="da/dc2/structchisf__mem_1ad15c97e7cfea3d5522e548b6184b5e1d" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l13_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1a0dd523d11b42d29adab1dd73e82ca8e9" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l21</name></member>
+      <member refid="da/dc2/structchisf__mem_1a916ea55c86921651955fc59411f5002a" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l21_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1ad82633586bf679f0086d53da989a5c07" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l22</name></member>
+      <member refid="da/dc2/structchisf__mem_1a1183a0588d152a45cac35f46a4d35ef0" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l22_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1abe4d62e85f10d4eb210ab4ddd2b21cad" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l23</name></member>
+      <member refid="da/dc2/structchisf__mem_1a3eda01810b6923b0638437c06d2bbbc3" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l23_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1aca3cffbbd073791fc8154d99fa978f7a" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l31</name></member>
+      <member refid="da/dc2/structchisf__mem_1aad6386ed20dd57625af05495e5c458d5" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l31_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1abba5b13ce29f2e377fef29f65bf8152a" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l32</name></member>
+      <member refid="da/dc2/structchisf__mem_1ac4b4ad1270e93c892b0a7c140d1fdf72" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l32_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1aaa4b447ea4b4694b5743520acf699155" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l33</name></member>
+      <member refid="da/dc2/structchisf__mem_1a4070726f6dd918ba60834740bd41f36f" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l33_ij</name></member>
+      <member refid="da/dc2/structchisf__mem_1aebe3a75b83835e6fd9c29819e6f5f5c2" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l41</name></member>
+      <member refid="da/dc2/structchisf__mem_1a8aaffeeccaa6ddab973865d6b9d6825e" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l42</name></member>
+      <member refid="da/dc2/structchisf__mem_1a9c50a3495ff6e393d31e129561ad5db0" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>l43</name></member>
+      <member refid="da/dc2/structchisf__mem_1addebbabd64bd4980ec0790db989f8955" prot="public" virt="non-virtual"><scope>chisf_mem</scope><name>M</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

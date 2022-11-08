@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="db/d4a/struct__integrator__par" kind="struct" language="C++" prot="public">
+    <compoundname>_integrator_par</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="db/d4a/struct__integrator__par_1aca3c351f79e1bf2f542998379bbc5843" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _integrator_par::nsteps</definition>
+        <argsstring></argsstring>
+        <name>nsteps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="136" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d4a/struct__integrator__par_1ad87a28e6c765ba8cb2a0fb805168fa1d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _integrator_par::nmon</definition>
+        <argsstring></argsstring>
+        <name>nmon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="137" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d4a/struct__integrator__par_1a4aad05ee97cba78fc57e56ad5b3a3792" prot="public" static="no" mutable="no">
+        <type>const <ref refid="dc/df2/struct__monomial" kindref="compound">monomial</ref> **</type>
+        <definition>const monomial** _integrator_par::mon_list</definition>
+        <argsstring></argsstring>
+        <name>mon_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="138" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d4a/struct__integrator__par_1a76331187fdd4064c97d95b6e88545e80" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _integrator_par::integrator) (double, struct _integrator_par *)</definition>
+        <argsstring>)(double, struct _integrator_par *)</argsstring>
+        <name>integrator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="139" column="3" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d4a/struct__integrator__par_1a7e3e0773502a80943b68ae2ed18556bc" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="db/d4a/struct__integrator__par" kindref="compound">_integrator_par</ref> *</type>
+        <definition>struct _integrator_par* _integrator_par::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="140" column="24" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d4a/struct__integrator__par_1a4d47891b3b14c13d72a154d5f69aca90" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _integrator_par::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="141" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>monomial_data</label>
+        <link refid="d0/d2c/structmonomial__data"/>
+      </node>
+      <node id="4">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+      <node id="3">
+        <label>_spinor_field</label>
+        <link refid="d3/d33/struct__spinor__field"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>suNf_vector</label>
+        <link refid="de/d49/structsuNf__vector"/>
+      </node>
+      <node id="2">
+        <label>_monomial</label>
+        <link refid="dc/df2/struct__monomial"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pseudofermion</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_integrator_par</label>
+        <link refid="db/d4a/struct__integrator__par"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mon_list</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="134" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="135" bodyend="142"/>
+    <listofallmembers>
+      <member refid="db/d4a/struct__integrator__par_1a76331187fdd4064c97d95b6e88545e80" prot="public" virt="non-virtual"><scope>_integrator_par</scope><name>integrator</name></member>
+      <member refid="db/d4a/struct__integrator__par_1a4d47891b3b14c13d72a154d5f69aca90" prot="public" virt="non-virtual"><scope>_integrator_par</scope><name>level</name></member>
+      <member refid="db/d4a/struct__integrator__par_1a4aad05ee97cba78fc57e56ad5b3a3792" prot="public" virt="non-virtual"><scope>_integrator_par</scope><name>mon_list</name></member>
+      <member refid="db/d4a/struct__integrator__par_1a7e3e0773502a80943b68ae2ed18556bc" prot="public" virt="non-virtual"><scope>_integrator_par</scope><name>next</name></member>
+      <member refid="db/d4a/struct__integrator__par_1ad87a28e6c765ba8cb2a0fb805168fa1d" prot="public" virt="non-virtual"><scope>_integrator_par</scope><name>nmon</name></member>
+      <member refid="db/d4a/struct__integrator__par_1aca3c351f79e1bf2f542998379bbc5843" prot="public" virt="non-virtual"><scope>_integrator_par</scope><name>nsteps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

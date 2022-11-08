@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d78/structsuNg__spinor" kind="struct" language="C++" prot="public">
+    <compoundname>suNg_spinor</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d78/structsuNg__spinor_1a2b21e9408aa0bea9b6a1040775c46e24" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref></type>
+        <definition>suNg_vector suNg_spinor::c[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="51" column="16" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>suNg_spinor</label>
+        <link refid="d9/d78/structsuNg__spinor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>suNg_vector</label>
+        <link refid="d3/d0c/structsuNg__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="49" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="50" bodyend="52"/>
+    <listofallmembers>
+      <member refid="d9/d78/structsuNg__spinor_1a2b21e9408aa0bea9b6a1040775c46e24" prot="public" virt="non-virtual"><scope>suNg_spinor</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dc/d37/struct__input__logger" kind="struct" language="C++" prot="public">
+    <compoundname>_input_logger</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="dc/d37/struct__input__logger_1a6028b39d632ebb6d40b1f3307ef6dc7a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _input_logger::def_log_lvl</definition>
+        <argsstring></argsstring>
+        <name>def_log_lvl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="85" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d37/struct__input__logger_1adfca0c821db4f40b8eda2198456585f2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _input_logger::inverter_log_lvl</definition>
+        <argsstring></argsstring>
+        <name>inverter_log_lvl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="86" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d37/struct__input__logger_1acd406cbb272499d0637e1c67ddce3e0c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _input_logger::forcestat_log_lvl</definition>
+        <argsstring></argsstring>
+        <name>forcestat_log_lvl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="87" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/d37/struct__input__logger_1a008fd28e563cd7de7b918d815c466082" prot="public" static="no" mutable="no">
+        <type><ref refid="d4/dab/struct__input__record__t" kindref="compound">input_record_t</ref></type>
+        <definition>input_record_t _input_logger::read[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="89" column="18" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_input_record_t</label>
+        <link refid="d4/dab/struct__input__record__t"/>
+      </node>
+      <node id="1">
+        <label>_input_logger</label>
+        <link refid="dc/d37/struct__input__logger"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>read</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" line="80" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/input_par.h" bodystart="80" bodyend="91"/>
+    <listofallmembers>
+      <member refid="dc/d37/struct__input__logger_1a6028b39d632ebb6d40b1f3307ef6dc7a" prot="public" virt="non-virtual"><scope>_input_logger</scope><name>def_log_lvl</name></member>
+      <member refid="dc/d37/struct__input__logger_1acd406cbb272499d0637e1c67ddce3e0c" prot="public" virt="non-virtual"><scope>_input_logger</scope><name>forcestat_log_lvl</name></member>
+      <member refid="dc/d37/struct__input__logger_1adfca0c821db4f40b8eda2198456585f2" prot="public" virt="non-virtual"><scope>_input_logger</scope><name>inverter_log_lvl</name></member>
+      <member refid="dc/d37/struct__input__logger_1a008fd28e563cd7de7b918d815c466082" prot="public" virt="non-virtual"><scope>_input_logger</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

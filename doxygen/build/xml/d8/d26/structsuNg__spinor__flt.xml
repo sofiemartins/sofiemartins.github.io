@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d8/d26/structsuNg__spinor__flt" kind="struct" language="C++" prot="public">
+    <compoundname>suNg_spinor_flt</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d8/d26/structsuNg__spinor__flt_1abd0837d91b9da340ded6e8cd7ff4ea1f" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref></type>
+        <definition>suNg_vector_flt suNg_spinor_flt::c[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="56" column="20" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>suNg_vector_flt</label>
+        <link refid="d1/d07/structsuNg__vector__flt"/>
+      </node>
+      <node id="1">
+        <label>suNg_spinor_flt</label>
+        <link refid="d8/d26/structsuNg__spinor__flt"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" line="54" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/suN_types.h" bodystart="55" bodyend="57"/>
+    <listofallmembers>
+      <member refid="d8/d26/structsuNg__spinor__flt_1abd0837d91b9da340ded6e8cd7ff4ea1f" prot="public" virt="non-virtual"><scope>suNg_spinor_flt</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

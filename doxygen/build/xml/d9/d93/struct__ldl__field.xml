@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d93/struct__ldl__field" kind="struct" language="C++" prot="public">
+    <compoundname>_ldl_field</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d9/d93/struct__ldl__field_1a1dfe8a101654be2a838bbf880c502ea9" prot="public" static="no" mutable="no">
+        <type><ref refid="d7/d66/structldl__t" kindref="compound">ldl_t</ref> *</type>
+        <definition>ldl_t* _ldl_field::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="54" column="32" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d93/struct__ldl__field_1a91ebc8c76b122f39aa59a591fd3831d5" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        <definition>geometry_descriptor* _ldl_field::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="54" column="57" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+      <node id="2">
+        <label>ldl_t</label>
+        <link refid="d7/d66/structldl__t"/>
+      </node>
+      <node id="1">
+        <label>_ldl_field</label>
+        <link refid="d9/d93/struct__ldl__field"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="54" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="54" bodyend="54"/>
+    <listofallmembers>
+      <member refid="d9/d93/struct__ldl__field_1a1dfe8a101654be2a838bbf880c502ea9" prot="public" virt="non-virtual"><scope>_ldl_field</scope><name>ptr</name></member>
+      <member refid="d9/d93/struct__ldl__field_1a91ebc8c76b122f39aa59a591fd3831d5" prot="public" virt="non-virtual"><scope>_ldl_field</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/d94/structsrc__common" kind="struct" language="C++" prot="public">
+    <compoundname>src_common</compoundname>
+    <includes refid="df/dc5/scattering_8h" local="no">scattering.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/d94/structsrc__common_1afdb39c102289b02ba97871ee860ce4eb" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_common::src_0</definition>
+        <argsstring></argsstring>
+        <name>src_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Zero momentum, noise 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="26" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d94/structsrc__common_1a897379bd96c9daf84d37a9b3777d4ac4" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_common::src_0_eta</definition>
+        <argsstring></argsstring>
+        <name>src_0_eta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Zero momentum, noise 2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="27" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d94/structsrc__common_1aa095e6159082ceb7e8f573848d77122c" prot="public" static="no" mutable="no">
+        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <definition>spinor_field* src_common::src_0_0</definition>
+        <argsstring></argsstring>
+        <name>src_0_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sequential source from timeslice tau with zero-momentum insertion </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="28" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Propagator sources with zero-momentum. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_geometry_descriptor</label>
+        <link refid="db/d43/struct__geometry__descriptor"/>
+      </node>
+      <node id="2">
+        <label>_spinor_field</label>
+        <link refid="d3/d33/struct__spinor__field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src_common</label>
+        <link refid="d0/d94/structsrc__common"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>src_0</edgelabel>
+          <edgelabel>src_0_0</edgelabel>
+          <edgelabel>src_0_eta</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>suNf_vector</label>
+        <link refid="de/d49/structsuNf__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="25" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="25" bodyend="29"/>
+    <listofallmembers>
+      <member refid="d0/d94/structsrc__common_1afdb39c102289b02ba97871ee860ce4eb" prot="public" virt="non-virtual"><scope>src_common</scope><name>src_0</name></member>
+      <member refid="d0/d94/structsrc__common_1aa095e6159082ceb7e8f573848d77122c" prot="public" virt="non-virtual"><scope>src_common</scope><name>src_0_0</name></member>
+      <member refid="d0/d94/structsrc__common_1a897379bd96c9daf84d37a9b3777d4ac4" prot="public" virt="non-virtual"><scope>src_common</scope><name>src_0_eta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

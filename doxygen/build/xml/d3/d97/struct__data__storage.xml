@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d97/struct__data__storage" kind="struct" language="C++" prot="public">
+    <compoundname>_data_storage</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d97/struct__data__storage_1aa00a84824a381a5262c527430bfd458f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _data_storage::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="12" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d97/struct__data__storage_1a44bde189e459b5544fc88f7e18730237" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* _data_storage::ni</definition>
+        <argsstring></argsstring>
+        <name>ni</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="13" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d97/struct__data__storage_1a8bd69f71c9754e3724cbc6512630771b" prot="public" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* _data_storage::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="14" column="12" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" line="10" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/data_storage.h" bodystart="11" bodyend="15"/>
+    <listofallmembers>
+      <member refid="d3/d97/struct__data__storage_1a8bd69f71c9754e3724cbc6512630771b" prot="public" virt="non-virtual"><scope>_data_storage</scope><name>data</name></member>
+      <member refid="d3/d97/struct__data__storage_1aa00a84824a381a5262c527430bfd458f" prot="public" virt="non-virtual"><scope>_data_storage</scope><name>n</name></member>
+      <member refid="d3/d97/struct__data__storage_1a44bde189e459b5544fc88f7e18730237" prot="public" virt="non-virtual"><scope>_data_storage</scope><name>ni</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

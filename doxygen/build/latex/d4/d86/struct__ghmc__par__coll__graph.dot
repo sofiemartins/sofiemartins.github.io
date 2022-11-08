@@ -1,0 +1,22 @@
+digraph "_ghmc_par"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="_ghmc_par",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" integrator" ];
+  Node2 [label="_integrator_par",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d4a/struct__integrator__par.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mon_list" ];
+  Node3 [label="_monomial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/df2/struct__monomial.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pseudofermion" ];
+  Node4 [label="_spinor_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d33/struct__spinor__field.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" type" ];
+  Node5 [label="_geometry_descriptor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d43/struct__geometry__descriptor.html",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ptr" ];
+  Node6 [label="suNf_spinor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/dd1/structsuNf__spinor.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" c" ];
+  Node7 [label="suNf_vector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d49/structsuNf__vector.html",tooltip=" "];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" data" ];
+  Node8 [label="monomial_data",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d2c/structmonomial__data.html",tooltip=" "];
+  Node2 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" next" ];
+}

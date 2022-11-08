@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_856524284ebe840938865dc061f982fb" kind="dir">
+    <compoundname>Include</compoundname>
+    <innerfile refid="d5/d64/_8autoheaders_8h">.autoheaders.h</innerfile>
+    <innerfile refid="d9/d51/basis__linear__algebra_8h">basis_linear_algebra.h</innerfile>
+    <innerfile refid="d8/d4c/check__options_8h">check_options.h</innerfile>
+    <innerfile refid="d3/dde/clover__exp_8h">clover_exp.h</innerfile>
+    <innerfile refid="da/d6a/clover__tools_8h">clover_tools.h</innerfile>
+    <innerfile refid="d2/d6f/communications_8h">communications.h</innerfile>
+    <innerfile refid="d2/dfb/cpu__complex_8h">cpu_complex.h</innerfile>
+    <innerfile refid="d5/d2b/data__storage_8h">data_storage.h</innerfile>
+    <innerfile refid="d0/d40/dirac_8h">dirac.h</innerfile>
+    <innerfile refid="dc/d1e/disconnected_8h">disconnected.h</innerfile>
+    <innerfile refid="da/d41/error_8h">error.h</innerfile>
+    <innerfile refid="da/dac/field__ordering_8h">field_ordering.h</innerfile>
+    <innerfile refid="d8/d00/gamma__spinor_8h">gamma_spinor.h</innerfile>
+    <innerfile refid="d8/d7d/gaugefix_8h">gaugefix.h</innerfile>
+    <innerfile refid="d4/d67/geometry_8h">geometry.h</innerfile>
+    <innerfile refid="d4/d3d/geometry__check_8h">geometry_check.h</innerfile>
+    <innerfile refid="d2/d49/global_8h">global.h</innerfile>
+    <innerfile refid="db/d97/glueballs_8h">glueballs.h</innerfile>
+    <innerfile refid="d3/d93/gpu_8h">gpu.h</innerfile>
+    <innerfile refid="dc/d63/gpu__complex_8h">gpu_complex.h</innerfile>
+    <innerfile refid="d9/de8/gpu__geometry_8h">gpu_geometry.h</innerfile>
+    <innerfile refid="d1/d74/hr__complex_8h">hr_complex.h</innerfile>
+    <innerfile refid="d6/da7/hr__omp_8h">hr_omp.h</innerfile>
+    <innerfile refid="d8/d5a/input__par_8h">input_par.h</innerfile>
+    <innerfile refid="d3/d5d/inverters_8h">inverters.h</innerfile>
+    <innerfile refid="dc/dac/io_8h">io.h</innerfile>
+    <innerfile refid="dc/d9c/linear__algebra_8h">linear_algebra.h</innerfile>
+    <innerfile refid="d1/d8c/logger_8h">logger.h</innerfile>
+    <innerfile refid="d5/da4/macro__opt_8h">macro_opt.h</innerfile>
+    <innerfile refid="dc/d18/memory_8h">memory.h</innerfile>
+    <innerfile refid="d2/d99/meson__observables_8h">meson_observables.h</innerfile>
+    <innerfile refid="d5/d80/monomials_8h">monomials.h</innerfile>
+    <innerfile refid="d0/d5a/moreio_8h">moreio.h</innerfile>
+    <innerfile refid="d0/d30/observables_8h">observables.h</innerfile>
+    <innerfile refid="d6/d71/propagator_8h">propagator.h</innerfile>
+    <innerfile refid="d1/d79/random_8h">random.h</innerfile>
+    <innerfile refid="d7/d3f/ranlux_8h">ranlux.h</innerfile>
+    <innerfile refid="d5/dbc/rational__functions_8h">rational_functions.h</innerfile>
+    <innerfile refid="d0/d2b/representation_8h">representation.h</innerfile>
+    <innerfile refid="df/dc5/scattering_8h">scattering.h</innerfile>
+    <innerfile refid="d7/df7/setup_8h">setup.h</innerfile>
+    <innerfile refid="d6/d16/spectrum_8h">spectrum.h</innerfile>
+    <innerfile refid="d8/d1e/spin__matrix_8h">spin_matrix.h</innerfile>
+    <innerfile refid="d3/ded/spinor__field_8h">spinor_field.h</innerfile>
+    <innerfile refid="d7/dc5/statistics_8h">statistics.h</innerfile>
+    <innerfile refid="d1/d36/suN_8h">suN.h</innerfile>
+    <innerfile refid="d5/d40/suN__repr__func_8h">suN_repr_func.h</innerfile>
+    <innerfile refid="d9/d21/suN__types_8h">suN_types.h</innerfile>
+    <innerfile refid="db/d43/test__complex_8h">test_complex.h</innerfile>
+    <innerfile refid="d8/d72/update_8h">update.h</innerfile>
+    <innerfile refid="d5/d60/utils_8h">utils.h</innerfile>
+    <innerfile refid="d3/df8/wilsonflow_8h">wilsonflow.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/"/>
+  </compounddef>
+</doxygen>
