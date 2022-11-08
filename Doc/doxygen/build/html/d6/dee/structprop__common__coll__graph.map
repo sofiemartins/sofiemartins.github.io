@@ -1,7 +1,0 @@
-<map id="prop_common" name="prop_common">
-<area shape="rect" id="node1" title="Bundle of propagators with zero momentum." alt="" coords="78,303,182,329"/>
-<area shape="rect" id="node2" href="$d3/d33/struct__spinor__field.html" title=" " alt="" coords="83,184,177,211"/>
-<area shape="rect" id="node3" href="$db/d43/struct__geometry__descriptor.html" title=" " alt="" coords="5,95,153,121"/>
-<area shape="rect" id="node4" href="$d8/dd1/structsuNf__spinor.html" title=" " alt="" coords="177,95,269,121"/>
-<area shape="rect" id="node5" href="$de/d49/structsuNf__vector.html" title=" " alt="" coords="177,5,269,32"/>
-</map>
