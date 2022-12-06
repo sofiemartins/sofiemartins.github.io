@@ -4,7 +4,7 @@
     <compoundname>suNg_flt</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d1/d3e/structsuNg__flt_1aaddc6fdc32c37712379ddd5d3a177aae" prot="public" static="no" mutable="no">
-        <type><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref></type>
+        <type>hr_complex_flt</type>
         <definition>hr_complex_flt suNg_flt::c[4]</definition>
         <argsstring>[4]</argsstring>
         <name>c</name>

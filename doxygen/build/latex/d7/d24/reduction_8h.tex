@@ -1,0 +1,134 @@
+\hypertarget{reduction_8h}{}\doxysection{reduction.\+h File Reference}
+\label{reduction_8h}\index{reduction.h@{reduction.h}}
+
+
+Functions for MPI reductions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{reduction_8h_a57ff9571b54ed85d6910b096d30ddee2}{global\+\_\+sum}} (double $\ast$d, int n)
+\begin{DoxyCompactList}\small\item\em Collects sum results from the local lattices and sums over all nodes (double). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{reduction_8h_af4508c57a617ed79efb901cae3d58e09}{global\+\_\+sum\+\_\+int}} (int $\ast$d, int n)
+\begin{DoxyCompactList}\small\item\em Collects sum results from the local lattices and sums over all nodes (integer). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{reduction_8h_a9fa591db50fae91b2cca51b21649bde1}{global\+\_\+max}} (double $\ast$d, int n)
+\begin{DoxyCompactList}\small\item\em Finds maximum across nodes after finding the local maximum. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{reduction_8h_a946a386ad5dfe00a9e8b03197f1ba714}{global\+\_\+min}} (double $\ast$d, int n)
+\begin{DoxyCompactList}\small\item\em Finds minimum across nodes after finding the local minimum. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{reduction_8h_a3d559ab87eb636d0f876b143f1332b7e}{bcast}} (double $\ast$d, int n)
+\begin{DoxyCompactList}\small\item\em FIXME\+: add docs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{reduction_8h_a35416b8a20cee1a623a32feafc8f4e8b}{bcast\+\_\+int}} (int $\ast$i, int n)
+\begin{DoxyCompactList}\small\item\em FIXME\+: add docs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for MPI reductions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{reduction_8h_a3d559ab87eb636d0f876b143f1332b7e}\label{reduction_8h_a3d559ab87eb636d0f876b143f1332b7e}} 
+\index{reduction.h@{reduction.h}!bcast@{bcast}}
+\index{bcast@{bcast}!reduction.h@{reduction.h}}
+\doxysubsubsection{\texorpdfstring{bcast()}{bcast()}}
+{\footnotesize\ttfamily void bcast (\begin{DoxyParamCaption}\item[{double $\ast$}]{d,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+FIXME\+: add docs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{reduction_8h_a35416b8a20cee1a623a32feafc8f4e8b}\label{reduction_8h_a35416b8a20cee1a623a32feafc8f4e8b}} 
+\index{reduction.h@{reduction.h}!bcast\_int@{bcast\_int}}
+\index{bcast\_int@{bcast\_int}!reduction.h@{reduction.h}}
+\doxysubsubsection{\texorpdfstring{bcast\_int()}{bcast\_int()}}
+{\footnotesize\ttfamily void bcast\+\_\+int (\begin{DoxyParamCaption}\item[{int $\ast$}]{i,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+FIXME\+: add docs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+{\em n} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{reduction_8h_a9fa591db50fae91b2cca51b21649bde1}\label{reduction_8h_a9fa591db50fae91b2cca51b21649bde1}} 
+\index{reduction.h@{reduction.h}!global\_max@{global\_max}}
+\index{global\_max@{global\_max}!reduction.h@{reduction.h}}
+\doxysubsubsection{\texorpdfstring{global\_max()}{global\_max()}}
+{\footnotesize\ttfamily void global\+\_\+max (\begin{DoxyParamCaption}\item[{double $\ast$}]{d,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Finds maximum across nodes after finding the local maximum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Pointer that contains the local result \\
+\hline
+{\em n} & Number of nodes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{reduction_8h_a946a386ad5dfe00a9e8b03197f1ba714}\label{reduction_8h_a946a386ad5dfe00a9e8b03197f1ba714}} 
+\index{reduction.h@{reduction.h}!global\_min@{global\_min}}
+\index{global\_min@{global\_min}!reduction.h@{reduction.h}}
+\doxysubsubsection{\texorpdfstring{global\_min()}{global\_min()}}
+{\footnotesize\ttfamily void global\+\_\+min (\begin{DoxyParamCaption}\item[{double $\ast$}]{d,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Finds minimum across nodes after finding the local minimum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Pointer that contains the local result \\
+\hline
+{\em n} & Number of nodes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{reduction_8h_a57ff9571b54ed85d6910b096d30ddee2}\label{reduction_8h_a57ff9571b54ed85d6910b096d30ddee2}} 
+\index{reduction.h@{reduction.h}!global\_sum@{global\_sum}}
+\index{global\_sum@{global\_sum}!reduction.h@{reduction.h}}
+\doxysubsubsection{\texorpdfstring{global\_sum()}{global\_sum()}}
+{\footnotesize\ttfamily void global\+\_\+sum (\begin{DoxyParamCaption}\item[{double $\ast$}]{d,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Collects sum results from the local lattices and sums over all nodes (double). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Pointer that contains the local result \\
+\hline
+{\em n} & Number of nodes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{reduction_8h_af4508c57a617ed79efb901cae3d58e09}\label{reduction_8h_af4508c57a617ed79efb901cae3d58e09}} 
+\index{reduction.h@{reduction.h}!global\_sum\_int@{global\_sum\_int}}
+\index{global\_sum\_int@{global\_sum\_int}!reduction.h@{reduction.h}}
+\doxysubsubsection{\texorpdfstring{global\_sum\_int()}{global\_sum\_int()}}
+{\footnotesize\ttfamily void global\+\_\+sum\+\_\+int (\begin{DoxyParamCaption}\item[{int $\ast$}]{d,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Collects sum results from the local lattices and sums over all nodes (integer). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Pointer that contains the local result \\
+\hline
+{\em n} & Number of nodes \\
+\hline
+\end{DoxyParams}

@@ -57,10 +57,10 @@
         <argsstring>(suNg_field *, suNg_field *)</argsstring>
         <name>copy_gfield_cpu</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -76,10 +76,10 @@
         <argsstring>(suNg_scalar_field *, suNg_scalar_field *)</argsstring>
         <name>copy_scalar_field_cpu</name>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -95,10 +95,10 @@
         <argsstring>(suNg_field_flt *, suNg_field_flt *)</argsstring>
         <name>copy_gfield_flt_cpu</name>
         <param>
-          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -114,10 +114,10 @@
         <argsstring>(suNf_field *, suNf_field *)</argsstring>
         <name>copy_gfield_f_cpu</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -133,10 +133,10 @@
         <argsstring>(suNf_field_flt *, suNf_field_flt *)</argsstring>
         <name>copy_gfield_f_flt_cpu</name>
         <param>
-          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+          <type><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+          <type><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -152,10 +152,10 @@
         <argsstring>(suNg_av_field *, suNg_av_field *)</argsstring>
         <name>copy_avfield_cpu</name>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -171,10 +171,10 @@
         <argsstring>(scalar_field *, scalar_field *)</argsstring>
         <name>copy_sfield_cpu</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -190,10 +190,10 @@
         <argsstring>(ldl_field *, ldl_field *)</argsstring>
         <name>copy_clover_ldl_cpu</name>
         <param>
-          <type><ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref> *</type>
+          <type>ldl_field *</type>
         </param>
         <param>
-          <type><ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref> *</type>
+          <type>ldl_field *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -203,16 +203,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="19" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="19" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a168c72376c3bf4ab46718883f36813e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a7ed5672df9d88f28f18562bc92bb63ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void copy_clover_term_cpu</definition>
-        <argsstring>(suNfc_field *, suNfc_field *)</argsstring>
-        <name>copy_clover_term_cpu</name>
+        <definition>void copy_gtransf_cpu</definition>
+        <argsstring>(suNg_field *, suNg_field *)</argsstring>
+        <name>copy_gtransf_cpu</name>
         <param>
-          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -222,16 +222,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="20" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="20" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ad101e22f433d84acfa3d14a985404943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a168c72376c3bf4ab46718883f36813e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void copy_clover_force_cpu</definition>
-        <argsstring>(suNf_field *, suNf_field *)</argsstring>
-        <name>copy_clover_force_cpu</name>
+        <definition>void copy_clover_term_cpu</definition>
+        <argsstring>(suNfc_field *, suNfc_field *)</argsstring>
+        <name>copy_clover_term_cpu</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type>suNfc_field *</type>
         </param>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type>suNfc_field *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -241,13 +241,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="21" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="21" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a7f2bc021233ecec8270d6eebb4a572ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ad101e22f433d84acfa3d14a985404943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_spinor_field_f_cpu</definition>
-        <argsstring>(spinor_field *)</argsstring>
-        <name>random_spinor_field_f_cpu</name>
+        <definition>void copy_clover_force_cpu</definition>
+        <argsstring>(suNf_field *, suNf_field *)</argsstring>
+        <name>copy_clover_force_cpu</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -255,15 +258,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="24" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="24" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="22" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="22" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a9e1b33245223895e58d3fd35836c3f20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a7f2bc021233ecec8270d6eebb4a572ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_spinor_field_f_flt_cpu</definition>
-        <argsstring>(spinor_field_flt *)</argsstring>
-        <name>random_spinor_field_f_flt_cpu</name>
+        <definition>void random_spinor_field_f_cpu</definition>
+        <argsstring>(spinor_field *)</argsstring>
+        <name>random_spinor_field_f_cpu</name>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -273,13 +276,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="25" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="25" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aee33f8cba18bca9deabee6dd42e1c41d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a9e1b33245223895e58d3fd35836c3f20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_gfield_cpu</definition>
-        <argsstring>(suNg_field *)</argsstring>
-        <name>random_gfield_cpu</name>
+        <definition>void random_spinor_field_f_flt_cpu</definition>
+        <argsstring>(spinor_field_flt *)</argsstring>
+        <name>random_spinor_field_f_flt_cpu</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -289,13 +292,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="26" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="26" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a9014593036b1eccc3670d65baffa1f34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aee33f8cba18bca9deabee6dd42e1c41d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_scalar_field_cpu</definition>
-        <argsstring>(suNg_scalar_field *)</argsstring>
-        <name>random_scalar_field_cpu</name>
+        <definition>void random_gfield_cpu</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>random_gfield_cpu</name>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -305,13 +308,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="27" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="27" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aa501a1a99e323188899680128c8532b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a9014593036b1eccc3670d65baffa1f34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_gfield_flt_cpu</definition>
-        <argsstring>(suNg_field_flt *)</argsstring>
-        <name>random_gfield_flt_cpu</name>
+        <definition>void random_scalar_field_cpu</definition>
+        <argsstring>(suNg_scalar_field *)</argsstring>
+        <name>random_scalar_field_cpu</name>
         <param>
-          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -321,13 +324,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="28" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="28" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1af8f29076940824c289b30fdd2d034d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aa501a1a99e323188899680128c8532b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_gfield_f_cpu</definition>
-        <argsstring>(suNf_field *)</argsstring>
-        <name>random_gfield_f_cpu</name>
+        <definition>void random_gfield_flt_cpu</definition>
+        <argsstring>(suNg_field_flt *)</argsstring>
+        <name>random_gfield_flt_cpu</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -337,13 +340,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="29" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="29" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a4bddad05e477bafa732f8fe1af0f03ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1af8f29076940824c289b30fdd2d034d55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_gfield_f_flt_cpu</definition>
-        <argsstring>(suNf_field_flt *)</argsstring>
-        <name>random_gfield_f_flt_cpu</name>
+        <definition>void random_gfield_f_cpu</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>random_gfield_f_cpu</name>
         <param>
-          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -353,13 +356,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="30" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="30" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1af3d58437b95bcdfc786ff65c43afd2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a4bddad05e477bafa732f8fe1af0f03ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_avfield_cpu</definition>
-        <argsstring>(suNg_av_field *)</argsstring>
-        <name>random_avfield_cpu</name>
+        <definition>void random_gfield_f_flt_cpu</definition>
+        <argsstring>(suNf_field_flt *)</argsstring>
+        <name>random_gfield_f_flt_cpu</name>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -369,13 +372,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="31" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="31" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a539d710d5ae3627d2b6d27aec75cc948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1af3d58437b95bcdfc786ff65c43afd2f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_sfield_cpu</definition>
-        <argsstring>(scalar_field *)</argsstring>
-        <name>random_sfield_cpu</name>
+        <definition>void random_avfield_cpu</definition>
+        <argsstring>(suNg_av_field *)</argsstring>
+        <name>random_avfield_cpu</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -385,13 +388,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="32" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="32" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a82f1c04dda9a1f99a1e6f450f8aba329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a539d710d5ae3627d2b6d27aec75cc948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_gtransf_cpu</definition>
-        <argsstring>(suNg_field *)</argsstring>
-        <name>random_gtransf_cpu</name>
+        <definition>void random_sfield_cpu</definition>
+        <argsstring>(scalar_field *)</argsstring>
+        <name>random_sfield_cpu</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -401,13 +404,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="33" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="33" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1adc9050dd2ec18255a58090e55acdb5e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a82f1c04dda9a1f99a1e6f450f8aba329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_clover_term_cpu</definition>
-        <argsstring>(suNfc_field *)</argsstring>
-        <name>random_clover_term_cpu</name>
+        <definition>void random_gtransf_cpu</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>random_gtransf_cpu</name>
         <param>
-          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -417,13 +420,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="34" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="34" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1acf624ae62375b401b37a50a694db73ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1adc9050dd2ec18255a58090e55acdb5e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void random_clover_force_cpu</definition>
-        <argsstring>(suNf_field *)</argsstring>
-        <name>random_clover_force_cpu</name>
+        <definition>void random_clover_term_cpu</definition>
+        <argsstring>(suNfc_field *)</argsstring>
+        <name>random_clover_term_cpu</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type>suNfc_field *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -433,16 +436,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="35" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="35" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1adc718488c30e6bae3a72b27afad3f77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1acf624ae62375b401b37a50a694db73ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_gfield_cpu</definition>
-        <argsstring>(suNg_field *, suNg_field *)</argsstring>
-        <name>sub_assign_gfield_cpu</name>
+        <definition>void random_clover_force_cpu</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>random_clover_force_cpu</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
-        </param>
-        <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -450,18 +450,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="38" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="38" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="36" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="36" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ad468252cd7370d5381e345075b088aa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1adc718488c30e6bae3a72b27afad3f77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_gfield_flt_cpu</definition>
-        <argsstring>(suNg_field_flt *, suNg_field_flt *)</argsstring>
-        <name>sub_assign_gfield_flt_cpu</name>
+        <definition>void sub_assign_gfield_cpu</definition>
+        <argsstring>(suNg_field *, suNg_field *)</argsstring>
+        <name>sub_assign_gfield_cpu</name>
         <param>
-          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -471,16 +471,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="39" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="39" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a3f16ee277dce19f636ae456c280bb69f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ad468252cd7370d5381e345075b088aa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_gfield_f_cpu</definition>
-        <argsstring>(suNf_field *, suNf_field *)</argsstring>
-        <name>sub_assign_gfield_f_cpu</name>
+        <definition>void sub_assign_gfield_flt_cpu</definition>
+        <argsstring>(suNg_field_flt *, suNg_field_flt *)</argsstring>
+        <name>sub_assign_gfield_flt_cpu</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         </param>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -490,16 +490,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="40" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="40" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a8dea97942640632bacd9af6c527ac1cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a3f16ee277dce19f636ae456c280bb69f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_gfield_f_flt_cpu</definition>
-        <argsstring>(suNf_field_flt *, suNf_field_flt *)</argsstring>
-        <name>sub_assign_gfield_f_flt_cpu</name>
+        <definition>void sub_assign_gfield_f_cpu</definition>
+        <argsstring>(suNf_field *, suNf_field *)</argsstring>
+        <name>sub_assign_gfield_f_cpu</name>
         <param>
-          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -509,16 +509,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="41" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="41" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1abea5c5c0a6d891a31778d639e16de08b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a8dea97942640632bacd9af6c527ac1cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_scalar_field_cpu</definition>
-        <argsstring>(suNg_scalar_field *, suNg_scalar_field *)</argsstring>
-        <name>sub_assign_scalar_field_cpu</name>
+        <definition>void sub_assign_gfield_f_flt_cpu</definition>
+        <argsstring>(suNf_field_flt *, suNf_field_flt *)</argsstring>
+        <name>sub_assign_gfield_f_flt_cpu</name>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -528,16 +528,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="42" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="42" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a11dddffcd526d38e9e6f0de4899bdf4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1abea5c5c0a6d891a31778d639e16de08b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_avfield_cpu</definition>
-        <argsstring>(suNg_av_field *, suNg_av_field *)</argsstring>
-        <name>sub_assign_avfield_cpu</name>
+        <definition>void sub_assign_scalar_field_cpu</definition>
+        <argsstring>(suNg_scalar_field *, suNg_scalar_field *)</argsstring>
+        <name>sub_assign_scalar_field_cpu</name>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -547,16 +547,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="43" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="43" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a478b9d6705666d9ecb5e207c53ef1aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a11dddffcd526d38e9e6f0de4899bdf4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_sfield_cpu</definition>
-        <argsstring>(scalar_field *, scalar_field *)</argsstring>
-        <name>sub_assign_sfield_cpu</name>
+        <definition>void sub_assign_avfield_cpu</definition>
+        <argsstring>(suNg_av_field *, suNg_av_field *)</argsstring>
+        <name>sub_assign_avfield_cpu</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -566,16 +566,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="44" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="44" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a0627bfca7eb31b9c9018cb48137e6184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a478b9d6705666d9ecb5e207c53ef1aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_gtransf_cpu</definition>
-        <argsstring>(suNg_field *, suNg_field *)</argsstring>
-        <name>sub_assign_gtransf_cpu</name>
+        <definition>void sub_assign_sfield_cpu</definition>
+        <argsstring>(scalar_field *, scalar_field *)</argsstring>
+        <name>sub_assign_sfield_cpu</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -585,16 +585,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="45" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="45" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a68b4c3049a2288ac5af29054ecf00696" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a0627bfca7eb31b9c9018cb48137e6184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_clover_ldl_cpu</definition>
-        <argsstring>(ldl_field *, ldl_field *)</argsstring>
-        <name>sub_assign_clover_ldl_cpu</name>
+        <definition>void sub_assign_gtransf_cpu</definition>
+        <argsstring>(suNg_field *, suNg_field *)</argsstring>
+        <name>sub_assign_gtransf_cpu</name>
         <param>
-          <type><ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -604,16 +604,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="46" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="46" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ac2b0f513840121ed0d4a18a5d2a9a101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a68b4c3049a2288ac5af29054ecf00696" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_clover_term_cpu</definition>
-        <argsstring>(suNfc_field *, suNfc_field *)</argsstring>
-        <name>sub_assign_clover_term_cpu</name>
+        <definition>void sub_assign_clover_ldl_cpu</definition>
+        <argsstring>(ldl_field *, ldl_field *)</argsstring>
+        <name>sub_assign_clover_ldl_cpu</name>
         <param>
-          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+          <type>ldl_field *</type>
         </param>
         <param>
-          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+          <type>ldl_field *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -623,16 +623,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="47" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="47" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a990fe6521a6d34399e487552f21f946c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ac2b0f513840121ed0d4a18a5d2a9a101" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void sub_assign_clover_force_cpu</definition>
-        <argsstring>(suNf_field *, suNf_field *)</argsstring>
-        <name>sub_assign_clover_force_cpu</name>
+        <definition>void sub_assign_clover_term_cpu</definition>
+        <argsstring>(suNfc_field *, suNfc_field *)</argsstring>
+        <name>sub_assign_clover_term_cpu</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type>suNfc_field *</type>
         </param>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type>suNfc_field *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -642,13 +642,16 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="48" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="48" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1abbecbcc8a827378a70babac9c76d3468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double sqnorm_spinor_field_f_cpu</definition>
-        <argsstring>(spinor_field *)</argsstring>
-        <name>sqnorm_spinor_field_f_cpu</name>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a990fe6521a6d34399e487552f21f946c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sub_assign_clover_force_cpu</definition>
+        <argsstring>(suNf_field *, suNf_field *)</argsstring>
+        <name>sub_assign_clover_force_cpu</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -656,7 +659,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="51" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="51" declcolumn="8"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="49" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1abbecbcc8a827378a70babac9c76d3468" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sqnorm_spinor_field_f_cpu</definition>
+        <argsstring>(spinor_field *)</argsstring>
+        <name>sqnorm_spinor_field_f_cpu</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="52" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="52" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a264583423b33772789ae96390aaf4697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -664,7 +683,7 @@
         <argsstring>(spinor_field_flt *)</argsstring>
         <name>sqnorm_spinor_field_f_flt_cpu</name>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -672,7 +691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="52" column="7" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="52" declcolumn="7"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="53" column="7" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="53" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a9e3722f773e7815c1eadf66acc64bea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -680,23 +699,7 @@
         <argsstring>(suNg_field *)</argsstring>
         <name>sqnorm_gfield_cpu</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="53" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="53" declcolumn="8"/>
-      </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aa7eeb20809fc3e15b905f9899ffe12da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double sqnorm_gfield_f_cpu</definition>
-        <argsstring>(suNf_field *)</argsstring>
-        <name>sqnorm_gfield_f_cpu</name>
-        <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -706,13 +709,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="54" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="54" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aea7ccbb7a2081f621163896fb61e3ac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>float</type>
-        <definition>float sqnorm_gfield_flt_cpu</definition>
-        <argsstring>(suNg_field_flt *)</argsstring>
-        <name>sqnorm_gfield_flt_cpu</name>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aa7eeb20809fc3e15b905f9899ffe12da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double sqnorm_gfield_f_cpu</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>sqnorm_gfield_f_cpu</name>
         <param>
-          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -720,15 +723,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="55" column="7" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="55" declcolumn="7"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="55" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="55" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a62677bb367f7b15b7e419f7cf3917926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aea7ccbb7a2081f621163896fb61e3ac5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
-        <definition>float sqnorm_gfield_f_flt_cpu</definition>
-        <argsstring>(suNf_field_flt *)</argsstring>
-        <name>sqnorm_gfield_f_flt_cpu</name>
+        <definition>float sqnorm_gfield_flt_cpu</definition>
+        <argsstring>(suNg_field_flt *)</argsstring>
+        <name>sqnorm_gfield_flt_cpu</name>
         <param>
-          <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -738,13 +741,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="56" column="7" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="56" declcolumn="7"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a5f0e0d4440388491ea4fc85f4f100a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double sqnorm_scalar_field_cpu</definition>
-        <argsstring>(suNg_scalar_field *)</argsstring>
-        <name>sqnorm_scalar_field_cpu</name>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a62677bb367f7b15b7e419f7cf3917926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float sqnorm_gfield_f_flt_cpu</definition>
+        <argsstring>(suNf_field_flt *)</argsstring>
+        <name>sqnorm_gfield_f_flt_cpu</name>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -752,15 +755,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="57" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="57" declcolumn="8"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="57" column="7" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="57" declcolumn="7"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a428be6c7133773378ece9c543c6656e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a5f0e0d4440388491ea4fc85f4f100a92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
-        <definition>double sqnorm_avfield_cpu</definition>
-        <argsstring>(suNg_av_field *)</argsstring>
-        <name>sqnorm_avfield_cpu</name>
+        <definition>double sqnorm_scalar_field_cpu</definition>
+        <argsstring>(suNg_scalar_field *)</argsstring>
+        <name>sqnorm_scalar_field_cpu</name>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -770,13 +773,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="58" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="58" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a6aa1d849be370cc8d8780f8093516ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a428be6c7133773378ece9c543c6656e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
-        <definition>double sqnorm_gtransf_cpu</definition>
-        <argsstring>(suNg_field *)</argsstring>
-        <name>sqnorm_gtransf_cpu</name>
+        <definition>double sqnorm_avfield_cpu</definition>
+        <argsstring>(suNg_av_field *)</argsstring>
+        <name>sqnorm_avfield_cpu</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -786,13 +789,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="59" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="59" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ae1bc252c45122e3fa098b0049455e0da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a6aa1d849be370cc8d8780f8093516ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
-        <definition>double sqnorm_sfield_cpu</definition>
-        <argsstring>(scalar_field *)</argsstring>
-        <name>sqnorm_sfield_cpu</name>
+        <definition>double sqnorm_gtransf_cpu</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>sqnorm_gtransf_cpu</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -802,13 +805,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="60" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="60" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ad722bc245ebb3c70eedf53c10ff8c687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ae1bc252c45122e3fa098b0049455e0da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
-        <definition>double sqnorm_clover_ldl_cpu</definition>
-        <argsstring>(ldl_field *)</argsstring>
-        <name>sqnorm_clover_ldl_cpu</name>
+        <definition>double sqnorm_sfield_cpu</definition>
+        <argsstring>(scalar_field *)</argsstring>
+        <name>sqnorm_sfield_cpu</name>
         <param>
-          <type><ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -818,13 +821,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="61" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="61" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aa21488e59de392a2e1b31d8ab4fe321d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ad722bc245ebb3c70eedf53c10ff8c687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
-        <definition>double sqnorm_clover_term_cpu</definition>
-        <argsstring>(suNfc_field *)</argsstring>
-        <name>sqnorm_clover_term_cpu</name>
+        <definition>double sqnorm_clover_ldl_cpu</definition>
+        <argsstring>(ldl_field *)</argsstring>
+        <name>sqnorm_clover_ldl_cpu</name>
         <param>
-          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+          <type>ldl_field *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -834,13 +837,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="62" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="62" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1abb31339c4e4d5084796cab42eae32ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aa21488e59de392a2e1b31d8ab4fe321d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
-        <definition>double sqnorm_clover_force_cpu</definition>
-        <argsstring>(suNf_field *)</argsstring>
-        <name>sqnorm_clover_force_cpu</name>
+        <definition>double sqnorm_clover_term_cpu</definition>
+        <argsstring>(suNfc_field *)</argsstring>
+        <name>sqnorm_clover_term_cpu</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type>suNfc_field *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -850,13 +853,13 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="63" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="63" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a1f5feb49eb413dccbe290ee676d1178b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1abb31339c4e4d5084796cab42eae32ada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
-        <definition>double zero_gfield_cpu</definition>
-        <argsstring>(suNg_field *)</argsstring>
-        <name>zero_gfield_cpu</name>
+        <definition>double sqnorm_clover_force_cpu</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>sqnorm_clover_force_cpu</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -864,7 +867,151 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="66" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="66" declcolumn="8"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="64" column="8" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="64" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aafb27e3e0f3a58d75402aa43d884a53a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_gfield_cpu</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>zero_gfield_cpu</name>
+        <param>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="67" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a172051839f7c2fc4ad5b9ef9ef082494" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_gfield_f_cpu</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>zero_gfield_f_cpu</name>
+        <param>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="68" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a5ceb9e1e63306dad6dc281142ae8e5f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_gfield_flt_cpu</definition>
+        <argsstring>(suNg_field_flt *)</argsstring>
+        <name>zero_gfield_flt_cpu</name>
+        <param>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="69" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1af1719bd5594e099e81a8e2aac4f7879e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_gfield_f_flt_cpu</definition>
+        <argsstring>(suNf_field_flt *)</argsstring>
+        <name>zero_gfield_f_flt_cpu</name>
+        <param>
+          <type><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="70" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="70" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a88eb3751d742b76ca947857b13d56ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_scalar_field_cpu</definition>
+        <argsstring>(suNg_scalar_field *)</argsstring>
+        <name>zero_scalar_field_cpu</name>
+        <param>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="71" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="71" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ae8d8cabbcb82ddf8d1d0c60592434028" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_avfield_cpu</definition>
+        <argsstring>(suNg_av_field *)</argsstring>
+        <name>zero_avfield_cpu</name>
+        <param>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="72" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="72" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1aa5bd24166b389696c82d59923cf33b98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_gtransf_cpu</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>zero_gtransf_cpu</name>
+        <param>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="73" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="73" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1a5b484dcba0690bb58a23e8bdf6875ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_clover_term_cpu</definition>
+        <argsstring>(suNfc_field *)</argsstring>
+        <name>zero_clover_term_cpu</name>
+        <param>
+          <type>suNfc_field *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="74" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="74" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d51/basis__linear__algebra_8h_1ac40d41bb87196b7784541e2ea9503e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zero_clover_force_cpu</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>zero_clover_force_cpu</name>
+        <param>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" line="75" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h" declline="75" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -883,64 +1030,72 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>check_diff_norm_zero(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>COPY<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gfield_cpu(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_scalar_field_cpu(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*,<sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gfield_flt_cpu(<ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>*,<sp/><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gfield_f_cpu(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gfield_f_flt_cpu(<ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>*,<sp/><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_avfield_cpu(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>*,<sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_sfield_cpu(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*,<sp/><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_clover_ldl_cpu(<ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref>*,<sp/><ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref>*);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_clover_term_cpu(<ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>*,<sp/><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>*);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_clover_force_cpu(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>RANDOM</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_spinor_field_f_cpu(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_spinor_field_f_flt_cpu(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gfield_cpu(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_scalar_field_cpu(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gfield_flt_cpu(<ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gfield_f_cpu(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gfield_f_flt_cpu(<ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_avfield_cpu(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_sfield_cpu(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gtransf_cpu(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_clover_term_cpu(<ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>*);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_clover_force_cpu(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SUB<sp/>ASSIGN</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gfield_cpu(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gfield_flt_cpu(<ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>*,<sp/><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gfield_f_cpu(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gfield_f_flt_cpu(<ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>*,<sp/><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_scalar_field_cpu(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*,<sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_avfield_cpu(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>*,<sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_sfield_cpu(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*,<sp/><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gtransf_cpu(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_clover_ldl_cpu(<ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref>*,<sp/><ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref>*);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_clover_term_cpu(<ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>*,<sp/><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>*);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_clover_force_cpu(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SQNORM</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_spinor_field_f_cpu(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sqnorm_spinor_field_f_flt_cpu(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_gfield_cpu(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_gfield_f_cpu(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sqnorm_gfield_flt_cpu(<ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sqnorm_gfield_f_flt_cpu(<ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_scalar_field_cpu(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_avfield_cpu(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_gtransf_cpu(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_sfield_cpu(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_clover_ldl_cpu(<ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref>*);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_clover_term_cpu(<ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>*);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_clover_force_cpu(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SET<sp/>ZERO</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>zero_gfield_cpu(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gfield_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_scalar_field_cpu(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*,<sp/><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gfield_flt_cpu(<ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*,<sp/><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gfield_f_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*,<sp/><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gfield_f_flt_cpu(<ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>*,<sp/><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_avfield_cpu(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>*,<sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_sfield_cpu(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>*,<sp/><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_clover_ldl_cpu(ldl_field*,<sp/>ldl_field*);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_gtransf_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_clover_term_cpu(suNfc_field*,<sp/>suNfc_field*);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_clover_force_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*,<sp/><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>RANDOM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_spinor_field_f_cpu(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>*);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_spinor_field_f_flt_cpu(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gfield_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_scalar_field_cpu(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gfield_flt_cpu(<ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gfield_f_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gfield_f_flt_cpu(<ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_avfield_cpu(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_sfield_cpu(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_gtransf_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_clover_term_cpu(suNfc_field*);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_clover_force_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SUB<sp/>ASSIGN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gfield_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gfield_flt_cpu(<ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*,<sp/><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gfield_f_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*,<sp/><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gfield_f_flt_cpu(<ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>*,<sp/><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_scalar_field_cpu(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*,<sp/><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_avfield_cpu(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>*,<sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_sfield_cpu(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>*,<sp/><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_gtransf_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_clover_ldl_cpu(ldl_field*,<sp/>ldl_field*);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_clover_term_cpu(suNfc_field*,<sp/>suNfc_field*);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sub_assign_clover_force_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*,<sp/><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SQNORM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_spinor_field_f_cpu(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>*);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sqnorm_spinor_field_f_flt_cpu(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_gfield_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_gfield_f_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sqnorm_gfield_flt_cpu(<ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sqnorm_gfield_f_flt_cpu(<ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_scalar_field_cpu(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_avfield_cpu(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_gtransf_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_sfield_cpu(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_clover_ldl_cpu(ldl_field*);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_clover_term_cpu(suNfc_field*);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqnorm_clover_force_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SET<sp/>ZERO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_gfield_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_gfield_f_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_gfield_flt_cpu(<ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_gfield_f_flt_cpu(<ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_scalar_field_cpu(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_avfield_cpu(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>*);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_gtransf_cpu(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_clover_term_cpu(suNfc_field*);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_clover_force_cpu(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/basis_linear_algebra.h"/>
   </compounddef>

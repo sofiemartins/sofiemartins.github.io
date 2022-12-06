@@ -9,26 +9,14 @@
     <includes refid="d5/d2b/data__storage_8h" local="yes">data_storage.h</includes>
     <includes local="no">stdio.h</includes>
     <incdepgraph>
-      <node id="10">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
-      <node id="13">
+      <node id="9">
         <label>meson_observables.h</label>
         <link refid="d2/d99/meson__observables_8h_source"/>
       </node>
       <node id="8">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="9" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -44,13 +32,13 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -58,14 +46,6 @@
         <link refid="d9/d21/suN__types_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="11">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
-      <node id="12">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
       </node>
       <node id="4">
         <label>hr_complex.h</label>
@@ -82,17 +62,11 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
+      <node id="10">
         <label>data_storage.h</label>
         <link refid="d5/d2b/data__storage_8h_source"/>
       </node>
-      <node id="15">
+      <node id="11">
         <label>stdio.h</label>
       </node>
       <node id="7">
@@ -512,7 +486,7 @@
         <argsstring>(spinor_field *in, double mass, spinor_field *out, double acc)</argsstring>
         <name>SF_quark_propagator</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
@@ -520,7 +494,7 @@
           <declname>mass</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
@@ -559,7 +533,7 @@
           <array>[4]</array>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> **</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> **</type>
           <declname>pta_qprop</declname>
         </param>
         <param>
@@ -593,7 +567,7 @@
           <array>[4]</array>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> **</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> **</type>
           <declname>pta_qprop</declname>
         </param>
         <param>
@@ -627,7 +601,7 @@
           <array>[4]</array>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> **</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> **</type>
           <declname>pta_qprop</declname>
         </param>
         <param>
@@ -799,7 +773,7 @@
         <argsstring>(spinor_field *source, int tau, int color)</argsstring>
         <name>create_point_source</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -824,7 +798,7 @@
         <argsstring>(spinor_field *source, int tau)</argsstring>
         <name>create_full_point_source</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -845,7 +819,7 @@
         <argsstring>(spinor_field *source, int t, int x, int y, int z, int color)</argsstring>
         <name>create_point_source_loc</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -882,7 +856,7 @@
         <argsstring>(spinor_field *source)</argsstring>
         <name>create_diluted_source_equal_eo</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <briefdescription>
@@ -899,7 +873,7 @@
         <argsstring>(spinor_field *source, int tau)</argsstring>
         <name>create_diluted_source_equal_atau_eo</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -920,7 +894,7 @@
         <argsstring>(spinor_field *source)</argsstring>
         <name>create_diluted_source_equal</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <briefdescription>
@@ -937,7 +911,7 @@
         <argsstring>(spinor_field *source, int tau)</argsstring>
         <name>create_diluted_source_equal_spinorfield1</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -958,7 +932,7 @@
         <argsstring>(spinor_field *source, int tau)</argsstring>
         <name>create_diluted_source_equal_atau</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -979,7 +953,7 @@
         <argsstring>(spinor_field *source)</argsstring>
         <name>create_noise_source_equal_eo</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <briefdescription>
@@ -996,7 +970,7 @@
         <argsstring>(spinor_field *source)</argsstring>
         <name>create_noise_source_equal_oe</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <briefdescription>
@@ -1013,7 +987,7 @@
         <argsstring>(spinor_field *source, int tau, int col)</argsstring>
         <name>create_diluted_source_equal_atau_col</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1038,7 +1012,7 @@
         <argsstring>(spinor_field *source, int col)</argsstring>
         <name>create_noise_source_equal_col_dil</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1059,7 +1033,7 @@
         <argsstring>(spinor_field *source, int tau, int color)</argsstring>
         <name>create_gauge_fixed_wall_source</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1084,7 +1058,7 @@
         <argsstring>(spinor_field *source, int pt, int px, int py, int pz, int color)</argsstring>
         <name>create_gauge_fixed_momentum_source</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1121,7 +1095,7 @@
         <argsstring>(spinor_field *source, int tf, spinor_field *prop)</argsstring>
         <name>create_sequential_source</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1129,7 +1103,7 @@
           <declname>tf</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop</declname>
         </param>
         <briefdescription>
@@ -1146,7 +1120,7 @@
         <argsstring>(spinor_field *source, int tf, spinor_field *prop)</argsstring>
         <name>create_sequential_source_stoch</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1154,7 +1128,7 @@
           <declname>tf</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop</declname>
         </param>
         <briefdescription>
@@ -1171,7 +1145,7 @@
         <argsstring>(spinor_field *source, int tf, spinor_field *prop)</argsstring>
         <name>restrict_timeslice</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1179,7 +1153,7 @@
           <declname>tf</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop</declname>
         </param>
         <briefdescription>
@@ -1196,7 +1170,7 @@
         <argsstring>(spinor_field *source, int parity_component, int mod)</argsstring>
         <name>create_diluted_volume_source</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1221,7 +1195,7 @@
         <argsstring>(spinor_field *source)</argsstring>
         <name>create_z2_volume_source</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <briefdescription>
@@ -1238,11 +1212,11 @@
         <argsstring>(spinor_field *out, spinor_field *in, int px, int py, int pz)</argsstring>
         <name>add_momentum</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
@@ -1271,7 +1245,7 @@
         <argsstring>(spinor_field *source, int nspinor, int eo)</argsstring>
         <name>zero_even_or_odd_site_spinorfield</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -1375,11 +1349,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int ndilute)</argsstring>
         <name>calc_propagator_eo</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1400,11 +1374,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int ndilute)</argsstring>
         <name>calc_propagator</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1433,11 +1407,11 @@
           <declname>mu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1458,11 +1432,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int ndilute)</argsstring>
         <name>calc_propagator_multisource</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1483,11 +1457,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int ndilute, int Nuse)</argsstring>
         <name>calc_deflated_propagator</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1516,7 +1490,7 @@
           <declname>n</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi1</declname>
         </param>
         <param>
@@ -1619,15 +1593,15 @@
         <argsstring>(spinor_field *psi0, spinor_field *psi1, spinor_field *eta, meson_observable *mo, int nm, int tau, int n_mom, int offset, int lt)</argsstring>
         <name>measure_mesons_core</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi1</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1672,11 +1646,11 @@
           <declname>mo</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1705,15 +1679,15 @@
           <declname>mo</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi1</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1742,11 +1716,11 @@
           <declname>mo</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1775,11 +1749,11 @@
           <declname>mo</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1812,11 +1786,11 @@
           <declname>mo</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1849,11 +1823,11 @@
           <declname>mo</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1886,15 +1860,15 @@
         <argsstring>(spinor_field *psi0, spinor_field *psi1, spinor_field *eta, int nm, int ti, int tf, int n_mom, int *pt)</argsstring>
         <name>measure_formfactors</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi1</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -1931,15 +1905,15 @@
         <argsstring>(spinor_field *psi0, spinor_field *psi1, spinor_field *eta, int nm, int ti, int tf, int n_mom, int begin)</argsstring>
         <name>measure_formfactors_ext</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi1</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -2099,19 +2073,19 @@
           <declname>mo</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi1</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi2</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi3</declname>
         </param>
         <param>
@@ -2156,19 +2130,19 @@
           <declname>mo</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi1</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi2</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi3</declname>
         </param>
         <param>
@@ -2209,11 +2183,11 @@
         <argsstring>(spinor_field *psi_in, spinor_field *psi_out, int nm, int pt_in, int px_in, int py_in, int pz_in, int pt_out, int px_out, int py_out, int pz_out)</argsstring>
         <name>measure_renormalization</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi_in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi_out</declname>
         </param>
         <param>
@@ -2327,7 +2301,7 @@
         <argsstring>(spinor_field *psi0, int tau, storage_switch swc, data_storage_array **ret)</argsstring>
         <name>contract_baryons</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi0</declname>
         </param>
         <param>
@@ -2377,7 +2351,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2402,7 +2376,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2427,7 +2401,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2452,7 +2426,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2477,7 +2451,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2502,7 +2476,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2527,7 +2501,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2552,7 +2526,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2577,7 +2551,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2602,7 +2576,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2627,7 +2601,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2652,7 +2626,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2677,7 +2651,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2702,7 +2676,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2727,7 +2701,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2752,7 +2726,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2777,7 +2751,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -2802,7 +2776,7 @@
           <declname>t0</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>qp</declname>
         </param>
         <briefdescription>
@@ -3891,11 +3865,11 @@
         <argsstring>(suNg_field *out, suNg_field *in)</argsstring>
         <name>WL_Hamiltonian_gauge</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>in</declname>
         </param>
         <briefdescription>
@@ -3916,7 +3890,7 @@
           <declname>poly</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>gf</declname>
         </param>
         <briefdescription>
@@ -3937,7 +3911,7 @@
           <declname>ret</declname>
         </param>
         <param>
-          <type>const <ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type>const <ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>gf</declname>
         </param>
         <param>
@@ -4078,11 +4052,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4107,11 +4081,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4136,11 +4110,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4165,11 +4139,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4194,11 +4168,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4223,11 +4197,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4252,11 +4226,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4281,11 +4255,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4310,11 +4284,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4339,11 +4313,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4368,11 +4342,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4397,11 +4371,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4426,11 +4400,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4455,11 +4429,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4484,11 +4458,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4513,11 +4487,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4542,11 +4516,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4571,11 +4545,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4600,11 +4574,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4629,11 +4603,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4658,11 +4632,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4687,11 +4661,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4716,11 +4690,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4745,11 +4719,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4774,11 +4748,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4803,11 +4777,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4832,11 +4806,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4861,11 +4835,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4890,11 +4864,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4919,11 +4893,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4948,11 +4922,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -4977,11 +4951,11 @@
           <declname>chi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_uu</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop_dd</declname>
         </param>
         <briefdescription>
@@ -5036,11 +5010,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int ndilute)</argsstring>
         <name>calc_propagator_ff</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -5061,11 +5035,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int ndilute)</argsstring>
         <name>calc_propagator_ff_eo</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -5086,11 +5060,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int ndilute)</argsstring>
         <name>calc_propagator_ff_oe</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -5111,11 +5085,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int hopping, int ndilute)</argsstring>
         <name>calc_propagator_ff_hopping_eo</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -5140,11 +5114,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int hopping, int ndilute)</argsstring>
         <name>calc_propagator_ff_hopping_oe</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -5169,11 +5143,11 @@
         <argsstring>(spinor_field *psi, spinor_field *eta, int hopping, int ndilute)</argsstring>
         <name>calc_propagator_ff_hopping_series</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>psi</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>eta</declname>
         </param>
         <param>
@@ -5269,13 +5243,13 @@
 <codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>local_rect_1x2(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ix);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*SF_PCAC_wall_corr(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc,<sp/>storage_switch<sp/>swh);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SF_quark_propagator(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>SF_quark_propagator(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>polyakov();</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pta_qprop_QMR_eo(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g0[4],<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>**pta_qprop,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pta_qprop_QMR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g0[4],<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>**pta_qprop,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pta_qprop_MINRES(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g0[4],<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>**pta_qprop,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pta_qprop_QMR_eo(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g0[4],<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>**pta_qprop,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pta_qprop_QMR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g0[4],<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>**pta_qprop,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pta_qprop_MINRES(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g0[4],<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>**pta_qprop,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal">{</highlight></codeline>
@@ -5312,39 +5286,39 @@
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>z2semwall_qprop_free_new();</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>z2semwall_mesons_new(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>conf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nhits,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_point_source(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_full_point_source(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_point_source_loc(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>create_diluted_source_equal_eo(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_source_equal_atau_eo(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>create_diluted_source_equal(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_source_equal_spinorfield1(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_source_equal_atau(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_noise_source_equal_eo(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_noise_source_equal_oe(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_source_equal_atau_col(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col);</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_noise_source_equal_col_dil(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col);</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_gauge_fixed_wall_source(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color);</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_gauge_fixed_momentum_source(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color);</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_sequential_source(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop);</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_sequential_source_stoch(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restrict_timeslice(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_volume_source(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>parity_component,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mod);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_z2_volume_source(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_momentum(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz);</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_even_or_odd_site_spinorfield(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nspinor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eo);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_point_source(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_full_point_source(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_point_source_loc(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>create_diluted_source_equal_eo(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_source_equal_atau_eo(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>create_diluted_source_equal(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_source_equal_spinorfield1(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_source_equal_atau(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_noise_source_equal_eo(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_noise_source_equal_oe(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_source_equal_atau_col(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_noise_source_equal_col_dil(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_gauge_fixed_wall_source(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_gauge_fixed_momentum_source(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>color);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_sequential_source(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_sequential_source_stoch(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restrict_timeslice(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_diluted_volume_source(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>parity_component,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mod);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_z2_volume_source(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_momentum(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_even_or_odd_site_spinorfield(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*source,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nspinor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eo);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_propagator_eo(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>eig_init(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nevt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kmax,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxiter,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lbnd,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega2);</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_propagator_eo();</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_eo(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_eo(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_tw(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_tw(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_multisource(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_deflated_propagator(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Nuse);</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_evec(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*eval);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_multisource(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_deflated_propagator(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Nuse);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copy_evec(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*eval);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"></highlight></codeline>
 <codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_meson_correlators(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>meas_offdiag);</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_discon_correlators();</highlight></codeline>
@@ -5353,48 +5327,48 @@
 <codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_meson_observables();</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_triplet_discon_observables();</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_mesons_core(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lt);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_mesons_core(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/><ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lt);</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_mesons(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_diquarks(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_conserved_currents(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_mesons_ext(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin);</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_point_mesons_momenta(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom);</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_point_mesons_momenta_ext(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_formfactors(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ti,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pt);</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_formfactors_ext(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ti,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_mesons(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_diquarks(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_conserved_currents(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_mesons_ext(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_point_mesons_momenta(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_point_mesons_momenta_ext(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_formfactors(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ti,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pt);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_formfactors_ext(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ti,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_mesons(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>norm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>conf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*mass,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*label);</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_formfactor(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>conf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*mass,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*label,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf);</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_formfactor_ext(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>conf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*mass,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*label,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tf);</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_scattering_AD_core(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi2,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi3,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>split,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_z);</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_scattering_BC_core(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi2,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi3,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>split,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_z);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_scattering_AD_core(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi2,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi3,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>split,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_z);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_scattering_BC_core(<ref refid="d6/d0c/structmeson__observable__s" kindref="compound">meson_observable</ref><sp/>*mo,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi1,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi2,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi3,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>split,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p_tot_z);</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_renormalization(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi_in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pt_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pt_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz_out);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_renormalization(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi_in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pt_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pt_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz_out);</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_renormalization(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>conf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*mass,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*label,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pt_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pt_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>px_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>py_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pz_out);</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>contract_baryons(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,storage_switch<sp/>swc,<sp/><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>**ret);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>contract_baryons(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,storage_switch<sp/>swc,<sp/><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>**ret);</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_glueballs();</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>id_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g5_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g1_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g2_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g3_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g1_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g2_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g3_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5g1_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5g2_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5g3_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g5g1_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g5g2_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g5g3_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5_g0g5_re_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5_g0g5_im_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>id_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g5_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g1_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g2_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g3_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g1_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g2_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g3_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5g1_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5g2_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5g3_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g5g1_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g5g2_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0g5g3_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5_g0g5_re_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5_g0g5_im_correlator(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*qp);</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
 <codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>id_trace_H(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>complex<sp/>*out,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>complex<sp/>*smat);</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g0_trace_H(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>complex<sp/>*out,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>complex<sp/>*smat);</highlight></codeline>
@@ -5451,9 +5425,9 @@
 <codeline lineno="225"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_initialize();</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_free();</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_load_path(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c[3],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nsteps);</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_Hamiltonian_gauge(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*out,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*in);</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_broadcast_polyakov(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*poly,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_correlators(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>**ret,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*gf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*poly,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nsteps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>perm[3],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sign[3]);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_Hamiltonian_gauge(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*out,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_broadcast_polyakov(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*poly,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_correlators(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>**ret,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*gf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*poly,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nsteps,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>length,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>perm[3],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sign[3]);</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WL_wilsonloops(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>HYP_weight[3]);</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"></highlight></codeline>
 <codeline lineno="233"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_modenumber(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>inv,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nh,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*approxfile);</highlight></codeline>
@@ -5476,49 +5450,49 @@
 <codeline lineno="250"><highlight class="normal"></highlight></codeline>
 <codeline lineno="251"><highlight class="normal"><ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*init_rotated_corr_mem();</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"></highlight></codeline>
-<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXuup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXddp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXudp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXdup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtuup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtddp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtdup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtudp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1uup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1ddp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1udp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1dup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXuup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXddp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXdup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXudp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXuum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXddm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXudm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXdum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtuum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtddm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtdum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtudm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="277"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1uum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1ddm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="279"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1udm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="280"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1dum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="281"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXuum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXddm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXudm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
-<codeline lineno="284"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXdum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXuup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXddp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXudp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXdup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtuup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtddp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtdup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtudp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1uup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1ddp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1udp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1dup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXuup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXddp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXdup(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXudp(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXuum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXddm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXudm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gXdum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtuum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtddm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtdum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_gvtudm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1uum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1ddm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1udm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_g1dum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXuum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXddm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXudm(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rotated_lXdum(<ref refid="da/dc2/structchisf__mem" kindref="compound">chisf_mem</ref><sp/>*corr_mem,<sp/><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref><sp/>*chi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_uu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*prop_dd);</highlight></codeline>
 <codeline lineno="285"><highlight class="normal"></highlight></codeline>
 <codeline lineno="286"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Functions<sp/>that<sp/>include<sp/>four<sp/>fermion<sp/>interactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="287"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_propagator_ff_eo(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nm,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>acc);</highlight></codeline>
 <codeline lineno="288"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_propagator_ff_eo();</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"></highlight></codeline>
-<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
-<codeline lineno="291"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_eo(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
-<codeline lineno="292"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_oe(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
-<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_hopping_eo(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hopping,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
-<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_hopping_oe(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hopping,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
-<codeline lineno="295"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_hopping_series(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hopping,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_eo(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_oe(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_hopping_eo(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hopping,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_hopping_oe(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hopping,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calc_propagator_ff_hopping_series(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*psi,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*eta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hopping,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndilute);</highlight></codeline>
 <codeline lineno="296"><highlight class="normal"></highlight></codeline>
 <codeline lineno="297"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Disconnected<sp/>part<sp/>of<sp/>triplet<sp/>correlators<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="298"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_triplet_discon_correlators();</highlight></codeline>

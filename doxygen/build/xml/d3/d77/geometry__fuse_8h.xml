@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/d77/geometry__fuse_8h" kind="file" language="C++">
+    <compoundname>geometry_fuse.h</compoundname>
+    <includes refid="d6/d76/geometry__omp_8h" local="yes">geometry_omp.h</includes>
+    <includedby refid="d4/d67/geometry_8h" local="yes">geometry.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h_source"/>
+      </node>
+      <node id="2">
+        <label>geometry_omp.h</label>
+        <link refid="d6/d76/geometry__omp_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>geometry_fuse.h</label>
+        <link refid="d3/d77/geometry__fuse_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="4">
+        <label>global.h</label>
+        <link refid="d2/d49/global_8h_source"/>
+      </node>
+      <node id="5">
+        <label>utils.h</label>
+        <link refid="d5/d60/utils_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>geometry_check.h</label>
+        <link refid="d4/d3d/geometry__check_8h_source"/>
+      </node>
+      <node id="2">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>geometry_fuse.h</label>
+        <link refid="d3/d77/geometry__fuse_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d3/d77/geometry__fuse_8h_1a0baadab0b6ece6ff63e04354ca637e5a" prot="public" static="no">
+        <name>_FUSE_IDX</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <initializer>(type)-&gt;fuse_mask[_fuse_master_for_ip_##is]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" line="11" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/d77/geometry__fuse_8h_1aca699c7755b6749371678bc7c534ba5a" prot="public" static="no">
+        <name>_FUSE_MASTER_FOR</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1a9d02d636b888218ff65f7085d0189116" kindref="member">_FUSE_MASTER_FOR_RED</ref>(type, is, nowait, )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" line="13" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/d77/geometry__fuse_8h_1a70cb65e2ffda13c7869c037103da8759" prot="public" static="no">
+        <name>_FUSE_MASTER_FOR_SUM</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1a9d02d636b888218ff65f7085d0189116" kindref="member">_FUSE_MASTER_FOR_RED</ref>(type, is, _omp_sum(__VA_ARGS__), )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" line="14" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/d77/geometry__fuse_8h_1ab848d7fe118b08044c2e6722feaae431" prot="public" static="no">
+        <name>_FUSE_MASTER_FOR_MAX</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1a9d02d636b888218ff65f7085d0189116" kindref="member">_FUSE_MASTER_FOR_RED</ref>(type, is, _omp_max(__VA_ARGS__), )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" line="15" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d3/d77/geometry__fuse_8h_1a9a53c8f30c92ca5b11bcff3a8c91a684" prot="public" static="no">
+        <name>_FUSE_MASTER_FOR_MIN</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1a9d02d636b888218ff65f7085d0189116" kindref="member">_FUSE_MASTER_FOR_RED</ref>(type, is, _omp_min(__VA_ARGS__), )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" line="16" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FIXME: Add docs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GEOMETRY_FUSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GEOMETRY_FUSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d76/geometry__omp_8h" kindref="compound">geometry_omp.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FUSE_IDX(type,<sp/>is)<sp/>(type)-&gt;fuse_mask[_fuse_master_for_ip_##is]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FUSE_MASTER_FOR(type,<sp/>is)<sp/>_FUSE_MASTER_FOR_RED(type,<sp/>is,<sp/>nowait,<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FUSE_MASTER_FOR_SUM(type,<sp/>is,<sp/>...)<sp/>_FUSE_MASTER_FOR_RED(type,<sp/>is,<sp/>_omp_sum(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FUSE_MASTER_FOR_MAX(type,<sp/>is,<sp/>...)<sp/>_FUSE_MASTER_FOR_RED(type,<sp/>is,<sp/>_omp_max(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FUSE_MASTER_FOR_MIN(type,<sp/>is,<sp/>...)<sp/>_FUSE_MASTER_FOR_RED(type,<sp/>is,<sp/>_omp_min(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_fuse.h"/>
+  </compounddef>
+</doxygen>

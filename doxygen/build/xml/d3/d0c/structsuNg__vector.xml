@@ -4,7 +4,7 @@
     <compoundname>suNg_vector</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d3/d0c/structsuNg__vector_1ac1c27ba54fd9c7e2d0ac3aa299af1f95" prot="public" static="no" mutable="no">
-        <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+        <type>hr_complex</type>
         <definition>hr_complex suNg_vector::c[2]</definition>
         <argsstring>[2]</argsstring>
         <name>c</name>

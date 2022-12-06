@@ -1,6 +1,6 @@
 <map id="force_gauge_par" name="force_gauge_par">
-<area shape="rect" id="node1" title=" " alt="" coords="105,184,224,211"/>
-<area shape="rect" id="node2" href="$d4/d75/struct__suNg__av__field.html" title=" " alt="" coords="109,95,221,121"/>
-<area shape="rect" id="node3" href="$db/d43/struct__geometry__descriptor.html" title=" " alt="" coords="5,5,153,32"/>
-<area shape="rect" id="node4" href="$d3/dcb/structsuNg__algebra__vector.html" title=" " alt="" coords="178,5,322,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="99,184,218,211"/>
+<area shape="rect" id="node2" href="$db/dc8/structsuNg__av__field.html" title="Field of SU(N_g) algebra vectors." alt="" coords="106,95,211,121"/>
+<area shape="rect" id="node3" href="$df/da2/structgeometry__descriptor.html" title="This struct should contain all information necessary to perform operations on the local lattice inclu..." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node4" href="$d3/dcb/structsuNg__algebra__vector.html" title=" " alt="" coords="171,5,315,32"/>
 </map>

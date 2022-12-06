@@ -1,0 +1,6 @@
+<map id="spinor_field" name="spinor_field">
+<area shape="rect" id="node1" title="Spinor field array containing SU(N_f) spinors in chosen fermion representation." alt="" coords="61,184,149,211"/>
+<area shape="rect" id="node2" href="$df/da2/structgeometry__descriptor.html" title="This struct should contain all information necessary to perform operations on the local lattice inclu..." alt="" coords="5,95,147,121"/>
+<area shape="rect" id="node3" href="$d8/dd1/structsuNf__spinor.html" title=" " alt="" coords="171,95,263,121"/>
+<area shape="rect" id="node4" href="$de/d49/structsuNf__vector.html" title=" " alt="" coords="171,5,263,32"/>
+</map>

@@ -2,19 +2,60 @@
 \label{struct__suNg__field}\index{\_suNg\_field@{\_suNg\_field}}
 
 
+Gauge field of SU(\+N\+\_\+g) matrices.  
+
+
+
+
+{\ttfamily \#include $<$spinor\+\_\+field.\+h$>$}
+
+
+
 Collaboration diagram for \+\_\+su\+Ng\+\_\+field\+:
 % FIG 0
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{struct__suNg__field_aeffc93216d18979c42c04c2f68d9f135}\label{struct__suNg__field_aeffc93216d18979c42c04c2f68d9f135}} 
-\mbox{\hyperlink{structsuNg}{su\+Ng}} $\ast$ {\bfseries ptr}
+\mbox{\hyperlink{structsuNg}{su\+Ng}} $\ast$ \mbox{\hyperlink{struct__suNg__field_a7ddd821bc5f1935925035e45b8b35559}{ptr}}
 \item 
-\mbox{\Hypertarget{struct__suNg__field_ab0ec502675260ebe78cd9b6637fb04e9}\label{struct__suNg__field_ab0ec502675260ebe78cd9b6637fb04e9}} 
-\mbox{\hyperlink{struct__geometry__descriptor}{geometry\+\_\+descriptor}} $\ast$ {\bfseries type}
+\mbox{\hyperlink{struct__geometry__descriptor}{geometry\+\_\+descriptor}} $\ast$ \mbox{\hyperlink{struct__suNg__field_a757e8ca74f63628b8f9a12e99c614bc6}{type}}
+\item 
+\mbox{\hyperlink{structsuNg}{su\+Ng}} $\ast$ \mbox{\hyperlink{struct__suNg__field_a98b482db466600c28db98da97605b302}{gpu\+\_\+ptr}}
+\item 
+MPI\+\_\+\+Request \mbox{\hyperlink{struct__suNg__field_a07bc349d2483a0e36b6ba95ed7450b27}{comm\+\_\+req}}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+Gauge field of SU(\+N\+\_\+g) matrices. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct__suNg__field_a07bc349d2483a0e36b6ba95ed7450b27}\label{struct__suNg__field_a07bc349d2483a0e36b6ba95ed7450b27}} 
+\index{\_suNg\_field@{\_suNg\_field}!comm\_req@{comm\_req}}
+\index{comm\_req@{comm\_req}!\_suNg\_field@{\_suNg\_field}}
+\doxysubsubsection{\texorpdfstring{comm\_req}{comm\_req}}
+{\footnotesize\ttfamily \+\_\+su\+Ng\+\_\+field\+::comm\+\_\+req}
+
+Only active for WITH\+\_\+\+MPI. Communication request handles for inter-\/node communication. \mbox{\Hypertarget{struct__suNg__field_a98b482db466600c28db98da97605b302}\label{struct__suNg__field_a98b482db466600c28db98da97605b302}} 
+\index{\_suNg\_field@{\_suNg\_field}!gpu\_ptr@{gpu\_ptr}}
+\index{gpu\_ptr@{gpu\_ptr}!\_suNg\_field@{\_suNg\_field}}
+\doxysubsubsection{\texorpdfstring{gpu\_ptr}{gpu\_ptr}}
+{\footnotesize\ttfamily \+\_\+su\+Ng\+\_\+field\+::gpu\+\_\+ptr}
+
+Only active for WITH\+\_\+\+GPU. Contains field data on GPU memory. \mbox{\Hypertarget{struct__suNg__field_a7ddd821bc5f1935925035e45b8b35559}\label{struct__suNg__field_a7ddd821bc5f1935925035e45b8b35559}} 
+\index{\_suNg\_field@{\_suNg\_field}!ptr@{ptr}}
+\index{ptr@{ptr}!\_suNg\_field@{\_suNg\_field}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily \+\_\+su\+Ng\+\_\+field\+::ptr}
+
+Array of SU(\+N\+\_\+g) matrices, that contains the field data for the local lattice (in host memory) \mbox{\Hypertarget{struct__suNg__field_a757e8ca74f63628b8f9a12e99c614bc6}\label{struct__suNg__field_a757e8ca74f63628b8f9a12e99c614bc6}} 
+\index{\_suNg\_field@{\_suNg\_field}!type@{type}}
+\index{type@{type}!\_suNg\_field@{\_suNg\_field}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \+\_\+su\+Ng\+\_\+field\+::type}
+
+geometry\+\_\+descriptor contains geometry information for example pertaining the block decomposition 
+
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-spinor\+\_\+field.\+h\end{DoxyCompactItemize}
+\mbox{\hyperlink{spinor__field_8h}{spinor\+\_\+field.\+h}}\end{DoxyCompactItemize}

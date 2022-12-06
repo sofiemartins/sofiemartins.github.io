@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/da2/structgeometry__descriptor" kind="struct" language="C++" prot="public">
+    <compoundname>geometry_descriptor</compoundname>
+    <includes refid="d4/d67/geometry_8h" local="no">geometry.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a23ffd04f8caedd46a29d97d7acc9662e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::inner_master_pieces</definition>
+        <argsstring></argsstring>
+        <name>inner_master_pieces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pieces that contain only bulk elements and can therefore need no communications </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="121" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a3e17f50441d335d32d63c68d371a9130" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::local_master_pieces</definition>
+        <argsstring></argsstring>
+        <name>local_master_pieces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pieces that contain only sites of the local lattice. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="122" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1ac75b721c077490c1c15a628190108206" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::total_spinor_master_pieces</definition>
+        <argsstring></argsstring>
+        <name>total_spinor_master_pieces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total number of pieces for a spinor field. Since we need more buffers for the gauge fields, this number is smaller than the number of gauge master pieces and the buffer pieces are a subset of the buffer pieces for gauge field communications. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="123" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a7c5d98a7dde6a22701e42f314fb3d4a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::total_gauge_master_pieces</definition>
+        <argsstring></argsstring>
+        <name>total_gauge_master_pieces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Total number of pieces necessary for communications of a gauge field. Since we need more buffers for the gauge fields this number is bigger than the number of spinor master pieces and the buffer pieces for the gauge fields are a superset of the buffer pieces for the spinor field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="124" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1ab8714a952029fddffa9e812bdf60a0c7" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>geometry_descriptor::master_start</definition>
+        <argsstring></argsstring>
+        <name>master_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that takes the piece number as index and returns the index of the first site in the field data that is element of the piece with the given index. It is assumed that other elements on the piece are stored on the following indices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="125" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1ab9cb9919306a0f907c2034fe36ba63f4" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>geometry_descriptor::master_end</definition>
+        <argsstring></argsstring>
+        <name>master_end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that takes the piece number as index and returns the index of the last site in field data that is element of the piece with the given index. It is assumed that other elements on the piece are stored in preceding indices. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="125" column="20" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a4c0128cc03799cf6b729e1d7af962405" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::master_shift</definition>
+        <argsstring></argsstring>
+        <name>master_shift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This gives the shift of spinor relative to a full lattice. For example: A spinor with odd parity has a geometry that is deplaced by half the number of lattice sites relative to a spinor that is defined on the full lattice. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="126" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a85006b5fb655ca72574d26823a4a618b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::ncopies_spinor</definition>
+        <argsstring></argsstring>
+        <name>ncopies_spinor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This gives the number of pieces that need to be copied from the local lattice to the local lattice in order to ensure contingency of piece data in memory for the spinor field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="127" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1ac11d8544c0cba35cae9db51b98c083f7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::ncopies_gauge</definition>
+        <argsstring></argsstring>
+        <name>ncopies_gauge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This gives the number of pieces that need to be copied from the local lattice to the local lattice in order to ensure contingency of piece data in memory for the gauge field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="128" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a22c5a96052c654f3f16b35bd245fc678" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* geometry_descriptor::copy_from</definition>
+        <argsstring></argsstring>
+        <name>copy_from</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="129" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a656206cf2f96f3cc0ad5e6b861c8a3c8" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int * geometry_descriptor::copy_to</definition>
+        <argsstring></argsstring>
+        <name>copy_to</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="129" column="17" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a70d9f1d06bdff72836ed47025811b817" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int * geometry_descriptor::copy_len</definition>
+        <argsstring></argsstring>
+        <name>copy_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="129" column="25" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1ae7f09c1a81685bb7ed6120da69df72ba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int geometry_descriptor::copy_shift</definition>
+        <argsstring></argsstring>
+        <name>copy_shift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="130" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1aca58b874e5a5c021ca28fc9f0aee4495" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::nbuffers_spinor</definition>
+        <argsstring></argsstring>
+        <name>nbuffers_spinor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of buffers that need to be transferred for the spinor field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="131" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a05b8047c7d59b411904965bbf00197f2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>geometry_descriptor::nbuffers_gauge</definition>
+        <argsstring></argsstring>
+        <name>nbuffers_gauge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of buffers that need to be transferred for the gauge field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="132" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1ac70d932690430b6bfe9607dc6f9870b9" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>geometry_descriptor::rbuf_len</definition>
+        <argsstring></argsstring>
+        <name>rbuf_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that takes a buffer id and then returns the length of this buffer on the receive side. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="133" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1ac1dec7e0f1a6c102865074e3616bec80" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>geometry_descriptor::sbuf_len</definition>
+        <argsstring></argsstring>
+        <name>sbuf_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that takes a buffer id and then returns the length of this buffer on the send site. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="133" column="16" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a66adec7833d775d33825b2ad88a26846" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>geometry_descriptor::rbuf_from_proc</definition>
+        <argsstring></argsstring>
+        <name>rbuf_from_proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that takes a buffer id and then return the process id of the target process. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="134" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a671c61e60b4e4f86aa192e021467f084" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>geometry_descriptor::rbuf_start</definition>
+        <argsstring></argsstring>
+        <name>rbuf_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that takes a buffer id and returns an index of the first site in memory that contains a site that is an element of the buffer piece. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="134" column="22" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a2fdd86843127af54eba62612d846321d" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>geometry_descriptor::sbuf_to_proc</definition>
+        <argsstring></argsstring>
+        <name>sbuf_to_proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that takes a buffer id and returns the process id of the process that sends the corresponding buffer. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="135" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1aa0c79f08c358cd8864fdfe64dd4f9e3d" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>geometry_descriptor::sbuf_start</definition>
+        <argsstring></argsstring>
+        <name>sbuf_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array that takes a buffer id and returns an index of the first site in memory that contains a site that is an element of the send buffer piece. FIXME: Complete this... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="135" column="20" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a2f3736da2c61ca4dce5eeb48b2ef01a9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int geometry_descriptor::gsize_spinor</definition>
+        <argsstring></argsstring>
+        <name>gsize_spinor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="136" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a0854aa26ad516de1ecd50f1584211d5f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int geometry_descriptor::gsize_gauge</definition>
+        <argsstring></argsstring>
+        <name>gsize_gauge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="137" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1ac3c315ce46943b528f29cdae485e7549" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* geometry_descriptor::fuse_mask</definition>
+        <argsstring></argsstring>
+        <name>fuse_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="138" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1afd42835058f4157981e90c9d20e98acc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int geometry_descriptor::fuse_gauge_size</definition>
+        <argsstring></argsstring>
+        <name>fuse_gauge_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="139" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/da2/structgeometry__descriptor_1a1538a46e0145c9f5ab3fe9180e4f0a18" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int geometry_descriptor::fuse_inner_counter</definition>
+        <argsstring></argsstring>
+        <name>fuse_inner_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="140" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This struct should contain all information necessary to perform operations on the local lattice including correct inter-core and inter-node communications. More information on GPU geometry with illustrations can be found in the developer guide in the section on GPU geometry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" line="119" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry.h" bodystart="120" bodyend="141"/>
+    <listofallmembers>
+      <member refid="df/da2/structgeometry__descriptor_1a22c5a96052c654f3f16b35bd245fc678" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>copy_from</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a70d9f1d06bdff72836ed47025811b817" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>copy_len</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1ae7f09c1a81685bb7ed6120da69df72ba" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>copy_shift</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a656206cf2f96f3cc0ad5e6b861c8a3c8" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>copy_to</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1afd42835058f4157981e90c9d20e98acc" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>fuse_gauge_size</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a1538a46e0145c9f5ab3fe9180e4f0a18" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>fuse_inner_counter</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1ac3c315ce46943b528f29cdae485e7549" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>fuse_mask</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a0854aa26ad516de1ecd50f1584211d5f" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>gsize_gauge</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a2f3736da2c61ca4dce5eeb48b2ef01a9" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>gsize_spinor</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a23ffd04f8caedd46a29d97d7acc9662e" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>inner_master_pieces</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a3e17f50441d335d32d63c68d371a9130" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>local_master_pieces</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1ab9cb9919306a0f907c2034fe36ba63f4" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>master_end</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a4c0128cc03799cf6b729e1d7af962405" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>master_shift</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1ab8714a952029fddffa9e812bdf60a0c7" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>master_start</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a05b8047c7d59b411904965bbf00197f2" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>nbuffers_gauge</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1aca58b874e5a5c021ca28fc9f0aee4495" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>nbuffers_spinor</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1ac11d8544c0cba35cae9db51b98c083f7" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>ncopies_gauge</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a85006b5fb655ca72574d26823a4a618b" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>ncopies_spinor</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a66adec7833d775d33825b2ad88a26846" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>rbuf_from_proc</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1ac70d932690430b6bfe9607dc6f9870b9" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>rbuf_len</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a671c61e60b4e4f86aa192e021467f084" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>rbuf_start</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1ac1dec7e0f1a6c102865074e3616bec80" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>sbuf_len</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1aa0c79f08c358cd8864fdfe64dd4f9e3d" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>sbuf_start</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a2fdd86843127af54eba62612d846321d" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>sbuf_to_proc</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1a7c5d98a7dde6a22701e42f314fb3d4a9" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>total_gauge_master_pieces</name></member>
+      <member refid="df/da2/structgeometry__descriptor_1ac75b721c077490c1c15a628190108206" prot="public" virt="non-virtual"><scope>geometry_descriptor</scope><name>total_spinor_master_pieces</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

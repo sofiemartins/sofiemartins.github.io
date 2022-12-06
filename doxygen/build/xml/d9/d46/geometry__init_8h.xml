@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/d46/geometry__init_8h" kind="file" language="C++">
+    <compoundname>geometry_init.h</compoundname>
+    <includedby refid="d4/d67/geometry_8h" local="yes">geometry.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>geometry_init.h</label>
+        <link refid="d9/d46/geometry__init_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="4">
+        <label>global.h</label>
+        <link refid="d2/d49/global_8h_source"/>
+      </node>
+      <node id="5">
+        <label>utils.h</label>
+        <link refid="d5/d60/utils_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>geometry_check.h</label>
+        <link refid="d4/d3d/geometry__check_8h_source"/>
+      </node>
+      <node id="2">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1a086732e844d52910606551378f5a874f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void origin_coord</definition>
+        <argsstring>(int *c)</argsstring>
+        <name>origin_coord</name>
+        <param>
+          <type>int *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="10" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1a97228368162d3ab6125995fc7c97687f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void other_proc_origin_coord</definition>
+        <argsstring>(int *proc_coord, int *c)</argsstring>
+        <name>other_proc_origin_coord</name>
+        <param>
+          <type>int *</type>
+          <declname>proc_coord</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="11" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1aa3be6e771708f459712a623eba90a17c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void glb_to_proc</definition>
+        <argsstring>(int *g, int *p)</argsstring>
+        <name>glb_to_proc</name>
+        <param>
+          <type>int *</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="12" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1a76b988c2ad17073111eba029b5aaf45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int geometry_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>geometry_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="14" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="14" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1ab54cd98dc5649183afdfdb5f20c47a3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_mpi_eo</definition>
+        <argsstring>(void)</argsstring>
+        <name>geometry_mpi_eo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="15" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="15" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1aa159bac7b49c803fb336cecc52d36631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void geometry_mem_alloc</definition>
+        <argsstring>(void)</argsstring>
+        <name>geometry_mem_alloc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="16" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1aec55a049e41f9295915bec7e8b2be6f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int proc_up</definition>
+        <argsstring>(int id, int dir)</argsstring>
+        <name>proc_up</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="17" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="17" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1a8d18ef3052c4993e56c0d536a2273def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int proc_dn</definition>
+        <argsstring>(int id, int dir)</argsstring>
+        <name>proc_dn</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="18" column="5" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="18" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1a1e2a4f3f1ef738c14a0543aff53947b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void free_geometry_mpi_eo</definition>
+        <argsstring>(void)</argsstring>
+        <name>free_geometry_mpi_eo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="20" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1afe4f8ea06e524fc85af953350e6b25f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void init_geometry_SAP</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_geometry_SAP</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="22" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1a5206983736a8f1568b2ca3bf1e844326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_geometry_mpi</definition>
+        <argsstring>(void)</argsstring>
+        <name>test_geometry_mpi</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="23" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1a5a7e6e688b777ac7526f94d8318e3e4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void test_geometry_mpi_eo</definition>
+        <argsstring>(void)</argsstring>
+        <name>test_geometry_mpi_eo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="24" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d46/geometry__init_8h_1ab517fe1a030c8dc1a52cf94870cf453d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_wdmatrix</definition>
+        <argsstring>(char *filename)</argsstring>
+        <name>print_wdmatrix</name>
+        <param>
+          <type>char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" line="25" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h" declline="25" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Initialization functions, that determine all important parameters of the geometry, so that communications and operations can be completed correctly. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GEOMETRY_INIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GEOMETRY_INIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>origin_coord(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*c);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>other_proc_origin_coord(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*proc_coord,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*c);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>glb_to_proc(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*g,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*p);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>geometry_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>geometry_mpi_eo(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>geometry_mem_alloc(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>proc_up(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>proc_dn(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_geometry_mpi_eo(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_geometry_SAP(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_geometry_mpi(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_geometry_mpi_eo(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_wdmatrix(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gpu.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_gpu(input_gpu<sp/>gpu_var);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_neighbors_gpu();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_init.h"/>
+  </compounddef>
+</doxygen>

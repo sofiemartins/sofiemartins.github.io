@@ -1,0 +1,181 @@
+\hypertarget{geometry_8h}{}\doxysection{geometry.\+h File Reference}
+\label{geometry_8h}\index{geometry.h@{geometry.h}}
+
+
+This file contains information on the geometry of the local lattice, block decomposed geometry, buffers, etc. All geometric properties that are needed to perform operations correctly have to be contained in the struct \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}}. In order to encapsulate the complicated geometry structure iteration over lattice sites is simplified through macros given in this file. This simplified performing operations on lattice data.  
+
+
+{\ttfamily \#include \char`\"{}hr\+\_\+omp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}geometry\+\_\+omp.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}geometry\+\_\+fuse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}geometry\+\_\+init.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cpu\+\_\+geometry.\+h\char`\"{}}\newline
+Include dependency graph for geometry.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}}
+\begin{DoxyCompactList}\small\item\em This struct should contain all information necessary to perform operations on the local lattice including correct inter-\/core and inter-\/node communications. More information on GPU geometry with illustrations can be found in the developer guide in the section on GPU geometry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{geometry_8h_a379a925918004f1659f941352dd9944d}\label{geometry_8h_a379a925918004f1659f941352dd9944d}} 
+\#define {\bfseries BORDERSIZE}~1
+\item 
+\#define \mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type,  ip,  is,  redop1,  redop2)
+\begin{DoxyCompactList}\small\item\em Reduced iteration over sites of a given piece. Variables given as redop parameters are reduced using an Open\+MP reduction sum. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry_8h_aed64332bb5597fc68e9c30cd5c472377}{\+\_\+\+SITE\+\_\+\+FOR}}(type,  ip,  is)~\mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type, ip, is, nowait, )
+\begin{DoxyCompactList}\small\item\em Iterate over sites of a given piece. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry_8h_a02427ad54780dfeb12a1211ec1672b5b}{\+\_\+\+MASTER\+\_\+\+FOR}}(type,  is)~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, , )
+\begin{DoxyCompactList}\small\item\em Iterate over all sites of the local lattice. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry_8h_a29b455b128483748638bcd6342fd8d7c}{\+\_\+\+ONE\+\_\+\+SPINOR\+\_\+\+FOR}}(s)~\mbox{\hyperlink{geometry__omp_8h_af3d244a74e93ebd8d972b31211483d8f}{\+\_\+\+ONE\+\_\+\+SPINOR\+\_\+\+FOR\+\_\+\+RED}}(s,,)
+\begin{DoxyCompactList}\small\item\em Iterate over all sites of the local lattice but not by index in memory but by spinor. The current spinor can be found using \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s)}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry_8h_aaf1c85365079ce137da26f5b39ad218a}{\+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR}}(s1,  s2)~\+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED(s1,s2,,)
+\begin{DoxyCompactList}\small\item\em Iterate over two corresponding spinors on the given fields. The current spinors can be found using \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s1)}} and \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s2)}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry_8h_aeddee20430cac03313f50b1f5ae1ec06}{\+\_\+\+THREE\+\_\+\+SPINORS\+\_\+\+FOR}}(s1,  s2,  s3)~\+\_\+\+THREE\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED(s1,s2,s3,,)
+\begin{DoxyCompactList}\small\item\em Iterate over all three corresponding spinors on the given fields. The current spinors can be found using \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s1)}}, \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s2)}}, \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s3)}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR}}(s)~\+\_\+\+FIELD\+\_\+\+AT(s,\+\_\+spinor\+\_\+for\+\_\+is)
+\begin{DoxyCompactList}\small\item\em Retrieve current spinor field. This macro only works insite \+\_\+\+SPINOR\+\_\+\+FOR, \+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR or \+\_\+\+THREE\+\_\+\+SPINORS\+\_\+\+FOR. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains information on the geometry of the local lattice, block decomposed geometry, buffers, etc. All geometric properties that are needed to perform operations correctly have to be contained in the struct \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}}. In order to encapsulate the complicated geometry structure iteration over lattice sites is simplified through macros given in this file. This simplified performing operations on lattice data. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{geometry_8h_a02427ad54780dfeb12a1211ec1672b5b}\label{geometry_8h_a02427ad54780dfeb12a1211ec1672b5b}} 
+\index{geometry.h@{geometry.h}!\_MASTER\_FOR@{\_MASTER\_FOR}}
+\index{\_MASTER\_FOR@{\_MASTER\_FOR}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{\_MASTER\_FOR}{\_MASTER\_FOR}}
+{\footnotesize\ttfamily \#define \+\_\+\+MASTER\+\_\+\+FOR(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{is }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, , )}
+
+
+
+Iterate over all sites of the local lattice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice \\
+\hline
+{\em is} & Local variable that runs over all site indices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_a29b455b128483748638bcd6342fd8d7c}\label{geometry_8h_a29b455b128483748638bcd6342fd8d7c}} 
+\index{geometry.h@{geometry.h}!\_ONE\_SPINOR\_FOR@{\_ONE\_SPINOR\_FOR}}
+\index{\_ONE\_SPINOR\_FOR@{\_ONE\_SPINOR\_FOR}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{\_ONE\_SPINOR\_FOR}{\_ONE\_SPINOR\_FOR}}
+{\footnotesize\ttfamily \#define \+\_\+\+ONE\+\_\+\+SPINOR\+\_\+\+FOR(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry__omp_8h_af3d244a74e93ebd8d972b31211483d8f}{\+\_\+\+ONE\+\_\+\+SPINOR\+\_\+\+FOR\+\_\+\+RED}}(s,,)}
+
+
+
+Iterate over all sites of the local lattice but not by index in memory but by spinor. The current spinor can be found using \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s)}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Input spinor field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_aed64332bb5597fc68e9c30cd5c472377}\label{geometry_8h_aed64332bb5597fc68e9c30cd5c472377}} 
+\index{geometry.h@{geometry.h}!\_SITE\_FOR@{\_SITE\_FOR}}
+\index{\_SITE\_FOR@{\_SITE\_FOR}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{\_SITE\_FOR}{\_SITE\_FOR}}
+{\footnotesize\ttfamily \#define \+\_\+\+SITE\+\_\+\+FOR(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{ip,  }\item[{}]{is }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type, ip, is, nowait, )}
+
+
+
+Iterate over sites of a given piece. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice \\
+\hline
+{\em ip} & Identifying index of the current piece \\
+\hline
+{\em is} & Local variable that runs over all site indices on the given piece \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_a72d8a3ce27714e0875e067679d895f58}\label{geometry_8h_a72d8a3ce27714e0875e067679d895f58}} 
+\index{geometry.h@{geometry.h}!\_SITE\_FOR\_RED@{\_SITE\_FOR\_RED}}
+\index{\_SITE\_FOR\_RED@{\_SITE\_FOR\_RED}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{\_SITE\_FOR\_RED}{\_SITE\_FOR\_RED}}
+{\footnotesize\ttfamily \#define \+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{ip,  }\item[{}]{is,  }\item[{}]{redop1,  }\item[{}]{redop2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \_OMP\_PRAGMA(\_omp\_parallel)                        \(\backslash\)}
+\DoxyCodeLine{  \_OMP\_PRAGMA(\_omp\_for redop1 redop2)               \(\backslash\)}
+\DoxyCodeLine{  for (\textcolor{keywordtype}{int} is = (type)-\/>master\_start[ip]; is <= (type)-\/>master\_end[ip]; is++)}
+
+\end{DoxyCode}
+
+
+Reduced iteration over sites of a given piece. Variables given as redop parameters are reduced using an Open\+MP reduction sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local and global lattice \\
+\hline
+{\em ip} & Identifying index of the current piece \\
+\hline
+{\em is} & Local variable that runs over all site indices on the piece \\
+\hline
+{\em redop1} & Variable to reduce \\
+\hline
+{\em redop2} & Variable to reduce \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}\label{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}} 
+\index{geometry.h@{geometry.h}!\_SPINOR\_PTR@{\_SPINOR\_PTR}}
+\index{\_SPINOR\_PTR@{\_SPINOR\_PTR}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{\_SPINOR\_PTR}{\_SPINOR\_PTR}}
+{\footnotesize\ttfamily \#define \+\_\+\+SPINOR\+\_\+\+PTR(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~\+\_\+\+FIELD\+\_\+\+AT(s,\+\_\+spinor\+\_\+for\+\_\+is)}
+
+
+
+Retrieve current spinor field. This macro only works insite \+\_\+\+SPINOR\+\_\+\+FOR, \+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR or \+\_\+\+THREE\+\_\+\+SPINORS\+\_\+\+FOR. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Spinor field that is being iterated over. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_aeddee20430cac03313f50b1f5ae1ec06}\label{geometry_8h_aeddee20430cac03313f50b1f5ae1ec06}} 
+\index{geometry.h@{geometry.h}!\_THREE\_SPINORS\_FOR@{\_THREE\_SPINORS\_FOR}}
+\index{\_THREE\_SPINORS\_FOR@{\_THREE\_SPINORS\_FOR}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{\_THREE\_SPINORS\_FOR}{\_THREE\_SPINORS\_FOR}}
+{\footnotesize\ttfamily \#define \+\_\+\+THREE\+\_\+\+SPINORS\+\_\+\+FOR(\begin{DoxyParamCaption}\item[{}]{s1,  }\item[{}]{s2,  }\item[{}]{s3 }\end{DoxyParamCaption})~\+\_\+\+THREE\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED(s1,s2,s3,,)}
+
+
+
+Iterate over all three corresponding spinors on the given fields. The current spinors can be found using \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s1)}}, \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s2)}}, \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s3)}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & First input spinor field \\
+\hline
+{\em s2} & Second input spinor field \\
+\hline
+{\em s3} & Third input spinor field \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry_8h_aaf1c85365079ce137da26f5b39ad218a}\label{geometry_8h_aaf1c85365079ce137da26f5b39ad218a}} 
+\index{geometry.h@{geometry.h}!\_TWO\_SPINORS\_FOR@{\_TWO\_SPINORS\_FOR}}
+\index{\_TWO\_SPINORS\_FOR@{\_TWO\_SPINORS\_FOR}!geometry.h@{geometry.h}}
+\doxysubsubsection{\texorpdfstring{\_TWO\_SPINORS\_FOR}{\_TWO\_SPINORS\_FOR}}
+{\footnotesize\ttfamily \#define \+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR(\begin{DoxyParamCaption}\item[{}]{s1,  }\item[{}]{s2 }\end{DoxyParamCaption})~\+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED(s1,s2,,)}
+
+
+
+Iterate over two corresponding spinors on the given fields. The current spinors can be found using \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s1)}} and \mbox{\hyperlink{geometry_8h_ae27a9385750ceb1fc11fa5665ef6f5ba}{\+\_\+\+SPINOR\+\_\+\+PTR(s2)}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & First input spinor field \\
+\hline
+{\em s2} & Second input spinor field \\
+\hline
+\end{DoxyParams}

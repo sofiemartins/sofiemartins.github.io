@@ -5,7 +5,7 @@
     <includes refid="df/dc5/scattering_8h" local="no">scattering.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d0/d94/structsrc__common_1afdb39c102289b02ba97871ee860ce4eb" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_common::src_0</definition>
         <argsstring></argsstring>
         <name>src_0</name>
@@ -19,7 +19,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="26" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d94/structsrc__common_1a897379bd96c9daf84d37a9b3777d4ac4" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_common::src_0_eta</definition>
         <argsstring></argsstring>
         <name>src_0_eta</name>
@@ -33,7 +33,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="27" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d0/d94/structsrc__common_1aa095e6159082ceb7e8f573848d77122c" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_common::src_0_0</definition>
         <argsstring></argsstring>
         <name>src_0_0</name>
@@ -53,25 +53,25 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="4">
-        <label>suNf_spinor</label>
-        <link refid="d8/dd1/structsuNf__spinor"/>
-        <childnode refid="5" relation="usage">
-          <edgelabel>c</edgelabel>
-        </childnode>
-      </node>
       <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
       </node>
       <node id="2">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
         <childnode refid="3" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>c</edgelabel>
         </childnode>
       </node>
       <node id="1">

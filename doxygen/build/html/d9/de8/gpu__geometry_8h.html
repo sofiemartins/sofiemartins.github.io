@@ -537,12 +537,11 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*4)*(_stride); \</div>
-<div class="line">        (_v).c[0]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[1]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[2]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[3]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; \</div>
+<div class="line">        (_v).c[0]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[1]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[2]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[3]=((hr_complex*)(_in))[__iz]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="astructhr__complex_html"><div class="ttname"><a href="../../d7/de2/structhr__complex.html">hr_complex</a></div><div class="ttdef"><b>Definition:</b> gpu_complex.h:606</div></div>
 </div><!-- fragment -->
 <p>Read <a class="el" href="../../d0/d04/structsuNf.html">suNf</a> matrix according to device geometry structure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -731,12 +730,11 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*4)*(_stride); \</div>
-<div class="line">        (_v).c[0]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[1]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[2]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[3]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; \</div>
+<div class="line">        (_v).c[0]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[1]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[2]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[3]=((hr_complex_flt*)(_in))[__iz]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="astructhr__complex__flt_html"><div class="ttname"><a href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a></div><div class="ttdef"><b>Definition:</b> gpu_complex.h:291</div></div>
 </div><!-- fragment -->
 <p>Read <a class="el" href="../../db/d3f/structsuNf__flt.html">suNf_flt</a> matrix according to device geometry structure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -925,8 +923,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*2)*(_stride); \</div>
-<div class="line">        (_v).c[0]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[1]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; \</div>
+<div class="line">        (_v).c[0]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[1]=((hr_complex*)(_in))[__iz]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Read <a class="el" href="../../de/d49/structsuNf__vector.html">suNf_vector</a> according to device geometry structure. </p>
@@ -988,8 +986,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*2)*(_stride); \</div>
-<div class="line">        (_v).c[0]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[1]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; \</div>
+<div class="line">        (_v).c[0]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[1]=((hr_complex_flt*)(_in))[__iz]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Read <a class="el" href="../../d8/d5b/structsuNf__vector__flt.html">suNf_vector_flt</a> according to device geometry structure. </p>
@@ -1167,10 +1165,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*4)*(_stride); \</div>
-<div class="line">        (_v).c[0]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[1]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[2]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[3]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; \</div>
+<div class="line">        (_v).c[0]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[1]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[2]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[3]=((hr_complex*)(_in))[__iz]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Read <a class="el" href="../../d8/d0f/structsuNg.html">suNg</a> matrix according to device geometry structure. </p>
@@ -1360,10 +1358,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*4)*(_stride); \</div>
-<div class="line">        (_v).c[0]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[1]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[2]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[3]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; \</div>
+<div class="line">        (_v).c[0]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[1]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[2]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[3]=((hr_complex_flt*)(_in))[__iz]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Read <a class="el" href="../../d1/d3e/structsuNg__flt.html">suNg_flt</a> matrix according to device geometry structure. </p>
@@ -1553,8 +1551,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*2)*(_stride); \</div>
-<div class="line">        (_v).c[0]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[1]=((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_in))[__iz]; \</div>
+<div class="line">        (_v).c[0]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[1]=((hr_complex*)(_in))[__iz]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Read <a class="el" href="../../d3/d0c/structsuNg__vector.html">suNg_vector</a> according to device geometry structure. </p>
@@ -1616,8 +1614,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*2)*(_stride); \</div>
-<div class="line">        (_v).c[0]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; __iz+=(_stride); \</div>
-<div class="line">        (_v).c[1]=((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_in))[__iz]; \</div>
+<div class="line">        (_v).c[0]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \</div>
+<div class="line">        (_v).c[1]=((hr_complex_flt*)(_in))[__iz]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Read <a class="el" href="../../d1/d07/structsuNg__vector__flt.html">suNg_vector_flt</a> according to device geometry structure. </p>
@@ -2039,10 +2037,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*4)*(_stride); \</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[3]; \</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[3]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Write <a class="el" href="../../d0/d04/structsuNf.html">suNf</a> matrix according to device geometry structure. </p>
@@ -2232,10 +2230,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*4)*(_stride); \</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[3]; \</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[3]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Write <a class="el" href="../../db/d3f/structsuNf__flt.html">suNf_flt</a> matrix according to device geometry structure. </p>
@@ -2425,8 +2423,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*2)*(_stride); \</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[1]; \</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[1]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Write <a class="el" href="../../de/d49/structsuNf__vector.html">suNf_vector</a> according to device geometry structure. </p>
@@ -2488,8 +2486,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*2)*(_stride); \</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[1]; \</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[1]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Write <a class="el" href="../../d8/d5b/structsuNf__vector__flt.html">suNf_vector_flt</a> according to device geometry structure. </p>
@@ -2667,10 +2665,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*4)*(_stride); \</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[3]; \</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[3]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Write <a class="el" href="../../d8/d0f/structsuNg.html">suNg</a> matrix according to device geometry structure. </p>
@@ -2860,10 +2858,10 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*4)*(_stride); \</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[3]; \</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[3]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Write <a class="el" href="../../d1/d3e/structsuNg__flt.html">suNg_flt</a> matrix according to device geometry structure. </p>
@@ -3053,8 +3051,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*2)*(_stride); \</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>*)(_out))[__iz]=(_v).c[1]; \</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex*)(_out))[__iz]=(_v).c[1]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Write <a class="el" href="../../d3/d0c/structsuNg__vector.html">suNg_vector</a> according to device geometry structure. </p>
@@ -3116,8 +3114,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">        int __iz = (_ix) + ((_comp)*2)*(_stride); \</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
-<div class="line">        ((<a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>*)(_out))[__iz]=(_v).c[1]; \</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\</div>
+<div class="line">        ((hr_complex_flt*)(_out))[__iz]=(_v).c[1]; \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Write <a class="el" href="../../d1/d07/structsuNg__vector__flt.html">suNg_vector_flt</a> according to device geometry structure. </p>

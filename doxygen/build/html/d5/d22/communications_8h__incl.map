@@ -1,0 +1,9 @@
+<map id="communications.h" name="communications.h">
+<area shape="rect" id="node1" title="Communications to send and receive sites from other nodes using MPI." alt="" coords="55,5,183,32"/>
+<area shape="rect" id="node2" href="$d3/ded/spinor__field_8h.html" title="The elementary site structures defined in suN.h are used in this file to define field structures that..." alt="" coords="11,80,109,107"/>
+<area shape="rect" id="node7" href="$d7/d24/reduction_8h.html" title="Functions for MPI reductions." alt="" coords="134,80,221,107"/>
+<area shape="rect" id="node3" href="$d9/d21/suN__types_8h_source.html" title=" " alt="" coords="12,155,108,181"/>
+<area shape="rect" id="node4" href="$d1/d74/hr__complex_8h_source.html" title=" " alt="" coords="11,229,109,256"/>
+<area shape="rect" id="node5" href="$d2/dfb/cpu__complex_8h_source.html" title=" " alt="" coords="5,304,115,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="23,379,97,405"/>
+</map>

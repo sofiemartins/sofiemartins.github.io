@@ -159,7 +159,7 @@
       </node>
       <node id="13">
         <label>memory.h</label>
-        <link refid="dc/d18/memory_8h_source"/>
+        <link refid="dc/d18/memory_8h"/>
       </node>
       <node id="15">
         <label>random.h</label>
@@ -1761,8 +1761,8 @@
         <param><defname>x</defname></param>
         <initializer>   do {  \
       int __iz=(iy)+((x)*2)*(stride); \
-      (v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(in))[__iz]; __iz+=(stride); \
-      (v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(in))[__iz]; \
+      (v).c[0]=((hr_complex_flt*)(in))[__iz]; __iz+=(stride); \
+      (v).c[1]=((hr_complex_flt*)(in))[__iz]; \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -1781,8 +1781,8 @@
         <param><defname>x</defname></param>
         <initializer>   do {  \
       int __iz=(iy)+((x)*2)*(stride); \
-      (v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(in))[__iz]; __iz+=(stride); \
-      (v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(in))[__iz]; \
+      (v).c[0]=((hr_complex*)(in))[__iz]; __iz+=(stride); \
+      (v).c[1]=((hr_complex*)(in))[__iz]; \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -1801,8 +1801,8 @@
         <param><defname>x</defname></param>
         <initializer>   do {  \
       int __iz=(iy)+((x)*2)*(stride); \
-      ((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(out))[__iz]=(v).c[0]; __iz+=(stride); \
-      ((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(out))[__iz]=(v).c[1]; \
+      ((hr_complex_flt*)(out))[__iz]=(v).c[0]; __iz+=(stride); \
+      ((hr_complex_flt*)(out))[__iz]=(v).c[1]; \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -1821,8 +1821,8 @@
         <param><defname>x</defname></param>
         <initializer>   do {  \
       int __iz=(iy)+((x)*2)*(stride); \
-      ((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(out))[__iz]=(v).c[0]; __iz+=(stride); \
-      ((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(out))[__iz]=(v).c[1]; \
+      ((hr_complex*)(out))[__iz]=(v).c[0]; __iz+=(stride); \
+      ((hr_complex*)(out))[__iz]=(v).c[1]; \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -1972,16 +1972,16 @@
 		 double real_part, imag_part; \
       real_part = ((float*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((float*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[0]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[0]=hr_complex(real_part, imag_part); \
       real_part = ((float*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((float*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[1]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[1]=hr_complex(real_part, imag_part); \
       real_part = ((float*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((float*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[2]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[2]=hr_complex(real_part, imag_part); \
 		 real_part = ((float*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((float*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[3]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[3]=hr_complex(real_part, imag_part); \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -2003,16 +2003,16 @@
 		 double real_part, imag_part; \
       real_part = ((double*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((double*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[0]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[0]=hr_complex(real_part, imag_part); \
       real_part = ((double*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((double*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[1]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[1]=hr_complex(real_part, imag_part); \
       real_part = ((double*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((double*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[2]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[2]=hr_complex(real_part, imag_part); \
 		 real_part = ((double*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((double*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[3]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[3]=hr_complex(real_part, imag_part); \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -3567,8 +3567,8 @@
         <param><defname>x</defname></param>
         <initializer>   do {  \
       int __iz=(iy)+((x)*2)*(stride); \
-      (v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(in))[__iz]; __iz+=(stride); \
-      (v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(in))[__iz]; \
+      (v).c[0]=((hr_complex_flt*)(in))[__iz]; __iz+=(stride); \
+      (v).c[1]=((hr_complex_flt*)(in))[__iz]; \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -3587,8 +3587,8 @@
         <param><defname>x</defname></param>
         <initializer>   do {  \
       int __iz=(iy)+((x)*2)*(stride); \
-      (v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(in))[__iz]; __iz+=(stride); \
-      (v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(in))[__iz]; \
+      (v).c[0]=((hr_complex*)(in))[__iz]; __iz+=(stride); \
+      (v).c[1]=((hr_complex*)(in))[__iz]; \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -3607,8 +3607,8 @@
         <param><defname>x</defname></param>
         <initializer>   do {  \
       int __iz=(iy)+((x)*2)*(stride); \
-      ((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(out))[__iz]=(v).c[0]; __iz+=(stride); \
-      ((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(out))[__iz]=(v).c[1]; \
+      ((hr_complex_flt*)(out))[__iz]=(v).c[0]; __iz+=(stride); \
+      ((hr_complex_flt*)(out))[__iz]=(v).c[1]; \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -3627,8 +3627,8 @@
         <param><defname>x</defname></param>
         <initializer>   do {  \
       int __iz=(iy)+((x)*2)*(stride); \
-      ((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(out))[__iz]=(v).c[0]; __iz+=(stride); \
-      ((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(out))[__iz]=(v).c[1]; \
+      ((hr_complex*)(out))[__iz]=(v).c[0]; __iz+=(stride); \
+      ((hr_complex*)(out))[__iz]=(v).c[1]; \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -3778,16 +3778,16 @@
 		 double real_part, imag_part; \
       real_part = ((float*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((float*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[0]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[0]=hr_complex(real_part, imag_part); \
       real_part = ((float*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((float*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[1]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[1]=hr_complex(real_part, imag_part); \
       real_part = ((float*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((float*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[2]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[2]=hr_complex(real_part, imag_part); \
 		 real_part = ((float*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((float*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[3]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[3]=hr_complex(real_part, imag_part); \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
@@ -3809,16 +3809,16 @@
 		 double real_part, imag_part; \
       real_part = ((double*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((double*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[0]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[0]=hr_complex(real_part, imag_part); \
       real_part = ((double*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((double*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[1]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[1]=hr_complex(real_part, imag_part); \
       real_part = ((double*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((double*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[2]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[2]=hr_complex(real_part, imag_part); \
 		 real_part = ((double*)(in))[__iz]; __iz+=(stride); \
 		 imag_part = ((double*)(in))[__iz]; __iz+=(stride); \
-		 (v).c[3]=<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>(real_part, imag_part); \
+		 (v).c[3]=hr_complex(real_part, imag_part); \
    } while (0)</initializer>
         <briefdescription>
         </briefdescription>

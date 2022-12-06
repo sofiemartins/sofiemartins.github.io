@@ -19,7 +19,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="35" column="5" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/dd2/structsrc__p_1aa677df41c337056a2c790924f0a2f831" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_p::src_p</definition>
         <argsstring></argsstring>
         <name>src_p</name>
@@ -32,7 +32,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="36" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/dd2/structsrc__p_1a495eab4b4c7a91b867c8de143defb4da" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_p::src_mp</definition>
         <argsstring></argsstring>
         <name>src_mp</name>
@@ -45,7 +45,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="37" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/dd2/structsrc__p_1a2b33177d09cec220135adb3bd7468f9d" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_p::src_0_p</definition>
         <argsstring></argsstring>
         <name>src_0_p</name>
@@ -58,7 +58,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="38" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/dd2/structsrc__p_1a29b61199087f7ba1480224d927c4f126" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_p::src_0_mp</definition>
         <argsstring></argsstring>
         <name>src_0_mp</name>
@@ -71,7 +71,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="39" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/dd2/structsrc__p_1a7169271b0529395168281ede48cfd028" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_p::src_p_0</definition>
         <argsstring></argsstring>
         <name>src_p_0</name>
@@ -84,7 +84,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="40" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d3/dd2/structsrc__p_1abb48780706ebd4f0b5f002622f7d1a27" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* src_p::src_mp_0</definition>
         <argsstring></argsstring>
         <name>src_mp_0</name>
@@ -103,25 +103,25 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="4">
-        <label>suNf_spinor</label>
-        <link refid="d8/dd1/structsuNf__spinor"/>
-        <childnode refid="5" relation="usage">
-          <edgelabel>c</edgelabel>
-        </childnode>
-      </node>
       <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
       </node>
       <node id="2">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
         <childnode refid="3" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>c</edgelabel>
         </childnode>
       </node>
       <node id="5">

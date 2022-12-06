@@ -2,69 +2,14 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="d3/d33/struct__spinor__field" kind="struct" language="C++" prot="public">
     <compoundname>_spinor_field</compoundname>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="d3/d33/struct__spinor__field_1a95becf29af2d25f01a1693a4ccee954d" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref> *</type>
-        <definition>suNf_spinor* _spinor_field::ptr</definition>
-        <argsstring></argsstring>
-        <name>ptr</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="50" column="41" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="50" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="d3/d33/struct__spinor__field_1a5749f44e4fde2a37626658922e2ac746" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
-        <definition>geometry_descriptor* _spinor_field::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="50" column="66" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="50" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
+    <includes refid="d3/ded/spinor__field_8h" local="no">spinor_field.h</includes>
     <briefdescription>
+<para>Spinor field array containing SU(N_f) spinors in chosen fermion representation. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="3">
-        <label>suNf_spinor</label>
-        <link refid="d8/dd1/structsuNf__spinor"/>
-        <childnode refid="4" relation="usage">
-          <edgelabel>c</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
-      <node id="1">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>ptr</edgelabel>
-        </childnode>
-      </node>
-      <node id="4">
-        <label>suNf_vector</label>
-        <link refid="de/d49/structsuNf__vector"/>
-      </node>
-    </collaborationgraph>
-    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="50" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="50" bodyend="50"/>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="152" column="1"/>
     <listofallmembers>
-      <member refid="d3/d33/struct__spinor__field_1a95becf29af2d25f01a1693a4ccee954d" prot="public" virt="non-virtual"><scope>_spinor_field</scope><name>ptr</name></member>
-      <member refid="d3/d33/struct__spinor__field_1a5749f44e4fde2a37626658922e2ac746" prot="public" virt="non-virtual"><scope>_spinor_field</scope><name>type</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

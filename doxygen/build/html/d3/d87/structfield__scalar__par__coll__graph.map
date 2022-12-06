@@ -1,6 +1,6 @@
 <map id="field_scalar_par" name="field_scalar_par">
-<area shape="rect" id="node1" title=" " alt="" coords="68,199,181,225"/>
-<area shape="rect" id="node2" href="$d8/dc4/struct__suNg__scalar__field.html" title=" " alt="" coords="58,95,191,121"/>
-<area shape="rect" id="node3" href="$d3/d0c/structsuNg__vector.html" title=" " alt="" coords="5,5,100,32"/>
-<area shape="rect" id="node4" href="$db/d43/struct__geometry__descriptor.html" title=" " alt="" coords="124,5,272,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="90,199,203,225"/>
+<area shape="rect" id="node2" href="$d6/d10/structsuNg__scalar__field.html" title="SU(N_g) scalar field of SU(N_g) vectors." alt="" coords="83,95,210,121"/>
+<area shape="rect" id="node3" href="$df/da2/structgeometry__descriptor.html" title="This struct should contain all information necessary to perform operations on the local lattice inclu..." alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node4" href="$d3/d0c/structsuNg__vector.html" title=" " alt="" coords="171,5,266,32"/>
 </map>

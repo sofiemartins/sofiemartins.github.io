@@ -1,0 +1,35 @@
+\hypertarget{geometry__fuse_8h}{}\doxysection{geometry\+\_\+fuse.\+h File Reference}
+\label{geometry__fuse_8h}\index{geometry\_fuse.h@{geometry\_fuse.h}}
+
+
+FIXME\+: Add docs.  
+
+
+{\ttfamily \#include \char`\"{}geometry\+\_\+omp.\+h\char`\"{}}\newline
+Include dependency graph for geometry\+\_\+fuse.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{geometry__fuse_8h_a0baadab0b6ece6ff63e04354ca637e5a}\label{geometry__fuse_8h_a0baadab0b6ece6ff63e04354ca637e5a}} 
+\#define {\bfseries \+\_\+\+FUSE\+\_\+\+IDX}(type,  is)~(type)-\/$>$fuse\+\_\+mask\mbox{[}\+\_\+fuse\+\_\+master\+\_\+for\+\_\+ip\+\_\+\#\#is\mbox{]}
+\item 
+\mbox{\Hypertarget{geometry__fuse_8h_aca699c7755b6749371678bc7c534ba5a}\label{geometry__fuse_8h_aca699c7755b6749371678bc7c534ba5a}} 
+\#define {\bfseries \+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR}(type,  is)~\mbox{\hyperlink{geometry__omp_8h_a9d02d636b888218ff65f7085d0189116}{\+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, nowait, )
+\item 
+\mbox{\Hypertarget{geometry__fuse_8h_a70cb65e2ffda13c7869c037103da8759}\label{geometry__fuse_8h_a70cb65e2ffda13c7869c037103da8759}} 
+\#define {\bfseries \+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+SUM}(type,  is, ...)~\mbox{\hyperlink{geometry__omp_8h_a9d02d636b888218ff65f7085d0189116}{\+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+sum(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\item 
+\mbox{\Hypertarget{geometry__fuse_8h_ab848d7fe118b08044c2e6722feaae431}\label{geometry__fuse_8h_ab848d7fe118b08044c2e6722feaae431}} 
+\#define {\bfseries \+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+MAX}(type,  is, ...)~\mbox{\hyperlink{geometry__omp_8h_a9d02d636b888218ff65f7085d0189116}{\+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+max(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\item 
+\mbox{\Hypertarget{geometry__fuse_8h_a9a53c8f30c92ca5b11bcff3a8c91a684}\label{geometry__fuse_8h_a9a53c8f30c92ca5b11bcff3a8c91a684}} 
+\#define {\bfseries \+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+MIN}(type,  is, ...)~\mbox{\hyperlink{geometry__omp_8h_a9d02d636b888218ff65f7085d0189116}{\+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+min(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+FIXME\+: Add docs. 
+

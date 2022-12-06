@@ -58,11 +58,11 @@
         <argsstring>(spinor_field *prop, spinor_field *source, int src_id, int n_mom, storage_switch swc, data_storage_array **ret)</argsstring>
         <name>measure_bilinear_loops_spinorfield</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -95,11 +95,11 @@
         <argsstring>(spinor_field *prop, spinor_field *source, int src_id, int tau, int col, int eo, storage_switch swc, data_storage_array **ret)</argsstring>
         <name>measure_bilinear_loops_4spinorfield</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>prop</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>source</declname>
         </param>
         <param>
@@ -201,8 +201,8 @@
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data_storage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_bilinear_loops_spinorfield(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*<sp/>prop,<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*<sp/>source,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/>storage_switch<sp/>swc,<sp/><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>**ret);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_bilinear_loops_4spinorfield(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*<sp/>prop,<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>*<sp/>source,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_id,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eo,storage_switch<sp/>swc,<sp/><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>**ret);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_bilinear_loops_spinorfield(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>*<sp/>prop,<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>*<sp/>source,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,<sp/>storage_switch<sp/>swc,<sp/><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>**ret);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_bilinear_loops_4spinorfield(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>*<sp/>prop,<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>*<sp/>source,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>src_id,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tau,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eo,storage_switch<sp/>swc,<sp/><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>**ret);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>measure_loops(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nhits,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>conf_num,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>precision,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>source_type,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_mom,storage_switch<sp/>swc,<sp/><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>**ret);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>

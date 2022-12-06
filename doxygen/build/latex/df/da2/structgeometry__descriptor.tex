@@ -1,0 +1,188 @@
+\hypertarget{structgeometry__descriptor}{}\doxysection{geometry\+\_\+descriptor Struct Reference}
+\label{structgeometry__descriptor}\index{geometry\_descriptor@{geometry\_descriptor}}
+
+
+This struct should contain all information necessary to perform operations on the local lattice including correct inter-\/core and inter-\/node communications. More information on GPU geometry with illustrations can be found in the developer guide in the section on GPU geometry.  
+
+
+
+
+{\ttfamily \#include $<$geometry.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_a23ffd04f8caedd46a29d97d7acc9662e}{inner\+\_\+master\+\_\+pieces}}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_a3e17f50441d335d32d63c68d371a9130}{local\+\_\+master\+\_\+pieces}}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_ac75b721c077490c1c15a628190108206}{total\+\_\+spinor\+\_\+master\+\_\+pieces}}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_a7c5d98a7dde6a22701e42f314fb3d4a9}{total\+\_\+gauge\+\_\+master\+\_\+pieces}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgeometry__descriptor_ab8714a952029fddffa9e812bdf60a0c7}{master\+\_\+start}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgeometry__descriptor_ab9cb9919306a0f907c2034fe36ba63f4}{master\+\_\+end}}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_a4c0128cc03799cf6b729e1d7af962405}{master\+\_\+shift}}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_a85006b5fb655ca72574d26823a4a618b}{ncopies\+\_\+spinor}}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_ac11d8544c0cba35cae9db51b98c083f7}{ncopies\+\_\+gauge}}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_a22c5a96052c654f3f16b35bd245fc678}\label{structgeometry__descriptor_a22c5a96052c654f3f16b35bd245fc678}} 
+int $\ast$ {\bfseries copy\+\_\+from}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_a656206cf2f96f3cc0ad5e6b861c8a3c8}\label{structgeometry__descriptor_a656206cf2f96f3cc0ad5e6b861c8a3c8}} 
+int $\ast$ {\bfseries copy\+\_\+to}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_a70d9f1d06bdff72836ed47025811b817}\label{structgeometry__descriptor_a70d9f1d06bdff72836ed47025811b817}} 
+int $\ast$ {\bfseries copy\+\_\+len}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_ae7f09c1a81685bb7ed6120da69df72ba}\label{structgeometry__descriptor_ae7f09c1a81685bb7ed6120da69df72ba}} 
+int {\bfseries copy\+\_\+shift}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_aca58b874e5a5c021ca28fc9f0aee4495}{nbuffers\+\_\+spinor}}
+\item 
+int \mbox{\hyperlink{structgeometry__descriptor_a05b8047c7d59b411904965bbf00197f2}{nbuffers\+\_\+gauge}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgeometry__descriptor_ac70d932690430b6bfe9607dc6f9870b9}{rbuf\+\_\+len}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgeometry__descriptor_ac1dec7e0f1a6c102865074e3616bec80}{sbuf\+\_\+len}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgeometry__descriptor_a66adec7833d775d33825b2ad88a26846}{rbuf\+\_\+from\+\_\+proc}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgeometry__descriptor_a671c61e60b4e4f86aa192e021467f084}{rbuf\+\_\+start}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgeometry__descriptor_a2fdd86843127af54eba62612d846321d}{sbuf\+\_\+to\+\_\+proc}}
+\item 
+int $\ast$ \mbox{\hyperlink{structgeometry__descriptor_aa0c79f08c358cd8864fdfe64dd4f9e3d}{sbuf\+\_\+start}}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_a2f3736da2c61ca4dce5eeb48b2ef01a9}\label{structgeometry__descriptor_a2f3736da2c61ca4dce5eeb48b2ef01a9}} 
+int {\bfseries gsize\+\_\+spinor}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_a0854aa26ad516de1ecd50f1584211d5f}\label{structgeometry__descriptor_a0854aa26ad516de1ecd50f1584211d5f}} 
+int {\bfseries gsize\+\_\+gauge}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_ac3c315ce46943b528f29cdae485e7549}\label{structgeometry__descriptor_ac3c315ce46943b528f29cdae485e7549}} 
+int $\ast$ {\bfseries fuse\+\_\+mask}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_afd42835058f4157981e90c9d20e98acc}\label{structgeometry__descriptor_afd42835058f4157981e90c9d20e98acc}} 
+int {\bfseries fuse\+\_\+gauge\+\_\+size}
+\item 
+\mbox{\Hypertarget{structgeometry__descriptor_a1538a46e0145c9f5ab3fe9180e4f0a18}\label{structgeometry__descriptor_a1538a46e0145c9f5ab3fe9180e4f0a18}} 
+int {\bfseries fuse\+\_\+inner\+\_\+counter}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This struct should contain all information necessary to perform operations on the local lattice including correct inter-\/core and inter-\/node communications. More information on GPU geometry with illustrations can be found in the developer guide in the section on GPU geometry. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structgeometry__descriptor_a23ffd04f8caedd46a29d97d7acc9662e}\label{structgeometry__descriptor_a23ffd04f8caedd46a29d97d7acc9662e}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!inner\_master\_pieces@{inner\_master\_pieces}}
+\index{inner\_master\_pieces@{inner\_master\_pieces}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{inner\_master\_pieces}{inner\_master\_pieces}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::inner\+\_\+master\+\_\+pieces}
+
+Pieces that contain only bulk elements and can therefore need no communications \mbox{\Hypertarget{structgeometry__descriptor_a3e17f50441d335d32d63c68d371a9130}\label{structgeometry__descriptor_a3e17f50441d335d32d63c68d371a9130}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!local\_master\_pieces@{local\_master\_pieces}}
+\index{local\_master\_pieces@{local\_master\_pieces}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{local\_master\_pieces}{local\_master\_pieces}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::local\+\_\+master\+\_\+pieces}
+
+Pieces that contain only sites of the local lattice. \mbox{\Hypertarget{structgeometry__descriptor_ab9cb9919306a0f907c2034fe36ba63f4}\label{structgeometry__descriptor_ab9cb9919306a0f907c2034fe36ba63f4}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!master\_end@{master\_end}}
+\index{master\_end@{master\_end}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{master\_end}{master\_end}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::master\+\_\+end}
+
+Array that takes the piece number as index and returns the index of the last site in field data that is element of the piece with the given index. It is assumed that other elements on the piece are stored in preceding indices. \mbox{\Hypertarget{structgeometry__descriptor_a4c0128cc03799cf6b729e1d7af962405}\label{structgeometry__descriptor_a4c0128cc03799cf6b729e1d7af962405}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!master\_shift@{master\_shift}}
+\index{master\_shift@{master\_shift}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{master\_shift}{master\_shift}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::master\+\_\+shift}
+
+This gives the shift of spinor relative to a full lattice. For example\+: A spinor with odd parity has a geometry that is deplaced by half the number of lattice sites relative to a spinor that is defined on the full lattice. \mbox{\Hypertarget{structgeometry__descriptor_ab8714a952029fddffa9e812bdf60a0c7}\label{structgeometry__descriptor_ab8714a952029fddffa9e812bdf60a0c7}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!master\_start@{master\_start}}
+\index{master\_start@{master\_start}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{master\_start}{master\_start}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::master\+\_\+start}
+
+Array that takes the piece number as index and returns the index of the first site in the field data that is element of the piece with the given index. It is assumed that other elements on the piece are stored on the following indices. \mbox{\Hypertarget{structgeometry__descriptor_a05b8047c7d59b411904965bbf00197f2}\label{structgeometry__descriptor_a05b8047c7d59b411904965bbf00197f2}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!nbuffers\_gauge@{nbuffers\_gauge}}
+\index{nbuffers\_gauge@{nbuffers\_gauge}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{nbuffers\_gauge}{nbuffers\_gauge}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::nbuffers\+\_\+gauge}
+
+Number of buffers that need to be transferred for the gauge field. \mbox{\Hypertarget{structgeometry__descriptor_aca58b874e5a5c021ca28fc9f0aee4495}\label{structgeometry__descriptor_aca58b874e5a5c021ca28fc9f0aee4495}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!nbuffers\_spinor@{nbuffers\_spinor}}
+\index{nbuffers\_spinor@{nbuffers\_spinor}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{nbuffers\_spinor}{nbuffers\_spinor}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::nbuffers\+\_\+spinor}
+
+Number of buffers that need to be transferred for the spinor field. \mbox{\Hypertarget{structgeometry__descriptor_ac11d8544c0cba35cae9db51b98c083f7}\label{structgeometry__descriptor_ac11d8544c0cba35cae9db51b98c083f7}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!ncopies\_gauge@{ncopies\_gauge}}
+\index{ncopies\_gauge@{ncopies\_gauge}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{ncopies\_gauge}{ncopies\_gauge}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::ncopies\+\_\+gauge}
+
+This gives the number of pieces that need to be copied from the local lattice to the local lattice in order to ensure contingency of piece data in memory for the gauge field. \mbox{\Hypertarget{structgeometry__descriptor_a85006b5fb655ca72574d26823a4a618b}\label{structgeometry__descriptor_a85006b5fb655ca72574d26823a4a618b}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!ncopies\_spinor@{ncopies\_spinor}}
+\index{ncopies\_spinor@{ncopies\_spinor}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{ncopies\_spinor}{ncopies\_spinor}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::ncopies\+\_\+spinor}
+
+This gives the number of pieces that need to be copied from the local lattice to the local lattice in order to ensure contingency of piece data in memory for the spinor field. \mbox{\Hypertarget{structgeometry__descriptor_a66adec7833d775d33825b2ad88a26846}\label{structgeometry__descriptor_a66adec7833d775d33825b2ad88a26846}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!rbuf\_from\_proc@{rbuf\_from\_proc}}
+\index{rbuf\_from\_proc@{rbuf\_from\_proc}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{rbuf\_from\_proc}{rbuf\_from\_proc}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::rbuf\+\_\+from\+\_\+proc}
+
+Array that takes a buffer id and then return the process id of the target process. \mbox{\Hypertarget{structgeometry__descriptor_ac70d932690430b6bfe9607dc6f9870b9}\label{structgeometry__descriptor_ac70d932690430b6bfe9607dc6f9870b9}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!rbuf\_len@{rbuf\_len}}
+\index{rbuf\_len@{rbuf\_len}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{rbuf\_len}{rbuf\_len}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::rbuf\+\_\+len}
+
+Array that takes a buffer id and then returns the length of this buffer on the receive side. \mbox{\Hypertarget{structgeometry__descriptor_a671c61e60b4e4f86aa192e021467f084}\label{structgeometry__descriptor_a671c61e60b4e4f86aa192e021467f084}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!rbuf\_start@{rbuf\_start}}
+\index{rbuf\_start@{rbuf\_start}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{rbuf\_start}{rbuf\_start}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::rbuf\+\_\+start}
+
+Array that takes a buffer id and returns an index of the first site in memory that contains a site that is an element of the buffer piece. \mbox{\Hypertarget{structgeometry__descriptor_ac1dec7e0f1a6c102865074e3616bec80}\label{structgeometry__descriptor_ac1dec7e0f1a6c102865074e3616bec80}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!sbuf\_len@{sbuf\_len}}
+\index{sbuf\_len@{sbuf\_len}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{sbuf\_len}{sbuf\_len}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::sbuf\+\_\+len}
+
+Array that takes a buffer id and then returns the length of this buffer on the send site. \mbox{\Hypertarget{structgeometry__descriptor_aa0c79f08c358cd8864fdfe64dd4f9e3d}\label{structgeometry__descriptor_aa0c79f08c358cd8864fdfe64dd4f9e3d}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!sbuf\_start@{sbuf\_start}}
+\index{sbuf\_start@{sbuf\_start}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{sbuf\_start}{sbuf\_start}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::sbuf\+\_\+start}
+
+Array that takes a buffer id and returns an index of the first site in memory that contains a site that is an element of the send buffer piece. FIXME\+: Complete this... \mbox{\Hypertarget{structgeometry__descriptor_a2fdd86843127af54eba62612d846321d}\label{structgeometry__descriptor_a2fdd86843127af54eba62612d846321d}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!sbuf\_to\_proc@{sbuf\_to\_proc}}
+\index{sbuf\_to\_proc@{sbuf\_to\_proc}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{sbuf\_to\_proc}{sbuf\_to\_proc}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::sbuf\+\_\+to\+\_\+proc}
+
+Array that takes a buffer id and returns the process id of the process that sends the corresponding buffer. \mbox{\Hypertarget{structgeometry__descriptor_a7c5d98a7dde6a22701e42f314fb3d4a9}\label{structgeometry__descriptor_a7c5d98a7dde6a22701e42f314fb3d4a9}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!total\_gauge\_master\_pieces@{total\_gauge\_master\_pieces}}
+\index{total\_gauge\_master\_pieces@{total\_gauge\_master\_pieces}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{total\_gauge\_master\_pieces}{total\_gauge\_master\_pieces}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::total\+\_\+gauge\+\_\+master\+\_\+pieces}
+
+Total number of pieces necessary for communications of a gauge field. Since we need more buffers for the gauge fields this number is bigger than the number of spinor master pieces and the buffer pieces for the gauge fields are a superset of the buffer pieces for the spinor field. \mbox{\Hypertarget{structgeometry__descriptor_ac75b721c077490c1c15a628190108206}\label{structgeometry__descriptor_ac75b721c077490c1c15a628190108206}} 
+\index{geometry\_descriptor@{geometry\_descriptor}!total\_spinor\_master\_pieces@{total\_spinor\_master\_pieces}}
+\index{total\_spinor\_master\_pieces@{total\_spinor\_master\_pieces}!geometry\_descriptor@{geometry\_descriptor}}
+\doxysubsubsection{\texorpdfstring{total\_spinor\_master\_pieces}{total\_spinor\_master\_pieces}}
+{\footnotesize\ttfamily geometry\+\_\+descriptor\+::total\+\_\+spinor\+\_\+master\+\_\+pieces}
+
+Total number of pieces for a spinor field. Since we need more buffers for the gauge fields, this number is smaller than the number of gauge master pieces and the buffer pieces are a subset of the buffer pieces for gauge field communications. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{geometry_8h}{geometry.\+h}}\end{DoxyCompactItemize}

@@ -121,7 +121,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="116" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="116" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dc/df2/struct__monomial_1a40c1cc1c4904d75df76b9ac00562ed53" prot="public" static="no" mutable="no">
-        <type>const <ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *(*</type>
+        <type>const <ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *(*</type>
         <definition>const spinor_field*(* _monomial::pseudofermion) (const struct _monomial *)</definition>
         <argsstring>)(const struct _monomial *)</argsstring>
         <name>pseudofermion</name>
@@ -153,31 +153,31 @@
     </detaileddescription>
     <collaborationgraph>
       <node id="4">
-        <label>suNf_spinor</label>
-        <link refid="d8/dd1/structsuNf__spinor"/>
-        <childnode refid="5" relation="usage">
-          <edgelabel>c</edgelabel>
-        </childnode>
-      </node>
-      <node id="6">
-        <label>monomial_data</label>
-        <link refid="d0/d2c/structmonomial__data"/>
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
       </node>
       <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
-      <node id="2">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
-        <childnode refid="3" relation="usage">
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
+        <childnode refid="4" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
       <node id="5">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>monomial_data</label>
+        <link refid="d0/d2c/structmonomial__data"/>
+      </node>
+      <node id="6">
         <label>suNf_vector</label>
         <link refid="de/d49/structsuNf__vector"/>
       </node>
@@ -185,10 +185,10 @@
         <label>_monomial</label>
         <link refid="dc/df2/struct__monomial"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>pseudofermion</edgelabel>
-        </childnode>
-        <childnode refid="6" relation="usage">
           <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pseudofermion</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

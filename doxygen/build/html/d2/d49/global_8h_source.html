@@ -177,151 +177,166 @@ $(document).ready(function(){initNavTree('d2/d49/global_8h_source.html','../../'
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/* Geometry indexes */</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*ipt, =NULL);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*ipt_4d,=NULL);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*ipt_4d,=NULL); <span class="comment">//CP: is this used? </span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*iup,=NULL);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*idn,=NULL);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,zerocoord[4],={0,0,0,0});</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">/* Geometry structures */</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#define ipt(t,x,y,z) ipt[((((t)+T_BORDER)*(X_EXT)+((x)+X_BORDER))*(Y_EXT)+((y)+Y_BORDER))*(Z_EXT)+((z)+Z_BORDER)]</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#define ipt_ext(t,x,y,z) ipt[(((t)*(X_EXT)+(x))*(Y_EXT)+(y))*(Z_EXT)+(z)]</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#define ipt_4d(t,x) ipt_4d[(t)*(VOL3)+(x)]</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#define iup(site,dir) iup[(site)*4+(dir)]</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#define idn(site,dir) idn[(site)*4+(dir)]</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;GLB_VAR(<span class="keywordtype">char</span>,*imask,=NULL);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,zerocoord[4],={0,0,0,0});</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,BLK_T,=3);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,BLK_X,=3);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,BLK_Y,=3);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,BLK_Z,=3);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">/* Geometry structures */</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#include &quot;geometry.h&quot;</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glattice,={0}); <span class="comment">/* global lattice */</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glat_even,={0}); <span class="comment">/* global even lattice */</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glat_odd,={0}); <span class="comment">/* global odd lattice */</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glat_even_red,={0});</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glat_odd_red,={0});</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glat_even_black,={0});</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glat_odd_black,={0});</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glat_red,={0});</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;GLB_VAR(<a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>,glat_black,={0});</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#define _lexi(_T,_X,_Y,_Z,_t,_x,_y,_z) ((((_t)*(_X)+(_x))*(_Y)+(_y))*(_Z)+(_z))</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">// #define _index_ext(_T,_X,_Y,_Z,_t,_x,_y,_z,_BT,_BX,_BY,_BZ) _lexi(_T,_X,_Y,_Z,((_t)+(_BT)),((_x)+(_BX))((_y)+(_BY))((_z)+(_BZ)))</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#define ipt_ext(t,x,y,z) ipt[_lexi(T_EXT, X_EXT, Y_EXT, Z_EXT, t, x, y, z)]</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#define ipt(t,x,y,z) ipt_ext((t)+T_BORDER, (x)+X_BORDER, (y)+Y_BORDER, (z)+Z_BORDER)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#define imask(ix) imask[ix]</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">// #define ipt(t,x,y,z) ipt[((((t)+T_BORDER)*(X_EXT)+((x)+X_BORDER))*(Y_EXT)+((y)+Y_BORDER))*(Z_EXT)+((z)+Z_BORDER)]</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// #define ipt_ext(t,x,y,z) ipt[(((t)*(X_EXT)+(x))*(Y_EXT)+(y))*(Z_EXT)+(z)]</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#define ipt_4d(t,x) ipt_4d[(t)*(VOL3)+(x)]</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#define iup(site,dir) iup[(site)*4+(dir)]</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#define idn(site,dir) idn[(site)*4+(dir)]</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#ifdef UPDATE_EO</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#define glat_default glat_even</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define glat_default glattice</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">/* Memory */</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> _mem_t {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  CPU_MEM = 1&lt;&lt;0,</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  GPU_MEM = 1&lt;&lt;1</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;} mem_t;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#ifdef WITH_GPU</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#define STD_MEM_TYPE (CPU_MEM | GPU_MEM)</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#include &quot;gpu.h&quot;</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#define BLOCK_SIZE 256</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#define BLOCK_SIZE_LINEAR_ALGEBRA 512</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#define BLOCK_SIZE_GLOBAL_SUM 512</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#define BLOCK_SIZE_DIRAC 512</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#define BLOCK_SIZE_DIRAC_FLT 512</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;GLB_VAR(input_gpu,gpu_var,=init_input_gpu(gpu_var));</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*iup_gpu,=NULL);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*idn_gpu,=NULL);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;GLB_VAR(<span class="keywordtype">int</span>, gpu_id,=0);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;GLB_VAR(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>, grid_size_max_gpu,=65535);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#define STD_MEM_TYPE (CPU_MEM)</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;GLB_VAR(mem_t,std_mem_t, =STD_MEM_TYPE); <span class="comment">/* default memory allocation type for fields */</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;GLB_VAR(mem_t,alloc_mem_t, =STD_MEM_TYPE); <span class="comment">/* memory type requested for allocating fields */</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">/* Gauge field */</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#include &quot;field_ordering.h&quot;</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#include &quot;suN_types.h&quot;</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#include &quot;spinor_field.h&quot;</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;GLB_VAR(<a class="code" href="../../d9/d96/struct__suNg__field.html">suNg_field</a>,*u_gauge,=NULL);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;GLB_VAR(<a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a>,*u_scalar,=NULL);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;GLB_VAR(<a class="code" href="../../d2/d8d/struct__suNg__field__flt.html">suNg_field_flt</a>,*u_gauge_flt,=NULL);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;GLB_VAR(<a class="code" href="../../da/d8f/struct__suNf__field.html">suNf_field</a>,*u_gauge_f,=NULL);</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;GLB_VAR(<a class="code" href="../../d9/d96/struct__suNg__field.html">suNg_field</a>,*u_gauge_s,=NULL);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;GLB_VAR(<a class="code" href="../../d0/dcf/struct__suNf__field__flt.html">suNf_field_flt</a>,*u_gauge_f_flt,=NULL);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;GLB_VAR(<a class="code" href="../../d2/db6/struct__suNfc__field.html">suNfc_field</a>,*cl_term,=NULL);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;GLB_VAR(<a class="code" href="../../da/d8f/struct__suNf__field.html">suNf_field</a>,*cl_force,=NULL);</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;GLB_VAR(<a class="code" href="../../d9/d93/struct__ldl__field.html">ldl_field</a>,*cl_ldl,=NULL);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;GLB_VAR(<a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a>,*suN_momenta,=NULL);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;GLB_VAR(<a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a>,*scalar_momenta,=NULL);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,gauge_field_active,=0); <span class="comment">// whether gauge field interactions is active</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/* Geometry structures */</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d4/d67/geometry_8h.html">geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glattice,={0}); <span class="comment">/* global lattice */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glat_even,={0}); <span class="comment">/* global even lattice */</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glat_odd,={0}); <span class="comment">/* global odd lattice */</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glat_even_red,={0});</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glat_odd_red,={0});</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glat_even_black,={0});</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glat_odd_black,={0});</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glat_red,={0});</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;GLB_VAR(<a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>,glat_black,={0});</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#ifdef UPDATE_EO</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#define glat_default glat_even</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#define glat_default glattice</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">/* Memory */</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> _mem_t {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  CPU_MEM = 1&lt;&lt;0,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  GPU_MEM = 1&lt;&lt;1</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;} mem_t;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#ifdef WITH_GPU</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#define STD_MEM_TYPE (CPU_MEM | GPU_MEM)</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#include &quot;gpu.h&quot;</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#define BLOCK_SIZE 256</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#define BLOCK_SIZE_LINEAR_ALGEBRA 512</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#define BLOCK_SIZE_GLOBAL_SUM 512</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#define BLOCK_SIZE_DIRAC 512</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#define BLOCK_SIZE_DIRAC_FLT 512</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;GLB_VAR(input_gpu,gpu_var,=init_input_gpu(gpu_var));</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*iup_gpu,=NULL);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*idn_gpu,=NULL);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;GLB_VAR(<span class="keywordtype">int</span>, gpu_id,=0);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;GLB_VAR(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>, grid_size_max_gpu,=65535);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#define STD_MEM_TYPE (CPU_MEM)</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;GLB_VAR(mem_t,std_mem_t, =STD_MEM_TYPE); <span class="comment">/* default memory allocation type for fields */</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;GLB_VAR(mem_t,alloc_mem_t, =STD_MEM_TYPE); <span class="comment">/* memory type requested for allocating fields */</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">/* Gauge field */</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#include &quot;field_ordering.h&quot;</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#include &quot;suN_types.h&quot;</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/ded/spinor__field_8h.html">spinor_field.h</a>&quot;</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">#define pu_gauge(ix,mu) ((u_gauge-&gt;ptr)+coord_to_index(ix,mu))</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#define pu_scalar(ix) ((u_scalar-&gt;ptr)+ix)</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">#define pu_gauge_flt(ix,mu) ((u_gauge_flt-&gt;ptr)+coord_to_index(ix,mu))</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#define pu_gauge_f(ix,mu) ((u_gauge_f-&gt;ptr)+coord_to_index(ix,mu))</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#define pu_gauge_f_flt(ix,mu) ((u_gauge_f_flt-&gt;ptr)+coord_to_index(ix,mu))</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">/* input parameters */</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#include &quot;input_par.h&quot;</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;GLB_VAR(<a class="code" href="../../d1/deb/struct__input__glb.html">input_glb</a>,glb_var,=init_input_glb(glb_var));</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">/* Random number generator parameters */</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;GLB_VAR(<a class="code" href="../../da/dc7/struct__input__rlx.html">input_rlx</a>,rlx_var,=init_input_rlx(rlx_var));</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;GLB_VAR(<a class="code" href="../../d2/d0e/structsuNg__field.html">suNg_field</a>,*u_gauge,=NULL);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;GLB_VAR(<a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a>,*u_scalar,=NULL);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;GLB_VAR(<a class="code" href="../../d4/d1f/structsuNg__field__flt.html">suNg_field_flt</a>,*u_gauge_flt,=NULL);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;GLB_VAR(<a class="code" href="../../d9/d4a/structsuNf__field.html">suNf_field</a>,*u_gauge_f,=NULL);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;GLB_VAR(<a class="code" href="../../d2/d0e/structsuNg__field.html">suNg_field</a>,*u_gauge_s,=NULL);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;GLB_VAR(<a class="code" href="../../d6/d54/structsuNf__field__flt.html">suNf_field_flt</a>,*u_gauge_f_flt,=NULL);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;GLB_VAR(<a class="code" href="../../df/d9e/structsuNfc__field.html">suNfc_field</a>,*cl_term,=NULL);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;GLB_VAR(<a class="code" href="../../d9/d4a/structsuNf__field.html">suNf_field</a>,*cl_force,=NULL);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;GLB_VAR(<a class="code" href="../../d8/d7a/structldl__field.html">ldl_field</a>,*cl_ldl,=NULL);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;GLB_VAR(<a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a>,*suN_momenta,=NULL);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;GLB_VAR(<a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a>,*scalar_momenta,=NULL);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,gauge_field_active,=0); <span class="comment">// whether gauge field interactions is active</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">/* logger parameters */</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;GLB_VAR(<a class="code" href="../../dc/d37/struct__input__logger.html">input_logger</a>,logger_var,=init_input_logger(logger_var));</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">/* Does the represented field need to be allocated? */</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#if ( !defined(REPR_FUNDAMENTAL) &amp;&amp; !defined(WITH_QUATERNIONS) ) || defined(ROTATED_SF)</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#define ALLOCATE_REPR_GAUGE_FIELD</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">/* Is the representation real? */</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#if (defined(REPR_ADJOINT) || defined(GAUGE_SON))</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#define REPR_IS_REAL</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#ifdef PLAQ_WEIGHTS</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;GLB_VAR(<span class="keywordtype">double</span>,*plaq_weight, =NULL);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;GLB_VAR(<span class="keywordtype">double</span>,*rect_weight, =NULL);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">/* Theta Boundary conditions */</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#ifdef FERMION_THETA</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;GLB_VAR(COMPLEX,eitheta[4],={{1.,0.}});</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#ifdef MEASURE_FORCE</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#define MEASURE_FORCE0</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">#define MEASURE_FORCEHMC</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;GLB_VAR(<span class="keywordtype">double</span>,*force_ave,=NULL);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;GLB_VAR(<span class="keywordtype">double</span>,*force_max,=NULL);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*n_inv_iter,=NULL);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#define pu_gauge(ix,mu) ((u_gauge-&gt;ptr)+coord_to_index(ix,mu))</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor">#define pu_scalar(ix) ((u_scalar-&gt;ptr)+ix)</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">#define pu_gauge_flt(ix,mu) ((u_gauge_flt-&gt;ptr)+coord_to_index(ix,mu))</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#define pu_gauge_f(ix,mu) ((u_gauge_f-&gt;ptr)+coord_to_index(ix,mu))</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">#define pu_gauge_f_flt(ix,mu) ((u_gauge_f_flt-&gt;ptr)+coord_to_index(ix,mu))</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">/* input parameters */</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#include &quot;input_par.h&quot;</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;GLB_VAR(<a class="code" href="../../d1/deb/struct__input__glb.html">input_glb</a>,glb_var,=init_input_glb(glb_var));</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">/* Random number generator parameters */</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;GLB_VAR(<a class="code" href="../../da/dc7/struct__input__rlx.html">input_rlx</a>,rlx_var,=init_input_rlx(rlx_var));</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">/* logger parameters */</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;GLB_VAR(<a class="code" href="../../dc/d37/struct__input__logger.html">input_logger</a>,logger_var,=init_input_logger(logger_var));</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment">/* Does the represented field need to be allocated? */</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#if ( !defined(REPR_FUNDAMENTAL) &amp;&amp; !defined(WITH_QUATERNIONS) ) || defined(ROTATED_SF)</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#define ALLOCATE_REPR_GAUGE_FIELD</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">/* Is the representation real? */</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#if (defined(REPR_ADJOINT) || defined(GAUGE_SON))</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#define REPR_IS_REAL</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="preprocessor">#ifdef PLAQ_WEIGHTS</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;GLB_VAR(<span class="keywordtype">double</span>,*plaq_weight, =NULL);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;GLB_VAR(<span class="keywordtype">double</span>,*rect_weight, =NULL);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">/* Fields four fermion interactions */</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">/* Auxiliary fields for four fermion interactions */</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;GLB_VAR(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a>,*ff_sigma,=NULL);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;GLB_VAR(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a>,*ff_pi,=NULL);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;GLB_VAR(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a>,*ff_sigma_mom,=NULL);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;GLB_VAR(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a>,*ff_pi_mom,=NULL);</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,four_fermion_active,=0); <span class="comment">// whether four fermion interactions are active</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#undef GLB_VAR</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astruct__geometry__descriptor_html"><div class="ttname"><a href="../../db/d43/struct__geometry__descriptor.html">_geometry_descriptor</a></div><div class="ttdef"><b>Definition:</b> geometry.h:16</div></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">/* Theta Boundary conditions */</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="preprocessor">#ifdef FERMION_THETA</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;GLB_VAR(COMPLEX,eitheta[4],={{1.,0.}});</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#ifdef MEASURE_FORCE</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#define MEASURE_FORCE0</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#define MEASURE_FORCEHMC</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;GLB_VAR(<span class="keywordtype">double</span>,*force_ave,=NULL);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;GLB_VAR(<span class="keywordtype">double</span>,*force_max,=NULL);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,*n_inv_iter,=NULL);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="comment">/* Fields four fermion interactions */</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">/* Auxiliary fields for four fermion interactions */</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;GLB_VAR(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a>,*ff_sigma,=NULL);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;GLB_VAR(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a>,*ff_pi,=NULL);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;GLB_VAR(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a>,*ff_sigma_mom,=NULL);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;GLB_VAR(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a>,*ff_pi_mom,=NULL);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;GLB_VAR(<span class="keywordtype">int</span>,four_fermion_active,=0); <span class="comment">// whether four fermion interactions are active</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#undef GLB_VAR</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="ageometry_8h_html"><div class="ttname"><a href="../../d4/d67/geometry_8h.html">geometry.h</a></div><div class="ttdoc">This file contains information on the geometry of the local lattice, block decomposed geometry,...</div></div>
+<div class="ttc" id="aspinor__field_8h_html"><div class="ttname"><a href="../../d3/ded/spinor__field_8h.html">spinor_field.h</a></div><div class="ttdoc">The elementary site structures defined in suN.h are used in this file to define field structures that...</div></div>
 <div class="ttc" id="astruct__input__glb_html"><div class="ttname"><a href="../../d1/deb/struct__input__glb.html">_input_glb</a></div><div class="ttdef"><b>Definition:</b> input_par.h:25</div></div>
 <div class="ttc" id="astruct__input__logger_html"><div class="ttname"><a href="../../dc/d37/struct__input__logger.html">_input_logger</a></div><div class="ttdef"><b>Definition:</b> input_par.h:80</div></div>
 <div class="ttc" id="astruct__input__rlx_html"><div class="ttname"><a href="../../da/dc7/struct__input__rlx.html">_input_rlx</a></div><div class="ttdef"><b>Definition:</b> input_par.h:54</div></div>
-<div class="ttc" id="astruct__ldl__field_html"><div class="ttname"><a href="../../d9/d93/struct__ldl__field.html">_ldl_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:54</div></div>
-<div class="ttc" id="astruct__scalar__field_html"><div class="ttname"><a href="../../de/d54/struct__scalar__field.html">_scalar_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:53</div></div>
-<div class="ttc" id="astruct__suNf__field__flt_html"><div class="ttname"><a href="../../d0/dcf/struct__suNf__field__flt.html">_suNf_field_flt</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:49</div></div>
-<div class="ttc" id="astruct__suNf__field_html"><div class="ttname"><a href="../../da/d8f/struct__suNf__field.html">_suNf_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:48</div></div>
-<div class="ttc" id="astruct__suNfc__field_html"><div class="ttname"><a href="../../d2/db6/struct__suNfc__field.html">_suNfc_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:55</div></div>
-<div class="ttc" id="astruct__suNg__av__field_html"><div class="ttname"><a href="../../d4/d75/struct__suNg__av__field.html">_suNg_av_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:52</div></div>
-<div class="ttc" id="astruct__suNg__field__flt_html"><div class="ttname"><a href="../../d2/d8d/struct__suNg__field__flt.html">_suNg_field_flt</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:47</div></div>
-<div class="ttc" id="astruct__suNg__field_html"><div class="ttname"><a href="../../d9/d96/struct__suNg__field.html">_suNg_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:45</div></div>
-<div class="ttc" id="astruct__suNg__scalar__field_html"><div class="ttname"><a href="../../d8/dc4/struct__suNg__scalar__field.html">_suNg_scalar_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:46</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a></div><div class="ttdoc">This struct should contain all information necessary to perform operations on the local lattice inclu...</div><div class="ttdef"><b>Definition:</b> geometry.h:120</div></div>
+<div class="ttc" id="astructldl__field_html"><div class="ttname"><a href="../../d8/d7a/structldl__field.html">ldl_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:228</div></div>
+<div class="ttc" id="astructscalar__field_html"><div class="ttname"><a href="../../d8/daf/structscalar__field.html">scalar_field</a></div><div class="ttdoc">Scalar field of double precision real values.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:222</div></div>
+<div class="ttc" id="astructsuNf__field__flt_html"><div class="ttname"><a href="../../d6/d54/structsuNf__field__flt.html">suNf_field_flt</a></div><div class="ttdoc">Single precision gauge field in the chosen fermion representation.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:153</div></div>
+<div class="ttc" id="astructsuNf__field_html"><div class="ttname"><a href="../../d9/d4a/structsuNf__field.html">suNf_field</a></div><div class="ttdoc">Gauge field in chosen fermion representation.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:135</div></div>
+<div class="ttc" id="astructsuNfc__field_html"><div class="ttname"><a href="../../df/d9e/structsuNfc__field.html">suNfc_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:234</div></div>
+<div class="ttc" id="astructsuNg__av__field_html"><div class="ttname"><a href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a></div><div class="ttdoc">Field of SU(N_g) algebra vectors.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:206</div></div>
+<div class="ttc" id="astructsuNg__field__flt_html"><div class="ttname"><a href="../../d4/d1f/structsuNg__field__flt.html">suNg_field_flt</a></div><div class="ttdoc">Gauge field of single precision SU(N_g) matrices.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:117</div></div>
+<div class="ttc" id="astructsuNg__field_html"><div class="ttname"><a href="../../d2/d0e/structsuNg__field.html">suNg_field</a></div><div class="ttdoc">Gauge field of SU(N_g) matrices.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:80</div></div>
+<div class="ttc" id="astructsuNg__scalar__field_html"><div class="ttname"><a href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a></div><div class="ttdoc">SU(N_g) scalar field of SU(N_g) vectors.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:99</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

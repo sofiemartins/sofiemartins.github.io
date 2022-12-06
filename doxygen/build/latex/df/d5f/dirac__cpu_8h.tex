@@ -1,0 +1,286 @@
+\hypertarget{dirac__cpu_8h}{}\doxysection{dirac\+\_\+cpu.\+h File Reference}
+\label{dirac__cpu_8h}\index{dirac\_cpu.h@{dirac\_cpu.h}}
+
+
+Implementation of the Dirac operator for calculation on CPUs.  
+
+
+{\ttfamily \#include \char`\"{}spinor\+\_\+field.\+h\char`\"{}}\newline
+Include dependency graph for dirac\+\_\+cpu.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long int \mbox{\hyperlink{dirac__cpu_8h_a612a5648a905828a6fc7506c7e9ef857}{get\+MVM\+\_\+cpu}} ()
+\begin{DoxyCompactList}\small\item\em Number of times the dirac operator was applied to the CPU field data copy of a spinor field. Note, that this is internally implemented to count every application to a half spinor (either odd part or even part) and then divided by two. An application to a spinor defined on the full lattice is internally counted as two operations and then divided by two. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a7ca0880a57ddda51341cea117aca611a}{Dphi\+\_\+cpu\+\_\+}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Massless Dirac oprator (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a8a6d1b83a0844f9e17ef458986ae58dd}{Dphi\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Dirac operator (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_ada15a3090dbcf9e2010a37930b5750a9}{g5\+Dphi\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Hermitian Dirac operator (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_aa399c4321037797714e1ba312194530d}{g5\+Dphi\+\_\+sq\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Squared Hermitian Dirac operator (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a574511ba7acccbb9f3a1f4d94a34750d}{Dphi\+\_\+flt\+\_\+cpu\+\_\+}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Single precision massless Dirac operator (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a0148b46ae71f0ff08e282088cdda5e28}{Dphi\+\_\+flt\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Single precision Dirac operator (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a17505259559fbbfec2ff014d07928ec4}{g5\+Dphi\+\_\+flt\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Single precision Hermitian Dirac operator (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a2558792680af45fe6c077d3fdfe98577}{g5\+Dphi\+\_\+sq\+\_\+flt\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Single precision squared Hermitian Dirac operator (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_accf95978a99cbf7d9df81a97a29f5c13}{Dphi\+\_\+eopre\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/\+Odd Preconditioned application of Dirac Operator, odd to even (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a9d97162c4345a629870b26f878aaacdb}{Dphi\+\_\+oepre\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/\+Odd Preconditioned application of Dirac Operator, even to odd (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a0e815aa7308b3b24ebd0705a5c33678c}{g5\+Dphi\+\_\+eopre\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/\+Odd Preconditioned application of Hermitian Dirac Operator, odd to even (CPU version) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__cpu_8h_a20fa9f36c6d950666931f11d601a77a6}{g5\+Dphi\+\_\+eopre\+\_\+sq\+\_\+cpu}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/\+Odd Preconditioned application of Hermitian Dirac Operator, even to odd (CPU version) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the Dirac operator for calculation on CPUs. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dirac__cpu_8h_a8a6d1b83a0844f9e17ef458986ae58dd}\label{dirac__cpu_8h_a8a6d1b83a0844f9e17ef458986ae58dd}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!Dphi\_cpu@{Dphi\_cpu}}
+\index{Dphi\_cpu@{Dphi\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_cpu()}{Dphi\_cpu()}}
+{\footnotesize\ttfamily void Dphi\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Dirac operator (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Out spinor field that the Dirac operator will be applied to \\
+\hline
+{\em in} & Input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a7ca0880a57ddda51341cea117aca611a}\label{dirac__cpu_8h_a7ca0880a57ddda51341cea117aca611a}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!Dphi\_cpu\_@{Dphi\_cpu\_}}
+\index{Dphi\_cpu\_@{Dphi\_cpu\_}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_cpu\_()}{Dphi\_cpu\_()}}
+{\footnotesize\ttfamily void Dphi\+\_\+cpu\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Massless Dirac oprator (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Spinor field that the operator will be applied to \\
+\hline
+{\em in} & Input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_accf95978a99cbf7d9df81a97a29f5c13}\label{dirac__cpu_8h_accf95978a99cbf7d9df81a97a29f5c13}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!Dphi\_eopre\_cpu@{Dphi\_eopre\_cpu}}
+\index{Dphi\_eopre\_cpu@{Dphi\_eopre\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_eopre\_cpu()}{Dphi\_eopre\_cpu()}}
+{\footnotesize\ttfamily void Dphi\+\_\+eopre\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/\+Odd Preconditioned application of Dirac Operator, odd to even (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Even output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Odd input spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a0148b46ae71f0ff08e282088cdda5e28}\label{dirac__cpu_8h_a0148b46ae71f0ff08e282088cdda5e28}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!Dphi\_flt\_cpu@{Dphi\_flt\_cpu}}
+\index{Dphi\_flt\_cpu@{Dphi\_flt\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_flt\_cpu()}{Dphi\_flt\_cpu()}}
+{\footnotesize\ttfamily void Dphi\+\_\+flt\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Single precision Dirac operator (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Single precision output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Single precision input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a574511ba7acccbb9f3a1f4d94a34750d}\label{dirac__cpu_8h_a574511ba7acccbb9f3a1f4d94a34750d}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!Dphi\_flt\_cpu\_@{Dphi\_flt\_cpu\_}}
+\index{Dphi\_flt\_cpu\_@{Dphi\_flt\_cpu\_}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_flt\_cpu\_()}{Dphi\_flt\_cpu\_()}}
+{\footnotesize\ttfamily void Dphi\+\_\+flt\+\_\+cpu\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Single precision massless Dirac operator (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Single precision output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Single precision input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a9d97162c4345a629870b26f878aaacdb}\label{dirac__cpu_8h_a9d97162c4345a629870b26f878aaacdb}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!Dphi\_oepre\_cpu@{Dphi\_oepre\_cpu}}
+\index{Dphi\_oepre\_cpu@{Dphi\_oepre\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_oepre\_cpu()}{Dphi\_oepre\_cpu()}}
+{\footnotesize\ttfamily void Dphi\+\_\+oepre\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/\+Odd Preconditioned application of Dirac Operator, even to odd (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Odd output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Even input spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_ada15a3090dbcf9e2010a37930b5750a9}\label{dirac__cpu_8h_ada15a3090dbcf9e2010a37930b5750a9}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!g5Dphi\_cpu@{g5Dphi\_cpu}}
+\index{g5Dphi\_cpu@{g5Dphi\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_cpu()}{g5Dphi\_cpu()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Hermitian Dirac operator (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Out spinor field that the Hermitian Dirac operator will be applied to \\
+\hline
+{\em in} & Input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a0e815aa7308b3b24ebd0705a5c33678c}\label{dirac__cpu_8h_a0e815aa7308b3b24ebd0705a5c33678c}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!g5Dphi\_eopre\_cpu@{g5Dphi\_eopre\_cpu}}
+\index{g5Dphi\_eopre\_cpu@{g5Dphi\_eopre\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_eopre\_cpu()}{g5Dphi\_eopre\_cpu()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+eopre\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/\+Odd Preconditioned application of Hermitian Dirac Operator, odd to even (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Even output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Odd input spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a20fa9f36c6d950666931f11d601a77a6}\label{dirac__cpu_8h_a20fa9f36c6d950666931f11d601a77a6}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!g5Dphi\_eopre\_sq\_cpu@{g5Dphi\_eopre\_sq\_cpu}}
+\index{g5Dphi\_eopre\_sq\_cpu@{g5Dphi\_eopre\_sq\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_eopre\_sq\_cpu()}{g5Dphi\_eopre\_sq\_cpu()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+eopre\+\_\+sq\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/\+Odd Preconditioned application of Hermitian Dirac Operator, even to odd (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Odd output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Even input spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a17505259559fbbfec2ff014d07928ec4}\label{dirac__cpu_8h_a17505259559fbbfec2ff014d07928ec4}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!g5Dphi\_flt\_cpu@{g5Dphi\_flt\_cpu}}
+\index{g5Dphi\_flt\_cpu@{g5Dphi\_flt\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_flt\_cpu()}{g5Dphi\_flt\_cpu()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+flt\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Single precision Hermitian Dirac operator (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Single precision output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Single precision input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_aa399c4321037797714e1ba312194530d}\label{dirac__cpu_8h_aa399c4321037797714e1ba312194530d}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!g5Dphi\_sq\_cpu@{g5Dphi\_sq\_cpu}}
+\index{g5Dphi\_sq\_cpu@{g5Dphi\_sq\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_sq\_cpu()}{g5Dphi\_sq\_cpu()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+sq\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Squared Hermitian Dirac operator (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Out spinor field that the squared Hermitian Dirac operator will be applied to \\
+\hline
+{\em in} & Input spinor field before operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a2558792680af45fe6c077d3fdfe98577}\label{dirac__cpu_8h_a2558792680af45fe6c077d3fdfe98577}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!g5Dphi\_sq\_flt\_cpu@{g5Dphi\_sq\_flt\_cpu}}
+\index{g5Dphi\_sq\_flt\_cpu@{g5Dphi\_sq\_flt\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_sq\_flt\_cpu()}{g5Dphi\_sq\_flt\_cpu()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+sq\+\_\+flt\+\_\+cpu (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Single precision squared Hermitian Dirac operator (CPU version) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Single precision output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Single precision input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__cpu_8h_a612a5648a905828a6fc7506c7e9ef857}\label{dirac__cpu_8h_a612a5648a905828a6fc7506c7e9ef857}} 
+\index{dirac\_cpu.h@{dirac\_cpu.h}!getMVM\_cpu@{getMVM\_cpu}}
+\index{getMVM\_cpu@{getMVM\_cpu}!dirac\_cpu.h@{dirac\_cpu.h}}
+\doxysubsubsection{\texorpdfstring{getMVM\_cpu()}{getMVM\_cpu()}}
+{\footnotesize\ttfamily unsigned long int get\+MVM\+\_\+cpu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Number of times the dirac operator was applied to the CPU field data copy of a spinor field. Note, that this is internally implemented to count every application to a half spinor (either odd part or even part) and then divided by two. An application to a spinor defined on the full lattice is internally counted as two operations and then divided by two. 
+
+\begin{DoxyReturn}{Returns}
+unsigned long int Number of applications of the Dirac operator to the full lattice 
+\end{DoxyReturn}

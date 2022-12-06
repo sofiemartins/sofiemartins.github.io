@@ -9,11 +9,7 @@
     <includes refid="d5/d80/monomials_8h" local="yes">monomials.h</includes>
     <includedby refid="dc/dac/io_8h" local="yes">io.h</includedby>
     <incdepgraph>
-      <node id="10">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
-      <node id="13">
+      <node id="9">
         <label>rational_functions.h</label>
         <link refid="d5/dbc/rational__functions_8h_source"/>
         <childnode refid="7" relation="include">
@@ -21,22 +17,14 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="13">
         <label>monomials.h</label>
         <link refid="d5/d80/monomials_8h_source"/>
       </node>
       <node id="8">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="9" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -51,11 +39,7 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="11">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
-      <node id="16">
+      <node id="12">
         <label>input_par.h</label>
         <link refid="d8/d5a/input__par_8h_source"/>
       </node>
@@ -66,16 +50,12 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
       </node>
       <node id="4">
         <label>hr_complex.h</label>
@@ -92,24 +72,18 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="15">
+      <node id="11">
         <label>logger.h</label>
         <link refid="d1/d8c/logger_8h_source"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
+      <node id="10">
         <label>glueballs.h</label>
         <link refid="db/d97/glueballs_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
@@ -417,13 +391,13 @@
           <type>int</type>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         </param>
         <param>
           <type>spinor_operator</type>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -445,7 +419,7 @@
           <type>int</type>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -578,7 +552,7 @@
         <argsstring>(scalar_field *, double, double, double)</argsstring>
         <name>lw_local_action</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         </param>
         <param>
           <type>double</type>
@@ -620,7 +594,7 @@
           <declname>dt</declname>
         </param>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -636,10 +610,10 @@
         <argsstring>(spinor_field *, spinor_field *, int, double, double)</argsstring>
         <name>force_fermion_core</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         </param>
         <param>
           <type>int</type>
@@ -664,10 +638,10 @@
         <argsstring>(spinor_field *, spinor_field *, int, double, double)</argsstring>
         <name>force_fermion_core_taylor</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         </param>
         <param>
           <type>int</type>
@@ -711,11 +685,11 @@
         <argsstring>(spinor_field *Xs, spinor_field *Ys, double residue)</argsstring>
         <name>force_clover_fermion</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>Xs</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>Ys</declname>
         </param>
         <param>
@@ -736,11 +710,11 @@
         <argsstring>(spinor_field *Xs, spinor_field *Ys, double residue)</argsstring>
         <name>force_clover_fermion_taylor</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>Xs</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>Ys</declname>
         </param>
         <param>
@@ -875,7 +849,7 @@
         <argsstring>(suNg_av_field *momenta)</argsstring>
         <name>gaussian_momenta</name>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
           <declname>momenta</declname>
         </param>
         <briefdescription>
@@ -892,7 +866,7 @@
         <argsstring>(suNg_scalar_field *momenta)</argsstring>
         <name>gaussian_scalar_momenta</name>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
           <declname>momenta</declname>
         </param>
         <briefdescription>
@@ -909,7 +883,7 @@
         <argsstring>(spinor_field *s)</argsstring>
         <name>gaussian_spinor_field</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>s</declname>
         </param>
         <briefdescription>
@@ -926,7 +900,7 @@
         <argsstring>(spinor_field_flt *s)</argsstring>
         <name>gaussian_spinor_field_flt</name>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>s</declname>
         </param>
         <briefdescription>
@@ -943,7 +917,7 @@
         <argsstring>(spinor_field *s)</argsstring>
         <name>z2_spinor_field</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>s</declname>
         </param>
         <briefdescription>
@@ -1154,10 +1128,10 @@
         <argsstring>(suNg_av_field *, suNg_av_field *)</argsstring>
         <name>smeared_gauge_force</name>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1177,15 +1151,15 @@
           <declname>type</declname>
         </param>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
           <declname>loc_action</declname>
         </param>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
           <declname>momenta</declname>
         </param>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
           <declname>momenta_s</declname>
         </param>
         <briefdescription>
@@ -1202,11 +1176,11 @@
         <argsstring>(scalar_field *loc_action, spinor_field *pf)</argsstring>
         <name>pf_local_action</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
           <declname>loc_action</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>pf</declname>
         </param>
         <briefdescription>
@@ -1223,11 +1197,11 @@
         <argsstring>(suNg_field *g1, suNg_field *g2)</argsstring>
         <name>suNg_field_copy</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>g1</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>g2</declname>
         </param>
         <briefdescription>
@@ -1244,11 +1218,11 @@
         <argsstring>(suNf_field *g1, suNf_field *g2)</argsstring>
         <name>suNf_field_copy</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
           <declname>g1</declname>
         </param>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
           <declname>g2</declname>
         </param>
         <briefdescription>
@@ -1265,11 +1239,11 @@
         <argsstring>(suNg_scalar_field *g1, suNg_scalar_field *g2)</argsstring>
         <name>suNg_scalar_field_copy</name>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
           <declname>g1</declname>
         </param>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
           <declname>g2</declname>
         </param>
         <briefdescription>
@@ -1307,11 +1281,11 @@
         <argsstring>(scalar_field *s1, scalar_field *s2)</argsstring>
         <name>scalar_field_copy</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
           <declname>s1</declname>
         </param>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
           <declname>s2</declname>
         </param>
         <briefdescription>
@@ -1328,7 +1302,7 @@
         <argsstring>(scalar_field *s)</argsstring>
         <name>flip_scalar_field</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
           <declname>s</declname>
         </param>
         <briefdescription>
@@ -1345,7 +1319,7 @@
         <argsstring>(scalar_field *s, double c)</argsstring>
         <name>set_scalar_field</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
           <declname>s</declname>
         </param>
         <param>
@@ -1366,7 +1340,7 @@
         <argsstring>(scalar_field *s)</argsstring>
         <name>gaussian_scalar_field</name>
         <param>
-          <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+          <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
           <declname>s</declname>
         </param>
         <briefdescription>
@@ -1411,32 +1385,32 @@
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>functions<sp/>and<sp/>structures<sp/>for<sp/>the<sp/>MRE<sp/>algorithm<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27" refid="df/d69/structmre__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*s[2];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*s[2];</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num[2];</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal">}<sp/><ref refid="df/d69/structmre__par" kindref="compound">mre_par</ref>;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mre_guess(<ref refid="df/d69/structmre__par" kindref="compound">mre_par</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/>spinor_operator,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mre_store(<ref refid="df/d69/structmre__par" kindref="compound">mre_par</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mre_guess(<ref refid="df/d69/structmre__par" kindref="compound">mre_par</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/>spinor_operator,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mre_store(<ref refid="df/d69/structmre__par" kindref="compound">mre_par</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mre_init(<ref refid="df/d69/structmre__par" kindref="compound">mre_par</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39" refid="d1/d17/structforce__rhmc__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_pf;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><ref refid="d1/d9f/struct__rational__app" kindref="compound">rational_app</ref><sp/>*ratio;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>inv_err2;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**momenta;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**momenta;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal">}<sp/><ref refid="d1/d17/structforce__rhmc__par" kindref="compound">force_rhmc_par</ref>;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50" refid="df/d6a/structforce__hmc__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_pf;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*pf;</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hasenbusch;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b;</highlight></codeline>
@@ -1444,7 +1418,7 @@
 <codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>inv_err2,<sp/>inv_err2_flt;</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="df/d69/structmre__par" kindref="compound">mre_par</ref><sp/>mpar;</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>logdet;</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**momenta;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**momenta;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal">}<sp/><ref refid="df/d6a/structforce__hmc__par" kindref="compound">force_hmc_par</ref>;</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="65" refid="db/d5c/structforce__gauge__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
@@ -1452,15 +1426,15 @@
 <codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>beta;</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c0;</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c1;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**momenta;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**momenta;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal">}<sp/><ref refid="db/d5c/structforce__gauge__par" kindref="compound">force_gauge_par</ref>;</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73" refid="dc/df8/structforce__scalar__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lambda;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>**momenta;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**g_momenta;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>**momenta;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**g_momenta;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal">}<sp/><ref refid="dc/df8/structforce__scalar__par" kindref="compound">force_scalar_par</ref>;</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81" refid="d3/d99/structforce__auxfield__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
@@ -1470,14 +1444,14 @@
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
 <codeline lineno="86" refid="d4/d5c/structfield__gauge__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>**field;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**momenta;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>**field;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>**momenta;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal">}<sp/><ref refid="d4/d5c/structfield__gauge__par" kindref="compound">field_gauge_par</ref>;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92" refid="df/da7/structfield__scalar__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>**field;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>**momenta;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>**field;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>**momenta;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal">}<sp/><ref refid="df/da7/structfield__scalar__par" kindref="compound">field_scalar_par</ref>;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update_gauge_field(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
@@ -1487,15 +1461,15 @@
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_scalar(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lw_force(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lw_local_action(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lw_local_action(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fermion_force_begin();</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fermion_force_end(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt,<sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*);</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_fermion_core(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_fermion_core_taylor(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fermion_force_end(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt,<sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_fermion_core(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_fermion_core_taylor(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_clover_logdet(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_clover_fermion(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*Xs,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*Ys,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>residue);</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_clover_fermion_taylor(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*Xs,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*Ys,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>residue);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_clover_fermion(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*Xs,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*Ys,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>residue);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_clover_fermion_taylor(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*Xs,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*Ys,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>residue);</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_hmc(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_hmc_tm(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
@@ -1504,11 +1478,11 @@
 <codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_hmc_auxfields(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);<sp/></highlight><highlight class="comment">//Force<sp/>from<sp/>a<sp/>four_fermion<sp/>monomial</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>force_hmc_ff(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Force<sp/>from<sp/>a<sp/>HMC_ff<sp/>or<sp/>Hasenbusch_ff<sp/>monomial</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_momenta(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*momenta);</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_scalar_momenta(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*momenta);</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_spinor_field(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*s);</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_spinor_field_flt(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*s);</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>z2_spinor_field(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_momenta(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*momenta);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_scalar_momenta(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*momenta);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_spinor_field(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_spinor_field_flt(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>z2_spinor_field(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*s);</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>For<sp/>the<sp/>fermion<sp/>force<sp/>?<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>corret_pf_dist_hmc();</highlight></codeline>
@@ -1561,7 +1535,7 @@
 <codeline lineno="176"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_smearing(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>avr_smeared_plaquette();</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>smear_gauge_field();</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>smeared_gauge_force(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*,<sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>smeared_gauge_force(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*,<sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*);</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"></highlight></codeline>
 <codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>local<sp/>action<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
@@ -1575,24 +1549,24 @@
 <codeline lineno="190"><highlight class="comment"><sp/>*<sp/>H<sp/>=<sp/>|<sp/>momenta<sp/>|^2<sp/>+<sp/>S_g<sp/>+<sp/>&lt;<sp/>phi1,<sp/>phi2&gt;</highlight></codeline>
 <codeline lineno="191"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>local_hmc_action(local_action_type<sp/>type,</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref><sp/>*loc_action,</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*momenta,</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*momenta_s);</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pf_local_action(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref><sp/>*loc_action,</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*pf);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref><sp/>*loc_action,</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*momenta,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*momenta_s);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pf_local_action(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref><sp/>*loc_action,</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*pf);</highlight></codeline>
 <codeline lineno="198"><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>suNg_field_copy(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*g1,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*g2);</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>suNf_field_copy(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref><sp/>*g1,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref><sp/>*g2);</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>suNg_scalar_field_copy(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*g1,<sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*g2);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>suNg_field_copy(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*g1,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*g2);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>suNf_field_copy(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref><sp/>*g1,<sp/><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref><sp/>*g2);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>suNg_scalar_field_copy(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*g1,<sp/><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*g2);</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"></highlight></codeline>
 <codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>find<sp/>spectral<sp/>interval<sp/>using<sp/>eva<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>find_spec_H2(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*max,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*min);</highlight></codeline>
 <codeline lineno="205"><highlight class="normal"></highlight></codeline>
 <codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Utility<sp/>functions<sp/>for<sp/>four<sp/>fermion<sp/>interactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scalar_field_copy(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref><sp/>*s1,<sp/><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref><sp/>*s2);</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>flip_scalar_field(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref><sp/>*s);</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_scalar_field(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_scalar_field(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scalar_field_copy(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref><sp/>*s1,<sp/><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref><sp/>*s2);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>flip_scalar_field(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_scalar_field(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gaussian_scalar_field(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref><sp/>*s);</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>

@@ -1,11 +1,11 @@
 <map id="mon_hasenbusch_par" name="mon_hasenbusch_par">
 <area shape="rect" id="node1" title=" " alt="" coords="5,452,155,479"/>
-<area shape="rect" id="node2" href="$d3/d33/struct__spinor__field.html" title=" " alt="" coords="83,184,178,211"/>
-<area shape="rect" id="node6" href="$df/d6a/structforce__hmc__par.html" title=" " alt="" coords="127,363,235,389"/>
-<area shape="rect" id="node9" href="$df/d69/structmre__par.html" title=" " alt="" coords="96,273,165,300"/>
-<area shape="rect" id="node3" href="$db/d43/struct__geometry__descriptor.html" title=" " alt="" coords="133,95,281,121"/>
-<area shape="rect" id="node7" href="$d4/d75/struct__suNg__av__field.html" title=" " alt="" coords="221,184,333,211"/>
-<area shape="rect" id="node4" href="$d8/dd1/structsuNf__spinor.html" title=" " alt="" coords="17,95,109,121"/>
-<area shape="rect" id="node5" href="$de/d49/structsuNf__vector.html" title=" " alt="" coords="17,5,109,32"/>
-<area shape="rect" id="node8" href="$d3/dcb/structsuNg__algebra__vector.html" title=" " alt="" coords="305,95,449,121"/>
+<area shape="rect" id="node2" href="$df/d6a/structforce__hmc__par.html" title=" " alt="" coords="127,363,235,389"/>
+<area shape="rect" id="node3" href="$df/d69/structmre__par.html" title=" " alt="" coords="96,273,165,300"/>
+<area shape="rect" id="node4" href="$d0/da8/structspinor__field.html" title="Spinor field array containing SU(N_f) spinors in chosen fermion representation." alt="" coords="87,184,175,211"/>
+<area shape="rect" id="node5" href="$df/da2/structgeometry__descriptor.html" title="This struct should contain all information necessary to perform operations on the local lattice inclu..." alt="" coords="135,95,276,121"/>
+<area shape="rect" id="node8" href="$db/dc8/structsuNg__av__field.html" title="Field of SU(N_g) algebra vectors." alt="" coords="225,184,330,211"/>
+<area shape="rect" id="node6" href="$d8/dd1/structsuNf__spinor.html" title=" " alt="" coords="18,95,110,121"/>
+<area shape="rect" id="node7" href="$de/d49/structsuNf__vector.html" title=" " alt="" coords="18,5,110,32"/>
+<area shape="rect" id="node9" href="$d3/dcb/structsuNg__algebra__vector.html" title=" " alt="" coords="300,95,444,121"/>
 </map>

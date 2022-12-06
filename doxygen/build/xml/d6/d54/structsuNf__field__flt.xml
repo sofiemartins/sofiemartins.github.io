@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d54/structsuNf__field__flt" kind="struct" language="C++" prot="public">
+    <compoundname>suNf_field_flt</compoundname>
+    <includes refid="d3/ded/spinor__field_8h" local="no">spinor_field.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d6/d54/structsuNf__field__flt_1a98ba8c1d0ab1c525625bc22e68abfa6c" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> *</type>
+        <definition>suNf_field_flt::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of single precision SU(N_f) matrices, that contains the field data for the local lattice (in host memory) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="153" column="25" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d6/d54/structsuNf__field__flt_1affa0cd488c8da9a7304422a7a3bc3bc5" prot="public" static="no" mutable="no">
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        <definition>suNf_field_flt::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains geometry information, for example pertaining the block decomposition </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="153" column="51" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Single precision gauge field in the chosen fermion representation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
+      </node>
+      <node id="1">
+        <label>suNf_field_flt</label>
+        <link refid="d6/d54/structsuNf__field__flt"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>suNf_flt</label>
+        <link refid="db/d3f/structsuNf__flt"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="153" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="153" bodyend="153"/>
+    <listofallmembers>
+      <member refid="d6/d54/structsuNf__field__flt_1a98ba8c1d0ab1c525625bc22e68abfa6c" prot="public" virt="non-virtual"><scope>suNf_field_flt</scope><name>ptr</name></member>
+      <member refid="d6/d54/structsuNf__field__flt_1affa0cd488c8da9a7304422a7a3bc3bc5" prot="public" virt="non-virtual"><scope>suNf_field_flt</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

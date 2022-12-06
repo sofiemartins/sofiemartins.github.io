@@ -4,7 +4,7 @@
     <compoundname>mre_par</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="df/d69/structmre__par_1a4e6c00084b9e81407b63785f1358c4cf" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* mre_par::s[2]</definition>
         <argsstring>[2]</argsstring>
         <name>s</name>
@@ -61,6 +61,20 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="3">
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
+      </node>
+      <node id="2">
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
       <node id="4">
         <label>suNf_spinor</label>
         <link refid="d8/dd1/structsuNf__spinor"/>
@@ -68,25 +82,11 @@
           <edgelabel>c</edgelabel>
         </childnode>
       </node>
-      <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
       <node id="1">
         <label>mre_par</label>
         <link refid="df/d69/structmre__par"/>
         <childnode refid="2" relation="usage">
           <edgelabel>s</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
       <node id="5">

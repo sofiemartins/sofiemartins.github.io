@@ -1,0 +1,9 @@
+digraph "cpu_geometry.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="cpu_geometry.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This file contains macros to load elements of single sites of a field."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="field_ordering.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/dac/field__ordering_8h_source.html",tooltip=" "];
+}

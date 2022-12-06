@@ -3,137 +3,16 @@
   <compounddef id="da/d41/error_8h" kind="file" language="C++">
     <compoundname>error.h</compoundname>
     <includedby refid="d4/d3d/geometry__check_8h" local="yes">geometry_check.h</includedby>
-    <includedby refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includedby>
     <invincdepgraph>
-      <node id="7">
-        <label>gaugefix.h</label>
-        <link refid="d8/d7d/gaugefix_8h_source"/>
-      </node>
-      <node id="16">
-        <label>dirac.h</label>
-        <link refid="d0/d40/dirac_8h_source"/>
-      </node>
-      <node id="8">
-        <label>global.h</label>
-        <link refid="d2/d49/global_8h_source"/>
-      </node>
-      <node id="15">
-        <label>utils.h</label>
-        <link refid="d5/d60/utils_8h_source"/>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>rational_functions.h</label>
-        <link refid="d5/dbc/rational__functions_8h_source"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>clover_tools.h</label>
-        <link refid="da/d6a/clover__tools_8h_source"/>
-      </node>
-      <node id="3">
-        <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>io.h</label>
-        <link refid="dc/dac/io_8h_source"/>
-      </node>
-      <node id="21">
-        <label>wilsonflow.h</label>
-        <link refid="d3/df8/wilsonflow_8h_source"/>
-      </node>
-      <node id="10">
-        <label>observables.h</label>
-        <link refid="d0/d30/observables_8h_source"/>
-      </node>
       <node id="1">
         <label>error.h</label>
         <link refid="da/d41/error_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>spectrum.h</label>
-        <link refid="d6/d16/spectrum_8h_source"/>
       </node>
       <node id="2">
         <label>geometry_check.h</label>
         <link refid="d4/d3d/geometry__check_8h_source"/>
-      </node>
-      <node id="17">
-        <label>linear_algebra.h</label>
-        <link refid="dc/d9c/linear__algebra_8h_source"/>
-      </node>
-      <node id="12">
-        <label>update.h</label>
-        <link refid="d8/d72/update_8h_source"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>communications.h</label>
-        <link refid="d2/d6f/communications_8h_source"/>
-      </node>
-      <node id="18">
-        <label>memory.h</label>
-        <link refid="dc/d18/memory_8h_source"/>
-      </node>
-      <node id="19">
-        <label>moreio.h</label>
-        <link refid="d0/d5a/moreio_8h_source"/>
-      </node>
-      <node id="20">
-        <label>random.h</label>
-        <link refid="d1/d79/random_8h_source"/>
-      </node>
-      <node id="9">
-        <label>inverters.h</label>
-        <link refid="d3/d5d/inverters_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>clover_exp.h</label>
-        <link refid="d3/dde/clover__exp_8h_source"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">

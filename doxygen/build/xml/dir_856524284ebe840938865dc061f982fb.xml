@@ -3,14 +3,20 @@
   <compounddef id="dir_856524284ebe840938865dc061f982fb" kind="dir">
     <compoundname>Include</compoundname>
     <innerfile refid="d5/d64/_8autoheaders_8h">.autoheaders.h</innerfile>
-    <innerfile refid="d9/d51/basis__linear__algebra_8h">basis_linear_algebra.h</innerfile>
     <innerfile refid="d8/d4c/check__options_8h">check_options.h</innerfile>
     <innerfile refid="d3/dde/clover__exp_8h">clover_exp.h</innerfile>
     <innerfile refid="da/d6a/clover__tools_8h">clover_tools.h</innerfile>
     <innerfile refid="d2/d6f/communications_8h">communications.h</innerfile>
     <innerfile refid="d2/dfb/cpu__complex_8h">cpu_complex.h</innerfile>
+    <innerfile refid="de/d59/cpu__geometry_8h">cpu_geometry.h</innerfile>
     <innerfile refid="d5/d2b/data__storage_8h">data_storage.h</innerfile>
     <innerfile refid="d0/d40/dirac_8h">dirac.h</innerfile>
+    <innerfile refid="d2/d12/dirac__4f_8h">dirac_4f.h</innerfile>
+    <innerfile refid="d7/d0b/dirac__clover_8h">dirac_clover.h</innerfile>
+    <innerfile refid="df/d5f/dirac__cpu_8h">dirac_cpu.h</innerfile>
+    <innerfile refid="dd/d5f/dirac__default_8h">dirac_default.h</innerfile>
+    <innerfile refid="d3/dbc/dirac__gpu_8h">dirac_gpu.h</innerfile>
+    <innerfile refid="da/d0c/dirac__tm_8h">dirac_tm.h</innerfile>
     <innerfile refid="dc/d1e/disconnected_8h">disconnected.h</innerfile>
     <innerfile refid="da/d41/error_8h">error.h</innerfile>
     <innerfile refid="da/dac/field__ordering_8h">field_ordering.h</innerfile>
@@ -18,6 +24,9 @@
     <innerfile refid="d8/d7d/gaugefix_8h">gaugefix.h</innerfile>
     <innerfile refid="d4/d67/geometry_8h">geometry.h</innerfile>
     <innerfile refid="d4/d3d/geometry__check_8h">geometry_check.h</innerfile>
+    <innerfile refid="d3/d77/geometry__fuse_8h">geometry_fuse.h</innerfile>
+    <innerfile refid="d9/d46/geometry__init_8h">geometry_init.h</innerfile>
+    <innerfile refid="d6/d76/geometry__omp_8h">geometry_omp.h</innerfile>
     <innerfile refid="d2/d49/global_8h">global.h</innerfile>
     <innerfile refid="db/d97/glueballs_8h">glueballs.h</innerfile>
     <innerfile refid="d3/d93/gpu_8h">gpu.h</innerfile>
@@ -40,6 +49,7 @@
     <innerfile refid="d1/d79/random_8h">random.h</innerfile>
     <innerfile refid="d7/d3f/ranlux_8h">ranlux.h</innerfile>
     <innerfile refid="d5/dbc/rational__functions_8h">rational_functions.h</innerfile>
+    <innerfile refid="d7/d24/reduction_8h">reduction.h</innerfile>
     <innerfile refid="d0/d2b/representation_8h">representation.h</innerfile>
     <innerfile refid="df/dc5/scattering_8h">scattering.h</innerfile>
     <innerfile refid="d7/df7/setup_8h">setup.h</innerfile>
@@ -51,6 +61,7 @@
     <innerfile refid="d5/d40/suN__repr__func_8h">suN_repr_func.h</innerfile>
     <innerfile refid="d9/d21/suN__types_8h">suN_types.h</innerfile>
     <innerfile refid="db/d43/test__complex_8h">test_complex.h</innerfile>
+    <innerfile refid="df/dfd/test__utils_8h">test_utils.h</innerfile>
     <innerfile refid="d8/d72/update_8h">update.h</innerfile>
     <innerfile refid="d5/d60/utils_8h">utils.h</innerfile>
     <innerfile refid="d3/df8/wilsonflow_8h">wilsonflow.h</innerfile>

@@ -153,13 +153,27 @@
     </detaileddescription>
     <collaborationgraph>
       <node id="6">
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
+      </node>
+      <node id="5">
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
         <label>suNf_spinor</label>
         <link refid="d8/dd1/structsuNf__spinor"/>
-        <childnode refid="7" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>c</edgelabel>
         </childnode>
       </node>
-      <node id="8">
+      <node id="4">
         <label>monomial_data</label>
         <link refid="d0/d2c/structmonomial__data"/>
       </node>
@@ -170,21 +184,7 @@
           <edgelabel>integrator</edgelabel>
         </childnode>
       </node>
-      <node id="5">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
-      <node id="4">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
-        <childnode refid="5" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>ptr</edgelabel>
-        </childnode>
-      </node>
-      <node id="7">
+      <node id="8">
         <label>suNf_vector</label>
         <link refid="de/d49/structsuNf__vector"/>
       </node>
@@ -192,10 +192,10 @@
         <label>_monomial</label>
         <link refid="dc/df2/struct__monomial"/>
         <childnode refid="4" relation="usage">
-          <edgelabel>pseudofermion</edgelabel>
-        </childnode>
-        <childnode refid="8" relation="usage">
           <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>pseudofermion</edgelabel>
         </childnode>
       </node>
       <node id="2">

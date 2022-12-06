@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['g5dphi_385',['g5Dphi',['../dd/d5f/dirac__default_8h.html#a68849237f1eedede90b88e21ff727009',1,'dirac_default.h']]],
+  ['g5dphi_5fcpu_386',['g5Dphi_cpu',['../df/d5f/dirac__cpu_8h.html#ada15a3090dbcf9e2010a37930b5750a9',1,'dirac_cpu.h']]],
+  ['g5dphi_5feopre_387',['g5Dphi_eopre',['../dd/d5f/dirac__default_8h.html#a9c73b99e7d8d93e99dbe440d910775ce',1,'dirac_default.h']]],
+  ['g5dphi_5feopre_5fcpu_388',['g5Dphi_eopre_cpu',['../df/d5f/dirac__cpu_8h.html#a0e815aa7308b3b24ebd0705a5c33678c',1,'dirac_cpu.h']]],
+  ['g5dphi_5feopre_5fflt_389',['g5Dphi_eopre_flt',['../dd/d5f/dirac__default_8h.html#aff3135bc7d19e04234febb80654b034d',1,'dirac_default.h']]],
+  ['g5dphi_5feopre_5fsq_390',['g5Dphi_eopre_sq',['../dd/d5f/dirac__default_8h.html#ac24854f93d6060a0b70f61a8561b5ffd',1,'dirac_default.h']]],
+  ['g5dphi_5feopre_5fsq_5fcpu_391',['g5Dphi_eopre_sq_cpu',['../df/d5f/dirac__cpu_8h.html#a20fa9f36c6d950666931f11d601a77a6',1,'dirac_cpu.h']]],
+  ['g5dphi_5feopre_5fsq_5fflt_392',['g5Dphi_eopre_sq_flt',['../dd/d5f/dirac__default_8h.html#af27da4ab9b1e1d7cd83a7ca02d5a58d0',1,'dirac_default.h']]],
+  ['g5dphi_5fflt_393',['g5Dphi_flt',['../dd/d5f/dirac__default_8h.html#ac24de8c37ca66ceaa575b1ff925a69b7',1,'dirac_default.h']]],
+  ['g5dphi_5fflt_5fcpu_394',['g5Dphi_flt_cpu',['../df/d5f/dirac__cpu_8h.html#a17505259559fbbfec2ff014d07928ec4',1,'dirac_cpu.h']]],
+  ['g5dphi_5fsq_395',['g5Dphi_sq',['../dd/d5f/dirac__default_8h.html#adf394f28e01b9adf09be10f5c26a9359',1,'dirac_default.h']]],
+  ['g5dphi_5fsq_5fcpu_396',['g5Dphi_sq_cpu',['../df/d5f/dirac__cpu_8h.html#aa399c4321037797714e1ba312194530d',1,'dirac_cpu.h']]],
+  ['g5dphi_5fsq_5fflt_397',['g5Dphi_sq_flt',['../dd/d5f/dirac__default_8h.html#afa21fe8a182663059efd418a70cd6e16',1,'dirac_default.h']]],
+  ['g5dphi_5fsq_5fflt_5fcpu_398',['g5Dphi_sq_flt_cpu',['../df/d5f/dirac__cpu_8h.html#a2558792680af45fe6c077d3fdfe98577',1,'dirac_cpu.h']]],
+  ['get_5ferror_5ffilename_399',['get_error_filename',['../d7/df7/setup_8h.html#ac4b278e7459766a1b253f08f95d5ec2d',1,'setup.h']]],
+  ['get_5finput_5ffilename_400',['get_input_filename',['../d7/df7/setup_8h.html#a3c0077321ca35a259598c4c410cdc58c',1,'setup.h']]],
+  ['get_5foutput_5ffilename_401',['get_output_filename',['../d7/df7/setup_8h.html#ab97e5680f792b9113e82b19fcea49da3',1,'setup.h']]],
+  ['getmvm_402',['getMVM',['../dd/d5f/dirac__default_8h.html#a637a2e5d4765091eb7a3b321f38440c1',1,'dirac_default.h']]],
+  ['getmvm_5fcpu_403',['getMVM_cpu',['../df/d5f/dirac__cpu_8h.html#a612a5648a905828a6fc7506c7e9ef857',1,'dirac_cpu.h']]],
+  ['getmvm_5fflt_404',['getMVM_flt',['../dd/d5f/dirac__default_8h.html#a702cd61b648b77b1dcc126bbb29194b8',1,'dirac_default.h']]],
+  ['global_5fmax_405',['global_max',['../d7/d24/reduction_8h.html#a9fa591db50fae91b2cca51b21649bde1',1,'reduction.h']]],
+  ['global_5fmin_406',['global_min',['../d7/d24/reduction_8h.html#a946a386ad5dfe00a9e8b03197f1ba714',1,'reduction.h']]],
+  ['global_5fsum_407',['global_sum',['../d7/d24/reduction_8h.html#a57ff9571b54ed85d6910b096d30ddee2',1,'reduction.h']]],
+  ['global_5fsum_5fint_408',['global_sum_int',['../d7/d24/reduction_8h.html#af4508c57a617ed79efb901cae3d58e09',1,'reduction.h']]]
+];

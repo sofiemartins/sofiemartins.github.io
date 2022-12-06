@@ -4,7 +4,7 @@
     <compoundname>suNf_flt</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="db/d3f/structsuNf__flt_1af667ae69dc7b7d230ec4251246ef6970" prot="public" static="no" mutable="no">
-        <type><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref></type>
+        <type>hr_complex_flt</type>
         <definition>hr_complex_flt suNf_flt::c[4]</definition>
         <argsstring>[4]</argsstring>
         <name>c</name>

@@ -4,7 +4,7 @@
     <compoundname>suNf</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d0/d04/structsuNf_1a144441f673686bf655f1012cebde87ad" prot="public" static="no" mutable="no">
-        <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+        <type>hr_complex</type>
         <definition>hr_complex suNf::c[4]</definition>
         <argsstring>[4]</argsstring>
         <name>c</name>

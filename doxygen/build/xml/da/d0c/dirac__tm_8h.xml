@@ -1,0 +1,644 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="da/d0c/dirac__tm_8h" kind="file" language="C++">
+    <compoundname>dirac_tm.h</compoundname>
+    <includedby refid="d0/d40/dirac_8h" local="yes">dirac.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="1">
+        <label>dirac_tm.h</label>
+        <link refid="da/d0c/dirac__tm_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="da/d0c/dirac__tm_8h_1ac703e201f6d37c904f9c827c92f52ff5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>tw_D_type</name>
+        <enumvalue id="da/d0c/dirac__tm_8h_1ac703e201f6d37c904f9c827c92f52ff5a1ea328a644e627283a35716a54108248" prot="public">
+          <name>DIRECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="da/d0c/dirac__tm_8h_1ac703e201f6d37c904f9c827c92f52ff5ae29357ea888d50462660db3acc7fc072" prot="public">
+          <name>DAGGER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="32" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a2e2ca56caf2cac4660e281b510b0ca3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Qhat_eopre</definition>
+        <argsstring>(double m0, double mu, spinor_field *out, spinor_field *in)</argsstring>
+        <name>Qhat_eopre</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="2" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="2" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1af55ede180397c09e34265f31cc75ce04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Qhat_eopre_sq</definition>
+        <argsstring>(double m0, double mu, spinor_field *out, spinor_field *in)</argsstring>
+        <name>Qhat_eopre_sq</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="3" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="3" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a7bb24cec0fcdc3bacab39b5584c0f657" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_twisted_mass</definition>
+        <argsstring>(double mass)</argsstring>
+        <name>set_twisted_mass</name>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="5" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="5" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a93ef47a0a334cbd7a174a97f77514daf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Qtm_p</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>Qtm_p</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="7" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="7" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1ad03b65969bb8fc727bf8a6a5509efb68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Qtm_m</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>Qtm_m</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="8" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="8" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a9d168b8c38adaea95272d7b322ad6b5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QpQm_tm</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>QpQm_tm</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="9" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="9" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a6d4a4d82f577bf278121e71a97a5cf06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Qtm_p_alt</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>Qtm_p_alt</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="11" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a3bb4d58d0643ad75b86b57e120eebfd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Qtm_m_alt</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>Qtm_m_alt</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="12" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a7dce94fffa416858cdb9ffeb2676443b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void QpQm_tm_alt</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>QpQm_tm_alt</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="13" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="13" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a8b7c99cd5481429508bcb07402eb580b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tm_invert</definition>
+        <argsstring>(spinor_field *out, spinor_field *in, mshift_par *mpar)</argsstring>
+        <name>tm_invert</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>mpar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="16" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a635d8990eb1d6565dc084319b8109def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tm_invert_alt</definition>
+        <argsstring>(spinor_field *out, spinor_field *in, mshift_par *mpar)</argsstring>
+        <name>tm_invert_alt</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref> *</type>
+          <declname>mpar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="17" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1ad54cf26f2df8518319b86486c51750c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void H</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>H</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="19" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a7fcc1073ecea7530d42fd8bea416cb52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void H_flt</definition>
+        <argsstring>(spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>H_flt</name>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="20" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="20" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1ab52c3d5cb95eec6e100750c55079dfa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void H2</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>H2</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="21" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a8198a409ffa688b5f1c26e818aad3ba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void D</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>D</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="22" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a5bfe9f9a0623addd351ed57fa9d68acb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void D_flt</definition>
+        <argsstring>(spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>D_flt</name>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="23" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1ae44696b582b5750c629310bccd38d6af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_ff_dirac_mass</definition>
+        <argsstring>(double mass)</argsstring>
+        <name>set_ff_dirac_mass</name>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="26" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1abf666e8ee601c525461ed25aa64fb888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_ff_dirac_shift</definition>
+        <argsstring>(double mass)</argsstring>
+        <name>set_ff_dirac_shift</name>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="27" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="27" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1aa5873730ce94204803a385b85f8dfb01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dff</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>Dff</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="28" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a840b0e1186476188050508bf5724989f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dff_dagger</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>Dff_dagger</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="29" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a2210d5d05830299002e8037a11a426c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dff_sq</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>Dff_sq</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="30" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1a6c2dd1de8aed452b464cb0abf76ac956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dxx_tw_inv</definition>
+        <argsstring>(double mass, double twmass, spinor_field *out, spinor_field *in, tw_D_type tw_type)</argsstring>
+        <name>Dxx_tw_inv</name>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>twmass</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>tw_D_type</type>
+          <declname>tw_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="38" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="38" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1ad05bfca7134c136cbe75d64e48dfa48a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Dphi_eopre_tw</definition>
+        <argsstring>(double m0, double mu, spinor_field *out, spinor_field *in, tw_D_type tw_type)</argsstring>
+        <name>g5Dphi_eopre_tw</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>tw_D_type</type>
+          <declname>tw_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="39" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="39" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="da/d0c/dirac__tm_8h_1affa37697f4f0417219469b039663b5d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Dphi_eopre_tw_sq</definition>
+        <argsstring>(double m0, double mu, spinor_field *out, spinor_field *in)</argsstring>
+        <name>g5Dphi_eopre_tw_sq</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" line="40" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Twisted<sp/>mass<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Qhat_eopre(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Qhat_eopre_sq(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_twisted_mass(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass);<sp/></highlight><highlight class="comment">//<sp/>this<sp/>is<sp/>the<sp/>twisted<sp/>mass<sp/>used<sp/>in<sp/>the<sp/>twisted<sp/>mass<sp/>operators<sp/>(Q)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Qtm_p(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Qtm_m(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QpQm_tm(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Qtm_p_alt(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Qtm_m_alt(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QpQm_tm_alt(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Wrapper<sp/>to<sp/>invert<sp/>the<sp/>twisted<sp/>mass<sp/>operator<sp/>Qtm_p</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tm_invert(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*mpar);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tm_invert_alt(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*mpar);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>H(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>H_flt(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>H2(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>D(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>D_flt(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Dirac<sp/>operators<sp/>used<sp/>in<sp/>update<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_ff_dirac_mass(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass);<sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>is<sp/>the<sp/>mass<sp/>used<sp/>in<sp/>the<sp/>following<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_ff_dirac_shift(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass);<sp/></highlight><highlight class="comment">//<sp/>The<sp/>shift<sp/>added<sp/>to<sp/>four<sp/>fermion<sp/>Hasenbush-Dirac<sp/>operators<sp/>(Dff,<sp/>Dff_dagger<sp/>and<sp/>Df_sq)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dff(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dff_dagger(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dff_sq(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>DIRECT,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>DAGGER</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<sp/>tw_D_type;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dxx_tw_inv(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>twmass,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/>tw_D_type<sp/>tw_type);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Dphi_eopre_tw(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/>tw_D_type<sp/>tw_type);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Dphi_eopre_tw_sq(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_tm.h"/>
+  </compounddef>
+</doxygen>

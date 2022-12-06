@@ -4,7 +4,7 @@
     <compoundname>suNg</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d8/d0f/structsuNg_1a48ff15c9f5c61653a11ef8640bffc2a7" prot="public" static="no" mutable="no">
-        <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+        <type>hr_complex</type>
         <definition>hr_complex suNg::c[4]</definition>
         <argsstring>[4]</argsstring>
         <name>c</name>

@@ -8,40 +8,28 @@
     <includes refid="d1/d36/suN_8h" local="yes">suN.h</includes>
     <includes refid="d8/d72/update_8h" local="yes">update.h</includes>
     <incdepgraph>
-      <node id="5">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
-      <node id="16">
+      <node id="12">
         <label>rational_functions.h</label>
         <link refid="d5/dbc/rational__functions_8h_source"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="15">
         <label>monomials.h</label>
         <link refid="d5/d80/monomials_8h_source"/>
       </node>
       <node id="3">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
       </node>
-      <node id="8">
+      <node id="6">
         <label>cpu_complex.h</label>
         <link refid="d2/dfb/cpu__complex_8h_source"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -51,91 +39,77 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="4">
         <label>suN_types.h</label>
         <link refid="d9/d21/suN__types_8h_source"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-      </node>
-      <node id="10">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
       </node>
       <node id="2">
         <label>input_par.h</label>
         <link refid="d8/d5a/input__par_8h_source"/>
       </node>
-      <node id="14">
+      <node id="10">
         <label>update.h</label>
         <link refid="d8/d72/update_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
       </node>
-      <node id="11">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
-      </node>
-      <node id="7">
+      <node id="5">
         <label>hr_complex.h</label>
         <link refid="d1/d74/hr__complex_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>tgmath.h</label>
-      </node>
-      <node id="13">
-        <label>suN.h</label>
-        <link refid="d1/d36/suN_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="7">
+        <label>tgmath.h</label>
+      </node>
+      <node id="9">
+        <label>suN.h</label>
+        <link refid="d1/d36/suN_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
         <label>logger.h</label>
         <link refid="d1/d8c/logger_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="4">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
+      <node id="8">
         <label>stdio.h</label>
       </node>
-      <node id="17">
+      <node id="13">
         <label>glueballs.h</label>
         <link refid="db/d97/glueballs_8h_source"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="15">
+      <node id="11">
         <label>inverters.h</label>
         <link refid="d3/d5d/inverters_8h_source"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -637,7 +611,7 @@
           <array>[]</array>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>sf</declname>
         </param>
         <briefdescription>
@@ -679,7 +653,7 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>IO_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IO_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input_par.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;update.h&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -714,9 +688,9 @@
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_input(<ref refid="d4/dab/struct__input__record__t" kindref="compound">input_record_t</ref><sp/>irec[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_action(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/><ref refid="db/d4a/struct__integrator__par" kindref="compound">integrator_par</ref><sp/>**ipp);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_spinor_field_ascii(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[],<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*<sp/>sf);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_spinor_field_ascii(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>filename[],<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*<sp/>sf);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_mat(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref>*<sp/>mat);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_mat(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref>*<sp/>mat);<sp/></highlight><highlight class="comment">//TODO:<sp/>does<sp/>not<sp/>exist?</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/io.h"/>

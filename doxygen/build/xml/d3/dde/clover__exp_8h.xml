@@ -7,22 +7,10 @@
     <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
     <includes refid="d1/d36/suN_8h" local="yes">suN.h</includes>
     <incdepgraph>
-      <node id="8">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
       <node id="6">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -37,14 +25,6 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
-      <node id="10">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
-      </node>
       <node id="3">
         <label>hr_complex.h</label>
         <link refid="d1/d74/hr__complex_8h_source"/>
@@ -54,16 +34,10 @@
       <node id="5">
         <label>tgmath.h</label>
       </node>
-      <node id="11">
+      <node id="7">
         <label>suN.h</label>
         <link refid="d1/d36/suN_8h_source"/>
         <childnode refid="2" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -75,7 +49,7 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -397,7 +371,7 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLOVER_EXP_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hr_complex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_su2Nfc_times_su2Nfc_herm(<ref refid="d0/d04/structsuNf" kindref="compound">suNfc</ref><sp/>*C,<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNfc</ref><sp/>*B,<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNfc</ref><sp/>*A);</highlight></codeline>

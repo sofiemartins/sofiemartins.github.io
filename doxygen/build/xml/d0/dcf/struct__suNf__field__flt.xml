@@ -2,62 +2,14 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="d0/dcf/struct__suNf__field__flt" kind="struct" language="C++" prot="public">
     <compoundname>_suNf_field_flt</compoundname>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="d0/dcf/struct__suNf__field__flt_1a14ce1567fed8f90b1bacbf10b19610f8" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> *</type>
-        <definition>suNf_flt* _suNf_field_flt::ptr</definition>
-        <argsstring></argsstring>
-        <name>ptr</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="49" column="40" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="49" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="d0/dcf/struct__suNf__field__flt_1aa517c0f0fcb2f78ab3f3162a7c6f6b1f" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
-        <definition>geometry_descriptor* _suNf_field_flt::type</definition>
-        <argsstring></argsstring>
-        <name>type</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="49" column="65" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="49" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
+    <includes refid="d3/ded/spinor__field_8h" local="no">spinor_field.h</includes>
     <briefdescription>
+<para>Single precision gauge field in chosen fermion representation. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="1">
-        <label>_suNf_field_flt</label>
-        <link refid="d0/dcf/struct__suNf__field__flt"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>ptr</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>suNf_flt</label>
-        <link refid="db/d3f/structsuNf__flt"/>
-      </node>
-      <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
-    </collaborationgraph>
-    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="49" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="49" bodyend="49"/>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="138" column="1"/>
     <listofallmembers>
-      <member refid="d0/dcf/struct__suNf__field__flt_1a14ce1567fed8f90b1bacbf10b19610f8" prot="public" virt="non-virtual"><scope>_suNf_field_flt</scope><name>ptr</name></member>
-      <member refid="d0/dcf/struct__suNf__field__flt_1aa517c0f0fcb2f78ab3f3162a7c6f6b1f" prot="public" virt="non-virtual"><scope>_suNf_field_flt</scope><name>type</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -5,11 +5,21 @@
     <includes refid="d4/d67/geometry_8h" local="yes">geometry.h</includes>
     <includes refid="da/d41/error_8h" local="yes">error.h</includes>
     <incdepgraph>
+      <node id="7">
+        <label>cpu_geometry.h</label>
+        <link refid="de/d59/cpu__geometry_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>geometry_init.h</label>
+        <link refid="d9/d46/geometry__init_8h"/>
+      </node>
       <node id="3">
         <label>hr_omp.h</label>
         <link refid="d6/da7/hr__omp_8h_source"/>
       </node>
-      <node id="4">
+      <node id="9">
         <label>error.h</label>
         <link refid="da/d41/error_8h_source"/>
       </node>
@@ -18,13 +28,37 @@
         <link refid="d4/d3d/geometry__check_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
+      </node>
+      <node id="8">
+        <label>field_ordering.h</label>
+        <link refid="da/dac/field__ordering_8h_source"/>
       </node>
       <node id="2">
         <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
+        <link refid="d4/d67/geometry_8h"/>
         <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>geometry_omp.h</label>
+        <link refid="d6/d76/geometry__omp_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>geometry_fuse.h</label>
+        <link refid="d3/d77/geometry__fuse_8h"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -60,6 +94,30 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" line="10" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" bodystart="10" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="d4/d3d/geometry__check_8h_1a57b38767f72997cbe0e530aec2ca5e61" prot="public" static="no">
+        <name>_TWO_SPINORS_MATCHING</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" line="29" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/d3d/geometry__check_8h_1a29c2636539dced95a1b7f8c336add339" prot="public" static="no">
+        <name>_ARRAY_SPINOR_MATCHING</name>
+        <param><defname>s</defname></param>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" line="31" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -69,7 +127,7 @@
 <codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GEOMETRY_CHECK_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GEOMETRY_CHECK_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;geometry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d67/geometry_8h" kindref="compound">geometry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;error.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CHECK_GEOMETRY_MATCHING(s1,<sp/>s2)<sp/>\</highlight></codeline>
@@ -83,7 +141,25 @@
 <codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error(!(pass1<sp/>||<sp/>pass2<sp/>||<sp/>pass3),<sp/>1,<sp/>__FILE__<sp/>&quot;:<sp/>&quot;</highlight><highlight class="normal">,<sp/>&quot;Incorrect<sp/>combination<sp/>of<sp/>geometries!\n&quot;);\</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CHECK_SPINOR_MATCHING</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_MATCHING(s1,s2)<sp/>\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error((s1)-&gt;type!=(s2)-&gt;type,1,__FILE__<sp/>&quot;:<sp/>&quot;</highlight><highlight class="normal">,<sp/>&quot;Spinors<sp/>don&apos;t<sp/>match!&quot;);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ARRAY_SPINOR_MATCHING(s,n)<sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>for(int<sp/>_i=0;<sp/>_i&lt;n;<sp/>_i++)<sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error((s)-&gt;type!=((s)+_i)-&gt;type,1,__FILE__<sp/>&quot;:<sp/>&quot;</highlight><highlight class="normal">,<sp/>&quot;Spinors<sp/>don&apos;t<sp/>match!&quot;);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">/*<sp/>CHECK_SPINOR_MATCHING<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_MATCHING(s1,s2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ARRAY_SPINOR_MATCHING(s,n)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CHECK_SPINOR_MATCHING<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_check.h"/>
   </compounddef>

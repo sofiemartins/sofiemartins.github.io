@@ -91,12 +91,17 @@ $(document).ready(function(){initNavTree('d9/d96/struct__suNg__field.html','../.
 <div class="title">_suNg_field Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Gauge field of SU(N_g) matrices.  
+ <a href="../../d9/d96/struct__suNg__field.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d3/ded/spinor__field_8h_source.html">spinor_field.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for _suNg_field:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d2/d50/struct__suNg__field__coll__graph.png" border="0" usemap="#a__suNg__field_coll__map" alt="Collaboration graph"/></div>
 <map name="a__suNg__field_coll__map" id="a__suNg__field_coll__map">
-<area shape="rect" title=" " alt="" coords="97,95,187,121"/>
+<area shape="rect" title="Gauge field of SU(N_g) matrices." alt="" coords="97,109,187,136"/>
 <area shape="rect" href="../../db/d43/struct__geometry__descriptor.html" title=" " alt="" coords="5,5,153,32"/>
 <area shape="rect" href="../../d8/d0f/structsuNg.html" title=" " alt="" coords="178,5,231,32"/>
 </map>
@@ -104,13 +109,78 @@ Collaboration diagram for _suNg_field:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aeffc93216d18979c42c04c2f68d9f135"><td class="memItemLeft" align="right" valign="top"><a id="aeffc93216d18979c42c04c2f68d9f135"></a>
-<a class="el" href="../../d8/d0f/structsuNg.html">suNg</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ptr</b></td></tr>
-<tr class="separator:aeffc93216d18979c42c04c2f68d9f135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ec502675260ebe78cd9b6637fb04e9"><td class="memItemLeft" align="right" valign="top"><a id="ab0ec502675260ebe78cd9b6637fb04e9"></a>
-<a class="el" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
-<tr class="separator:ab0ec502675260ebe78cd9b6637fb04e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ddd821bc5f1935925035e45b8b35559"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d0f/structsuNg.html">suNg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d96/struct__suNg__field.html#a7ddd821bc5f1935925035e45b8b35559">ptr</a></td></tr>
+<tr class="separator:a7ddd821bc5f1935925035e45b8b35559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757e8ca74f63628b8f9a12e99c614bc6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d96/struct__suNg__field.html#a757e8ca74f63628b8f9a12e99c614bc6">type</a></td></tr>
+<tr class="separator:a757e8ca74f63628b8f9a12e99c614bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b482db466600c28db98da97605b302"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d0f/structsuNg.html">suNg</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d96/struct__suNg__field.html#a98b482db466600c28db98da97605b302">gpu_ptr</a></td></tr>
+<tr class="separator:a98b482db466600c28db98da97605b302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07bc349d2483a0e36b6ba95ed7450b27"><td class="memItemLeft" align="right" valign="top">MPI_Request&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d96/struct__suNg__field.html#a07bc349d2483a0e36b6ba95ed7450b27">comm_req</a></td></tr>
+<tr class="separator:a07bc349d2483a0e36b6ba95ed7450b27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Gauge field of SU(N_g) matrices. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a07bc349d2483a0e36b6ba95ed7450b27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07bc349d2483a0e36b6ba95ed7450b27">&#9670;&nbsp;</a></span>comm_req</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_suNg_field::comm_req</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Only active for WITH_MPI. Communication request handles for inter-node communication. </p>
+
+</div>
+</div>
+<a id="a98b482db466600c28db98da97605b302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98b482db466600c28db98da97605b302">&#9670;&nbsp;</a></span>gpu_ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_suNg_field::gpu_ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Only active for WITH_GPU. Contains field data on GPU memory. </p>
+
+</div>
+</div>
+<a id="a7ddd821bc5f1935925035e45b8b35559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ddd821bc5f1935925035e45b8b35559">&#9670;&nbsp;</a></span>ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_suNg_field::ptr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Array of SU(N_g) matrices, that contains the field data for the local lattice (in host memory) </p>
+
+</div>
+</div>
+<a id="a757e8ca74f63628b8f9a12e99c614bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a757e8ca74f63628b8f9a12e99c614bc6">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_suNg_field::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>geometry_descriptor contains geometry information for example pertaining the block decomposition </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="../../d3/ded/spinor__field_8h_source.html">spinor_field.h</a></li>
 </ul>

@@ -1,0 +1,288 @@
+\hypertarget{geometry__omp_8h}{}\doxysection{geometry\+\_\+omp.\+h File Reference}
+\label{geometry__omp_8h}\index{geometry\_omp.h@{geometry\_omp.h}}
+
+
+This file contains useful macros that perform Open\+MP reduction operations and are necessary to define iterations over sites on the lattice.  
+
+
+{\ttfamily \#include \char`\"{}hr\+\_\+omp.\+h\char`\"{}}\newline
+Include dependency graph for geometry\+\_\+omp.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_ac6d4ebd149866d64e22f0d1c775279a3}{\+\_\+\+PIECE\+\_\+\+FOR}}(type,  ip)~  for (int ip = 0; ip $<$ (type)-\/$>$local\+\_\+master\+\_\+pieces; ip++)
+\begin{DoxyCompactList}\small\item\em Iterate over the pieces of the given geometry. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_a567632169fe1cd16e8f38f3833818664}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+SUM}}(type,  ip,  is, ...)~\mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type, ip, is, \+\_\+omp\+\_\+sum(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\begin{DoxyCompactList}\small\item\em Iterate over sites on a given piece and omp-\/reduce using a sum. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_a5c00ec9197cc65e25aeb8021afc2e767}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+MAX}}(type,  ip,  is, ...)~\mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type, ip, is, \+\_\+omp\+\_\+max(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\begin{DoxyCompactList}\small\item\em Iterate over sites on a given piece and omp-\/reduce using a max. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_a3913525104a6f5570cb4c8013c11cd37}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+MIN}}(type,  ip,  is, ...)~\mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type, ip, is, \+\_\+omp\+\_\+min(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\begin{DoxyCompactList}\small\item\em Iterate over sites on a given piece and omp-\/reduce using a min. $\ast$. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type,  is,  redop1,  redop2)
+\begin{DoxyCompactList}\small\item\em Reduced iteration over all sites of the local lattice. Variables given as redop parameters will be reduced using an Open\+MP reduction sum. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_ab86b4c6ebcd404a9a269ebca66d5ac60}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+SUM}}(type,  is, ...)~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+sum(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\begin{DoxyCompactList}\small\item\em Reduced iteration over all sites of the local lattice and omp-\/reduce using a sum. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_abf71bff7a37073316e28b72f1b05b6ef}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+MAX}}(type,  is, ...)~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+max(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\begin{DoxyCompactList}\small\item\em Reduced iteration over all sites of the local lattice and omp-\/reduce using a max. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_a1db48d1359ff968440deb374f3c04778}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+MIN}}(type,  is, ...)~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+min(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )
+\begin{DoxyCompactList}\small\item\em Reduced iteration over all sites of the local lattice and omp-\/reduce using a min. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_a53ead484498c62f8c253ac5d45537610}{\+\_\+\+FUSE\+\_\+\+FOR\+\_\+\+RED}}(type,  ip,  is,  redop1,  redop2)
+\begin{DoxyCompactList}\small\item\em Fuse reduced on the current piece FIXME\+: more desc. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{geometry__omp_8h_a9d02d636b888218ff65f7085d0189116}{\+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type,  is,  redop1,  redop2)~  \mbox{\hyperlink{geometry__omp_8h_a53ead484498c62f8c253ac5d45537610}{\+\_\+\+FUSE\+\_\+\+FOR\+\_\+\+RED}}((type), \+\_\+fuse\+\_\+master\+\_\+for\+\_\+ip\+\_\+\#\#is, is, redop1, redop2)
+\begin{DoxyCompactList}\small\item\em Fuse reduce on the whole local lattice FIXME\+: more desc. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{geometry__omp_8h_af3d244a74e93ebd8d972b31211483d8f}\label{geometry__omp_8h_af3d244a74e93ebd8d972b31211483d8f}} 
+\#define \mbox{\hyperlink{geometry__omp_8h_af3d244a74e93ebd8d972b31211483d8f}{\+\_\+\+ONE\+\_\+\+SPINOR\+\_\+\+FOR\+\_\+\+RED}}(s,  redop1,  redop2)~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}((s)-\/$>$type,\+\_\+spinor\+\_\+for\+\_\+is,redop1,redop2)
+\begin{DoxyCompactList}\small\item\em Have the spinor to iterate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{geometry__omp_8h_afed9013e4caf088c2c66d8416617af77}\label{geometry__omp_8h_afed9013e4caf088c2c66d8416617af77}} 
+\#define {\bfseries \+\_\+\+ONE\+\_\+\+SPINOR\+\_\+\+FOR\+\_\+\+SUM}(s, ...)~\mbox{\hyperlink{geometry__omp_8h_af3d244a74e93ebd8d972b31211483d8f}{\+\_\+\+ONE\+\_\+\+SPINOR\+\_\+\+FOR\+\_\+\+RED}}(s,\+\_\+omp\+\_\+sum(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+),)
+\item 
+\#define {\bfseries \+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED}(s1,  s2,  redop1,  redop2)
+\item 
+\mbox{\Hypertarget{geometry__omp_8h_a94cc8b47e5677be5f85311df6b605cb8}\label{geometry__omp_8h_a94cc8b47e5677be5f85311df6b605cb8}} 
+\#define {\bfseries \+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+SUM}(s1,  s2, ...)~\+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED(s1,s2,\+\_\+omp\+\_\+sum(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+),)
+\item 
+\#define {\bfseries \+\_\+\+THREE\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED}(s1,  s2,  s3,  redop1,  redop2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains useful macros that perform Open\+MP reduction operations and are necessary to define iterations over sites on the lattice. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{geometry__omp_8h_a53ead484498c62f8c253ac5d45537610}\label{geometry__omp_8h_a53ead484498c62f8c253ac5d45537610}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_FUSE\_FOR\_RED@{\_FUSE\_FOR\_RED}}
+\index{\_FUSE\_FOR\_RED@{\_FUSE\_FOR\_RED}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_FUSE\_FOR\_RED}{\_FUSE\_FOR\_RED}}
+{\footnotesize\ttfamily \#define \+\_\+\+FUSE\+\_\+\+FOR\+\_\+\+RED(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{ip,  }\item[{}]{is,  }\item[{}]{redop1,  }\item[{}]{redop2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \_OMP\_PRAGMA(\_omp\_parallel)                        \(\backslash\)}
+\DoxyCodeLine{  \_OMP\_PRAGMA(\_omp\_for redop1 redop2)               \(\backslash\)}
+\DoxyCodeLine{  for (\textcolor{keywordtype}{int} ip = 0; ip < type-\/>fuse\_gauge\_size; ip++)}
+
+\end{DoxyCode}
+
+
+Fuse reduced on the current piece FIXME\+: more desc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice. \\
+\hline
+{\em ip} & Identifying index of the current piece \\
+\hline
+{\em is} & Local variable that runs over all site indices on the given piece. \\
+\hline
+{\em redop1} & Variable to reduce \\
+\hline
+{\em redop2} & Variable to reduce ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_a9d02d636b888218ff65f7085d0189116}\label{geometry__omp_8h_a9d02d636b888218ff65f7085d0189116}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_FUSE\_MASTER\_FOR\_RED@{\_FUSE\_MASTER\_FOR\_RED}}
+\index{\_FUSE\_MASTER\_FOR\_RED@{\_FUSE\_MASTER\_FOR\_RED}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_FUSE\_MASTER\_FOR\_RED}{\_FUSE\_MASTER\_FOR\_RED}}
+{\footnotesize\ttfamily \#define \+\_\+\+FUSE\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{is,  }\item[{}]{redop1,  }\item[{}]{redop2 }\end{DoxyParamCaption})~  \mbox{\hyperlink{geometry__omp_8h_a53ead484498c62f8c253ac5d45537610}{\+\_\+\+FUSE\+\_\+\+FOR\+\_\+\+RED}}((type), \+\_\+fuse\+\_\+master\+\_\+for\+\_\+ip\+\_\+\#\#is, is, redop1, redop2)}
+
+
+
+Fuse reduce on the whole local lattice FIXME\+: more desc. 
+
+
+\begin{DoxyItemize}
+\item 
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice. \\
+\hline
+{\em is} & Local variable that runs over all site indices on the given piece. \\
+\hline
+{\em redop1} & Variable to reduce \\
+\hline
+{\em redop2} & Variable to reduce \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\mbox{\Hypertarget{geometry__omp_8h_abf71bff7a37073316e28b72f1b05b6ef}\label{geometry__omp_8h_abf71bff7a37073316e28b72f1b05b6ef}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_MASTER\_FOR\_MAX@{\_MASTER\_FOR\_MAX}}
+\index{\_MASTER\_FOR\_MAX@{\_MASTER\_FOR\_MAX}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_MASTER\_FOR\_MAX}{\_MASTER\_FOR\_MAX}}
+{\footnotesize\ttfamily \#define \+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+MAX(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{is,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+max(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )}
+
+
+
+Reduced iteration over all sites of the local lattice and omp-\/reduce using a max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice. \\
+\hline
+{\em is} & Local variable that runs over all site indices on the given piece \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_a1db48d1359ff968440deb374f3c04778}\label{geometry__omp_8h_a1db48d1359ff968440deb374f3c04778}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_MASTER\_FOR\_MIN@{\_MASTER\_FOR\_MIN}}
+\index{\_MASTER\_FOR\_MIN@{\_MASTER\_FOR\_MIN}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_MASTER\_FOR\_MIN}{\_MASTER\_FOR\_MIN}}
+{\footnotesize\ttfamily \#define \+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+MIN(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{is,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+min(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )}
+
+
+
+Reduced iteration over all sites of the local lattice and omp-\/reduce using a min. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice. \\
+\hline
+{\em is} & Local variable that runs over all site indices on the given piece \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}\label{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_MASTER\_FOR\_RED@{\_MASTER\_FOR\_RED}}
+\index{\_MASTER\_FOR\_RED@{\_MASTER\_FOR\_RED}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_MASTER\_FOR\_RED}{\_MASTER\_FOR\_RED}}
+{\footnotesize\ttfamily \#define \+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{is,  }\item[{}]{redop1,  }\item[{}]{redop2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{geometry__omp_8h_ac6d4ebd149866d64e22f0d1c775279a3}{\_PIECE\_FOR}}((type), \_master\_for\_ip\_\#\#is)         \(\backslash\)}
+\DoxyCodeLine{  \_SITE\_FOR\_RED((type), \_master\_for\_ip\_\#\#is, is, redop1, redop2)}
+
+\end{DoxyCode}
+
+
+Reduced iteration over all sites of the local lattice. Variables given as redop parameters will be reduced using an Open\+MP reduction sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local and global lattice \\
+\hline
+{\em is} & Local variable that runs over all site indices on the local lattice \\
+\hline
+{\em redop1} & Variable to reduce \\
+\hline
+{\em redop2} & Variable to reduce \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_ab86b4c6ebcd404a9a269ebca66d5ac60}\label{geometry__omp_8h_ab86b4c6ebcd404a9a269ebca66d5ac60}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_MASTER\_FOR\_SUM@{\_MASTER\_FOR\_SUM}}
+\index{\_MASTER\_FOR\_SUM@{\_MASTER\_FOR\_SUM}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_MASTER\_FOR\_SUM}{\_MASTER\_FOR\_SUM}}
+{\footnotesize\ttfamily \#define \+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+SUM(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{is,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry__omp_8h_aed11bae04cbbd3a72474e30c957c7fb3}{\+\_\+\+MASTER\+\_\+\+FOR\+\_\+\+RED}}(type, is, \+\_\+omp\+\_\+sum(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )}
+
+
+
+Reduced iteration over all sites of the local lattice and omp-\/reduce using a sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice. \\
+\hline
+{\em is} & Local variable that runs over all site indices on the given piece \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_ac6d4ebd149866d64e22f0d1c775279a3}\label{geometry__omp_8h_ac6d4ebd149866d64e22f0d1c775279a3}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_PIECE\_FOR@{\_PIECE\_FOR}}
+\index{\_PIECE\_FOR@{\_PIECE\_FOR}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_PIECE\_FOR}{\_PIECE\_FOR}}
+{\footnotesize\ttfamily \#define \+\_\+\+PIECE\+\_\+\+FOR(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{ip }\end{DoxyParamCaption})~  for (int ip = 0; ip $<$ (type)-\/$>$local\+\_\+master\+\_\+pieces; ip++)}
+
+
+
+Iterate over the pieces of the given geometry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local and global lattice \\
+\hline
+{\em ip} & local variable that denotes the piece index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_a5c00ec9197cc65e25aeb8021afc2e767}\label{geometry__omp_8h_a5c00ec9197cc65e25aeb8021afc2e767}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_SITE\_FOR\_MAX@{\_SITE\_FOR\_MAX}}
+\index{\_SITE\_FOR\_MAX@{\_SITE\_FOR\_MAX}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_SITE\_FOR\_MAX}{\_SITE\_FOR\_MAX}}
+{\footnotesize\ttfamily \#define \+\_\+\+SITE\+\_\+\+FOR\+\_\+\+MAX(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{ip,  }\item[{}]{is,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type, ip, is, \+\_\+omp\+\_\+max(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )}
+
+
+
+Iterate over sites on a given piece and omp-\/reduce using a max. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice. \\
+\hline
+{\em ip} & Identifying index of the current piece \\
+\hline
+{\em is} & local variable that runs over all site indices on the given piece \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_a3913525104a6f5570cb4c8013c11cd37}\label{geometry__omp_8h_a3913525104a6f5570cb4c8013c11cd37}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_SITE\_FOR\_MIN@{\_SITE\_FOR\_MIN}}
+\index{\_SITE\_FOR\_MIN@{\_SITE\_FOR\_MIN}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_SITE\_FOR\_MIN}{\_SITE\_FOR\_MIN}}
+{\footnotesize\ttfamily \#define \+\_\+\+SITE\+\_\+\+FOR\+\_\+\+MIN(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{ip,  }\item[{}]{is,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type, ip, is, \+\_\+omp\+\_\+min(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )}
+
+
+
+Iterate over sites on a given piece and omp-\/reduce using a min. $\ast$. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice. \\
+\hline
+{\em ip} & Identifying index of the current piece \\
+\hline
+{\em is} & local variable that runs over all site indices on the given piece \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_a567632169fe1cd16e8f38f3833818664}\label{geometry__omp_8h_a567632169fe1cd16e8f38f3833818664}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_SITE\_FOR\_SUM@{\_SITE\_FOR\_SUM}}
+\index{\_SITE\_FOR\_SUM@{\_SITE\_FOR\_SUM}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_SITE\_FOR\_SUM}{\_SITE\_FOR\_SUM}}
+{\footnotesize\ttfamily \#define \+\_\+\+SITE\+\_\+\+FOR\+\_\+\+SUM(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{ip,  }\item[{}]{is,  }\item[{}]{... }\end{DoxyParamCaption})~\mbox{\hyperlink{geometry_8h_a72d8a3ce27714e0875e067679d895f58}{\+\_\+\+SITE\+\_\+\+FOR\+\_\+\+RED}}(type, ip, is, \+\_\+omp\+\_\+sum(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+), )}
+
+
+
+Iterate over sites on a given piece and omp-\/reduce using a sum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} that contains information on the geometry of the local lattice. \\
+\hline
+{\em ip} & Identifying index of the current piece \\
+\hline
+{\em is} & local variable that runs over all site indices on the given piece \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{geometry__omp_8h_a9231877584eff0fa16dbea12f0c22a18}\label{geometry__omp_8h_a9231877584eff0fa16dbea12f0c22a18}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_THREE\_SPINORS\_FOR\_RED@{\_THREE\_SPINORS\_FOR\_RED}}
+\index{\_THREE\_SPINORS\_FOR\_RED@{\_THREE\_SPINORS\_FOR\_RED}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_THREE\_SPINORS\_FOR\_RED}{\_THREE\_SPINORS\_FOR\_RED}}
+{\footnotesize\ttfamily \#define \+\_\+\+THREE\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED(\begin{DoxyParamCaption}\item[{}]{s1,  }\item[{}]{s2,  }\item[{}]{s3,  }\item[{}]{redop1,  }\item[{}]{redop2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \_TWO\_SPINORS\_MATCHING(s1,s2); \(\backslash\)}
+\DoxyCodeLine{  \_TWO\_SPINORS\_MATCHING(s1,s3); \(\backslash\)}
+\DoxyCodeLine{  \_ONE\_SPINOR\_FOR\_RED(s1,redop1,redop2)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{geometry__omp_8h_a6ad91790f7a74c0b37cac897870a3160}\label{geometry__omp_8h_a6ad91790f7a74c0b37cac897870a3160}} 
+\index{geometry\_omp.h@{geometry\_omp.h}!\_TWO\_SPINORS\_FOR\_RED@{\_TWO\_SPINORS\_FOR\_RED}}
+\index{\_TWO\_SPINORS\_FOR\_RED@{\_TWO\_SPINORS\_FOR\_RED}!geometry\_omp.h@{geometry\_omp.h}}
+\doxysubsubsection{\texorpdfstring{\_TWO\_SPINORS\_FOR\_RED}{\_TWO\_SPINORS\_FOR\_RED}}
+{\footnotesize\ttfamily \#define \+\_\+\+TWO\+\_\+\+SPINORS\+\_\+\+FOR\+\_\+\+RED(\begin{DoxyParamCaption}\item[{}]{s1,  }\item[{}]{s2,  }\item[{}]{redop1,  }\item[{}]{redop2 }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \_TWO\_SPINORS\_MATCHING(s1,s2); \(\backslash\)}
+\DoxyCodeLine{  \_ONE\_SPINOR\_FOR\_RED(s1,redop1,redop2)}
+
+\end{DoxyCode}

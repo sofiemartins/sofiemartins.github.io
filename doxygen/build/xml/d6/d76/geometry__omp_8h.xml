@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d6/d76/geometry__omp_8h" kind="file" language="C++">
+    <compoundname>geometry_omp.h</compoundname>
+    <includes refid="d6/da7/hr__omp_8h" local="yes">hr_omp.h</includes>
+    <includedby refid="d4/d67/geometry_8h" local="yes">geometry.h</includedby>
+    <includedby refid="d3/d77/geometry__fuse_8h" local="yes">geometry_fuse.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>hr_omp.h</label>
+        <link refid="d6/da7/hr__omp_8h_source"/>
+      </node>
+      <node id="1">
+        <label>geometry_omp.h</label>
+        <link refid="d6/d76/geometry__omp_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="4">
+        <label>global.h</label>
+        <link refid="d2/d49/global_8h_source"/>
+      </node>
+      <node id="5">
+        <label>utils.h</label>
+        <link refid="d5/d60/utils_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>geometry_check.h</label>
+        <link refid="d4/d3d/geometry__check_8h_source"/>
+      </node>
+      <node id="2">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>geometry_omp.h</label>
+        <link refid="d6/d76/geometry__omp_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>geometry_fuse.h</label>
+        <link refid="d3/d77/geometry__fuse_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1ac6d4ebd149866d64e22f0d1c775279a3" prot="public" static="no">
+        <name>_PIECE_FOR</name>
+        <param><defname>type</defname></param>
+        <param><defname>ip</defname></param>
+        <initializer>  for (int ip = 0; ip &lt; (type)-&gt;local_master_pieces; ip++)</initializer>
+        <briefdescription>
+<para>Iterate over the pieces of the given geometry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local and global lattice </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local variable that denotes the piece index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="19" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a567632169fe1cd16e8f38f3833818664" prot="public" static="no">
+        <name>_SITE_FOR_SUM</name>
+        <param><defname>type</defname></param>
+        <param><defname>ip</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d4/d67/geometry_8h_1a72d8a3ce27714e0875e067679d895f58" kindref="member">_SITE_FOR_RED</ref>(type, ip, is, _omp_sum(__VA_ARGS__), )</initializer>
+        <briefdescription>
+<para>Iterate over sites on a given piece and omp-reduce using a sum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local lattice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifying index of the current piece </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local variable that runs over all site indices on the given piece </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="30" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a5c00ec9197cc65e25aeb8021afc2e767" prot="public" static="no">
+        <name>_SITE_FOR_MAX</name>
+        <param><defname>type</defname></param>
+        <param><defname>ip</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d4/d67/geometry_8h_1a72d8a3ce27714e0875e067679d895f58" kindref="member">_SITE_FOR_RED</ref>(type, ip, is, _omp_max(__VA_ARGS__), )</initializer>
+        <briefdescription>
+<para>Iterate over sites on a given piece and omp-reduce using a max. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local lattice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifying index of the current piece </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local variable that runs over all site indices on the given piece </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="40" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a3913525104a6f5570cb4c8013c11cd37" prot="public" static="no">
+        <name>_SITE_FOR_MIN</name>
+        <param><defname>type</defname></param>
+        <param><defname>ip</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d4/d67/geometry_8h_1a72d8a3ce27714e0875e067679d895f58" kindref="member">_SITE_FOR_RED</ref>(type, ip, is, _omp_min(__VA_ARGS__), )</initializer>
+        <briefdescription>
+<para>Iterate over sites on a given piece and omp-reduce using a min. *. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local lattice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifying index of the current piece </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>local variable that runs over all site indices on the given piece </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="50" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1aed11bae04cbbd3a72474e30c957c7fb3" prot="public" static="no">
+        <name>_MASTER_FOR_RED</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer>  <ref refid="d6/d76/geometry__omp_8h_1ac6d4ebd149866d64e22f0d1c775279a3" kindref="member">_PIECE_FOR</ref>((type), _master_for_ip_##is)         \
+  <ref refid="d4/d67/geometry_8h_1a72d8a3ce27714e0875e067679d895f58" kindref="member">_SITE_FOR_RED</ref>((type), _master_for_ip_##is, is, redop1, redop2)</initializer>
+        <briefdescription>
+<para>Reduced iteration over all sites of the local lattice. Variables given as redop parameters will be reduced using an OpenMP reduction sum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local and global lattice </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local variable that runs over all site indices on the local lattice </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redop1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable to reduce </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redop2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable to reduce </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="62" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1ab86b4c6ebcd404a9a269ebca66d5ac60" prot="public" static="no">
+        <name>_MASTER_FOR_SUM</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1aed11bae04cbbd3a72474e30c957c7fb3" kindref="member">_MASTER_FOR_RED</ref>(type, is, _omp_sum(__VA_ARGS__), )</initializer>
+        <briefdescription>
+<para>Reduced iteration over all sites of the local lattice and omp-reduce using a sum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local lattice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local variable that runs over all site indices on the given piece </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="73" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1abf71bff7a37073316e28b72f1b05b6ef" prot="public" static="no">
+        <name>_MASTER_FOR_MAX</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1aed11bae04cbbd3a72474e30c957c7fb3" kindref="member">_MASTER_FOR_RED</ref>(type, is, _omp_max(__VA_ARGS__), )</initializer>
+        <briefdescription>
+<para>Reduced iteration over all sites of the local lattice and omp-reduce using a max. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local lattice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local variable that runs over all site indices on the given piece </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="82" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a1db48d1359ff968440deb374f3c04778" prot="public" static="no">
+        <name>_MASTER_FOR_MIN</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1aed11bae04cbbd3a72474e30c957c7fb3" kindref="member">_MASTER_FOR_RED</ref>(type, is, _omp_min(__VA_ARGS__), )</initializer>
+        <briefdescription>
+<para>Reduced iteration over all sites of the local lattice and omp-reduce using a min. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local lattice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local variable that runs over all site indices on the given piece </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="91" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a53ead484498c62f8c253ac5d45537610" prot="public" static="no">
+        <name>_FUSE_FOR_RED</name>
+        <param><defname>type</defname></param>
+        <param><defname>ip</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer>  _OMP_PRAGMA(_omp_parallel)                        \
+  _OMP_PRAGMA(_omp_for redop1 redop2)               \
+  for (int ip = 0; ip &lt; type-&gt;fuse_gauge_size; ip++)</initializer>
+        <briefdescription>
+<para>Fuse reduced on the current piece FIXME: more desc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local lattice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Identifying index of the current piece </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local variable that runs over all site indices on the given piece. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redop1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable to reduce </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redop2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable to reduce <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="103" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a9d02d636b888218ff65f7085d0189116" prot="public" static="no">
+        <name>_FUSE_MASTER_FOR_RED</name>
+        <param><defname>type</defname></param>
+        <param><defname>is</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer>  <ref refid="d6/d76/geometry__omp_8h_1a53ead484498c62f8c253ac5d45537610" kindref="member">_FUSE_FOR_RED</ref>((type), _fuse_master_for_ip_##is, is, redop1, redop2)</initializer>
+        <briefdescription>
+<para>Fuse reduce on the whole local lattice FIXME: more desc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains information on the geometry of the local lattice. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Local variable that runs over all site indices on the given piece. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redop1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable to reduce </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>redop2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable to reduce </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="117" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1af3d244a74e93ebd8d972b31211483d8f" prot="public" static="no">
+        <name>_ONE_SPINOR_FOR_RED</name>
+        <param><defname>s</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1aed11bae04cbbd3a72474e30c957c7fb3" kindref="member">_MASTER_FOR_RED</ref>((s)-&gt;type,_spinor_for_is,redop1,redop2)</initializer>
+        <briefdescription>
+<para>Have the spinor to iterate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="123" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1afed9013e4caf088c2c66d8416617af77" prot="public" static="no">
+        <name>_ONE_SPINOR_FOR_SUM</name>
+        <param><defname>s</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="d6/d76/geometry__omp_8h_1af3d244a74e93ebd8d972b31211483d8f" kindref="member">_ONE_SPINOR_FOR_RED</ref>(s,_omp_sum(__VA_ARGS__),)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="125" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a6ad91790f7a74c0b37cac897870a3160" prot="public" static="no">
+        <name>_TWO_SPINORS_FOR_RED</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer>  _TWO_SPINORS_MATCHING(s1,s2); \
+  <ref refid="d6/d76/geometry__omp_8h_1af3d244a74e93ebd8d972b31211483d8f" kindref="member">_ONE_SPINOR_FOR_RED</ref>(s1,redop1,redop2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="127" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a94cc8b47e5677be5f85311df6b605cb8" prot="public" static="no">
+        <name>_TWO_SPINORS_FOR_SUM</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>_TWO_SPINORS_FOR_RED(s1,s2,_omp_sum(__VA_ARGS__),)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="131" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d6/d76/geometry__omp_8h_1a9231877584eff0fa16dbea12f0c22a18" prot="public" static="no">
+        <name>_THREE_SPINORS_FOR_RED</name>
+        <param><defname>s1</defname></param>
+        <param><defname>s2</defname></param>
+        <param><defname>s3</defname></param>
+        <param><defname>redop1</defname></param>
+        <param><defname>redop2</defname></param>
+        <initializer>  _TWO_SPINORS_MATCHING(s1,s2); \
+  _TWO_SPINORS_MATCHING(s1,s3); \
+  <ref refid="d6/d76/geometry__omp_8h_1af3d244a74e93ebd8d972b31211483d8f" kindref="member">_ONE_SPINOR_FOR_RED</ref>(s1,redop1,redop2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" line="134" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains useful macros that perform OpenMP reduction operations and are necessary to define iterations over sites on the lattice. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GEOMETRY_OMP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GEOMETRY_OMP_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hr_omp.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d6/d76/geometry__omp_8h_1ac6d4ebd149866d64e22f0d1c775279a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_PIECE_FOR(type,<sp/>ip)<sp/>\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/>for<sp/>(int<sp/>ip<sp/>=<sp/>0;<sp/>ip<sp/>&lt;<sp/>(type)-&gt;local_master_pieces;<sp/>ip++)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d6/d76/geometry__omp_8h_1a567632169fe1cd16e8f38f3833818664" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_SITE_FOR_SUM(type,<sp/>ip,<sp/>is,<sp/>...)<sp/>_SITE_FOR_RED(type,<sp/>ip,<sp/>is,<sp/>_omp_sum(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d6/d76/geometry__omp_8h_1a5c00ec9197cc65e25aeb8021afc2e767" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_SITE_FOR_MAX(type,<sp/>ip,<sp/>is,<sp/>...)<sp/>_SITE_FOR_RED(type,<sp/>ip,<sp/>is,<sp/>_omp_max(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="d6/d76/geometry__omp_8h_1a3913525104a6f5570cb4c8013c11cd37" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_SITE_FOR_MIN(type,<sp/>ip,<sp/>is,<sp/>...)<sp/>_SITE_FOR_RED(type,<sp/>ip,<sp/>is,<sp/>_omp_min(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="d6/d76/geometry__omp_8h_1aed11bae04cbbd3a72474e30c957c7fb3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MASTER_FOR_RED(type,<sp/>is,<sp/>redop1,<sp/>redop2)<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/>_PIECE_FOR((type),<sp/>_master_for_ip_##is)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/>_SITE_FOR_RED((type),<sp/>_master_for_ip_##is,<sp/>is,<sp/>redop1,<sp/>redop2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="d6/d76/geometry__omp_8h_1ab86b4c6ebcd404a9a269ebca66d5ac60" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MASTER_FOR_SUM(type,<sp/>is,<sp/>...)<sp/>_MASTER_FOR_RED(type,<sp/>is,<sp/>_omp_sum(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="d6/d76/geometry__omp_8h_1abf71bff7a37073316e28b72f1b05b6ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MASTER_FOR_MAX(type,<sp/>is,<sp/>...)<sp/>_MASTER_FOR_RED(type,<sp/>is,<sp/>_omp_max(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="d6/d76/geometry__omp_8h_1a1db48d1359ff968440deb374f3c04778" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MASTER_FOR_MIN(type,<sp/>is,<sp/>...)<sp/>_MASTER_FOR_RED(type,<sp/>is,<sp/>_omp_min(__VA_ARGS__),<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="d6/d76/geometry__omp_8h_1a53ead484498c62f8c253ac5d45537610" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FUSE_FOR_RED(type,<sp/>ip,<sp/>is,<sp/>redop1,<sp/>redop2)<sp/>\</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"><sp/><sp/>_OMP_PRAGMA(_omp_parallel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"><sp/><sp/>_OMP_PRAGMA(_omp_for<sp/>redop1<sp/>redop2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"><sp/><sp/>for<sp/>(int<sp/>ip<sp/>=<sp/>0;<sp/>ip<sp/>&lt;<sp/>type-&gt;fuse_gauge_size;<sp/>ip++)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="d6/d76/geometry__omp_8h_1a9d02d636b888218ff65f7085d0189116" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FUSE_MASTER_FOR_RED(type,<sp/>is,<sp/>redop1,<sp/>redop2)<sp/>\</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"><sp/><sp/>_FUSE_FOR_RED((type),<sp/>_fuse_master_for_ip_##is,<sp/>is,<sp/>redop1,<sp/>redop2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="d6/d76/geometry__omp_8h_1af3d244a74e93ebd8d972b31211483d8f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ONE_SPINOR_FOR_RED(s,redop1,redop2)<sp/>_MASTER_FOR_RED((s)-&gt;type,_spinor_for_is,redop1,redop2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_ONE_SPINOR_FOR_SUM(s,...)<sp/>_ONE_SPINOR_FOR_RED(s,_omp_sum(__VA_ARGS__),)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_FOR_RED(s1,s2,redop1,redop2)<sp/>\</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"><sp/><sp/>_TWO_SPINORS_MATCHING(s1,s2);<sp/>\</highlight></codeline>
+<codeline lineno="129"><highlight class="preprocessor"><sp/><sp/>_ONE_SPINOR_FOR_RED(s1,redop1,redop2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TWO_SPINORS_FOR_SUM(s1,s2,...)<sp/>_TWO_SPINORS_FOR_RED(s1,s2,_omp_sum(__VA_ARGS__),)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_THREE_SPINORS_FOR_RED(s1,s2,s3,redop1,redop2)<sp/>\</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"><sp/><sp/>_TWO_SPINORS_MATCHING(s1,s2);<sp/>\</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"><sp/><sp/>_TWO_SPINORS_MATCHING(s1,s3);<sp/>\</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"><sp/><sp/>_ONE_SPINOR_FOR_RED(s1,redop1,redop2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/geometry_omp.h"/>
+  </compounddef>
+</doxygen>

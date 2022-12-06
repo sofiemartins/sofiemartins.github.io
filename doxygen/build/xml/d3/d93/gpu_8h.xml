@@ -57,7 +57,7 @@
 <codeline lineno="48"><highlight class="comment">}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>alloc_double_sum_field(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*<sp/>alloc_complex_sum_field(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">hr_complex*<sp/>alloc_complex_sum_field(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>START_SP_ADDRESS_GPU(sf)<sp/>((sf)-&gt;gpu_ptr<sp/>+<sp/>(sf)-&gt;type-&gt;master_start[0])</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>START_GF_ADDRESS_GPU(gf)<sp/>((gf)-&gt;gpu_ptr<sp/>+<sp/>(gf)-&gt;type-&gt;master_start[0])</highlight><highlight class="normal"></highlight></codeline>

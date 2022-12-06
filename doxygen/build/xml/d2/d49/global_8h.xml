@@ -10,6 +10,16 @@
     <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
     <includes refid="d8/d5a/input__par_8h" local="yes">input_par.h</includes>
     <incdepgraph>
+      <node id="13">
+        <label>cpu_geometry.h</label>
+        <link refid="de/d59/cpu__geometry_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>geometry_init.h</label>
+        <link refid="d9/d46/geometry__init_8h"/>
+      </node>
       <node id="9">
         <label>hr_omp.h</label>
         <link refid="d6/da7/hr__omp_8h_source"/>
@@ -23,27 +33,19 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="15">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -61,15 +63,11 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="12">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
-      <node id="13">
+      <node id="16">
         <label>input_par.h</label>
         <link refid="d8/d5a/input__par_8h_source"/>
       </node>
-      <node id="10">
+      <node id="14">
         <label>field_ordering.h</label>
         <link refid="da/dac/field__ordering_8h_source"/>
       </node>
@@ -84,8 +82,28 @@
       </node>
       <node id="8">
         <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
+        <link refid="d4/d67/geometry_8h"/>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>geometry_omp.h</label>
+        <link refid="d6/d76/geometry__omp_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>geometry_fuse.h</label>
+        <link refid="d3/d77/geometry__fuse_8h"/>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -110,20 +128,24 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="24" column="12" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="24" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="define" id="d2/d49/global_8h_1aac9da87c5539adae7fdb77d9f4bd520a" prot="public" static="no">
-        <name>ipt</name>
-        <param><defname>t</defname></param>
-        <param><defname>x</defname></param>
-        <param><defname>y</defname></param>
-        <param><defname>z</defname></param>
-        <initializer>ipt[((((t)+T_BORDER)*(X_EXT)+((x)+X_BORDER))*(Y_EXT)+((y)+Y_BORDER))*(Z_EXT)+((z)+Z_BORDER)]</initializer>
+      <memberdef kind="define" id="d2/d49/global_8h_1a899e182e1c6cd7cd1a04d9eb2a5593be" prot="public" static="no">
+        <name>_lexi</name>
+        <param><defname>_T</defname></param>
+        <param><defname>_X</defname></param>
+        <param><defname>_Y</defname></param>
+        <param><defname>_Z</defname></param>
+        <param><defname>_t</defname></param>
+        <param><defname>_x</defname></param>
+        <param><defname>_y</defname></param>
+        <param><defname>_z</defname></param>
+        <initializer>((((_t)*(_X)+(_x))*(_Y)+(_y))*(_Z)+(_z))</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="96" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="96" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="103" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1a82a50358f04971612c349da74bd31d42" prot="public" static="no">
         <name>ipt_ext</name>
@@ -131,14 +153,41 @@
         <param><defname>x</defname></param>
         <param><defname>y</defname></param>
         <param><defname>z</defname></param>
-        <initializer>ipt[(((t)*(X_EXT)+(x))*(Y_EXT)+(y))*(Z_EXT)+(z)]</initializer>
+        <initializer>ipt[_lexi(T_EXT, X_EXT, Y_EXT, Z_EXT, t, x, y, z)]</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="97" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="97" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="105" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d49/global_8h_1aac9da87c5539adae7fdb77d9f4bd520a" prot="public" static="no">
+        <name>ipt</name>
+        <param><defname>t</defname></param>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <param><defname>z</defname></param>
+        <initializer>ipt_ext((t)+T_BORDER, (x)+X_BORDER, (y)+Y_BORDER, (z)+Z_BORDER)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="106" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d49/global_8h_1a20f25d123064e3d6127867a39d04767c" prot="public" static="no">
+        <name>imask</name>
+        <param><defname>ix</defname></param>
+        <initializer>imask[ix]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="107" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1a45a0720f65f8aa3929eb2227a38ef1e5" prot="public" static="no">
         <name>ipt_4d</name>
@@ -151,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="98" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="98" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="111" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="111" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1a1f33a6a85eab57d72547f859de4fc742" prot="public" static="no">
         <name>iup</name>
@@ -164,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="99" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="99" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="112" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="112" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1af85fe87c9fb3904e12ffe63c0d58c60d" prot="public" static="no">
         <name>idn</name>
@@ -177,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="100" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="100" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="113" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1a5af6ecbe8d5ab94bf0a73b58b77b6c24" prot="public" static="no">
         <name>glat_default</name>
@@ -188,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="118" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="118" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="131" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1acb3be9bad47c04ca4e21306bcbc3283e" prot="public" static="no">
         <name>STD_MEM_TYPE</name>
@@ -199,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="141" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="141" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="154" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1aef39f1a254f326e04e03085a156d73c7" prot="public" static="no">
         <name>pu_gauge</name>
@@ -212,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="164" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="164" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="177" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1abfd2a4c1f5a7e4f6b84fdcd66acd8397" prot="public" static="no">
         <name>pu_scalar</name>
@@ -224,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="165" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="165" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="178" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1a5bfe30b2425e5c223499e757b87d9a19" prot="public" static="no">
         <name>pu_gauge_flt</name>
@@ -237,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="166" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="166" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="179" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1a645f289db0fc1f0b0bbbf47b14933809" prot="public" static="no">
         <name>pu_gauge_f</name>
@@ -250,7 +299,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="167" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="167" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="180" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1a095378f70487730cef204956ad390387" prot="public" static="no">
         <name>pu_gauge_f_flt</name>
@@ -263,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="168" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="168" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="181" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="d2/d49/global_8h_1aa35eff9406ada23e81ea88e3308974e7" prot="public" static="no">
         <name>ALLOCATE_REPR_GAUGE_FIELD</name>
@@ -273,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="183" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="183" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="196" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="196" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="enum">
@@ -302,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="122" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="122" bodyend="125"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="135" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" bodystart="135" bodyend="138"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -317,7 +366,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="125" column="7"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="138" column="7"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -867,6 +916,19 @@
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="92" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="92" declcolumn="15"/>
       </memberdef>
+      <memberdef kind="variable" id="d2/d49/global_8h_1a86f6f69638dd97c3bede7664fb48434d" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* imask</definition>
+        <argsstring></argsstring>
+        <name>imask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="93" column="16" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="93" declcolumn="16"/>
+      </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1ab7be1d445f8222b98a80c84262d47dd6" prot="public" static="no" mutable="no">
         <type>int</type>
         <definition>int zerocoord[4]</definition>
@@ -878,10 +940,62 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="93" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="93" declcolumn="15"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="94" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="94" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d49/global_8h_1ad18f9c92c450d555a7d80d28ad6a1c0c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BLK_T</definition>
+        <argsstring></argsstring>
+        <name>BLK_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="96" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="96" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d49/global_8h_1af442dc202f161191d85981ddd6eaeabd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BLK_X</definition>
+        <argsstring></argsstring>
+        <name>BLK_X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="97" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="97" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d49/global_8h_1a8285cf7c478c4a0bfac366b1b28f364a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BLK_Y</definition>
+        <argsstring></argsstring>
+        <name>BLK_Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="98" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="98" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="d2/d49/global_8h_1a0e40b458948d27771f800b2cf1559841" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BLK_Z</definition>
+        <argsstring></argsstring>
+        <name>BLK_Z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="99" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="99" declcolumn="15"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a78cdc47548ee2d4d8744cc56f15be741" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glattice</definition>
         <argsstring></argsstring>
         <name>glattice</name>
@@ -891,10 +1005,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="105" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="105" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="118" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="118" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1aae9cc32d304f60a77b66001e09d704fe" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glat_even</definition>
         <argsstring></argsstring>
         <name>glat_even</name>
@@ -904,10 +1018,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="106" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="106" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="119" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="119" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a3babe1ff501be5bddbab9c6e0869c4db" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glat_odd</definition>
         <argsstring></argsstring>
         <name>glat_odd</name>
@@ -917,10 +1031,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="107" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="107" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="120" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="120" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a635d91972be2ef9ced8c8e11a97b3cfa" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glat_even_red</definition>
         <argsstring></argsstring>
         <name>glat_even_red</name>
@@ -930,10 +1044,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="108" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="108" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="121" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="121" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a7ea8e0d4de7a201f58b027031e73bc3a" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glat_odd_red</definition>
         <argsstring></argsstring>
         <name>glat_odd_red</name>
@@ -943,10 +1057,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="109" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="109" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="122" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="122" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a2f4d04211f9c80a32a333bfdc13ae5c5" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glat_even_black</definition>
         <argsstring></argsstring>
         <name>glat_even_black</name>
@@ -956,10 +1070,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="110" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="110" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="123" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="123" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a73554be65ac8228d842b35880a0b557b" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glat_odd_black</definition>
         <argsstring></argsstring>
         <name>glat_odd_black</name>
@@ -969,10 +1083,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="111" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="111" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="124" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="124" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a0acbb4ac8ac7710a034b7402b5b2a251" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glat_red</definition>
         <argsstring></argsstring>
         <name>glat_red</name>
@@ -982,10 +1096,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="112" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="112" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="125" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="125" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1ae591148692ee23f81bd72859b0951536" prot="public" static="no" mutable="no">
-        <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref></type>
         <definition>geometry_descriptor glat_black</definition>
         <argsstring></argsstring>
         <name>glat_black</name>
@@ -995,7 +1109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="113" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="113" declcolumn="31"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="126" column="31" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="126" declcolumn="31"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a407954e658f313d1a56937965ea5f149" prot="public" static="no" mutable="no">
         <type>mem_t</type>
@@ -1008,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="143" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="143" declcolumn="17"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="156" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="156" declcolumn="17"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a64779aeb4ac21e9eab20cf6a51df43af" prot="public" static="no" mutable="no">
         <type>mem_t</type>
@@ -1021,10 +1135,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="144" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="144" declcolumn="17"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="157" column="17" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="157" declcolumn="17"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1ab8fbc8cb0fb8004fa938fa9ffbea87e3" prot="public" static="no" mutable="no">
-        <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         <definition>suNg_field* u_gauge</definition>
         <argsstring></argsstring>
         <name>u_gauge</name>
@@ -1034,10 +1148,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="151" column="22" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="151" declcolumn="22"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="164" column="22" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="164" declcolumn="22"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1aa1925955a16f0e0c3a67ede8753d8ec8" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         <definition>suNg_scalar_field* u_scalar</definition>
         <argsstring></argsstring>
         <name>u_scalar</name>
@@ -1047,10 +1161,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="152" column="29" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="152" declcolumn="29"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="165" column="29" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="165" declcolumn="29"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1abfeb6930e4690182a7b538d102dede98" prot="public" static="no" mutable="no">
-        <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
+        <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         <definition>suNg_field_flt* u_gauge_flt</definition>
         <argsstring></argsstring>
         <name>u_gauge_flt</name>
@@ -1060,10 +1174,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="153" column="26" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="153" declcolumn="26"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="166" column="26" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="166" declcolumn="26"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a035be0520a7b3aed7c9e7c6236c04ebd" prot="public" static="no" mutable="no">
-        <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         <definition>suNf_field* u_gauge_f</definition>
         <argsstring></argsstring>
         <name>u_gauge_f</name>
@@ -1073,10 +1187,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="154" column="22" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="154" declcolumn="22"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="167" column="22" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="167" declcolumn="22"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1ad4215676b30066fd8449fa8f52e7812b" prot="public" static="no" mutable="no">
-        <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         <definition>suNg_field* u_gauge_s</definition>
         <argsstring></argsstring>
         <name>u_gauge_s</name>
@@ -1086,10 +1200,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="155" column="22" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="155" declcolumn="22"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="168" column="22" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="168" declcolumn="22"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a24efc6b1a045a4ac2f01973bcb7739a7" prot="public" static="no" mutable="no">
-        <type><ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
+        <type><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref> *</type>
         <definition>suNf_field_flt* u_gauge_f_flt</definition>
         <argsstring></argsstring>
         <name>u_gauge_f_flt</name>
@@ -1099,10 +1213,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="156" column="26" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="156" declcolumn="26"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="169" column="26" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="169" declcolumn="26"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a23bebfa1d90f17114f2a0b4539466d50" prot="public" static="no" mutable="no">
-        <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+        <type><ref refid="df/d9e/structsuNfc__field" kindref="compound">suNfc_field</ref> *</type>
         <definition>suNfc_field* cl_term</definition>
         <argsstring></argsstring>
         <name>cl_term</name>
@@ -1112,10 +1226,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="157" column="23" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="157" declcolumn="23"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="170" column="23" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="170" declcolumn="23"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1afaec02698304b41c05793493b0d96c8c" prot="public" static="no" mutable="no">
-        <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+        <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         <definition>suNf_field* cl_force</definition>
         <argsstring></argsstring>
         <name>cl_force</name>
@@ -1125,10 +1239,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="158" column="22" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="158" declcolumn="22"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="171" column="22" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="171" declcolumn="22"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1afa7ae543ad6187c2e3f247de22ec334b" prot="public" static="no" mutable="no">
-        <type><ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref> *</type>
+        <type><ref refid="d8/d7a/structldl__field" kindref="compound">ldl_field</ref> *</type>
         <definition>ldl_field* cl_ldl</definition>
         <argsstring></argsstring>
         <name>cl_ldl</name>
@@ -1138,10 +1252,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="159" column="21" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="159" declcolumn="21"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="172" column="21" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="172" declcolumn="21"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a9abfd73afb6bda5ef58526cd6e2fb9d1" prot="public" static="no" mutable="no">
-        <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+        <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
         <definition>suNg_av_field* suN_momenta</definition>
         <argsstring></argsstring>
         <name>suN_momenta</name>
@@ -1151,10 +1265,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="160" column="25" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="160" declcolumn="25"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="173" column="25" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="173" declcolumn="25"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1ae29cfb98030f06165d7a42ed12edcc54" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         <definition>suNg_scalar_field* scalar_momenta</definition>
         <argsstring></argsstring>
         <name>scalar_momenta</name>
@@ -1164,7 +1278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="161" column="29" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="161" declcolumn="29"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="174" column="29" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="174" declcolumn="29"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a968f05062a515ce1c7319b54b3f8fd18" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -1177,7 +1291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="162" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="162" declcolumn="15"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="175" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="175" declcolumn="15"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1ada25f37dec2a9ca735c2c907f9d4e26f" prot="public" static="no" mutable="no">
         <type><ref refid="d1/deb/struct__input__glb" kindref="compound">input_glb</ref></type>
@@ -1190,7 +1304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="172" column="21" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="172" declcolumn="21"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="185" column="21" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="185" declcolumn="21"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a1a5c50c27535e98a8d4cc2e2211cb9d1" prot="public" static="no" mutable="no">
         <type><ref refid="da/dc7/struct__input__rlx" kindref="compound">input_rlx</ref></type>
@@ -1203,7 +1317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="175" column="21" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="175" declcolumn="21"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="188" column="21" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="188" declcolumn="21"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a8b680477303eff33a9795b5f51efb7ad" prot="public" static="no" mutable="no">
         <type><ref refid="dc/d37/struct__input__logger" kindref="compound">input_logger</ref></type>
@@ -1216,10 +1330,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="178" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="178" declcolumn="24"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="191" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="191" declcolumn="24"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1aae4bd3d2dc6abb2da7f9309c60490aed" prot="public" static="no" mutable="no">
-        <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         <definition>scalar_field* ff_sigma</definition>
         <argsstring></argsstring>
         <name>ff_sigma</name>
@@ -1229,10 +1343,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="211" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="211" declcolumn="24"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="224" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="224" declcolumn="24"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a616f9f0023c2f7db913d24d5a26dec5a" prot="public" static="no" mutable="no">
-        <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         <definition>scalar_field* ff_pi</definition>
         <argsstring></argsstring>
         <name>ff_pi</name>
@@ -1242,10 +1356,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="212" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="212" declcolumn="24"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="225" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="225" declcolumn="24"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a1a09821b86478199e6466b83d4c86cd8" prot="public" static="no" mutable="no">
-        <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         <definition>scalar_field* ff_sigma_mom</definition>
         <argsstring></argsstring>
         <name>ff_sigma_mom</name>
@@ -1255,10 +1369,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="213" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="213" declcolumn="24"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="226" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="226" declcolumn="24"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1a0185c2ffce6857ee70982d18a4658c50" prot="public" static="no" mutable="no">
-        <type><ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref> *</type>
+        <type><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref> *</type>
         <definition>scalar_field* ff_pi_mom</definition>
         <argsstring></argsstring>
         <name>ff_pi_mom</name>
@@ -1268,7 +1382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="214" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="214" declcolumn="24"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="227" column="24" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="227" declcolumn="24"/>
       </memberdef>
       <memberdef kind="variable" id="d2/d49/global_8h_1af6dc65b2dd9461a97d21f4dd4f58d0d8" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -1281,7 +1395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="216" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="216" declcolumn="15"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" line="229" column="15" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h" declline="229" declcolumn="15"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1378,138 +1492,151 @@
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Geometry<sp/>indexes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*ipt,<sp/>=NULL);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*ipt_4d,=NULL);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*ipt_4d,=NULL);<sp/></highlight><highlight class="comment">//CP:<sp/>is<sp/>this<sp/>used?<sp/></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*iup,=NULL);</highlight></codeline>
 <codeline lineno="92"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*idn,=NULL);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,zerocoord[4],={0,0,0,0});</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Geometry<sp/>structures<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ipt(t,x,y,z)<sp/>ipt[((((t)+T_BORDER)*(X_EXT)+((x)+X_BORDER))*(Y_EXT)+((y)+Y_BORDER))*(Z_EXT)+((z)+Z_BORDER)]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ipt_ext(t,x,y,z)<sp/>ipt[(((t)*(X_EXT)+(x))*(Y_EXT)+(y))*(Z_EXT)+(z)]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ipt_4d(t,x)<sp/>ipt_4d[(t)*(VOL3)+(x)]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>iup(site,dir)<sp/>iup[(site)*4+(dir)]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>idn(site,dir)<sp/>idn[(site)*4+(dir)]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,*imask,=NULL);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,zerocoord[4],={0,0,0,0});</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,BLK_T,=3);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,BLK_X,=3);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,BLK_Y,=3);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,BLK_Z,=3);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Geometry<sp/>structures<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;geometry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glattice,={0});<sp/></highlight><highlight class="comment">/*<sp/>global<sp/>lattice<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_even,={0});<sp/></highlight><highlight class="comment">/*<sp/>global<sp/>even<sp/>lattice<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_odd,={0});<sp/></highlight><highlight class="comment">/*<sp/>global<sp/>odd<sp/>lattice<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_even_red,={0});</highlight></codeline>
-<codeline lineno="109"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_odd_red,={0});</highlight></codeline>
-<codeline lineno="110"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_even_black,={0});</highlight></codeline>
-<codeline lineno="111"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_odd_black,={0});</highlight></codeline>
-<codeline lineno="112"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_red,={0});</highlight></codeline>
-<codeline lineno="113"><highlight class="normal">GLB_VAR(<ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_black,={0});</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_lexi(_T,_X,_Y,_Z,_t,_x,_y,_z)<sp/>((((_t)*(_X)+(_x))*(_Y)+(_y))*(_Z)+(_z))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>_index_ext(_T,_X,_Y,_Z,_t,_x,_y,_z,_BT,_BX,_BY,_BZ)<sp/>_lexi(_T,_X,_Y,_Z,((_t)+(_BT)),((_x)+(_BX))((_y)+(_BY))((_z)+(_BZ)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ipt_ext(t,x,y,z)<sp/>ipt[_lexi(T_EXT,<sp/>X_EXT,<sp/>Y_EXT,<sp/>Z_EXT,<sp/>t,<sp/>x,<sp/>y,<sp/>z)]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ipt(t,x,y,z)<sp/>ipt_ext((t)+T_BORDER,<sp/>(x)+X_BORDER,<sp/>(y)+Y_BORDER,<sp/>(z)+Z_BORDER)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>imask(ix)<sp/>imask[ix]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ipt(t,x,y,z)<sp/>ipt[((((t)+T_BORDER)*(X_EXT)+((x)+X_BORDER))*(Y_EXT)+((y)+Y_BORDER))*(Z_EXT)+((z)+Z_BORDER)]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ipt_ext(t,x,y,z)<sp/>ipt[(((t)*(X_EXT)+(x))*(Y_EXT)+(y))*(Z_EXT)+(z)]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ipt_4d(t,x)<sp/>ipt_4d[(t)*(VOL3)+(x)]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>iup(site,dir)<sp/>iup[(site)*4+(dir)]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>idn(site,dir)<sp/>idn[(site)*4+(dir)]</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>UPDATE_EO</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glat_default<sp/>glat_even</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glat_default<sp/>glattice</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Memory<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_mem_t<sp/>{</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/>CPU_MEM<sp/>=<sp/>1&lt;&lt;0,</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/>GPU_MEM<sp/>=<sp/>1&lt;&lt;1</highlight></codeline>
-<codeline lineno="125"><highlight class="normal">}<sp/>mem_t;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STD_MEM_TYPE<sp/>(CPU_MEM<sp/>|<sp/>GPU_MEM)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gpu.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE<sp/>256</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE_LINEAR_ALGEBRA<sp/>512</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE_GLOBAL_SUM<sp/>512</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE_DIRAC<sp/>512</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE_DIRAC_FLT<sp/>512</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal">GLB_VAR(input_gpu,gpu_var,=init_input_gpu(gpu_var));</highlight></codeline>
-<codeline lineno="136"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*iup_gpu,=NULL);</highlight></codeline>
-<codeline lineno="137"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*idn_gpu,=NULL);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>gpu_id,=0);</highlight></codeline>
-<codeline lineno="139"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>grid_size_max_gpu,=65535);</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STD_MEM_TYPE<sp/>(CPU_MEM)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal">GLB_VAR(mem_t,std_mem_t,<sp/>=STD_MEM_TYPE);<sp/></highlight><highlight class="comment">/*<sp/>default<sp/>memory<sp/>allocation<sp/>type<sp/>for<sp/>fields<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal">GLB_VAR(mem_t,alloc_mem_t,<sp/>=STD_MEM_TYPE);<sp/></highlight><highlight class="comment">/*<sp/>memory<sp/>type<sp/>requested<sp/>for<sp/>allocating<sp/>fields<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Gauge<sp/>field<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;field_ordering.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal">GLB_VAR(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>,*u_gauge,=NULL);</highlight></codeline>
-<codeline lineno="152"><highlight class="normal">GLB_VAR(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>,*u_scalar,=NULL);</highlight></codeline>
-<codeline lineno="153"><highlight class="normal">GLB_VAR(<ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>,*u_gauge_flt,=NULL);</highlight></codeline>
-<codeline lineno="154"><highlight class="normal">GLB_VAR(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>,*u_gauge_f,=NULL);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal">GLB_VAR(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>,*u_gauge_s,=NULL);</highlight></codeline>
-<codeline lineno="156"><highlight class="normal">GLB_VAR(<ref refid="d0/dcf/struct__suNf__field__flt" kindref="compound">suNf_field_flt</ref>,*u_gauge_f_flt,=NULL);</highlight></codeline>
-<codeline lineno="157"><highlight class="normal">GLB_VAR(<ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>,*cl_term,=NULL);</highlight></codeline>
-<codeline lineno="158"><highlight class="normal">GLB_VAR(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>,*cl_force,=NULL);</highlight></codeline>
-<codeline lineno="159"><highlight class="normal">GLB_VAR(<ref refid="d9/d93/struct__ldl__field" kindref="compound">ldl_field</ref>,*cl_ldl,=NULL);</highlight></codeline>
-<codeline lineno="160"><highlight class="normal">GLB_VAR(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>,*suN_momenta,=NULL);</highlight></codeline>
-<codeline lineno="161"><highlight class="normal">GLB_VAR(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>,*scalar_momenta,=NULL);</highlight></codeline>
-<codeline lineno="162"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,gauge_field_active,=0);<sp/></highlight><highlight class="comment">//<sp/>whether<sp/>gauge<sp/>field<sp/>interactions<sp/>is<sp/>active</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Geometry<sp/>structures<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d67/geometry_8h" kindref="compound">geometry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glattice,={0});<sp/></highlight><highlight class="comment">/*<sp/>global<sp/>lattice<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_even,={0});<sp/></highlight><highlight class="comment">/*<sp/>global<sp/>even<sp/>lattice<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_odd,={0});<sp/></highlight><highlight class="comment">/*<sp/>global<sp/>odd<sp/>lattice<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_even_red,={0});</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_odd_red,={0});</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_even_black,={0});</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_odd_black,={0});</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_red,={0});</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">GLB_VAR(<ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref>,glat_black,={0});</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>UPDATE_EO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glat_default<sp/>glat_even</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>glat_default<sp/>glattice</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Memory<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>_mem_t<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>CPU_MEM<sp/>=<sp/>1&lt;&lt;0,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>GPU_MEM<sp/>=<sp/>1&lt;&lt;1</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}<sp/>mem_t;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STD_MEM_TYPE<sp/>(CPU_MEM<sp/>|<sp/>GPU_MEM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gpu.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE<sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE_LINEAR_ALGEBRA<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE_GLOBAL_SUM<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE_DIRAC<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCK_SIZE_DIRAC_FLT<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal">GLB_VAR(input_gpu,gpu_var,=init_input_gpu(gpu_var));</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*iup_gpu,=NULL);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*idn_gpu,=NULL);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>gpu_id,=0);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>grid_size_max_gpu,=65535);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STD_MEM_TYPE<sp/>(CPU_MEM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">GLB_VAR(mem_t,std_mem_t,<sp/>=STD_MEM_TYPE);<sp/></highlight><highlight class="comment">/*<sp/>default<sp/>memory<sp/>allocation<sp/>type<sp/>for<sp/>fields<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">GLB_VAR(mem_t,alloc_mem_t,<sp/>=STD_MEM_TYPE);<sp/></highlight><highlight class="comment">/*<sp/>memory<sp/>type<sp/>requested<sp/>for<sp/>allocating<sp/>fields<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Gauge<sp/>field<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;field_ordering.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="163"><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_gauge(ix,mu)<sp/>((u_gauge-&gt;ptr)+coord_to_index(ix,mu))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_scalar(ix)<sp/>((u_scalar-&gt;ptr)+ix)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_gauge_flt(ix,mu)<sp/>((u_gauge_flt-&gt;ptr)+coord_to_index(ix,mu))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_gauge_f(ix,mu)<sp/>((u_gauge_f-&gt;ptr)+coord_to_index(ix,mu))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_gauge_f_flt(ix,mu)<sp/>((u_gauge_f_flt-&gt;ptr)+coord_to_index(ix,mu))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>input<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input_par.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal">GLB_VAR(<ref refid="d1/deb/struct__input__glb" kindref="compound">input_glb</ref>,glb_var,=init_input_glb(glb_var));</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Random<sp/>number<sp/>generator<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal">GLB_VAR(<ref refid="da/dc7/struct__input__rlx" kindref="compound">input_rlx</ref>,rlx_var,=init_input_rlx(rlx_var));</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">GLB_VAR(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>,*u_gauge,=NULL);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">GLB_VAR(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>,*u_scalar,=NULL);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">GLB_VAR(<ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>,*u_gauge_flt,=NULL);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">GLB_VAR(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>,*u_gauge_f,=NULL);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">GLB_VAR(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>,*u_gauge_s,=NULL);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">GLB_VAR(<ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>,*u_gauge_f_flt,=NULL);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">GLB_VAR(<ref refid="df/d9e/structsuNfc__field" kindref="compound">suNfc_field</ref>,*cl_term,=NULL);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">GLB_VAR(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>,*cl_force,=NULL);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">GLB_VAR(<ref refid="d8/d7a/structldl__field" kindref="compound">ldl_field</ref>,*cl_ldl,=NULL);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">GLB_VAR(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>,*suN_momenta,=NULL);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">GLB_VAR(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>,*scalar_momenta,=NULL);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,gauge_field_active,=0);<sp/></highlight><highlight class="comment">//<sp/>whether<sp/>gauge<sp/>field<sp/>interactions<sp/>is<sp/>active</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>logger<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal">GLB_VAR(<ref refid="dc/d37/struct__input__logger" kindref="compound">input_logger</ref>,logger_var,=init_input_logger(logger_var));</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Does<sp/>the<sp/>represented<sp/>field<sp/>need<sp/>to<sp/>be<sp/>allocated?<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(<sp/>!defined(REPR_FUNDAMENTAL)<sp/>&amp;&amp;<sp/>!defined(WITH_QUATERNIONS)<sp/>)<sp/>||<sp/>defined(ROTATED_SF)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALLOCATE_REPR_GAUGE_FIELD</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"></highlight></codeline>
-<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Is<sp/>the<sp/>representation<sp/>real?<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined(REPR_ADJOINT)<sp/>||<sp/>defined(GAUGE_SON))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REPR_IS_REAL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="normal"></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PLAQ_WEIGHTS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="192"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,*plaq_weight,<sp/>=NULL);</highlight></codeline>
-<codeline lineno="193"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,*rect_weight,<sp/>=NULL);</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="195"><highlight class="normal"></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Theta<sp/>Boundary<sp/>conditions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>FERMION_THETA</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal">GLB_VAR(COMPLEX,eitheta[4],={{1.,0.}});</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight></codeline>
-<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEASURE_FORCE</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEASURE_FORCE0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEASURE_FORCEHMC</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="204"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,*force_ave,=NULL);</highlight></codeline>
-<codeline lineno="205"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,*force_max,=NULL);</highlight></codeline>
-<codeline lineno="206"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*n_inv_iter,=NULL);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_gauge(ix,mu)<sp/>((u_gauge-&gt;ptr)+coord_to_index(ix,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_scalar(ix)<sp/>((u_scalar-&gt;ptr)+ix)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_gauge_flt(ix,mu)<sp/>((u_gauge_flt-&gt;ptr)+coord_to_index(ix,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_gauge_f(ix,mu)<sp/>((u_gauge_f-&gt;ptr)+coord_to_index(ix,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pu_gauge_f_flt(ix,mu)<sp/>((u_gauge_f_flt-&gt;ptr)+coord_to_index(ix,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>input<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;input_par.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">GLB_VAR(<ref refid="d1/deb/struct__input__glb" kindref="compound">input_glb</ref>,glb_var,=init_input_glb(glb_var));</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Random<sp/>number<sp/>generator<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal">GLB_VAR(<ref refid="da/dc7/struct__input__rlx" kindref="compound">input_rlx</ref>,rlx_var,=init_input_rlx(rlx_var));</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>logger<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal">GLB_VAR(<ref refid="dc/d37/struct__input__logger" kindref="compound">input_logger</ref>,logger_var,=init_input_logger(logger_var));</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Does<sp/>the<sp/>represented<sp/>field<sp/>need<sp/>to<sp/>be<sp/>allocated?<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(<sp/>!defined(REPR_FUNDAMENTAL)<sp/>&amp;&amp;<sp/>!defined(WITH_QUATERNIONS)<sp/>)<sp/>||<sp/>defined(ROTATED_SF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ALLOCATE_REPR_GAUGE_FIELD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Is<sp/>the<sp/>representation<sp/>real?<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined(REPR_ADJOINT)<sp/>||<sp/>defined(GAUGE_SON))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REPR_IS_REAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PLAQ_WEIGHTS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,*plaq_weight,<sp/>=NULL);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,*rect_weight,<sp/>=NULL);</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fields<sp/>four<sp/>fermion<sp/>interactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Auxiliary<sp/>fields<sp/>for<sp/>four<sp/>fermion<sp/>interactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="211"><highlight class="normal">GLB_VAR(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>,*ff_sigma,=NULL);</highlight></codeline>
-<codeline lineno="212"><highlight class="normal">GLB_VAR(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>,*ff_pi,=NULL);</highlight></codeline>
-<codeline lineno="213"><highlight class="normal">GLB_VAR(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>,*ff_sigma_mom,=NULL);</highlight></codeline>
-<codeline lineno="214"><highlight class="normal">GLB_VAR(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>,*ff_pi_mom,=NULL);</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,four_fermion_active,=0);<sp/></highlight><highlight class="comment">//<sp/>whether<sp/>four<sp/>fermion<sp/>interactions<sp/>are<sp/>active</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="217"><highlight class="normal"></highlight></codeline>
-<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>GLB_VAR</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal"></highlight></codeline>
-<codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Theta<sp/>Boundary<sp/>conditions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>FERMION_THETA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal">GLB_VAR(COMPLEX,eitheta[4],={{1.,0.}});</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEASURE_FORCE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEASURE_FORCE0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEASURE_FORCEHMC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,*force_ave,=NULL);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,*force_max,=NULL);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,*n_inv_iter,=NULL);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Fields<sp/>four<sp/>fermion<sp/>interactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Auxiliary<sp/>fields<sp/>for<sp/>four<sp/>fermion<sp/>interactions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">GLB_VAR(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>,*ff_sigma,=NULL);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">GLB_VAR(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>,*ff_pi,=NULL);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">GLB_VAR(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>,*ff_sigma_mom,=NULL);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">GLB_VAR(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>,*ff_pi_mom,=NULL);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal">GLB_VAR(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,four_fermion_active,=0);<sp/></highlight><highlight class="comment">//<sp/>whether<sp/>four<sp/>fermion<sp/>interactions<sp/>are<sp/>active</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>GLB_VAR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/global.h"/>
   </compounddef>

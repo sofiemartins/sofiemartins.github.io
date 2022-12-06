@@ -33,34 +33,6 @@
     <member refid="de/d23/struct__eva__prec_1ab1ec03da3db0b7bc2053c1959bc8fd4e" kind="variable"><name>omega1</name></member>
     <member refid="de/d23/struct__eva__prec_1a20df545902716c26b5cab6a0efcae674" kind="variable"><name>omega2</name></member>
   </compound>
-  <compound refid="db/d43/struct__geometry__descriptor" kind="struct"><name>_geometry_descriptor</name>
-    <member refid="db/d43/struct__geometry__descriptor_1a35c18d4746ea7049262d6546bacb6cba" kind="variable"><name>inner_master_pieces</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1ab2485fa0630ce70d37716c3df58859cf" kind="variable"><name>local_master_pieces</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a20d6e55b97534f5e9c08593be4182765" kind="variable"><name>total_spinor_master_pieces</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a3d633323728cafb92cb0f0f556fddfdc" kind="variable"><name>total_gauge_master_pieces</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1ab5d28fbc523dbc3f47f3becd78fb02dd" kind="variable"><name>master_start</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1afc9b9891eca81b54628e563f1d6c18db" kind="variable"><name>master_end</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a85016110d289381cda561f0fe460a3a6" kind="variable"><name>master_shift</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a3d59e0338844b91908e11433d21aa2d7" kind="variable"><name>ncopies_spinor</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1ae9f6962c314ce614f2122d548f4f1292" kind="variable"><name>ncopies_gauge</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a0d7ff01f389ca81963dedd37c2d632ff" kind="variable"><name>copy_from</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a55ef49e5ff48cc75752ebee148f48def" kind="variable"><name>copy_to</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1abcde9509725a151e8de567121975840f" kind="variable"><name>copy_len</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a9eb07e3e6a97c7e619f6ecff4ae9a0c6" kind="variable"><name>copy_shift</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1aeb0c5ca050c3f7a9a2ac1fe52a3f460d" kind="variable"><name>nbuffers_spinor</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a513175bac904900fd0529dac8051a7b1" kind="variable"><name>nbuffers_gauge</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a7e8ca0882cb12b39810d03469bda5e87" kind="variable"><name>rbuf_len</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1aa3fd105377440187d3ed4c0cb17bedc1" kind="variable"><name>sbuf_len</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a21db1c3881182402685c8209da4b5251" kind="variable"><name>rbuf_from_proc</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a803e9941813641bf4b2a7489befec045" kind="variable"><name>rbuf_start</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a523a61704b2fb36e6873a178e728b0fa" kind="variable"><name>sbuf_to_proc</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a3950db16ba41568bcae16d6d38380c4e" kind="variable"><name>sbuf_start</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a7c4680ce10aefc61b027205a5f1c8cb9" kind="variable"><name>gsize_spinor</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1aa31f52ee9b19ff831999baa1b86f7282" kind="variable"><name>gsize_gauge</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a49441f02331255680f0fe240a2b7f4c5" kind="variable"><name>fuse_mask</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1adc88bdf0f66665f6e4a16b9240b8fecd" kind="variable"><name>fuse_gauge_size</name></member>
-    <member refid="db/d43/struct__geometry__descriptor_1a2b869906736046b5ddf44c289e033238" kind="variable"><name>fuse_inner_counter</name></member>
-  </compound>
   <compound refid="d0/d4b/struct__ghmc__par" kind="struct"><name>_ghmc_par</name>
     <member refid="d0/d4b/struct__ghmc__par_1a00927798188113027eedd731fe365f99" kind="variable"><name>integrator</name></member>
     <member refid="d0/d4b/struct__ghmc__par_1a21e1fd0aeebb1c20025eb1d2f81e19d7" kind="variable"><name>tlen</name></member>
@@ -105,8 +77,6 @@
     <member refid="db/d4a/struct__integrator__par_1a4d47891b3b14c13d72a154d5f69aca90" kind="variable"><name>level</name></member>
   </compound>
   <compound refid="d9/d93/struct__ldl__field" kind="struct"><name>_ldl_field</name>
-    <member refid="d9/d93/struct__ldl__field_1a1dfe8a101654be2a838bbf880c502ea9" kind="variable"><name>ptr</name></member>
-    <member refid="d9/d93/struct__ldl__field_1a91ebc8c76b122f39aa59a591fd3831d5" kind="variable"><name>type</name></member>
   </compound>
   <compound refid="dc/d96/struct__MINRES__par" kind="struct"><name>_MINRES_par</name>
     <member refid="dc/d96/struct__MINRES__par_1af8dec655143a811298df99e0853d3e4d" kind="variable"><name>err2</name></member>
@@ -143,45 +113,7 @@
     <member refid="d1/d9f/struct__rational__app_1a5be24e9a2a08b45e562d163a0497b725" kind="variable"><name>max</name></member>
     <member refid="d1/d9f/struct__rational__app_1a52ff4ac0338d5e2f9a9a4dbe637fd78f" kind="variable"><name>_asize</name></member>
   </compound>
-  <compound refid="de/d54/struct__scalar__field" kind="struct"><name>_scalar_field</name>
-    <member refid="de/d54/struct__scalar__field_1a70ffde012d2b3394ac4faf2f7dd00893" kind="variable"><name>ptr</name></member>
-    <member refid="de/d54/struct__scalar__field_1adb1e579db321aa015add00b8a298fcaf" kind="variable"><name>type</name></member>
-  </compound>
-  <compound refid="d3/d33/struct__spinor__field" kind="struct"><name>_spinor_field</name>
-    <member refid="d3/d33/struct__spinor__field_1a95becf29af2d25f01a1693a4ccee954d" kind="variable"><name>ptr</name></member>
-    <member refid="d3/d33/struct__spinor__field_1a5749f44e4fde2a37626658922e2ac746" kind="variable"><name>type</name></member>
-  </compound>
-  <compound refid="d0/d00/struct__spinor__field__flt" kind="struct"><name>_spinor_field_flt</name>
-    <member refid="d0/d00/struct__spinor__field__flt_1ae7a6d52f86e469f115f7cee04f47f668" kind="variable"><name>ptr</name></member>
-    <member refid="d0/d00/struct__spinor__field__flt_1a50c952fe42f702d57e785d697c6fe8d4" kind="variable"><name>type</name></member>
-  </compound>
-  <compound refid="da/d8f/struct__suNf__field" kind="struct"><name>_suNf_field</name>
-    <member refid="da/d8f/struct__suNf__field_1a45e08be9e651e47016048a05abd743d1" kind="variable"><name>ptr</name></member>
-    <member refid="da/d8f/struct__suNf__field_1ac54f1f6f06809995ffd448dcfe846859" kind="variable"><name>type</name></member>
-  </compound>
-  <compound refid="d0/dcf/struct__suNf__field__flt" kind="struct"><name>_suNf_field_flt</name>
-    <member refid="d0/dcf/struct__suNf__field__flt_1a14ce1567fed8f90b1bacbf10b19610f8" kind="variable"><name>ptr</name></member>
-    <member refid="d0/dcf/struct__suNf__field__flt_1aa517c0f0fcb2f78ab3f3162a7c6f6b1f" kind="variable"><name>type</name></member>
-  </compound>
   <compound refid="d2/db6/struct__suNfc__field" kind="struct"><name>_suNfc_field</name>
-    <member refid="d2/db6/struct__suNfc__field_1a99cbbe0cc489b7ea6ed913497122f7c8" kind="variable"><name>ptr</name></member>
-    <member refid="d2/db6/struct__suNfc__field_1a561ae6659837e1012c12d11eec3cbad5" kind="variable"><name>type</name></member>
-  </compound>
-  <compound refid="d4/d75/struct__suNg__av__field" kind="struct"><name>_suNg_av_field</name>
-    <member refid="d4/d75/struct__suNg__av__field_1ac76ac748fdd520ca8f7546bd5f7eec72" kind="variable"><name>ptr</name></member>
-    <member refid="d4/d75/struct__suNg__av__field_1ad6f2c9265810c35558f4bb0ddb38dabd" kind="variable"><name>type</name></member>
-  </compound>
-  <compound refid="d9/d96/struct__suNg__field" kind="struct"><name>_suNg_field</name>
-    <member refid="d9/d96/struct__suNg__field_1aeffc93216d18979c42c04c2f68d9f135" kind="variable"><name>ptr</name></member>
-    <member refid="d9/d96/struct__suNg__field_1ab0ec502675260ebe78cd9b6637fb04e9" kind="variable"><name>type</name></member>
-  </compound>
-  <compound refid="d2/d8d/struct__suNg__field__flt" kind="struct"><name>_suNg_field_flt</name>
-    <member refid="d2/d8d/struct__suNg__field__flt_1a09cdbebd35244012c0e04932bfbb82ea" kind="variable"><name>ptr</name></member>
-    <member refid="d2/d8d/struct__suNg__field__flt_1a545e96d616e389ea88d0f37923b69bf1" kind="variable"><name>type</name></member>
-  </compound>
-  <compound refid="d8/dc4/struct__suNg__scalar__field" kind="struct"><name>_suNg_scalar_field</name>
-    <member refid="d8/dc4/struct__suNg__scalar__field_1a4ac14f9a97a140526feebd7c55b36c7e" kind="variable"><name>ptr</name></member>
-    <member refid="d8/dc4/struct__suNg__scalar__field_1a73db73bf256b6a91c6a800edb1de03d7" kind="variable"><name>type</name></member>
   </compound>
   <compound refid="d4/dad/structBCs__pars__t" kind="struct"><name>BCs_pars_t</name>
     <member refid="d4/dad/structBCs__pars__t_1a40c0fbbf27fca37591cd52425e017ddd" kind="variable"><name>gauge_boundary_improvement_cs</name></member>
@@ -287,119 +219,37 @@
     <member refid="d2/d0d/structg5QMR__fltacc__par_1ad683f80ba05e6960163f25144669746d" kind="variable"><name>err2_flt</name></member>
     <member refid="d2/d0d/structg5QMR__fltacc__par_1a36eb6eb296ac79b1b04c57e5760e3c8c" kind="variable"><name>max_iter_flt</name></member>
   </compound>
-  <compound refid="d7/de2/structhr__complex" kind="struct"><name>hr_complex</name>
-    <member refid="d7/de2/structhr__complex_1aa903a40ef453731e05814245df6a3296" kind="variable"><name>re</name></member>
-    <member refid="d7/de2/structhr__complex_1a23bebe805f4dc453a061793e8d4bd849" kind="variable"><name>im</name></member>
-    <member refid="d7/de2/structhr__complex_1a6412da705a4d1617c4efd5d084a53bf3" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1a87da30248427a9a36c105e13c834bc41" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1af2ba9d7af4e8d88d58be2fd669d4850e" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1ac0a8c65ea809ab56038ddbcd01246d9e" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1af273d0e4c5a9d70aa50b44970409fc15" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1a8ec851dd3710e5f98a14b4170c3415c6" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1ab78320d850a057ed126e6247fa4193a6" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1ac3d765c938f0872f4d2d0a5c9142261a" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1ab058cdbdbd4b3222db4c41baa4662200" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1ad2fc1f7d6de76128ebdad2e1dd579a8f" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1a5205e9b0711cd164ace3499081b2e51f" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1a466702b30893e52991592cae0bc40c4c" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1a3a146572de4c2ac8272756326263527b" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1ae0d9602871dc7c630f4fad6b62af2df1" kind="function"><name>hr_complex</name></member>
-    <member refid="d7/de2/structhr__complex_1a78c91ca6061ac5c0843de6c5d462e7b6" kind="function"><name>hr_complex</name></member>
+  <compound refid="df/da2/structgeometry__descriptor" kind="struct"><name>geometry_descriptor</name>
+    <member refid="df/da2/structgeometry__descriptor_1a23ffd04f8caedd46a29d97d7acc9662e" kind="variable"><name>inner_master_pieces</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a3e17f50441d335d32d63c68d371a9130" kind="variable"><name>local_master_pieces</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1ac75b721c077490c1c15a628190108206" kind="variable"><name>total_spinor_master_pieces</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a7c5d98a7dde6a22701e42f314fb3d4a9" kind="variable"><name>total_gauge_master_pieces</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1ab8714a952029fddffa9e812bdf60a0c7" kind="variable"><name>master_start</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1ab9cb9919306a0f907c2034fe36ba63f4" kind="variable"><name>master_end</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a4c0128cc03799cf6b729e1d7af962405" kind="variable"><name>master_shift</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a85006b5fb655ca72574d26823a4a618b" kind="variable"><name>ncopies_spinor</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1ac11d8544c0cba35cae9db51b98c083f7" kind="variable"><name>ncopies_gauge</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a22c5a96052c654f3f16b35bd245fc678" kind="variable"><name>copy_from</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a656206cf2f96f3cc0ad5e6b861c8a3c8" kind="variable"><name>copy_to</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a70d9f1d06bdff72836ed47025811b817" kind="variable"><name>copy_len</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1ae7f09c1a81685bb7ed6120da69df72ba" kind="variable"><name>copy_shift</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1aca58b874e5a5c021ca28fc9f0aee4495" kind="variable"><name>nbuffers_spinor</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a05b8047c7d59b411904965bbf00197f2" kind="variable"><name>nbuffers_gauge</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1ac70d932690430b6bfe9607dc6f9870b9" kind="variable"><name>rbuf_len</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1ac1dec7e0f1a6c102865074e3616bec80" kind="variable"><name>sbuf_len</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a66adec7833d775d33825b2ad88a26846" kind="variable"><name>rbuf_from_proc</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a671c61e60b4e4f86aa192e021467f084" kind="variable"><name>rbuf_start</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a2fdd86843127af54eba62612d846321d" kind="variable"><name>sbuf_to_proc</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1aa0c79f08c358cd8864fdfe64dd4f9e3d" kind="variable"><name>sbuf_start</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a2f3736da2c61ca4dce5eeb48b2ef01a9" kind="variable"><name>gsize_spinor</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a0854aa26ad516de1ecd50f1584211d5f" kind="variable"><name>gsize_gauge</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1ac3c315ce46943b528f29cdae485e7549" kind="variable"><name>fuse_mask</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1afd42835058f4157981e90c9d20e98acc" kind="variable"><name>fuse_gauge_size</name></member>
+    <member refid="df/da2/structgeometry__descriptor_1a1538a46e0145c9f5ab3fe9180e4f0a18" kind="variable"><name>fuse_inner_counter</name></member>
   </compound>
-  <compound refid="dc/d03/structhr__complex__flt" kind="struct"><name>hr_complex_flt</name>
-    <member refid="dc/d03/structhr__complex__flt_1a928c53a0ad0e441b582f148549b80a9b" kind="variable"><name>re</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a83f661554ef2e15e3e23c4699d40bb47" kind="variable"><name>im</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1ae543788dfbcae4e03e948d51a1c00d63" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1aa5f6ca8c5b4eb614431f8649667a7e99" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a58318975eecade8899e4ffbe14b8e791" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a3ba0cff75b3388ae92a9bab087431b22" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1aabd293f47e507819a0b517c909438b56" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1ab112cba5896be48c936711186fc52009" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a80fcd73a0ce0305350076df78e519d74" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a4aa3e47bb266abf3456fa1706099d82a" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a145b5f1ab4b869c73ea7c01904d85b74" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1afa705c60d9d6a9d04554091b185e03f3" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a32c34fa7f0d00fca20e0acd8747dacfb" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1afae81dc2dbe047d3710b9f95cde762e4" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1aea72698efdb0f60de6ccaf1e102f41c0" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a79573c9ac0d6aca62b44ebb646ebfea2" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a0b538bf5fa3f1c7b453238e2f8e9bd85" kind="function"><name>hr_complex_flt</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1aa0904783c0e7e0f2650cc6a4bc06f42c" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a655ba36ebe060eb4ee2cf67a7b495905" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a49cce2bc61e928a16288ab108c2ccd24" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1ad2886ea7eef3a5c840ca580529de0e5e" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1ae12d572661a20381aa6b2b0710be6946" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a5b91a06eb3ac38478b48ded0e00708e2" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a4476f02837881b2275ba8861401c0f16" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a521d5cfebfa6a63b1627d17b10151c7c" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a88857c3d7615024e2b51844f7607b2ba" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a36add41768b9bf88c9c1e9ecf61600e9" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a15aa2396871bbf4c0e13e0dd10187e01" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a705fbeb7fc3a32b2617dac0e671fc5b7" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a230bab4a9f9176e3cc2d750929ae6112" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a481660a8eca28962f5d20473141fae5a" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a914685075e0cdef0fd17c713afcc7f77" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1ac1752eb97ffb0c75cb49acacba7f27cc" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a383ae9d8d1171bf9c4876b011ee4f048" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a4dba200c968087ff0a692993fe82d730" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a81c32d6707094ff6f1f1dabc23436972" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a7477e71e8d039c25f4bb41a5890730fe" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a9876adfd90490e9b483a3470ed52ea33" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a4a2b4c43dd2dd2580322026043e5b5db" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a4037f603e072fbb6fdfd99c807fd6eb4" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1acd53e1a82632ed40752b7e1bc71b167b" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a1e55a17a82811e3cef07e6af30885ec4" kind="function"><name>__attribute__</name></member>
-    <member refid="dc/d03/structhr__complex__flt_1a0d314d91cd400b5ac16c313cdf76800c" kind="function"><name>__attribute__</name></member>
-  </compound>
-  <compound refid="dd/db7/structhr__complex__int" kind="struct"><name>hr_complex_int</name>
-    <member refid="dd/db7/structhr__complex__int_1a9136cb33b28acd30afb3934fe29b6bae" kind="variable"><name>re</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a9a49f2d8d7d27147805a1a889434da0b" kind="variable"><name>im</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a47b0544c4b50cab65d122e267aa28a19" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a8569c29d177cdf67e2c08edf4b579a83" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a82a058b9f3ab6f87b106dbbfd42685af" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a4bc0844c643de424f7953963ec91247b" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a99fe07c85682e5e33b0cf88c81c222c7" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a07765c6e3e93b4eb19c4d7ce8c8d0900" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a43043d85bce6062f0f81c3418f415388" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1ac68a9553016a5f3a29353a326afdf358" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a693f92b4b8d8826aa74687bbc1f07fc8" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a95708de96b3ea0ce86b37c9deaea6616" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a5b582e06c179082db6a9f98144a36723" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1aa962da219477cbbd8ac468b9828523ae" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a29a17b0f42153912d857d32b1a10d8fd" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a5ca6937c7ac2c72ba68b59d4c0350fa1" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1aed4f8dab5a9466edeb6da2ad2761889d" kind="function"><name>hr_complex_int</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a2fc66d1dd0cbe8527b09c04012a9eff7" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a2fc66d1dd0cbe8527b09c04012a9eff7" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a7f453b52385b587d25772cf49502fd02" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a58ec191b2140d6a159aa2e67efde733f" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a58ec191b2140d6a159aa2e67efde733f" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1acfdb89438bda5c14dae10743c6f827eb" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1acfdb89438bda5c14dae10743c6f827eb" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a16715b6e4ae9402bcfe7eacd0dbd9aee" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a16715b6e4ae9402bcfe7eacd0dbd9aee" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a6ffae6c93c261afb469335944d14c481" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a6ffae6c93c261afb469335944d14c481" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a19eb53b1876fc0c92bfc555518c8773f" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1aa408b60f3a2023c63d82e70808a8c07e" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a169abbb0a896f2919c0bba0459979170" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a02c9db33f48616e1c9de01df540a1df6" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a719363faaf8fb28f1d19463befe5bc77" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a34053e03a0c410f3785a55e6efaf42ca" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a7460e230575bb3ddf8dbf88a26dff240" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a46f9e4db35c2947f98f01b8dc57fadaf" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a2b49430610a2416bb511a194f5cea7c0" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1ab4093a4b960749bd33957434ad5f0f89" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a842b468d7e739a5255b01b4ab5e431eb" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1addeec16ce9c317162740f9f4c03da355" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a401b5505d12803f80e2895d1959c620a" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a046a9401200894239088971e7116ec10" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a5f8c459d451dbd74a93a4242f30d8373" kind="function"><name>__attribute__</name></member>
-    <member refid="dd/db7/structhr__complex__int_1a607c6cd49e92e5000316007944e75dcc" kind="function"><name>__attribute__</name></member>
-  </compound>
-  <compound refid="d7/d66/structldl__t" kind="struct"><name>ldl_t</name>
-    <member refid="d7/d66/structldl__t_1a88ce104973f67ee3b5686046bdfc7508" kind="variable"><name>up</name></member>
-    <member refid="d7/d66/structldl__t_1a580a941931fc374e76d6fa38581ac84a" kind="variable"><name>dn</name></member>
+  <compound refid="d8/d7a/structldl__field" kind="struct"><name>ldl_field</name>
+    <member refid="d8/d7a/structldl__field_1ace2733d0041fb8abf238e1cc6a55109e" kind="variable"><name>ptr</name></member>
+    <member refid="d8/d7a/structldl__field_1a133273434e3364e10ba3a41bfd10434d" kind="variable"><name>type</name></member>
   </compound>
   <compound refid="d6/d0c/structmeson__observable__s" kind="struct"><name>meson_observable_s</name>
     <member refid="d6/d0c/structmeson__observable__s_1abefb083d6917e13bb27325cccdaebd16" kind="variable"><name>ind1</name></member>
@@ -513,6 +363,18 @@
     <member refid="dd/dff/structprop__p_1ae798ee65e2c6ce53ab3ba5420e790359" kind="variable"><name>W_p_0</name></member>
     <member refid="dd/dff/structprop__p_1a30262c24200147b13c7e7e2aa039c980" kind="variable"><name>W_mp_0</name></member>
   </compound>
+  <compound refid="d8/daf/structscalar__field" kind="struct"><name>scalar_field</name>
+    <member refid="d8/daf/structscalar__field_1ab56b83eddd6da95c5161cdb8ae6c01e1" kind="variable"><name>ptr</name></member>
+    <member refid="d8/daf/structscalar__field_1afcbeaca3fa0ce0c67a4b7ee3459cf71e" kind="variable"><name>type</name></member>
+  </compound>
+  <compound refid="d0/da8/structspinor__field" kind="struct"><name>spinor_field</name>
+    <member refid="d0/da8/structspinor__field_1a16bef9ac5c454da8aad1506aad988b9a" kind="variable"><name>ptr</name></member>
+    <member refid="d0/da8/structspinor__field_1ad45e24cc85046c9077afaa42a9097760" kind="variable"><name>type</name></member>
+  </compound>
+  <compound refid="d4/dce/structspinor__field__flt" kind="struct"><name>spinor_field_flt</name>
+    <member refid="d4/dce/structspinor__field__flt_1a00f4af3db34a723f3593108d59508c5b" kind="variable"><name>ptr</name></member>
+    <member refid="d4/dce/structspinor__field__flt_1a774fc33f7df30b05a9622f599b70f695" kind="variable"><name>type</name></member>
+  </compound>
   <compound refid="d0/d94/structsrc__common" kind="struct"><name>src_common</name>
     <member refid="d0/d94/structsrc__common_1afdb39c102289b02ba97871ee860ce4eb" kind="variable"><name>src_0</name></member>
     <member refid="d0/d94/structsrc__common_1a897379bd96c9daf84d37a9b3777d4ac4" kind="variable"><name>src_0_eta</name></member>
@@ -529,6 +391,14 @@
   </compound>
   <compound refid="d0/d04/structsuNf" kind="struct"><name>suNf</name>
     <member refid="d0/d04/structsuNf_1a144441f673686bf655f1012cebde87ad" kind="variable"><name>c</name></member>
+  </compound>
+  <compound refid="d9/d4a/structsuNf__field" kind="struct"><name>suNf_field</name>
+    <member refid="d9/d4a/structsuNf__field_1a5303c61c23dbeeac0a5bfbe0d210f3d6" kind="variable"><name>ptr</name></member>
+    <member refid="d9/d4a/structsuNf__field_1a34143e502d5945a5b287acbfb42cea41" kind="variable"><name>type</name></member>
+  </compound>
+  <compound refid="d6/d54/structsuNf__field__flt" kind="struct"><name>suNf_field_flt</name>
+    <member refid="d6/d54/structsuNf__field__flt_1a98ba8c1d0ab1c525625bc22e68abfa6c" kind="variable"><name>ptr</name></member>
+    <member refid="d6/d54/structsuNf__field__flt_1affa0cd488c8da9a7304422a7a3bc3bc5" kind="variable"><name>type</name></member>
   </compound>
   <compound refid="db/d3f/structsuNf__flt" kind="struct"><name>suNf_flt</name>
     <member refid="db/d3f/structsuNf__flt_1af667ae69dc7b7d230ec4251246ef6970" kind="variable"><name>c</name></member>
@@ -551,6 +421,10 @@
   <compound refid="d8/d5b/structsuNf__vector__flt" kind="struct"><name>suNf_vector_flt</name>
     <member refid="d8/d5b/structsuNf__vector__flt_1ac690d29caf80f722e81f9a5b820d6583" kind="variable"><name>c</name></member>
   </compound>
+  <compound refid="df/d9e/structsuNfc__field" kind="struct"><name>suNfc_field</name>
+    <member refid="df/d9e/structsuNfc__field_1a2b2b4e03c150b024f1dfe74309d9c20c" kind="variable"><name>ptr</name></member>
+    <member refid="df/d9e/structsuNfc__field_1af9a81d4da9828aa247c99481a81ed0e1" kind="variable"><name>type</name></member>
+  </compound>
   <compound refid="d8/d0f/structsuNg" kind="struct"><name>suNg</name>
     <member refid="d8/d0f/structsuNg_1a48ff15c9f5c61653a11ef8640bffc2a7" kind="variable"><name>c</name></member>
   </compound>
@@ -560,8 +434,24 @@
   <compound refid="de/d23/structsuNg__algebra__vector__flt" kind="struct"><name>suNg_algebra_vector_flt</name>
     <member refid="de/d23/structsuNg__algebra__vector__flt_1aca7cfb9a36c4bf1ea12c4b0e524280d6" kind="variable"><name>c</name></member>
   </compound>
+  <compound refid="db/dc8/structsuNg__av__field" kind="struct"><name>suNg_av_field</name>
+    <member refid="db/dc8/structsuNg__av__field_1ae03b87da9ecebc0aae596eda3d023c51" kind="variable"><name>ptr</name></member>
+    <member refid="db/dc8/structsuNg__av__field_1a66c2bdcb7ac8989b2c8051e8de5e861e" kind="variable"><name>type</name></member>
+  </compound>
+  <compound refid="d2/d0e/structsuNg__field" kind="struct"><name>suNg_field</name>
+    <member refid="d2/d0e/structsuNg__field_1a91aa829e2fe07ebc8c18e8b87e095555" kind="variable"><name>ptr</name></member>
+    <member refid="d2/d0e/structsuNg__field_1ae5bb364dd0c74d69f1c10261ffb5d9c3" kind="variable"><name>type</name></member>
+  </compound>
+  <compound refid="d4/d1f/structsuNg__field__flt" kind="struct"><name>suNg_field_flt</name>
+    <member refid="d4/d1f/structsuNg__field__flt_1a197a312af89681372e623762a0781feb" kind="variable"><name>ptr</name></member>
+    <member refid="d4/d1f/structsuNg__field__flt_1a99c12c4ee84ae4ea6fa68b888d409c4a" kind="variable"><name>type</name></member>
+  </compound>
   <compound refid="d1/d3e/structsuNg__flt" kind="struct"><name>suNg_flt</name>
     <member refid="d1/d3e/structsuNg__flt_1aaddc6fdc32c37712379ddd5d3a177aae" kind="variable"><name>c</name></member>
+  </compound>
+  <compound refid="d6/d10/structsuNg__scalar__field" kind="struct"><name>suNg_scalar_field</name>
+    <member refid="d6/d10/structsuNg__scalar__field_1a5d87d916b3e395774d0693b07209837d" kind="variable"><name>ptr</name></member>
+    <member refid="d6/d10/structsuNg__scalar__field_1ab0285ef3c292984ec94f30a70fd32b81" kind="variable"><name>type</name></member>
   </compound>
   <compound refid="d9/d78/structsuNg__spinor" kind="struct"><name>suNg_spinor</name>
     <member refid="d9/d78/structsuNg__spinor_1a2b21e9408aa0bea9b6a1040775c46e24" kind="variable"><name>c</name></member>
@@ -581,58 +471,6 @@
     <member refid="d8/df4/structwilson__lines_1a924546aa0e009eb56f2a9bc13382dfd9" kind="variable"><name>tr</name></member>
   </compound>
   <compound refid="d5/d64/_8autoheaders_8h" kind="file"><name>.autoheaders.h</name>
-  </compound>
-  <compound refid="d9/d51/basis__linear__algebra_8h" kind="file"><name>basis_linear_algebra.h</name>
-    <member refid="d9/d51/basis__linear__algebra_8h_1af85dd01342bb43b9a4b43c808eeee1a4" kind="function"><name>test_setup</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1aada0ae1ccee18fa1fe81f7c761e874d1" kind="function"><name>check_diff_norm</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a8226844723a5edbefa29802088804ef6" kind="function"><name>check_diff_norm_zero</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1aa4da94332c59e04ce7a61b31e0356be7" kind="function"><name>copy_gfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a1ea456316356872943e350965f8bd21d" kind="function"><name>copy_scalar_field_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a7da4222def024329c4456c0759a1e050" kind="function"><name>copy_gfield_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1ac6a4e62da77a162adad42333fa707ca0" kind="function"><name>copy_gfield_f_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1abd69051d39df809de31bbc18278f32a9" kind="function"><name>copy_gfield_f_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1ab1814df5dc048f008586122ca73f3f7b" kind="function"><name>copy_avfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a77c820228840116703e9fd08fa95a5af" kind="function"><name>copy_sfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a3e77765c8f1ae0636bc713e5201e41a4" kind="function"><name>copy_clover_ldl_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a168c72376c3bf4ab46718883f36813e3" kind="function"><name>copy_clover_term_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1ad101e22f433d84acfa3d14a985404943" kind="function"><name>copy_clover_force_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a7f2bc021233ecec8270d6eebb4a572ba" kind="function"><name>random_spinor_field_f_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a9e1b33245223895e58d3fd35836c3f20" kind="function"><name>random_spinor_field_f_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1aee33f8cba18bca9deabee6dd42e1c41d" kind="function"><name>random_gfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a9014593036b1eccc3670d65baffa1f34" kind="function"><name>random_scalar_field_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1aa501a1a99e323188899680128c8532b8" kind="function"><name>random_gfield_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1af8f29076940824c289b30fdd2d034d55" kind="function"><name>random_gfield_f_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a4bddad05e477bafa732f8fe1af0f03ce" kind="function"><name>random_gfield_f_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1af3d58437b95bcdfc786ff65c43afd2f8" kind="function"><name>random_avfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a539d710d5ae3627d2b6d27aec75cc948" kind="function"><name>random_sfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a82f1c04dda9a1f99a1e6f450f8aba329" kind="function"><name>random_gtransf_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1adc9050dd2ec18255a58090e55acdb5e0" kind="function"><name>random_clover_term_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1acf624ae62375b401b37a50a694db73ec" kind="function"><name>random_clover_force_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1adc718488c30e6bae3a72b27afad3f77e" kind="function"><name>sub_assign_gfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1ad468252cd7370d5381e345075b088aa7" kind="function"><name>sub_assign_gfield_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a3f16ee277dce19f636ae456c280bb69f" kind="function"><name>sub_assign_gfield_f_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a8dea97942640632bacd9af6c527ac1cd" kind="function"><name>sub_assign_gfield_f_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1abea5c5c0a6d891a31778d639e16de08b" kind="function"><name>sub_assign_scalar_field_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a11dddffcd526d38e9e6f0de4899bdf4e" kind="function"><name>sub_assign_avfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a478b9d6705666d9ecb5e207c53ef1aff" kind="function"><name>sub_assign_sfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a0627bfca7eb31b9c9018cb48137e6184" kind="function"><name>sub_assign_gtransf_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a68b4c3049a2288ac5af29054ecf00696" kind="function"><name>sub_assign_clover_ldl_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1ac2b0f513840121ed0d4a18a5d2a9a101" kind="function"><name>sub_assign_clover_term_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a990fe6521a6d34399e487552f21f946c" kind="function"><name>sub_assign_clover_force_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1abbecbcc8a827378a70babac9c76d3468" kind="function"><name>sqnorm_spinor_field_f_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a264583423b33772789ae96390aaf4697" kind="function"><name>sqnorm_spinor_field_f_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a9e3722f773e7815c1eadf66acc64bea4" kind="function"><name>sqnorm_gfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1aa7eeb20809fc3e15b905f9899ffe12da" kind="function"><name>sqnorm_gfield_f_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1aea7ccbb7a2081f621163896fb61e3ac5" kind="function"><name>sqnorm_gfield_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a62677bb367f7b15b7e419f7cf3917926" kind="function"><name>sqnorm_gfield_f_flt_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a5f0e0d4440388491ea4fc85f4f100a92" kind="function"><name>sqnorm_scalar_field_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a428be6c7133773378ece9c543c6656e1" kind="function"><name>sqnorm_avfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a6aa1d849be370cc8d8780f8093516ce7" kind="function"><name>sqnorm_gtransf_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1ae1bc252c45122e3fa098b0049455e0da" kind="function"><name>sqnorm_sfield_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1ad722bc245ebb3c70eedf53c10ff8c687" kind="function"><name>sqnorm_clover_ldl_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1aa21488e59de392a2e1b31d8ab4fe321d" kind="function"><name>sqnorm_clover_term_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1abb31339c4e4d5084796cab42eae32ada" kind="function"><name>sqnorm_clover_force_cpu</name></member>
-    <member refid="d9/d51/basis__linear__algebra_8h_1a1f5feb49eb413dccbe290ee676d1178b" kind="function"><name>zero_gfield_cpu</name></member>
   </compound>
   <compound refid="d8/d4c/check__options_8h" kind="file"><name>check_options.h</name>
     <member refid="d8/d4c/check__options_8h_1a856c0a676039bff72d9c8497adb4c961" kind="define"><name>BC_T_PERIODIC</name></member>
@@ -671,27 +509,20 @@
     <member refid="da/d6a/clover__tools_8h_1a62113207d8e6ff6892b3eea368004aa7" kind="function"><name>set_csw</name></member>
   </compound>
   <compound refid="d2/d6f/communications_8h" kind="file"><name>communications.h</name>
-    <member refid="d2/d6f/communications_8h_1a57ff9571b54ed85d6910b096d30ddee2" kind="function"><name>global_sum</name></member>
-    <member refid="d2/d6f/communications_8h_1af4508c57a617ed79efb901cae3d58e09" kind="function"><name>global_sum_int</name></member>
-    <member refid="d2/d6f/communications_8h_1a9fa591db50fae91b2cca51b21649bde1" kind="function"><name>global_max</name></member>
-    <member refid="d2/d6f/communications_8h_1a946a386ad5dfe00a9e8b03197f1ba714" kind="function"><name>global_min</name></member>
-    <member refid="d2/d6f/communications_8h_1a3d559ab87eb636d0f876b143f1332b7e" kind="function"><name>bcast</name></member>
-    <member refid="d2/d6f/communications_8h_1a35416b8a20cee1a623a32feafc8f4e8b" kind="function"><name>bcast_int</name></member>
-    <member refid="d2/d6f/communications_8h_1af01efbe0ffc9df5f8cefbfea8af1c7d7" kind="function"><name>complete_gf_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1ad218bffae9c4f7c1efe07e1353cb6f04" kind="function"><name>start_gf_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1ad4457315ce799d8a693e86d1c6aa6cc1" kind="function"><name>complete_sf_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1aa54a6f9e5a8a4e8ebf536fb44516ee8a" kind="function"><name>start_sf_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1a3464e50f5453765e07a5501e9ca91a44" kind="function"><name>complete_sc_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1a66cc357cbd1326d417c1f451a12bd27d" kind="function"><name>start_sc_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1ab48d1a91eb04f8cbde5b759b4dcd0e98" kind="function"><name>complete_clover_force_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1a3fd737e7ba52b07d5d69cc30e5345f1d" kind="function"><name>start_clover_force_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1ab53fdabf70bb644f5d7d241eea8ef01a" kind="function"><name>complete_gt_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1a55639eb960a02fe8c9fdb1bcd7de231e" kind="function"><name>start_gt_sendrecv</name></member>
-    <member refid="d2/d6f/communications_8h_1a6566d0a919733ce1aab7ccbcd38a54af" kind="function"><name>test_spinor_field</name></member>
-    <member refid="d2/d6f/communications_8h_1a88632cd329bb1816ee414791ed0cb48f" kind="function"><name>complete_gf_sendrecv_flt</name></member>
-    <member refid="d2/d6f/communications_8h_1a5472c24f8d4636ff60937947133aedea" kind="function"><name>start_gf_sendrecv_flt</name></member>
-    <member refid="d2/d6f/communications_8h_1acb3fb0a72a56f69e3e274e53b4f16cbf" kind="function"><name>complete_sf_sendrecv_flt</name></member>
-    <member refid="d2/d6f/communications_8h_1ae8eaf87bb571196a64905366ba34e01c" kind="function"><name>start_sf_sendrecv_flt</name></member>
+    <member refid="d2/d6f/communications_8h_1aa6d8128421b03b6203e774b951892ef1" kind="function"><name>complete_gf_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a2ab061c5a19f83620e3a2e1f39409899" kind="function"><name>start_gf_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a4606bc49ec50028fd650774dc935a2ca" kind="function"><name>complete_sf_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a5387961e4ba6c715753c6e9bfeed586b" kind="function"><name>start_sf_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a34eafb5eab193366814178a808c6c0ee" kind="function"><name>complete_sc_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a63cb05fbe934779ebddfadd23b5eed8d" kind="function"><name>start_sc_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a308b7242ea075dc4d879b57cae5d43e4" kind="function"><name>complete_clover_force_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a42d5917cc3c87564e19c7fdf585c3a41" kind="function"><name>start_clover_force_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a19cb70363d853a23bf31d3abf4b8524a" kind="function"><name>complete_gt_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a0361963e9794a3888ece1d662edf793e" kind="function"><name>start_gt_sendrecv</name></member>
+    <member refid="d2/d6f/communications_8h_1a04586ac967099d6f59e30ac9be708ce1" kind="function"><name>complete_gf_sendrecv_flt</name></member>
+    <member refid="d2/d6f/communications_8h_1aafd3cdccfa685c4a182f954d3cd00d25" kind="function"><name>start_gf_sendrecv_flt</name></member>
+    <member refid="d2/d6f/communications_8h_1a1e958980579362d32e3c69290e18a522" kind="function"><name>complete_sf_sendrecv_flt</name></member>
+    <member refid="d2/d6f/communications_8h_1af397b6625c4056d1e77eb6f6c6cf415a" kind="function"><name>start_sf_sendrecv_flt</name></member>
   </compound>
   <compound refid="d2/dfb/cpu__complex_8h" kind="file"><name>cpu_complex.h</name>
     <member refid="d2/dfb/cpu__complex_8h_1a2dfb2bdfab52fe8d2fc6c1fdb61fa153" kind="define"><name>_complex_re</name></member>
@@ -741,6 +572,12 @@
     <member refid="d2/dfb/cpu__complex_8h_1adfa99d49e364e7295aa377dc48208a89" kind="typedef"><name>hr_complex</name></member>
     <member refid="d2/dfb/cpu__complex_8h_1a682f1c4bdaa80d20a153e5ec47ebdb40" kind="typedef"><name>hr_complex_flt</name></member>
   </compound>
+  <compound refid="de/d59/cpu__geometry_8h" kind="file"><name>cpu_geometry.h</name>
+    <member refid="de/d59/cpu__geometry_8h_1ad7960dd90c7ef52dcf8fe0c381ad9be4" kind="define"><name>_FIELD_AT</name></member>
+    <member refid="de/d59/cpu__geometry_8h_1ac7842bf889ef64e8344cb5c1f2c8e08d" kind="define"><name>_4FIELD_AT</name></member>
+    <member refid="de/d59/cpu__geometry_8h_1ac833819afc638970420fa945e9bdc15c" kind="define"><name>_6FIELD_AT</name></member>
+    <member refid="de/d59/cpu__geometry_8h_1aa9a6a25a8b9f948673e5c67aa35dc2e2" kind="define"><name>_DFIELD_AT</name></member>
+  </compound>
   <compound refid="d5/d2b/data__storage_8h" kind="file"><name>data_storage.h</name>
     <member refid="d5/d2b/data__storage_8h_1a9534cf5c3a8eeca99ad0c371daa1e799" kind="enum"><name>storage_switch</name></member>
     <member refid="d5/d2b/data__storage_8h_1a9534cf5c3a8eeca99ad0c371daa1e799afeb01cb4572ba190cd7932e49446c480" kind="enumvalue"><name>STORE</name></member>
@@ -754,80 +591,92 @@
     <member refid="d5/d2b/data__storage_8h_1a789e48ffd0a62a522b6241937b792048" kind="function"><name>print_data_storage</name></member>
   </compound>
   <compound refid="d0/d40/dirac_8h" kind="file"><name>dirac.h</name>
-    <member refid="d0/d40/dirac_8h_1ac703e201f6d37c904f9c827c92f52ff5" kind="enum"><name>tw_D_type</name></member>
-    <member refid="d0/d40/dirac_8h_1ac703e201f6d37c904f9c827c92f52ff5a1ea328a644e627283a35716a54108248" kind="enumvalue"><name>DIRECT</name></member>
-    <member refid="d0/d40/dirac_8h_1ac703e201f6d37c904f9c827c92f52ff5ae29357ea888d50462660db3acc7fc072" kind="enumvalue"><name>DAGGER</name></member>
-    <member refid="d0/d40/dirac_8h_1ab06b1b0f66abc486d88ff7fd3d52b506" kind="variable"><name>Dphi_</name></member>
-    <member refid="d0/d40/dirac_8h_1a6be9529cda36931d3e29d5b693126295" kind="variable"><name>Dphi</name></member>
-    <member refid="d0/d40/dirac_8h_1a199c1e16fac28843774b23371bc0bf4f" kind="variable"><name>g5Dphi</name></member>
-    <member refid="d0/d40/dirac_8h_1aa2a39a2c310a37637082c8c009330387" kind="variable"><name>g5Dphi_sq</name></member>
-    <member refid="d0/d40/dirac_8h_1af6bd35737db60aa71db276499c740d35" kind="variable"><name>getMVM</name></member>
-    <member refid="d0/d40/dirac_8h_1a79d1d4d160233ac518c32a812b15b6aa" kind="variable"><name>Dphi_eopre</name></member>
-    <member refid="d0/d40/dirac_8h_1a77ca9dfbf7a9534a509c2b46f5da3538" kind="variable"><name>Dphi_oepre</name></member>
-    <member refid="d0/d40/dirac_8h_1a36ef0b4dbaaa159eec45476b13e87572" kind="variable"><name>g5Dphi_eopre</name></member>
-    <member refid="d0/d40/dirac_8h_1a399128cc25bf887a87993361eb706079" kind="variable"><name>g5Dphi_eopre_sq</name></member>
-    <member refid="d0/d40/dirac_8h_1a7ca0880a57ddda51341cea117aca611a" kind="function"><name>Dphi_cpu_</name></member>
-    <member refid="d0/d40/dirac_8h_1a8a6d1b83a0844f9e17ef458986ae58dd" kind="function"><name>Dphi_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1ada15a3090dbcf9e2010a37930b5750a9" kind="function"><name>g5Dphi_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1aa399c4321037797714e1ba312194530d" kind="function"><name>g5Dphi_sq_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a574511ba7acccbb9f3a1f4d94a34750d" kind="function"><name>Dphi_flt_cpu_</name></member>
-    <member refid="d0/d40/dirac_8h_1a0148b46ae71f0ff08e282088cdda5e28" kind="function"><name>Dphi_flt_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a17505259559fbbfec2ff014d07928ec4" kind="function"><name>g5Dphi_flt_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a2558792680af45fe6c077d3fdfe98577" kind="function"><name>g5Dphi_sq_flt_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a1f1429f60c751a314636d06ff885def2" kind="function"><name>Dphi_flt_</name></member>
-    <member refid="d0/d40/dirac_8h_1a866e5fd829738102ec3f4638590bf47e" kind="function"><name>Dphi_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1ac24de8c37ca66ceaa575b1ff925a69b7" kind="function"><name>g5Dphi_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1afa21fe8a182663059efd418a70cd6e16" kind="function"><name>g5Dphi_sq_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1a612a5648a905828a6fc7506c7e9ef857" kind="function"><name>getMVM_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a702cd61b648b77b1dcc126bbb29194b8" kind="function"><name>getMVM_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1a75d3abb356ebba83ddaf86eea9142670" kind="function"><name>Cphi</name></member>
-    <member refid="d0/d40/dirac_8h_1abd8342a318cc2a8e92db3be0848daa00" kind="function"><name>g5Cphi</name></member>
-    <member refid="d0/d40/dirac_8h_1a25ee347bebaf57d530c09106407baa40" kind="function"><name>g5Cphi_sq</name></member>
-    <member refid="d0/d40/dirac_8h_1a4cee0e96f7134441dfe769e52ed12c35" kind="function"><name>Cphi_eopre</name></member>
-    <member refid="d0/d40/dirac_8h_1af3b84535384d48e2b2a18a6403cffaeb" kind="function"><name>g5Cphi_eopre</name></member>
-    <member refid="d0/d40/dirac_8h_1a66734a708143e6391979714ef841dec3" kind="function"><name>g5Cphi_eopre_sq</name></member>
-    <member refid="d0/d40/dirac_8h_1a2dd9a331fe3d00fb2adc9e314d6c2a7d" kind="function"><name>Cphi_diag</name></member>
-    <member refid="d0/d40/dirac_8h_1a979834349f9715c68ab0f7930808b1b0" kind="function"><name>Cphi_diag_inv</name></member>
-    <member refid="d0/d40/dirac_8h_1accf95978a99cbf7d9df81a97a29f5c13" kind="function"><name>Dphi_eopre_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a9d97162c4345a629870b26f878aaacdb" kind="function"><name>Dphi_oepre_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a0e815aa7308b3b24ebd0705a5c33678c" kind="function"><name>g5Dphi_eopre_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a20fa9f36c6d950666931f11d601a77a6" kind="function"><name>g5Dphi_eopre_sq_cpu</name></member>
-    <member refid="d0/d40/dirac_8h_1a42cd53e18b68568ffc30823c783d526d" kind="function"><name>Dphi_eopre_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1aee3deb9a3af2136a783c707471fb52b2" kind="function"><name>Dphi_oepre_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1aff3135bc7d19e04234febb80654b034d" kind="function"><name>g5Dphi_eopre_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1af27da4ab9b1e1d7cd83a7ca02d5a58d0" kind="function"><name>g5Dphi_eopre_sq_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1a2e2ca56caf2cac4660e281b510b0ca3c" kind="function"><name>Qhat_eopre</name></member>
-    <member refid="d0/d40/dirac_8h_1af55ede180397c09e34265f31cc75ce04" kind="function"><name>Qhat_eopre_sq</name></member>
-    <member refid="d0/d40/dirac_8h_1ad13f589843028792cddf459129c614cb" kind="function"><name>set_dirac_mass</name></member>
-    <member refid="d0/d40/dirac_8h_1aa515c511f1eba7fd8125fad312f1d363" kind="function"><name>get_dirac_mass</name></member>
-    <member refid="d0/d40/dirac_8h_1a7bb24cec0fcdc3bacab39b5584c0f657" kind="function"><name>set_twisted_mass</name></member>
-    <member refid="d0/d40/dirac_8h_1ad54cf26f2df8518319b86486c51750c8" kind="function"><name>H</name></member>
-    <member refid="d0/d40/dirac_8h_1a7fcc1073ecea7530d42fd8bea416cb52" kind="function"><name>H_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1ab52c3d5cb95eec6e100750c55079dfa1" kind="function"><name>H2</name></member>
-    <member refid="d0/d40/dirac_8h_1a8198a409ffa688b5f1c26e818aad3ba4" kind="function"><name>D</name></member>
-    <member refid="d0/d40/dirac_8h_1a5bfe9f9a0623addd351ed57fa9d68acb" kind="function"><name>D_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1a93ef47a0a334cbd7a174a97f77514daf" kind="function"><name>Qtm_p</name></member>
-    <member refid="d0/d40/dirac_8h_1ad03b65969bb8fc727bf8a6a5509efb68" kind="function"><name>Qtm_m</name></member>
-    <member refid="d0/d40/dirac_8h_1a9d168b8c38adaea95272d7b322ad6b5f" kind="function"><name>QpQm_tm</name></member>
-    <member refid="d0/d40/dirac_8h_1a6d4a4d82f577bf278121e71a97a5cf06" kind="function"><name>Qtm_p_alt</name></member>
-    <member refid="d0/d40/dirac_8h_1a3bb4d58d0643ad75b86b57e120eebfd7" kind="function"><name>Qtm_m_alt</name></member>
-    <member refid="d0/d40/dirac_8h_1a7dce94fffa416858cdb9ffeb2676443b" kind="function"><name>QpQm_tm_alt</name></member>
-    <member refid="d0/d40/dirac_8h_1a8b7c99cd5481429508bcb07402eb580b" kind="function"><name>tm_invert</name></member>
-    <member refid="d0/d40/dirac_8h_1a635d8990eb1d6565dc084319b8109def" kind="function"><name>tm_invert_alt</name></member>
-    <member refid="d0/d40/dirac_8h_1ac62938de4c2503a2380941cb604d23ec" kind="function"><name>Dphi_eopre_4f</name></member>
-    <member refid="d0/d40/dirac_8h_1a299bbd7842d7cedeb0d258c962119ffb" kind="function"><name>Dphi_eopre_4f_dagger</name></member>
-    <member refid="d0/d40/dirac_8h_1a835cd1d80e8bbd9abf7fb81775799e51" kind="function"><name>Dphieopre_4f_sq</name></member>
-    <member refid="d0/d40/dirac_8h_1a030b64fc62bf8821e3daa5bd470f16c9" kind="function"><name>Dphi_eopre_4f_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1abff958b5c17f8a83050dc2e7e28a5ef9" kind="function"><name>Dphi_eopre_4f_dagger_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1a0ce5e9a6c2fc2541ea53fbfc23c01bab" kind="function"><name>Dphieopre_4f_sq_flt</name></member>
-    <member refid="d0/d40/dirac_8h_1ae44696b582b5750c629310bccd38d6af" kind="function"><name>set_ff_dirac_mass</name></member>
-    <member refid="d0/d40/dirac_8h_1abf666e8ee601c525461ed25aa64fb888" kind="function"><name>set_ff_dirac_shift</name></member>
-    <member refid="d0/d40/dirac_8h_1aa5873730ce94204803a385b85f8dfb01" kind="function"><name>Dff</name></member>
-    <member refid="d0/d40/dirac_8h_1a840b0e1186476188050508bf5724989f" kind="function"><name>Dff_dagger</name></member>
-    <member refid="d0/d40/dirac_8h_1a2210d5d05830299002e8037a11a426c5" kind="function"><name>Dff_sq</name></member>
-    <member refid="d0/d40/dirac_8h_1a6c2dd1de8aed452b464cb0abf76ac956" kind="function"><name>Dxx_tw_inv</name></member>
-    <member refid="d0/d40/dirac_8h_1ad05bfca7134c136cbe75d64e48dfa48a" kind="function"><name>g5Dphi_eopre_tw</name></member>
-    <member refid="d0/d40/dirac_8h_1affa37697f4f0417219469b039663b5d7" kind="function"><name>g5Dphi_eopre_tw_sq</name></member>
+  </compound>
+  <compound refid="d2/d12/dirac__4f_8h" kind="file"><name>dirac_4f.h</name>
+    <member refid="d2/d12/dirac__4f_8h_1ac62938de4c2503a2380941cb604d23ec" kind="function"><name>Dphi_eopre_4f</name></member>
+    <member refid="d2/d12/dirac__4f_8h_1a299bbd7842d7cedeb0d258c962119ffb" kind="function"><name>Dphi_eopre_4f_dagger</name></member>
+    <member refid="d2/d12/dirac__4f_8h_1a835cd1d80e8bbd9abf7fb81775799e51" kind="function"><name>Dphieopre_4f_sq</name></member>
+    <member refid="d2/d12/dirac__4f_8h_1a030b64fc62bf8821e3daa5bd470f16c9" kind="function"><name>Dphi_eopre_4f_flt</name></member>
+    <member refid="d2/d12/dirac__4f_8h_1abff958b5c17f8a83050dc2e7e28a5ef9" kind="function"><name>Dphi_eopre_4f_dagger_flt</name></member>
+    <member refid="d2/d12/dirac__4f_8h_1a0ce5e9a6c2fc2541ea53fbfc23c01bab" kind="function"><name>Dphieopre_4f_sq_flt</name></member>
+  </compound>
+  <compound refid="d7/d0b/dirac__clover_8h" kind="file"><name>dirac_clover.h</name>
+    <member refid="d7/d0b/dirac__clover_8h_1a75d3abb356ebba83ddaf86eea9142670" kind="function"><name>Cphi</name></member>
+    <member refid="d7/d0b/dirac__clover_8h_1abd8342a318cc2a8e92db3be0848daa00" kind="function"><name>g5Cphi</name></member>
+    <member refid="d7/d0b/dirac__clover_8h_1a25ee347bebaf57d530c09106407baa40" kind="function"><name>g5Cphi_sq</name></member>
+    <member refid="d7/d0b/dirac__clover_8h_1a4cee0e96f7134441dfe769e52ed12c35" kind="function"><name>Cphi_eopre</name></member>
+    <member refid="d7/d0b/dirac__clover_8h_1af3b84535384d48e2b2a18a6403cffaeb" kind="function"><name>g5Cphi_eopre</name></member>
+    <member refid="d7/d0b/dirac__clover_8h_1a66734a708143e6391979714ef841dec3" kind="function"><name>g5Cphi_eopre_sq</name></member>
+    <member refid="d7/d0b/dirac__clover_8h_1a2dd9a331fe3d00fb2adc9e314d6c2a7d" kind="function"><name>Cphi_diag</name></member>
+    <member refid="d7/d0b/dirac__clover_8h_1a979834349f9715c68ab0f7930808b1b0" kind="function"><name>Cphi_diag_inv</name></member>
+  </compound>
+  <compound refid="df/d5f/dirac__cpu_8h" kind="file"><name>dirac_cpu.h</name>
+    <member refid="df/d5f/dirac__cpu_8h_1a612a5648a905828a6fc7506c7e9ef857" kind="function"><name>getMVM_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a7ca0880a57ddda51341cea117aca611a" kind="function"><name>Dphi_cpu_</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a8a6d1b83a0844f9e17ef458986ae58dd" kind="function"><name>Dphi_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1ada15a3090dbcf9e2010a37930b5750a9" kind="function"><name>g5Dphi_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1aa399c4321037797714e1ba312194530d" kind="function"><name>g5Dphi_sq_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a574511ba7acccbb9f3a1f4d94a34750d" kind="function"><name>Dphi_flt_cpu_</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a0148b46ae71f0ff08e282088cdda5e28" kind="function"><name>Dphi_flt_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a17505259559fbbfec2ff014d07928ec4" kind="function"><name>g5Dphi_flt_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a2558792680af45fe6c077d3fdfe98577" kind="function"><name>g5Dphi_sq_flt_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1accf95978a99cbf7d9df81a97a29f5c13" kind="function"><name>Dphi_eopre_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a9d97162c4345a629870b26f878aaacdb" kind="function"><name>Dphi_oepre_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a0e815aa7308b3b24ebd0705a5c33678c" kind="function"><name>g5Dphi_eopre_cpu</name></member>
+    <member refid="df/d5f/dirac__cpu_8h_1a20fa9f36c6d950666931f11d601a77a6" kind="function"><name>g5Dphi_eopre_sq_cpu</name></member>
+  </compound>
+  <compound refid="dd/d5f/dirac__default_8h" kind="file"><name>dirac_default.h</name>
+    <member refid="dd/d5f/dirac__default_8h_1a637a2e5d4765091eb7a3b321f38440c1" kind="function"><name>getMVM</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1a702cd61b648b77b1dcc126bbb29194b8" kind="function"><name>getMVM_flt</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1af3b828209f4a879d2a7a576e1d4b9a27" kind="function"><name>Dphi_</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1a401a866a1c73789d9a07b9b3384b95a5" kind="function"><name>Dphi</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1a68849237f1eedede90b88e21ff727009" kind="function"><name>g5Dphi</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1adf394f28e01b9adf09be10f5c26a9359" kind="function"><name>g5Dphi_sq</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1a1f1429f60c751a314636d06ff885def2" kind="function"><name>Dphi_flt_</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1a866e5fd829738102ec3f4638590bf47e" kind="function"><name>Dphi_flt</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1ac24de8c37ca66ceaa575b1ff925a69b7" kind="function"><name>g5Dphi_flt</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1afa21fe8a182663059efd418a70cd6e16" kind="function"><name>g5Dphi_sq_flt</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1a08f81b3222b5cef992c29b6df12e08e5" kind="function"><name>Dphi_eopre</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1ac423f272f5489de9f79d41ee0e02bda2" kind="function"><name>Dphi_oepre</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1a9c73b99e7d8d93e99dbe440d910775ce" kind="function"><name>g5Dphi_eopre</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1ac24854f93d6060a0b70f61a8561b5ffd" kind="function"><name>g5Dphi_eopre_sq</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1a42cd53e18b68568ffc30823c783d526d" kind="function"><name>Dphi_eopre_flt</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1aee3deb9a3af2136a783c707471fb52b2" kind="function"><name>Dphi_oepre_flt</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1aff3135bc7d19e04234febb80654b034d" kind="function"><name>g5Dphi_eopre_flt</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1af27da4ab9b1e1d7cd83a7ca02d5a58d0" kind="function"><name>g5Dphi_eopre_sq_flt</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1ad13f589843028792cddf459129c614cb" kind="function"><name>set_dirac_mass</name></member>
+    <member refid="dd/d5f/dirac__default_8h_1aa515c511f1eba7fd8125fad312f1d363" kind="function"><name>get_dirac_mass</name></member>
+  </compound>
+  <compound refid="d3/dbc/dirac__gpu_8h" kind="file"><name>dirac_gpu.h</name>
+  </compound>
+  <compound refid="da/d0c/dirac__tm_8h" kind="file"><name>dirac_tm.h</name>
+    <member refid="da/d0c/dirac__tm_8h_1ac703e201f6d37c904f9c827c92f52ff5" kind="enum"><name>tw_D_type</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1ac703e201f6d37c904f9c827c92f52ff5a1ea328a644e627283a35716a54108248" kind="enumvalue"><name>DIRECT</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1ac703e201f6d37c904f9c827c92f52ff5ae29357ea888d50462660db3acc7fc072" kind="enumvalue"><name>DAGGER</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a2e2ca56caf2cac4660e281b510b0ca3c" kind="function"><name>Qhat_eopre</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1af55ede180397c09e34265f31cc75ce04" kind="function"><name>Qhat_eopre_sq</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a7bb24cec0fcdc3bacab39b5584c0f657" kind="function"><name>set_twisted_mass</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a93ef47a0a334cbd7a174a97f77514daf" kind="function"><name>Qtm_p</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1ad03b65969bb8fc727bf8a6a5509efb68" kind="function"><name>Qtm_m</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a9d168b8c38adaea95272d7b322ad6b5f" kind="function"><name>QpQm_tm</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a6d4a4d82f577bf278121e71a97a5cf06" kind="function"><name>Qtm_p_alt</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a3bb4d58d0643ad75b86b57e120eebfd7" kind="function"><name>Qtm_m_alt</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a7dce94fffa416858cdb9ffeb2676443b" kind="function"><name>QpQm_tm_alt</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a8b7c99cd5481429508bcb07402eb580b" kind="function"><name>tm_invert</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a635d8990eb1d6565dc084319b8109def" kind="function"><name>tm_invert_alt</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1ad54cf26f2df8518319b86486c51750c8" kind="function"><name>H</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a7fcc1073ecea7530d42fd8bea416cb52" kind="function"><name>H_flt</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1ab52c3d5cb95eec6e100750c55079dfa1" kind="function"><name>H2</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a8198a409ffa688b5f1c26e818aad3ba4" kind="function"><name>D</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a5bfe9f9a0623addd351ed57fa9d68acb" kind="function"><name>D_flt</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1ae44696b582b5750c629310bccd38d6af" kind="function"><name>set_ff_dirac_mass</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1abf666e8ee601c525461ed25aa64fb888" kind="function"><name>set_ff_dirac_shift</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1aa5873730ce94204803a385b85f8dfb01" kind="function"><name>Dff</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a840b0e1186476188050508bf5724989f" kind="function"><name>Dff_dagger</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a2210d5d05830299002e8037a11a426c5" kind="function"><name>Dff_sq</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1a6c2dd1de8aed452b464cb0abf76ac956" kind="function"><name>Dxx_tw_inv</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1ad05bfca7134c136cbe75d64e48dfa48a" kind="function"><name>g5Dphi_eopre_tw</name></member>
+    <member refid="da/d0c/dirac__tm_8h_1affa37697f4f0417219469b039663b5d7" kind="function"><name>g5Dphi_eopre_tw_sq</name></member>
   </compound>
   <compound refid="dc/d1e/disconnected_8h" kind="file"><name>disconnected.h</name>
     <member refid="dc/d1e/disconnected_8h_1a65e2031aa22236e72b44155420b90fe0" kind="function"><name>measure_bilinear_loops_spinorfield</name></member>
@@ -873,47 +722,65 @@
   </compound>
   <compound refid="d4/d67/geometry_8h" kind="file"><name>geometry.h</name>
     <member refid="d4/d67/geometry_8h_1a379a925918004f1659f941352dd9944d" kind="define"><name>BORDERSIZE</name></member>
-    <member refid="d4/d67/geometry_8h_1ac6d4ebd149866d64e22f0d1c775279a3" kind="define"><name>_PIECE_FOR</name></member>
     <member refid="d4/d67/geometry_8h_1a72d8a3ce27714e0875e067679d895f58" kind="define"><name>_SITE_FOR_RED</name></member>
     <member refid="d4/d67/geometry_8h_1aed64332bb5597fc68e9c30cd5c472377" kind="define"><name>_SITE_FOR</name></member>
-    <member refid="d4/d67/geometry_8h_1a567632169fe1cd16e8f38f3833818664" kind="define"><name>_SITE_FOR_SUM</name></member>
-    <member refid="d4/d67/geometry_8h_1a5c00ec9197cc65e25aeb8021afc2e767" kind="define"><name>_SITE_FOR_MAX</name></member>
-    <member refid="d4/d67/geometry_8h_1a3913525104a6f5570cb4c8013c11cd37" kind="define"><name>_SITE_FOR_MIN</name></member>
-    <member refid="d4/d67/geometry_8h_1aed11bae04cbbd3a72474e30c957c7fb3" kind="define"><name>_MASTER_FOR_RED</name></member>
     <member refid="d4/d67/geometry_8h_1a02427ad54780dfeb12a1211ec1672b5b" kind="define"><name>_MASTER_FOR</name></member>
-    <member refid="d4/d67/geometry_8h_1ab86b4c6ebcd404a9a269ebca66d5ac60" kind="define"><name>_MASTER_FOR_SUM</name></member>
-    <member refid="d4/d67/geometry_8h_1abf71bff7a37073316e28b72f1b05b6ef" kind="define"><name>_MASTER_FOR_MAX</name></member>
-    <member refid="d4/d67/geometry_8h_1a1db48d1359ff968440deb374f3c04778" kind="define"><name>_MASTER_FOR_MIN</name></member>
-    <member refid="d4/d67/geometry_8h_1a0baadab0b6ece6ff63e04354ca637e5a" kind="define"><name>_FUSE_IDX</name></member>
-    <member refid="d4/d67/geometry_8h_1a53ead484498c62f8c253ac5d45537610" kind="define"><name>_FUSE_FOR_RED</name></member>
-    <member refid="d4/d67/geometry_8h_1a9d02d636b888218ff65f7085d0189116" kind="define"><name>_FUSE_MASTER_FOR_RED</name></member>
-    <member refid="d4/d67/geometry_8h_1aca699c7755b6749371678bc7c534ba5a" kind="define"><name>_FUSE_MASTER_FOR</name></member>
-    <member refid="d4/d67/geometry_8h_1a70cb65e2ffda13c7869c037103da8759" kind="define"><name>_FUSE_MASTER_FOR_SUM</name></member>
-    <member refid="d4/d67/geometry_8h_1ab848d7fe118b08044c2e6722feaae431" kind="define"><name>_FUSE_MASTER_FOR_MAX</name></member>
-    <member refid="d4/d67/geometry_8h_1a9a53c8f30c92ca5b11bcff3a8c91a684" kind="define"><name>_FUSE_MASTER_FOR_MIN</name></member>
-    <member refid="d4/d67/geometry_8h_1aa3db4e11288a3152ad47a678833bd3b7" kind="typedef"><name>geometry_descriptor</name></member>
-    <member refid="d4/d67/geometry_8h_1a086732e844d52910606551378f5a874f" kind="function"><name>origin_coord</name></member>
-    <member refid="d4/d67/geometry_8h_1a97228368162d3ab6125995fc7c97687f" kind="function"><name>other_proc_origin_coord</name></member>
-    <member refid="d4/d67/geometry_8h_1aa3be6e771708f459712a623eba90a17c" kind="function"><name>glb_to_proc</name></member>
-    <member refid="d4/d67/geometry_8h_1a76b988c2ad17073111eba029b5aaf45a" kind="function"><name>geometry_init</name></member>
-    <member refid="d4/d67/geometry_8h_1ab54cd98dc5649183afdfdb5f20c47a3a" kind="function"><name>geometry_mpi_eo</name></member>
-    <member refid="d4/d67/geometry_8h_1aa159bac7b49c803fb336cecc52d36631" kind="function"><name>geometry_mem_alloc</name></member>
-    <member refid="d4/d67/geometry_8h_1aec55a049e41f9295915bec7e8b2be6f4" kind="function"><name>proc_up</name></member>
-    <member refid="d4/d67/geometry_8h_1a8d18ef3052c4993e56c0d536a2273def" kind="function"><name>proc_dn</name></member>
-    <member refid="d4/d67/geometry_8h_1a1e2a4f3f1ef738c14a0543aff53947b6" kind="function"><name>free_geometry_mpi_eo</name></member>
-    <member refid="d4/d67/geometry_8h_1afe4f8ea06e524fc85af953350e6b25f6" kind="function"><name>init_geometry_SAP</name></member>
-    <member refid="d4/d67/geometry_8h_1a5206983736a8f1568b2ca3bf1e844326" kind="function"><name>test_geometry_mpi</name></member>
-    <member refid="d4/d67/geometry_8h_1a5a7e6e688b777ac7526f94d8318e3e4b" kind="function"><name>test_geometry_mpi_eo</name></member>
-    <member refid="d4/d67/geometry_8h_1ab517fe1a030c8dc1a52cf94870cf453d" kind="function"><name>print_wdmatrix</name></member>
+    <member refid="d4/d67/geometry_8h_1a29b455b128483748638bcd6342fd8d7c" kind="define"><name>_ONE_SPINOR_FOR</name></member>
+    <member refid="d4/d67/geometry_8h_1aaf1c85365079ce137da26f5b39ad218a" kind="define"><name>_TWO_SPINORS_FOR</name></member>
+    <member refid="d4/d67/geometry_8h_1aeddee20430cac03313f50b1f5ae1ec06" kind="define"><name>_THREE_SPINORS_FOR</name></member>
+    <member refid="d4/d67/geometry_8h_1ae27a9385750ceb1fc11fa5665ef6f5ba" kind="define"><name>_SPINOR_PTR</name></member>
   </compound>
   <compound refid="d4/d3d/geometry__check_8h" kind="file"><name>geometry_check.h</name>
     <member refid="d4/d3d/geometry__check_8h_1a77b7fbc43ec0a6f936757875499f40db" kind="define"><name>_CHECK_GEOMETRY_MATCHING</name></member>
     <member refid="d4/d3d/geometry__check_8h_1ab109b9cd5b8db1e3acc028595dbb955b" kind="define"><name>_CHECK_GEOMETRY_EO</name></member>
+    <member refid="d4/d3d/geometry__check_8h_1a57b38767f72997cbe0e530aec2ca5e61" kind="define"><name>_TWO_SPINORS_MATCHING</name></member>
+    <member refid="d4/d3d/geometry__check_8h_1a29c2636539dced95a1b7f8c336add339" kind="define"><name>_ARRAY_SPINOR_MATCHING</name></member>
+  </compound>
+  <compound refid="d3/d77/geometry__fuse_8h" kind="file"><name>geometry_fuse.h</name>
+    <member refid="d3/d77/geometry__fuse_8h_1a0baadab0b6ece6ff63e04354ca637e5a" kind="define"><name>_FUSE_IDX</name></member>
+    <member refid="d3/d77/geometry__fuse_8h_1aca699c7755b6749371678bc7c534ba5a" kind="define"><name>_FUSE_MASTER_FOR</name></member>
+    <member refid="d3/d77/geometry__fuse_8h_1a70cb65e2ffda13c7869c037103da8759" kind="define"><name>_FUSE_MASTER_FOR_SUM</name></member>
+    <member refid="d3/d77/geometry__fuse_8h_1ab848d7fe118b08044c2e6722feaae431" kind="define"><name>_FUSE_MASTER_FOR_MAX</name></member>
+    <member refid="d3/d77/geometry__fuse_8h_1a9a53c8f30c92ca5b11bcff3a8c91a684" kind="define"><name>_FUSE_MASTER_FOR_MIN</name></member>
+  </compound>
+  <compound refid="d9/d46/geometry__init_8h" kind="file"><name>geometry_init.h</name>
+    <member refid="d9/d46/geometry__init_8h_1a086732e844d52910606551378f5a874f" kind="function"><name>origin_coord</name></member>
+    <member refid="d9/d46/geometry__init_8h_1a97228368162d3ab6125995fc7c97687f" kind="function"><name>other_proc_origin_coord</name></member>
+    <member refid="d9/d46/geometry__init_8h_1aa3be6e771708f459712a623eba90a17c" kind="function"><name>glb_to_proc</name></member>
+    <member refid="d9/d46/geometry__init_8h_1a76b988c2ad17073111eba029b5aaf45a" kind="function"><name>geometry_init</name></member>
+    <member refid="d9/d46/geometry__init_8h_1ab54cd98dc5649183afdfdb5f20c47a3a" kind="function"><name>geometry_mpi_eo</name></member>
+    <member refid="d9/d46/geometry__init_8h_1aa159bac7b49c803fb336cecc52d36631" kind="function"><name>geometry_mem_alloc</name></member>
+    <member refid="d9/d46/geometry__init_8h_1aec55a049e41f9295915bec7e8b2be6f4" kind="function"><name>proc_up</name></member>
+    <member refid="d9/d46/geometry__init_8h_1a8d18ef3052c4993e56c0d536a2273def" kind="function"><name>proc_dn</name></member>
+    <member refid="d9/d46/geometry__init_8h_1a1e2a4f3f1ef738c14a0543aff53947b6" kind="function"><name>free_geometry_mpi_eo</name></member>
+    <member refid="d9/d46/geometry__init_8h_1afe4f8ea06e524fc85af953350e6b25f6" kind="function"><name>init_geometry_SAP</name></member>
+    <member refid="d9/d46/geometry__init_8h_1a5206983736a8f1568b2ca3bf1e844326" kind="function"><name>test_geometry_mpi</name></member>
+    <member refid="d9/d46/geometry__init_8h_1a5a7e6e688b777ac7526f94d8318e3e4b" kind="function"><name>test_geometry_mpi_eo</name></member>
+    <member refid="d9/d46/geometry__init_8h_1ab517fe1a030c8dc1a52cf94870cf453d" kind="function"><name>print_wdmatrix</name></member>
+  </compound>
+  <compound refid="d6/d76/geometry__omp_8h" kind="file"><name>geometry_omp.h</name>
+    <member refid="d6/d76/geometry__omp_8h_1ac6d4ebd149866d64e22f0d1c775279a3" kind="define"><name>_PIECE_FOR</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a567632169fe1cd16e8f38f3833818664" kind="define"><name>_SITE_FOR_SUM</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a5c00ec9197cc65e25aeb8021afc2e767" kind="define"><name>_SITE_FOR_MAX</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a3913525104a6f5570cb4c8013c11cd37" kind="define"><name>_SITE_FOR_MIN</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1aed11bae04cbbd3a72474e30c957c7fb3" kind="define"><name>_MASTER_FOR_RED</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1ab86b4c6ebcd404a9a269ebca66d5ac60" kind="define"><name>_MASTER_FOR_SUM</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1abf71bff7a37073316e28b72f1b05b6ef" kind="define"><name>_MASTER_FOR_MAX</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a1db48d1359ff968440deb374f3c04778" kind="define"><name>_MASTER_FOR_MIN</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a53ead484498c62f8c253ac5d45537610" kind="define"><name>_FUSE_FOR_RED</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a9d02d636b888218ff65f7085d0189116" kind="define"><name>_FUSE_MASTER_FOR_RED</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1af3d244a74e93ebd8d972b31211483d8f" kind="define"><name>_ONE_SPINOR_FOR_RED</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1afed9013e4caf088c2c66d8416617af77" kind="define"><name>_ONE_SPINOR_FOR_SUM</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a6ad91790f7a74c0b37cac897870a3160" kind="define"><name>_TWO_SPINORS_FOR_RED</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a94cc8b47e5677be5f85311df6b605cb8" kind="define"><name>_TWO_SPINORS_FOR_SUM</name></member>
+    <member refid="d6/d76/geometry__omp_8h_1a9231877584eff0fa16dbea12f0c22a18" kind="define"><name>_THREE_SPINORS_FOR_RED</name></member>
   </compound>
   <compound refid="d2/d49/global_8h" kind="file"><name>global.h</name>
     <member refid="d2/d49/global_8h_1a341e648dd28ce034232cf673d8861a7b" kind="define"><name>GLB_VAR</name></member>
-    <member refid="d2/d49/global_8h_1aac9da87c5539adae7fdb77d9f4bd520a" kind="define"><name>ipt</name></member>
+    <member refid="d2/d49/global_8h_1a899e182e1c6cd7cd1a04d9eb2a5593be" kind="define"><name>_lexi</name></member>
     <member refid="d2/d49/global_8h_1a82a50358f04971612c349da74bd31d42" kind="define"><name>ipt_ext</name></member>
+    <member refid="d2/d49/global_8h_1aac9da87c5539adae7fdb77d9f4bd520a" kind="define"><name>ipt</name></member>
+    <member refid="d2/d49/global_8h_1a20f25d123064e3d6127867a39d04767c" kind="define"><name>imask</name></member>
     <member refid="d2/d49/global_8h_1a45a0720f65f8aa3929eb2227a38ef1e5" kind="define"><name>ipt_4d</name></member>
     <member refid="d2/d49/global_8h_1a1f33a6a85eab57d72547f859de4fc742" kind="define"><name>iup</name></member>
     <member refid="d2/d49/global_8h_1af85fe87c9fb3904e12ffe63c0d58c60d" kind="define"><name>idn</name></member>
@@ -971,7 +838,12 @@
     <member refid="d2/d49/global_8h_1a5780a4af42bbc93e3b7fce8e87c75020" kind="variable"><name>ipt_4d</name></member>
     <member refid="d2/d49/global_8h_1a23aa17aced4679586d4097c9a1b88d24" kind="variable"><name>iup</name></member>
     <member refid="d2/d49/global_8h_1ac6d7bb2c2ccfa28e583eafca29cd1cb6" kind="variable"><name>idn</name></member>
+    <member refid="d2/d49/global_8h_1a86f6f69638dd97c3bede7664fb48434d" kind="variable"><name>imask</name></member>
     <member refid="d2/d49/global_8h_1ab7be1d445f8222b98a80c84262d47dd6" kind="variable"><name>zerocoord</name></member>
+    <member refid="d2/d49/global_8h_1ad18f9c92c450d555a7d80d28ad6a1c0c" kind="variable"><name>BLK_T</name></member>
+    <member refid="d2/d49/global_8h_1af442dc202f161191d85981ddd6eaeabd" kind="variable"><name>BLK_X</name></member>
+    <member refid="d2/d49/global_8h_1a8285cf7c478c4a0bfac366b1b28f364a" kind="variable"><name>BLK_Y</name></member>
+    <member refid="d2/d49/global_8h_1a0e40b458948d27771f800b2cf1559841" kind="variable"><name>BLK_Z</name></member>
     <member refid="d2/d49/global_8h_1a78cdc47548ee2d4d8744cc56f15be741" kind="variable"><name>glattice</name></member>
     <member refid="d2/d49/global_8h_1aae9cc32d304f60a77b66001e09d704fe" kind="variable"><name>glat_even</name></member>
     <member refid="d2/d49/global_8h_1a3babe1ff501be5bddbab9c6e0869c4db" kind="variable"><name>glat_odd</name></member>
@@ -1073,6 +945,8 @@
     <member refid="dc/d63/gpu__complex_8h_1a169090f5562eb0615cfd8158f36b72f9" kind="define"><name>_complex_clc</name></member>
     <member refid="dc/d63/gpu__complex_8h_1aa7b66dfa9fee63d3189998469e4c4ab4" kind="define"><name>_complex_clc_assign</name></member>
     <member refid="dc/d63/gpu__complex_8h_1a72e4db6861a8b9b07b5136d41c6f1589" kind="variable"><name>c</name></member>
+    <member refid="dc/d63/gpu__complex_8h_1ae34e91588c024e3b5f9fd73e44abf29a" kind="function"><name>__align__</name></member>
+    <member refid="dc/d63/gpu__complex_8h_1aa3297e8a899d9086b0817dd34e621b1b" kind="function"><name>__align__</name></member>
     <member refid="dc/d63/gpu__complex_8h_1aafd0958582510c89268a7b57b43a0eb4" kind="function"><name>__attribute__</name></member>
     <member refid="dc/d63/gpu__complex_8h_1ad5102f903d9a4a8bd7d4038bd6c078e5" kind="function"><name>__attribute__</name></member>
   </compound>
@@ -1245,65 +1119,19 @@
   </compound>
   <compound refid="dc/d18/memory_8h" kind="file"><name>memory.h</name>
     <member refid="dc/d18/memory_8h_1ae4ff5a07c6ff43ed11a3887ef7d524f2" kind="define"><name>ALIGN</name></member>
-    <member refid="dc/d18/memory_8h_1aa6139312fb8a1c4917e7509deaae8a2b" kind="define"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
-    <member refid="dc/d18/memory_8h_1a05756bdcfe00a23109f4ee9acc16a7ff" kind="define"><name>_DECLARE_MEMORY_FUNC_MATTER</name></member>
+    <member refid="dc/d18/memory_8h_1ab9ad00c14c9bffef082d796499345231" kind="define"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1a0d03ddcf46d4550d83abdcba49a03dd2" kind="define"><name>_DECLARE_MEMORY_FUNC_SPINOR</name></member>
     <member refid="dc/d18/memory_8h_1a9da3e5d5b59b5f690eedff1152bae4ff" kind="function"><name>amalloc</name></member>
     <member refid="dc/d18/memory_8h_1a235f6efccf605b4dce85f272fc3a8a25" kind="function"><name>afree</name></member>
-    <member refid="dc/d18/memory_8h_1aadc1fc16e87ed334450537db3b0c4ae3" kind="function"><name>spinor_field_togpuformat</name></member>
-    <member refid="dc/d18/memory_8h_1ad9f354f26e196a64a55ef7e42fe484af" kind="function"><name>copy_to_gpu_gfield</name></member>
-    <member refid="dc/d18/memory_8h_1a14d59cc6112446cd050be783ddaf599a" kind="function"><name>copy_from_gpu_gfield</name></member>
-    <member refid="dc/d18/memory_8h_1aa3f830d5d4c241ac3fd99b4632642b20" kind="function"><name>to_gpu_format_gfield</name></member>
-    <member refid="dc/d18/memory_8h_1a1124a4c18c6339e6aad66dbb0026498c" kind="function"><name>to_cpu_format_gfield</name></member>
-    <member refid="dc/d18/memory_8h_1a9dc9bee7cce80f01ef5c27f59cbfca40" kind="function"><name>free_gfield</name></member>
-    <member refid="dc/d18/memory_8h_1a17efc3cb19dbf1d660ff78b59e9f5453" kind="function"><name>alloc_gfield</name></member>
-    <member refid="dc/d18/memory_8h_1ad8dc8c2fec4d1f6cbbe53477f1babf4a" kind="function"><name>copy_to_gpu_gfield_flt</name></member>
-    <member refid="dc/d18/memory_8h_1a92795f92a57da23f862d0ba6d32f9c64" kind="function"><name>copy_from_gpu_gfield_flt</name></member>
-    <member refid="dc/d18/memory_8h_1aa8f48d36989c53398542cb26fdfd8b99" kind="function"><name>to_gpu_format_gfield_flt</name></member>
-    <member refid="dc/d18/memory_8h_1a4b33445374b1b677de482f6bfde020eb" kind="function"><name>to_cpu_format_gfield_flt</name></member>
-    <member refid="dc/d18/memory_8h_1a72d653d347b4c80ce56e91f9cdc1f0f7" kind="function"><name>free_gfield_flt</name></member>
-    <member refid="dc/d18/memory_8h_1af4c326038986a8b42e22e2ad950280f6" kind="function"><name>alloc_gfield_flt</name></member>
-    <member refid="dc/d18/memory_8h_1a3fbe885fe203716f553ddbbda3c42c56" kind="function"><name>copy_to_gpu_gfield_f</name></member>
-    <member refid="dc/d18/memory_8h_1a51c62d44de7a69a57c42aff3730372ea" kind="function"><name>copy_from_gpu_gfield_f</name></member>
-    <member refid="dc/d18/memory_8h_1af2292fbf5e7d2368ed83304f085afa1b" kind="function"><name>to_gpu_format_gfield_f</name></member>
-    <member refid="dc/d18/memory_8h_1a38df9b0aa07200435a5d95679b482705" kind="function"><name>to_cpu_format_gfield_f</name></member>
-    <member refid="dc/d18/memory_8h_1ab04cd1e5b70fb5b6579f463ad2c4bd94" kind="function"><name>free_gfield_f</name></member>
-    <member refid="dc/d18/memory_8h_1ae1932e462841af54553f7e14c17f6dd0" kind="function"><name>alloc_gfield_f</name></member>
-    <member refid="dc/d18/memory_8h_1a4d8276182528205f4961ba7381af3fa1" kind="function"><name>copy_to_gpu_gfield_f_flt</name></member>
-    <member refid="dc/d18/memory_8h_1a6c45a14f9d1a03d9692c20ff81b6e552" kind="function"><name>copy_from_gpu_gfield_f_flt</name></member>
-    <member refid="dc/d18/memory_8h_1aef611fc8ed9ef78cd29dacdfefd8d1cd" kind="function"><name>to_gpu_format_gfield_f_flt</name></member>
-    <member refid="dc/d18/memory_8h_1ad6e51cafae80f2bd51ab632038dd7c22" kind="function"><name>to_cpu_format_gfield_f_flt</name></member>
-    <member refid="dc/d18/memory_8h_1abc0fa6256c3a4f79bffdb8b0ee336c3c" kind="function"><name>free_gfield_f_flt</name></member>
-    <member refid="dc/d18/memory_8h_1a00d38fa0ebc1c3ae7368fe60d910f8d3" kind="function"><name>alloc_gfield_f_flt</name></member>
-    <member refid="dc/d18/memory_8h_1a0618257c63d788af986394a741e7f9b1" kind="function"><name>copy_to_gpu_scalar_field</name></member>
-    <member refid="dc/d18/memory_8h_1a2f00de13f7b9c6d7bd79576700b6824d" kind="function"><name>copy_from_gpu_scalar_field</name></member>
-    <member refid="dc/d18/memory_8h_1a27ac8ccc9fc45466299c642328c30f83" kind="function"><name>to_gpu_format_scalar_field</name></member>
-    <member refid="dc/d18/memory_8h_1a57e0ab401882a69682f18edb3af77ca4" kind="function"><name>to_cpu_format_scalar_field</name></member>
-    <member refid="dc/d18/memory_8h_1aacec41da7ab57e63449ad384b9903561" kind="function"><name>free_scalar_field</name></member>
-    <member refid="dc/d18/memory_8h_1a901bf46521fc2aa9e37e94e1d2e2802c" kind="function"><name>alloc_scalar_field</name></member>
-    <member refid="dc/d18/memory_8h_1ad7cdb25ce5327cf15c05cc78b19a1ada" kind="function"><name>copy_to_gpu_avfield</name></member>
-    <member refid="dc/d18/memory_8h_1aa4be72eae80175904a8f68f64129b876" kind="function"><name>copy_from_gpu_avfield</name></member>
-    <member refid="dc/d18/memory_8h_1a66d7c3fa37bde4f5a86aff5959fbf09e" kind="function"><name>to_gpu_format_avfield</name></member>
-    <member refid="dc/d18/memory_8h_1aca538d9c2d1019cc9dd2e92113f6bce1" kind="function"><name>to_cpu_format_avfield</name></member>
-    <member refid="dc/d18/memory_8h_1a509837420c810282230f43c7412ae484" kind="function"><name>free_avfield</name></member>
-    <member refid="dc/d18/memory_8h_1a966b99ff1f833efdb115895b6ba155c4" kind="function"><name>alloc_avfield</name></member>
-    <member refid="dc/d18/memory_8h_1a2397e29c6fdcb273ea9faa7473a4290c" kind="function"><name>copy_to_gpu_gtransf</name></member>
-    <member refid="dc/d18/memory_8h_1ad527442b2d4cd6b91e0fec2570635dc4" kind="function"><name>copy_from_gpu_gtransf</name></member>
-    <member refid="dc/d18/memory_8h_1a91ef33f3233d3af255328222b8f22c49" kind="function"><name>to_gpu_format_gtransf</name></member>
-    <member refid="dc/d18/memory_8h_1a07e7ef5d2e532d2f61c3f281e82eefe9" kind="function"><name>to_cpu_format_gtransf</name></member>
-    <member refid="dc/d18/memory_8h_1af12e883317d64d50f3818c9482ab8ff5" kind="function"><name>free_gtransf</name></member>
-    <member refid="dc/d18/memory_8h_1a054adce190e0b37062246345330d5dfa" kind="function"><name>alloc_gtransf</name></member>
-    <member refid="dc/d18/memory_8h_1a388b899b3778654f4b520c46f4b50d77" kind="function"><name>copy_to_gpu_clover_term</name></member>
-    <member refid="dc/d18/memory_8h_1a78946d1378f8eb37f7a6c5f9fc9641e0" kind="function"><name>copy_from_gpu_clover_term</name></member>
-    <member refid="dc/d18/memory_8h_1af72d65dcf0a296ec73fa6e3552f20780" kind="function"><name>to_gpu_format_clover_term</name></member>
-    <member refid="dc/d18/memory_8h_1ac6868fcef729615a3f92e8097d774a85" kind="function"><name>to_cpu_format_clover_term</name></member>
-    <member refid="dc/d18/memory_8h_1a702f3bc4520c5d21295545b43e4b042c" kind="function"><name>free_clover_term</name></member>
-    <member refid="dc/d18/memory_8h_1a584837f66a74367e8fd0d4ca790bd584" kind="function"><name>alloc_clover_term</name></member>
-    <member refid="dc/d18/memory_8h_1ae3234165a5c7655de7963b3b8a6297c0" kind="function"><name>copy_to_gpu_clover_force</name></member>
-    <member refid="dc/d18/memory_8h_1a2a0a972ab9ed241a86e13fbc454a20fe" kind="function"><name>copy_from_gpu_clover_force</name></member>
-    <member refid="dc/d18/memory_8h_1aca0f17145fa8ec68ad81a4a38dd1cce6" kind="function"><name>to_gpu_format_clover_force</name></member>
-    <member refid="dc/d18/memory_8h_1ac698d248e5fe1ed3d69b83a182bc39c9" kind="function"><name>to_cpu_format_clover_force</name></member>
-    <member refid="dc/d18/memory_8h_1a6c9d4f5658289383512486a6a34292f4" kind="function"><name>free_clover_force</name></member>
-    <member refid="dc/d18/memory_8h_1ad0501aaeb8cfb11878851d61c9368f58" kind="function"><name>alloc_clover_force</name></member>
+    <member refid="dc/d18/memory_8h_1a37abf127da9ba683f88601571fbfab15" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1a401f9df1e49c9e979c75780050523d0c" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1a7e79c331e27cab4e78784c1ffa09686b" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1a1cd9e1e2cc443fb25a8c86d217d5d2fd" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1ac8b613db712171737ebaf4fe69bc6d85" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1a2f838156b34702376cb29be7232db52e" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1aeddb7810a825b27e2c8792571b6ef645" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1a7c2ecec5115b85a03b2c19a8ebded657" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
+    <member refid="dc/d18/memory_8h_1a6e88ca661f81be32ce0d4014a7a5fb92" kind="function"><name>_DECLARE_MEMORY_FUNC_GAUGE</name></member>
     <member refid="dc/d18/memory_8h_1a6ccf05ea8346b588c7057ac8af55005f" kind="function"><name>copy_to_gpu_spinor_field_f</name></member>
     <member refid="dc/d18/memory_8h_1ae70a6e7403fd9c85906a696a95498bb3" kind="function"><name>copy_from_gpu_spinor_field_f</name></member>
     <member refid="dc/d18/memory_8h_1a0c7a7106d137de780f4724f750229f0d" kind="function"><name>to_gpu_format_spinor_field_f</name></member>
@@ -1321,7 +1149,7 @@
     <member refid="dc/d18/memory_8h_1a772c33d4d0d70b948c941b4cced77c38" kind="function"><name>to_gpu_format_sfield</name></member>
     <member refid="dc/d18/memory_8h_1aba6ec3306dc28378b93b80f293f65bf8" kind="function"><name>to_cpu_format_sfield</name></member>
     <member refid="dc/d18/memory_8h_1a33324a5cc111ba1e2acf28ffe2aff3ee" kind="function"><name>free_sfield</name></member>
-    <member refid="dc/d18/memory_8h_1a9b1f397a28ca49d1ac9767e90ca8765b" kind="function"><name>alloc_sfield</name></member>
+    <member refid="dc/d18/memory_8h_1ac891141beed3c55b4160ae7b70f51eef" kind="function"><name>alloc_sfield</name></member>
   </compound>
   <compound refid="d2/d99/meson__observables_8h" kind="file"><name>meson_observables.h</name>
     <member refid="d2/d99/meson__observables_8h_1a4a90fbc243073640704ddac3fbae6eb3" kind="enum"><name>gamma_ind</name></member>
@@ -1697,6 +1525,14 @@
     <member refid="d5/dbc/rational__functions_8h_1a15df2bbbe56537ad19679d1bf15764ce" kind="function"><name>r_app_set</name></member>
     <member refid="d5/dbc/rational__functions_8h_1aa81e9ad357784768e599c3df4508f0b1" kind="function"><name>rational_func</name></member>
   </compound>
+  <compound refid="d7/d24/reduction_8h" kind="file"><name>reduction.h</name>
+    <member refid="d7/d24/reduction_8h_1a57ff9571b54ed85d6910b096d30ddee2" kind="function"><name>global_sum</name></member>
+    <member refid="d7/d24/reduction_8h_1af4508c57a617ed79efb901cae3d58e09" kind="function"><name>global_sum_int</name></member>
+    <member refid="d7/d24/reduction_8h_1a9fa591db50fae91b2cca51b21649bde1" kind="function"><name>global_max</name></member>
+    <member refid="d7/d24/reduction_8h_1a946a386ad5dfe00a9e8b03197f1ba714" kind="function"><name>global_min</name></member>
+    <member refid="d7/d24/reduction_8h_1a3d559ab87eb636d0f876b143f1332b7e" kind="function"><name>bcast</name></member>
+    <member refid="d7/d24/reduction_8h_1a35416b8a20cee1a623a32feafc8f4e8b" kind="function"><name>bcast_int</name></member>
+  </compound>
   <compound refid="d0/d2b/representation_8h" kind="file"><name>representation.h</name>
     <member refid="d0/d2b/representation_8h_1afdd7df9003f59aed23a9b34b1fb77979" kind="function"><name>_group_represent2</name></member>
     <member refid="d0/d2b/representation_8h_1a5947fbe3b7a8158b42b613cb519b7fc1" kind="function"><name>_group_represent2_flt</name></member>
@@ -1810,34 +1646,8 @@
   </compound>
   <compound refid="d3/ded/spinor__field_8h" kind="file"><name>spinor_field.h</name>
     <member refid="d3/ded/spinor__field_8h_1a77c87297e9b23d96e6e721dc67b772fa" kind="define"><name>_GPU_FIELD_DATA</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a74cf13943eb9d877931ba2dbded7f0b7" kind="define"><name>_MPI_FIELD_DATA</name></member>
+    <member refid="d3/ded/spinor__field_8h_1aea9c0dcce099e07431b76c4a606a6d4b" kind="define"><name>_MPI_FIELD_DATA</name></member>
     <member refid="d3/ded/spinor__field_8h_1a0f245822721fba06b03cd9cfc5f787dd" kind="define"><name>_DECLARE_FIELD_STRUCT</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a57b38767f72997cbe0e530aec2ca5e61" kind="define"><name>_TWO_SPINORS_MATCHING</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a29c2636539dced95a1b7f8c336add339" kind="define"><name>_ARRAY_SPINOR_MATCHING</name></member>
-    <member refid="d3/ded/spinor__field_8h_1af3d244a74e93ebd8d972b31211483d8f" kind="define"><name>_ONE_SPINOR_FOR_RED</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a29b455b128483748638bcd6342fd8d7c" kind="define"><name>_ONE_SPINOR_FOR</name></member>
-    <member refid="d3/ded/spinor__field_8h_1afed9013e4caf088c2c66d8416617af77" kind="define"><name>_ONE_SPINOR_FOR_SUM</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a6ad91790f7a74c0b37cac897870a3160" kind="define"><name>_TWO_SPINORS_FOR_RED</name></member>
-    <member refid="d3/ded/spinor__field_8h_1aaf1c85365079ce137da26f5b39ad218a" kind="define"><name>_TWO_SPINORS_FOR</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a94cc8b47e5677be5f85311df6b605cb8" kind="define"><name>_TWO_SPINORS_FOR_SUM</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a9231877584eff0fa16dbea12f0c22a18" kind="define"><name>_THREE_SPINORS_FOR_RED</name></member>
-    <member refid="d3/ded/spinor__field_8h_1aeddee20430cac03313f50b1f5ae1ec06" kind="define"><name>_THREE_SPINORS_FOR</name></member>
-    <member refid="d3/ded/spinor__field_8h_1ad7960dd90c7ef52dcf8fe0c381ad9be4" kind="define"><name>_FIELD_AT</name></member>
-    <member refid="d3/ded/spinor__field_8h_1ac7842bf889ef64e8344cb5c1f2c8e08d" kind="define"><name>_4FIELD_AT</name></member>
-    <member refid="d3/ded/spinor__field_8h_1ac833819afc638970420fa945e9bdc15c" kind="define"><name>_6FIELD_AT</name></member>
-    <member refid="d3/ded/spinor__field_8h_1aa9a6a25a8b9f948673e5c67aa35dc2e2" kind="define"><name>_DFIELD_AT</name></member>
-    <member refid="d3/ded/spinor__field_8h_1ae27a9385750ceb1fc11fa5665ef6f5ba" kind="define"><name>_SPINOR_PTR</name></member>
-    <member refid="d3/ded/spinor__field_8h_1ade6780ef5728b9ef83c1330357d2b4dd" kind="typedef"><name>suNg_field</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a73f2cade9215cf85b4e22a8f365f792c" kind="typedef"><name>suNg_scalar_field</name></member>
-    <member refid="d3/ded/spinor__field_8h_1ac27c489c62ca9cf78f5791bb1e0a32fa" kind="typedef"><name>suNg_field_flt</name></member>
-    <member refid="d3/ded/spinor__field_8h_1adb8fd6119e8fae5f8270d3f1c0479f72" kind="typedef"><name>suNf_field</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a67b2f99e82366ced2ce2db1b23435ddc" kind="typedef"><name>suNf_field_flt</name></member>
-    <member refid="d3/ded/spinor__field_8h_1ae4bff8beeed96a90b9bbc6a3f5c41d9c" kind="typedef"><name>spinor_field</name></member>
-    <member refid="d3/ded/spinor__field_8h_1af489d06f791bc8a9e18d25551633c1c1" kind="typedef"><name>spinor_field_flt</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a0d4296bc5cfc3f6f3b31b32b4aa86ae8" kind="typedef"><name>suNg_av_field</name></member>
-    <member refid="d3/ded/spinor__field_8h_1ade8437d0f6fc8d901039764f4e7b2ad0" kind="typedef"><name>scalar_field</name></member>
-    <member refid="d3/ded/spinor__field_8h_1aeeb0075b6b16469c0ba65f80c8ab1f93" kind="typedef"><name>ldl_field</name></member>
-    <member refid="d3/ded/spinor__field_8h_1a9b12aa670d2ee9b66e6f83806c641c8b" kind="typedef"><name>suNfc_field</name></member>
   </compound>
   <compound refid="d7/dc5/statistics_8h" kind="file"><name>statistics.h</name>
     <member refid="d7/dc5/statistics_8h_1a87fa0914c044b5705e4f954c584d83c7" kind="function"><name>average</name></member>
@@ -2115,6 +1925,67 @@
     <member refid="db/d43/test__complex_8h_1a5f0b4c4b97fc7e2590948d994ce91c3b" kind="function"><name>test_overload_div_lhs_integer</name></member>
     <member refid="db/d43/test__complex_8h_1a96d6bb5f041e89de016fe2f905f8453f" kind="function"><name>test_I_add</name></member>
     <member refid="db/d43/test__complex_8h_1a331e81060b703f4b82fe596282922eca" kind="function"><name>test_I_prod</name></member>
+  </compound>
+  <compound refid="df/dfd/test__utils_8h" kind="file"><name>test_utils.h</name>
+    <member refid="df/dfd/test__utils_8h_1af85dd01342bb43b9a4b43c808eeee1a4" kind="function"><name>test_setup</name></member>
+    <member refid="df/dfd/test__utils_8h_1aada0ae1ccee18fa1fe81f7c761e874d1" kind="function"><name>check_diff_norm</name></member>
+    <member refid="df/dfd/test__utils_8h_1a8226844723a5edbefa29802088804ef6" kind="function"><name>check_diff_norm_zero</name></member>
+    <member refid="df/dfd/test__utils_8h_1aa4da94332c59e04ce7a61b31e0356be7" kind="function"><name>copy_gfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a1ea456316356872943e350965f8bd21d" kind="function"><name>copy_scalar_field_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a7da4222def024329c4456c0759a1e050" kind="function"><name>copy_gfield_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ac6a4e62da77a162adad42333fa707ca0" kind="function"><name>copy_gfield_f_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1abd69051d39df809de31bbc18278f32a9" kind="function"><name>copy_gfield_f_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ab1814df5dc048f008586122ca73f3f7b" kind="function"><name>copy_avfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a77c820228840116703e9fd08fa95a5af" kind="function"><name>copy_sfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a3e77765c8f1ae0636bc713e5201e41a4" kind="function"><name>copy_clover_ldl_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a7ed5672df9d88f28f18562bc92bb63ab" kind="function"><name>copy_gtransf_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a168c72376c3bf4ab46718883f36813e3" kind="function"><name>copy_clover_term_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ad101e22f433d84acfa3d14a985404943" kind="function"><name>copy_clover_force_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a7f2bc021233ecec8270d6eebb4a572ba" kind="function"><name>random_spinor_field_f_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a9e1b33245223895e58d3fd35836c3f20" kind="function"><name>random_spinor_field_f_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1aee33f8cba18bca9deabee6dd42e1c41d" kind="function"><name>random_gfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a9014593036b1eccc3670d65baffa1f34" kind="function"><name>random_scalar_field_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1aa501a1a99e323188899680128c8532b8" kind="function"><name>random_gfield_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1af8f29076940824c289b30fdd2d034d55" kind="function"><name>random_gfield_f_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a4bddad05e477bafa732f8fe1af0f03ce" kind="function"><name>random_gfield_f_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1af3d58437b95bcdfc786ff65c43afd2f8" kind="function"><name>random_avfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a539d710d5ae3627d2b6d27aec75cc948" kind="function"><name>random_sfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a82f1c04dda9a1f99a1e6f450f8aba329" kind="function"><name>random_gtransf_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1adc9050dd2ec18255a58090e55acdb5e0" kind="function"><name>random_clover_term_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1acf624ae62375b401b37a50a694db73ec" kind="function"><name>random_clover_force_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1adc718488c30e6bae3a72b27afad3f77e" kind="function"><name>sub_assign_gfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ad468252cd7370d5381e345075b088aa7" kind="function"><name>sub_assign_gfield_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a3f16ee277dce19f636ae456c280bb69f" kind="function"><name>sub_assign_gfield_f_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a8dea97942640632bacd9af6c527ac1cd" kind="function"><name>sub_assign_gfield_f_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1abea5c5c0a6d891a31778d639e16de08b" kind="function"><name>sub_assign_scalar_field_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a11dddffcd526d38e9e6f0de4899bdf4e" kind="function"><name>sub_assign_avfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a478b9d6705666d9ecb5e207c53ef1aff" kind="function"><name>sub_assign_sfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a0627bfca7eb31b9c9018cb48137e6184" kind="function"><name>sub_assign_gtransf_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a68b4c3049a2288ac5af29054ecf00696" kind="function"><name>sub_assign_clover_ldl_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ac2b0f513840121ed0d4a18a5d2a9a101" kind="function"><name>sub_assign_clover_term_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a990fe6521a6d34399e487552f21f946c" kind="function"><name>sub_assign_clover_force_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1abbecbcc8a827378a70babac9c76d3468" kind="function"><name>sqnorm_spinor_field_f_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a264583423b33772789ae96390aaf4697" kind="function"><name>sqnorm_spinor_field_f_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a9e3722f773e7815c1eadf66acc64bea4" kind="function"><name>sqnorm_gfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1aa7eeb20809fc3e15b905f9899ffe12da" kind="function"><name>sqnorm_gfield_f_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1aea7ccbb7a2081f621163896fb61e3ac5" kind="function"><name>sqnorm_gfield_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a62677bb367f7b15b7e419f7cf3917926" kind="function"><name>sqnorm_gfield_f_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a5f0e0d4440388491ea4fc85f4f100a92" kind="function"><name>sqnorm_scalar_field_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a428be6c7133773378ece9c543c6656e1" kind="function"><name>sqnorm_avfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a6aa1d849be370cc8d8780f8093516ce7" kind="function"><name>sqnorm_gtransf_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ae1bc252c45122e3fa098b0049455e0da" kind="function"><name>sqnorm_sfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ad722bc245ebb3c70eedf53c10ff8c687" kind="function"><name>sqnorm_clover_ldl_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1aa21488e59de392a2e1b31d8ab4fe321d" kind="function"><name>sqnorm_clover_term_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1abb31339c4e4d5084796cab42eae32ada" kind="function"><name>sqnorm_clover_force_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1aafb27e3e0f3a58d75402aa43d884a53a" kind="function"><name>zero_gfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a172051839f7c2fc4ad5b9ef9ef082494" kind="function"><name>zero_gfield_f_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a5ceb9e1e63306dad6dc281142ae8e5f1" kind="function"><name>zero_gfield_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1af1719bd5594e099e81a8e2aac4f7879e" kind="function"><name>zero_gfield_f_flt_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a88eb3751d742b76ca947857b13d56ff5" kind="function"><name>zero_scalar_field_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ae8d8cabbcb82ddf8d1d0c60592434028" kind="function"><name>zero_avfield_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1aa5bd24166b389696c82d59923cf33b98" kind="function"><name>zero_gtransf_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1a5b484dcba0690bb58a23e8bdf6875ff8" kind="function"><name>zero_clover_term_cpu</name></member>
+    <member refid="df/dfd/test__utils_8h_1ac40d41bb87196b7784541e2ea9503e8e" kind="function"><name>zero_clover_force_cpu</name></member>
   </compound>
   <compound refid="d8/d72/update_8h" kind="file"><name>update.h</name>
     <member refid="d8/d72/update_8h_1acda97af5e3caa39e02dd2ad7d2b8439f" kind="enum"><name>local_action_type</name></member>

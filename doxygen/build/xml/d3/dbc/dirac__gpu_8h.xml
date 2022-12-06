@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d3/dbc/dirac__gpu_8h" kind="file" language="C++">
+    <compoundname>dirac_gpu.h</compoundname>
+    <includedby refid="d0/d40/dirac_8h" local="yes">dirac.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="1">
+        <label>dirac_gpu.h</label>
+        <link refid="d3/dbc/dirac__gpu_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+<para>Implementation of the Dirac operator to run on GPUs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DIRAC_GPU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIRAC_GPU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getMVM_gpu();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_gpu_(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Dphi_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Dphi_sq_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_flt_gpu_(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_flt_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Dphi_flt_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Dphi_sq_flt_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_eopre_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_oepre_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Dphi_eopre_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Dphi_eopre_sq_gpu(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_gpu.h"/>
+  </compounddef>
+</doxygen>

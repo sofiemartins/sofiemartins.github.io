@@ -8,22 +8,10 @@
     <includes refid="d1/d36/suN_8h" local="yes">suN.h</includes>
     <includes refid="d5/d2b/data__storage_8h" local="yes">data_storage.h</includes>
     <incdepgraph>
-      <node id="8">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
       <node id="6">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -41,9 +29,9 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -51,14 +39,6 @@
         <link refid="d9/d21/suN__types_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="9">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
-      <node id="10">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
       </node>
       <node id="3">
         <label>hr_complex.h</label>
@@ -69,19 +49,13 @@
       <node id="5">
         <label>tgmath.h</label>
       </node>
-      <node id="11">
+      <node id="7">
         <label>suN.h</label>
         <link refid="d1/d36/suN_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="7">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
+      <node id="8">
         <label>data_storage.h</label>
         <link refid="d5/d2b/data__storage_8h_source"/>
       </node>
@@ -173,11 +147,11 @@
         <argsstring>(suNg_field *V, suNg_field *Vprime)</argsstring>
         <name>max_distance</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>Vprime</declname>
         </param>
         <briefdescription>
@@ -194,7 +168,7 @@
         <argsstring>(suNg_field *V, const double epsilon)</argsstring>
         <name>WilsonFlow1</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <param>
@@ -215,7 +189,7 @@
         <argsstring>(suNg_field *V, const double epsilon)</argsstring>
         <name>WilsonFlow3</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <param>
@@ -236,7 +210,7 @@
         <argsstring>(suNg_field *V, double *epsilon, double *epsilon_new, double *delta)</argsstring>
         <name>WilsonFlow3_adaptative</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <param>
@@ -265,7 +239,7 @@
         <argsstring>(suNg_field *V)</argsstring>
         <name>WF_E</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <briefdescription>
@@ -282,7 +256,7 @@
         <argsstring>(suNg_field *V)</argsstring>
         <name>WF_Esym</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <briefdescription>
@@ -299,7 +273,7 @@
         <argsstring>(suNg_field *V)</argsstring>
         <name>WF_topo</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <briefdescription>
@@ -320,7 +294,7 @@
           <declname>E</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <briefdescription>
@@ -341,7 +315,7 @@
           <declname>Esym</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <briefdescription>
@@ -362,7 +336,7 @@
           <declname>wft</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <param>
@@ -415,7 +389,7 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hr_complex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;data_storage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
@@ -431,19 +405,19 @@
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_set_bare_anisotropy(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*chi);</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_distance(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*Vprime);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_distance(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*Vprime);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WilsonFlow1(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>epsilon);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WilsonFlow3(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>epsilon);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>WilsonFlow3_adaptative(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*epsilon,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*epsilon_new,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*delta);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WilsonFlow1(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>epsilon);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WilsonFlow3(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>epsilon);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>WilsonFlow3_adaptative(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*epsilon,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*epsilon_new,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*delta);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_E(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_Esym(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_topo(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_E(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_Esym(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>WF_topo(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_E_T(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*E,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_Esym_T(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*Esym,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*WF_update_and_measure(WF_integrator_type<sp/>wft,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*tmax,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*eps,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nmeas,<sp/>storage_switch<sp/>swc);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_E_T(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*E,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WF_Esym_T(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*Esym,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="d0/d6e/struct__data__storage__array" kindref="compound">data_storage_array</ref><sp/>*WF_update_and_measure(WF_integrator_type<sp/>wft,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*tmax,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*eps,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*delta,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nmeas,<sp/>storage_switch<sp/>swc);</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>WILSONFLOW_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>

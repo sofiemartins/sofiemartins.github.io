@@ -4,7 +4,7 @@
     <compoundname>field_scalar_par</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="df/da7/structfield__scalar__par_1ad52e7fd148de32abf72d4d6a913a10f9" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> **</type>
+        <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> **</type>
         <definition>suNg_scalar_field** field_scalar_par::field</definition>
         <argsstring></argsstring>
         <name>field</name>
@@ -17,7 +17,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="94" column="21" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/da7/structfield__scalar__par_1a1f5a367ee32527aa5b41d43ad9464cc3" prot="public" static="no" mutable="no">
-        <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> **</type>
+        <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> **</type>
         <definition>suNg_scalar_field** field_scalar_par::momenta</definition>
         <argsstring></argsstring>
         <name>momenta</name>
@@ -35,6 +35,10 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="3">
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
+      </node>
       <node id="1">
         <label>field_scalar_par</label>
         <link refid="df/da7/structfield__scalar__par"/>
@@ -43,21 +47,17 @@
           <edgelabel>momenta</edgelabel>
         </childnode>
       </node>
-      <node id="4">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
       <node id="2">
-        <label>_suNg_scalar_field</label>
-        <link refid="d8/dc4/struct__suNg__scalar__field"/>
+        <label>suNg_scalar_field</label>
+        <link refid="d6/d10/structsuNg__scalar__field"/>
         <childnode refid="3" relation="usage">
-          <edgelabel>ptr</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
       </node>
-      <node id="3">
+      <node id="4">
         <label>suNg_vector</label>
         <link refid="d3/d0c/structsuNg__vector"/>
       </node>

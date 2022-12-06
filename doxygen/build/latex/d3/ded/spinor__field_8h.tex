@@ -1,0 +1,98 @@
+\hypertarget{spinor__field_8h}{}\doxysection{spinor\+\_\+field.\+h File Reference}
+\label{spinor__field_8h}\index{spinor\_field.h@{spinor\_field.h}}
+
+
+The elementary site structures defined in \mbox{\hyperlink{suN_8h_source}{su\+N.\+h}} are used in this file to define field structures that contain arrays to save field data and information on the geometry.  
+
+
+{\ttfamily \#include \char`\"{}su\+N\+\_\+types.\+h\char`\"{}}\newline
+Include dependency graph for spinor\+\_\+field.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em Gauge field of SU(\+N\+\_\+g) matrices. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsuNg__scalar__field}{su\+Ng\+\_\+scalar\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em SU(\+N\+\_\+g) scalar field of SU(\+N\+\_\+g) vectors. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsuNg__field__flt}{su\+Ng\+\_\+field\+\_\+flt}}
+\begin{DoxyCompactList}\small\item\em Gauge field of single precision SU(\+N\+\_\+g) matrices. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em Gauge field in chosen fermion representation. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsuNf__field__flt}{su\+Nf\+\_\+field\+\_\+flt}}
+\begin{DoxyCompactList}\small\item\em Single precision gauge field in the chosen fermion representation. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em Spinor field array containing SU(\+N\+\_\+f) spinors in chosen fermion representation. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}
+\begin{DoxyCompactList}\small\item\em Spinor field array containing single precision SU(\+N\+\_\+f) spinors in chosen fermion representation. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structsuNg__av__field}{su\+Ng\+\_\+av\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em Field of SU(\+N\+\_\+g) algebra vectors. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em Scalar field of double precision real values. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structldl__field}{ldl\+\_\+field}}
+\item 
+struct \mbox{\hyperlink{structsuNfc__field}{su\+Nfc\+\_\+field}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{spinor__field_8h_a77c87297e9b23d96e6e721dc67b772fa}{\+\_\+\+GPU\+\_\+\+FIELD\+\_\+\+DATA}}(\+\_\+type)
+\begin{DoxyCompactList}\small\item\em This macro corresponds to a field declaration line to be used inside a struct declaration. It only adds a GPU field data array, if the code is compiled with the flag WITH\+\_\+\+GPU. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{spinor__field_8h_aea9c0dcce099e07431b76c4a606a6d4b}\label{spinor__field_8h_aea9c0dcce099e07431b76c4a606a6d4b}} 
+\#define \mbox{\hyperlink{spinor__field_8h_aea9c0dcce099e07431b76c4a606a6d4b}{\+\_\+\+MPI\+\_\+\+FIELD\+\_\+\+DATA}}
+\begin{DoxyCompactList}\small\item\em This macro corresponds to a field declaration line to be used inside a struct declaration. It only add MPI communication handles if the code is compiled with the flag WITH\+\_\+\+MPI. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{spinor__field_8h_a0f245822721fba06b03cd9cfc5f787dd}{\+\_\+\+DECLARE\+\_\+\+FIELD\+\_\+\+STRUCT}}(\+\_\+name,  \+\_\+type)
+\begin{DoxyCompactList}\small\item\em This macro declares a field struct that contains all necessary field data arrays, geometry information and communication handles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The elementary site structures defined in \mbox{\hyperlink{suN_8h_source}{su\+N.\+h}} are used in this file to define field structures that contain arrays to save field data and information on the geometry. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{spinor__field_8h_a0f245822721fba06b03cd9cfc5f787dd}\label{spinor__field_8h_a0f245822721fba06b03cd9cfc5f787dd}} 
+\index{spinor\_field.h@{spinor\_field.h}!\_DECLARE\_FIELD\_STRUCT@{\_DECLARE\_FIELD\_STRUCT}}
+\index{\_DECLARE\_FIELD\_STRUCT@{\_DECLARE\_FIELD\_STRUCT}!spinor\_field.h@{spinor\_field.h}}
+\doxysubsubsection{\texorpdfstring{\_DECLARE\_FIELD\_STRUCT}{\_DECLARE\_FIELD\_STRUCT}}
+{\footnotesize\ttfamily \#define \+\_\+\+DECLARE\+\_\+\+FIELD\+\_\+\+STRUCT(\begin{DoxyParamCaption}\item[{}]{\+\_\+name,  }\item[{}]{\+\_\+type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\(\backslash\)}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{        \_type *ptr; \(\backslash\)}
+\DoxyCodeLine{        geometry\_descriptor *type; \mbox{\hyperlink{spinor__field_8h_a77c87297e9b23d96e6e721dc67b772fa}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{spinor__field_8h_a77c87297e9b23d96e6e721dc67b772fa}{        \_MPI\_FIELD\_DATA \(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{spinor__field_8h_a77c87297e9b23d96e6e721dc67b772fa}{        \_GPU\_FIELD\_DATA}}(\_type) \(\backslash\)}
+\DoxyCodeLine{    \} \_name}
+
+\end{DoxyCode}
+
+
+This macro declares a field struct that contains all necessary field data arrays, geometry information and communication handles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & The name of the field type \\
+\hline
+{\em \+\_\+type} & The elementary type struct of data stored at each site/link. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{spinor__field_8h_a77c87297e9b23d96e6e721dc67b772fa}\label{spinor__field_8h_a77c87297e9b23d96e6e721dc67b772fa}} 
+\index{spinor\_field.h@{spinor\_field.h}!\_GPU\_FIELD\_DATA@{\_GPU\_FIELD\_DATA}}
+\index{\_GPU\_FIELD\_DATA@{\_GPU\_FIELD\_DATA}!spinor\_field.h@{spinor\_field.h}}
+\doxysubsubsection{\texorpdfstring{\_GPU\_FIELD\_DATA}{\_GPU\_FIELD\_DATA}}
+{\footnotesize\ttfamily \#define \+\_\+\+GPU\+\_\+\+FIELD\+\_\+\+DATA(\begin{DoxyParamCaption}\item[{}]{\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+This macro corresponds to a field declaration line to be used inside a struct declaration. It only adds a GPU field data array, if the code is compiled with the flag WITH\+\_\+\+GPU. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+type} & Elementary site/link type of the field data \\
+\hline
+\end{DoxyParams}

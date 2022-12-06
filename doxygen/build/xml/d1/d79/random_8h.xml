@@ -6,22 +6,10 @@
     <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
     <includes refid="d7/d3f/ranlux_8h" local="yes">ranlux.h</includes>
     <incdepgraph>
-      <node id="9">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
       <node id="7">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -36,17 +24,9 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="10">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
-      <node id="12">
+      <node id="8">
         <label>ranlux.h</label>
         <link refid="d7/d3f/ranlux_8h_source"/>
-      </node>
-      <node id="11">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
       </node>
       <node id="4">
         <label>hr_complex.h</label>
@@ -63,12 +43,6 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="8">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
       <node id="1">
         <label>random.h</label>
         <link refid="d1/d79/random_8h"/>
@@ -76,7 +50,7 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -199,7 +173,7 @@
         <argsstring>(suNg_field *gf)</argsstring>
         <name>random_u</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>gf</declname>
         </param>
         <briefdescription>
@@ -216,7 +190,7 @@
         <argsstring>(suNf_field *)</argsstring>
         <name>random_u_f</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -232,7 +206,7 @@
         <argsstring>(suNg_field *gf)</argsstring>
         <name>unit_u</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>gf</declname>
         </param>
         <briefdescription>
@@ -249,7 +223,7 @@
         <argsstring>(suNg_scalar_field *)</argsstring>
         <name>random_s</name>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -265,7 +239,7 @@
         <argsstring>(suNg_scalar_field *sf)</argsstring>
         <name>zero_s</name>
         <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
           <declname>sf</declname>
         </param>
         <briefdescription>
@@ -338,7 +312,7 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RANDOM_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ranlux.h&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>included<sp/>here<sp/>for<sp/>convenience<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
@@ -351,12 +325,12 @@
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_suNg(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*u);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_suNf(<ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref><sp/>*u);</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_u(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_u_f(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unit_u(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_u(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_u_f(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unit_u(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_s(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_s(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*sf);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>random_s(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>zero_s(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*sf);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ranz2(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generate_random_point(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pr);</highlight></codeline>

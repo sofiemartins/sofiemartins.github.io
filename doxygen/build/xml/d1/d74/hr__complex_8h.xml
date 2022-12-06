@@ -9,7 +9,6 @@
     <includedby refid="d3/d5d/inverters_8h" local="yes">inverters.h</includedby>
     <includedby refid="dc/d9c/linear__algebra_8h" local="yes">linear_algebra.h</includedby>
     <includedby refid="d0/d30/observables_8h" local="yes">observables.h</includedby>
-    <includedby refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includedby>
     <includedby refid="d9/d21/suN__types_8h" local="yes">suN_types.h</includedby>
     <includedby refid="d3/df8/wilsonflow_8h" local="yes">wilsonflow.h</includedby>
     <incdepgraph>
@@ -36,9 +35,9 @@
       </node>
       <node id="12">
         <label>dirac.h</label>
-        <link refid="d0/d40/dirac_8h_source"/>
+        <link refid="d0/d40/dirac_8h"/>
       </node>
-      <node id="17">
+      <node id="16">
         <label>global.h</label>
         <link refid="d2/d49/global_8h_source"/>
       </node>
@@ -54,26 +53,30 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="30">
         <label>disconnected.h</label>
         <link refid="dc/d1e/disconnected_8h_source"/>
       </node>
-      <node id="15">
+      <node id="21">
         <label>clover_tools.h</label>
         <link refid="da/d6a/clover__tools_8h_source"/>
       </node>
-      <node id="14">
+      <node id="20">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -81,30 +84,36 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="24">
-        <label>gamma_spinor.h</label>
-        <link refid="d8/d00/gamma__spinor_8h_source"/>
         <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>gamma_spinor.h</label>
+        <link refid="d8/d00/gamma__spinor_8h_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="6">
         <label>io.h</label>
         <link refid="dc/dac/io_8h_source"/>
       </node>
-      <node id="21">
+      <node id="23">
+        <label>dirac_cpu.h</label>
+        <link refid="df/d5f/dirac__cpu_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
         <label>wilsonflow.h</label>
         <link refid="d3/df8/wilsonflow_8h_source"/>
       </node>
@@ -112,34 +121,34 @@
         <label>observables.h</label>
         <link refid="d0/d30/observables_8h_source"/>
       </node>
-      <node id="22">
+      <node id="14">
         <label>suN_types.h</label>
         <link refid="d9/d21/suN__types_8h_source"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
       <node id="10">
@@ -150,10 +159,16 @@
         <label>linear_algebra.h</label>
         <link refid="dc/d9c/linear__algebra_8h_source"/>
       </node>
-      <node id="26">
+      <node id="24">
+        <label>dirac_default.h</label>
+        <link refid="dd/d5f/dirac__default_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
         <label>spin_matrix.h</label>
         <link refid="d8/d1e/spin__matrix_8h_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -179,33 +194,31 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="18">
         <label>propagator.h</label>
         <link refid="d6/d71/propagator_8h_source"/>
       </node>
-      <node id="29">
+      <node id="31">
         <label>scattering.h</label>
         <link refid="df/dc5/scattering_8h_source"/>
       </node>
-      <node id="16">
+      <node id="22">
         <label>communications.h</label>
-        <link refid="d2/d6f/communications_8h_source"/>
+        <link refid="d2/d6f/communications_8h"/>
       </node>
-      <node id="27">
+      <node id="29">
         <label>suN.h</label>
         <link refid="d1/d36/suN_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -215,36 +228,36 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="25">
         <label>memory.h</label>
-        <link refid="dc/d18/memory_8h_source"/>
+        <link refid="dc/d18/memory_8h"/>
       </node>
-      <node id="19">
+      <node id="26">
         <label>moreio.h</label>
         <link refid="d0/d5a/moreio_8h_source"/>
       </node>
-      <node id="20">
+      <node id="27">
         <label>random.h</label>
         <link refid="d1/d79/random_8h_source"/>
       </node>
@@ -272,10 +285,10 @@
         <label>clover_exp.h</label>
         <link refid="d3/dde/clover__exp_8h_source"/>
       </node>
-      <node id="23">
+      <node id="15">
         <label>check_options.h</label>
         <link refid="d8/d4c/check__options_8h_source"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
     </invincdepgraph>

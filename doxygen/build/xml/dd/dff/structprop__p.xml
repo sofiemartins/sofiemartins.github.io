@@ -5,7 +5,7 @@
     <includes refid="df/dc5/scattering_8h" local="no">scattering.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="dd/dff/structprop__p_1ab1a1b67786c50ad9861e71432fa556ca" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* prop_p::Q_p</definition>
         <argsstring></argsstring>
         <name>Q_p</name>
@@ -18,7 +18,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="58" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/dff/structprop__p_1abb155d95965c91e453d6e3129c524dd9" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* prop_p::Q_mp</definition>
         <argsstring></argsstring>
         <name>Q_mp</name>
@@ -31,7 +31,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="59" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/dff/structprop__p_1adb505872b3ba65304521c15701d0ea17" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* prop_p::W_0_p</definition>
         <argsstring></argsstring>
         <name>W_0_p</name>
@@ -44,7 +44,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="60" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/dff/structprop__p_1a0f059cb088ba5446a7fdbd784e383bb9" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* prop_p::W_0_mp</definition>
         <argsstring></argsstring>
         <name>W_0_mp</name>
@@ -57,7 +57,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="61" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/dff/structprop__p_1ae798ee65e2c6ce53ab3ba5420e790359" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* prop_p::W_p_0</definition>
         <argsstring></argsstring>
         <name>W_p_0</name>
@@ -70,7 +70,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" line="62" column="14" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/scattering.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="dd/dff/structprop__p_1a30262c24200147b13c7e7e2aa039c980" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* prop_p::W_mp_0</definition>
         <argsstring></argsstring>
         <name>W_mp_0</name>
@@ -101,25 +101,25 @@
           <edgelabel>W_p_0</edgelabel>
         </childnode>
       </node>
-      <node id="4">
-        <label>suNf_spinor</label>
-        <link refid="d8/dd1/structsuNf__spinor"/>
-        <childnode refid="5" relation="usage">
-          <edgelabel>c</edgelabel>
-        </childnode>
-      </node>
       <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
       </node>
       <node id="2">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
         <childnode refid="3" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>c</edgelabel>
         </childnode>
       </node>
       <node id="5">

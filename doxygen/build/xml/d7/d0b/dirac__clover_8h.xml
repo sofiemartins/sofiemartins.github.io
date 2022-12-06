@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d0b/dirac__clover_8h" kind="file" language="C++">
+    <compoundname>dirac_clover.h</compoundname>
+    <includedby refid="d0/d40/dirac_8h" local="yes">dirac.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="1">
+        <label>dirac_clover.h</label>
+        <link refid="d7/d0b/dirac__clover_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d7/d0b/dirac__clover_8h_1a75d3abb356ebba83ddaf86eea9142670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cphi</definition>
+        <argsstring>(double, spinor_field *, spinor_field *)</argsstring>
+        <name>Cphi</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" line="2" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" declline="2" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0b/dirac__clover_8h_1abd8342a318cc2a8e92db3be0848daa00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Cphi</definition>
+        <argsstring>(double, spinor_field *, spinor_field *)</argsstring>
+        <name>g5Cphi</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" line="3" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" declline="3" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0b/dirac__clover_8h_1a25ee347bebaf57d530c09106407baa40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Cphi_sq</definition>
+        <argsstring>(double, spinor_field *, spinor_field *)</argsstring>
+        <name>g5Cphi_sq</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" line="4" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" declline="4" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0b/dirac__clover_8h_1a4cee0e96f7134441dfe769e52ed12c35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cphi_eopre</definition>
+        <argsstring>(double, spinor_field *, spinor_field *)</argsstring>
+        <name>Cphi_eopre</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" line="5" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" declline="5" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0b/dirac__clover_8h_1af3b84535384d48e2b2a18a6403cffaeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Cphi_eopre</definition>
+        <argsstring>(double, spinor_field *, spinor_field *)</argsstring>
+        <name>g5Cphi_eopre</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" line="6" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" declline="6" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0b/dirac__clover_8h_1a66734a708143e6391979714ef841dec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Cphi_eopre_sq</definition>
+        <argsstring>(double, spinor_field *, spinor_field *)</argsstring>
+        <name>g5Cphi_eopre_sq</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" line="7" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" declline="7" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0b/dirac__clover_8h_1a2dd9a331fe3d00fb2adc9e314d6c2a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cphi_diag</definition>
+        <argsstring>(double, spinor_field *, spinor_field *)</argsstring>
+        <name>Cphi_diag</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" line="8" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" declline="8" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d0b/dirac__clover_8h_1a979834349f9715c68ab0f7930808b1b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cphi_diag_inv</definition>
+        <argsstring>(double, spinor_field *, spinor_field *)</argsstring>
+        <name>Cphi_diag_inv</name>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" line="9" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h" declline="9" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Dirac<sp/>operators<sp/>with<sp/>clover<sp/>term</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cphi(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Cphi(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Cphi_sq(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cphi_eopre(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Cphi_eopre(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>g5Cphi_eopre_sq(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cphi_diag(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Cphi_diag_inv(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_clover.h"/>
+  </compounddef>
+</doxygen>

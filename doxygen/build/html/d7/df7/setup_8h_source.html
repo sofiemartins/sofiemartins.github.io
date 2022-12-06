@@ -88,30 +88,39 @@ $(document).ready(function(){initNavTree('d7/df7/setup_8h_source.html','../../')
 <div class="title">setup.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************\</span></div>
+<a href="../../d7/df7/setup_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************\</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (c) 2008-2014, Vincent Drach                                   *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * All rights reserved.                                                     *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> \**************************************************************************/</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SETUP_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SETUP_H</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">char</span>* get_input_filename();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">char</span>* get_output_filename();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">char</span>* get_error_filename();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">int</span> setup_process(<span class="keywordtype">int</span> *argc, <span class="keywordtype">char</span> ***argv);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">int</span> finalize_process(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> setup_gauge_fields();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef SETUP_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define SETUP_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d7/df7/setup_8h.html#a3c0077321ca35a259598c4c410cdc58c">   18</a></span>&#160;<span class="keywordtype">char</span>* <a class="code" href="../../d7/df7/setup_8h.html#a3c0077321ca35a259598c4c410cdc58c">get_input_filename</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="../../d7/df7/setup_8h.html#ab97e5680f792b9113e82b19fcea49da3">   23</a></span>&#160;<span class="keywordtype">char</span>* <a class="code" href="../../d7/df7/setup_8h.html#ab97e5680f792b9113e82b19fcea49da3">get_output_filename</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d7/df7/setup_8h.html#ac4b278e7459766a1b253f08f95d5ec2d">   29</a></span>&#160;<span class="keywordtype">char</span>* <a class="code" href="../../d7/df7/setup_8h.html#ac4b278e7459766a1b253f08f95d5ec2d">get_error_filename</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d7/df7/setup_8h.html#a2ba8e3e40d50f154c69fbd6ee09372c8">   37</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/df7/setup_8h.html#a2ba8e3e40d50f154c69fbd6ee09372c8">setup_process</a>(<span class="keywordtype">int</span> *argc, <span class="keywordtype">char</span> ***argv);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="../../d7/df7/setup_8h.html#a01734910676b45f2e59ebb10a7d1c270">   42</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="../../d7/df7/setup_8h.html#a01734910676b45f2e59ebb10a7d1c270">finalize_process</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d7/df7/setup_8h.html#aa0362db56b8ab1b93a43e419107040f2">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d7/df7/setup_8h.html#aa0362db56b8ab1b93a43e419107040f2">setup_gauge_fields</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="asetup_8h_html_a01734910676b45f2e59ebb10a7d1c270"><div class="ttname"><a href="../../d7/df7/setup_8h.html#a01734910676b45f2e59ebb10a7d1c270">finalize_process</a></div><div class="ttdeci">int finalize_process(void)</div><div class="ttdoc">Finalize process at the end of each run.</div></div>
+<div class="ttc" id="asetup_8h_html_a2ba8e3e40d50f154c69fbd6ee09372c8"><div class="ttname"><a href="../../d7/df7/setup_8h.html#a2ba8e3e40d50f154c69fbd6ee09372c8">setup_process</a></div><div class="ttdeci">int setup_process(int *argc, char ***argv)</div><div class="ttdoc">Setup the process at the beginning of each run.</div></div>
+<div class="ttc" id="asetup_8h_html_a3c0077321ca35a259598c4c410cdc58c"><div class="ttname"><a href="../../d7/df7/setup_8h.html#a3c0077321ca35a259598c4c410cdc58c">get_input_filename</a></div><div class="ttdeci">char * get_input_filename()</div><div class="ttdoc">Read input filename from command line.</div></div>
+<div class="ttc" id="asetup_8h_html_aa0362db56b8ab1b93a43e419107040f2"><div class="ttname"><a href="../../d7/df7/setup_8h.html#aa0362db56b8ab1b93a43e419107040f2">setup_gauge_fields</a></div><div class="ttdeci">void setup_gauge_fields()</div><div class="ttdoc">Initialize gauge fields.</div></div>
+<div class="ttc" id="asetup_8h_html_ab97e5680f792b9113e82b19fcea49da3"><div class="ttname"><a href="../../d7/df7/setup_8h.html#ab97e5680f792b9113e82b19fcea49da3">get_output_filename</a></div><div class="ttdeci">char * get_output_filename()</div><div class="ttdoc">Get output filename, default out_0 in the local directory.</div></div>
+<div class="ttc" id="asetup_8h_html_ac4b278e7459766a1b253f08f95d5ec2d"><div class="ttname"><a href="../../d7/df7/setup_8h.html#ac4b278e7459766a1b253f08f95d5ec2d">get_error_filename</a></div><div class="ttdeci">char * get_error_filename()</div><div class="ttdoc">Get filename of file to print errors to, default is err_0 in the current directory.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_856524284ebe840938865dc061f982fb.html">Include</a></li><li class="navelem"><b>setup.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_856524284ebe840938865dc061f982fb.html">Include</a></li><li class="navelem"><a class="el" href="../../d7/df7/setup_8h.html">setup.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

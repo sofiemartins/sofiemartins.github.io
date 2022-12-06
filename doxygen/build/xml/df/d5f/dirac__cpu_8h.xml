@@ -1,0 +1,714 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="df/d5f/dirac__cpu_8h" kind="file" language="C++">
+    <compoundname>dirac_cpu.h</compoundname>
+    <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
+    <includedby refid="d0/d40/dirac_8h" local="yes">dirac.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>spinor_field.h</label>
+        <link refid="d3/ded/spinor__field_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cpu_complex.h</label>
+        <link refid="d2/dfb/cpu__complex_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>dirac_cpu.h</label>
+        <link refid="df/d5f/dirac__cpu_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>hr_complex.h</label>
+        <link refid="d1/d74/hr__complex_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>tgmath.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="1">
+        <label>dirac_cpu.h</label>
+        <link refid="df/d5f/dirac__cpu_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a612a5648a905828a6fc7506c7e9ef857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long int</type>
+        <definition>unsigned long int getMVM_cpu</definition>
+        <argsstring>()</argsstring>
+        <name>getMVM_cpu</name>
+        <briefdescription>
+<para>Number of times the dirac operator was applied to the CPU field data copy of a spinor field. Note, that this is internally implemented to count every application to a half spinor (either odd part or even part) and then divided by two. An application to a spinor defined on the full lattice is internally counted as two operations and then divided by two. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>unsigned long int Number of applications of the Dirac operator to the full lattice </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="21" column="19" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="21" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a7ca0880a57ddda51341cea117aca611a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_cpu_</definition>
+        <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
+        <name>Dphi_cpu_</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Massless Dirac oprator (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spinor field that the operator will be applied to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input spinor field before Dirac operator operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="28" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a8a6d1b83a0844f9e17ef458986ae58dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_cpu</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in)</argsstring>
+        <name>Dphi_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Dirac operator (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Out spinor field that the Dirac operator will be applied to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input spinor field before Dirac operator operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="37" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1ada15a3090dbcf9e2010a37930b5750a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Dphi_cpu</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in)</argsstring>
+        <name>g5Dphi_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Hermitian Dirac operator (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Out spinor field that the Hermitian Dirac operator will be applied to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input spinor field before Dirac operator operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="47" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1aa399c4321037797714e1ba312194530d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Dphi_sq_cpu</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in)</argsstring>
+        <name>g5Dphi_sq_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Squared Hermitian Dirac operator (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Out spinor field that the squared Hermitian Dirac operator will be applied to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input spinor field before operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="57" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a574511ba7acccbb9f3a1f4d94a34750d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_flt_cpu_</definition>
+        <argsstring>(spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>Dphi_flt_cpu_</name>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Single precision massless Dirac operator (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision output spinor field that the operator will be applied to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision input spinor field before Dirac operator operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="67" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="67" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a0148b46ae71f0ff08e282088cdda5e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_flt_cpu</definition>
+        <argsstring>(double m0, spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>Dphi_flt_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Single precision Dirac operator (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision output spinor field that the operator will be applied to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision input spinor field before Dirac operator operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="78" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a17505259559fbbfec2ff014d07928ec4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Dphi_flt_cpu</definition>
+        <argsstring>(double m0, spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>g5Dphi_flt_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Single precision Hermitian Dirac operator (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision output spinor field that the operator will be applied to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision input spinor field before Dirac operator operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="89" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="89" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a2558792680af45fe6c077d3fdfe98577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Dphi_sq_flt_cpu</definition>
+        <argsstring>(double m0, spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>g5Dphi_sq_flt_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Single precision squared Hermitian Dirac operator (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision output spinor field that the operator will be applied to </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision input spinor field before Dirac operator operation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="100" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="100" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1accf95978a99cbf7d9df81a97a29f5c13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_eopre_cpu</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in)</argsstring>
+        <name>Dphi_eopre_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Even-Odd Preconditioned application of Dirac Operator, odd to even (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Even output spinor field that will contain the result of the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Odd input spinor field before Dirac operation application </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="110" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="110" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a9d97162c4345a629870b26f878aaacdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_oepre_cpu</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in)</argsstring>
+        <name>Dphi_oepre_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Even-Odd Preconditioned application of Dirac Operator, even to odd (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Odd output spinor field that will contain the result of the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Even input spinor field before Dirac operation application </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="120" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="120" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a0e815aa7308b3b24ebd0705a5c33678c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Dphi_eopre_cpu</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in)</argsstring>
+        <name>g5Dphi_eopre_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Even-Odd Preconditioned application of Hermitian Dirac Operator, odd to even (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Even output spinor field that will contain the result of the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Odd input spinor field before Dirac operation application </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="131" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="131" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d5f/dirac__cpu_8h_1a20fa9f36c6d950666931f11d601a77a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void g5Dphi_eopre_sq_cpu</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in)</argsstring>
+        <name>g5Dphi_eopre_sq_cpu</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Even-Odd Preconditioned application of Hermitian Dirac Operator, even to odd (CPU version) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mass parameter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Odd output spinor field that will contain the result of the operation </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Even input spinor field before Dirac operation application </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" line="142" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h" declline="142" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Implementation of the Dirac operator for calculation on CPUs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DIRAC_CPU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIRAC_CPU_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="df/d5f/dirac__cpu_8h_1a612a5648a905828a6fc7506c7e9ef857" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a612a5648a905828a6fc7506c7e9ef857" kindref="member">getMVM_cpu</ref>();</highlight></codeline>
+<codeline lineno="28" refid="df/d5f/dirac__cpu_8h_1a7ca0880a57ddda51341cea117aca611a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a7ca0880a57ddda51341cea117aca611a" kindref="member">Dphi_cpu_</ref>(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="df/d5f/dirac__cpu_8h_1a8a6d1b83a0844f9e17ef458986ae58dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a8a6d1b83a0844f9e17ef458986ae58dd" kindref="member">Dphi_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="df/d5f/dirac__cpu_8h_1ada15a3090dbcf9e2010a37930b5750a9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1ada15a3090dbcf9e2010a37930b5750a9" kindref="member">g5Dphi_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="df/d5f/dirac__cpu_8h_1aa399c4321037797714e1ba312194530d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1aa399c4321037797714e1ba312194530d" kindref="member">g5Dphi_sq_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="df/d5f/dirac__cpu_8h_1a574511ba7acccbb9f3a1f4d94a34750d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a574511ba7acccbb9f3a1f4d94a34750d" kindref="member">Dphi_flt_cpu_</ref>(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="df/d5f/dirac__cpu_8h_1a0148b46ae71f0ff08e282088cdda5e28" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a0148b46ae71f0ff08e282088cdda5e28" kindref="member">Dphi_flt_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="df/d5f/dirac__cpu_8h_1a17505259559fbbfec2ff014d07928ec4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a17505259559fbbfec2ff014d07928ec4" kindref="member">g5Dphi_flt_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="df/d5f/dirac__cpu_8h_1a2558792680af45fe6c077d3fdfe98577" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a2558792680af45fe6c077d3fdfe98577" kindref="member">g5Dphi_sq_flt_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="df/d5f/dirac__cpu_8h_1accf95978a99cbf7d9df81a97a29f5c13" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1accf95978a99cbf7d9df81a97a29f5c13" kindref="member">Dphi_eopre_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="df/d5f/dirac__cpu_8h_1a9d97162c4345a629870b26f878aaacdb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a9d97162c4345a629870b26f878aaacdb" kindref="member">Dphi_oepre_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="df/d5f/dirac__cpu_8h_1a0e815aa7308b3b24ebd0705a5c33678c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a0e815aa7308b3b24ebd0705a5c33678c" kindref="member">g5Dphi_eopre_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="df/d5f/dirac__cpu_8h_1a20fa9f36c6d950666931f11d601a77a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="df/d5f/dirac__cpu_8h_1a20fa9f36c6d950666931f11d601a77a6" kindref="member">g5Dphi_eopre_sq_cpu</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_cpu.h"/>
+  </compounddef>
+</doxygen>

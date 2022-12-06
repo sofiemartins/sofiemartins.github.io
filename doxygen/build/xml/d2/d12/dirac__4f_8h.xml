@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d2/d12/dirac__4f_8h" kind="file" language="C++">
+    <compoundname>dirac_4f.h</compoundname>
+    <includedby refid="d0/d40/dirac_8h" local="yes">dirac.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="1">
+        <label>dirac_4f.h</label>
+        <link refid="d2/d12/dirac__4f_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/d12/dirac__4f_8h_1ac62938de4c2503a2380941cb604d23ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_eopre_4f</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in, double shift)</argsstring>
+        <name>Dphi_eopre_4f</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" line="2" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" declline="2" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d12/dirac__4f_8h_1a299bbd7842d7cedeb0d258c962119ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_eopre_4f_dagger</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in, double shift)</argsstring>
+        <name>Dphi_eopre_4f_dagger</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" line="3" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" declline="3" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d12/dirac__4f_8h_1a835cd1d80e8bbd9abf7fb81775799e51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphieopre_4f_sq</definition>
+        <argsstring>(double m0, spinor_field *out, spinor_field *in, double shift)</argsstring>
+        <name>Dphieopre_4f_sq</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" line="4" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" declline="4" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d12/dirac__4f_8h_1a030b64fc62bf8821e3daa5bd470f16c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_eopre_4f_flt</definition>
+        <argsstring>(double m0, spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>Dphi_eopre_4f_flt</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" line="6" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" declline="6" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d12/dirac__4f_8h_1abff958b5c17f8a83050dc2e7e28a5ef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphi_eopre_4f_dagger_flt</definition>
+        <argsstring>(double m0, spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>Dphi_eopre_4f_dagger_flt</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" line="7" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" declline="7" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d12/dirac__4f_8h_1a0ce5e9a6c2fc2541ea53fbfc23c01bab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dphieopre_4f_sq_flt</definition>
+        <argsstring>(double m0, spinor_field_flt *out, spinor_field_flt *in)</argsstring>
+        <name>Dphieopre_4f_sq_flt</name>
+        <param>
+          <type>double</type>
+          <declname>m0</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" line="8" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h" declline="8" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Dirac<sp/>operators<sp/>with<sp/>a<sp/>four<sp/>fermion<sp/>interaction<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_eopre_4f(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shift);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_eopre_4f_dagger(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shift);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphieopre_4f_sq(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shift);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_eopre_4f_flt(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphi_eopre_4f_dagger_flt(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Dphieopre_4f_sq_flt(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m0,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/dirac_4f.h"/>
+  </compounddef>
+</doxygen>

@@ -140,8 +140,8 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*2)*(_stride); \
-		(_v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; \
+		(_v).c[0]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((hr_complex*)(_in))[__iz]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Read <ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> according to device geometry structure. </para>
@@ -203,8 +203,8 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*2)*(_stride); \
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[1]; \
+		((hr_complex*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((hr_complex*)(_out))[__iz]=(_v).c[1]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Write <ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref> according to device geometry structure. </para>
@@ -388,10 +388,10 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*4)*(_stride); \
-		(_v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[2]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[3]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; \
+		(_v).c[0]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[3]=((hr_complex*)(_in))[__iz]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Read <ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> matrix according to device geometry structure. </para>
@@ -453,10 +453,10 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*4)*(_stride); \
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[3]; \
+		((hr_complex*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((hr_complex*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((hr_complex*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
+		((hr_complex*)(_out))[__iz]=(_v).c[3]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Write <ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> matrix according to device geometry structure. </para>
@@ -892,8 +892,8 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*2)*(_stride); \
-		(_v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; \
+		(_v).c[0]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((hr_complex*)(_in))[__iz]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Read <ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> according to device geometry structure. </para>
@@ -955,8 +955,8 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*2)*(_stride); \
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[1]; \
+		((hr_complex*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((hr_complex*)(_out))[__iz]=(_v).c[1]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Write <ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref> according to device geometry structure. </para>
@@ -1140,10 +1140,10 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*4)*(_stride); \
-		(_v).c[0]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[1]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[2]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[3]=((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_in))[__iz]; \
+		(_v).c[0]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((hr_complex*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[3]=((hr_complex*)(_in))[__iz]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Read <ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref> matrix according to device geometry structure. </para>
@@ -1205,10 +1205,10 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*4)*(_stride); \
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
-		((<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref>*)(_out))[__iz]=(_v).c[3]; \
+		((hr_complex*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((hr_complex*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((hr_complex*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
+		((hr_complex*)(_out))[__iz]=(_v).c[3]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Write <ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref> matrix according to device geometry structure. </para>
@@ -1644,8 +1644,8 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*2)*(_stride); \
-		(_v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; \
+		(_v).c[0]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((hr_complex_flt*)(_in))[__iz]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Read <ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> according to device geometry structure. </para>
@@ -1707,8 +1707,8 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*2)*(_stride); \
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[1]; \
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[1]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Write <ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref> according to device geometry structure. </para>
@@ -1892,10 +1892,10 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*4)*(_stride); \
-		(_v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[2]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[3]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; \
+		(_v).c[0]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[3]=((hr_complex_flt*)(_in))[__iz]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Read <ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref> matrix according to device geometry structure. </para>
@@ -1957,10 +1957,10 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*4)*(_stride); \
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[3]; \
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[3]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Write <ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref> matrix according to device geometry structure. </para>
@@ -2396,8 +2396,8 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*2)*(_stride); \
-		(_v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; \
+		(_v).c[0]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((hr_complex_flt*)(_in))[__iz]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Read <ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> according to device geometry structure. </para>
@@ -2459,8 +2459,8 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*2)*(_stride); \
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[1]; \
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[1]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Write <ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref> according to device geometry structure. </para>
@@ -2644,10 +2644,10 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*4)*(_stride); \
-		(_v).c[0]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[1]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[2]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; __iz+=(_stride); \
-		(_v).c[3]=((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_in))[__iz]; \
+		(_v).c[0]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[1]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[2]=((hr_complex_flt*)(_in))[__iz]; __iz+=(_stride); \
+		(_v).c[3]=((hr_complex_flt*)(_in))[__iz]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Read <ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> matrix according to device geometry structure. </para>
@@ -2709,10 +2709,10 @@
         <param><defname>_comp</defname></param>
         <initializer>	do { \
 		int __iz = (_ix) + ((_comp)*4)*(_stride); \
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
-		((<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref>*)(_out))[__iz]=(_v).c[3]; \
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[0]; __iz+=(_stride);\
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[1]; __iz+=(_stride);\
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[2]; __iz+=(_stride);\
+		((hr_complex_flt*)(_out))[__iz]=(_v).c[3]; \
 	} while (0)</initializer>
         <briefdescription>
 <para>Write <ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref> matrix according to device geometry structure. </para>

@@ -1,0 +1,260 @@
+\hypertarget{communications_8h}{}\doxysection{communications.\+h File Reference}
+\label{communications_8h}\index{communications.h@{communications.h}}
+
+
+Communications to send and receive sites from other nodes using MPI.  
+
+
+{\ttfamily \#include \char`\"{}spinor\+\_\+field.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}reduction.\+h\char`\"{}}\newline
+Include dependency graph for communications.\+h\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{communications_8h_aa6d8128421b03b6203e774b951892ef1}{complete\+\_\+gf\+\_\+sendrecv}} (\mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Wait for communications to finish before continuing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a2ab061c5a19f83620e3a2e1f39409899}{start\+\_\+gf\+\_\+sendrecv}} (\mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Load buffers and start MPI requests to send and receive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a4606bc49ec50028fd650774dc935a2ca}{complete\+\_\+sf\+\_\+sendrecv}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Wait for communications to finish before continuing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a5387961e4ba6c715753c6e9bfeed586b}{start\+\_\+sf\+\_\+sendrecv}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Load buffers and start MPI requests to send and receive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a34eafb5eab193366814178a808c6c0ee}{complete\+\_\+sc\+\_\+sendrecv}} (\mbox{\hyperlink{structsuNg__scalar__field}{su\+Ng\+\_\+scalar\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Wait for communications to finish before continuing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a63cb05fbe934779ebddfadd23b5eed8d}{start\+\_\+sc\+\_\+sendrecv}} (\mbox{\hyperlink{structsuNg__scalar__field}{su\+Ng\+\_\+scalar\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Load buffers and start MPI requests to send and receive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a308b7242ea075dc4d879b57cae5d43e4}{complete\+\_\+clover\+\_\+force\+\_\+sendrecv}} (\mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Wait for communications to finish before continuing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a42d5917cc3c87564e19c7fdf585c3a41}{start\+\_\+clover\+\_\+force\+\_\+sendrecv}} (\mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Load buffers and start MPI requests to send and receive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a19cb70363d853a23bf31d3abf4b8524a}{complete\+\_\+gt\+\_\+sendrecv}} (\mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Wait for communications to finish before continuing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a0361963e9794a3888ece1d662edf793e}{start\+\_\+gt\+\_\+sendrecv}} (\mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Fill buffers and start MPI requests to send and receive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a04586ac967099d6f59e30ac9be708ce1}{complete\+\_\+gf\+\_\+sendrecv\+\_\+flt}} (\mbox{\hyperlink{structsuNg__field__flt}{su\+Ng\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Wait for communications to finish before continuing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_aafd3cdccfa685c4a182f954d3cd00d25}{start\+\_\+gf\+\_\+sendrecv\+\_\+flt}} (\mbox{\hyperlink{structsuNg__field__flt}{su\+Ng\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Fill buffers and start MPI requests to send and receive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_a1e958980579362d32e3c69290e18a522}{complete\+\_\+sf\+\_\+sendrecv\+\_\+flt}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Wait for communications to finish before continuing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{communications_8h_af397b6625c4056d1e77eb6f6c6cf415a}{start\+\_\+sf\+\_\+sendrecv\+\_\+flt}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Fill buffers and start MPI requests to send and receive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Communications to send and receive sites from other nodes using MPI. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{communications_8h_a308b7242ea075dc4d879b57cae5d43e4}\label{communications_8h_a308b7242ea075dc4d879b57cae5d43e4}} 
+\index{communications.h@{communications.h}!complete\_clover\_force\_sendrecv@{complete\_clover\_force\_sendrecv}}
+\index{complete\_clover\_force\_sendrecv@{complete\_clover\_force\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{complete\_clover\_force\_sendrecv()}{complete\_clover\_force\_sendrecv()}}
+{\footnotesize\ttfamily void complete\+\_\+clover\+\_\+force\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Wait for communications to finish before continuing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}}} & Represented gauge field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_aa6d8128421b03b6203e774b951892ef1}\label{communications_8h_aa6d8128421b03b6203e774b951892ef1}} 
+\index{communications.h@{communications.h}!complete\_gf\_sendrecv@{complete\_gf\_sendrecv}}
+\index{complete\_gf\_sendrecv@{complete\_gf\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{complete\_gf\_sendrecv()}{complete\_gf\_sendrecv()}}
+{\footnotesize\ttfamily void complete\+\_\+gf\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Wait for communications to finish before continuing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}}} & Gauge field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a04586ac967099d6f59e30ac9be708ce1}\label{communications_8h_a04586ac967099d6f59e30ac9be708ce1}} 
+\index{communications.h@{communications.h}!complete\_gf\_sendrecv\_flt@{complete\_gf\_sendrecv\_flt}}
+\index{complete\_gf\_sendrecv\_flt@{complete\_gf\_sendrecv\_flt}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{complete\_gf\_sendrecv\_flt()}{complete\_gf\_sendrecv\_flt()}}
+{\footnotesize\ttfamily void complete\+\_\+gf\+\_\+sendrecv\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNg__field__flt}{su\+Ng\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Wait for communications to finish before continuing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNg__field__flt}{su\+Ng\+\_\+field\+\_\+flt}}} & Single precision gauge field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a19cb70363d853a23bf31d3abf4b8524a}\label{communications_8h_a19cb70363d853a23bf31d3abf4b8524a}} 
+\index{communications.h@{communications.h}!complete\_gt\_sendrecv@{complete\_gt\_sendrecv}}
+\index{complete\_gt\_sendrecv@{complete\_gt\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{complete\_gt\_sendrecv()}{complete\_gt\_sendrecv()}}
+{\footnotesize\ttfamily void complete\+\_\+gt\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Wait for communications to finish before continuing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}}} & Gauge transformation that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a34eafb5eab193366814178a808c6c0ee}\label{communications_8h_a34eafb5eab193366814178a808c6c0ee}} 
+\index{communications.h@{communications.h}!complete\_sc\_sendrecv@{complete\_sc\_sendrecv}}
+\index{complete\_sc\_sendrecv@{complete\_sc\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{complete\_sc\_sendrecv()}{complete\_sc\_sendrecv()}}
+{\footnotesize\ttfamily void complete\+\_\+sc\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNg__scalar__field}{su\+Ng\+\_\+scalar\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Wait for communications to finish before continuing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNg__scalar__field}{su\+Ng\+\_\+scalar\+\_\+field}}} & Scalar field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a4606bc49ec50028fd650774dc935a2ca}\label{communications_8h_a4606bc49ec50028fd650774dc935a2ca}} 
+\index{communications.h@{communications.h}!complete\_sf\_sendrecv@{complete\_sf\_sendrecv}}
+\index{complete\_sf\_sendrecv@{complete\_sf\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{complete\_sf\_sendrecv()}{complete\_sf\_sendrecv()}}
+{\footnotesize\ttfamily void complete\+\_\+sf\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Wait for communications to finish before continuing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Spinor field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a1e958980579362d32e3c69290e18a522}\label{communications_8h_a1e958980579362d32e3c69290e18a522}} 
+\index{communications.h@{communications.h}!complete\_sf\_sendrecv\_flt@{complete\_sf\_sendrecv\_flt}}
+\index{complete\_sf\_sendrecv\_flt@{complete\_sf\_sendrecv\_flt}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{complete\_sf\_sendrecv\_flt()}{complete\_sf\_sendrecv\_flt()}}
+{\footnotesize\ttfamily void complete\+\_\+sf\+\_\+sendrecv\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Wait for communications to finish before continuing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Single precision spinor field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a42d5917cc3c87564e19c7fdf585c3a41}\label{communications_8h_a42d5917cc3c87564e19c7fdf585c3a41}} 
+\index{communications.h@{communications.h}!start\_clover\_force\_sendrecv@{start\_clover\_force\_sendrecv}}
+\index{start\_clover\_force\_sendrecv@{start\_clover\_force\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{start\_clover\_force\_sendrecv()}{start\_clover\_force\_sendrecv()}}
+{\footnotesize\ttfamily void start\+\_\+clover\+\_\+force\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Load buffers and start MPI requests to send and receive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}}} & Represented gauge field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a2ab061c5a19f83620e3a2e1f39409899}\label{communications_8h_a2ab061c5a19f83620e3a2e1f39409899}} 
+\index{communications.h@{communications.h}!start\_gf\_sendrecv@{start\_gf\_sendrecv}}
+\index{start\_gf\_sendrecv@{start\_gf\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{start\_gf\_sendrecv()}{start\_gf\_sendrecv()}}
+{\footnotesize\ttfamily void start\+\_\+gf\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Load buffers and start MPI requests to send and receive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}}} & Gauge field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_aafd3cdccfa685c4a182f954d3cd00d25}\label{communications_8h_aafd3cdccfa685c4a182f954d3cd00d25}} 
+\index{communications.h@{communications.h}!start\_gf\_sendrecv\_flt@{start\_gf\_sendrecv\_flt}}
+\index{start\_gf\_sendrecv\_flt@{start\_gf\_sendrecv\_flt}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{start\_gf\_sendrecv\_flt()}{start\_gf\_sendrecv\_flt()}}
+{\footnotesize\ttfamily void start\+\_\+gf\+\_\+sendrecv\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNg__field__flt}{su\+Ng\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Fill buffers and start MPI requests to send and receive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNg__field__flt}{su\+Ng\+\_\+field\+\_\+flt}}} & Single precision gauge field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a0361963e9794a3888ece1d662edf793e}\label{communications_8h_a0361963e9794a3888ece1d662edf793e}} 
+\index{communications.h@{communications.h}!start\_gt\_sendrecv@{start\_gt\_sendrecv}}
+\index{start\_gt\_sendrecv@{start\_gt\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{start\_gt\_sendrecv()}{start\_gt\_sendrecv()}}
+{\footnotesize\ttfamily void start\+\_\+gt\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Fill buffers and start MPI requests to send and receive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gauge} & transformation that needs to be synchronized across nodes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a63cb05fbe934779ebddfadd23b5eed8d}\label{communications_8h_a63cb05fbe934779ebddfadd23b5eed8d}} 
+\index{communications.h@{communications.h}!start\_sc\_sendrecv@{start\_sc\_sendrecv}}
+\index{start\_sc\_sendrecv@{start\_sc\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{start\_sc\_sendrecv()}{start\_sc\_sendrecv()}}
+{\footnotesize\ttfamily void start\+\_\+sc\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structsuNg__scalar__field}{su\+Ng\+\_\+scalar\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Load buffers and start MPI requests to send and receive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structsuNg__scalar__field}{su\+Ng\+\_\+scalar\+\_\+field}}} & Scalar field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_a5387961e4ba6c715753c6e9bfeed586b}\label{communications_8h_a5387961e4ba6c715753c6e9bfeed586b}} 
+\index{communications.h@{communications.h}!start\_sf\_sendrecv@{start\_sf\_sendrecv}}
+\index{start\_sf\_sendrecv@{start\_sf\_sendrecv}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{start\_sf\_sendrecv()}{start\_sf\_sendrecv()}}
+{\footnotesize\ttfamily void start\+\_\+sf\+\_\+sendrecv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Load buffers and start MPI requests to send and receive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Spinor field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{communications_8h_af397b6625c4056d1e77eb6f6c6cf415a}\label{communications_8h_af397b6625c4056d1e77eb6f6c6cf415a}} 
+\index{communications.h@{communications.h}!start\_sf\_sendrecv\_flt@{start\_sf\_sendrecv\_flt}}
+\index{start\_sf\_sendrecv\_flt@{start\_sf\_sendrecv\_flt}!communications.h@{communications.h}}
+\doxysubsubsection{\texorpdfstring{start\_sf\_sendrecv\_flt()}{start\_sf\_sendrecv\_flt()}}
+{\footnotesize\ttfamily void start\+\_\+sf\+\_\+sendrecv\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Fill buffers and start MPI requests to send and receive. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Single precision spinor field that needs to be synchronized across nodes. \\
+\hline
+\end{DoxyParams}

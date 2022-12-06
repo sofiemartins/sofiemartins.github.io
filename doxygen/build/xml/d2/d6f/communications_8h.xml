@@ -3,49 +3,30 @@
   <compounddef id="d2/d6f/communications_8h" kind="file" language="C++">
     <compoundname>communications.h</compoundname>
     <includes refid="d3/ded/spinor__field_8h" local="yes">spinor_field.h</includes>
+    <includes refid="d7/d24/reduction_8h" local="yes">reduction.h</includes>
     <incdepgraph>
-      <node id="4">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
       <node id="2">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>cpu_complex.h</label>
-        <link refid="d2/dfb/cpu__complex_8h_source"/>
-        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="5">
-        <label>suN_types.h</label>
-        <link refid="d9/d21/suN__types_8h_source"/>
+        <label>cpu_complex.h</label>
+        <link refid="d2/dfb/cpu__complex_8h_source"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
+      <node id="3">
+        <label>suN_types.h</label>
+        <link refid="d9/d21/suN__types_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
-      <node id="10">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
-      </node>
-      <node id="6">
+      <node id="4">
         <label>hr_complex.h</label>
         <link refid="d1/d74/hr__complex_8h_source"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -53,401 +34,399 @@
         <link refid="d2/d6f/communications_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
-      <node id="8">
+      <node id="6">
         <label>tgmath.h</label>
       </node>
-      <node id="3">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
+      <node id="7">
+        <label>reduction.h</label>
+        <link refid="d7/d24/reduction_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a57ff9571b54ed85d6910b096d30ddee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void global_sum</definition>
-        <argsstring>(double *d, int n)</argsstring>
-        <name>global_sum</name>
-        <param>
-          <type>double *</type>
-          <declname>d</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="13" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="13" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1af4508c57a617ed79efb901cae3d58e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void global_sum_int</definition>
-        <argsstring>(int *d, int n)</argsstring>
-        <name>global_sum_int</name>
-        <param>
-          <type>int *</type>
-          <declname>d</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="14" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="14" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a9fa591db50fae91b2cca51b21649bde1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void global_max</definition>
-        <argsstring>(double *d, int n)</argsstring>
-        <name>global_max</name>
-        <param>
-          <type>double *</type>
-          <declname>d</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="15" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="15" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a946a386ad5dfe00a9e8b03197f1ba714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void global_min</definition>
-        <argsstring>(double *d, int n)</argsstring>
-        <name>global_min</name>
-        <param>
-          <type>double *</type>
-          <declname>d</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="16" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="16" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a3d559ab87eb636d0f876b143f1332b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void bcast</definition>
-        <argsstring>(double *d, int n)</argsstring>
-        <name>bcast</name>
-        <param>
-          <type>double *</type>
-          <declname>d</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="17" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="17" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a35416b8a20cee1a623a32feafc8f4e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void bcast_int</definition>
-        <argsstring>(int *i, int n)</argsstring>
-        <name>bcast_int</name>
-        <param>
-          <type>int *</type>
-          <declname>i</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="18" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="18" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1af01efbe0ffc9df5f8cefbfea8af1c7d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d2/d6f/communications_8h_1aa6d8128421b03b6203e774b951892ef1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void complete_gf_sendrecv</definition>
-        <argsstring>(suNg_field *gf)</argsstring>
+        <argsstring>(suNg_field *)</argsstring>
         <name>complete_gf_sendrecv</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
-          <declname>gf</declname>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
+<para>Wait for communications to finish before continuing. </para>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="21" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="21" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1ad218bffae9c4f7c1efe07e1353cb6f04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void start_gf_sendrecv</definition>
-        <argsstring>(suNg_field *gf)</argsstring>
-        <name>start_gf_sendrecv</name>
-        <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
-          <declname>gf</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="22" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="22" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1ad4457315ce799d8a693e86d1c6aa6cc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void complete_sf_sendrecv</definition>
-        <argsstring>(spinor_field *gf)</argsstring>
-        <name>complete_sf_sendrecv</name>
-        <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
-          <declname>gf</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="23" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="23" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1aa54a6f9e5a8a4e8ebf536fb44516ee8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void start_sf_sendrecv</definition>
-        <argsstring>(spinor_field *gf)</argsstring>
-        <name>start_sf_sendrecv</name>
-        <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
-          <declname>gf</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="24" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="24" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a3464e50f5453765e07a5501e9ca91a44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void complete_sc_sendrecv</definition>
-        <argsstring>(suNg_scalar_field *gf)</argsstring>
-        <name>complete_sc_sendrecv</name>
-        <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
-          <declname>gf</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="25" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="25" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a66cc357cbd1326d417c1f451a12bd27d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void start_sc_sendrecv</definition>
-        <argsstring>(suNg_scalar_field *gf)</argsstring>
-        <name>start_sc_sendrecv</name>
-        <param>
-          <type><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
-          <declname>gf</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="26" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="26" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1ab48d1a91eb04f8cbde5b759b4dcd0e98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void complete_clover_force_sendrecv</definition>
-        <argsstring>(suNf_field *gf)</argsstring>
-        <name>complete_clover_force_sendrecv</name>
-        <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
-          <declname>gf</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gauge field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="28" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="28" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a3fd737e7ba52b07d5d69cc30e5345f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a2ab061c5a19f83620e3a2e1f39409899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void start_gf_sendrecv</definition>
+        <argsstring>(suNg_field *)</argsstring>
+        <name>start_gf_sendrecv</name>
+        <param>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Load buffers and start MPI requests to send and receive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gauge field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="35" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a4606bc49ec50028fd650774dc935a2ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void complete_sf_sendrecv</definition>
+        <argsstring>(spinor_field *)</argsstring>
+        <name>complete_sf_sendrecv</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Wait for communications to finish before continuing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spinor field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="42" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="42" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a5387961e4ba6c715753c6e9bfeed586b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void start_sf_sendrecv</definition>
+        <argsstring>(spinor_field *)</argsstring>
+        <name>start_sf_sendrecv</name>
+        <param>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Load buffers and start MPI requests to send and receive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Spinor field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="49" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a34eafb5eab193366814178a808c6c0ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void complete_sc_sendrecv</definition>
+        <argsstring>(suNg_scalar_field *)</argsstring>
+        <name>complete_sc_sendrecv</name>
+        <param>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Wait for communications to finish before continuing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scalar field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="56" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="56" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a63cb05fbe934779ebddfadd23b5eed8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void start_sc_sendrecv</definition>
+        <argsstring>(suNg_scalar_field *)</argsstring>
+        <name>start_sc_sendrecv</name>
+        <param>
+          <type><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Load buffers and start MPI requests to send and receive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scalar field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="63" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a308b7242ea075dc4d879b57cae5d43e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void complete_clover_force_sendrecv</definition>
+        <argsstring>(suNf_field *)</argsstring>
+        <name>complete_clover_force_sendrecv</name>
+        <param>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Wait for communications to finish before continuing. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Represented gauge field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="71" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="71" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a42d5917cc3c87564e19c7fdf585c3a41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void start_clover_force_sendrecv</definition>
-        <argsstring>(suNf_field *gf)</argsstring>
+        <argsstring>(suNf_field *)</argsstring>
         <name>start_clover_force_sendrecv</name>
         <param>
-          <type><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref> *</type>
-          <declname>gf</declname>
+          <type><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref> *</type>
         </param>
         <briefdescription>
+<para>Load buffers and start MPI requests to send and receive. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Represented gauge field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="29" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="29" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="79" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="79" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1ab53fdabf70bb644f5d7d241eea8ef01a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a19cb70363d853a23bf31d3abf4b8524a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void complete_gt_sendrecv</definition>
-        <argsstring>(suNg_field *gf)</argsstring>
+        <argsstring>(suNg_field *)</argsstring>
         <name>complete_gt_sendrecv</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
-          <declname>gf</declname>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
+<para>Wait for communications to finish before continuing. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Gauge transformation that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="31" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="31" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="87" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="87" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a55639eb960a02fe8c9fdb1bcd7de231e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a0361963e9794a3888ece1d662edf793e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void start_gt_sendrecv</definition>
-        <argsstring>(suNg_field *gf)</argsstring>
+        <argsstring>(suNg_field *)</argsstring>
         <name>start_gt_sendrecv</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
-          <declname>gf</declname>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         </param>
         <briefdescription>
+<para>Fill buffers and start MPI requests to send and receive. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Gauge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>transformation that needs to be synchronized across nodes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="32" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="32" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="95" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="95" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a6566d0a919733ce1aab7ccbcd38a54af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void test_spinor_field</definition>
-        <argsstring>(spinor_field *p)</argsstring>
-        <name>test_spinor_field</name>
-        <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
-          <declname>p</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="34" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="34" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a88632cd329bb1816ee414791ed0cb48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a04586ac967099d6f59e30ac9be708ce1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void complete_gf_sendrecv_flt</definition>
-        <argsstring>(suNg_field_flt *gf)</argsstring>
+        <argsstring>(suNg_field_flt *)</argsstring>
         <name>complete_gf_sendrecv_flt</name>
         <param>
-          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
-          <declname>gf</declname>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         </param>
         <briefdescription>
+<para>Wait for communications to finish before continuing. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision gauge field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="37" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="37" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="106" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="106" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1a5472c24f8d4636ff60937947133aedea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d2/d6f/communications_8h_1aafd3cdccfa685c4a182f954d3cd00d25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void start_gf_sendrecv_flt</definition>
-        <argsstring>(suNg_field_flt *gf)</argsstring>
+        <argsstring>(suNg_field_flt *)</argsstring>
         <name>start_gf_sendrecv_flt</name>
         <param>
-          <type><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
-          <declname>gf</declname>
+          <type><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref> *</type>
         </param>
         <briefdescription>
+<para>Fill buffers and start MPI requests to send and receive. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision gauge field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="38" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="38" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="114" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="114" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1acb3fb0a72a56f69e3e274e53b4f16cbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d2/d6f/communications_8h_1a1e958980579362d32e3c69290e18a522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void complete_sf_sendrecv_flt</definition>
-        <argsstring>(spinor_field_flt *gf)</argsstring>
+        <argsstring>(spinor_field_flt *)</argsstring>
         <name>complete_sf_sendrecv_flt</name>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
-          <declname>gf</declname>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
         </param>
         <briefdescription>
+<para>Wait for communications to finish before continuing. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision spinor field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="39" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="39" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="122" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="122" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="d2/d6f/communications_8h_1ae8eaf87bb571196a64905366ba34e01c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="d2/d6f/communications_8h_1af397b6625c4056d1e77eb6f6c6cf415a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void start_sf_sendrecv_flt</definition>
-        <argsstring>(spinor_field_flt *gf)</argsstring>
+        <argsstring>(spinor_field_flt *)</argsstring>
         <name>start_sf_sendrecv_flt</name>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
-          <declname>gf</declname>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
         </param>
         <briefdescription>
+<para>Fill buffers and start MPI requests to send and receive. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Single precision spinor field that needs to be synchronized across nodes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="40" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="40" declcolumn="6"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" line="130" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h" declline="130" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Communications to send and receive sites from other nodes using MPI. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -457,77 +436,79 @@
 <codeline lineno="3"><highlight class="comment">*<sp/>All<sp/>rights<sp/>reserved.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
 <codeline lineno="4"><highlight class="comment">\***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COMMUNICATIONS_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMUNICATIONS_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>global_sum(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>global_sum_int(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>global_max(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>global_min(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bcast(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bcast_int(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>complete_gf_sendrecv(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start_gf_sendrecv(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>complete_sf_sendrecv(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start_sf_sendrecv(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>complete_sc_sendrecv(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start_sc_sendrecv(<ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>complete_clover_force_sendrecv(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start_clover_force_sendrecv(<ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>complete_gt_sendrecv(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start_gt_sendrecv(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>test_spinor_field(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*p);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Floating<sp/>point<sp/>sendrecv<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>complete_gf_sendrecv_flt(<ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start_gf_sendrecv_flt(<ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>complete_sf_sendrecv_flt(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start_sf_sendrecv_flt(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*gf);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>global_sum_gpu_int(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>global_sum_gpu_float(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>global_sum_gpu_double(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>global_sum_gpu_complex_flt(<ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>global_sum_gpu_complex(<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COMMUNICATIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMMUNICATIONS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>people<sp/>include<sp/>communications,<sp/>they<sp/>have<sp/>to<sp/>also<sp/>have<sp/>the<sp/>reductions<sp/>loaded.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/d24/reduction_8h" kindref="compound">reduction.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d2/d6f/communications_8h_1aa6d8128421b03b6203e774b951892ef1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1aa6d8128421b03b6203e774b951892ef1" kindref="member">complete_gf_sendrecv</ref>(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d2/d6f/communications_8h_1a2ab061c5a19f83620e3a2e1f39409899" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a2ab061c5a19f83620e3a2e1f39409899" kindref="member">start_gf_sendrecv</ref>(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="d2/d6f/communications_8h_1a4606bc49ec50028fd650774dc935a2ca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a4606bc49ec50028fd650774dc935a2ca" kindref="member">complete_sf_sendrecv</ref>(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>*);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d2/d6f/communications_8h_1a5387961e4ba6c715753c6e9bfeed586b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a5387961e4ba6c715753c6e9bfeed586b" kindref="member">start_sf_sendrecv</ref>(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>*);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_DECLARE_COMMS(_name,<sp/>_field_type)<sp/>\</highlight></codeline>
-<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>sync_gpu_##_name(_field_type*);<sp/>\</highlight></codeline>
-<codeline lineno="58"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>start_sendrecv_gpu_##_name(_field_type*);<sp/>\</highlight></codeline>
-<codeline lineno="59"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>complete_sendrecv_gpu_##_name(_field_type*);<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(spinor_field_f,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref>);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(spinor_field_f_flt,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref>);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gfield,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gfield_flt,<sp/><ref refid="d2/d8d/struct__suNg__field__flt" kindref="compound">suNg_field_flt</ref>);</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gfield_f,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gfield_f_flt,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(<ref refid="de/d54/struct__scalar__field" kindref="compound">scalar_field</ref>,<sp/><ref refid="d8/dc4/struct__suNg__scalar__field" kindref="compound">suNg_scalar_field</ref>);</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(avfield,<sp/><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref>);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gtransf,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref>);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(clover_term,<sp/><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref>);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(clover_force,<sp/><ref refid="da/d8f/struct__suNf__field" kindref="compound">suNf_field</ref>);</highlight></codeline>
+<codeline lineno="56" refid="d2/d6f/communications_8h_1a34eafb5eab193366814178a808c6c0ee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a34eafb5eab193366814178a808c6c0ee" kindref="member">complete_sc_sendrecv</ref>(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d2/d6f/communications_8h_1a63cb05fbe934779ebddfadd23b5eed8d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a63cb05fbe934779ebddfadd23b5eed8d" kindref="member">start_sc_sendrecv</ref>(<ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>*);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d2/d6f/communications_8h_1a308b7242ea075dc4d879b57cae5d43e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a308b7242ea075dc4d879b57cae5d43e4" kindref="member">complete_clover_force_sendrecv</ref>(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>_DECLARE_COMMS</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>COMMUNICATIONS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="79" refid="d2/d6f/communications_8h_1a42d5917cc3c87564e19c7fdf585c3a41" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a42d5917cc3c87564e19c7fdf585c3a41" kindref="member">start_clover_force_sendrecv</ref>(<ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>*);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="d2/d6f/communications_8h_1a19cb70363d853a23bf31d3abf4b8524a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a19cb70363d853a23bf31d3abf4b8524a" kindref="member">complete_gt_sendrecv</ref>(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="d2/d6f/communications_8h_1a0361963e9794a3888ece1d662edf793e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a0361963e9794a3888ece1d662edf793e" kindref="member">start_gt_sendrecv</ref>(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>*);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>What<sp/>is<sp/>this?<sp/>(SAM)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>test_spinor_field(spinor_field<sp/>*p);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="d2/d6f/communications_8h_1a04586ac967099d6f59e30ac9be708ce1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a04586ac967099d6f59e30ac9be708ce1" kindref="member">complete_gf_sendrecv_flt</ref>(<ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="d2/d6f/communications_8h_1aafd3cdccfa685c4a182f954d3cd00d25" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1aafd3cdccfa685c4a182f954d3cd00d25" kindref="member">start_gf_sendrecv_flt</ref>(<ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="d2/d6f/communications_8h_1a1e958980579362d32e3c69290e18a522" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1a1e958980579362d32e3c69290e18a522" kindref="member">complete_sf_sendrecv_flt</ref>(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="d2/d6f/communications_8h_1af397b6625c4056d1e77eb6f6c6cf415a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d2/d6f/communications_8h_1af397b6625c4056d1e77eb6f6c6cf415a" kindref="member">start_sf_sendrecv_flt</ref>(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref>*);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_DECLARE_COMMS(_name,<sp/>_field_type,<sp/>_human_readable)<sp/>\</highlight></codeline>
+<codeline lineno="140"><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>complete_sendrecv_gpu_##_name(_field_type*)<sp/>\</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"><sp/>\</highlight></codeline>
+<codeline lineno="153"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>start_sendrecv_gpu_##_name(_field_type*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(spinor_field_f,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Spinor<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(spinor_field_f_flt,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Single<sp/>precision<sp/>spinor<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(sfield,<sp/><ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Scalar<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gfield,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Gauge<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gfield_flt,<sp/><ref refid="d4/d1f/structsuNg__field__flt" kindref="compound">suNg_field_flt</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Single<sp/>precision<sp/>gauge<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gfield_f,<sp/><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Represented<sp/>gauge<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gfield_f_flt,<sp/><ref refid="d6/d54/structsuNf__field__flt" kindref="compound">suNf_field_flt</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Represented<sp/>single<sp/>precision<sp/>gauge<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(<ref refid="d8/daf/structscalar__field" kindref="compound">scalar_field</ref>,<sp/><ref refid="d6/d10/structsuNg__scalar__field" kindref="compound">suNg_scalar_field</ref>,<sp/></highlight><highlight class="stringliteral">&quot;SU(N_g)<sp/>scalar<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(avfield,<sp/><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref>,<sp/></highlight><highlight class="stringliteral">&quot;SU(N_g)<sp/>algebra<sp/>vector<sp/>field&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(gtransf,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Gauge<sp/>transformation&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(clover_term,<sp/><ref refid="df/d9e/structsuNfc__field" kindref="compound">suNfc_field</ref><sp/></highlight><highlight class="stringliteral">&quot;Clover<sp/>term&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>_DECLARE_COMMS(clover_force,<sp/><ref refid="d9/d4a/structsuNf__field" kindref="compound">suNf_field</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Clover<sp/>force&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#undef<sp/>_DECLARE_COMMS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
     </programlisting>
     <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/communications.h"/>
   </compounddef>

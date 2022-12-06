@@ -7,22 +7,10 @@
     <includes refid="d5/d2b/data__storage_8h" local="yes">data_storage.h</includes>
     <includes local="no">stdio.h</includes>
     <incdepgraph>
-      <node id="10">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
       <node id="8">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="9" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -37,10 +25,6 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="11">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
       <node id="1">
         <label>spectrum.h</label>
         <link refid="d6/d16/spectrum_8h"/>
@@ -48,14 +32,10 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-      </node>
-      <node id="12">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
       </node>
       <node id="4">
         <label>hr_complex.h</label>
@@ -73,16 +53,10 @@
         </childnode>
       </node>
       <node id="9">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
         <label>data_storage.h</label>
         <link refid="d5/d2b/data__storage_8h_source"/>
       </node>
-      <node id="14">
+      <node id="10">
         <label>stdio.h</label>
       </node>
       <node id="7">

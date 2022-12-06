@@ -48,6 +48,20 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="4">
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
+      </node>
+      <node id="3">
+        <label>suNg_av_field</label>
+        <link refid="db/dc8/structsuNg__av__field"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
       <node id="5">
         <label>suNg_algebra_vector</label>
         <link refid="d3/dcb/structsuNg__algebra__vector"/>
@@ -57,16 +71,6 @@
         <link refid="db/d5c/structforce__gauge__par"/>
         <childnode refid="3" relation="usage">
           <edgelabel>momenta</edgelabel>
-        </childnode>
-      </node>
-      <node id="7">
-        <label>_suNg_field</label>
-        <link refid="d9/d96/struct__suNg__field"/>
-        <childnode refid="4" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="8" relation="usage">
-          <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
       <node id="1">
@@ -82,30 +86,26 @@
       <node id="6">
         <label>field_gauge_par</label>
         <link refid="d4/d5c/structfield__gauge__par"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>momenta</edgelabel>
-        </childnode>
         <childnode refid="7" relation="usage">
           <edgelabel>field</edgelabel>
         </childnode>
-      </node>
-      <node id="4">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
-      <node id="3">
-        <label>_suNg_av_field</label>
-        <link refid="d4/d75/struct__suNg__av__field"/>
-        <childnode refid="4" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>ptr</edgelabel>
+        <childnode refid="3" relation="usage">
+          <edgelabel>momenta</edgelabel>
         </childnode>
       </node>
       <node id="8">
         <label>suNg</label>
         <link refid="d8/d0f/structsuNg"/>
+      </node>
+      <node id="7">
+        <label>suNg_field</label>
+        <link refid="d2/d0e/structsuNg__field"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="31" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="31" bodyend="35"/>

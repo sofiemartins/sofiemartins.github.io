@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d7/d24/reduction_8h" kind="file" language="C++">
+    <compoundname>reduction.h</compoundname>
+    <includedby refid="d2/d6f/communications_8h" local="yes">communications.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>communications.h</label>
+        <link refid="d2/d6f/communications_8h"/>
+      </node>
+      <node id="1">
+        <label>reduction.h</label>
+        <link refid="d7/d24/reduction_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d7/d24/reduction_8h_1a57ff9571b54ed85d6910b096d30ddee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void global_sum</definition>
+        <argsstring>(double *d, int n)</argsstring>
+        <name>global_sum</name>
+        <param>
+          <type>double *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Collects sum results from the local lattices and sums over all nodes (double). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer that contains the local result </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of nodes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" line="21" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d24/reduction_8h_1af4508c57a617ed79efb901cae3d58e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void global_sum_int</definition>
+        <argsstring>(int *d, int n)</argsstring>
+        <name>global_sum_int</name>
+        <param>
+          <type>int *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Collects sum results from the local lattices and sums over all nodes (integer). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer that contains the local result </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of nodes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" line="29" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d24/reduction_8h_1a9fa591db50fae91b2cca51b21649bde1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void global_max</definition>
+        <argsstring>(double *d, int n)</argsstring>
+        <name>global_max</name>
+        <param>
+          <type>double *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Finds maximum across nodes after finding the local maximum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer that contains the local result </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of nodes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" line="37" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d24/reduction_8h_1a946a386ad5dfe00a9e8b03197f1ba714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void global_min</definition>
+        <argsstring>(double *d, int n)</argsstring>
+        <name>global_min</name>
+        <param>
+          <type>double *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Finds minimum across nodes after finding the local minimum. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer that contains the local result </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of nodes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" line="45" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" declline="45" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d24/reduction_8h_1a3d559ab87eb636d0f876b143f1332b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bcast</definition>
+        <argsstring>(double *d, int n)</argsstring>
+        <name>bcast</name>
+        <param>
+          <type>double *</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>FIXME: add docs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" line="53" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" declline="53" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d24/reduction_8h_1a35416b8a20cee1a623a32feafc8f4e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bcast_int</definition>
+        <argsstring>(int *i, int n)</argsstring>
+        <name>bcast_int</name>
+        <param>
+          <type>int *</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>FIXME: add docs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" line="61" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h" declline="61" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functions for MPI reductions. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>REDUCTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REDUCTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>needs<sp/>to<sp/>be<sp/>there<sp/>due<sp/>to<sp/>the<sp/>cross-compilation<sp/>that<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>we<sp/>need<sp/>to<sp/>do<sp/>if<sp/>we<sp/>are<sp/>compiling<sp/>WITH_GPU.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d7/d24/reduction_8h_1a57ff9571b54ed85d6910b096d30ddee2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d24/reduction_8h_1a57ff9571b54ed85d6910b096d30ddee2" kindref="member">global_sum</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d7/d24/reduction_8h_1af4508c57a617ed79efb901cae3d58e09" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d24/reduction_8h_1af4508c57a617ed79efb901cae3d58e09" kindref="member">global_sum_int</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="d7/d24/reduction_8h_1a9fa591db50fae91b2cca51b21649bde1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d24/reduction_8h_1a9fa591db50fae91b2cca51b21649bde1" kindref="member">global_max</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="d7/d24/reduction_8h_1a946a386ad5dfe00a9e8b03197f1ba714" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d24/reduction_8h_1a946a386ad5dfe00a9e8b03197f1ba714" kindref="member">global_min</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d7/d24/reduction_8h_1a3d559ab87eb636d0f876b143f1332b7e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d24/reduction_8h_1a3d559ab87eb636d0f876b143f1332b7e" kindref="member">bcast</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="d7/d24/reduction_8h_1a35416b8a20cee1a623a32feafc8f4e8b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="d7/d24/reduction_8h_1a35416b8a20cee1a623a32feafc8f4e8b" kindref="member">bcast_int</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WITH_GPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>global_sum_gpu_int(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>global_sum_gpu_float(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>global_sum_gpu_double(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>hr_complex_flt<sp/>global_sum_gpu_complex_flt(hr_complex_flt<sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>hr_complex<sp/>global_sum_gpu_complex(hr_complex<sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>global_sum_gpu(T<sp/>*vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/reduction.h"/>
+  </compounddef>
+</doxygen>

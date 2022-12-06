@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="32" column="17" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="47" column="17" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d7/d66/structldl__t_1a580a941931fc374e76d6fa38581ac84a" prot="public" static="no" mutable="no">
         <type>double _Complex</type>
@@ -27,14 +27,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="33" column="17" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="33" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="48" column="17" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="31" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="31" bodyend="34"/>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="46" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="46" bodyend="49"/>
     <listofallmembers>
       <member refid="d7/d66/structldl__t_1a580a941931fc374e76d6fa38581ac84a" prot="public" virt="non-virtual"><scope>ldl_t</scope><name>dn</name></member>
       <member refid="d7/d66/structldl__t_1a88ce104973f67ee3b5686046bdfc7508" prot="public" virt="non-virtual"><scope>ldl_t</scope><name>up</name></member>

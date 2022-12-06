@@ -4,7 +4,7 @@
     <compoundname>suNf_vector_flt</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="d8/d5b/structsuNf__vector__flt_1ac690d29caf80f722e81f9a5b820d6583" prot="public" static="no" mutable="no">
-        <type><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref></type>
+        <type>hr_complex_flt</type>
         <definition>hr_complex_flt suNf_vector_flt::c[2]</definition>
         <argsstring>[2]</argsstring>
         <name>c</name>

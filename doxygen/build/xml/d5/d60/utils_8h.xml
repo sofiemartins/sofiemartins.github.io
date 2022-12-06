@@ -10,7 +10,17 @@
     <includes local="no">sys/time.h</includes>
     <includedby refid="d0/d40/dirac_8h" local="yes">dirac.h</includedby>
     <incdepgraph>
-      <node id="8">
+      <node id="13">
+        <label>cpu_geometry.h</label>
+        <link refid="de/d59/cpu__geometry_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>geometry_init.h</label>
+        <link refid="d9/d46/geometry__init_8h"/>
+      </node>
+      <node id="9">
         <label>hr_omp.h</label>
         <link refid="d6/da7/hr__omp_8h_source"/>
       </node>
@@ -21,30 +31,22 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="15">
         <label>stdlib.h</label>
       </node>
       <node id="6">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -59,11 +61,7 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
-      <node id="10">
+      <node id="14">
         <label>field_ordering.h</label>
         <link refid="da/dac/field__ordering_8h_source"/>
       </node>
@@ -76,16 +74,36 @@
       <node id="5">
         <label>tgmath.h</label>
       </node>
-      <node id="7">
+      <node id="8">
         <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="8" relation="include">
+        <link refid="d4/d67/geometry_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="13">
+      <node id="16">
         <label>sys/time.h</label>
       </node>
+      <node id="10">
+        <label>geometry_omp.h</label>
+        <link refid="d6/d76/geometry__omp_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
       <node id="11">
+        <label>geometry_fuse.h</label>
+        <link refid="d3/d77/geometry__fuse_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
         <label>inverters.h</label>
         <link refid="d3/d5d/inverters_8h_source"/>
         <childnode refid="2" relation="include">
@@ -99,7 +117,7 @@
     <invincdepgraph>
       <node id="2">
         <label>dirac.h</label>
-        <link refid="d0/d40/dirac_8h_source"/>
+        <link refid="d0/d40/dirac_8h"/>
       </node>
       <node id="1">
         <label>utils.h</label>
@@ -373,7 +391,7 @@
         <argsstring>(suNg_av_field *force)</argsstring>
         <name>apply_BCs_on_momentum_field</name>
         <param>
-          <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
+          <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> *</type>
           <declname>force</declname>
         </param>
         <briefdescription>
@@ -390,7 +408,7 @@
         <argsstring>(spinor_field *sp)</argsstring>
         <name>apply_BCs_on_spinor_field</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>sp</declname>
         </param>
         <briefdescription>
@@ -407,7 +425,7 @@
         <argsstring>(spinor_field_flt *sp)</argsstring>
         <name>apply_BCs_on_spinor_field_flt</name>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>sp</declname>
         </param>
         <briefdescription>
@@ -424,7 +442,7 @@
         <argsstring>(suNg_field *V, double Q, int n)</argsstring>
         <name>apply_background_field_zdir</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>V</declname>
         </param>
         <param>
@@ -449,7 +467,7 @@
         <argsstring>(suNfc_field *)</argsstring>
         <name>apply_BCs_on_clover_term</name>
         <param>
-          <type><ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref> *</type>
+          <type><ref refid="df/d9e/structsuNfc__field" kindref="compound">suNfc_field</ref> *</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -520,19 +538,19 @@
           <declname>shift</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>sin</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>uin</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>sout</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>uout</declname>
         </param>
         <briefdescription>
@@ -675,7 +693,7 @@
         <argsstring>(hr_complex *a, int *indx, double *d, int N)</argsstring>
         <name>ludcmp</name>
         <param>
-          <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref> *</type>
+          <type>hr_complex *</type>
           <declname>a</declname>
         </param>
         <param>
@@ -704,7 +722,7 @@
         <argsstring>(hr_complex *a, int *indx, hr_complex *b, int N)</argsstring>
         <name>lubksb</name>
         <param>
-          <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref> *</type>
+          <type>hr_complex *</type>
           <declname>a</declname>
         </param>
         <param>
@@ -712,7 +730,7 @@
           <declname>indx</declname>
         </param>
         <param>
-          <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref> *</type>
+          <type>hr_complex *</type>
           <declname>b</declname>
         </param>
         <param>
@@ -750,7 +768,7 @@
         <argsstring>(hr_complex *res, suNg *a)</argsstring>
         <name>det_hermNg</name>
         <param>
-          <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref> *</type>
+          <type>hr_complex *</type>
           <declname>res</declname>
         </param>
         <param>
@@ -819,11 +837,11 @@
         <argsstring>(spinor_field *out, spinor_field_flt *in)</argsstring>
         <name>assign_s2sd</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>in</declname>
         </param>
         <briefdescription>
@@ -840,11 +858,11 @@
         <argsstring>(spinor_field_flt *out, spinor_field *in)</argsstring>
         <name>assign_sd2s</name>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <briefdescription>
@@ -865,7 +883,7 @@
           <declname>H</declname>
         </param>
         <param>
-          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+          <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
           <declname>type</declname>
         </param>
         <param>
@@ -894,7 +912,7 @@
           <declname>H</declname>
         </param>
         <param>
-          <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+          <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
           <declname>type</declname>
         </param>
         <briefdescription>
@@ -911,11 +929,11 @@
         <argsstring>(spinor_field *out, spinor_field *in)</argsstring>
         <name>eva_def</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <briefdescription>
@@ -932,11 +950,11 @@
         <argsstring>(spinor_field *out, spinor_field *in, double m)</argsstring>
         <name>eva_def_inv</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
@@ -957,11 +975,11 @@
         <argsstring>(suNg_field *out, suNg_field *in, double weight[3])</argsstring>
         <name>spatialHYP_smearing</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
@@ -983,11 +1001,11 @@
         <argsstring>(suNg_field *out, suNg_field *in, double weight[3])</argsstring>
         <name>HYP_smearing</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
@@ -1009,7 +1027,7 @@
         <argsstring>(suNg_field *g)</argsstring>
         <name>min_tplaq</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
           <declname>g</declname>
         </param>
         <briefdescription>
@@ -1286,7 +1304,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/utils.h" line="167" column="6" declfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/utils.h" declline="167" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="d5/d60/utils_8h_1a429a6ecfb0425a0dd97b9fe54ae9eac3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> *</type>
+        <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> *</type>
         <definition>suNg_field* u_gauge_wrk</definition>
         <argsstring>()</argsstring>
         <name>u_gauge_wrk</name>
@@ -1338,7 +1356,7 @@
           <declname>i</declname>
         </param>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> **</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> **</type>
           <declname>g_wrk_out</declname>
         </param>
         <param>
@@ -1376,7 +1394,7 @@
         <argsstring>(suNg_field **g_wrk_out, int **i_up_wrk_out, int **i_dn_wrk_out)</argsstring>
         <name>reserve_wrk_space_with_pointers</name>
         <param>
-          <type><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref> **</type>
+          <type><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref> **</type>
           <declname>g_wrk_out</declname>
         </param>
         <param>
@@ -1448,9 +1466,9 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UTILS_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;inverters.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;geometry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d4/d67/geometry_8h" kindref="compound">geometry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
@@ -1482,11 +1500,11 @@
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_BCs();</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_represented_gauge_field();</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_fundamental_gauge_field();</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_momentum_field(<ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*force);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_spinor_field(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*sp);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_spinor_field_flt(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*sp);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_background_field_zdir(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Q,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_clover_term(<ref refid="d2/db6/struct__suNfc__field" kindref="compound">suNfc_field</ref><sp/>*);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_momentum_field(<ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref><sp/>*force);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_spinor_field(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*sp);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_spinor_field_flt(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*sp);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_background_field_zdir(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*V,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Q,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>apply_BCs_on_clover_term(<ref refid="df/d9e/structsuNfc__field" kindref="compound">suNfc_field</ref><sp/>*);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init_pure_gauge_anisotropy(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*chi);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
@@ -1501,7 +1519,7 @@
 <codeline lineno="68"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*Global<sp/>shift<sp/>for<sp/>fields,<sp/>the<sp/>routine<sp/>accepts<sp/>also<sp/>NULL<sp/>entries<sp/>in<sp/>which<sp/>case<sp/>it<sp/>does<sp/>nothing*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shift_fields(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*shift,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*sin,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*uin,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*sout,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*uout);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shift_fields(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*shift,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*sin,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*uin,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*sout,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*uout);</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cross_prod(<ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref><sp/>*v1,<sp/><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref><sp/>*v2,<sp/><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref><sp/>*v3);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cross_prod_flt(<ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref><sp/>*v1,<sp/><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref><sp/>*v2,<sp/><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref><sp/>*v3);</highlight></codeline>
@@ -1511,10 +1529,10 @@
 <codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>covariant_project_to_suNg(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*u);</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GAUGE_SON</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ludcmp(<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>*a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*indx,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lubksb(<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>*a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*indx,<sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>*b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ludcmp(hr_complex<sp/>*a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*indx,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>lubksb(hr_complex<sp/>*a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*indx,<sp/>hr_complex<sp/>*b,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N);</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>inv_hermNg(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*a);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>det_hermNg(<ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>*res,<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*a);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>det_hermNg(hr_complex<sp/>*res,<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*a);</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>project_to_suNg_real(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*out,<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*in);</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>inv_Cmplx_Ng(<ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*a);</highlight></codeline>
@@ -1529,11 +1547,11 @@
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>void<sp/>assign_s2sd(int<sp/>len,<sp/>suNf_spinor<sp/>*out,<sp/>suNf_spinor_flt<sp/>*in);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>void<sp/>assign_sd2s(int<sp/>len,<sp/>suNf_spinor_flt<sp/>*out,<sp/>suNf_spinor<sp/>*in);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>assign_s2sd(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>assign_sd2s(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>assign_s2sd(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>assign_sd2s(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>use<sp/>power<sp/>method<sp/>to<sp/>find<sp/>max<sp/>eigvalue<sp/>of<sp/>H2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_H(spinor_operator<sp/>H,<sp/><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref><sp/>*type,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*max);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_H(spinor_operator<sp/>H,<sp/><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref><sp/>*type,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*max);</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>EVA<sp/>preconditioning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="106" refid="de/d23/struct__eva__prec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="de/d23/struct__eva__prec" kindref="compound">_eva_prec</ref></highlight></codeline>
@@ -1546,14 +1564,14 @@
 <codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega1;<sp/></highlight><highlight class="comment">/*<sp/>absolute<sp/>precision<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega2;<sp/></highlight><highlight class="comment">/*<sp/>relative<sp/>precision<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="115"><highlight class="normal">}<sp/><ref refid="de/d23/struct__eva__prec" kindref="compound">eva_prec</ref>;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_def_matrix(<ref refid="de/d23/struct__eva__prec" kindref="compound">eva_prec</ref><sp/>*e_par,<sp/>spinor_operator<sp/>H,<sp/><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref><sp/>*type);</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>eva_def(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>eva_def_inv(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_def_matrix(<ref refid="de/d23/struct__eva__prec" kindref="compound">eva_prec</ref><sp/>*e_par,<sp/>spinor_operator<sp/>H,<sp/><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref><sp/>*type);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>eva_def(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>eva_def_inv(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>HYP<sp/>smearing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>spatialHYP_smearing(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*out,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>weight[3]);</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HYP_smearing(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*out,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>weight[3]);</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>min_tplaq(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*g);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>spatialHYP_smearing(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*out,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>weight[3]);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HYP_smearing(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*out,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>weight[3]);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>min_tplaq(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*g);</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HYP_span_parameters(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mtp[6859]);</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HYP_best_parameters(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mtp[6859],<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>w[3]);</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"></highlight></codeline>
@@ -1598,12 +1616,12 @@
 <codeline lineno="165"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iup_wrk(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>site,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir);</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idn_wrk(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>site,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir);</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/>*pu_gauge_wrk(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>site,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dir);</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>*u_gauge_wrk();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>*u_gauge_wrk();</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset_wrk_pointers();</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_wrk_space(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_wrk_space_and_pointers(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/><ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>**g_wrk_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**i_up_wrk_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**i_dn_wrk_out);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_wrk_space_and_pointers(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/><ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>**g_wrk_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**i_up_wrk_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**i_dn_wrk_out);</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reserve_wrk_space();</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reserve_wrk_space_with_pointers(<ref refid="d9/d96/struct__suNg__field" kindref="compound">suNg_field</ref><sp/>**g_wrk_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**i_up_wrk_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**i_dn_wrk_out);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reserve_wrk_space_with_pointers(<ref refid="d2/d0e/structsuNg__field" kindref="compound">suNg_field</ref><sp/>**g_wrk_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**i_up_wrk_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>**i_dn_wrk_out);</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>release_wrk_space(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_release);</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free_wrk_space();</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight></codeline>

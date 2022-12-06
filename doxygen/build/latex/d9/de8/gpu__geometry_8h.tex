@@ -244,10 +244,10 @@ Read float according to device geometry structure.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[2]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[3]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((hr\_complex*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((hr\_complex*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((hr\_complex*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[3]=((hr\_complex*)(\_in))[\_\_iz]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -344,10 +344,10 @@ Read su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt according to device geometry struc
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[2]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[3]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[3]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -444,8 +444,8 @@ Read \mbox{\hyperlink{structsuNf__spinor__flt}{su\+Nf\+\_\+spinor\+\_\+flt}} acc
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((hr\_complex*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((hr\_complex*)(\_in))[\_\_iz]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -476,8 +476,8 @@ Read \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} according to devi
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -554,10 +554,10 @@ Read su\+Nfc\+\_\+flt according to device geometry structure.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[2]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[3]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((hr\_complex*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((hr\_complex*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((hr\_complex*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[3]=((hr\_complex*)(\_in))[\_\_iz]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -654,10 +654,10 @@ Read \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_\
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[2]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[3]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[2]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[3]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -754,8 +754,8 @@ Read \mbox{\hyperlink{structsuNg__spinor__flt}{su\+Ng\+\_\+spinor\+\_\+flt}} acc
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((hr\_complex*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((hr\_complex*)(\_in))[\_\_iz]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -786,8 +786,8 @@ Read \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} according to devi
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[0]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
-\DoxyCodeLine{        (\_v).c[1]=((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_in))[\_\_iz]; \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[0]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \_\_iz+=(\_stride); \(\backslash\)}
+\DoxyCodeLine{        (\_v).c[1]=((hr\_complex\_flt*)(\_in))[\_\_iz]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -984,10 +984,10 @@ Write float according to device geometry structure.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -1084,10 +1084,10 @@ Write su\+Nf\+\_\+algebra\+\_\+vector\+\_\+flt according to device geometry stru
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -1184,8 +1184,8 @@ Write \mbox{\hyperlink{structsuNf__spinor__flt}{su\+Nf\+\_\+spinor\+\_\+flt}} ac
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -1216,8 +1216,8 @@ Write \mbox{\hyperlink{structsuNf__vector}{su\+Nf\+\_\+vector}} according to dev
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -1294,10 +1294,10 @@ Write su\+Nfc\+\_\+flt according to device geometry structure.
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -1394,10 +1394,10 @@ Write \mbox{\hyperlink{structsuNg__algebra__vector__flt}{su\+Ng\+\_\+algebra\+\_
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*4)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[1]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[2]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[3]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -1494,8 +1494,8 @@ Write \mbox{\hyperlink{structsuNg__spinor__flt}{su\+Ng\+\_\+spinor\+\_\+flt}} ac
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex}{hr\_complex}}*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}
@@ -1526,8 +1526,8 @@ Write \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}} according to dev
 \begin{DoxyCode}{0}
 \DoxyCodeLine{    \textcolor{keywordflow}{do} \{ \(\backslash\)}
 \DoxyCodeLine{        int \_\_iz = (\_ix) + ((\_comp)*2)*(\_stride); \(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
-\DoxyCodeLine{        ((\mbox{\hyperlink{structhr__complex__flt}{hr\_complex\_flt}}*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[0]; \_\_iz+=(\_stride);\(\backslash\)}
+\DoxyCodeLine{        ((hr\_complex\_flt*)(\_out))[\_\_iz]=(\_v).c[1]; \(\backslash\)}
 \DoxyCodeLine{    \} \textcolor{keywordflow}{while} (0)}
 
 \end{DoxyCode}

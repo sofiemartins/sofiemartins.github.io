@@ -1,0 +1,440 @@
+\hypertarget{memory_8h}{}\doxysection{memory.\+h File Reference}
+\label{memory_8h}\index{memory.h@{memory.h}}
+
+
+Memory handling functions.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}su\+N.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}spinor\+\_\+field.\+h\char`\"{}}\newline
+Include dependency graph for memory.\+h\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{memory_8h_ae4ff5a07c6ff43ed11a3887ef7d524f2}\label{memory_8h_ae4ff5a07c6ff43ed11a3887ef7d524f2}} 
+\#define {\bfseries ALIGN}~8
+\item 
+\mbox{\Hypertarget{memory_8h_ab9ad00c14c9bffef082d796499345231}\label{memory_8h_ab9ad00c14c9bffef082d796499345231}} 
+\#define {\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE}(\+\_\+name,  \+\_\+field\+\_\+type,  \+\_\+site\+\_\+type,  \+\_\+size,  \+\_\+human\+\_\+readable)
+\item 
+\mbox{\Hypertarget{memory_8h_a0d03ddcf46d4550d83abdcba49a03dd2}\label{memory_8h_a0d03ddcf46d4550d83abdcba49a03dd2}} 
+\#define {\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+SPINOR}(\+\_\+name,  \+\_\+field\+\_\+type,  \+\_\+site\+\_\+type,  \+\_\+size,  \+\_\+human\+\_\+readable)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{memory_8h_a9da3e5d5b59b5f690eedff1152bae4ff}{amalloc}} (size\+\_\+t size, int p)
+\begin{DoxyCompactList}\small\item\em Allocated memory aligned, because this improves bandwidth. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a235f6efccf605b4dce85f272fc3a8a25}{afree}} (void $\ast$addr)
+\begin{DoxyCompactList}\small\item\em Free memory that was allocated aligned using amalloc. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{memory_8h_a37abf127da9ba683f88601571fbfab15}\label{memory_8h_a37abf127da9ba683f88601571fbfab15}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (gfield, \mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}}, \mbox{\hyperlink{structsuNg}{su\+Ng}}, 4)
+\item 
+\mbox{\Hypertarget{memory_8h_a401f9df1e49c9e979c75780050523d0c}\label{memory_8h_a401f9df1e49c9e979c75780050523d0c}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (gfield\+\_\+flt, \mbox{\hyperlink{structsuNg__field__flt}{su\+Ng\+\_\+field\+\_\+flt}}, \mbox{\hyperlink{structsuNg__flt}{su\+Ng\+\_\+flt}}, 4)
+\item 
+\mbox{\Hypertarget{memory_8h_a7e79c331e27cab4e78784c1ffa09686b}\label{memory_8h_a7e79c331e27cab4e78784c1ffa09686b}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (gfield\+\_\+f, \mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}}, \mbox{\hyperlink{structsuNf}{su\+Nf}}, 4)
+\item 
+\mbox{\Hypertarget{memory_8h_a1cd9e1e2cc443fb25a8c86d217d5d2fd}\label{memory_8h_a1cd9e1e2cc443fb25a8c86d217d5d2fd}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (gfield\+\_\+f\+\_\+flt, \mbox{\hyperlink{structsuNf__field__flt}{su\+Nf\+\_\+field\+\_\+flt}}, \mbox{\hyperlink{structsuNf__flt}{su\+Nf\+\_\+flt}}, 4)
+\item 
+\mbox{\Hypertarget{memory_8h_ac8b613db712171737ebaf4fe69bc6d85}\label{memory_8h_ac8b613db712171737ebaf4fe69bc6d85}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}, \mbox{\hyperlink{structsuNg__scalar__field}{su\+Ng\+\_\+scalar\+\_\+field}}, \mbox{\hyperlink{structsuNg__vector}{su\+Ng\+\_\+vector}}, 1)
+\item 
+\mbox{\Hypertarget{memory_8h_a2f838156b34702376cb29be7232db52e}\label{memory_8h_a2f838156b34702376cb29be7232db52e}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (avfield, \mbox{\hyperlink{structsuNg__av__field}{su\+Ng\+\_\+av\+\_\+field}}, \mbox{\hyperlink{structsuNg__algebra__vector}{su\+Ng\+\_\+algebra\+\_\+vector}}, 4)
+\item 
+\mbox{\Hypertarget{memory_8h_aeddb7810a825b27e2c8792571b6ef645}\label{memory_8h_aeddb7810a825b27e2c8792571b6ef645}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (gtransf, \mbox{\hyperlink{structsuNg__field}{su\+Ng\+\_\+field}}, \mbox{\hyperlink{structsuNg}{su\+Ng}}, 1)
+\item 
+\mbox{\Hypertarget{memory_8h_a7c2ecec5115b85a03b2c19a8ebded657}\label{memory_8h_a7c2ecec5115b85a03b2c19a8ebded657}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (clover\+\_\+term, \mbox{\hyperlink{structsuNfc__field}{su\+Nfc\+\_\+field}}, \mbox{\hyperlink{structsuNf}{su\+Nfc}}, 4)
+\item 
+\mbox{\Hypertarget{memory_8h_a6e88ca661f81be32ce0d4014a7a5fb92}\label{memory_8h_a6e88ca661f81be32ce0d4014a7a5fb92}} 
+{\bfseries \+\_\+\+DECLARE\+\_\+\+MEMORY\+\_\+\+FUNC\+\_\+\+GAUGE} (clover\+\_\+force, \mbox{\hyperlink{structsuNf__field}{su\+Nf\+\_\+field}}, \mbox{\hyperlink{structsuNf}{su\+Nf}}, 6)
+\item 
+void \mbox{\hyperlink{memory_8h_a6ccf05ea8346b588c7057ac8af55005f}{copy\+\_\+to\+\_\+gpu\+\_\+spinor\+\_\+field\+\_\+f}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Copy Spinor field from the host to the device by synchronizing the GPU field data with the CPU field data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_ae70a6e7403fd9c85906a696a95498bb3}{copy\+\_\+from\+\_\+gpu\+\_\+spinor\+\_\+field\+\_\+f}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Copy Spinor field from the device to the host by synchronizing the CPU field data with the GPU field data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a0c7a7106d137de780f4724f750229f0d}{to\+\_\+gpu\+\_\+format\+\_\+spinor\+\_\+field\+\_\+f}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Convert Spinor field field data host geometry layout to device geometry layout. Read more on GPU geometry in the corresponding section in the development manual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a21366551cdb68276abf7181dd41f44da}{to\+\_\+cpu\+\_\+format\+\_\+spinor\+\_\+field\+\_\+f}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Convert Spinor field field data device geometry layout to host geometry layout. Read more on GPU geometry in the corresponding section in the development manual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a1c1390ec1e0d07663def8feac0f14de0}{free\+\_\+spinor\+\_\+field\+\_\+f}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Free field data, other struct fields and struct pointer of field struct. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$ \mbox{\hyperlink{memory_8h_a32566af93641ab745c32e274c020366c}{alloc\+\_\+spinor\+\_\+field\+\_\+f}} (unsigned int, \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Allocate field struct pointer and struct fields, in particular the field data arrays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a99a1754aa3b3385918721f74950445b7}{copy\+\_\+to\+\_\+gpu\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Copy Spinor field single precision from the host to the device by synchronizing the GPU field data with the CPU field data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a0f2efe35f4974558f5efdf50e3946e01}{copy\+\_\+from\+\_\+gpu\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Copy Spinor field single precision from the device to the host by synchronizing the CPU field data with the GPU field data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a3117186b0150ba15334d914563339799}{to\+\_\+gpu\+\_\+format\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Convert Spinor field single precision field data host geometry layout to device geometry layout. Read more on GPU geometry in the corresponding section in the development manual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_ae9447cf44dd33b2e2b1f9844c55399f0}{to\+\_\+cpu\+\_\+format\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Convert Spinor field single precision field data device geometry layout to host geometry layout. Read more on GPU geometry in the corresponding section in the development manual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a114a24ecc56e1ed19c31871704062c2f}{free\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Free field data, other struct fields and struct pointer of field struct. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$ \mbox{\hyperlink{memory_8h_a37026fbb9cb0f2ec879f1efca6ce09cd}{alloc\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt}} (unsigned int, \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Allocate field struct pointer and struct fields, in particular the field data arrays. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_aab72509542f470e2c1165faa1b7a3543}{copy\+\_\+to\+\_\+gpu\+\_\+sfield}} (\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Copy Double precision real field from the host to the device by synchronizing the GPU field data with the CPU field data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a07f3b3636afbb530d504ec9e70becd0f}{copy\+\_\+from\+\_\+gpu\+\_\+sfield}} (\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Copy Double precision real field from the device to the host by synchronizing the CPU field data with the GPU field data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a772c33d4d0d70b948c941b4cced77c38}{to\+\_\+gpu\+\_\+format\+\_\+sfield}} (\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$, \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Convert Double precision real field field data host geometry layout to device geometry layout. Read more on GPU geometry in the corresponding section in the development manual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_aba6ec3306dc28378b93b80f293f65bf8}{to\+\_\+cpu\+\_\+format\+\_\+sfield}} (\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$, \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Convert Double precision real field field data device geometry layout to host geometry layout. Read more on GPU geometry in the corresponding section in the development manual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{memory_8h_a33324a5cc111ba1e2acf28ffe2aff3ee}{free\+\_\+sfield}} (\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Free field data, other struct fields and struct pointer of field struct. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$ \mbox{\hyperlink{memory_8h_ac891141beed3c55b4160ae7b70f51eef}{alloc\+\_\+sfield}} (unsigned int, \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Allocate field struct pointer and struct fields, in particular the field data arrays. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Memory handling functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{memory_8h_a235f6efccf605b4dce85f272fc3a8a25}\label{memory_8h_a235f6efccf605b4dce85f272fc3a8a25}} 
+\index{memory.h@{memory.h}!afree@{afree}}
+\index{afree@{afree}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{afree()}{afree()}}
+{\footnotesize\ttfamily void afree (\begin{DoxyParamCaption}\item[{void $\ast$}]{addr }\end{DoxyParamCaption})}
+
+
+
+Free memory that was allocated aligned using amalloc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Free this pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_ac891141beed3c55b4160ae7b70f51eef}\label{memory_8h_ac891141beed3c55b4160ae7b70f51eef}} 
+\index{memory.h@{memory.h}!alloc\_sfield@{alloc\_sfield}}
+\index{alloc\_sfield@{alloc\_sfield}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{alloc\_sfield()}{alloc\_sfield()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}$\ast$ alloc\+\_\+sfield (\begin{DoxyParamCaption}\item[{unsigned int}]{,  }\item[{\mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Allocate field struct pointer and struct fields, in particular the field data arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int Number of spinors\\
+\hline
+{\em \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}}} & Underlying lattice geometry to allocate on. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a32566af93641ab745c32e274c020366c}\label{memory_8h_a32566af93641ab745c32e274c020366c}} 
+\index{memory.h@{memory.h}!alloc\_spinor\_field\_f@{alloc\_spinor\_field\_f}}
+\index{alloc\_spinor\_field\_f@{alloc\_spinor\_field\_f}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{alloc\_spinor\_field\_f()}{alloc\_spinor\_field\_f()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}$\ast$ alloc\+\_\+spinor\+\_\+field\+\_\+f (\begin{DoxyParamCaption}\item[{unsigned int}]{,  }\item[{\mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Allocate field struct pointer and struct fields, in particular the field data arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int Number of spinors\\
+\hline
+{\em \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}}} & Underlying lattice geometry to allocate on. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a37026fbb9cb0f2ec879f1efca6ce09cd}\label{memory_8h_a37026fbb9cb0f2ec879f1efca6ce09cd}} 
+\index{memory.h@{memory.h}!alloc\_spinor\_field\_f\_flt@{alloc\_spinor\_field\_f\_flt}}
+\index{alloc\_spinor\_field\_f\_flt@{alloc\_spinor\_field\_f\_flt}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{alloc\_spinor\_field\_f\_flt()}{alloc\_spinor\_field\_f\_flt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}$\ast$ alloc\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt (\begin{DoxyParamCaption}\item[{unsigned int}]{,  }\item[{\mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Allocate field struct pointer and struct fields, in particular the field data arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & int Number of spinors\\
+\hline
+{\em \mbox{\hyperlink{structgeometry__descriptor}{geometry\+\_\+descriptor}}} & Underlying lattice geometry to allocate on. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a9da3e5d5b59b5f690eedff1152bae4ff}\label{memory_8h_a9da3e5d5b59b5f690eedff1152bae4ff}} 
+\index{memory.h@{memory.h}!amalloc@{amalloc}}
+\index{amalloc@{amalloc}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{amalloc()}{amalloc()}}
+{\footnotesize\ttfamily void$\ast$ amalloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Allocated memory aligned, because this improves bandwidth. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & size to be allocated \\
+\hline
+{\em p} & alignment \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a07f3b3636afbb530d504ec9e70becd0f}\label{memory_8h_a07f3b3636afbb530d504ec9e70becd0f}} 
+\index{memory.h@{memory.h}!copy\_from\_gpu\_sfield@{copy\_from\_gpu\_sfield}}
+\index{copy\_from\_gpu\_sfield@{copy\_from\_gpu\_sfield}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{copy\_from\_gpu\_sfield()}{copy\_from\_gpu\_sfield()}}
+{\footnotesize\ttfamily void copy\+\_\+from\+\_\+gpu\+\_\+sfield (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Copy Double precision real field from the device to the host by synchronizing the CPU field data with the GPU field data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}} & Field to be copied. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_ae70a6e7403fd9c85906a696a95498bb3}\label{memory_8h_ae70a6e7403fd9c85906a696a95498bb3}} 
+\index{memory.h@{memory.h}!copy\_from\_gpu\_spinor\_field\_f@{copy\_from\_gpu\_spinor\_field\_f}}
+\index{copy\_from\_gpu\_spinor\_field\_f@{copy\_from\_gpu\_spinor\_field\_f}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{copy\_from\_gpu\_spinor\_field\_f()}{copy\_from\_gpu\_spinor\_field\_f()}}
+{\footnotesize\ttfamily void copy\+\_\+from\+\_\+gpu\+\_\+spinor\+\_\+field\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Copy Spinor field from the device to the host by synchronizing the CPU field data with the GPU field data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Field to be copied. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a0f2efe35f4974558f5efdf50e3946e01}\label{memory_8h_a0f2efe35f4974558f5efdf50e3946e01}} 
+\index{memory.h@{memory.h}!copy\_from\_gpu\_spinor\_field\_f\_flt@{copy\_from\_gpu\_spinor\_field\_f\_flt}}
+\index{copy\_from\_gpu\_spinor\_field\_f\_flt@{copy\_from\_gpu\_spinor\_field\_f\_flt}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{copy\_from\_gpu\_spinor\_field\_f\_flt()}{copy\_from\_gpu\_spinor\_field\_f\_flt()}}
+{\footnotesize\ttfamily void copy\+\_\+from\+\_\+gpu\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Copy Spinor field single precision from the device to the host by synchronizing the CPU field data with the GPU field data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Field to be copied. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_aab72509542f470e2c1165faa1b7a3543}\label{memory_8h_aab72509542f470e2c1165faa1b7a3543}} 
+\index{memory.h@{memory.h}!copy\_to\_gpu\_sfield@{copy\_to\_gpu\_sfield}}
+\index{copy\_to\_gpu\_sfield@{copy\_to\_gpu\_sfield}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{copy\_to\_gpu\_sfield()}{copy\_to\_gpu\_sfield()}}
+{\footnotesize\ttfamily void copy\+\_\+to\+\_\+gpu\+\_\+sfield (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Copy Double precision real field from the host to the device by synchronizing the GPU field data with the CPU field data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}} & Field to be copied. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a6ccf05ea8346b588c7057ac8af55005f}\label{memory_8h_a6ccf05ea8346b588c7057ac8af55005f}} 
+\index{memory.h@{memory.h}!copy\_to\_gpu\_spinor\_field\_f@{copy\_to\_gpu\_spinor\_field\_f}}
+\index{copy\_to\_gpu\_spinor\_field\_f@{copy\_to\_gpu\_spinor\_field\_f}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{copy\_to\_gpu\_spinor\_field\_f()}{copy\_to\_gpu\_spinor\_field\_f()}}
+{\footnotesize\ttfamily void copy\+\_\+to\+\_\+gpu\+\_\+spinor\+\_\+field\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Copy Spinor field from the host to the device by synchronizing the GPU field data with the CPU field data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Field to be copied. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a99a1754aa3b3385918721f74950445b7}\label{memory_8h_a99a1754aa3b3385918721f74950445b7}} 
+\index{memory.h@{memory.h}!copy\_to\_gpu\_spinor\_field\_f\_flt@{copy\_to\_gpu\_spinor\_field\_f\_flt}}
+\index{copy\_to\_gpu\_spinor\_field\_f\_flt@{copy\_to\_gpu\_spinor\_field\_f\_flt}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{copy\_to\_gpu\_spinor\_field\_f\_flt()}{copy\_to\_gpu\_spinor\_field\_f\_flt()}}
+{\footnotesize\ttfamily void copy\+\_\+to\+\_\+gpu\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Copy Spinor field single precision from the host to the device by synchronizing the GPU field data with the CPU field data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Field to be copied. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a33324a5cc111ba1e2acf28ffe2aff3ee}\label{memory_8h_a33324a5cc111ba1e2acf28ffe2aff3ee}} 
+\index{memory.h@{memory.h}!free\_sfield@{free\_sfield}}
+\index{free\_sfield@{free\_sfield}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{free\_sfield()}{free\_sfield()}}
+{\footnotesize\ttfamily void free\+\_\+sfield (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Free field data, other struct fields and struct pointer of field struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}} & Field to be freed. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a1c1390ec1e0d07663def8feac0f14de0}\label{memory_8h_a1c1390ec1e0d07663def8feac0f14de0}} 
+\index{memory.h@{memory.h}!free\_spinor\_field\_f@{free\_spinor\_field\_f}}
+\index{free\_spinor\_field\_f@{free\_spinor\_field\_f}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{free\_spinor\_field\_f()}{free\_spinor\_field\_f()}}
+{\footnotesize\ttfamily void free\+\_\+spinor\+\_\+field\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Free field data, other struct fields and struct pointer of field struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Field to be freed. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a114a24ecc56e1ed19c31871704062c2f}\label{memory_8h_a114a24ecc56e1ed19c31871704062c2f}} 
+\index{memory.h@{memory.h}!free\_spinor\_field\_f\_flt@{free\_spinor\_field\_f\_flt}}
+\index{free\_spinor\_field\_f\_flt@{free\_spinor\_field\_f\_flt}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{free\_spinor\_field\_f\_flt()}{free\_spinor\_field\_f\_flt()}}
+{\footnotesize\ttfamily void free\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Free field data, other struct fields and struct pointer of field struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Field to be freed. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_aba6ec3306dc28378b93b80f293f65bf8}\label{memory_8h_aba6ec3306dc28378b93b80f293f65bf8}} 
+\index{memory.h@{memory.h}!to\_cpu\_format\_sfield@{to\_cpu\_format\_sfield}}
+\index{to\_cpu\_format\_sfield@{to\_cpu\_format\_sfield}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{to\_cpu\_format\_sfield()}{to\_cpu\_format\_sfield()}}
+{\footnotesize\ttfamily void to\+\_\+cpu\+\_\+format\+\_\+sfield (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Convert Double precision real field field data device geometry layout to host geometry layout. Read more on GPU geometry in the corresponding section in the development manual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}} & Double precision real field that will contain the converted field data\\
+\hline
+{\em \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}} & Double precision real field that contains the initial field data ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a21366551cdb68276abf7181dd41f44da}\label{memory_8h_a21366551cdb68276abf7181dd41f44da}} 
+\index{memory.h@{memory.h}!to\_cpu\_format\_spinor\_field\_f@{to\_cpu\_format\_spinor\_field\_f}}
+\index{to\_cpu\_format\_spinor\_field\_f@{to\_cpu\_format\_spinor\_field\_f}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{to\_cpu\_format\_spinor\_field\_f()}{to\_cpu\_format\_spinor\_field\_f()}}
+{\footnotesize\ttfamily void to\+\_\+cpu\+\_\+format\+\_\+spinor\+\_\+field\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Convert Spinor field field data device geometry layout to host geometry layout. Read more on GPU geometry in the corresponding section in the development manual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Spinor field that will contain the converted field data\\
+\hline
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Spinor field that contains the initial field data ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_ae9447cf44dd33b2e2b1f9844c55399f0}\label{memory_8h_ae9447cf44dd33b2e2b1f9844c55399f0}} 
+\index{memory.h@{memory.h}!to\_cpu\_format\_spinor\_field\_f\_flt@{to\_cpu\_format\_spinor\_field\_f\_flt}}
+\index{to\_cpu\_format\_spinor\_field\_f\_flt@{to\_cpu\_format\_spinor\_field\_f\_flt}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{to\_cpu\_format\_spinor\_field\_f\_flt()}{to\_cpu\_format\_spinor\_field\_f\_flt()}}
+{\footnotesize\ttfamily void to\+\_\+cpu\+\_\+format\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Convert Spinor field single precision field data device geometry layout to host geometry layout. Read more on GPU geometry in the corresponding section in the development manual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Spinor field single precision that will contain the converted field data\\
+\hline
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Spinor field single precision that contains the initial field data ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a772c33d4d0d70b948c941b4cced77c38}\label{memory_8h_a772c33d4d0d70b948c941b4cced77c38}} 
+\index{memory.h@{memory.h}!to\_gpu\_format\_sfield@{to\_gpu\_format\_sfield}}
+\index{to\_gpu\_format\_sfield@{to\_gpu\_format\_sfield}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{to\_gpu\_format\_sfield()}{to\_gpu\_format\_sfield()}}
+{\footnotesize\ttfamily void to\+\_\+gpu\+\_\+format\+\_\+sfield (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Convert Double precision real field field data host geometry layout to device geometry layout. Read more on GPU geometry in the corresponding section in the development manual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}} & Double precision real field that will contain the converted field data.\\
+\hline
+{\em \mbox{\hyperlink{structscalar__field}{scalar\+\_\+field}}} & Double precision real field that contains the initial field data. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a0c7a7106d137de780f4724f750229f0d}\label{memory_8h_a0c7a7106d137de780f4724f750229f0d}} 
+\index{memory.h@{memory.h}!to\_gpu\_format\_spinor\_field\_f@{to\_gpu\_format\_spinor\_field\_f}}
+\index{to\_gpu\_format\_spinor\_field\_f@{to\_gpu\_format\_spinor\_field\_f}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{to\_gpu\_format\_spinor\_field\_f()}{to\_gpu\_format\_spinor\_field\_f()}}
+{\footnotesize\ttfamily void to\+\_\+gpu\+\_\+format\+\_\+spinor\+\_\+field\+\_\+f (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Convert Spinor field field data host geometry layout to device geometry layout. Read more on GPU geometry in the corresponding section in the development manual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Spinor field that will contain the converted field data.\\
+\hline
+{\em \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}}} & Spinor field that contains the initial field data. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{memory_8h_a3117186b0150ba15334d914563339799}\label{memory_8h_a3117186b0150ba15334d914563339799}} 
+\index{memory.h@{memory.h}!to\_gpu\_format\_spinor\_field\_f\_flt@{to\_gpu\_format\_spinor\_field\_f\_flt}}
+\index{to\_gpu\_format\_spinor\_field\_f\_flt@{to\_gpu\_format\_spinor\_field\_f\_flt}!memory.h@{memory.h}}
+\doxysubsubsection{\texorpdfstring{to\_gpu\_format\_spinor\_field\_f\_flt()}{to\_gpu\_format\_spinor\_field\_f\_flt()}}
+{\footnotesize\ttfamily void to\+\_\+gpu\+\_\+format\+\_\+spinor\+\_\+field\+\_\+f\+\_\+flt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Convert Spinor field single precision field data host geometry layout to device geometry layout. Read more on GPU geometry in the corresponding section in the development manual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Spinor field single precision that will contain the converted field data.\\
+\hline
+{\em \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}}} & Spinor field single precision that contains the initial field data. ~\newline
+ \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d9/dab/struct__suNf__scalar__field" kind="struct" language="C++" prot="public">
+    <compoundname>_suNf_scalar_field</compoundname>
+    <includes refid="d3/ded/spinor__field_8h" local="no">spinor_field.h</includes>
+    <briefdescription>
+<para>SU(N_g) scalar field of SU(N_g) vectors. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="74" column="1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

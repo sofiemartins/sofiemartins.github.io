@@ -88,126 +88,98 @@ $(document).ready(function(){initNavTree('d4/d67/geometry_8h_source.html','../..
 <div class="title">geometry.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************\</span></div>
+<a href="../../d4/d67/geometry_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/***************************************************************************\</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (c) 2008-2014, Claudio Pica                                    *</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * All rights reserved.                                                     *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> \**************************************************************************/</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef GEOMETRY_H</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define GEOMETRY_H</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/* this define the width of the borders for parallel dimensions</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * For different actions it must be modified</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define BORDERSIZE 1</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="../../db/d43/struct__geometry__descriptor.html">   15</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../db/d43/struct__geometry__descriptor.html">_geometry_descriptor</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">int</span> inner_master_pieces; <span class="comment">/* number of inner pieces (1 o 2 for even odd or no_eo)) */</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">int</span> local_master_pieces; <span class="comment">//</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">int</span> total_spinor_master_pieces;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">int</span> total_gauge_master_pieces;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">int</span> *master_start, *master_end; <span class="comment">// Beginning has inner pieces, then local pieces, then the rest.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keywordtype">int</span> master_shift;               <span class="comment">/*  this is the odd spinor&#39;s shift, i.e. the index of the first odd entry in the full geometry */</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">int</span> ncopies_spinor;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">int</span> ncopies_gauge;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">int</span> *copy_from, *copy_to, *copy_len;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">int</span> copy_shift; <span class="comment">/*  this is the odd spinor&#39;s shift, i.e. the index of the first odd copy in the full geometry */</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">int</span> nbuffers_spinor;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">int</span> nbuffers_gauge;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">int</span> *rbuf_len, *sbuf_len;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">int</span> *rbuf_from_proc, *rbuf_start;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">int</span> *sbuf_to_proc, *sbuf_start;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">int</span> gsize_spinor;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">int</span> gsize_gauge;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">int</span> *fuse_mask;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">int</span> fuse_gauge_size;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">int</span> fuse_inner_counter;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <a class="code" href="../../db/d43/struct__geometry__descriptor.html">geometry_descriptor</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;hr_omp.h&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//Loop over pieces of given type</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define _PIECE_FOR(type, ip) \</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">  for (int ip = 0; ip &lt; (type)-&gt;local_master_pieces; ip++)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//Loop over sites of piece ip of given type</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define _SITE_FOR_RED(type, ip, is, redop1, redop2) \</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">  _OMP_PRAGMA(_omp_parallel)                        \</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">  _OMP_PRAGMA(_omp_for redop1 redop2)               \</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">  for (int is = (type)-&gt;master_start[ip]; is &lt;= (type)-&gt;master_end[ip]; is++)</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define _SITE_FOR(type, ip, is) _SITE_FOR_RED(type, ip, is, nowait, )</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//#define _SITE_FOR(type, ip, is) _SITE_FOR_RED(type, ip, is, , )</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define _SITE_FOR_SUM(type, ip, is, ...) _SITE_FOR_RED(type, ip, is, _omp_sum(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define _SITE_FOR_MAX(type, ip, is, ...) _SITE_FOR_RED(type, ip, is, _omp_max(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#define _SITE_FOR_MIN(type, ip, is, ...) _SITE_FOR_RED(type, ip, is, _omp_min(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">//Loop over sites of all pieces of given type</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">//do an openmp sum over the variables in the redop list</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define _MASTER_FOR_RED(type, is, redop1, redop2) \</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">  _PIECE_FOR((type), _master_for_ip_##is)         \</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">  _SITE_FOR_RED((type), _master_for_ip_##is, is, redop1, redop2)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#define _MASTER_FOR(type, is) _MASTER_FOR_RED(type, is, , )</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#define _MASTER_FOR_SUM(type, is, ...) _MASTER_FOR_RED(type, is, _omp_sum(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define _MASTER_FOR_MAX(type, is, ...) _MASTER_FOR_RED(type, is, _omp_max(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define _MASTER_FOR_MIN(type, is, ...) _MASTER_FOR_RED(type, is, _omp_min(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define _FUSE_IDX(type, is) (type)-&gt;fuse_mask[_fuse_master_for_ip_##is]</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define _FUSE_FOR_RED(type, ip, is, redop1, redop2) \</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  _OMP_PRAGMA(_omp_parallel)                        \</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">  _OMP_PRAGMA(_omp_for redop1 redop2)               \</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">  for (int ip = 0; ip &lt; type-&gt;fuse_gauge_size; ip++)</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#define _FUSE_MASTER_FOR_RED(type, is, redop1, redop2) \</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">  _FUSE_FOR_RED((type), _fuse_master_for_ip_##is, is, redop1, redop2)</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#define _FUSE_MASTER_FOR(type, is) _FUSE_MASTER_FOR_RED(type, is, nowait, )</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#define _FUSE_MASTER_FOR_SUM(type, is, ...) _FUSE_MASTER_FOR_RED(type, is, _omp_sum(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#define _FUSE_MASTER_FOR_MAX(type, is, ...) _FUSE_MASTER_FOR_RED(type, is, _omp_max(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#define _FUSE_MASTER_FOR_MIN(type, is, ...) _FUSE_MASTER_FOR_RED(type, is, _omp_min(__VA_ARGS__), )</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> origin_coord(<span class="keywordtype">int</span> *c);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> other_proc_origin_coord(<span class="keywordtype">int</span> *proc_coord, <span class="keywordtype">int</span> *c);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> glb_to_proc(<span class="keywordtype">int</span> *g, <span class="keywordtype">int</span> *p);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">int</span> geometry_init(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keywordtype">void</span> geometry_mpi_eo(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> geometry_mem_alloc(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">int</span> proc_up(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> dir);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">int</span> proc_dn(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> dir);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> free_geometry_mpi_eo(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> init_geometry_SAP(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> test_geometry_mpi(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> test_geometry_mpi_eo(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> print_wdmatrix(<span class="keywordtype">char</span> *filename);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifdef WITH_GPU</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#include &quot;gpu.h&quot;</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> init_gpu(input_gpu gpu_var);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">void</span> init_neighbors_gpu();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#define _GPU_IDX_TO_GLOBAL(in, ix, ixp) (ix) + in-&gt;type-master_start[(ixp)]</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#define _GPU_IDX_TO_LOCAL(in, ix, ixp) (ix) - in-&gt;type-&gt;master_start[(ixp)];</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#define _SITE_IDX_GPU(ix, ixp, stride) (ix) + stride*(ixp)</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astruct__geometry__descriptor_html"><div class="ttname"><a href="../../db/d43/struct__geometry__descriptor.html">_geometry_descriptor</a></div><div class="ttdef"><b>Definition:</b> geometry.h:16</div></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef GEOMETRY_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define GEOMETRY_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;hr_omp.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d76/geometry__omp_8h.html">geometry_omp.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d3/d77/geometry__fuse_8h.html">geometry_fuse.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d46/geometry__init_8h.html">geometry_init.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../de/d59/cpu__geometry_8h.html">cpu_geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef WITH_GPU</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">   #include &quot;<a class="code" href="../../d9/de8/gpu__geometry_8h.html">gpu_geometry.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/* this define the width of the borders for parallel dimensions</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * For different actions it must be modified</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * FIXME: Put into global variables, or put more geometry variables from global to</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * here.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define BORDERSIZE 1</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html">  119</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#a23ffd04f8caedd46a29d97d7acc9662e">  121</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#a23ffd04f8caedd46a29d97d7acc9662e">inner_master_pieces</a>; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#a3e17f50441d335d32d63c68d371a9130">  122</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#a3e17f50441d335d32d63c68d371a9130">local_master_pieces</a>; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#ac75b721c077490c1c15a628190108206">  123</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#ac75b721c077490c1c15a628190108206">total_spinor_master_pieces</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#a7c5d98a7dde6a22701e42f314fb3d4a9">  124</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#a7c5d98a7dde6a22701e42f314fb3d4a9">total_gauge_master_pieces</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#ab9cb9919306a0f907c2034fe36ba63f4">  125</a></span>&#160;  <span class="keywordtype">int</span> *master_start, *<a class="code" href="../../df/da2/structgeometry__descriptor.html#ab9cb9919306a0f907c2034fe36ba63f4">master_end</a>; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#a4c0128cc03799cf6b729e1d7af962405">  126</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#a4c0128cc03799cf6b729e1d7af962405">master_shift</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#a85006b5fb655ca72574d26823a4a618b">  127</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#a85006b5fb655ca72574d26823a4a618b">ncopies_spinor</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#ac11d8544c0cba35cae9db51b98c083f7">  128</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#ac11d8544c0cba35cae9db51b98c083f7">ncopies_gauge</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">int</span> *copy_from, *copy_to, *copy_len;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">int</span> copy_shift;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#aca58b874e5a5c021ca28fc9f0aee4495">  131</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#aca58b874e5a5c021ca28fc9f0aee4495">nbuffers_spinor</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#a05b8047c7d59b411904965bbf00197f2">  132</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="../../df/da2/structgeometry__descriptor.html#a05b8047c7d59b411904965bbf00197f2">nbuffers_gauge</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#ac70d932690430b6bfe9607dc6f9870b9">  133</a></span>&#160;  <span class="keywordtype">int</span> *<a class="code" href="../../df/da2/structgeometry__descriptor.html#ac70d932690430b6bfe9607dc6f9870b9">rbuf_len</a>, *sbuf_len;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#a66adec7833d775d33825b2ad88a26846">  134</a></span>&#160;  <span class="keywordtype">int</span> *<a class="code" href="../../df/da2/structgeometry__descriptor.html#a66adec7833d775d33825b2ad88a26846">rbuf_from_proc</a>, *rbuf_start;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="../../df/da2/structgeometry__descriptor.html#aa0c79f08c358cd8864fdfe64dd4f9e3d">  135</a></span>&#160;  <span class="keywordtype">int</span> *sbuf_to_proc, *<a class="code" href="../../df/da2/structgeometry__descriptor.html#aa0c79f08c358cd8864fdfe64dd4f9e3d">sbuf_start</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">int</span> gsize_spinor;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">int</span> gsize_gauge;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordtype">int</span> *fuse_mask;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">int</span> fuse_gauge_size;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">int</span> fuse_inner_counter;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;} <a class="code" href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="../../d4/d67/geometry_8h.html#a72d8a3ce27714e0875e067679d895f58">  155</a></span>&#160;<span class="preprocessor">#define _SITE_FOR_RED(type, ip, is, redop1, redop2) \</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">  _OMP_PRAGMA(_omp_parallel)                        \</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">  _OMP_PRAGMA(_omp_for redop1 redop2)               \</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">  for (int is = (type)-&gt;master_start[ip]; is &lt;= (type)-&gt;master_end[ip]; is++)</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="../../d4/d67/geometry_8h.html#aed64332bb5597fc68e9c30cd5c472377">  168</a></span>&#160;<span class="preprocessor">#define _SITE_FOR(type, ip, is) _SITE_FOR_RED(type, ip, is, nowait, )</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="../../d4/d67/geometry_8h.html#a02427ad54780dfeb12a1211ec1672b5b">  177</a></span>&#160;<span class="preprocessor">#define _MASTER_FOR(type, is) _MASTER_FOR_RED(type, is, , )</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="../../d4/d67/geometry_8h.html#a29b455b128483748638bcd6342fd8d7c">  185</a></span>&#160;<span class="preprocessor">#define _ONE_SPINOR_FOR(s) _ONE_SPINOR_FOR_RED(s,,)</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="../../d4/d67/geometry_8h.html#aaf1c85365079ce137da26f5b39ad218a">  194</a></span>&#160;<span class="preprocessor">#define _TWO_SPINORS_FOR(s1,s2) _TWO_SPINORS_FOR_RED(s1,s2,,)</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="../../d4/d67/geometry_8h.html#aeddee20430cac03313f50b1f5ae1ec06">  204</a></span>&#160;<span class="preprocessor">#define _THREE_SPINORS_FOR(s1,s2,s3) _THREE_SPINORS_FOR_RED(s1,s2,s3,,)</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="../../d4/d67/geometry_8h.html#ae27a9385750ceb1fc11fa5665ef6f5ba">  212</a></span>&#160;<span class="preprocessor">#define _SPINOR_PTR(s) _FIELD_AT(s,_spinor_for_is)</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="acpu__geometry_8h_html"><div class="ttname"><a href="../../de/d59/cpu__geometry_8h.html">cpu_geometry.h</a></div><div class="ttdoc">This file contains macros to load elements of single sites of a field.</div></div>
+<div class="ttc" id="ageometry__fuse_8h_html"><div class="ttname"><a href="../../d3/d77/geometry__fuse_8h.html">geometry_fuse.h</a></div><div class="ttdoc">FIXME: Add docs.</div></div>
+<div class="ttc" id="ageometry__init_8h_html"><div class="ttname"><a href="../../d9/d46/geometry__init_8h.html">geometry_init.h</a></div><div class="ttdoc">Initialization functions, that determine all important parameters of the geometry,...</div></div>
+<div class="ttc" id="ageometry__omp_8h_html"><div class="ttname"><a href="../../d6/d76/geometry__omp_8h.html">geometry_omp.h</a></div><div class="ttdoc">This file contains useful macros that perform OpenMP reduction operations and are necessary to define...</div></div>
+<div class="ttc" id="agpu__geometry_8h_html"><div class="ttname"><a href="../../d9/de8/gpu__geometry_8h.html">gpu_geometry.h</a></div><div class="ttdoc">Memory access patterns are crucial to achieve best performance.   Due to this, we store lattice field...</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html">geometry_descriptor</a></div><div class="ttdoc">This struct should contain all information necessary to perform operations on the local lattice inclu...</div><div class="ttdef"><b>Definition:</b> geometry.h:120</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_a05b8047c7d59b411904965bbf00197f2"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#a05b8047c7d59b411904965bbf00197f2">geometry_descriptor::nbuffers_gauge</a></div><div class="ttdeci">int nbuffers_gauge</div><div class="ttdef"><b>Definition:</b> geometry.h:132</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_a23ffd04f8caedd46a29d97d7acc9662e"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#a23ffd04f8caedd46a29d97d7acc9662e">geometry_descriptor::inner_master_pieces</a></div><div class="ttdeci">int inner_master_pieces</div><div class="ttdef"><b>Definition:</b> geometry.h:121</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_a3e17f50441d335d32d63c68d371a9130"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#a3e17f50441d335d32d63c68d371a9130">geometry_descriptor::local_master_pieces</a></div><div class="ttdeci">int local_master_pieces</div><div class="ttdef"><b>Definition:</b> geometry.h:122</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_a4c0128cc03799cf6b729e1d7af962405"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#a4c0128cc03799cf6b729e1d7af962405">geometry_descriptor::master_shift</a></div><div class="ttdeci">int master_shift</div><div class="ttdef"><b>Definition:</b> geometry.h:126</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_a66adec7833d775d33825b2ad88a26846"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#a66adec7833d775d33825b2ad88a26846">geometry_descriptor::rbuf_from_proc</a></div><div class="ttdeci">int * rbuf_from_proc</div><div class="ttdef"><b>Definition:</b> geometry.h:134</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_a7c5d98a7dde6a22701e42f314fb3d4a9"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#a7c5d98a7dde6a22701e42f314fb3d4a9">geometry_descriptor::total_gauge_master_pieces</a></div><div class="ttdeci">int total_gauge_master_pieces</div><div class="ttdef"><b>Definition:</b> geometry.h:124</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_a85006b5fb655ca72574d26823a4a618b"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#a85006b5fb655ca72574d26823a4a618b">geometry_descriptor::ncopies_spinor</a></div><div class="ttdeci">int ncopies_spinor</div><div class="ttdef"><b>Definition:</b> geometry.h:127</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_aa0c79f08c358cd8864fdfe64dd4f9e3d"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#aa0c79f08c358cd8864fdfe64dd4f9e3d">geometry_descriptor::sbuf_start</a></div><div class="ttdeci">int * sbuf_start</div><div class="ttdef"><b>Definition:</b> geometry.h:135</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_ab9cb9919306a0f907c2034fe36ba63f4"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#ab9cb9919306a0f907c2034fe36ba63f4">geometry_descriptor::master_end</a></div><div class="ttdeci">int * master_end</div><div class="ttdef"><b>Definition:</b> geometry.h:125</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_ac11d8544c0cba35cae9db51b98c083f7"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#ac11d8544c0cba35cae9db51b98c083f7">geometry_descriptor::ncopies_gauge</a></div><div class="ttdeci">int ncopies_gauge</div><div class="ttdef"><b>Definition:</b> geometry.h:128</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_ac70d932690430b6bfe9607dc6f9870b9"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#ac70d932690430b6bfe9607dc6f9870b9">geometry_descriptor::rbuf_len</a></div><div class="ttdeci">int * rbuf_len</div><div class="ttdef"><b>Definition:</b> geometry.h:133</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_ac75b721c077490c1c15a628190108206"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#ac75b721c077490c1c15a628190108206">geometry_descriptor::total_spinor_master_pieces</a></div><div class="ttdeci">int total_spinor_master_pieces</div><div class="ttdef"><b>Definition:</b> geometry.h:123</div></div>
+<div class="ttc" id="astructgeometry__descriptor_html_aca58b874e5a5c021ca28fc9f0aee4495"><div class="ttname"><a href="../../df/da2/structgeometry__descriptor.html#aca58b874e5a5c021ca28fc9f0aee4495">geometry_descriptor::nbuffers_spinor</a></div><div class="ttdeci">int nbuffers_spinor</div><div class="ttdef"><b>Definition:</b> geometry.h:131</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_856524284ebe840938865dc061f982fb.html">Include</a></li><li class="navelem"><b>geometry.h</b></li>
+    <li class="navelem"><a class="el" href="../../dir_856524284ebe840938865dc061f982fb.html">Include</a></li><li class="navelem"><a class="el" href="../../d4/d67/geometry_8h.html">geometry.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

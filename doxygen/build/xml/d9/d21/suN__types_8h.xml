@@ -46,7 +46,7 @@
       </node>
       <node id="5">
         <label>dirac.h</label>
-        <link refid="d0/d40/dirac_8h_source"/>
+        <link refid="d0/d40/dirac_8h"/>
       </node>
       <node id="3">
         <label>global.h</label>
@@ -64,7 +64,7 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="28">
         <label>disconnected.h</label>
         <link refid="dc/d1e/disconnected_8h_source"/>
       </node>
@@ -74,12 +74,16 @@
       </node>
       <node id="17">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
@@ -89,17 +93,17 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
         <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -114,7 +118,13 @@
         <label>io.h</label>
         <link refid="dc/dac/io_8h_source"/>
       </node>
-      <node id="24">
+      <node id="20">
+        <label>dirac_cpu.h</label>
+        <link refid="df/d5f/dirac__cpu_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
         <label>wilsonflow.h</label>
         <link refid="d3/df8/wilsonflow_8h_source"/>
       </node>
@@ -145,20 +155,26 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="15">
         <label>spectrum.h</label>
         <link refid="d6/d16/spectrum_8h_source"/>
       </node>
-      <node id="20">
+      <node id="22">
         <label>linear_algebra.h</label>
         <link refid="dc/d9c/linear__algebra_8h_source"/>
+      </node>
+      <node id="21">
+        <label>dirac_default.h</label>
+        <link refid="dd/d5f/dirac__default_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="8">
         <label>spin_matrix.h</label>
@@ -176,44 +192,44 @@
         <label>propagator.h</label>
         <link refid="d6/d71/propagator_8h_source"/>
       </node>
-      <node id="28">
+      <node id="30">
         <label>scattering.h</label>
         <link refid="df/dc5/scattering_8h_source"/>
       </node>
       <node id="19">
         <label>communications.h</label>
-        <link refid="d2/d6f/communications_8h_source"/>
+        <link refid="d2/d6f/communications_8h"/>
       </node>
-      <node id="25">
+      <node id="27">
         <label>suN.h</label>
         <link refid="d1/d36/suN_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
@@ -221,22 +237,22 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="23">
         <label>memory.h</label>
-        <link refid="dc/d18/memory_8h_source"/>
+        <link refid="dc/d18/memory_8h"/>
       </node>
-      <node id="22">
+      <node id="24">
         <label>moreio.h</label>
         <link refid="d0/d5a/moreio_8h_source"/>
       </node>
-      <node id="23">
+      <node id="25">
         <label>random.h</label>
         <link refid="d1/d79/random_8h_source"/>
       </node>
-      <node id="27">
+      <node id="29">
         <label>glueballs.h</label>
         <link refid="db/d97/glueballs_8h_source"/>
         <childnode refid="13" relation="include">
@@ -438,22 +454,22 @@
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21" refid="d3/d0c/structsuNg__vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>c[2];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/>hr_complex<sp/>c[2];</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">}<sp/><ref refid="d3/d0c/structsuNg__vector" kindref="compound">suNg_vector</ref>;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26" refid="d1/d07/structsuNg__vector__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>c[2];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/>hr_complex_flt<sp/>c[2];</highlight></codeline>
 <codeline lineno="29"><highlight class="normal">}<sp/><ref refid="d1/d07/structsuNg__vector__flt" kindref="compound">suNg_vector_flt</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31" refid="d8/d0f/structsuNg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/>hr_complex<sp/>c[4];</highlight></codeline>
 <codeline lineno="34"><highlight class="normal">}<sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref>;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36" refid="d1/d3e/structsuNg__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/>hr_complex_flt<sp/>c[4];</highlight></codeline>
 <codeline lineno="39"><highlight class="normal">}<sp/><ref refid="d1/d3e/structsuNg__flt" kindref="compound">suNg_flt</ref>;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref><sp/><ref refid="d8/d0f/structsuNg" kindref="compound">suNgc</ref>;</highlight></codeline>
@@ -493,22 +509,22 @@
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76" refid="de/d49/structsuNf__vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>c[2];</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/>hr_complex<sp/>c[2];</highlight></codeline>
 <codeline lineno="79"><highlight class="normal">}<sp/><ref refid="de/d49/structsuNf__vector" kindref="compound">suNf_vector</ref>;</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81" refid="d8/d5b/structsuNf__vector__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>c[2];</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/>hr_complex_flt<sp/>c[2];</highlight></codeline>
 <codeline lineno="84"><highlight class="normal">}<sp/><ref refid="d8/d5b/structsuNf__vector__flt" kindref="compound">suNf_vector_flt</ref>;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
 <codeline lineno="86" refid="d0/d04/structsuNf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/>hr_complex<sp/>c[4];</highlight></codeline>
 <codeline lineno="89"><highlight class="normal">}<sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref>;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
 <codeline lineno="91" refid="db/d3f/structsuNf__flt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><ref refid="dc/d03/structhr__complex__flt" kindref="compound">hr_complex_flt</ref><sp/>c[4];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/>hr_complex_flt<sp/>c[4];</highlight></codeline>
 <codeline lineno="94"><highlight class="normal">}<sp/><ref refid="db/d3f/structsuNf__flt" kindref="compound">suNf_flt</ref>;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNf</ref><sp/><ref refid="d0/d04/structsuNf" kindref="compound">suNfc</ref>;</highlight></codeline>

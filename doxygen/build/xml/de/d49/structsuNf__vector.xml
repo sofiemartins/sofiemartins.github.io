@@ -4,7 +4,7 @@
     <compoundname>suNf_vector</compoundname>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="de/d49/structsuNf__vector_1a4dd1c170d17c5ebf1d8e78720a0fdd69" prot="public" static="no" mutable="no">
-        <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+        <type>hr_complex</type>
         <definition>hr_complex suNf_vector::c[2]</definition>
         <argsstring>[2]</argsstring>
         <name>c</name>

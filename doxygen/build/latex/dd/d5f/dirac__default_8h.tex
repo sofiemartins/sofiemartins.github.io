@@ -1,0 +1,383 @@
+\hypertarget{dirac__default_8h}{}\doxysection{dirac\+\_\+default.\+h File Reference}
+\label{dirac__default_8h}\index{dirac\_default.h@{dirac\_default.h}}
+
+
+Implementation of the Dirac operator (Default Functions)  
+
+
+{\ttfamily \#include \char`\"{}spinor\+\_\+field.\+h\char`\"{}}\newline
+Include dependency graph for dirac\+\_\+default.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long int \mbox{\hyperlink{dirac__default_8h_a637a2e5d4765091eb7a3b321f38440c1}{get\+MVM}} ()
+\begin{DoxyCompactList}\small\item\em Number of times the Dirac operator was applied. \end{DoxyCompactList}\item 
+unsigned long int \mbox{\hyperlink{dirac__default_8h_a702cd61b648b77b1dcc126bbb29194b8}{get\+MVM\+\_\+flt}} ()
+\begin{DoxyCompactList}\small\item\em nnumber of times the single precision Dirac operator was applied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_af3b828209f4a879d2a7a576e1d4b9a27}{Dphi\+\_\+}} (\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Massless Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_a401a866a1c73789d9a07b9b3384b95a5}{Dphi}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_a68849237f1eedede90b88e21ff727009}{g5\+Dphi}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Hermitian Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_adf394f28e01b9adf09be10f5c26a9359}{g5\+Dphi\+\_\+sq}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Square Hermitian Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_a1f1429f60c751a314636d06ff885def2}{Dphi\+\_\+flt\+\_\+}} (\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Single precision massless Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_a866e5fd829738102ec3f4638590bf47e}{Dphi\+\_\+flt}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Single precision Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_ac24de8c37ca66ceaa575b1ff925a69b7}{g5\+Dphi\+\_\+flt}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Single precision Hermitian Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_afa21fe8a182663059efd418a70cd6e16}{g5\+Dphi\+\_\+sq\+\_\+flt}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Single precision squared Hermitian Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_a08f81b3222b5cef992c29b6df12e08e5}{Dphi\+\_\+eopre}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/odd preconditioned application of Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_ac423f272f5489de9f79d41ee0e02bda2}{Dphi\+\_\+oepre}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/odd preconditioned application of Dirac operator, even to odd. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_a9c73b99e7d8d93e99dbe440d910775ce}{g5\+Dphi\+\_\+eopre}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/odd preconditioned application of Hermitian Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_ac24854f93d6060a0b70f61a8561b5ffd}{g5\+Dphi\+\_\+eopre\+\_\+sq}} (double m0, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$out, \mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/odd preconditioned application of squared Hermitian Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_a42cd53e18b68568ffc30823c783d526d}{Dphi\+\_\+eopre\+\_\+flt}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/odd preconditioned application of the single precision Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_aee3deb9a3af2136a783c707471fb52b2}{Dphi\+\_\+oepre\+\_\+flt}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/odd preconditioned application of the single precision Dirac operator, even to odd. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise this corresponds to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_aff3135bc7d19e04234febb80654b034d}{g5\+Dphi\+\_\+eopre\+\_\+flt}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/odd preconditioned application of the single precision Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise this corresponds to calling the standard CPU version. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{dirac__default_8h_af27da4ab9b1e1d7cd83a7ca02d5a58d0}{g5\+Dphi\+\_\+eopre\+\_\+sq\+\_\+flt}} (double m0, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$out, \mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$in)
+\begin{DoxyCompactList}\small\item\em Even-\/odd preconditioned application of the single precision squared Hermitian Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise this corresponds to calling the standard CPU version. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{dirac__default_8h_ad13f589843028792cddf459129c614cb}\label{dirac__default_8h_ad13f589843028792cddf459129c614cb}} 
+void {\bfseries set\+\_\+dirac\+\_\+mass} (double mass)
+\item 
+\mbox{\Hypertarget{dirac__default_8h_aa515c511f1eba7fd8125fad312f1d363}\label{dirac__default_8h_aa515c511f1eba7fd8125fad312f1d363}} 
+double {\bfseries get\+\_\+dirac\+\_\+mass} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the Dirac operator (Default Functions) 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dirac__default_8h_a401a866a1c73789d9a07b9b3384b95a5}\label{dirac__default_8h_a401a866a1c73789d9a07b9b3384b95a5}} 
+\index{dirac\_default.h@{dirac\_default.h}!Dphi@{Dphi}}
+\index{Dphi@{Dphi}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{Dphi()}{Dphi()}}
+{\footnotesize\ttfamily void Dphi (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_af3b828209f4a879d2a7a576e1d4b9a27}\label{dirac__default_8h_af3b828209f4a879d2a7a576e1d4b9a27}} 
+\index{dirac\_default.h@{dirac\_default.h}!Dphi\_@{Dphi\_}}
+\index{Dphi\_@{Dphi\_}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_()}{Dphi\_()}}
+{\footnotesize\ttfamily void Dphi\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Massless Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_a08f81b3222b5cef992c29b6df12e08e5}\label{dirac__default_8h_a08f81b3222b5cef992c29b6df12e08e5}} 
+\index{dirac\_default.h@{dirac\_default.h}!Dphi\_eopre@{Dphi\_eopre}}
+\index{Dphi\_eopre@{Dphi\_eopre}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_eopre()}{Dphi\_eopre()}}
+{\footnotesize\ttfamily void Dphi\+\_\+eopre (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/odd preconditioned application of Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Even output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Odd input spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_a42cd53e18b68568ffc30823c783d526d}\label{dirac__default_8h_a42cd53e18b68568ffc30823c783d526d}} 
+\index{dirac\_default.h@{dirac\_default.h}!Dphi\_eopre\_flt@{Dphi\_eopre\_flt}}
+\index{Dphi\_eopre\_flt@{Dphi\_eopre\_flt}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_eopre\_flt()}{Dphi\_eopre\_flt()}}
+{\footnotesize\ttfamily void Dphi\+\_\+eopre\+\_\+flt (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/odd preconditioned application of the single precision Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Even output single precision spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Odd input single precision spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_a866e5fd829738102ec3f4638590bf47e}\label{dirac__default_8h_a866e5fd829738102ec3f4638590bf47e}} 
+\index{dirac\_default.h@{dirac\_default.h}!Dphi\_flt@{Dphi\_flt}}
+\index{Dphi\_flt@{Dphi\_flt}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_flt()}{Dphi\_flt()}}
+{\footnotesize\ttfamily void Dphi\+\_\+flt (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Single precision Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Single precision output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Single precision input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_a1f1429f60c751a314636d06ff885def2}\label{dirac__default_8h_a1f1429f60c751a314636d06ff885def2}} 
+\index{dirac\_default.h@{dirac\_default.h}!Dphi\_flt\_@{Dphi\_flt\_}}
+\index{Dphi\_flt\_@{Dphi\_flt\_}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_flt\_()}{Dphi\_flt\_()}}
+{\footnotesize\ttfamily void Dphi\+\_\+flt\+\_\+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Single precision massless Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Single precision output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Single precision input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_ac423f272f5489de9f79d41ee0e02bda2}\label{dirac__default_8h_ac423f272f5489de9f79d41ee0e02bda2}} 
+\index{dirac\_default.h@{dirac\_default.h}!Dphi\_oepre@{Dphi\_oepre}}
+\index{Dphi\_oepre@{Dphi\_oepre}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_oepre()}{Dphi\_oepre()}}
+{\footnotesize\ttfamily void Dphi\+\_\+oepre (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/odd preconditioned application of Dirac operator, even to odd. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Odd output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Even input spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_aee3deb9a3af2136a783c707471fb52b2}\label{dirac__default_8h_aee3deb9a3af2136a783c707471fb52b2}} 
+\index{dirac\_default.h@{dirac\_default.h}!Dphi\_oepre\_flt@{Dphi\_oepre\_flt}}
+\index{Dphi\_oepre\_flt@{Dphi\_oepre\_flt}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{Dphi\_oepre\_flt()}{Dphi\_oepre\_flt()}}
+{\footnotesize\ttfamily void Dphi\+\_\+oepre\+\_\+flt (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/odd preconditioned application of the single precision Dirac operator, even to odd. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise this corresponds to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Odd output single precision spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Even input single precision spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_a68849237f1eedede90b88e21ff727009}\label{dirac__default_8h_a68849237f1eedede90b88e21ff727009}} 
+\index{dirac\_default.h@{dirac\_default.h}!g5Dphi@{g5Dphi}}
+\index{g5Dphi@{g5Dphi}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi()}{g5Dphi()}}
+{\footnotesize\ttfamily void g5\+Dphi (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Hermitian Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_a9c73b99e7d8d93e99dbe440d910775ce}\label{dirac__default_8h_a9c73b99e7d8d93e99dbe440d910775ce}} 
+\index{dirac\_default.h@{dirac\_default.h}!g5Dphi\_eopre@{g5Dphi\_eopre}}
+\index{g5Dphi\_eopre@{g5Dphi\_eopre}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_eopre()}{g5Dphi\_eopre()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+eopre (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/odd preconditioned application of Hermitian Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Even output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Odd input spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_aff3135bc7d19e04234febb80654b034d}\label{dirac__default_8h_aff3135bc7d19e04234febb80654b034d}} 
+\index{dirac\_default.h@{dirac\_default.h}!g5Dphi\_eopre\_flt@{g5Dphi\_eopre\_flt}}
+\index{g5Dphi\_eopre\_flt@{g5Dphi\_eopre\_flt}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_eopre\_flt()}{g5Dphi\_eopre\_flt()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+eopre\+\_\+flt (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/odd preconditioned application of the single precision Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise this corresponds to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Even output single precision spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Odd input single precision spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_ac24854f93d6060a0b70f61a8561b5ffd}\label{dirac__default_8h_ac24854f93d6060a0b70f61a8561b5ffd}} 
+\index{dirac\_default.h@{dirac\_default.h}!g5Dphi\_eopre\_sq@{g5Dphi\_eopre\_sq}}
+\index{g5Dphi\_eopre\_sq@{g5Dphi\_eopre\_sq}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_eopre\_sq()}{g5Dphi\_eopre\_sq()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+eopre\+\_\+sq (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/odd preconditioned application of squared Hermitian Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Even output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Odd input spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_af27da4ab9b1e1d7cd83a7ca02d5a58d0}\label{dirac__default_8h_af27da4ab9b1e1d7cd83a7ca02d5a58d0}} 
+\index{dirac\_default.h@{dirac\_default.h}!g5Dphi\_eopre\_sq\_flt@{g5Dphi\_eopre\_sq\_flt}}
+\index{g5Dphi\_eopre\_sq\_flt@{g5Dphi\_eopre\_sq\_flt}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_eopre\_sq\_flt()}{g5Dphi\_eopre\_sq\_flt()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+eopre\+\_\+sq\+\_\+flt (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Even-\/odd preconditioned application of the single precision squared Hermitian Dirac operator, odd to even. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise this corresponds to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass paramter \\
+\hline
+{\em out} & Even output single precision spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Odd input single precision spinor field before Dirac operation application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_ac24de8c37ca66ceaa575b1ff925a69b7}\label{dirac__default_8h_ac24de8c37ca66ceaa575b1ff925a69b7}} 
+\index{dirac\_default.h@{dirac\_default.h}!g5Dphi\_flt@{g5Dphi\_flt}}
+\index{g5Dphi\_flt@{g5Dphi\_flt}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_flt()}{g5Dphi\_flt()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+flt (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Single precision Hermitian Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Single precision output spinor field that the operator will be applied to \\
+\hline
+{\em in} & Single precision input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_adf394f28e01b9adf09be10f5c26a9359}\label{dirac__default_8h_adf394f28e01b9adf09be10f5c26a9359}} 
+\index{dirac\_default.h@{dirac\_default.h}!g5Dphi\_sq@{g5Dphi\_sq}}
+\index{g5Dphi\_sq@{g5Dphi\_sq}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_sq()}{g5Dphi\_sq()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+sq (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field}{spinor\+\_\+field}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Square Hermitian Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Output spinor field that will contain the result of the operation \\
+\hline
+{\em in} & Input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_afa21fe8a182663059efd418a70cd6e16}\label{dirac__default_8h_afa21fe8a182663059efd418a70cd6e16}} 
+\index{dirac\_default.h@{dirac\_default.h}!g5Dphi\_sq\_flt@{g5Dphi\_sq\_flt}}
+\index{g5Dphi\_sq\_flt@{g5Dphi\_sq\_flt}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{g5Dphi\_sq\_flt()}{g5Dphi\_sq\_flt()}}
+{\footnotesize\ttfamily void g5\+Dphi\+\_\+sq\+\_\+flt (\begin{DoxyParamCaption}\item[{double}]{m0,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{out,  }\item[{\mbox{\hyperlink{structspinor__field__flt}{spinor\+\_\+field\+\_\+flt}} $\ast$}]{in }\end{DoxyParamCaption})}
+
+
+
+Single precision squared Hermitian Dirac operator. This will run on the GPU when compiled WITH\+\_\+\+GPU, otherwise these correspond to calling the standard CPU version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m0} & Mass parameter \\
+\hline
+{\em out} & Single precision output spinor field that operator will be applied to \\
+\hline
+{\em in} & Single precision input spinor field before Dirac operator operation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dirac__default_8h_a637a2e5d4765091eb7a3b321f38440c1}\label{dirac__default_8h_a637a2e5d4765091eb7a3b321f38440c1}} 
+\index{dirac\_default.h@{dirac\_default.h}!getMVM@{getMVM}}
+\index{getMVM@{getMVM}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{getMVM()}{getMVM()}}
+{\footnotesize\ttfamily unsigned long int get\+MVM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Number of times the Dirac operator was applied. 
+
+\begin{DoxyReturn}{Returns}
+unsigned long int Number of applications of the Dirac operator to the full lattice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{dirac__default_8h_a702cd61b648b77b1dcc126bbb29194b8}\label{dirac__default_8h_a702cd61b648b77b1dcc126bbb29194b8}} 
+\index{dirac\_default.h@{dirac\_default.h}!getMVM\_flt@{getMVM\_flt}}
+\index{getMVM\_flt@{getMVM\_flt}!dirac\_default.h@{dirac\_default.h}}
+\doxysubsubsection{\texorpdfstring{getMVM\_flt()}{getMVM\_flt()}}
+{\footnotesize\ttfamily unsigned long int get\+MVM\+\_\+flt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+nnumber of times the single precision Dirac operator was applied. 
+
+\begin{DoxyReturn}{Returns}
+unsigned long in Number of applications of the single precision Dirac operator to the full lattice 
+\end{DoxyReturn}

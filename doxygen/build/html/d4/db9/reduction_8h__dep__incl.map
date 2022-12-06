@@ -1,0 +1,4 @@
+<map id="reduction.h" name="reduction.h">
+<area shape="rect" id="node1" title="Functions for MPI reductions." alt="" coords="26,5,113,32"/>
+<area shape="rect" id="node2" href="$d2/d6f/communications_8h.html" title="Communications to send and receive sites from other nodes using MPI." alt="" coords="5,80,133,107"/>
+</map>

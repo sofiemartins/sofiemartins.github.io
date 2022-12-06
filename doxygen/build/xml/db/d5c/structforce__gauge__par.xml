@@ -43,7 +43,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="69" column="10" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="db/d5c/structforce__gauge__par_1a3832cb5915d1280ab30cec098a0740ba" prot="public" static="no" mutable="no">
-        <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> **</type>
+        <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> **</type>
         <definition>suNg_av_field** force_gauge_par::momenta</definition>
         <argsstring></argsstring>
         <name>momenta</name>
@@ -61,6 +61,20 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="3">
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
+      </node>
+      <node id="2">
+        <label>suNg_av_field</label>
+        <link refid="db/dc8/structsuNg__av__field"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
       <node id="4">
         <label>suNg_algebra_vector</label>
         <link refid="d3/dcb/structsuNg__algebra__vector"/>
@@ -70,20 +84,6 @@
         <link refid="db/d5c/structforce__gauge__par"/>
         <childnode refid="2" relation="usage">
           <edgelabel>momenta</edgelabel>
-        </childnode>
-      </node>
-      <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
-      <node id="2">
-        <label>_suNg_av_field</label>
-        <link refid="d4/d75/struct__suNg__av__field"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>

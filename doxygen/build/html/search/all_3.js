@@ -1,10 +1,21 @@
 var searchData=
 [
-  ['field_5fgauge_5fpar_30',['field_gauge_par',['../d4/d5c/structfield__gauge__par.html',1,'']]],
-  ['field_5fscalar_5fpar_31',['field_scalar_par',['../df/da7/structfield__scalar__par.html',1,'']]],
-  ['force_5fauxfield_5fpar_32',['force_auxfield_par',['../d3/d99/structforce__auxfield__par.html',1,'']]],
-  ['force_5fgauge_5fpar_33',['force_gauge_par',['../db/d5c/structforce__gauge__par.html',1,'']]],
-  ['force_5fhmc_5fpar_34',['force_hmc_par',['../df/d6a/structforce__hmc__par.html',1,'']]],
-  ['force_5frhmc_5fpar_35',['force_rhmc_par',['../d1/d17/structforce__rhmc__par.html',1,'']]],
-  ['force_5fscalar_5fpar_36',['force_scalar_par',['../dc/df8/structforce__scalar__par.html',1,'']]]
+  ['chisf_5fmem_45',['chisf_mem',['../da/dc2/structchisf__mem.html',1,'']]],
+  ['communications_2eh_46',['communications.h',['../d2/d6f/communications_8h.html',1,'']]],
+  ['complete_5fclover_5fforce_5fsendrecv_47',['complete_clover_force_sendrecv',['../d2/d6f/communications_8h.html#a308b7242ea075dc4d879b57cae5d43e4',1,'communications.h']]],
+  ['complete_5fgf_5fsendrecv_48',['complete_gf_sendrecv',['../d2/d6f/communications_8h.html#aa6d8128421b03b6203e774b951892ef1',1,'communications.h']]],
+  ['complete_5fgf_5fsendrecv_5fflt_49',['complete_gf_sendrecv_flt',['../d2/d6f/communications_8h.html#a04586ac967099d6f59e30ac9be708ce1',1,'communications.h']]],
+  ['complete_5fgt_5fsendrecv_50',['complete_gt_sendrecv',['../d2/d6f/communications_8h.html#a19cb70363d853a23bf31d3abf4b8524a',1,'communications.h']]],
+  ['complete_5fsc_5fsendrecv_51',['complete_sc_sendrecv',['../d2/d6f/communications_8h.html#a34eafb5eab193366814178a808c6c0ee',1,'communications.h']]],
+  ['complete_5fsf_5fsendrecv_52',['complete_sf_sendrecv',['../d2/d6f/communications_8h.html#a4606bc49ec50028fd650774dc935a2ca',1,'communications.h']]],
+  ['complete_5fsf_5fsendrecv_5fflt_53',['complete_sf_sendrecv_flt',['../d2/d6f/communications_8h.html#a1e958980579362d32e3c69290e18a522',1,'communications.h']]],
+  ['copy_5ffrom_5fgpu_5fsfield_54',['copy_from_gpu_sfield',['../dc/d18/memory_8h.html#a07f3b3636afbb530d504ec9e70becd0f',1,'memory.h']]],
+  ['copy_5ffrom_5fgpu_5fspinor_5ffield_5ff_55',['copy_from_gpu_spinor_field_f',['../dc/d18/memory_8h.html#ae70a6e7403fd9c85906a696a95498bb3',1,'memory.h']]],
+  ['copy_5ffrom_5fgpu_5fspinor_5ffield_5ff_5fflt_56',['copy_from_gpu_spinor_field_f_flt',['../dc/d18/memory_8h.html#a0f2efe35f4974558f5efdf50e3946e01',1,'memory.h']]],
+  ['copy_5fto_5fgpu_5fsfield_57',['copy_to_gpu_sfield',['../dc/d18/memory_8h.html#aab72509542f470e2c1165faa1b7a3543',1,'memory.h']]],
+  ['copy_5fto_5fgpu_5fspinor_5ffield_5ff_58',['copy_to_gpu_spinor_field_f',['../dc/d18/memory_8h.html#a6ccf05ea8346b588c7057ac8af55005f',1,'memory.h']]],
+  ['copy_5fto_5fgpu_5fspinor_5ffield_5ff_5fflt_59',['copy_to_gpu_spinor_field_f_flt',['../dc/d18/memory_8h.html#a99a1754aa3b3385918721f74950445b7',1,'memory.h']]],
+  ['cor_5flist_60',['cor_list',['../d5/d06/structcor__list.html',1,'']]],
+  ['cor_5fpoints_61',['cor_points',['../d3/d17/structcor__points.html',1,'']]],
+  ['cpu_5fgeometry_2eh_62',['cpu_geometry.h',['../de/d59/cpu__geometry_8h.html',1,'']]]
 ];

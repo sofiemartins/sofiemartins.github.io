@@ -30,7 +30,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="53" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d6a/structforce__hmc__par_1a1959cf47146f0ffb548551715111fd78" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* force_hmc_par::pf</definition>
         <argsstring></argsstring>
         <name>pf</name>
@@ -147,7 +147,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" line="61" column="7" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/update.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="df/d6a/structforce__hmc__par_1a3c02123a0549445a051c8b85130b064e" prot="public" static="no" mutable="no">
-        <type><ref refid="d4/d75/struct__suNg__av__field" kindref="compound">suNg_av_field</ref> **</type>
+        <type><ref refid="db/dc8/structsuNg__av__field" kindref="compound">suNg_av_field</ref> **</type>
         <definition>suNg_av_field** force_hmc_par::momenta</definition>
         <argsstring></argsstring>
         <name>momenta</name>
@@ -165,62 +165,62 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
+      <node id="4">
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
+      </node>
+      <node id="3">
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
       <node id="7">
+        <label>suNg_av_field</label>
+        <link refid="db/dc8/structsuNg__av__field"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
         <label>suNg_algebra_vector</label>
         <link refid="d3/dcb/structsuNg__algebra__vector"/>
       </node>
-      <node id="4">
+      <node id="5">
         <label>suNf_spinor</label>
         <link refid="d8/dd1/structsuNf__spinor"/>
-        <childnode refid="5" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>c</edgelabel>
         </childnode>
       </node>
-      <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
-      <node id="8">
+      <node id="2">
         <label>mre_par</label>
         <link refid="df/d69/structmre__par"/>
-        <childnode refid="2" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>s</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>ptr</edgelabel>
-        </childnode>
-      </node>
-      <node id="6">
-        <label>_suNg_av_field</label>
-        <link refid="d4/d75/struct__suNg__av__field"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>type</edgelabel>
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
       <node id="1">
         <label>force_hmc_par</label>
         <link refid="df/d6a/structforce__hmc__par"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>pf</edgelabel>
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>momenta</edgelabel>
-        </childnode>
-        <childnode refid="8" relation="usage">
           <edgelabel>mpar</edgelabel>
         </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pf</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>momenta</edgelabel>
+        </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>suNf_vector</label>
         <link refid="de/d49/structsuNf__vector"/>
       </node>

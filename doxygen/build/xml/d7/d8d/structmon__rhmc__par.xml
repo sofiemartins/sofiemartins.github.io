@@ -43,7 +43,7 @@
         <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" line="62" column="16" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/monomials.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="d7/d8d/structmon__rhmc__par_1a9bf6fe25b91a0594722d0510afdec016" prot="public" static="no" mutable="no">
-        <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+        <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
         <definition>spinor_field* mon_rhmc_par::pf</definition>
         <argsstring></argsstring>
         <name>pf</name>
@@ -61,59 +61,59 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="6">
+      <node id="2">
         <label>_rational_app</label>
         <link refid="d1/d9f/struct__rational__app"/>
       </node>
-      <node id="9">
-        <label>suNg_algebra_vector</label>
-        <link refid="d3/dcb/structsuNg__algebra__vector"/>
-      </node>
       <node id="4">
-        <label>suNf_spinor</label>
-        <link refid="d8/dd1/structsuNf__spinor"/>
-        <childnode refid="5" relation="usage">
-          <edgelabel>c</edgelabel>
-        </childnode>
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
       </node>
       <node id="3">
-        <label>_geometry_descriptor</label>
-        <link refid="db/d43/struct__geometry__descriptor"/>
-      </node>
-      <node id="1">
-        <label>mon_rhmc_par</label>
-        <link refid="d7/d8d/structmon__rhmc__par"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>pf</edgelabel>
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>ratio</edgelabel>
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>fpar</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>_spinor_field</label>
-        <link refid="d3/d33/struct__spinor__field"/>
-        <childnode refid="3" relation="usage">
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
+        <childnode refid="4" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
       <node id="8">
-        <label>_suNg_av_field</label>
-        <link refid="d4/d75/struct__suNg__av__field"/>
-        <childnode refid="3" relation="usage">
+        <label>suNg_av_field</label>
+        <link refid="db/dc8/structsuNg__av__field"/>
+        <childnode refid="4" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="9" relation="usage">
           <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
+      <node id="9">
+        <label>suNg_algebra_vector</label>
+        <link refid="d3/dcb/structsuNg__algebra__vector"/>
+      </node>
       <node id="5">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>mon_rhmc_par</label>
+        <link refid="d7/d8d/structmon__rhmc__par"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ratio</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pf</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>fpar</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
         <label>suNf_vector</label>
         <link refid="de/d49/structsuNf__vector"/>
       </node>
@@ -121,10 +121,10 @@
         <label>force_rhmc_par</label>
         <link refid="d1/d17/structforce__rhmc__par"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>pf</edgelabel>
-        </childnode>
-        <childnode refid="6" relation="usage">
           <edgelabel>ratio</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pf</edgelabel>
         </childnode>
         <childnode refid="8" relation="usage">
           <edgelabel>momenta</edgelabel>

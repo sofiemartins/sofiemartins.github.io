@@ -1,10 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "_bcfghlmprsw",
-  1: "_bcfghlmpsw",
-  2: "g",
-  3: "ps",
-  4: "rw"
+  0: "_abcdfgilmnprstw",
+  1: "_bcfglmpsw",
+  2: "cdgmrst",
+  3: "abcdfgst",
+  4: "ilmnprst",
+  5: "_rw"
 };
 
 var indexSectionNames =
@@ -12,8 +13,9 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "files",
-  3: "variables",
-  4: "defines"
+  3: "functions",
+  4: "variables",
+  5: "defines"
 };
 
 var indexSectionLabels =
@@ -21,7 +23,8 @@ var indexSectionLabels =
   0: "All",
   1: "Classes",
   2: "Files",
-  3: "Variables",
-  4: "Macros"
+  3: "Functions",
+  4: "Variables",
+  5: "Macros"
 };
 

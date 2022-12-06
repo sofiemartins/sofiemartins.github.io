@@ -114,8 +114,8 @@ $(document).ready(function(){initNavTree('d2/dfb/cpu__complex_8h_source.html','.
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// and defines type-generic macros for math functions</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// e.g: float complex fc; creal(fc) invokes crealf(fc)</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> complex <a class="code" href="../../d7/de2/structhr__complex.html">hr_complex</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">float</span> complex <a class="code" href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span> complex hr_complex;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">float</span> complex hr_complex_flt;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/*******************************************************************************</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">*</span></div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('d2/dfb/cpu__complex_8h_source.html','.
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">* Re((1-a)^*(1-b)) (a,b complex)</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#define _complex_prod_m1_re(a,b) \</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">   creal(conj(1-a)*b)</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">   creal(conj(1-a)*(1-b))</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">* Im(a^*b) (a,b complex)</span></div>
@@ -388,8 +388,6 @@ $(document).ready(function(){initNavTree('d2/dfb/cpu__complex_8h_source.html','.
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">    (a)+=(z1)*(c1)+(z2)*(c2)</span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="astructhr__complex__flt_html"><div class="ttname"><a href="../../dc/d03/structhr__complex__flt.html">hr_complex_flt</a></div><div class="ttdef"><b>Definition:</b> gpu_complex.h:291</div></div>
-<div class="ttc" id="astructhr__complex_html"><div class="ttname"><a href="../../d7/de2/structhr__complex.html">hr_complex</a></div><div class="ttdef"><b>Definition:</b> gpu_complex.h:606</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

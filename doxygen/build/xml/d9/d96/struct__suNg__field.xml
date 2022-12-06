@@ -2,35 +2,67 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="d9/d96/struct__suNg__field" kind="struct" language="C++" prot="public">
     <compoundname>_suNg_field</compoundname>
+    <includes refid="d3/ded/spinor__field_8h" local="no">spinor_field.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="d9/d96/struct__suNg__field_1aeffc93216d18979c42c04c2f68d9f135" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d9/d96/struct__suNg__field_1a7ddd821bc5f1935925035e45b8b35559" prot="public" static="no" mutable="no">
         <type><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> *</type>
-        <definition>suNg* _suNg_field::ptr</definition>
+        <definition>_suNg_field::ptr</definition>
         <argsstring></argsstring>
         <name>ptr</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Array of SU(N_g) matrices, that contains the field data for the local lattice (in host memory) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="45" column="32" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="45" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="85" column="6" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="85" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="d9/d96/struct__suNg__field_1ab0ec502675260ebe78cd9b6637fb04e9" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="d9/d96/struct__suNg__field_1a757e8ca74f63628b8f9a12e99c614bc6" prot="public" static="no" mutable="no">
         <type><ref refid="db/d43/struct__geometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
-        <definition>geometry_descriptor* _suNg_field::type</definition>
+        <definition>_suNg_field::type</definition>
         <argsstring></argsstring>
         <name>type</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>geometry_descriptor contains geometry information for example pertaining the block decomposition </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="45" column="57" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="45" bodyend="-1"/>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="86" column="21" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d96/struct__suNg__field_1a98b482db466600c28db98da97605b302" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/d0f/structsuNg" kindref="compound">suNg</ref> *</type>
+        <definition>_suNg_field::gpu_ptr</definition>
+        <argsstring></argsstring>
+        <name>gpu_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only active for WITH_GPU. Contains field data on GPU memory. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="87" column="6" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d96/struct__suNg__field_1a07bc349d2483a0e36b6ba95ed7450b27" prot="public" static="no" mutable="no">
+        <type>MPI_Request</type>
+        <definition>_suNg_field::comm_req</definition>
+        <argsstring></argsstring>
+        <name>comm_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only active for WITH_MPI. Communication request handles for inter-node communication. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="88" column="13" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Gauge field of SU(N_g) matrices. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -42,6 +74,7 @@
           <edgelabel>type</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
+          <edgelabel>gpu_ptr</edgelabel>
           <edgelabel>ptr</edgelabel>
         </childnode>
       </node>
@@ -54,10 +87,12 @@
         <link refid="d8/d0f/structsuNg"/>
       </node>
     </collaborationgraph>
-    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="45" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="45" bodyend="45"/>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="84" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="84" bodyend="89"/>
     <listofallmembers>
-      <member refid="d9/d96/struct__suNg__field_1aeffc93216d18979c42c04c2f68d9f135" prot="public" virt="non-virtual"><scope>_suNg_field</scope><name>ptr</name></member>
-      <member refid="d9/d96/struct__suNg__field_1ab0ec502675260ebe78cd9b6637fb04e9" prot="public" virt="non-virtual"><scope>_suNg_field</scope><name>type</name></member>
+      <member refid="d9/d96/struct__suNg__field_1a07bc349d2483a0e36b6ba95ed7450b27" prot="public" virt="non-virtual"><scope>_suNg_field</scope><name>comm_req</name></member>
+      <member refid="d9/d96/struct__suNg__field_1a98b482db466600c28db98da97605b302" prot="public" virt="non-virtual"><scope>_suNg_field</scope><name>gpu_ptr</name></member>
+      <member refid="d9/d96/struct__suNg__field_1a7ddd821bc5f1935925035e45b8b35559" prot="public" virt="non-virtual"><scope>_suNg_field</scope><name>ptr</name></member>
+      <member refid="d9/d96/struct__suNg__field_1a757e8ca74f63628b8f9a12e99c614bc6" prot="public" virt="non-virtual"><scope>_suNg_field</scope><name>type</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

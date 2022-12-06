@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="d0/da8/structspinor__field" kind="struct" language="C++" prot="public">
+    <compoundname>spinor_field</compoundname>
+    <includes refid="d3/ded/spinor__field_8h" local="no">spinor_field.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d0/da8/structspinor__field_1a16bef9ac5c454da8aad1506aad988b9a" prot="public" static="no" mutable="no">
+        <type><ref refid="d8/dd1/structsuNf__spinor" kindref="compound">suNf_spinor</ref> *</type>
+        <definition>spinor_field::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array of SU(N_f) spinors, that contains the field data for the local lattice (in host memory) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="171" column="28" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/da8/structspinor__field_1ad45e24cc85046c9077afaa42a9097760" prot="public" static="no" mutable="no">
+        <type><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> *</type>
+        <definition>spinor_field::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="df/da2/structgeometry__descriptor" kindref="compound">geometry_descriptor</ref> that contains geometry information, for example pertaining the block decomposition </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="171" column="54" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Spinor field array containing SU(N_f) spinors in chosen fermion representation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>geometry_descriptor</label>
+        <link refid="df/da2/structgeometry__descriptor"/>
+      </node>
+      <node id="1">
+        <label>spinor_field</label>
+        <link refid="d0/da8/structspinor__field"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>type</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ptr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>suNf_spinor</label>
+        <link refid="d8/dd1/structsuNf__spinor"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>suNf_vector</label>
+        <link refid="de/d49/structsuNf__vector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" line="171" column="1" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/spinor_field.h" bodystart="171" bodyend="171"/>
+    <listofallmembers>
+      <member refid="d0/da8/structspinor__field_1a16bef9ac5c454da8aad1506aad988b9a" prot="public" virt="non-virtual"><scope>spinor_field</scope><name>ptr</name></member>
+      <member refid="d0/da8/structspinor__field_1ad45e24cc85046c9077afaa42a9097760" prot="public" virt="non-virtual"><scope>spinor_field</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

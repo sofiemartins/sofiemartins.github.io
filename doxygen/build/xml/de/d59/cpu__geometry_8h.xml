@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="de/d59/cpu__geometry_8h" kind="file" language="C++">
+    <compoundname>cpu_geometry.h</compoundname>
+    <includes refid="da/dac/field__ordering_8h" local="yes">field_ordering.h</includes>
+    <includedby refid="d4/d67/geometry_8h" local="yes">geometry.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>cpu_geometry.h</label>
+        <link refid="de/d59/cpu__geometry_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>field_ordering.h</label>
+        <link refid="da/dac/field__ordering_8h_source"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>cpu_geometry.h</label>
+        <link refid="de/d59/cpu__geometry_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>dirac.h</label>
+        <link refid="d0/d40/dirac_8h"/>
+      </node>
+      <node id="4">
+        <label>global.h</label>
+        <link refid="d2/d49/global_8h_source"/>
+      </node>
+      <node id="5">
+        <label>utils.h</label>
+        <link refid="d5/d60/utils_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>geometry_check.h</label>
+        <link refid="d4/d3d/geometry__check_8h_source"/>
+      </node>
+      <node id="2">
+        <label>geometry.h</label>
+        <link refid="d4/d67/geometry_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="de/d59/cpu__geometry_8h_1ad7960dd90c7ef52dcf8fe0c381ad9be4" prot="public" static="no">
+        <name>_FIELD_AT</name>
+        <param><defname>s</defname></param>
+        <param><defname>i</defname></param>
+        <initializer>(((s)-&gt;ptr) + i - (s)-&gt;type-&gt;master_shift)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h" line="11" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d59/cpu__geometry_8h_1ac7842bf889ef64e8344cb5c1f2c8e08d" prot="public" static="no">
+        <name>_4FIELD_AT</name>
+        <param><defname>s</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>mu</defname></param>
+        <initializer>(((s)-&gt;ptr) + coord_to_index(i-(s)-&gt;type-&gt;master_shift,mu))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h" line="12" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d59/cpu__geometry_8h_1ac833819afc638970420fa945e9bdc15c" prot="public" static="no">
+        <name>_6FIELD_AT</name>
+        <param><defname>s</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>mu</defname></param>
+        <initializer>(((s)-&gt;ptr) + (( i - (s)-&gt;type-&gt;master_shift)*6+mu))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h" line="13" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="de/d59/cpu__geometry_8h_1aa9a6a25a8b9f948673e5c67aa35dc2e2" prot="public" static="no">
+        <name>_DFIELD_AT</name>
+        <param><defname>s</defname></param>
+        <param><defname>i</defname></param>
+        <param><defname>mu</defname></param>
+        <param><defname>size</defname></param>
+        <initializer>				(size == 1) ? _FIELD_AT(s,i) : \
+				((size == 4) ? _4FIELD_AT(s,i,mu) : \
+				 _6FIELD_AT(s,i,mu))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h" line="14" column="9" bodyfile="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This file contains macros to load elements of single sites of a field. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CPU_GEOMETRY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CPU_GEOMETRY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;field_ordering.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FIELD_AT(s,i)<sp/>(((s)-&gt;ptr)<sp/>+<sp/>i<sp/>-<sp/>(s)-&gt;type-&gt;master_shift)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_4FIELD_AT(s,i,mu)<sp/>(((s)-&gt;ptr)<sp/>+<sp/>coord_to_index(i-(s)-&gt;type-&gt;master_shift,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_6FIELD_AT(s,i,mu)<sp/>(((s)-&gt;ptr)<sp/>+<sp/>((<sp/>i<sp/>-<sp/>(s)-&gt;type-&gt;master_shift)*6+mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_DFIELD_AT(s,i,mu,size)<sp/>(size<sp/>==<sp/>1)<sp/>?<sp/>_FIELD_AT(s,i)<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((size<sp/>==<sp/>4)<sp/>?<sp/>_4FIELD_AT(s,i,mu)<sp/>:<sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_6FIELD_AT(s,i,mu))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/sofie/Workspace/HiRepDocs/HiRep/Include/cpu_geometry.h"/>
+  </compounddef>
+</doxygen>

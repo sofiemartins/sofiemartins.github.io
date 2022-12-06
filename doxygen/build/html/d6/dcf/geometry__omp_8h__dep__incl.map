@@ -1,0 +1,9 @@
+<map id="geometry_omp.h" name="geometry_omp.h">
+<area shape="rect" id="node1" title="This file contains useful macros that perform OpenMP reduction operations and are necessary to define..." alt="" coords="133,5,253,32"/>
+<area shape="rect" id="node2" href="$d4/d67/geometry_8h.html" title="This file contains information on the geometry of the local lattice, block decomposed geometry,..." alt="" coords="150,155,237,181"/>
+<area shape="rect" id="node7" href="$d3/d77/geometry__fuse_8h.html" title="FIXME: Add docs." alt="" coords="183,80,303,107"/>
+<area shape="rect" id="node3" href="$d4/d3d/geometry__check_8h_source.html" title=" " alt="" coords="5,229,136,256"/>
+<area shape="rect" id="node4" href="$d2/d49/global_8h_source.html" title=" " alt="" coords="160,229,227,256"/>
+<area shape="rect" id="node5" href="$d5/d60/utils_8h_source.html" title=" " alt="" coords="251,229,309,256"/>
+<area shape="rect" id="node6" href="$d0/d40/dirac_8h.html" title="Implementation of the Dirac operator." alt="" coords="249,304,311,331"/>
+</map>

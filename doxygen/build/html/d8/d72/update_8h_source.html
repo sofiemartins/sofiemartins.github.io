@@ -116,32 +116,32 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/* functions and structures for the MRE algorithm */</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../df/d69/structmre__par.html">   27</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *s[2];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *s[2];</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">int</span> num[2];</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">int</span> max;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">int</span> init;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="../../df/d69/structmre__par.html">mre_par</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> mre_guess(<a class="code" href="../../df/d69/structmre__par.html">mre_par</a> *, <span class="keywordtype">int</span>, <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *, spinor_operator, <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> mre_store(<a class="code" href="../../df/d69/structmre__par.html">mre_par</a> *, <span class="keywordtype">int</span>, <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> mre_guess(<a class="code" href="../../df/d69/structmre__par.html">mre_par</a> *, <span class="keywordtype">int</span>, <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *, spinor_operator, <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> mre_store(<a class="code" href="../../df/d69/structmre__par.html">mre_par</a> *, <span class="keywordtype">int</span>, <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> mre_init(<a class="code" href="../../df/d69/structmre__par.html">mre_par</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">double</span>);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d1/d17/structforce__rhmc__par.html">   39</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">int</span> id;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">int</span> n_pf;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *pf;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *pf;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">double</span> mass;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="../../d1/d9f/struct__rational__app.html">rational_app</a> *ratio;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">double</span> inv_err2;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> **momenta;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> **momenta;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <a class="code" href="../../d1/d17/structforce__rhmc__par.html">force_rhmc_par</a>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../df/d6a/structforce__hmc__par.html">   50</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">int</span> id;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">int</span> n_pf;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *pf;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *pf;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">int</span> hasenbusch;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">double</span> mass;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">double</span> b;</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">double</span> inv_err2, inv_err2_flt;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="../../df/d69/structmre__par.html">mre_par</a> mpar;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">int</span> logdet;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> **momenta;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> **momenta;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <a class="code" href="../../df/d6a/structforce__hmc__par.html">force_hmc_par</a>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../db/d5c/structforce__gauge__par.html">   65</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
@@ -157,15 +157,15 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">double</span> beta;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">double</span> c0;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">double</span> c1;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> **momenta;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> **momenta;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <a class="code" href="../../db/d5c/structforce__gauge__par.html">force_gauge_par</a>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="../../dc/df8/structforce__scalar__par.html">   73</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">double</span> mass;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">double</span> lambda;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a> **momenta;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> **g_momenta;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a> **momenta;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> **g_momenta;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <a class="code" href="../../dc/df8/structforce__scalar__par.html">force_scalar_par</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="../../d3/d99/structforce__auxfield__par.html">   81</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
@@ -175,14 +175,14 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="../../d4/d5c/structfield__gauge__par.html">   86</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="../../d9/d96/struct__suNg__field.html">suNg_field</a> **field;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> **momenta;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <a class="code" href="../../d2/d0e/structsuNg__field.html">suNg_field</a> **field;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> **momenta;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;} <a class="code" href="../../d4/d5c/structfield__gauge__par.html">field_gauge_par</a>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../df/da7/structfield__scalar__par.html">   92</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a> **field;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a> **momenta;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a> **field;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a> **momenta;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <a class="code" href="../../df/da7/structfield__scalar__par.html">field_scalar_par</a>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> update_gauge_field(<span class="keywordtype">double</span>, <span class="keywordtype">void</span> *);</div>
@@ -192,15 +192,15 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> force_scalar(<span class="keywordtype">double</span>, <span class="keywordtype">void</span> *);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">void</span> lw_force(<span class="keywordtype">double</span>, <span class="keywordtype">void</span> *);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> lw_local_action(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a> *, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> lw_local_action(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a> *, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> fermion_force_begin();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">void</span> fermion_force_end(<span class="keywordtype">double</span> dt, <a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> *);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> force_fermion_core(<a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *, <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> force_fermion_core_taylor(<a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *, <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">void</span> fermion_force_end(<span class="keywordtype">double</span> dt, <a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> *);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> force_fermion_core(<a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *, <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keywordtype">void</span> force_fermion_core_taylor(<a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *, <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *, <span class="keywordtype">int</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keywordtype">void</span> force_clover_logdet(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> force_clover_fermion(<a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *Xs, <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *Ys, <span class="keywordtype">double</span> residue);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">void</span> force_clover_fermion_taylor(<a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *Xs, <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *Ys, <span class="keywordtype">double</span> residue);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">void</span> force_clover_fermion(<a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *Xs, <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *Ys, <span class="keywordtype">double</span> residue);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keywordtype">void</span> force_clover_fermion_taylor(<a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *Xs, <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *Ys, <span class="keywordtype">double</span> residue);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> force_hmc(<span class="keywordtype">double</span>, <span class="keywordtype">void</span> *);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span> force_hmc_tm(<span class="keywordtype">double</span>, <span class="keywordtype">void</span> *);</div>
@@ -209,11 +209,11 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span> force_hmc_auxfields(<span class="keywordtype">double</span>, <span class="keywordtype">void</span> *); <span class="comment">//Force from a four_fermion monomial</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> force_hmc_ff(<span class="keywordtype">double</span>, <span class="keywordtype">void</span> *);      <span class="comment">//Force from a HMC_ff or Hasenbusch_ff monomial</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> gaussian_momenta(<a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> *momenta);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> gaussian_scalar_momenta(<a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a> *momenta);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> gaussian_spinor_field(<a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *s);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> gaussian_spinor_field_flt(<a class="code" href="../../d0/d00/struct__spinor__field__flt.html">spinor_field_flt</a> *s);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span> z2_spinor_field(<a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *s);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> gaussian_momenta(<a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> *momenta);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> gaussian_scalar_momenta(<a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a> *momenta);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> gaussian_spinor_field(<a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *s);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span> gaussian_spinor_field_flt(<a class="code" href="../../d4/dce/structspinor__field__flt.html">spinor_field_flt</a> *s);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">void</span> z2_spinor_field(<a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *s);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">/* For the fermion force ? */</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> corret_pf_dist_hmc();</div>
@@ -266,7 +266,7 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">void</span> init_smearing(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">double</span> avr_smeared_plaquette();</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keywordtype">void</span> smear_gauge_field();</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">void</span> smeared_gauge_force(<a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> *, <a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> *);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="keywordtype">void</span> smeared_gauge_force(<a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> *, <a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> *);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">/* local action */</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span></div>
@@ -280,37 +280,30 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"> * H = | momenta |^2 + S_g + &lt; phi1, phi2&gt;</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">void</span> local_hmc_action(local_action_type type,</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a> *loc_action,</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <a class="code" href="../../d4/d75/struct__suNg__av__field.html">suNg_av_field</a> *momenta,</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a> *momenta_s);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keywordtype">void</span> pf_local_action(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a> *loc_action,</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;           <a class="code" href="../../d3/d33/struct__spinor__field.html">spinor_field</a> *pf);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a> *loc_action,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <a class="code" href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a> *momenta,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a> *momenta_s);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keywordtype">void</span> pf_local_action(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a> *loc_action,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;           <a class="code" href="../../d0/da8/structspinor__field.html">spinor_field</a> *pf);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keywordtype">void</span> suNg_field_copy(<a class="code" href="../../d9/d96/struct__suNg__field.html">suNg_field</a> *g1, <a class="code" href="../../d9/d96/struct__suNg__field.html">suNg_field</a> *g2);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keywordtype">void</span> suNf_field_copy(<a class="code" href="../../da/d8f/struct__suNf__field.html">suNf_field</a> *g1, <a class="code" href="../../da/d8f/struct__suNf__field.html">suNf_field</a> *g2);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keywordtype">void</span> suNg_scalar_field_copy(<a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a> *g1, <a class="code" href="../../d8/dc4/struct__suNg__scalar__field.html">suNg_scalar_field</a> *g2);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="keywordtype">void</span> suNg_field_copy(<a class="code" href="../../d2/d0e/structsuNg__field.html">suNg_field</a> *g1, <a class="code" href="../../d2/d0e/structsuNg__field.html">suNg_field</a> *g2);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="keywordtype">void</span> suNf_field_copy(<a class="code" href="../../d9/d4a/structsuNf__field.html">suNf_field</a> *g1, <a class="code" href="../../d9/d4a/structsuNf__field.html">suNf_field</a> *g2);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keywordtype">void</span> suNg_scalar_field_copy(<a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a> *g1, <a class="code" href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a> *g2);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">/* find spectral interval using eva */</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">void</span> find_spec_H2(<span class="keywordtype">double</span> *max, <span class="keywordtype">double</span> *min);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">/* Utility functions for four fermion interactions */</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordtype">void</span> scalar_field_copy(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a> *s1, <a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a> *s2);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keywordtype">void</span> flip_scalar_field(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a> *s);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordtype">void</span> set_scalar_field(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a> *s, <span class="keywordtype">double</span> c);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordtype">void</span> gaussian_scalar_field(<a class="code" href="../../de/d54/struct__scalar__field.html">scalar_field</a> *s);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keywordtype">void</span> scalar_field_copy(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a> *s1, <a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a> *s2);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="keywordtype">void</span> flip_scalar_field(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a> *s);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordtype">void</span> set_scalar_field(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a> *s, <span class="keywordtype">double</span> c);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keywordtype">void</span> gaussian_scalar_field(<a class="code" href="../../d8/daf/structscalar__field.html">scalar_field</a> *s);</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="astruct__ghmc__par_html"><div class="ttname"><a href="../../d0/d4b/struct__ghmc__par.html">_ghmc_par</a></div><div class="ttdef"><b>Definition:</b> update.h:149</div></div>
 <div class="ttc" id="astruct__integrator__par_html"><div class="ttname"><a href="../../db/d4a/struct__integrator__par.html">_integrator_par</a></div><div class="ttdef"><b>Definition:</b> update.h:135</div></div>
 <div class="ttc" id="astruct__monomial_html"><div class="ttname"><a href="../../dc/df2/struct__monomial.html">_monomial</a></div><div class="ttdef"><b>Definition:</b> monomials.h:107</div></div>
 <div class="ttc" id="astruct__rational__app_html"><div class="ttname"><a href="../../d1/d9f/struct__rational__app.html">_rational_app</a></div><div class="ttdef"><b>Definition:</b> rational_functions.h:12</div></div>
-<div class="ttc" id="astruct__scalar__field_html"><div class="ttname"><a href="../../de/d54/struct__scalar__field.html">_scalar_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:53</div></div>
-<div class="ttc" id="astruct__spinor__field__flt_html"><div class="ttname"><a href="../../d0/d00/struct__spinor__field__flt.html">_spinor_field_flt</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:51</div></div>
-<div class="ttc" id="astruct__spinor__field_html"><div class="ttname"><a href="../../d3/d33/struct__spinor__field.html">_spinor_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:50</div></div>
-<div class="ttc" id="astruct__suNf__field_html"><div class="ttname"><a href="../../da/d8f/struct__suNf__field.html">_suNf_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:48</div></div>
-<div class="ttc" id="astruct__suNg__av__field_html"><div class="ttname"><a href="../../d4/d75/struct__suNg__av__field.html">_suNg_av_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:52</div></div>
-<div class="ttc" id="astruct__suNg__field_html"><div class="ttname"><a href="../../d9/d96/struct__suNg__field.html">_suNg_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:45</div></div>
-<div class="ttc" id="astruct__suNg__scalar__field_html"><div class="ttname"><a href="../../d8/dc4/struct__suNg__scalar__field.html">_suNg_scalar_field</a></div><div class="ttdef"><b>Definition:</b> spinor_field.h:46</div></div>
 <div class="ttc" id="astructcor__list_html"><div class="ttname"><a href="../../d5/d06/structcor__list.html">cor_list</a></div><div class="ttdef"><b>Definition:</b> glueballs.h:26</div></div>
 <div class="ttc" id="astructfield__gauge__par_html"><div class="ttname"><a href="../../d4/d5c/structfield__gauge__par.html">field_gauge_par</a></div><div class="ttdef"><b>Definition:</b> update.h:87</div></div>
 <div class="ttc" id="astructfield__scalar__par_html"><div class="ttname"><a href="../../df/da7/structfield__scalar__par.html">field_scalar_par</a></div><div class="ttdef"><b>Definition:</b> update.h:93</div></div>
@@ -320,6 +313,13 @@ $(document).ready(function(){initNavTree('d8/d72/update_8h_source.html','../../'
 <div class="ttc" id="astructforce__rhmc__par_html"><div class="ttname"><a href="../../d1/d17/structforce__rhmc__par.html">force_rhmc_par</a></div><div class="ttdef"><b>Definition:</b> update.h:40</div></div>
 <div class="ttc" id="astructforce__scalar__par_html"><div class="ttname"><a href="../../dc/df8/structforce__scalar__par.html">force_scalar_par</a></div><div class="ttdef"><b>Definition:</b> update.h:74</div></div>
 <div class="ttc" id="astructmre__par_html"><div class="ttname"><a href="../../df/d69/structmre__par.html">mre_par</a></div><div class="ttdef"><b>Definition:</b> update.h:28</div></div>
+<div class="ttc" id="astructscalar__field_html"><div class="ttname"><a href="../../d8/daf/structscalar__field.html">scalar_field</a></div><div class="ttdoc">Scalar field of double precision real values.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:222</div></div>
+<div class="ttc" id="astructspinor__field__flt_html"><div class="ttname"><a href="../../d4/dce/structspinor__field__flt.html">spinor_field_flt</a></div><div class="ttdoc">Spinor field array containing single precision SU(N_f) spinors in chosen fermion representation.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:189</div></div>
+<div class="ttc" id="astructspinor__field_html"><div class="ttname"><a href="../../d0/da8/structspinor__field.html">spinor_field</a></div><div class="ttdoc">Spinor field array containing SU(N_f) spinors in chosen fermion representation.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:171</div></div>
+<div class="ttc" id="astructsuNf__field_html"><div class="ttname"><a href="../../d9/d4a/structsuNf__field.html">suNf_field</a></div><div class="ttdoc">Gauge field in chosen fermion representation.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:135</div></div>
+<div class="ttc" id="astructsuNg__av__field_html"><div class="ttname"><a href="../../db/dc8/structsuNg__av__field.html">suNg_av_field</a></div><div class="ttdoc">Field of SU(N_g) algebra vectors.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:206</div></div>
+<div class="ttc" id="astructsuNg__field_html"><div class="ttname"><a href="../../d2/d0e/structsuNg__field.html">suNg_field</a></div><div class="ttdoc">Gauge field of SU(N_g) matrices.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:80</div></div>
+<div class="ttc" id="astructsuNg__scalar__field_html"><div class="ttname"><a href="../../d6/d10/structsuNg__scalar__field.html">suNg_scalar_field</a></div><div class="ttdoc">SU(N_g) scalar field of SU(N_g) vectors.</div><div class="ttdef"><b>Definition:</b> spinor_field.h:99</div></div>
 <div class="ttc" id="astructsuNg_html"><div class="ttname"><a href="../../d8/d0f/structsuNg.html">suNg</a></div><div class="ttdef"><b>Definition:</b> suN_types.h:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

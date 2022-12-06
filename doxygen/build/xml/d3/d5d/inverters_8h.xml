@@ -11,22 +11,10 @@
     <includedby refid="d8/d72/update_8h" local="yes">update.h</includedby>
     <includedby refid="d5/d60/utils_8h" local="yes">utils.h</includedby>
     <incdepgraph>
-      <node id="8">
-        <label>hr_omp.h</label>
-        <link refid="d6/da7/hr__omp_8h_source"/>
-      </node>
       <node id="6">
         <label>spinor_field.h</label>
-        <link refid="d3/ded/spinor__field_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
+        <link refid="d3/ded/spinor__field_8h"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -41,14 +29,6 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="9">
-        <label>error.h</label>
-        <link refid="da/d41/error_8h_source"/>
-      </node>
-      <node id="10">
-        <label>field_ordering.h</label>
-        <link refid="da/dac/field__ordering_8h_source"/>
-      </node>
       <node id="3">
         <label>hr_complex.h</label>
         <link refid="d1/d74/hr__complex_8h_source"/>
@@ -57,12 +37,6 @@
       </node>
       <node id="5">
         <label>tgmath.h</label>
-      </node>
-      <node id="7">
-        <label>geometry.h</label>
-        <link refid="d4/d67/geometry_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
       </node>
       <node id="1">
         <label>inverters.h</label>
@@ -78,7 +52,7 @@
     <invincdepgraph>
       <node id="8">
         <label>dirac.h</label>
-        <link refid="d0/d40/dirac_8h_source"/>
+        <link refid="d0/d40/dirac_8h"/>
       </node>
       <node id="7">
         <label>utils.h</label>
@@ -231,11 +205,11 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -260,11 +234,11 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -297,11 +271,11 @@
           <declname>Pinv</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -330,11 +304,11 @@
           <declname>F</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -359,11 +333,11 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -392,15 +366,15 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out_trunc</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -429,11 +403,11 @@
           <declname>M_flt</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -458,11 +432,11 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -487,11 +461,11 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -516,11 +490,11 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -545,11 +519,11 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <briefdescription>
@@ -574,15 +548,15 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>trial</declname>
         </param>
         <briefdescription>
@@ -607,15 +581,15 @@
           <declname>M</declname>
         </param>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>out</declname>
         </param>
         <param>
-          <type><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
+          <type><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref> *</type>
           <declname>trial</declname>
         </param>
         <briefdescription>
@@ -668,7 +642,7 @@
           <declname>Op</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>ev</declname>
         </param>
         <param>
@@ -734,7 +708,7 @@
           <declname>Op</declname>
         </param>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>ev</declname>
         </param>
         <param>
@@ -796,7 +770,7 @@
           <declname>n</declname>
         </param>
         <param>
-          <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+          <type>hr_complex</type>
           <declname>a</declname>
           <array>[]</array>
         </param>
@@ -806,7 +780,7 @@
           <array>[]</array>
         </param>
         <param>
-          <type><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref></type>
+          <type>hr_complex</type>
           <declname>v</declname>
           <array>[]</array>
         </param>
@@ -824,7 +798,7 @@
         <argsstring>(spinor_field *s)</argsstring>
         <name>empty_buffers</name>
         <param>
-          <type><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref> *</type>
+          <type><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref> *</type>
           <declname>s</declname>
         </param>
         <briefdescription>
@@ -851,12 +825,12 @@
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;suN_types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hr_complex.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spinor_field.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d3/ded/spinor__field_8h" kindref="compound">spinor_field.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator)(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator_flt)(<ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator_m)(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator)(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator_flt)(<ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*spinor_operator_m)(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18" refid="da/df7/struct__mshift__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="da/df7/struct__mshift__par" kindref="compound">_mshift_par</ref><sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n;<sp/></highlight><highlight class="comment">/*<sp/>number<sp/>of<sp/>shifts<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -869,8 +843,8 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>We<sp/>might<sp/>want<sp/>to<sp/>add<sp/>a<sp/>&quot;trial&quot;<sp/>spinor<sp/>to<sp/>the<sp/>argument<sp/>list</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*inverter_ptr)(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref>*<sp/>par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SAP_prec(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nu,<sp/>inverter_ptr<sp/>inv,<sp/><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*inverter_ptr)(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref>*<sp/>par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SAP_prec(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nu,<sp/>inverter_ptr<sp/>inv,<sp/><ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
@@ -878,9 +852,9 @@
 <codeline lineno="35"><highlight class="comment"><sp/>*<sp/>out[i]<sp/>=<sp/>(M-(par-&gt;shift[i]))^-1<sp/>in</highlight></codeline>
 <codeline lineno="36"><highlight class="comment"><sp/>*<sp/>returns<sp/>the<sp/>number<sp/>of<sp/>cg<sp/>iterations<sp/>done.</highlight></codeline>
 <codeline lineno="37"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift_def(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator<sp/>P,<sp/>spinor_operator_m<sp/>Pinv,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift_flt(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator_flt<sp/>F,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift_def(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator<sp/>P,<sp/>spinor_operator_m<sp/>Pinv,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cg_mshift_flt(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator_flt<sp/>F,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
 <codeline lineno="43" refid="d2/d0d/structg5QMR__fltacc__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
@@ -890,9 +864,9 @@
 <codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter_flt;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>number<sp/>of<sp/>iterations:<sp/>0<sp/>=&gt;<sp/>infinity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal">}<sp/><ref refid="d2/d0d/structg5QMR__fltacc__par" kindref="compound">g5QMR_fltacc_par</ref>;</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_mshift_trunc(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trunc_iter,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out_trunc,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_fltacc(<ref refid="d2/d0d/structg5QMR__fltacc__par" kindref="compound">g5QMR_fltacc_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator_flt<sp/>M_flt,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_mshift_trunc(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trunc_iter,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out_trunc,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>g5QMR_fltacc(<ref refid="d2/d0d/structg5QMR__fltacc__par" kindref="compound">g5QMR_fltacc_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_operator_flt<sp/>M_flt,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55" refid="dc/d96/struct__MINRES__par" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="dc/d96/struct__MINRES__par" kindref="compound">_MINRES_par</ref><sp/>{</highlight></codeline>
@@ -900,9 +874,9 @@
 <codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter;<sp/></highlight><highlight class="comment">/*<sp/>maximum<sp/>number<sp/>of<sp/>iterations:<sp/>0<sp/>=&gt;<sp/>infinity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal">}<sp/><ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref>;</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BiCGstab(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HBiCGstab(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HBiCGstab_flt(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator_flt<sp/>M,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>BiCGstab(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HBiCGstab(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>HBiCGstab_flt(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator_flt<sp/>M,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out);</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="65"><highlight class="comment">int<sp/>BiCGstab_mshift(mshift_par<sp/>*par,<sp/>spinor_operator<sp/>M,<sp/>spinor_field<sp/>*in,<sp/>spinor_field<sp/>*out);</highlight></codeline>
@@ -910,26 +884,26 @@
 <codeline lineno="67"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES_mshift(<ref refid="da/df7/struct__mshift__par" kindref="compound">mshift_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*trial);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES_flt(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator_flt<sp/>M,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d0/d00/struct__spinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*trial);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator<sp/>M,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*in,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*out,<sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*trial);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MINRES_flt(<ref refid="dc/d96/struct__MINRES__par" kindref="compound">MINRES_par</ref><sp/>*par,<sp/>spinor_operator_flt<sp/>M,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*in,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*out,<sp/><ref refid="d4/dce/structspinor__field__flt" kindref="compound">spinor_field_flt</ref><sp/>*trial);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eva(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nev,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nevt,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kmax,</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imax,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ubnd,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega1,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega2,</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spinor_operator<sp/>Op,</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*ev,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*status);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*ev,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*status);</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eva_tuned(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nev,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nevt,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>init,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kmax,</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>imax,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lbnd<sp/>,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ubnd,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega1,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega2,</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spinor_operator<sp/>Op,</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*ev,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*status);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*ev,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*status);</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>jacobi1(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a[],</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v[]);</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>jacobi2(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>a[],</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],<sp/><ref refid="d7/de2/structhr__complex" kindref="compound">hr_complex</ref><sp/>v[]);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>jacobi2(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n,<sp/>hr_complex<sp/>a[],</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d[],<sp/>hr_complex<sp/>v[]);</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_buffers(<ref refid="d3/d33/struct__spinor__field" kindref="compound">spinor_field</ref><sp/>*s);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empty_buffers(<ref refid="d0/da8/structspinor__field" kindref="compound">spinor_field</ref><sp/>*s);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
